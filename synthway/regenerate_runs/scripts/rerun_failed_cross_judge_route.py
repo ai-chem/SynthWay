@@ -1,21 +1,4 @@
 #!/usr/bin/env python3
-"""Safely rerun one cross-judge route and replace only its stored trajectory.
-
-The replacement is transactional:
-
-1. The route is rerun in a staging directory with the original experiment
-   generator, judge, thresholds, RPM limit, and attempt budget.
-2. Every staged attempt must contain all three metric scores.  A new parsing or
-   evaluation failure aborts without touching the existing experiment.
-3. The current route records and derived experiment outputs are backed up.
-4. Only the target route is replaced in the arm JSONL files, then all combined
-   tables are rebuilt from the six arms.
-5. For the default v2 experiment, the three-run figures are refreshed.
-
-Running without --yes performs validation only and makes no model calls or
-filesystem changes.
-"""
-
 from __future__ import annotations
 
 import argparse
