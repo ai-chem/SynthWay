@@ -1,37 +1,3 @@
-#!/usr/bin/env python3
-"""Paper-grade statistical analysis of the repeated cross-judge regeneration runs.
-
-This complements the arithmetic mean and sample SD across the three repeats
-reported in Figures 5 and S6.  That SD
-measures run-to-run variation with the route set held fixed, which is not the
-uncertainty a reader needs: the paper generalises to new synthesis routes and
-new chemical systems, not to a rerun of the same 60 files.
-
-Following Miller (2024), "Adding Error Bars to Evals" (arXiv:2411.00640):
-
-  * the repeats are treated as within-route resamples that reduce measurement
-    noise (Var(s_i) = sigma_i^2 / K), not as the unit of replication;
-  * uncertainty is a clustered standard error / cluster bootstrap over the
-    source systems (case_id), because routes are drawn in related groups;
-  * the initial-vs-refined comparison is done on route-level paired
-    differences rather than on a difference of marginal means.
-
-Two bias controls that the descriptive pipeline cannot provide are added:
-
-  * a judge-noise null model.  Attempt 1 is the same unmodified route text in
-    every repeat, so the three repeats give a test-retest estimate of judge
-    noise.  From it we derive the pass rate expected from four independent
-    evaluations of an unchanged route, which is the correct baseline for a
-    "best of four attempts" pass rate against a hard threshold.
-  * a selection ("winner's curse") control.  ``pick_best_attempt`` maximises
-    over the same judge scores that are then reported, so the reported delta is
-    an order statistic.  We recompute the delta on attempts that were not
-    selected on the outcome.
-
-The script is read-only with respect to the runs and writes CSV tables plus a
-markdown report.
-"""
-
 from __future__ import annotations
 
 import argparse
@@ -66,7 +32,7 @@ N_BOOT = 20000
 SEED = 20260904
 
 
-# ---------------------------------------------------------------- loading
+# loading
 
 
 def parse_bool(series: pd.Series) -> pd.Series:
@@ -95,7 +61,7 @@ def load_runs(run_dirs: Sequence[Path], labels: Sequence[str]) -> tuple[pd.DataF
     return pd.concat(attempts, ignore_index=True), pd.concat(routes, ignore_index=True)
 
 
-# ---------------------------------------------------------------- inference
+# inference
 
 
 def cluster_bootstrap(
@@ -184,7 +150,7 @@ def beta_binomial_null(k: np.ndarray, n: np.ndarray, n_draws: int) -> dict[str, 
     }
 
 
-# ---------------------------------------------------------------- analyses
+# analyses
 
 
 def analyse_pass(attempts: pd.DataFrame, routes: pd.DataFrame, max_regens: int) -> tuple[pd.DataFrame, pd.DataFrame]:
@@ -358,7 +324,7 @@ def analyse_judge_reliability(attempts: pd.DataFrame) -> tuple[pd.DataFrame, dic
     return reliability, null
 
 
-# ---------------------------------------------------------------- report
+# report
 
 
 def write_report(path: Path, blocks: dict) -> None:
