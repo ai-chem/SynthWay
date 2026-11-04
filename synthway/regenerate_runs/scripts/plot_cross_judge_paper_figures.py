@@ -1,12 +1,3 @@
-#!/usr/bin/env python3
-"""Paper figures for the cross-judge regeneration experiment.
-
-Use scripts/plot_regeneration.py from the repository root to reproduce manuscript
-Figures 5 and S6 with sample SD across the three repeats. This module also exposes
-an optional system-cluster bootstrap analysis. These are different uncertainty
-summaries and should not be interchanged.
-"""
-
 from __future__ import annotations
 
 from pathlib import Path
@@ -63,20 +54,13 @@ THRESHOLD = 0.8
 N_BOOT = 20000
 SEED = 20260904
 
-# "repeats": error bars are the SD across the three independent repeats, i.e.
-#   pipeline reproducibility on the fixed route set.  This is what the claim
-#   "the regeneration module works, and works consistently" needs.
-# "cluster": error bars are 95% percentile cluster-bootstrap CIs over the source
-#   systems, i.e. how precisely the level is estimated for new materials.  Use
-#   this only if the text generalises a pass-rate number beyond this route set.
 UNCERTAINTY = "repeats"
 
-# Nature-family journals carry the title in the caption, not inside the figure.
 # Set to False (--no-titles) to strip every on-figure title for that house style.
 SHOW_TITLES = True
 
 
-# ------------------------------------------------------------------ plumbing
+# plumbing
 
 
 def configure_plot_style() -> None:
@@ -144,7 +128,7 @@ def load_runs(run_dirs: Sequence[Path], labels: Sequence[str]) -> tuple[pd.DataF
     return pd.concat(attempts, ignore_index=True), pd.concat(routes, ignore_index=True)
 
 
-# --------------------------------------------------------------- inference
+# inference
 
 
 def cluster_boot(values: np.ndarray, clusters: np.ndarray, seed: int = SEED) -> dict[str, float]:
@@ -214,7 +198,7 @@ def summarise(frame: pd.DataFrame, value: str) -> dict[str, float]:
     return cluster_boot(rl[value].to_numpy(float), rl["case_id"].to_numpy())
 
 
-# ------------------------------------------------------------------ derived
+# derived
 
 
 def build_trajectories(attempts: pd.DataFrame, routes: pd.DataFrame, max_regens: int) -> pd.DataFrame:
@@ -280,7 +264,7 @@ def unselected_delta(attempts: pd.DataFrame, metric: str) -> dict[str, float]:
     return summarise(sub, "delta")
 
 
-# ------------------------------------------------------------- main figures
+#  main figures
 
 
 def draw_pass_panel(axis: plt.Axes, traj: pd.DataFrame, max_regens: int) -> list[dict]:
@@ -490,7 +474,7 @@ def figure_main_ab(
     return fig
 
 
-# -------------------------------------------------------------- SI figures
+# SI figures
 
 
 def figure_si6_pair_metrics(routes: pd.DataFrame) -> tuple[plt.Figure, pd.DataFrame]:
@@ -632,7 +616,7 @@ def figure_si6_pair_metrics(routes: pd.DataFrame) -> tuple[plt.Figure, pd.DataFr
     return fig, pd.DataFrame(records)
 
 
-# ------------------------------------------------------------------- driver
+# driver
 
 
 def save(fig: plt.Figure, out_dir: Path, name: str, dpi: int) -> str:
