@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "2249.json_WO3@In2S3_1826",
+  "composition": "WO3@In2S3",
+  "elements": [
+    "W",
+    "O",
+    "In",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "WCl6",
+      "mass": 3.5
+    },
+    {
+      "name": "Na2S·9H2O"
+    },
+    {
+      "name": "InCl3"
+    }
+  ],
+  "solvent": {
+    "name": "ethanol",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 550.0
+  },
+  "product": {
+    "shape": "floc"
+  },
+  "pdfno_list": [
+    "50-0814"
+  ],
+  "source": {
+    "synthesis_id_original": "2249.json_WO3@In2S3_1826",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: WO3@In2S3 | solvent: ethanol | solvent.volume: 20.0 | temperature: 550.0 | shape: floc | precursor: WCl6 (mass 3.5) | precursor: Na2S·9H2O | precursor: InCl3 | pdfno_list: 50-0814"
+}

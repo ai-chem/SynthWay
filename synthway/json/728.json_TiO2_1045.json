@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "728.json_TiO2_1045",
+  "composition": "TiO2",
+  "elements": [
+    "Ti",
+    "O"
+  ],
+  "method": "hydrolysis and polycondensation",
+  "precursors": [
+    {
+      "name": "Ti(OBu)4"
+    },
+    {
+      "name": "H2O"
+    }
+  ],
+  "solvent": {
+    "name": "ethyl alcohol",
+    "volume": 38.17
+  },
+  "conditions": {
+    "temperature": 350.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 100.0,
+      "width": 100.0,
+      "depth": 100.0
+    }
+  },
+  "pdfno_list": [
+    "21-1272"
+  ],
+  "source": {
+    "synthesis_id_original": "728.json_TiO2_1045",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: TiO2 | method: hydrolysis and polycondensation | solvent: ethyl alcohol | solvent.volume: 38.17 | temperature: 350.0 | shape: spherical | size.length: 100.0 | size.width: 100.0 | size.depth: 100.0 | precursor: Ti(OBu)4 | precursor: H2O | pdfno_list: 21-1272"
+}

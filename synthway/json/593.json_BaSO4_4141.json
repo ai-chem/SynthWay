@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "593.json_BaSO4_4141",
+  "composition": "BaSO4",
+  "elements": [
+    "Ba",
+    "S",
+    "O"
+  ],
+  "method": "precipitation",
+  "precursors": [
+    {
+      "name": "Na2SO4",
+      "conc": 200.0
+    },
+    {
+      "name": "BaCl2",
+      "conc": 150.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 100.0
+  },
+  "product": {
+    "shape": "sheets",
+    "size": {
+      "length": 150.0
+    }
+  },
+  "pdfno_list": [
+    "24-1035"
+  ],
+  "source": {
+    "synthesis_id_original": "593.json_BaSO4_4141",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: BaSO4 | method: precipitation | solvent: water | temperature: 100.0 | shape: sheets | size.length: 150.0 | precursor: Na2SO4 (conc 200.0) | precursor: BaCl2 (conc 150.0) | pdfno_list: 24-1035"
+}

@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "1771.json_NiCo2O4_149",
+  "composition": "NiCo2O4",
+  "elements": [
+    "Ni",
+    "Co",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Ni(CH3COO)2⋅4H2O",
+      "conc": 0.5
+    },
+    {
+      "name": "Co(CH3COO)2⋅4H2O",
+      "conc": 1.0
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 195.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "blocky"
+  },
+  "pdfno_list": [
+    "20-0781"
+  ],
+  "source": {
+    "synthesis_id_original": "1771.json_NiCo2O4_149",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: NiCo2O4 | solvent: ethylene glycol | solvent.volume: 100.0 | temperature: 195.0 | crystalsystem: cubic | shape: blocky | precursor: Ni(CH3COO)2⋅4H2O (conc 0.5) | precursor: Co(CH3COO)2⋅4H2O (conc 1.0) | pdfno_list: 20-0781"
+}

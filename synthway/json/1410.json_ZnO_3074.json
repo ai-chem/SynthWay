@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "1410.json_ZnO_3074",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "sol-gel green synthesis",
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2",
+      "conc": 2000.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "mass": 4.0
+    },
+    {
+      "name": "acalypha indica leaf extract"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 85.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 35.0,
+      "width": 35.0,
+      "depth": 35.0
+    }
+  },
+  "pdfno_list": [
+    "05-0664"
+  ],
+  "source": {
+    "synthesis_id_original": "1410.json_ZnO_3074",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: ZnO | method: sol-gel green synthesis | solvent: deionized water | solvent.volume: 100.0 | temperature: 85.0 | crystalsystem: hexagonal | shape: spherical | size.length: 35.0 | size.width: 35.0 | size.depth: 35.0 | precursor: Zn(CH3COO)2 (conc 2000.0) | additive: sodium hydroxide (mass 4.0) | additive: acalypha indica leaf extract | pdfno_list: 05-0664"
+}

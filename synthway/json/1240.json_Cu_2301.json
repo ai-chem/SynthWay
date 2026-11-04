@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "1240.json_Cu_2301",
+  "composition": "Cu",
+  "elements": [
+    "Cu"
+  ],
+  "method": "chemical reduction",
+  "precursors": [
+    {
+      "name": "Cu(NO3)2",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "chitosan"
+    },
+    {
+      "name": "ascorbic acid"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 23.8,
+      "width": 23.8,
+      "depth": 23.8
+    }
+  },
+  "pdfno_list": [
+    "04-0836"
+  ],
+  "source": {
+    "synthesis_id_original": "1240.json_Cu_2301",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Cu | method: chemical reduction | solvent: water | crystalsystem: cubic | shape: spherical | size.length: 23.8 | size.width: 23.8 | size.depth: 23.8 | precursor: Cu(NO3)2 (conc 10.0) | additive: chitosan | additive: ascorbic acid | pdfno_list: 04-0836"
+}

@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1471.json_LMSPs_2723",
+  "composition": "LMSPs",
+  "elements": [
+    "L",
+    "M",
+    "S",
+    "Ps"
+  ],
+  "precursors": [
+    {
+      "name": "2-MI",
+      "mass": 2.168
+    },
+    {
+      "name": "Zn(NO3)2·6H2O",
+      "mass": 0.146
+    },
+    {
+      "name": "LMNPs"
+    }
+  ],
+  "solvent": {
+    "name": "ultrapure water",
+    "volume": 40.0
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "shape": "flower-like",
+    "size": {
+      "length": 226.3,
+      "width": 226.3,
+      "depth": 226.3
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1471.json_LMSPs_2723",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: LMSPs | solvent: ultrapure water | solvent.volume: 40.0 | temperature: 25.0 | shape: flower-like | size.length: 226.3 | size.width: 226.3 | size.depth: 226.3 | precursor: 2-MI (mass 2.168) | precursor: Zn(NO3)2·6H2O (mass 0.146) | precursor: LMNPs"
+}

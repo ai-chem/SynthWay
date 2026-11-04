@@ -1,0 +1,23 @@
+{
+  "synthesis_id": "26.json_BiFeO3_1517",
+  "composition": "BiFeO3",
+  "elements": [
+    "Bi",
+    "Fe",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 220.0
+  },
+  "source": {
+    "synthesis_id_original": "26.json_BiFeO3_1517",
+    "nodes": 5,
+    "edges": 4
+  },
+  "retrieval_text": "composition: BiFeO3 | method: hydrothermal | solvent: ethylene glycol | solvent.volume: 20.0 | temperature: 220.0"
+}

@@ -1,0 +1,32 @@
+{
+  "synthesis_id": "343.json_ZnFe2O4_181",
+  "composition": "ZnFe2O4",
+  "elements": [
+    "Zn",
+    "Fe",
+    "O"
+  ],
+  "method": "solvo-hydrothermal",
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 60.0
+  },
+  "conditions": {
+    "temperature": 1200.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 270.0
+    }
+  },
+  "pdfno_list": [
+    "01-079-1150"
+  ],
+  "source": {
+    "synthesis_id_original": "343.json_ZnFe2O4_181",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: ZnFe2O4 | method: solvo-hydrothermal | solvent: ethylene glycol | solvent.volume: 60.0 | temperature: 1200.0 | shape: spherical | size.length: 270.0 | pdfno_list: 01-079-1150"
+}

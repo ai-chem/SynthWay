@@ -1,0 +1,29 @@
+{
+  "synthesis_id": "322.json_CoFe2-xBixO4_310",
+  "composition": "CoFe2-xBixO4",
+  "elements": [
+    "Co",
+    "Fe",
+    "Bi",
+    "O"
+  ],
+  "method": "combustion",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 500.0
+  },
+  "product": {
+    "crystalsystem": "cubic"
+  },
+  "pdfno_list": [
+    "96-591-0064"
+  ],
+  "source": {
+    "synthesis_id_original": "322.json_CoFe2-xBixO4_310",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: CoFe2-xBixO4 | method: combustion | solvent: water | temperature: 500.0 | crystalsystem: cubic | pdfno_list: 96-591-0064"
+}

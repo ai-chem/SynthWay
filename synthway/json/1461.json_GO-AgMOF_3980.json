@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "1461.json_GO-AgMOF_3980",
+  "composition": "GO-AgMOF",
+  "elements": [
+    "G",
+    "O",
+    "Ag",
+    "M",
+    "F"
+  ],
+  "precursors": [
+    {
+      "name": "C9H6O6",
+      "mass": 0.5
+    },
+    {
+      "name": "AgNO3",
+      "mass": 0.5
+    },
+    {
+      "name": "GO",
+      "mass": 0.05
+    }
+  ],
+  "solvent": {
+    "name": "ethanol and water",
+    "volume": 40.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "layers"
+  },
+  "source": {
+    "synthesis_id_original": "1461.json_GO-AgMOF_3980",
+    "nodes": 10,
+    "edges": 10
+  },
+  "retrieval_text": "composition: GO-AgMOF | solvent: ethanol and water | solvent.volume: 40.0 | crystalsystem: cubic | shape: layers | precursor: C9H6O6 (mass 0.5) | precursor: AgNO3 (mass 0.5) | precursor: GO (mass 0.05)"
+}

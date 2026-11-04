@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "380.json_ZnO-rGO_118",
+  "composition": "ZnO-rGO",
+  "elements": [
+    "Zn",
+    "O",
+    "G"
+  ],
+  "precursors": [
+    {
+      "name": "ZnSO4",
+      "conc": 100.0
+    },
+    {
+      "name": "GO",
+      "mass": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 200.0
+    }
+  ],
+  "solvent": {
+    "name": "milliq water",
+    "volume": 125.0
+  },
+  "product": {
+    "shape": "sheets"
+  },
+  "source": {
+    "synthesis_id_original": "380.json_ZnO-rGO_118",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: ZnO-rGO | solvent: milliq water | solvent.volume: 125.0 | shape: sheets | precursor: ZnSO4 (conc 100.0) | precursor: GO (mass 1.0) | additive: sodium hydroxide (conc 200.0)"
+}

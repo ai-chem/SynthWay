@@ -1,0 +1,63 @@
+{
+  "synthesis_id": "1833.json_Pd-Rh-Ir_1470",
+  "composition": "Pd-Rh-Ir",
+  "elements": [
+    "Pd",
+    "Rh",
+    "Ir"
+  ],
+  "precursors": [
+    {
+      "name": "RhCl3",
+      "mass": 0.3
+    },
+    {
+      "name": "Na3IrCl6",
+      "mass": 0.68
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 0.06
+    },
+    {
+      "name": "potassium bromide",
+      "mass": 0.05
+    },
+    {
+      "name": "ascorbic acid",
+      "mass": 0.1
+    }
+  ],
+  "seeds": [
+    {
+      "name": "Pd"
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 9.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "octahedron",
+    "size": {
+      "length": 38.7,
+      "width": 38.7,
+      "depth": 38.7
+    }
+  },
+  "pdfno_list": [
+    "46-1043"
+  ],
+  "source": {
+    "synthesis_id_original": "1833.json_Pd-Rh-Ir_1470",
+    "nodes": 21,
+    "edges": 20
+  },
+  "retrieval_text": "composition: Pd-Rh-Ir | solvent: ethylene glycol | solvent.volume: 9.0 | temperature: 180.0 | crystalsystem: cubic | shape: octahedron | size.length: 38.7 | size.width: 38.7 | size.depth: 38.7 | precursor: RhCl3 (mass 0.3) | precursor: Na3IrCl6 (mass 0.68) | additive: polyvinylpyrrolidone (mass 0.06) | additive: potassium bromide (mass 0.05) | additive: ascorbic acid (mass 0.1) | seed: Pd | pdfno_list: 46-1043"
+}

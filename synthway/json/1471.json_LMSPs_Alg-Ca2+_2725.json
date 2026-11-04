@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "1471.json_LMSPs/Alg-Ca2+_2725",
+  "composition": "LMSPs/Alg-Ca2+",
+  "elements": [
+    "L",
+    "M",
+    "S",
+    "Ps",
+    "Al",
+    "Ca"
+  ],
+  "precursors": [
+    {
+      "name": "C6H7NaO6"
+    },
+    {
+      "name": "LMSPs"
+    },
+    {
+      "name": "CaCl2",
+      "conc": 1.8
+    }
+  ],
+  "additives": [
+    {
+      "name": "phosphate buffer"
+    }
+  ],
+  "solvent": {
+    "name": "ultrapure water"
+  },
+  "product": {
+    "shape": "3d laminated structures"
+  },
+  "source": {
+    "synthesis_id_original": "1471.json_LMSPs/Alg-Ca2+_2725",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: LMSPs/Alg-Ca2+ | solvent: ultrapure water | shape: 3d laminated structures | precursor: C6H7NaO6 | precursor: LMSPs | precursor: CaCl2 (conc 1.8) | additive: phosphate buffer"
+}

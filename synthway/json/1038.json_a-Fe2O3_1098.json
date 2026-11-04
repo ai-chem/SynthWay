@@ -1,0 +1,51 @@
+{
+  "synthesis_id": "1038.json_a-Fe2O3_1098",
+  "composition": "a-Fe2O3",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "thermal decomposition",
+  "precursors": [
+    {
+      "name": "FeCl3",
+      "conc": 1000.0
+    },
+    {
+      "name": "FeCl2*4H2O",
+      "conc": 2000.0
+    },
+    {
+      "name": "NH3*H2O",
+      "conc": 2000.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "hydrochloric acid",
+      "conc": 2000.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 500.0
+  },
+  "product": {
+    "crystalsystem": "rhombohedral",
+    "shape": "spherical",
+    "size": {
+      "width": 19.0
+    }
+  },
+  "pdfno_list": [
+    "01-084-0307"
+  ],
+  "source": {
+    "synthesis_id_original": "1038.json_a-Fe2O3_1098",
+    "nodes": 15,
+    "edges": 15
+  },
+  "retrieval_text": "composition: a-Fe2O3 | method: thermal decomposition | solvent: water | temperature: 500.0 | crystalsystem: rhombohedral | shape: spherical | size.width: 19.0 | precursor: FeCl3 (conc 1000.0) | precursor: FeCl2*4H2O (conc 2000.0) | precursor: NH3*H2O (conc 2000.0) | additive: hydrochloric acid (conc 2000.0) | pdfno_list: 01-084-0307"
+}

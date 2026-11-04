@@ -1,0 +1,22 @@
+{
+  "synthesis_id": "237.json_WO3_2105",
+  "composition": "WO3",
+  "elements": [
+    "W",
+    "O"
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "size": {
+      "length": 100.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "237.json_WO3_2105",
+    "nodes": 3,
+    "edges": 2
+  },
+  "retrieval_text": "composition: WO3 | solvent: water | size.length: 100.0"
+}

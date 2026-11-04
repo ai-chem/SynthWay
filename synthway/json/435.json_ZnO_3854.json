@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "435.json_ZnO_3854",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Zn(NO3)2*6H2O",
+      "mass": 0.44
+    }
+  ],
+  "additives": [
+    {
+      "name": "curcumin",
+      "mass": 0.74
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 100.0
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 160.0,
+    "ph": 8.5
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 85.0,
+      "width": 85.0,
+      "depth": 85.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "435.json_ZnO_3854",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: ZnO | solvent: deionized water | solvent.volume: 100.0 | temperature: 160.0 | pH: 8.5 | shape: spherical | size.length: 85.0 | size.width: 85.0 | size.depth: 85.0 | precursor: Zn(NO3)2*6H2O (mass 0.44) | additive: curcumin (mass 0.74) | additive: sodium hydroxide (conc 100.0)"
+}

@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "2111.json_MnO2_572",
+  "composition": "MnO2",
+  "elements": [
+    "Mn",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "MnSO4∙H2O",
+      "mass": 0.2
+    },
+    {
+      "name": "KMnO4",
+      "mass": 0.5
+    }
+  ],
+  "additives": [
+    {
+      "name": "nitric acid"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 80.0
+  },
+  "conditions": {
+    "temperature": 140.0
+  },
+  "product": {
+    "shape": "wire",
+    "size": {
+      "length": 785.0,
+      "width": 55.0,
+      "depth": 55.0
+    }
+  },
+  "pdfno_list": [
+    "44-0141"
+  ],
+  "source": {
+    "synthesis_id_original": "2111.json_MnO2_572",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: MnO2 | solvent: water | solvent.volume: 80.0 | temperature: 140.0 | shape: wire | size.length: 785.0 | size.width: 55.0 | size.depth: 55.0 | precursor: MnSO4∙H2O (mass 0.2) | precursor: KMnO4 (mass 0.5) | additive: nitric acid | pdfno_list: 44-0141"
+}

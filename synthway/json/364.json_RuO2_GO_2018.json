@@ -1,0 +1,24 @@
+{
+  "synthesis_id": "364.json_RuO2/GO_2018",
+  "composition": "RuO2/GO",
+  "elements": [
+    "Ru",
+    "O",
+    "G"
+  ],
+  "solvent": {
+    "name": "methanol"
+  },
+  "conditions": {
+    "temperature": 600.0
+  },
+  "pdfno_list": [
+    "21-1172"
+  ],
+  "source": {
+    "synthesis_id_original": "364.json_RuO2/GO_2018",
+    "nodes": 4,
+    "edges": 3
+  },
+  "retrieval_text": "composition: RuO2/GO | solvent: methanol | temperature: 600.0 | pdfno_list: 21-1172"
+}

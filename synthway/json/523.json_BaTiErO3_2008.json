@@ -1,0 +1,30 @@
+{
+  "synthesis_id": "523.json_BaTiErO3_2008",
+  "composition": "BaTiErO3",
+  "elements": [
+    "Ba",
+    "Ti",
+    "Er",
+    "O"
+  ],
+  "method": "sol-gel",
+  "solvent": {
+    "name": "2-methoxyethanol"
+  },
+  "conditions": {
+    "temperature": 750.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "films",
+    "size": {
+      "length": 60.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "523.json_BaTiErO3_2008",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: BaTiErO3 | method: sol-gel | solvent: 2-methoxyethanol | temperature: 750.0 | crystalsystem: cubic | shape: films | size.length: 60.0"
+}

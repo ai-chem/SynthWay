@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "2008.json_TiO2_1607",
+  "composition": "TiO2",
+  "elements": [
+    "Ti",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "TiCl4 (sol.)",
+      "conc": 50.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "aqueous extracts of twig (a. indica and f. benghalensis) and bud (s. aromaticum)"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "shape": "tetragonal",
+    "size": {
+      "length": 18.95,
+      "width": 18.95,
+      "depth": 18.95
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2008.json_TiO2_1607",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: TiO2 | method: green synthesis | solvent: water | crystalsystem: tetragonal | shape: tetragonal | size.length: 18.95 | size.width: 18.95 | size.depth: 18.95 | precursor: TiCl4 (sol.) (conc 50.0) | additive: aqueous extracts of twig (a. indica and f. benghalensis) and bud (s. aromaticum)"
+}

@@ -1,0 +1,53 @@
+{
+  "synthesis_id": "2225.json_VO2(D)_1545",
+  "composition": "VO2(D)",
+  "elements": [
+    "V",
+    "O",
+    "D"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "NH4VO3",
+      "mass": 0.625,
+      "conc": 2.4
+    }
+  ],
+  "additives": [
+    {
+      "name": "oxalic acid",
+      "mass": 2.52
+    },
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 0.5
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 220.0,
+    "ph": 5.5
+  },
+  "product": {
+    "shape": "ball-shape",
+    "size": {
+      "length": 4000.0,
+      "width": 4000.0,
+      "depth": 4000.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2225.json_VO2(D)_1545",
+    "nodes": 19,
+    "edges": 18
+  },
+  "retrieval_text": "composition: VO2(D) | method: hydrothermal | solvent: deionized water | solvent.volume: 50.0 | temperature: 220.0 | pH: 5.5 | shape: ball-shape | size.length: 4000.0 | size.width: 4000.0 | size.depth: 4000.0 | precursor: NH4VO3 (mass 0.625; conc 2.4) | additive: oxalic acid (mass 2.52) | additive: polyvinylpyrrolidone (mass 0.5) | additive: sodium hydroxide (conc 1000.0)"
+}

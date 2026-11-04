@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1761.json_PDA_1609",
+  "composition": "PDA",
+  "elements": [
+    "P",
+    "D",
+    "A"
+  ],
+  "precursors": [
+    {
+      "name": "C8H12ClNO2",
+      "mass": 0.5
+    }
+  ],
+  "additives": [
+    {
+      "name": "ammonia"
+    },
+    {
+      "name": "milli q water"
+    },
+    {
+      "name": "ethanol"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 10.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 121.0,
+      "width": 121.0,
+      "depth": 121.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1761.json_PDA_1609",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: PDA | solvent: deionized water | solvent.volume: 10.0 | shape: spherical | size.length: 121.0 | size.width: 121.0 | size.depth: 121.0 | precursor: C8H12ClNO2 (mass 0.5) | additive: ammonia | additive: milli q water | additive: ethanol"
+}

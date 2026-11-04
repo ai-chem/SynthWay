@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "1886.json_TiO2_2066",
+  "composition": "TiO2",
+  "elements": [
+    "Ti",
+    "O"
+  ],
+  "method": "sol-gel",
+  "precursors": [
+    {
+      "name": "TiCl4",
+      "mass": 5.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "water",
+      "mass": 200.0
+    }
+  ],
+  "solvent": {
+    "name": "absolute ethanol",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 27.5
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 64.77,
+      "width": 64.77,
+      "depth": 64.77
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1886.json_TiO2_2066",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: TiO2 | method: sol-gel | solvent: absolute ethanol | solvent.volume: 50.0 | temperature: 27.5 | shape: spherical | size.length: 64.77 | size.width: 64.77 | size.depth: 64.77 | precursor: TiCl4 (mass 5.0) | additive: water (mass 200.0)"
+}

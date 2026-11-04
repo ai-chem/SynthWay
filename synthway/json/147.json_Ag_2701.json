@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "147.json_Ag_2701",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "biosynthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "oxalis griffithii leaves extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 37.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 30.0,
+      "width": 30.0,
+      "depth": 30.0
+    }
+  },
+  "pdfno_list": [
+    "04-0873"
+  ],
+  "source": {
+    "synthesis_id_original": "147.json_Ag_2701",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Ag | method: biosynthesis | solvent: water | temperature: 37.0 | crystalsystem: cubic | shape: spherical | size.length: 30.0 | size.width: 30.0 | size.depth: 30.0 | precursor: AgNO3 (conc 1.0) | additive: oxalis griffithii leaves extract | pdfno_list: 04-0873"
+}

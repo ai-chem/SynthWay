@@ -1,0 +1,51 @@
+{
+  "synthesis_id": "599.json_SrTiO3_3050",
+  "composition": "SrTiO3",
+  "elements": [
+    "Sr",
+    "Ti",
+    "O"
+  ],
+  "method": "microwave-assisted hydrothermal",
+  "precursors": [
+    {
+      "name": "NaOH"
+    },
+    {
+      "name": "Sr(NO3)2",
+      "conc": 3000.0
+    },
+    {
+      "name": "TiO2",
+      "mass": 2.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "urea",
+      "conc": 2000.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 180.0,
+    "ph": 13.0
+  },
+  "product": {
+    "shape": "cube",
+    "size": {
+      "length": 40.0
+    }
+  },
+  "pdfno_list": [
+    "00-035-0734"
+  ],
+  "source": {
+    "synthesis_id_original": "599.json_SrTiO3_3050",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: SrTiO3 | method: microwave-assisted hydrothermal | solvent: water | temperature: 180.0 | pH: 13.0 | shape: cube | size.length: 40.0 | precursor: NaOH | precursor: Sr(NO3)2 (conc 3000.0) | precursor: TiO2 (mass 2.0) | additive: urea (conc 2000.0) | pdfno_list: 00-035-0734"
+}

@@ -1,0 +1,53 @@
+{
+  "synthesis_id": "1311.json_DFNT_1121",
+  "composition": "DFNT",
+  "elements": [
+    "D",
+    "F",
+    "N",
+    "T"
+  ],
+  "precursors": [
+    {
+      "name": "Ti(OBu)4"
+    },
+    {
+      "name": "C21H38BrN",
+      "mass": 2.3
+    },
+    {
+      "name": "CO(NH2)2",
+      "mass": 1.1
+    }
+  ],
+  "additives": [
+    {
+      "name": "n-pentanol"
+    },
+    {
+      "name": "cyclohexane"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 25.0
+  },
+  "conditions": {
+    "temperature": 75.0
+  },
+  "product": {
+    "shape": "septum-like tilts with consistent masses and dendrimer strings",
+    "size": {
+      "depth": 40.0
+    }
+  },
+  "pdfno_list": [
+    "73-1764"
+  ],
+  "source": {
+    "synthesis_id_original": "1311.json_DFNT_1121",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: DFNT | solvent: distilled water | solvent.volume: 25.0 | temperature: 75.0 | shape: septum-like tilts with consistent masses and dendrimer strings | size.depth: 40.0 | precursor: Ti(OBu)4 | precursor: C21H38BrN (mass 2.3) | precursor: CO(NH2)2 (mass 1.1) | additive: n-pentanol | additive: cyclohexane | pdfno_list: 73-1764"
+}

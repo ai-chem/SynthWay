@@ -1,0 +1,60 @@
+{
+  "synthesis_id": "302.json_ChiTiO@Ag_238",
+  "composition": "ChiTiO@Ag",
+  "elements": [
+    "Ch",
+    "Ti",
+    "O",
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "TiO2",
+      "mass": 2.5
+    },
+    {
+      "name": "Chi",
+      "mass": 0.3
+    }
+  ],
+  "additives": [
+    {
+      "name": "diethanolamine"
+    },
+    {
+      "name": "silver nitrate"
+    },
+    {
+      "name": "titania",
+      "mass": 0.1
+    },
+    {
+      "name": "sodium borohydride"
+    },
+    {
+      "name": "paraffin"
+    },
+    {
+      "name": "glutaraldehyde",
+      "mass": 0.1
+    }
+  ],
+  "solvent": {
+    "name": "ethanol",
+    "volume": 80.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 234.0,
+      "width": 234.0,
+      "depth": 234.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "302.json_ChiTiO@Ag_238",
+    "nodes": 18,
+    "edges": 18
+  },
+  "retrieval_text": "composition: ChiTiO@Ag | solvent: ethanol | solvent.volume: 80.0 | shape: spherical | size.length: 234.0 | size.width: 234.0 | size.depth: 234.0 | precursor: TiO2 (mass 2.5) | precursor: Chi (mass 0.3) | additive: diethanolamine | additive: silver nitrate | additive: titania (mass 0.1) | additive: sodium borohydride | additive: paraffin | additive: glutaraldehyde (mass 0.1)"
+}

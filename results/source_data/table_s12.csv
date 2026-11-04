@@ -1,0 +1,13 @@
+criterion,metric,description,value,ci95_low,ci95_high,ci_method,ci95_low_bootstrap,ci95_high_bootstrap
+cpc,"ICC(A,1)","two-way mixed, absolute agreement, single measurement (Koo & Li)",0.26523364500559143,0.09662253675434798,0.43151467763080104,bootstrap,,
+cpc,"ICC(A,4)","two-way mixed, absolute agreement, average measurement (Koo & Li)",0.5908191945182983,0.2996353269932836,0.7522447533816923,bootstrap,,
+cpc,"ICC(3,1)","two-way mixed, consistency, single measurement",0.3075526995243752,0.15078050715149763,0.4887284176504048,analytic_F,0.11936829512735415,0.4852757312937031
+cpc,"ICC(3,4)","two-way mixed, consistency, average measurement",0.639848966912258,0.41527562195011475,0.7926872761331408,analytic_F,0.3515731194012978,0.7904069659714306
+faithfulness,"ICC(A,1)","two-way mixed, absolute agreement, single measurement (Koo & Li)",0.4573101857564568,0.29844378726150556,0.6130073250003543,bootstrap,,
+faithfulness,"ICC(A,4)","two-way mixed, absolute agreement, average measurement (Koo & Li)",0.7712033294649645,0.6298503611012717,0.8636880307973553,bootstrap,,
+faithfulness,"ICC(3,1)","two-way mixed, consistency, single measurement",0.5234060120153397,0.36725456969947096,0.6766034793165884,analytic_F,0.374124827154069,0.6655532434228446
+faithfulness,"ICC(3,4)","two-way mixed, consistency, average measurement",0.8145706001200409,0.6989454963174924,0.8932617972950644,analytic_F,0.7051061267522759,0.8883934822646671
+relevance,"ICC(A,1)","two-way mixed, absolute agreement, single measurement (Koo & Li)",0.5060084443000974,-2.428612866367528e-16,0.6001577287066244,bootstrap,,
+relevance,"ICC(A,4)","two-way mixed, absolute agreement, average measurement (Koo & Li)",0.8038178769508577,-9.71445146547012e-16,0.8572233173753872,bootstrap,,
+relevance,"ICC(3,1)","two-way mixed, consistency, single measurement",0.5027428202646015,0.34499722215713724,0.6599459822920458,analytic_F,-2.630997271898156e-16,0.602749907097733
+relevance,"ICC(3,4)","two-way mixed, consistency, average measurement",0.8017496462112441,0.678129995009459,0.8858817077403676,analytic_F,-1.0523989087592631e-15,0.8585417493714436

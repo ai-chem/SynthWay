@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "913.json_NiS_985",
+  "composition": "NiS",
+  "elements": [
+    "Ni",
+    "S"
+  ],
+  "method": "reduction",
+  "precursors": [
+    {
+      "name": "Ni(NO3)2·6H2O",
+      "mass": 0.29
+    },
+    {
+      "name": "S",
+      "mass": 0.0032
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleylamine"
+    }
+  ],
+  "solvent": {
+    "name": "oleylamine",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 210.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 9.0,
+      "width": 9.0,
+      "depth": 9.0
+    }
+  },
+  "pdfno_list": [
+    "01-075-0613"
+  ],
+  "source": {
+    "synthesis_id_original": "913.json_NiS_985",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: NiS | method: reduction | solvent: oleylamine | solvent.volume: 20.0 | temperature: 210.0 | shape: spherical | size.length: 9.0 | size.width: 9.0 | size.depth: 9.0 | precursor: Ni(NO3)2·6H2O (mass 0.29) | precursor: S (mass 0.0032) | additive: oleylamine | pdfno_list: 01-075-0613"
+}

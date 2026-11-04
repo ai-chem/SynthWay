@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "1637.json_Ag_4092",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "green tea (gt) leaf extract"
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 100.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "size": {
+      "length": 24.0,
+      "width": 24.0,
+      "depth": 24.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1637.json_Ag_4092",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Ag | solvent: water | temperature: 25.0 | size.length: 24.0 | size.width: 24.0 | size.depth: 24.0 | precursor: AgNO3 (conc 10.0) | additive: green tea (gt) leaf extract | additive: sodium hydroxide (conc 100.0)"
+}

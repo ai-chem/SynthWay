@@ -1,0 +1,37 @@
+{
+  "synthesis_id": "1924.json_NiO_4020",
+  "composition": "NiO",
+  "elements": [
+    "Ni",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Ni(CH3COO)2",
+      "conc": 100.0
+    }
+  ],
+  "solvent": {
+    "name": "ethanol amine",
+    "volume": 0.8
+  },
+  "conditions": {
+    "temperature": 350.0
+  },
+  "product": {
+    "size": {
+      "length": 4000.0,
+      "width": 4000.0,
+      "depth": 4000.0
+    }
+  },
+  "pdfno_list": [
+    "71-1179"
+  ],
+  "source": {
+    "synthesis_id_original": "1924.json_NiO_4020",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: NiO | solvent: ethanol amine | solvent.volume: 0.8 | temperature: 350.0 | size.length: 4000.0 | size.width: 4000.0 | size.depth: 4000.0 | precursor: Ni(CH3COO)2 (conc 100.0) | pdfno_list: 71-1179"
+}

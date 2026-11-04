@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "1291.json_Ag_515",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "ammonia"
+    },
+    {
+      "name": "murraya koenigii leaf extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0,
+    "ph": 7.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "plate",
+    "size": {
+      "length": 40.0,
+      "width": 40.0,
+      "depth": 15.0
+    }
+  },
+  "pdfno_list": [
+    "04-0783"
+  ],
+  "source": {
+    "synthesis_id_original": "1291.json_Ag_515",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Ag | method: green synthesis | solvent: water | temperature: 25.0 | pH: 7.0 | crystalsystem: cubic | shape: plate | size.length: 40.0 | size.width: 40.0 | size.depth: 15.0 | precursor: AgNO3 (conc 1.0) | additive: ammonia | additive: murraya koenigii leaf extract | pdfno_list: 04-0783"
+}

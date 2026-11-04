@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1558.json_Au_2416",
+  "composition": "Au",
+  "elements": [
+    "Au"
+  ],
+  "precursors": [
+    {
+      "name": "HAuCl4"
+    }
+  ],
+  "additives": [
+    {
+      "name": "xanthan",
+      "mass": 0.25
+    },
+    {
+      "name": "sodium hydroxide",
+      "mass": 1.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 60.0,
+    "ph": 11.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 32.0,
+      "width": 32.0,
+      "depth": 32.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1558.json_Au_2416",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Au | solvent: water | temperature: 60.0 | pH: 11.0 | crystalsystem: cubic | shape: spherical | size.length: 32.0 | size.width: 32.0 | size.depth: 32.0 | precursor: HAuCl4 | additive: xanthan (mass 0.25) | additive: sodium hydroxide (mass 1.0)"
+}

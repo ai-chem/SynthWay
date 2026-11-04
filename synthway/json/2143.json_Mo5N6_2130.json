@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "2143.json_Mo5N6_2130",
+  "composition": "Mo5N6",
+  "elements": [
+    "Mo",
+    "N"
+  ],
+  "precursors": [
+    {
+      "name": "Mo",
+      "mass": 0.08
+    },
+    {
+      "name": "Ni(CH3COO)2·4H2O",
+      "mass": 0.002
+    }
+  ],
+  "additives": [
+    {
+      "name": "hydrogen peroxide"
+    },
+    {
+      "name": "sodium chloride",
+      "mass": 130.0
+    }
+  ],
+  "solvent": {
+    "name": "ethanol",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 750.0,
+    "ph": 7.0
+  },
+  "product": {
+    "shape": "sheets"
+  },
+  "pdfno_list": [
+    "51 1326"
+  ],
+  "source": {
+    "synthesis_id_original": "2143.json_Mo5N6_2130",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Mo5N6 | solvent: ethanol | solvent.volume: 10.0 | temperature: 750.0 | pH: 7.0 | shape: sheets | precursor: Mo (mass 0.08) | precursor: Ni(CH3COO)2·4H2O (mass 0.002) | additive: hydrogen peroxide | additive: sodium chloride (mass 130.0) | pdfno_list: 51 1326"
+}

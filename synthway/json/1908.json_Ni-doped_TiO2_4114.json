@@ -1,0 +1,53 @@
+{
+  "synthesis_id": "1908.json_Ni-doped_TiO2_4114",
+  "composition": "Ni-doped TiO2",
+  "elements": [
+    "Ni",
+    "Ti",
+    "O"
+  ],
+  "method": "modified sol–gel method",
+  "precursors": [
+    {
+      "name": "Ti(OC3H7)4"
+    }
+  ],
+  "additives": [
+    {
+      "name": "glacial acetic acid"
+    },
+    {
+      "name": "sodium dodecyl sulfate"
+    },
+    {
+      "name": "nickel(II) sulfate hexahydrate"
+    },
+    {
+      "name": "ammonia"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "ph": 10.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "shape": "uneven and non-spherical",
+    "size": {
+      "length": 8.59,
+      "width": 8.59,
+      "depth": 8.59
+    }
+  },
+  "pdfno_list": [
+    "21-1272"
+  ],
+  "source": {
+    "synthesis_id_original": "1908.json_Ni-doped_TiO2_4114",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Ni-doped TiO2 | method: modified sol–gel method | solvent: water | pH: 10.0 | crystalsystem: tetragonal | shape: uneven and non-spherical | size.length: 8.59 | size.width: 8.59 | size.depth: 8.59 | precursor: Ti(OC3H7)4 | additive: glacial acetic acid | additive: sodium dodecyl sulfate | additive: nickel(II) sulfate hexahydrate | additive: ammonia | pdfno_list: 21-1272"
+}

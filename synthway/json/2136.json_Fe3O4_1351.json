@@ -1,0 +1,51 @@
+{
+  "synthesis_id": "2136.json_Fe3O4_1351",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Fe(acac)3",
+      "mass": 0.71
+    }
+  ],
+  "additives": [
+    {
+      "name": "1,2-hexadecanediol",
+      "mass": 2.38,
+      "conc": 10.0
+    },
+    {
+      "name": "oleic acid",
+      "mass": 1.69,
+      "conc": 6.0
+    },
+    {
+      "name": "oleylamine",
+      "mass": 1.6,
+      "conc": 6.0
+    }
+  ],
+  "solvent": {
+    "name": "phenyl ether",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "size": {
+      "length": 4.0,
+      "width": 4.0,
+      "depth": 4.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2136.json_Fe3O4_1351",
+    "nodes": 17,
+    "edges": 17
+  },
+  "retrieval_text": "composition: Fe3O4 | solvent: phenyl ether | solvent.volume: 20.0 | temperature: 200.0 | size.length: 4.0 | size.width: 4.0 | size.depth: 4.0 | precursor: Fe(acac)3 (mass 0.71) | additive: 1,2-hexadecanediol (mass 2.38; conc 10.0) | additive: oleic acid (mass 1.69; conc 6.0) | additive: oleylamine (mass 1.6; conc 6.0)"
+}

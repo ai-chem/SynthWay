@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "711.json_MnFe2O4_3228",
+  "composition": "MnFe2O4",
+  "elements": [
+    "Mn",
+    "Fe",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Mn(NO3)2",
+      "mass": 4.9
+    },
+    {
+      "name": "Fe(NO3)3*9H2O",
+      "mass": 13.4
+    },
+    {
+      "name": "NaOH",
+      "mass": 4.2
+    }
+  ],
+  "solvent": {
+    "name": "distilled water/ethylene diamine",
+    "volume": 123.0
+  },
+  "conditions": {
+    "temperature": 500.0
+  },
+  "product": {
+    "shape": "spherical"
+  },
+  "source": {
+    "synthesis_id_original": "711.json_MnFe2O4_3228",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: MnFe2O4 | solvent: distilled water/ethylene diamine | solvent.volume: 123.0 | temperature: 500.0 | shape: spherical | precursor: Mn(NO3)2 (mass 4.9) | precursor: Fe(NO3)3*9H2O (mass 13.4) | precursor: NaOH (mass 4.2)"
+}

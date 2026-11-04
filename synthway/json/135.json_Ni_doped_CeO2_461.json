@@ -1,0 +1,29 @@
+{
+  "synthesis_id": "135.json_Ni_doped_CeO2_461",
+  "composition": "Ni doped CeO2",
+  "elements": [
+    "Ni",
+    "Ce",
+    "O"
+  ],
+  "solvent": {
+    "name": "methanol",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 400.0
+  },
+  "product": {
+    "size": {
+      "length": 9.2,
+      "width": 9.2,
+      "depth": 9.2
+    }
+  },
+  "source": {
+    "synthesis_id_original": "135.json_Ni_doped_CeO2_461",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: Ni doped CeO2 | solvent: methanol | solvent.volume: 100.0 | temperature: 400.0 | size.length: 9.2 | size.width: 9.2 | size.depth: 9.2"
+}

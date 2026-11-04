@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "351.json_ZnFe2O4_2439",
+  "composition": "ZnFe2O4",
+  "elements": [
+    "Zn",
+    "Fe",
+    "O"
+  ],
+  "method": "template",
+  "solvent": {
+    "name": "water",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 900.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "wire",
+    "size": {
+      "width": 7.5
+    }
+  },
+  "pdfno_list": [
+    "22-1012"
+  ],
+  "source": {
+    "synthesis_id_original": "351.json_ZnFe2O4_2439",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: ZnFe2O4 | method: template | solvent: water | solvent.volume: 10.0 | temperature: 900.0 | crystalsystem: cubic | shape: wire | size.width: 7.5 | pdfno_list: 22-1012"
+}

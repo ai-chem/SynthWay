@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "2409.json_CdO2_206",
+  "composition": "CdO2",
+  "elements": [
+    "Cd",
+    "O"
+  ],
+  "solvent": {
+    "name": "h2o2 (3%, v/v)",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 140.0
+  },
+  "product": {
+    "crystalsystem": "cubic phase",
+    "shape": "nanocrystals",
+    "size": {
+      "length": 15.0,
+      "width": 15.0,
+      "depth": 15.0
+    }
+  },
+  "pdfno_list": [
+    "39-1221"
+  ],
+  "source": {
+    "synthesis_id_original": "2409.json_CdO2_206",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: CdO2 | solvent: h2o2 (3%, v/v) | solvent.volume: 30.0 | temperature: 140.0 | crystalsystem: cubic phase | shape: nanocrystals | size.length: 15.0 | size.width: 15.0 | size.depth: 15.0 | pdfno_list: 39-1221"
+}

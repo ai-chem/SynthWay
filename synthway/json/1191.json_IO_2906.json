@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "1191.json_IO_2906",
+  "composition": "IO",
+  "elements": [
+    "I",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "FeCl3*6H2O"
+    },
+    {
+      "name": "FeCl2*4H2O"
+    }
+  ],
+  "additives": [
+    {
+      "name": "ocimum tenuiflorum leaf extract"
+    },
+    {
+      "name": "sodium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 9.8,
+      "width": 9.8,
+      "depth": 9.8
+    }
+  },
+  "pdfno_list": [
+    "029129"
+  ],
+  "source": {
+    "synthesis_id_original": "1191.json_IO_2906",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: IO | method: green synthesis | solvent: water | temperature: 80.0 | shape: spherical | size.length: 9.8 | size.width: 9.8 | size.depth: 9.8 | precursor: FeCl3*6H2O | precursor: FeCl2*4H2O | additive: ocimum tenuiflorum leaf extract | additive: sodium hydroxide | pdfno_list: 029129"
+}

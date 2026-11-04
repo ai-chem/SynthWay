@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "1578.json_Ag_2382",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "zataria multiflora seed extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0,
+    "ph": 9.0
+  },
+  "product": {
+    "shape": "spherical-shaped",
+    "size": {
+      "length": 65.4,
+      "width": 65.4,
+      "depth": 65.4
+    }
+  },
+  "pdfno_list": [
+    "01-089-3722 00-006-0480"
+  ],
+  "source": {
+    "synthesis_id_original": "1578.json_Ag_2382",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Ag | method: green synthesis | solvent: water | temperature: 25.0 | pH: 9.0 | shape: spherical-shaped | size.length: 65.4 | size.width: 65.4 | size.depth: 65.4 | precursor: AgNO3 (conc 1.0) | additive: zataria multiflora seed extract | pdfno_list: 01-089-3722 00-006-0480"
+}

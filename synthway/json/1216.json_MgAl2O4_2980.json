@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1216.json_MgAl2O4_2980",
+  "composition": "MgAl2O4",
+  "elements": [
+    "Mg",
+    "Al",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "Mg(NO3)2*6H2O",
+      "conc": 0.05
+    },
+    {
+      "name": "Al(NO3)3*9H2O",
+      "conc": 0.1
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 40.0
+  },
+  "conditions": {
+    "temperature": 200.0,
+    "ph": 9.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "hexagonal plates"
+  },
+  "pdfno_list": [
+    "77-0435"
+  ],
+  "source": {
+    "synthesis_id_original": "1216.json_MgAl2O4_2980",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: MgAl2O4 | method: hydrothermal | solvent: deionized water | solvent.volume: 40.0 | temperature: 200.0 | pH: 9.0 | crystalsystem: cubic | shape: hexagonal plates | precursor: Mg(NO3)2*6H2O (conc 0.05) | precursor: Al(NO3)3*9H2O (conc 0.1) | additive: sodium hydroxide | pdfno_list: 77-0435"
+}

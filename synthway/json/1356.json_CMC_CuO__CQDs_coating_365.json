@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1356.json_CMC/CuO_/CQDs_coating_365",
+  "composition": "CMC/CuO /CQDs coating",
+  "elements": [
+    "C",
+    "M",
+    "Cu",
+    "O",
+    "Q",
+    "Ds"
+  ],
+  "method": "sol-gel dip-coating",
+  "precursors": [
+    {
+      "name": "CMC",
+      "mass": 0.06
+    },
+    {
+      "name": "CuO",
+      "mass": 0.4
+    },
+    {
+      "name": "QCD",
+      "mass": 0.1
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "shape": "uniform and homogeneous structure",
+    "size": {
+      "width": 2800.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1356.json_CMC/CuO_/CQDs_coating_365",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: CMC/CuO /CQDs coating | method: sol-gel dip-coating | solvent: distilled water | solvent.volume: 100.0 | temperature: 25.0 | shape: uniform and homogeneous structure | size.width: 2800.0 | precursor: CMC (mass 0.06) | precursor: CuO (mass 0.4) | precursor: QCD (mass 0.1)"
+}

@@ -1,0 +1,34 @@
+{
+  "synthesis_id": "1645.json_Ag_1199",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3 (sol.)"
+    }
+  ],
+  "additives": [
+    {
+      "name": "rhizome extract of k. angustifolia"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "trigonal",
+    "size": {
+      "length": 36.36,
+      "width": 36.36,
+      "depth": 36.36
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1645.json_Ag_1199",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: Ag | solvent: water | shape: trigonal | size.length: 36.36 | size.width: 36.36 | size.depth: 36.36 | precursor: AgNO3 (sol.) | additive: rhizome extract of k. angustifolia"
+}

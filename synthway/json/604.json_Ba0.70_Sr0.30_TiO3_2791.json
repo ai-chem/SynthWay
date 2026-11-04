@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "604.json_Ba0.70*Sr0.30*TiO3_2791",
+  "composition": "Ba0.70*Sr0.30*TiO3",
+  "elements": [
+    "Ba",
+    "Sr",
+    "Ti",
+    "O"
+  ],
+  "method": "citrate precursor method",
+  "precursors": [
+    {
+      "name": "Ti(C4H9O)4",
+      "conc": 100.0
+    },
+    {
+      "name": "C6H8O7",
+      "conc": 500.0
+    },
+    {
+      "name": "BaCO3"
+    },
+    {
+      "name": "SrCO3"
+    }
+  ],
+  "additives": [
+    {
+      "name": "water",
+      "mass": 0.5
+    }
+  ],
+  "solvent": {
+    "name": "ethyleneglycol"
+  },
+  "conditions": {
+    "temperature": 850.0,
+    "ph": 3.2
+  },
+  "product": {
+    "shape": "square",
+    "size": {
+      "length": 25.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "604.json_Ba0.70*Sr0.30*TiO3_2791",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Ba0.70*Sr0.30*TiO3 | method: citrate precursor method | solvent: ethyleneglycol | temperature: 850.0 | pH: 3.2 | shape: square | size.length: 25.0 | precursor: Ti(C4H9O)4 (conc 100.0) | precursor: C6H8O7 (conc 500.0) | precursor: BaCO3 | precursor: SrCO3 | additive: water (mass 0.5)"
+}

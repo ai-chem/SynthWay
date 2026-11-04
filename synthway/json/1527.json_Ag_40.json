@@ -1,0 +1,36 @@
+{
+  "synthesis_id": "1527.json_Ag_40",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 20.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "argyreia nervosa leaf extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 5.5,
+      "width": 5.5,
+      "depth": 5.5
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1527.json_Ag_40",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Ag | method: green synthesis | solvent: water | shape: spherical | size.length: 5.5 | size.width: 5.5 | size.depth: 5.5 | precursor: AgNO3 (conc 20.0) | additive: argyreia nervosa leaf extract"
+}

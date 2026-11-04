@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "2081.json_WSe2_677",
+  "composition": "WSe2",
+  "elements": [
+    "W",
+    "Se"
+  ],
+  "precursors": [
+    {
+      "name": "WSe2",
+      "mass": 0.2
+    },
+    {
+      "name": "Na2S",
+      "conc": 1000.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "potassium chloride",
+      "mass": 0.04
+    },
+    {
+      "name": "chitosan",
+      "mass": 6e-05
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "sheets",
+    "size": {
+      "length": 200.0,
+      "width": 200.0,
+      "depth": 10.0
+    }
+  },
+  "pdfno_list": [
+    "38-1388"
+  ],
+  "source": {
+    "synthesis_id_original": "2081.json_WSe2_677",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: WSe2 | solvent: water | crystalsystem: hexagonal | shape: sheets | size.length: 200.0 | size.width: 200.0 | size.depth: 10.0 | precursor: WSe2 (mass 0.2) | precursor: Na2S (conc 1000.0) | additive: potassium chloride (mass 0.04) | additive: chitosan (mass 6e-05) | pdfno_list: 38-1388"
+}

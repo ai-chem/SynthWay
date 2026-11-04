@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "1027.json_CdS_4024",
+  "composition": "CdS",
+  "elements": [
+    "Cd",
+    "S"
+  ],
+  "method": "precipitation",
+  "precursors": [
+    {
+      "name": "CdSO4",
+      "conc": 100.0
+    },
+    {
+      "name": "Na2S",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "thioglycerol",
+      "conc": 200.0
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "ph": 2.26
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "rhomboidal",
+    "size": {
+      "width": 2.8
+    }
+  },
+  "pdfno_list": [
+    "77-2306"
+  ],
+  "source": {
+    "synthesis_id_original": "1027.json_CdS_4024",
+    "nodes": 14,
+    "edges": 14
+  },
+  "retrieval_text": "composition: CdS | method: precipitation | solvent: deionized water | solvent.volume: 100.0 | pH: 2.26 | crystalsystem: hexagonal | shape: rhomboidal | size.width: 2.8 | precursor: CdSO4 (conc 100.0) | precursor: Na2S (conc 100.0) | additive: thioglycerol (conc 200.0) | pdfno_list: 77-2306"
+}

@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "1466.json_STV-Mag_cCHOL_2561",
+  "composition": "STV-Mag cCHOL",
+  "elements": [
+    "S",
+    "T",
+    "V",
+    "Ma",
+    "C",
+    "H",
+    "O",
+    "L"
+  ],
+  "precursors": [
+    {
+      "name": "cCHOL"
+    },
+    {
+      "name": "STV-Mag NPs"
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleic acid",
+      "conc": 1.0
+    }
+  ],
+  "solvent": {
+    "name": "chloroform"
+  },
+  "product": {
+    "shape": "leaf-like"
+  },
+  "source": {
+    "synthesis_id_original": "1466.json_STV-Mag_cCHOL_2561",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: STV-Mag cCHOL | solvent: chloroform | shape: leaf-like | precursor: cCHOL | precursor: STV-Mag NPs | additive: oleic acid (conc 1.0)"
+}

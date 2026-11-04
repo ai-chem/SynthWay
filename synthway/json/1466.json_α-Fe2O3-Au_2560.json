@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "1466.json_α-Fe2O3-Au_2560",
+  "composition": "α-Fe2O3-Au",
+  "elements": [
+    "Fe",
+    "O",
+    "Au"
+  ],
+  "method": "in situ",
+  "precursors": [
+    {
+      "name": "α-Fe2O3",
+      "mass": 0.02
+    },
+    {
+      "name": "HAuCl4",
+      "mass": 0.02,
+      "conc": 3.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "l-cysteine",
+      "conc": 10.0
+    },
+    {
+      "name": "ascorbic acid",
+      "conc": 50.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "rhombohedral",
+    "shape": "spherical",
+    "size": {
+      "length": 48.14,
+      "width": 48.14,
+      "depth": 48.14
+    }
+  },
+  "pdfno_list": [
+    "033-0664"
+  ],
+  "source": {
+    "synthesis_id_original": "1466.json_α-Fe2O3-Au_2560",
+    "nodes": 17,
+    "edges": 17
+  },
+  "retrieval_text": "composition: α-Fe2O3-Au | method: in situ | solvent: water | crystalsystem: rhombohedral | shape: spherical | size.length: 48.14 | size.width: 48.14 | size.depth: 48.14 | precursor: α-Fe2O3 (mass 0.02) | precursor: HAuCl4 (mass 0.02; conc 3.0) | additive: l-cysteine (conc 10.0) | additive: ascorbic acid (conc 50.0) | pdfno_list: 033-0664"
+}

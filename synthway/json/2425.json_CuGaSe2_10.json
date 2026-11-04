@@ -1,0 +1,32 @@
+{
+  "synthesis_id": "2425.json_CuGaSe2_10",
+  "composition": "CuGaSe2",
+  "elements": [
+    "Cu",
+    "Ga",
+    "Se"
+  ],
+  "solvent": {
+    "name": "octadecene",
+    "volume": 6.0
+  },
+  "conditions": {
+    "temperature": 255.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal chalcopyrite",
+    "size": {
+      "length": 328.1,
+      "width": 45.3
+    }
+  },
+  "pdfno_list": [
+    "31-0456"
+  ],
+  "source": {
+    "synthesis_id_original": "2425.json_CuGaSe2_10",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: CuGaSe2 | solvent: octadecene | solvent.volume: 6.0 | temperature: 255.0 | crystalsystem: tetragonal chalcopyrite | size.length: 328.1 | size.width: 45.3 | pdfno_list: 31-0456"
+}

@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "388.json_C-coated_SnO2_2276",
+  "composition": "C-coated SnO2",
+  "elements": [
+    "C",
+    "Sn",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "solvent": {
+    "name": "water",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "shape": "core-shell",
+    "size": {
+      "length": 75.0
+    }
+  },
+  "pdfno_list": [
+    "41-1445"
+  ],
+  "source": {
+    "synthesis_id_original": "388.json_C-coated_SnO2_2276",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: C-coated SnO2 | method: hydrothermal | solvent: water | solvent.volume: 10.0 | temperature: 180.0 | crystalsystem: tetragonal | shape: core-shell | size.length: 75.0 | pdfno_list: 41-1445"
+}

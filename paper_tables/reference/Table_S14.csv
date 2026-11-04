@@ -1,0 +1,7 @@
+Model,Chemical Plausibility & Consistency,Chemical Plausibility & Consistency,Answer Relevance,Answer Relevance,Faithfulness,Faithfulness,Passed all three metrics,Passed all three metrics
+Model,LLM judge,Experts,LLM judge,Experts,LLM judge,Experts,LLM judge,Experts
+Claude Opus 4.5,8/10 (80.0%),6/10 (60.0%),10/10 (100.0%),10/10 (100.0%),9/10 (90.0%),5/10 (50.0%),7/10 (70.0%),2/10 (20.0%)
+Gemini 2.0 Flash,10/10 (100.0%),8/10 (80.0%),10/10 (100.0%),10/10 (100.0%),9/10 (90.0%),2/10 (20.0%),9/10 (90.0%),1/10 (10.0%)
+Llama 4 Maverick,10/10 (100.0%),6/10 (60.0%),6/10 (60.0%),10/10 (100.0%),9/10 (90.0%),4/10 (40.0%),6/10 (60.0%),1/10 (10.0%)
+NVIDIA Nemotron 3 Nano 30B A3B,8/10 (80.0%),3/10 (30.0%),10/10 (100.0%),9/10 (90.0%),9/10 (90.0%),1/10 (10.0%),7/10 (70.0%),0/10 (0.0%)
+ALL MODELS,36/40 (90.0%),23/40 (57.5%),36/40 (90.0%),39/40 (97.5%),36/40 (90.0%),12/40 (30.0%),29/40 (72.5%),4/40 (10.0%)

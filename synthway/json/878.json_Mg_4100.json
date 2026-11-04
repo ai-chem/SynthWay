@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "878.json_Mg_4100",
+  "composition": "Mg",
+  "elements": [
+    "Mg"
+  ],
+  "method": "solution reduction",
+  "precursors": [
+    {
+      "name": "Mg(acac)2*2H2O",
+      "mass": 0.2
+    },
+    {
+      "name": "NaBH4",
+      "mass": 0.15
+    }
+  ],
+  "additives": [
+    {
+      "name": "hexadecylamine",
+      "mass": 1.0
+    }
+  ],
+  "solvent": {
+    "name": "o-dichlorobenzene",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "size": {
+      "width": 25.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "878.json_Mg_4100",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Mg | method: solution reduction | solvent: o-dichlorobenzene | solvent.volume: 50.0 | temperature: 180.0 | crystalsystem: hexagonal | size.width: 25.0 | precursor: Mg(acac)2*2H2O (mass 0.2) | precursor: NaBH4 (mass 0.15) | additive: hexadecylamine (mass 1.0)"
+}

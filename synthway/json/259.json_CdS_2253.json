@@ -1,0 +1,29 @@
+{
+  "synthesis_id": "259.json_CdS_2253",
+  "composition": "CdS",
+  "elements": [
+    "Cd",
+    "S"
+  ],
+  "method": "chemical precipitation",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 80.0,
+    "ph": 9.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "nanoclusters",
+    "size": {
+      "length": 105.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "259.json_CdS_2253",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: CdS | method: chemical precipitation | solvent: water | temperature: 80.0 | pH: 9.0 | crystalsystem: hexagonal | shape: nanoclusters | size.length: 105.0"
+}

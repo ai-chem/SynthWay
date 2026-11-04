@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "834.json_BaTiO3_3463",
+  "composition": "BaTiO3",
+  "elements": [
+    "Ba",
+    "Ti",
+    "O"
+  ],
+  "method": "one-step sol-precipitation route",
+  "precursors": [
+    {
+      "name": "TiCl4"
+    },
+    {
+      "name": "BaCl2",
+      "conc": 385.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 12000.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "shape": "cube",
+    "size": {
+      "length": 20.0,
+      "width": 20.0,
+      "depth": 20.0
+    }
+  },
+  "pdfno_list": [
+    "75-0213"
+  ],
+  "source": {
+    "synthesis_id_original": "834.json_BaTiO3_3463",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: BaTiO3 | method: one-step sol-precipitation route | solvent: water | temperature: 80.0 | shape: cube | size.length: 20.0 | size.width: 20.0 | size.depth: 20.0 | precursor: TiCl4 | precursor: BaCl2 (conc 385.0) | additive: sodium hydroxide (conc 12000.0) | pdfno_list: 75-0213"
+}

@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "1564.json_Au_3298",
+  "composition": "Au",
+  "elements": [
+    "Au"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "HAuCl4",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "malva verticillata leaves extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 45.0,
+    "ph": 7.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 10.0,
+      "width": 10.0,
+      "depth": 10.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1564.json_Au_3298",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Au | method: green synthesis | solvent: water | temperature: 45.0 | pH: 7.0 | shape: spherical | size.length: 10.0 | size.width: 10.0 | size.depth: 10.0 | precursor: HAuCl4 (conc 100.0) | additive: malva verticillata leaves extract"
+}

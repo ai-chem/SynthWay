@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "2104.json_Pd_3485",
+  "composition": "Pd",
+  "elements": [
+    "Pd"
+  ],
+  "precursors": [
+    {
+      "name": "Na2PdCl4",
+      "mass": 0.00267
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 0.0016
+    }
+  ],
+  "seeds": [
+    {
+      "name": "Pd",
+      "mass": 0.006
+    }
+  ],
+  "solvent": {
+    "name": "formaldehyde",
+    "volume": 0.1
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "shape": "octahedra",
+    "size": {
+      "length": 14.0,
+      "width": 14.0,
+      "depth": 14.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2104.json_Pd_3485",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Pd | solvent: formaldehyde | solvent.volume: 0.1 | temperature: 60.0 | shape: octahedra | size.length: 14.0 | size.width: 14.0 | size.depth: 14.0 | precursor: Na2PdCl4 (mass 0.00267) | additive: polyvinylpyrrolidone (mass 0.0016) | seed: Pd (mass 0.006)"
+}

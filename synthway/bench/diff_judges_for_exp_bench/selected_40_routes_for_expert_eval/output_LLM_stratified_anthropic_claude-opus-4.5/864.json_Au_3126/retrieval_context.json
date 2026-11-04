@@ -1,0 +1,11 @@
+{
+  "composition": "Au",
+  "method": null,
+  "rag_topk": 3,
+  "query": "composition: Au | Au–Ag | Au–Ag | Au–Ag | Au solution | Au solution | Au solution | Au/Ag | Au/Ag | Au/Ag | Ag–Au | Ag–Au | Ag–Au | composition Co@Au | composition Co@Au | composition Co@Au | composition Au–Ag | composition Au–Ag | composition Au–Ag | composition Au@Pt | composition Au@Pt | composition Au@Pt | composition Bi–Au | composition Bi–Au | composition Bi–Au",
+  "retrieval_context": [
+    "composition: Au–Ag | solvent: water | solvent.volume: 20.0 | crystalsystem: cubic | shape: nanodots | size.length: 10.0 | size.width: 10.0 | size.depth: 10.0 | precursor: HAuCl4 (conc 29.0) | precursor: AgNO3 (conc 6.0) | additive: chitosan (mass 0.1) | additive: ascorbic acid (conc 100.0) | pdfno_list: 45-1454",
+    "composition: Au/Ag | solvent: water | solvent.volume: 100.0 | shape: spherical | size.length: 30.0",
+    "composition: Bi–Au | solvent: tris-borate | solvent.volume: 4.0 | pH: 7.0 | crystalsystem: cubic | size.length: 13.3 | size.width: 13.3 | size.depth: 13.3 | precursor: Bi3+ (solution) (conc 0.1) | seed: Au (conc 0.015)"
+  ]
+}

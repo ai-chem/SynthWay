@@ -1,0 +1,34 @@
+{
+  "synthesis_id": "1620.json_Ag_3181",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "alocasia indica extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "size": {
+      "length": 19.6,
+      "width": 19.6,
+      "depth": 19.6
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1620.json_Ag_3181",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: Ag | solvent: water | size.length: 19.6 | size.width: 19.6 | size.depth: 19.6 | precursor: AgNO3 (conc 10.0) | additive: alocasia indica extract"
+}

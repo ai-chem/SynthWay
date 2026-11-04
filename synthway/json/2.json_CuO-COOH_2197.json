@@ -1,0 +1,32 @@
+{
+  "synthesis_id": "2.json_CuO-COOH_2197",
+  "composition": "CuO-COOH",
+  "elements": [
+    "Cu",
+    "O",
+    "C",
+    "H"
+  ],
+  "method": "decomposition",
+  "precursors": [
+    {
+      "name": "Cu2CO3(OH)2"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "size": {
+      "length": 9.2,
+      "width": 9.2,
+      "depth": 9.2
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2.json_CuO-COOH_2197",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: CuO-COOH | method: decomposition | solvent: water | size.length: 9.2 | size.width: 9.2 | size.depth: 9.2 | precursor: Cu2CO3(OH)2"
+}

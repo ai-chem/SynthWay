@@ -1,0 +1,29 @@
+{
+  "synthesis_id": "18.json_Cr2O3_3347",
+  "composition": "Cr2O3",
+  "elements": [
+    "Cr",
+    "O"
+  ],
+  "solvent": {
+    "name": "formaldehyde",
+    "volume": 5.0
+  },
+  "conditions": {
+    "temperature": 700.0
+  },
+  "product": {
+    "shape": "round",
+    "size": {
+      "length": 70.36,
+      "width": 70.36,
+      "depth": 70.36
+    }
+  },
+  "source": {
+    "synthesis_id_original": "18.json_Cr2O3_3347",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: Cr2O3 | solvent: formaldehyde | solvent.volume: 5.0 | temperature: 700.0 | shape: round | size.length: 70.36 | size.width: 70.36 | size.depth: 70.36"
+}

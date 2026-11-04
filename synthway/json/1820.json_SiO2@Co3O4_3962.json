@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "1820.json_SiO2@Co3O4_3962",
+  "composition": "SiO2@Co3O4",
+  "elements": [
+    "Si",
+    "O",
+    "Co"
+  ],
+  "precursors": [
+    {
+      "name": "Co(NO3)2",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "urea",
+      "mass": 5.0
+    }
+  ],
+  "seeds": [
+    {
+      "name": "Si",
+      "mass": 0.1
+    }
+  ],
+  "solvent": {
+    "name": "beaker",
+    "volume": 250.0
+  },
+  "conditions": {
+    "temperature": 85.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 300.0,
+      "width": 300.0,
+      "depth": 300.0
+    }
+  },
+  "pdfno_list": [
+    "42-1467"
+  ],
+  "source": {
+    "synthesis_id_original": "1820.json_SiO2@Co3O4_3962",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: SiO2@Co3O4 | solvent: beaker | solvent.volume: 250.0 | temperature: 85.0 | crystalsystem: cubic | shape: spherical | size.length: 300.0 | size.width: 300.0 | size.depth: 300.0 | precursor: Co(NO3)2 (conc 10.0) | additive: urea (mass 5.0) | seed: Si (mass 0.1) | pdfno_list: 42-1467"
+}

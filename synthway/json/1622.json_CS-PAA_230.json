@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "1622.json_CS-PAA_230",
+  "composition": "CS-PAA",
+  "elements": [
+    "C",
+    "S",
+    "P",
+    "A"
+  ],
+  "method": "ionic gelation",
+  "precursors": [
+    {
+      "name": "Chi",
+      "mass": 0.1
+    },
+    {
+      "name": "PAA"
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide"
+    },
+    {
+      "name": "carbodiimide solution"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "ph": 6.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 222.0,
+      "width": 222.0,
+      "depth": 222.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1622.json_CS-PAA_230",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: CS-PAA | method: ionic gelation | solvent: water | pH: 6.0 | shape: spherical | size.length: 222.0 | size.width: 222.0 | size.depth: 222.0 | precursor: Chi (mass 0.1) | precursor: PAA | additive: sodium hydroxide | additive: carbodiimide solution"
+}

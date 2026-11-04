@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "2130.json_Ag@Fe3O4_6",
+  "composition": "Ag@Fe3O4",
+  "elements": [
+    "Ag",
+    "Fe",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Ag (colloidal NPs)"
+    },
+    {
+      "name": "Fe3O4 (NPs)"
+    }
+  ],
+  "additives": [
+    {
+      "name": "ammonium hydroxide"
+    }
+  ],
+  "seeds": [
+    {
+      "name": "colloidal Ag-NPs"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "cube",
+    "size": {
+      "length": 25.0,
+      "width": 25.0,
+      "depth": 25.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2130.json_Ag@Fe3O4_6",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Ag@Fe3O4 | solvent: water | shape: cube | size.length: 25.0 | size.width: 25.0 | size.depth: 25.0 | precursor: Ag (colloidal NPs) | precursor: Fe3O4 (NPs) | additive: ammonium hydroxide | seed: colloidal Ag-NPs"
+}

@@ -1,0 +1,31 @@
+{
+  "synthesis_id": "104.json_TiO2/WO3_1750",
+  "composition": "TiO2/WO3",
+  "elements": [
+    "Ti",
+    "O",
+    "W"
+  ],
+  "method": "schlenk",
+  "solvent": {
+    "name": "toluene under nitrogen atmosphere",
+    "volume": 12.0
+  },
+  "conditions": {
+    "temperature": 600.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 150.0,
+      "width": 150.0,
+      "depth": 150.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "104.json_TiO2/WO3_1750",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: TiO2/WO3 | method: schlenk | solvent: toluene under nitrogen atmosphere | solvent.volume: 12.0 | temperature: 600.0 | shape: spherical | size.length: 150.0 | size.width: 150.0 | size.depth: 150.0"
+}

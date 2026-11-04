@@ -1,0 +1,30 @@
+{
+  "synthesis_id": "468.json_CCaO3_2808",
+  "composition": "CCaO3",
+  "elements": [
+    "C",
+    "Ca",
+    "O"
+  ],
+  "method": "double hydrophilic block copolymers",
+  "solvent": {
+    "name": "water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 25.0,
+    "ph": 7.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "width": 10.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "468.json_CCaO3_2808",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: CCaO3 | method: double hydrophilic block copolymers | solvent: water | solvent.volume: 50.0 | temperature: 25.0 | pH: 7.0 | shape: spherical | size.width: 10.0"
+}

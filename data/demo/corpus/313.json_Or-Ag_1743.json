@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "313.json_Or-Ag_1743",
+  "composition": "Or-Ag",
+  "elements": [
+    "Or",
+    "Ag"
+  ],
+  "method": "biosynthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "ophiorrhiza rugosa (or) plant extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 28.0,
+      "width": 28.0,
+      "depth": 28.0
+    }
+  },
+  "pdfno_list": [
+    "04-0783"
+  ],
+  "source": {
+    "synthesis_id_original": "313.json_Or-Ag_1743",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Or-Ag | method: biosynthesis | solvent: water | temperature: 80.0 | crystalsystem: cubic | shape: spherical | size.length: 28.0 | size.width: 28.0 | size.depth: 28.0 | precursor: AgNO3 (conc 1.0) | additive: ophiorrhiza rugosa (or) plant extract | pdfno_list: 04-0783"
+}

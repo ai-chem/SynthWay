@@ -1,0 +1,29 @@
+{
+  "synthesis_id": "315.json_W0.0207VO2_902",
+  "composition": "W0.0207VO2",
+  "elements": [
+    "W",
+    "V",
+    "O"
+  ],
+  "method": "polyol",
+  "conditions": {
+    "temperature": 700.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "wire",
+    "size": {
+      "length": 287.0
+    }
+  },
+  "pdfno_list": [
+    "43-1051"
+  ],
+  "source": {
+    "synthesis_id_original": "315.json_W0.0207VO2_902",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: W0.0207VO2 | method: polyol | temperature: 700.0 | crystalsystem: monoclinic | shape: wire | size.length: 287.0 | pdfno_list: 43-1051"
+}

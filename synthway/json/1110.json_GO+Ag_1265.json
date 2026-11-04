@@ -1,0 +1,34 @@
+{
+  "synthesis_id": "1110.json_GO+Ag_1265",
+  "composition": "GO+Ag",
+  "elements": [
+    "G",
+    "O",
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "GO"
+    },
+    {
+      "name": "AgNO3"
+    }
+  ],
+  "additives": [
+    {
+      "name": "quercetin"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "source": {
+    "synthesis_id_original": "1110.json_GO+Ag_1265",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: GO+Ag | solvent: water | temperature: 25.0 | precursor: GO | precursor: AgNO3 | additive: quercetin"
+}

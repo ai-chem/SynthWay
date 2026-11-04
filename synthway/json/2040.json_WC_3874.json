@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "2040.json_WC_3874",
+  "composition": "WC",
+  "elements": [
+    "W",
+    "C"
+  ],
+  "method": "template-free pseudomorphic transformation",
+  "precursors": [
+    {
+      "name": "Na2WO4*2H2O",
+      "mass": 0.6579
+    }
+  ],
+  "additives": [
+    {
+      "name": "ammonium sulfate",
+      "mass": 0.5286
+    },
+    {
+      "name": "hydrochloric acid",
+      "conc": 3000.0
+    },
+    {
+      "name": "glucose",
+      "mass": 0.05
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 900.0,
+    "ph": 2.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "wire",
+    "size": {
+      "length": 170.0,
+      "width": 40.0,
+      "depth": 40.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2040.json_WC_3874",
+    "nodes": 19,
+    "edges": 18
+  },
+  "retrieval_text": "composition: WC | method: template-free pseudomorphic transformation | solvent: water | solvent.volume: 30.0 | temperature: 900.0 | pH: 2.0 | crystalsystem: hexagonal | shape: wire | size.length: 170.0 | size.width: 40.0 | size.depth: 40.0 | precursor: Na2WO4*2H2O (mass 0.6579) | additive: ammonium sulfate (mass 0.5286) | additive: hydrochloric acid (conc 3000.0) | additive: glucose (mass 0.05)"
+}

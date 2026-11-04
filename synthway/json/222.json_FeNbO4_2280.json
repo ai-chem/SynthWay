@@ -1,0 +1,31 @@
+{
+  "synthesis_id": "222.json_FeNbO4_2280",
+  "composition": "FeNbO4",
+  "elements": [
+    "Fe",
+    "Nb",
+    "O"
+  ],
+  "method": "conventional solid-state",
+  "conditions": {
+    "temperature": 1200.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "block-sharped",
+    "size": {
+      "length": 1500.0,
+      "width": 1500.0,
+      "depth": 1500.0
+    }
+  },
+  "pdfno_list": [
+    "016-0374"
+  ],
+  "source": {
+    "synthesis_id_original": "222.json_FeNbO4_2280",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: FeNbO4 | method: conventional solid-state | temperature: 1200.0 | crystalsystem: monoclinic | shape: block-sharped | size.length: 1500.0 | size.width: 1500.0 | size.depth: 1500.0 | pdfno_list: 016-0374"
+}

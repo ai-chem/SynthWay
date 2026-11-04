@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "1184.json_BGP-M-Ag_(2.0_wt%)_1144",
+  "composition": "BGP-M-Ag (2.0 wt%)",
+  "elements": [
+    "B",
+    "G",
+    "P",
+    "M",
+    "Ag"
+  ],
+  "method": "freeze-drying",
+  "precursors": [
+    {
+      "name": "BGP-Ag (2.0 wt%)"
+    },
+    {
+      "name": "C20H22N8O5",
+      "mass": 0.125
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "shape": "spongy"
+  },
+  "pdfno_list": [
+    "09-0169 09-0432"
+  ],
+  "source": {
+    "synthesis_id_original": "1184.json_BGP-M-Ag_(2.0_wt%)_1144",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: BGP-M-Ag (2.0 wt%) | method: freeze-drying | solvent: water | temperature: 60.0 | shape: spongy | precursor: BGP-Ag (2.0 wt%) | precursor: C20H22N8O5 (mass 0.125) | pdfno_list: 09-0169 09-0432"
+}

@@ -1,0 +1,32 @@
+{
+  "synthesis_id": "38.json_CuS_3424",
+  "composition": "CuS",
+  "elements": [
+    "Cu",
+    "S"
+  ],
+  "method": "hydrothermal",
+  "solvent": {
+    "name": "deionized water",
+    "volume": 40.0
+  },
+  "conditions": {
+    "temperature": 150.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "flower-like",
+    "size": {
+      "width": 75.0
+    }
+  },
+  "pdfno_list": [
+    "04-0464"
+  ],
+  "source": {
+    "synthesis_id_original": "38.json_CuS_3424",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: CuS | method: hydrothermal | solvent: deionized water | solvent.volume: 40.0 | temperature: 150.0 | crystalsystem: hexagonal | shape: flower-like | size.width: 75.0 | pdfno_list: 04-0464"
+}

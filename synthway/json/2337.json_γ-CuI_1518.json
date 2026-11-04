@@ -1,0 +1,61 @@
+{
+  "synthesis_id": "2337.json_γ-CuI_1518",
+  "composition": "γ-CuI",
+  "elements": [
+    "Cu",
+    "I"
+  ],
+  "precursors": [
+    {
+      "name": "CuO (powder)"
+    },
+    {
+      "name": "Cu(CH3COO)2",
+      "conc": 1000.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 2000.0
+    },
+    {
+      "name": "hydroxylamine hydrochloride",
+      "conc": 500.0
+    },
+    {
+      "name": "potassium iodide",
+      "conc": 1000.0
+    },
+    {
+      "name": "deionized gelatin (2%)"
+    },
+    {
+      "name": "hydrochloric acid"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 80.0,
+    "ph": 9.0
+  },
+  "product": {
+    "shape": "flake",
+    "size": {
+      "length": 600.0,
+      "width": 600.0,
+      "depth": 600.0
+    }
+  },
+  "pdfno_list": [
+    "06-0246"
+  ],
+  "source": {
+    "synthesis_id_original": "2337.json_γ-CuI_1518",
+    "nodes": 20,
+    "edges": 19
+  },
+  "retrieval_text": "composition: γ-CuI | solvent: water | temperature: 80.0 | pH: 9.0 | shape: flake | size.length: 600.0 | size.width: 600.0 | size.depth: 600.0 | precursor: CuO (powder) | precursor: Cu(CH3COO)2 (conc 1000.0) | additive: sodium hydroxide (conc 2000.0) | additive: hydroxylamine hydrochloride (conc 500.0) | additive: potassium iodide (conc 1000.0) | additive: deionized gelatin (2%) | additive: hydrochloric acid | pdfno_list: 06-0246"
+}

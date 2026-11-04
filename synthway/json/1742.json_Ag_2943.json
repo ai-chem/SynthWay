@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "1742.json_Ag_2943",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "mass": 0.084,
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "teak extracts"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "ph": 9.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 20.0,
+      "width": 20.0,
+      "depth": 20.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1742.json_Ag_2943",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Ag | solvent: distilled water | solvent.volume: 50.0 | pH: 9.0 | crystalsystem: cubic | shape: spherical | size.length: 20.0 | size.width: 20.0 | size.depth: 20.0 | precursor: AgNO3 (mass 0.084; conc 10.0) | additive: teak extracts"
+}

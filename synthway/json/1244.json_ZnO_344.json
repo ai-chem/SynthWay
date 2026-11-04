@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1244.json_ZnO_344",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Zn(CH3CO2)2*2H2O",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "pisonia alba leaf extract"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 70.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "aloe vera leaf",
+    "size": {
+      "length": 48.0,
+      "width": 48.0,
+      "depth": 48.0
+    }
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "1244.json_ZnO_344",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: ZnO | method: green synthesis | solvent: deionized water | solvent.volume: 50.0 | temperature: 70.0 | crystalsystem: hexagonal | shape: aloe vera leaf | size.length: 48.0 | size.width: 48.0 | size.depth: 48.0 | precursor: Zn(CH3CO2)2*2H2O (conc 100.0) | additive: pisonia alba leaf extract | pdfno_list: 36-1451"
+}

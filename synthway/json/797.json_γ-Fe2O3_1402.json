@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "797.json_γ-Fe2O3_1402",
+  "composition": "γ-Fe2O3",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "sol-gel",
+  "precursors": [
+    {
+      "name": "Fe(NO3)3 · 9H20",
+      "mass": 0.002,
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "monohydrated citric acid"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 400.0
+  },
+  "product": {
+    "size": {
+      "width": 34.0
+    }
+  },
+  "pdfno_list": [
+    "13-534"
+  ],
+  "source": {
+    "synthesis_id_original": "797.json_γ-Fe2O3_1402",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: γ-Fe2O3 | method: sol-gel | solvent: water | temperature: 400.0 | size.width: 34.0 | precursor: Fe(NO3)3 · 9H20 (mass 0.002; conc 100.0) | additive: monohydrated citric acid | pdfno_list: 13-534"
+}

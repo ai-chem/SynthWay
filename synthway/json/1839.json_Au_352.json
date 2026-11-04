@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "1839.json_Au_352",
+  "composition": "Au",
+  "elements": [
+    "Au"
+  ],
+  "precursors": [
+    {
+      "name": "HAuCl4*3H2O",
+      "conc": 25.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "trisodium citrate",
+      "mass": 0.001
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 100.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 13.0,
+      "width": 13.0,
+      "depth": 13.0
+    }
+  },
+  "pdfno_list": [
+    "04-0802"
+  ],
+  "source": {
+    "synthesis_id_original": "1839.json_Au_352",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Au | solvent: deionized water | solvent.volume: 10.0 | temperature: 100.0 | crystalsystem: cubic | size.length: 13.0 | size.width: 13.0 | size.depth: 13.0 | precursor: HAuCl4*3H2O (conc 25.0) | additive: trisodium citrate (mass 0.001) | pdfno_list: 04-0802"
+}

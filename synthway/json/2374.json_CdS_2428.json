@@ -1,0 +1,28 @@
+{
+  "synthesis_id": "2374.json_CdS_2428",
+  "composition": "CdS",
+  "elements": [
+    "Cd",
+    "S"
+  ],
+  "method": "hydrothermal",
+  "solvent": {
+    "name": "deionized water",
+    "volume": 75.0
+  },
+  "conditions": {
+    "temperature": 160.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal"
+  },
+  "pdfno_list": [
+    "77-2306"
+  ],
+  "source": {
+    "synthesis_id_original": "2374.json_CdS_2428",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: CdS | method: hydrothermal | solvent: deionized water | solvent.volume: 75.0 | temperature: 160.0 | crystalsystem: hexagonal | pdfno_list: 77-2306"
+}

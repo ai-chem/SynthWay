@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "136.json_Ag/AgCl_3880",
+  "composition": "Ag/AgCl",
+  "elements": [
+    "Ag",
+    "Cl"
+  ],
+  "method": "biosynthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "mass": 0.005,
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "origanum ehrenbergii boiss leaf extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 65.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "pseudo-spherical",
+    "size": {
+      "length": 12.9,
+      "width": 12.9,
+      "depth": 12.9
+    }
+  },
+  "source": {
+    "synthesis_id_original": "136.json_Ag/AgCl_3880",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Ag/AgCl | method: biosynthesis | solvent: water | temperature: 65.0 | crystalsystem: cubic | shape: pseudo-spherical | size.length: 12.9 | size.width: 12.9 | size.depth: 12.9 | precursor: AgNO3 (mass 0.005; conc 1.0) | additive: origanum ehrenbergii boiss leaf extract"
+}

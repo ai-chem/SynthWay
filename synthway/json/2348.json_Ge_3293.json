@@ -1,0 +1,22 @@
+{
+  "synthesis_id": "2348.json_Ge_3293",
+  "composition": "Ge",
+  "elements": [
+    "Ge"
+  ],
+  "method": "laser ablation",
+  "product": {
+    "crystalsystem": "simple cubic lattice",
+    "size": {
+      "length": 1.9,
+      "width": 1.9,
+      "depth": 1.9
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2348.json_Ge_3293",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: Ge | method: laser ablation | crystalsystem: simple cubic lattice | size.length: 1.9 | size.width: 1.9 | size.depth: 1.9"
+}

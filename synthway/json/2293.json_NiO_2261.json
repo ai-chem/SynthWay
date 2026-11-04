@@ -1,0 +1,51 @@
+{
+  "synthesis_id": "2293.json_NiO_2261",
+  "composition": "NiO",
+  "elements": [
+    "Ni",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Ni(NO3)2·6H2O",
+      "mass": 7.26,
+      "conc": 500.0
+    },
+    {
+      "name": "NH4OH",
+      "conc": 2000.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "starch powder",
+      "mass": 2.28
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 600.0,
+    "ph": 11.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "shape": "granular",
+    "size": {
+      "length": 43.3,
+      "width": 43.3,
+      "depth": 43.3
+    }
+  },
+  "pdfno_list": [
+    "73-1519"
+  ],
+  "source": {
+    "synthesis_id_original": "2293.json_NiO_2261",
+    "nodes": 18,
+    "edges": 17
+  },
+  "retrieval_text": "composition: NiO | solvent: distilled water | solvent.volume: 50.0 | temperature: 600.0 | pH: 11.0 | crystalsystem: face-centered cubic | shape: granular | size.length: 43.3 | size.width: 43.3 | size.depth: 43.3 | precursor: Ni(NO3)2·6H2O (mass 7.26; conc 500.0) | precursor: NH4OH (conc 2000.0) | additive: starch powder (mass 2.28) | pdfno_list: 73-1519"
+}

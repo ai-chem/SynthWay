@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "1014.json_SiO2_1316",
+  "composition": "SiO2",
+  "elements": [
+    "Si",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Si(OC2H5)4",
+      "conc": 100.0
+    },
+    {
+      "name": "NH3",
+      "conc": 800.0
+    },
+    {
+      "name": "H2O",
+      "conc": 10000.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "methacryloyloxypropyl trimethoxy silane",
+      "conc": 10.0
+    }
+  ],
+  "solvent": {
+    "name": "ethanol",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 40.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "width": 290.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1014.json_SiO2_1316",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: SiO2 | solvent: ethanol | solvent.volume: 100.0 | temperature: 40.0 | shape: spherical | size.width: 290.0 | precursor: Si(OC2H5)4 (conc 100.0) | precursor: NH3 (conc 800.0) | precursor: H2O (conc 10000.0) | additive: methacryloyloxypropyl trimethoxy silane (conc 10.0)"
+}

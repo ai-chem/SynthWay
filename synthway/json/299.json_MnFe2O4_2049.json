@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "299.json_MnFe2O4_2049",
+  "composition": "MnFe2O4",
+  "elements": [
+    "Mn",
+    "Fe",
+    "O"
+  ],
+  "method": "chemical co-precipitation",
+  "solvent": {
+    "name": "water",
+    "volume": 40.0
+  },
+  "conditions": {
+    "temperature": 80.0,
+    "ph": 10.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 6.0
+    }
+  },
+  "pdfno_list": [
+    "074-2403"
+  ],
+  "source": {
+    "synthesis_id_original": "299.json_MnFe2O4_2049",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: MnFe2O4 | method: chemical co-precipitation | solvent: water | solvent.volume: 40.0 | temperature: 80.0 | pH: 10.0 | crystalsystem: cubic | size.length: 6.0 | pdfno_list: 074-2403"
+}

@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "1515.json_Fe2O3_2268",
+  "composition": "Fe2O3",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "FeCl3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "bacillus cereus culture supernatant"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "hexagonal",
+    "size": {
+      "length": 20.0,
+      "width": 20.0,
+      "depth": 20.0
+    }
+  },
+  "pdfno_list": [
+    "33-0664"
+  ],
+  "source": {
+    "synthesis_id_original": "1515.json_Fe2O3_2268",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Fe2O3 | solvent: water | crystalsystem: hexagonal | shape: hexagonal | size.length: 20.0 | size.width: 20.0 | size.depth: 20.0 | precursor: FeCl3 (conc 1.0) | additive: bacillus cereus culture supernatant | pdfno_list: 33-0664"
+}

@@ -1,0 +1,36 @@
+{
+  "synthesis_id": "2215.json_Cu2S_272",
+  "composition": "Cu2S",
+  "elements": [
+    "Cu",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "Cu(CH3COO)",
+      "mass": 0.048
+    }
+  ],
+  "additives": [
+    {
+      "name": "trioctylphosphine oxide",
+      "mass": 1.0
+    },
+    {
+      "name": "1-dodecanethiol"
+    }
+  ],
+  "solvent": {
+    "name": "octadecene",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 210.0
+  },
+  "source": {
+    "synthesis_id_original": "2215.json_Cu2S_272",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: Cu2S | solvent: octadecene | solvent.volume: 30.0 | temperature: 210.0 | precursor: Cu(CH3COO) (mass 0.048) | additive: trioctylphosphine oxide (mass 1.0) | additive: 1-dodecanethiol"
+}

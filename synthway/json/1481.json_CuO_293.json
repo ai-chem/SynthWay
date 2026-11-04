@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "1481.json_CuO_293",
+  "composition": "CuO",
+  "elements": [
+    "Cu",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "copper (II) acetate (CuO(C2H3O2)2•H2O)"
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 10.0
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 25.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "spherical",
+    "size": {
+      "length": 17.0,
+      "width": 17.0,
+      "depth": 17.0
+    }
+  },
+  "pdfno_list": [
+    "80-1916"
+  ],
+  "source": {
+    "synthesis_id_original": "1481.json_CuO_293",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: CuO | method: hydrothermal | solvent: distilled water | solvent.volume: 25.0 | crystalsystem: monoclinic | shape: spherical | size.length: 17.0 | size.width: 17.0 | size.depth: 17.0 | precursor: copper (II) acetate (CuO(C2H3O2)2•H2O) | additive: sodium hydroxide (conc 10.0) | pdfno_list: 80-1916"
+}

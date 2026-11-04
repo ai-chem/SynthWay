@@ -1,0 +1,27 @@
+{
+  "synthesis_id": "367.json_ZnO_2283",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "wet chemical",
+  "solvent": {
+    "name": "methanol"
+  },
+  "conditions": {
+    "temperature": 400.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "size": {
+      "length": 5.3689
+    }
+  },
+  "source": {
+    "synthesis_id_original": "367.json_ZnO_2283",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: ZnO | method: wet chemical | solvent: methanol | temperature: 400.0 | crystalsystem: hexagonal | size.length: 5.3689"
+}

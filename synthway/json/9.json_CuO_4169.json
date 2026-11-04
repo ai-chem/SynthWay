@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "9.json_CuO_4169",
+  "composition": "CuO",
+  "elements": [
+    "Cu",
+    "O"
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 7.5
+  },
+  "conditions": {
+    "temperature": 100.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "sheaf-like",
+    "size": {
+      "length": 4000.0,
+      "width": 72.5,
+      "depth": 72.5
+    }
+  },
+  "pdfno_list": [
+    "05-0661"
+  ],
+  "source": {
+    "synthesis_id_original": "9.json_CuO_4169",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: CuO | solvent: distilled water | solvent.volume: 7.5 | temperature: 100.0 | crystalsystem: monoclinic | shape: sheaf-like | size.length: 4000.0 | size.width: 72.5 | size.depth: 72.5 | pdfno_list: 05-0661"
+}

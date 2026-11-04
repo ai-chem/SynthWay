@@ -1,0 +1,59 @@
+{
+  "synthesis_id": "1483.json_Mn0.25Mg0.25Co0.5Fe2O4_3623",
+  "composition": "Mn0.25Mg0.25Co0.5Fe2O4",
+  "elements": [
+    "Mn",
+    "Mg",
+    "Co",
+    "Fe",
+    "O"
+  ],
+  "method": "self-combustion sol-gel",
+  "precursors": [
+    {
+      "name": "Co(NO3)2*6H2O"
+    },
+    {
+      "name": "Fe(NO3)3*9H2O"
+    },
+    {
+      "name": "Mg(NO3)2*6H2O"
+    },
+    {
+      "name": "Mn(NO3)2*6H2O"
+    }
+  ],
+  "additives": [
+    {
+      "name": "citric acid"
+    },
+    {
+      "name": "ammonia"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water"
+  },
+  "conditions": {
+    "temperature": 70.0,
+    "ph": 7.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 32.0,
+      "width": 32.0,
+      "depth": 32.0
+    }
+  },
+  "pdfno_list": [
+    "184063 24493 24497"
+  ],
+  "source": {
+    "synthesis_id_original": "1483.json_Mn0.25Mg0.25Co0.5Fe2O4_3623",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: Mn0.25Mg0.25Co0.5Fe2O4 | method: self-combustion sol-gel | solvent: distilled water | temperature: 70.0 | pH: 7.0 | crystalsystem: cubic | shape: spherical | size.length: 32.0 | size.width: 32.0 | size.depth: 32.0 | precursor: Co(NO3)2*6H2O | precursor: Fe(NO3)3*9H2O | precursor: Mg(NO3)2*6H2O | precursor: Mn(NO3)2*6H2O | additive: citric acid | additive: ammonia | pdfno_list: 184063 24493 24497"
+}

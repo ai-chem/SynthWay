@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "956.json_Sb2Se3_2647",
+  "composition": "Sb2Se3",
+  "elements": [
+    "Sb",
+    "Se"
+  ],
+  "precursors": [
+    {
+      "name": "SbCl3",
+      "mass": 0.125
+    },
+    {
+      "name": "NaBH4"
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol and water",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "ribbons",
+    "size": {
+      "width": 175.0
+    }
+  },
+  "pdfno_list": [
+    "75-1462"
+  ],
+  "source": {
+    "synthesis_id_original": "956.json_Sb2Se3_2647",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Sb2Se3 | solvent: ethylene glycol and water | solvent.volume: 30.0 | temperature: 180.0 | crystalsystem: orthorhombic | shape: ribbons | size.width: 175.0 | precursor: SbCl3 (mass 0.125) | precursor: NaBH4 | pdfno_list: 75-1462"
+}

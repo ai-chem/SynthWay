@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "613.json_CeO2_2413",
+  "composition": "CeO2",
+  "elements": [
+    "Ce",
+    "O"
+  ],
+  "method": "sol-gel",
+  "precursors": [
+    {
+      "name": "Ce(NO3)3*6H2O"
+    },
+    {
+      "name": "NH3"
+    }
+  ],
+  "additives": [
+    {
+      "name": "urea buffer"
+    },
+    {
+      "name": "polyvinylpyrrolidone"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 65.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "size": {
+      "length": 10.0
+    }
+  },
+  "pdfno_list": [
+    "34-0394"
+  ],
+  "source": {
+    "synthesis_id_original": "613.json_CeO2_2413",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: CeO2 | method: sol-gel | solvent: water | temperature: 65.0 | crystalsystem: face-centered cubic | size.length: 10.0 | precursor: Ce(NO3)3*6H2O | precursor: NH3 | additive: urea buffer | additive: polyvinylpyrrolidone | pdfno_list: 34-0394"
+}

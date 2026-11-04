@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "819.json_Ag-MgO_3684",
+  "composition": "Ag-MgO",
+  "elements": [
+    "Ag",
+    "Mg",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 5.0
+    },
+    {
+      "name": "Mg (NO3)2·6H2O",
+      "conc": 5.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "trichoderma extract",
+      "mass": 0.05
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 40.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 37.83,
+      "width": 37.83,
+      "depth": 37.83
+    }
+  },
+  "source": {
+    "synthesis_id_original": "819.json_Ag-MgO_3684",
+    "nodes": 14,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Ag-MgO | solvent: distilled water | solvent.volume: 100.0 | temperature: 40.0 | crystalsystem: cubic | shape: spherical | size.length: 37.83 | size.width: 37.83 | size.depth: 37.83 | precursor: AgNO3 (conc 5.0) | precursor: Mg (NO3)2·6H2O (conc 5.0) | additive: trichoderma extract (mass 0.05)"
+}

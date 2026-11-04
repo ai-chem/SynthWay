@@ -1,0 +1,27 @@
+{
+  "synthesis_id": "478.json_BaTiO3_4211",
+  "composition": "BaTiO3",
+  "elements": [
+    "Ba",
+    "Ti",
+    "O"
+  ],
+  "method": "microwave-assisted hydrothermal",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 120.0
+  },
+  "product": {
+    "size": {
+      "length": 66.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "478.json_BaTiO3_4211",
+    "nodes": 5,
+    "edges": 4
+  },
+  "retrieval_text": "composition: BaTiO3 | method: microwave-assisted hydrothermal | solvent: water | temperature: 120.0 | size.length: 66.0"
+}

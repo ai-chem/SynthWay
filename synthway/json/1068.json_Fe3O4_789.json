@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "1068.json_Fe3O4_789",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "solvo-hydrothermal",
+  "precursors": [
+    {
+      "name": "FeCl3∙6H2O",
+      "mass": 0.405,
+      "conc": 83.0
+    },
+    {
+      "name": "NH4Ac",
+      "mass": 0.5625
+    },
+    {
+      "name": "NH4HCO3",
+      "mass": 0.592
+    }
+  ],
+  "additives": [
+    {
+      "name": "trisodium citrate",
+      "mass": 0.194
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol"
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "width": 10.0
+    }
+  },
+  "pdfno_list": [
+    "19-0629"
+  ],
+  "source": {
+    "synthesis_id_original": "1068.json_Fe3O4_789",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Fe3O4 | method: solvo-hydrothermal | solvent: ethylene glycol | shape: spherical | size.width: 10.0 | precursor: FeCl3∙6H2O (mass 0.405; conc 83.0) | precursor: NH4Ac (mass 0.5625) | precursor: NH4HCO3 (mass 0.592) | additive: trisodium citrate (mass 0.194) | pdfno_list: 19-0629"
+}

@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "569.json_Ag/AgCl_223",
+  "composition": "Ag/AgCl",
+  "elements": [
+    "Ag",
+    "Cl"
+  ],
+  "method": "biosynthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 6.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "elaeocarpus floribundus leaf extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "ph": 9.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 19.92,
+      "width": 19.92,
+      "depth": 19.92
+    }
+  },
+  "pdfno_list": [
+    "00-150-9146"
+  ],
+  "source": {
+    "synthesis_id_original": "569.json_Ag/AgCl_223",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Ag/AgCl | method: biosynthesis | solvent: water | pH: 9.0 | crystalsystem: cubic | shape: spherical | size.length: 19.92 | size.width: 19.92 | size.depth: 19.92 | precursor: AgNO3 (conc 6.0) | additive: elaeocarpus floribundus leaf extract | pdfno_list: 00-150-9146"
+}

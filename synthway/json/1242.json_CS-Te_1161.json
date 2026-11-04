@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "1242.json_CS-Te_1161",
+  "composition": "CS-Te",
+  "elements": [
+    "C",
+    "S",
+    "Te"
+  ],
+  "method": "single step in situ",
+  "precursors": [
+    {
+      "name": "Chi"
+    },
+    {
+      "name": "K2TeO3",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "acetic acid"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 37.48,
+      "width": 37.48,
+      "depth": 37.48
+    }
+  },
+  "pdfno_list": [
+    "36-1452"
+  ],
+  "source": {
+    "synthesis_id_original": "1242.json_CS-Te_1161",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: CS-Te | method: single step in situ | solvent: distilled water | temperature: 25.0 | crystalsystem: hexagonal | shape: spherical | size.length: 37.48 | size.width: 37.48 | size.depth: 37.48 | precursor: Chi | precursor: K2TeO3 (conc 10.0) | additive: acetic acid | pdfno_list: 36-1452"
+}

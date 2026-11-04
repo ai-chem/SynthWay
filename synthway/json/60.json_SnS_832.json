@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "60.json_SnS_832",
+  "composition": "SnS",
+  "elements": [
+    "Sn",
+    "S"
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 160.0
+  },
+  "conditions": {
+    "temperature": 250.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "needle-like nanorods",
+    "size": {
+      "length": 1000.0,
+      "width": 70.0,
+      "depth": 70.0
+    }
+  },
+  "pdfno_list": [
+    "01-0984"
+  ],
+  "source": {
+    "synthesis_id_original": "60.json_SnS_832",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: SnS | solvent: water | solvent.volume: 160.0 | temperature: 250.0 | crystalsystem: orthorhombic | shape: needle-like nanorods | size.length: 1000.0 | size.width: 70.0 | size.depth: 70.0 | pdfno_list: 01-0984"
+}

@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "2183.json_FeS2@C_2084",
+  "composition": "FeS2@C",
+  "elements": [
+    "Fe",
+    "S",
+    "C"
+  ],
+  "precursors": [
+    {
+      "name": "MIL-101(Fe)"
+    },
+    {
+      "name": "S",
+      "mass": 0.12
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 500.0
+  },
+  "product": {
+    "shape": "sheets",
+    "size": {
+      "width": 120.0,
+      "depth": 120.0
+    }
+  },
+  "pdfno_list": [
+    "71-1680"
+  ],
+  "source": {
+    "synthesis_id_original": "2183.json_FeS2@C_2084",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: FeS2@C | solvent: water | temperature: 500.0 | shape: sheets | size.width: 120.0 | size.depth: 120.0 | precursor: MIL-101(Fe) | precursor: S (mass 0.12) | pdfno_list: 71-1680"
+}

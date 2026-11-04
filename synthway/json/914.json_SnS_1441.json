@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "914.json_SnS_1441",
+  "composition": "SnS",
+  "elements": [
+    "Sn",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "Sn",
+      "mass": 0.5
+    },
+    {
+      "name": "S",
+      "mass": 0.3
+    }
+  ],
+  "solvent": {
+    "name": "paraffin oil",
+    "volume": 40.0
+  },
+  "conditions": {
+    "temperature": 245.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "spherical",
+    "size": {
+      "length": 200.0,
+      "width": 200.0,
+      "depth": 200.0
+    }
+  },
+  "pdfno_list": [
+    "33-1375"
+  ],
+  "source": {
+    "synthesis_id_original": "914.json_SnS_1441",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: SnS | solvent: paraffin oil | solvent.volume: 40.0 | temperature: 245.0 | crystalsystem: orthorhombic | shape: spherical | size.length: 200.0 | size.width: 200.0 | size.depth: 200.0 | precursor: Sn (mass 0.5) | precursor: S (mass 0.3) | pdfno_list: 33-1375"
+}

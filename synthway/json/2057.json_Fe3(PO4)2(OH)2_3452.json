@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "2057.json_Fe3(PO4)2(OH)2_3452",
+  "composition": "Fe3(PO4)2(OH)2",
+  "elements": [
+    "Fe",
+    "P",
+    "O",
+    "H"
+  ],
+  "precursors": [
+    {
+      "name": "FeCl₂·4H2O",
+      "conc": 5.0
+    },
+    {
+      "name": "NaH₂PO₄·H₂O",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "ammonia"
+    }
+  ],
+  "solvent": {
+    "name": "glycol",
+    "volume": 33.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "octahedron",
+    "size": {
+      "length": 5000.0,
+      "width": 5000.0,
+      "depth": 5000.0
+    }
+  },
+  "pdfno_list": [
+    "45-1454"
+  ],
+  "source": {
+    "synthesis_id_original": "2057.json_Fe3(PO4)2(OH)2_3452",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Fe3(PO4)2(OH)2 | solvent: glycol | solvent.volume: 33.0 | temperature: 180.0 | crystalsystem: cubic | shape: octahedron | size.length: 5000.0 | size.width: 5000.0 | size.depth: 5000.0 | precursor: FeCl₂·4H2O (conc 5.0) | precursor: NaH₂PO₄·H₂O (conc 10.0) | additive: ammonia | pdfno_list: 45-1454"
+}

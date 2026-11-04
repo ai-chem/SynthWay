@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "1184.json_BGP-M_1142",
+  "composition": "BGP-M",
+  "elements": [
+    "B",
+    "G",
+    "P",
+    "M"
+  ],
+  "method": "freeze-drying",
+  "precursors": [
+    {
+      "name": "BGP"
+    },
+    {
+      "name": "C20H22N8O5",
+      "mass": 0.125
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "shape": "intricate network"
+  },
+  "pdfno_list": [
+    "09-0169 09-0432"
+  ],
+  "source": {
+    "synthesis_id_original": "1184.json_BGP-M_1142",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: BGP-M | method: freeze-drying | solvent: water | temperature: 60.0 | shape: intricate network | precursor: BGP | precursor: C20H22N8O5 (mass 0.125) | pdfno_list: 09-0169 09-0432"
+}

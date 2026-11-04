@@ -1,0 +1,36 @@
+{
+  "synthesis_id": "1619.json_Ag_994",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "c. fistula extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 31.16,
+      "width": 31.16,
+      "depth": 31.16
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1619.json_Ag_994",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Ag | method: green synthesis | solvent: water | crystalsystem: cubic | size.length: 31.16 | size.width: 31.16 | size.depth: 31.16 | precursor: AgNO3 (conc 1.0) | additive: c. fistula extract"
+}

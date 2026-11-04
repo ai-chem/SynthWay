@@ -1,0 +1,26 @@
+{
+  "synthesis_id": "669.json_Au_2629",
+  "composition": "Au",
+  "elements": [
+    "Au"
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 147.75
+  },
+  "conditions": {
+    "temperature": 95.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 37.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "669.json_Au_2629",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: Au | solvent: deionized water | solvent.volume: 147.75 | temperature: 95.0 | shape: spherical | size.length: 37.0"
+}

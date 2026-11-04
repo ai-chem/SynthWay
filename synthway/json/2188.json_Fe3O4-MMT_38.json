@@ -1,0 +1,54 @@
+{
+  "synthesis_id": "2188.json_Fe3O4-MMT_38",
+  "composition": "Fe3O4-MMT",
+  "elements": [
+    "Fe",
+    "O",
+    "M",
+    "T"
+  ],
+  "precursors": [
+    {
+      "name": "FeSO4·7H2O",
+      "mass": 0.06063,
+      "conc": 3000.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "methylcyclopentadienyl manganese tricarbonyl",
+      "mass": 0.25
+    },
+    {
+      "name": "trisodium citrate",
+      "conc": 1.5
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 6.0
+    },
+    {
+      "name": "sodium nitrate",
+      "conc": 300.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 100.0
+  },
+  "product": {
+    "crystalsystem": "cubic"
+  },
+  "pdfno_list": [
+    "75-1610"
+  ],
+  "source": {
+    "synthesis_id_original": "2188.json_Fe3O4-MMT_38",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: Fe3O4-MMT | solvent: water | solvent.volume: 10.0 | temperature: 100.0 | crystalsystem: cubic | precursor: FeSO4·7H2O (mass 0.06063; conc 3000.0) | additive: methylcyclopentadienyl manganese tricarbonyl (mass 0.25) | additive: trisodium citrate (conc 1.5) | additive: sodium hydroxide (conc 6.0) | additive: sodium nitrate (conc 300.0) | pdfno_list: 75-1610"
+}

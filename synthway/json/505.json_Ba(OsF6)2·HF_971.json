@@ -1,0 +1,25 @@
+{
+  "synthesis_id": "505.json_Ba(OsF6)2·HF_971",
+  "composition": "Ba(OsF6)2·HF",
+  "elements": [
+    "Ba",
+    "Os",
+    "F",
+    "H"
+  ],
+  "solvent": {
+    "name": "hf"
+  },
+  "conditions": {
+    "temperature": 50.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic"
+  },
+  "source": {
+    "synthesis_id_original": "505.json_Ba(OsF6)2·HF_971",
+    "nodes": 4,
+    "edges": 3
+  },
+  "retrieval_text": "composition: Ba(OsF6)2·HF | solvent: hf | temperature: 50.0 | crystalsystem: orthorhombic"
+}

@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "2239.json_FeSe2_NCs_452",
+  "composition": "FeSe2 NCs",
+  "elements": [
+    "Fe",
+    "Se",
+    "N",
+    "Cs"
+  ],
+  "precursors": [
+    {
+      "name": "FeCl2 · 4H2O",
+      "conc": 0.5
+    },
+    {
+      "name": "Se",
+      "conc": 0.4
+    }
+  ],
+  "additives": [
+    {
+      "name": "ethylenediamine"
+    }
+  ],
+  "solvent": {
+    "name": "diethylene glycol",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 210.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "microrod",
+    "size": {
+      "length": 4000.0,
+      "width": 500.0,
+      "depth": 500.0
+    }
+  },
+  "pdfno_list": [
+    "65-2570"
+  ],
+  "source": {
+    "synthesis_id_original": "2239.json_FeSe2_NCs_452",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: FeSe2 NCs | solvent: diethylene glycol | solvent.volume: 20.0 | temperature: 210.0 | crystalsystem: orthorhombic | shape: microrod | size.length: 4000.0 | size.width: 500.0 | size.depth: 500.0 | precursor: FeCl2 · 4H2O (conc 0.5) | precursor: Se (conc 0.4) | additive: ethylenediamine | pdfno_list: 65-2570"
+}

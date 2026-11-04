@@ -1,0 +1,57 @@
+{
+  "synthesis_id": "1481.json_CuO@Si_294",
+  "composition": "CuO@Si",
+  "elements": [
+    "Cu",
+    "O",
+    "Si"
+  ],
+  "method": "sol-gel hydrothermal",
+  "precursors": [
+    {
+      "name": "CuO (NPs)",
+      "mass": 0.1
+    },
+    {
+      "name": "C9H23NO3Si"
+    },
+    {
+      "name": "Si(OC2H5)4"
+    }
+  ],
+  "additives": [
+    {
+      "name": "nh2"
+    },
+    {
+      "name": "cetyltrimethylammonium bromide"
+    },
+    {
+      "name": "sodium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "double distilled water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "spherical",
+    "size": {
+      "length": 80.0,
+      "width": 80.0,
+      "depth": 80.0
+    }
+  },
+  "pdfno_list": [
+    "80-1916"
+  ],
+  "source": {
+    "synthesis_id_original": "1481.json_CuO@Si_294",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: CuO@Si | method: sol-gel hydrothermal | solvent: double distilled water | temperature: 25.0 | crystalsystem: monoclinic | shape: spherical | size.length: 80.0 | size.width: 80.0 | size.depth: 80.0 | precursor: CuO (NPs) (mass 0.1) | precursor: C9H23NO3Si | precursor: Si(OC2H5)4 | additive: nh2 | additive: cetyltrimethylammonium bromide | additive: sodium hydroxide | pdfno_list: 80-1916"
+}

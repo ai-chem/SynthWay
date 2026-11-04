@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "125.json_Cu/Ag2S_1259",
+  "composition": "Cu/Ag2S",
+  "elements": [
+    "Cu",
+    "Ag",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "mass": 8.067
+    },
+    {
+      "name": "Cu(NO3)2",
+      "mass": 0.603
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium sulphide",
+      "mass": 1.951
+    },
+    {
+      "name": "n-methyl-2-pyrrolidone"
+    }
+  ],
+  "solvent": {
+    "name": "doubly ionised distilled water",
+    "volume": 60.0
+  },
+  "conditions": {
+    "temperature": 70.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 23.0,
+      "width": 23.0,
+      "depth": 23.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "125.json_Cu/Ag2S_1259",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Cu/Ag2S | solvent: doubly ionised distilled water | solvent.volume: 60.0 | temperature: 70.0 | shape: spherical | size.length: 23.0 | size.width: 23.0 | size.depth: 23.0 | precursor: AgNO3 (mass 8.067) | precursor: Cu(NO3)2 (mass 0.603) | additive: sodium sulphide (mass 1.951) | additive: n-methyl-2-pyrrolidone"
+}

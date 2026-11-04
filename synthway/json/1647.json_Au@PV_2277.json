@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "1647.json_Au@PV_2277",
+  "composition": "Au@PV",
+  "elements": [
+    "Au",
+    "P",
+    "V"
+  ],
+  "precursors": [
+    {
+      "name": "HAuCl4·3H2O"
+    }
+  ],
+  "additives": [
+    {
+      "name": "extract of p. vera"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 50.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 27.5,
+      "width": 27.5,
+      "depth": 27.5
+    }
+  },
+  "pdfno_list": [
+    "04-0784"
+  ],
+  "source": {
+    "synthesis_id_original": "1647.json_Au@PV_2277",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Au@PV | solvent: water | temperature: 50.0 | crystalsystem: cubic | shape: spherical | size.length: 27.5 | size.width: 27.5 | size.depth: 27.5 | precursor: HAuCl4·3H2O | additive: extract of p. vera | pdfno_list: 04-0784"
+}

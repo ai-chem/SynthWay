@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "835.json_Fe36Rh64_3885",
+  "composition": "Fe36Rh64",
+  "elements": [
+    "Fe",
+    "Rh"
+  ],
+  "method": "coreduction",
+  "precursors": [
+    {
+      "name": "FeCl2*4H2O",
+      "mass": 0.69
+    },
+    {
+      "name": "Rh(acac)3",
+      "mass": 0.2
+    },
+    {
+      "name": "LiBEt3H",
+      "mass": 0.2,
+      "conc": 1000.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleic acid",
+      "mass": 0.141
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "size": {
+      "length": 3.5,
+      "width": 3.5,
+      "depth": 3.5
+    }
+  },
+  "source": {
+    "synthesis_id_original": "835.json_Fe36Rh64_3885",
+    "nodes": 14,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Fe36Rh64 | method: coreduction | solvent: water | size.length: 3.5 | size.width: 3.5 | size.depth: 3.5 | precursor: FeCl2*4H2O (mass 0.69) | precursor: Rh(acac)3 (mass 0.2) | precursor: LiBEt3H (mass 0.2; conc 1000.0) | additive: oleic acid (mass 0.141)"
+}

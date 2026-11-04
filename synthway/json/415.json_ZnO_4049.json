@@ -1,0 +1,26 @@
+{
+  "synthesis_id": "415.json_ZnO_4049",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "chemical synthesis",
+  "solvent": {
+    "name": "water",
+    "volume": 350.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "needle"
+  },
+  "pdfno_list": [
+    "891397"
+  ],
+  "source": {
+    "synthesis_id_original": "415.json_ZnO_4049",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: ZnO | method: chemical synthesis | solvent: water | solvent.volume: 350.0 | crystalsystem: hexagonal | shape: needle | pdfno_list: 891397"
+}

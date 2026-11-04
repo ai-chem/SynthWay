@@ -1,0 +1,29 @@
+{
+  "synthesis_id": "260.json_Pr-CdWO4_2080",
+  "composition": "Pr-CdWO4",
+  "elements": [
+    "Pr",
+    "Cd",
+    "W",
+    "O"
+  ],
+  "solvent": {
+    "name": "ethanol and water",
+    "volume": 40.0
+  },
+  "conditions": {
+    "temperature": 550.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 85.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "260.json_Pr-CdWO4_2080",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: Pr-CdWO4 | solvent: ethanol and water | solvent.volume: 40.0 | temperature: 550.0 | shape: spherical | size.length: 85.0"
+}

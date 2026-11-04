@@ -1,0 +1,30 @@
+{
+  "synthesis_id": "374.json_CaP_755",
+  "composition": "CaP",
+  "elements": [
+    "Ca",
+    "P"
+  ],
+  "solvent": {
+    "name": "chcl:urea",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 150.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 34.0
+    }
+  },
+  "pdfno_list": [
+    "09-432"
+  ],
+  "source": {
+    "synthesis_id_original": "374.json_CaP_755",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: CaP | solvent: chcl:urea | solvent.volume: 50.0 | temperature: 150.0 | shape: spherical | size.length: 34.0 | pdfno_list: 09-432"
+}

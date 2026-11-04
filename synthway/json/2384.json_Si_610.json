@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "2384.json_Si_610",
+  "composition": "Si",
+  "elements": [
+    "Si"
+  ],
+  "method": "modified stober",
+  "precursors": [
+    {
+      "name": "Si(OC2H5)4",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "l-arginine",
+      "conc": 8.2
+    },
+    {
+      "name": "cyclohexane",
+      "conc": 0.8
+    }
+  ],
+  "seeds": [
+    {
+      "name": "Si"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 50.0,
+      "width": 50.0,
+      "depth": 50.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2384.json_Si_610",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Si | method: modified stober | solvent: water | shape: spherical | size.length: 50.0 | size.width: 50.0 | size.depth: 50.0 | precursor: Si(OC2H5)4 (conc 1.0) | additive: l-arginine (conc 8.2) | additive: cyclohexane (conc 0.8) | seed: Si"
+}

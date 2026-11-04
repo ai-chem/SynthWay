@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "1860.json_CoNi2S4_3335",
+  "composition": "CoNi2S4",
+  "elements": [
+    "Co",
+    "Ni",
+    "S"
+  ],
+  "method": "one-pot hydrothermal",
+  "precursors": [
+    {
+      "name": "Co(CH3COO)2*4H2O",
+      "conc": 0.5
+    },
+    {
+      "name": "Ni(CH3COO)2*4H2O",
+      "conc": 0.5
+    }
+  ],
+  "additives": [
+    {
+      "name": "methylcyclopentadienyl manganese tricarbonyl",
+      "mass": 0.3
+    },
+    {
+      "name": "thiourea",
+      "conc": 1.2
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "shape": "cube"
+  },
+  "pdfno_list": [
+    "24-0334"
+  ],
+  "source": {
+    "synthesis_id_original": "1860.json_CoNi2S4_3335",
+    "nodes": 14,
+    "edges": 14
+  },
+  "retrieval_text": "composition: CoNi2S4 | method: one-pot hydrothermal | solvent: ethylene glycol | solvent.volume: 30.0 | temperature: 180.0 | shape: cube | precursor: Co(CH3COO)2*4H2O (conc 0.5) | precursor: Ni(CH3COO)2*4H2O (conc 0.5) | additive: methylcyclopentadienyl manganese tricarbonyl (mass 0.3) | additive: thiourea (conc 1.2) | pdfno_list: 24-0334"
+}

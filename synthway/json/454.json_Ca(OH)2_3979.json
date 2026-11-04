@@ -1,0 +1,27 @@
+{
+  "synthesis_id": "454.json_Ca(OH)2_3979",
+  "composition": "Ca(OH)2",
+  "elements": [
+    "Ca",
+    "O",
+    "H"
+  ],
+  "method": "hydrothermal",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "size": {
+      "length": 6.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "454.json_Ca(OH)2_3979",
+    "nodes": 5,
+    "edges": 4
+  },
+  "retrieval_text": "composition: Ca(OH)2 | method: hydrothermal | solvent: water | temperature: 25.0 | size.length: 6.0"
+}

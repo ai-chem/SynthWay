@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "953.json_Ta2O5_33",
+  "composition": "Ta2O5",
+  "elements": [
+    "Ta",
+    "O"
+  ],
+  "method": "solvo-hydrothermal",
+  "precursors": [
+    {
+      "name": "Ta(OBu)5",
+      "mass": 7.8
+    }
+  ],
+  "additives": [
+    {
+      "name": "pluronic f-127",
+      "mass": 2.0
+    }
+  ],
+  "solvent": {
+    "name": "ethanol",
+    "volume": 22.8
+  },
+  "conditions": {
+    "temperature": 550.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "width": 125.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "953.json_Ta2O5_33",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Ta2O5 | method: solvo-hydrothermal | solvent: ethanol | solvent.volume: 22.8 | temperature: 550.0 | shape: spherical | size.width: 125.0 | precursor: Ta(OBu)5 (mass 7.8) | additive: pluronic f-127 (mass 2.0)"
+}

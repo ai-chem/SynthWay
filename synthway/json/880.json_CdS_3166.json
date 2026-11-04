@@ -1,0 +1,53 @@
+{
+  "synthesis_id": "880.json_CdS_3166",
+  "composition": "CdS",
+  "elements": [
+    "Cd",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "CdCl2",
+      "conc": 20.0
+    },
+    {
+      "name": "KOH",
+      "conc": 500.0
+    },
+    {
+      "name": "NH4NO3",
+      "conc": 500.0
+    },
+    {
+      "name": "CH4N2S",
+      "conc": 200.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "maltodextrin"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 80.0,
+    "ph": 11.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 4.0,
+      "width": 4.0,
+      "depth": 4.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "880.json_CdS_3166",
+    "nodes": 17,
+    "edges": 17
+  },
+  "retrieval_text": "composition: CdS | solvent: water | temperature: 80.0 | pH: 11.0 | crystalsystem: cubic | shape: spherical | size.length: 4.0 | size.width: 4.0 | size.depth: 4.0 | precursor: CdCl2 (conc 20.0) | precursor: KOH (conc 500.0) | precursor: NH4NO3 (conc 500.0) | precursor: CH4N2S (conc 200.0) | additive: maltodextrin"
+}

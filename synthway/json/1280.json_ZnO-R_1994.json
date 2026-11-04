@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "1280.json_ZnO-R_1994",
+  "composition": "ZnO-R",
+  "elements": [
+    "Zn",
+    "O",
+    "R"
+  ],
+  "method": "thermal decomposition",
+  "precursors": [
+    {
+      "name": "Zn(acac)2",
+      "mass": 0.53
+    }
+  ],
+  "additives": [
+    {
+      "name": "methoxy polyethylene glycol 1200",
+      "mass": 15.0
+    }
+  ],
+  "conditions": {
+    "temperature": 280.0
+  },
+  "product": {
+    "shape": "wire",
+    "size": {
+      "length": 55.3,
+      "width": 14.0,
+      "depth": 14.0
+    }
+  },
+  "pdfno_list": [
+    "89-7102"
+  ],
+  "source": {
+    "synthesis_id_original": "1280.json_ZnO-R_1994",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: ZnO-R | method: thermal decomposition | temperature: 280.0 | shape: wire | size.length: 55.3 | size.width: 14.0 | size.depth: 14.0 | precursor: Zn(acac)2 (mass 0.53) | additive: methoxy polyethylene glycol 1200 (mass 15.0) | pdfno_list: 89-7102"
+}

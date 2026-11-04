@@ -1,0 +1,32 @@
+{
+  "synthesis_id": "30.json_SnO2_1632",
+  "composition": "SnO2",
+  "elements": [
+    "Sn",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "solvent": {
+    "name": "deionized water",
+    "volume": 80.0
+  },
+  "conditions": {
+    "temperature": 600.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "shape": "butterfly-like",
+    "size": {
+      "width": 216.0
+    }
+  },
+  "pdfno_list": [
+    "78-1913"
+  ],
+  "source": {
+    "synthesis_id_original": "30.json_SnO2_1632",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: SnO2 | method: hydrothermal | solvent: deionized water | solvent.volume: 80.0 | temperature: 600.0 | crystalsystem: tetragonal | shape: butterfly-like | size.width: 216.0 | pdfno_list: 78-1913"
+}

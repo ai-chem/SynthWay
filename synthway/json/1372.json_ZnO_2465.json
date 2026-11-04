@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1372.json_ZnO_2465",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Zn(NO3)2*6H2O",
+      "mass": 3.62
+    }
+  ],
+  "additives": [
+    {
+      "name": "locust bean gum",
+      "mass": 2.0
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 87.5
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 30.0,
+      "width": 30.0,
+      "depth": 30.0
+    }
+  },
+  "pdfno_list": [
+    "79-2205"
+  ],
+  "source": {
+    "synthesis_id_original": "1372.json_ZnO_2465",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: ZnO | method: green synthesis | solvent: deionized water | solvent.volume: 10.0 | temperature: 87.5 | crystalsystem: hexagonal | shape: spherical | size.length: 30.0 | size.width: 30.0 | size.depth: 30.0 | precursor: Zn(NO3)2*6H2O (mass 3.62) | additive: locust bean gum (mass 2.0) | pdfno_list: 79-2205"
+}

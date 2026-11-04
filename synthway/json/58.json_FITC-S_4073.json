@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "58.json_FITC-S_4073",
+  "composition": "FITC–S",
+  "elements": [
+    "F",
+    "I",
+    "T",
+    "C",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "SNPs-307.6"
+    },
+    {
+      "name": "C21H11NO5S",
+      "mass": 0.05
+    }
+  ],
+  "additives": [
+    {
+      "name": "3-amino-propyltrimethoxysilane"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "size": {
+      "length": 307.6,
+      "width": 307.6,
+      "depth": 307.6
+    }
+  },
+  "source": {
+    "synthesis_id_original": "58.json_FITC-S_4073",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: FITC–S | solvent: water | size.length: 307.6 | size.width: 307.6 | size.depth: 307.6 | precursor: SNPs-307.6 | precursor: C21H11NO5S (mass 0.05) | additive: 3-amino-propyltrimethoxysilane"
+}

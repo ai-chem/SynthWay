@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "2097.json_Fe2O3_754",
+  "composition": "Fe2O3",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "biosynthesis",
+  "precursors": [
+    {
+      "name": "FeCl3"
+    },
+    {
+      "name": "Fe2(SO4)3*7H2O"
+    }
+  ],
+  "additives": [
+    {
+      "name": "achyranthes aspera leaf extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 50.0,
+    "ph": 9.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 30.0,
+      "width": 30.0,
+      "depth": 30.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2097.json_Fe2O3_754",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Fe2O3 | method: biosynthesis | solvent: water | temperature: 50.0 | pH: 9.0 | shape: spherical | size.length: 30.0 | size.width: 30.0 | size.depth: 30.0 | precursor: FeCl3 | precursor: Fe2(SO4)3*7H2O | additive: achyranthes aspera leaf extract"
+}

@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "881.json_TiO2_4206",
+  "composition": "TiO2",
+  "elements": [
+    "Ti",
+    "O"
+  ],
+  "method": "sol-gel",
+  "precursors": [
+    {
+      "name": "Ti(OC3H7)4"
+    }
+  ],
+  "additives": [
+    {
+      "name": "tween-80"
+    },
+    {
+      "name": "acetic acid"
+    }
+  ],
+  "solvent": {
+    "name": "2-propanol",
+    "volume": 5.0
+  },
+  "conditions": {
+    "temperature": 110.0
+  },
+  "product": {
+    "shape": "round shape",
+    "size": {
+      "width": 225.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "881.json_TiO2_4206",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: TiO2 | method: sol-gel | solvent: 2-propanol | solvent.volume: 5.0 | temperature: 110.0 | shape: round shape | size.width: 225.0 | precursor: Ti(OC3H7)4 | additive: tween-80 | additive: acetic acid"
+}

@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "1029.json_ZrO2_725",
+  "composition": "ZrO2",
+  "elements": [
+    "Zr",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "ZrCl4",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "cirsium setidens aqueous extracts(cse)"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "shape": "irregularly spherical"
+  },
+  "pdfno_list": [
+    "42-1164"
+  ],
+  "source": {
+    "synthesis_id_original": "1029.json_ZrO2_725",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: ZrO2 | solvent: water | temperature: 60.0 | crystalsystem: tetragonal | shape: irregularly spherical | precursor: ZrCl4 (conc 1.0) | additive: cirsium setidens aqueous extracts(cse) | pdfno_list: 42-1164"
+}

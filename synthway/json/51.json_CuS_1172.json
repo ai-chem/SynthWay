@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "51.json_CuS_1172",
+  "composition": "CuS",
+  "elements": [
+    "Cu",
+    "S"
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 40.0
+  },
+  "conditions": {
+    "temperature": 150.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "plate",
+    "size": {
+      "length": 60.0,
+      "width": 60.0,
+      "depth": 60.0
+    }
+  },
+  "pdfno_list": [
+    "06-0464"
+  ],
+  "source": {
+    "synthesis_id_original": "51.json_CuS_1172",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: CuS | solvent: water | solvent.volume: 40.0 | temperature: 150.0 | crystalsystem: hexagonal | shape: plate | size.length: 60.0 | size.width: 60.0 | size.depth: 60.0 | pdfno_list: 06-0464"
+}

@@ -1,0 +1,29 @@
+{
+  "synthesis_id": "418.json_KTaxNbi1-xO3_3575",
+  "composition": "KTaxNbi1−xO3",
+  "elements": [
+    "K",
+    "Ta",
+    "Nb",
+    "O"
+  ],
+  "method": "solvo-hydrothermal",
+  "solvent": {
+    "name": "deionized water/isopropanol"
+  },
+  "conditions": {
+    "temperature": 240.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "size": {
+      "length": 156.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "418.json_KTaxNbi1-xO3_3575",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: KTaxNbi1−xO3 | method: solvo-hydrothermal | solvent: deionized water/isopropanol | temperature: 240.0 | crystalsystem: tetragonal | size.length: 156.0"
+}

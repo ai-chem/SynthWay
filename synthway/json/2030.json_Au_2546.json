@@ -1,0 +1,37 @@
+{
+  "synthesis_id": "2030.json_Au_2546",
+  "composition": "Au",
+  "elements": [
+    "Au"
+  ],
+  "method": "biosynthesis",
+  "precursors": [
+    {
+      "name": "HAuCL4",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "bacillus sp. (sj 14) cell biomass"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 250.0
+  },
+  "product": {
+    "shape": "triangular",
+    "size": {
+      "length": 22.0,
+      "width": 22.0,
+      "depth": 22.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2030.json_Au_2546",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Au | method: biosynthesis | solvent: water | solvent.volume: 250.0 | shape: triangular | size.length: 22.0 | size.width: 22.0 | size.depth: 22.0 | precursor: HAuCL4 (conc 1.0) | additive: bacillus sp. (sj 14) cell biomass"
+}

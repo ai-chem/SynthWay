@@ -1,0 +1,53 @@
+{
+  "synthesis_id": "986.json_Bi2O3_195",
+  "composition": "Bi2O3",
+  "elements": [
+    "Bi",
+    "O"
+  ],
+  "method": "precipitation",
+  "precursors": [
+    {
+      "name": "Bi(NO3)3",
+      "mass": 19.75,
+      "conc": 1666.7
+    },
+    {
+      "name": "NaOH",
+      "conc": 4000.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "nitric acid",
+      "conc": 50.0
+    },
+    {
+      "name": "polyethylene glycol",
+      "mass": 24.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 90.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic/triclinic",
+    "shape": "spherical",
+    "size": {
+      "width": 67.0
+    }
+  },
+  "pdfno_list": [
+    "712274 501088"
+  ],
+  "source": {
+    "synthesis_id_original": "986.json_Bi2O3_195",
+    "nodes": 18,
+    "edges": 17
+  },
+  "retrieval_text": "composition: Bi2O3 | method: precipitation | solvent: water | solvent.volume: 30.0 | temperature: 90.0 | crystalsystem: monoclinic/triclinic | shape: spherical | size.width: 67.0 | precursor: Bi(NO3)3 (mass 19.75; conc 1666.7) | precursor: NaOH (conc 4000.0) | additive: nitric acid (conc 50.0) | additive: polyethylene glycol (mass 24.0) | pdfno_list: 712274 501088"
+}

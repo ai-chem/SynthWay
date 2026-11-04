@@ -1,0 +1,25 @@
+{
+  "synthesis_id": "512.json_(Ba0.75_Sr0.25_Y0.006)Ti1.02O3_41",
+  "composition": "(Ba0.75 Sr0.25 Y0.006)Ti1.02O3",
+  "elements": [
+    "Ba",
+    "Sr",
+    "Y",
+    "Ti",
+    "O"
+  ],
+  "method": "sol-gel",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 1000.0,
+    "ph": 5.0
+  },
+  "source": {
+    "synthesis_id_original": "512.json_(Ba0.75_Sr0.25_Y0.006)Ti1.02O3_41",
+    "nodes": 5,
+    "edges": 4
+  },
+  "retrieval_text": "composition: (Ba0.75 Sr0.25 Y0.006)Ti1.02O3 | method: sol-gel | solvent: water | temperature: 1000.0 | pH: 5.0"
+}

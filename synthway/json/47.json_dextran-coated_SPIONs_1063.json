@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "47.json_dextran-coated_SPIONs_1063",
+  "composition": "dextran-coated SPIONs",
+  "elements": [
+    "S",
+    "P",
+    "I",
+    "O",
+    "Ns"
+  ],
+  "precursors": [
+    {
+      "name": "FeCl3*6H2O",
+      "mass": 3.044
+    },
+    {
+      "name": "Dex T70",
+      "mass": 2.508
+    }
+  ],
+  "additives": [
+    {
+      "name": "ferrous chloride tetrahydrate",
+      "mass": 1.27
+    },
+    {
+      "name": "ammonium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 75.0
+  },
+  "product": {
+    "size": {
+      "length": 60.0,
+      "width": 60.0,
+      "depth": 60.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "47.json_dextran-coated_SPIONs_1063",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: dextran-coated SPIONs | solvent: deionized water | solvent.volume: 20.0 | temperature: 75.0 | size.length: 60.0 | size.width: 60.0 | size.depth: 60.0 | precursor: FeCl3*6H2O (mass 3.044) | precursor: Dex T70 (mass 2.508) | additive: ferrous chloride tetrahydrate (mass 1.27) | additive: ammonium hydroxide"
+}

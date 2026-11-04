@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "1029.json_ZrO2_724",
+  "composition": "ZrO2",
+  "elements": [
+    "Zr",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "ZrCl4",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "cirsium setidens aqueous extracts(cse)"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "irregularly spherical",
+    "size": {
+      "length": 54.67,
+      "width": 54.67,
+      "depth": 54.67
+    }
+  },
+  "pdfno_list": [
+    "37-1484"
+  ],
+  "source": {
+    "synthesis_id_original": "1029.json_ZrO2_724",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: ZrO2 | solvent: water | temperature: 60.0 | crystalsystem: monoclinic | shape: irregularly spherical | size.length: 54.67 | size.width: 54.67 | size.depth: 54.67 | precursor: ZrCl4 (conc 1.0) | additive: cirsium setidens aqueous extracts(cse) | pdfno_list: 37-1484"
+}

@@ -1,0 +1,36 @@
+{
+  "synthesis_id": "709.json_Au_483",
+  "composition": "Au",
+  "elements": [
+    "Au"
+  ],
+  "precursors": [
+    {
+      "name": "HAuCl4",
+      "conc": 5.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium borohydride",
+      "conc": 1.0
+    },
+    {
+      "name": "trisodium citrate",
+      "conc": 5.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 15.8
+  },
+  "product": {
+    "shape": "wire"
+  },
+  "source": {
+    "synthesis_id_original": "709.json_Au_483",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Au | solvent: water | solvent.volume: 15.8 | shape: wire | precursor: HAuCl4 (conc 5.0) | additive: sodium borohydride (conc 1.0) | additive: trisodium citrate (conc 5.0)"
+}

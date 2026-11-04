@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "2073.json_FeS_1356",
+  "composition": "FeS",
+  "elements": [
+    "Fe",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "Fe(ACDA)3",
+      "mass": 1.0
+    }
+  ],
+  "solvent": {
+    "name": "en",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 450.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "size": {
+      "length": 70.0,
+      "width": 8.0,
+      "depth": 8.0
+    }
+  },
+  "pdfno_list": [
+    "370-477"
+  ],
+  "source": {
+    "synthesis_id_original": "2073.json_FeS_1356",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: FeS | solvent: en | solvent.volume: 20.0 | temperature: 450.0 | crystalsystem: hexagonal | size.length: 70.0 | size.width: 8.0 | size.depth: 8.0 | precursor: Fe(ACDA)3 (mass 1.0) | pdfno_list: 370-477"
+}

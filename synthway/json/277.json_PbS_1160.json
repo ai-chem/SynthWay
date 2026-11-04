@@ -1,0 +1,28 @@
+{
+  "synthesis_id": "277.json_PbS_1160",
+  "composition": "PbS",
+  "elements": [
+    "Pb",
+    "S"
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 25.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 6.0
+    }
+  },
+  "pdfno_list": [
+    "05-592"
+  ],
+  "source": {
+    "synthesis_id_original": "277.json_PbS_1160",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: PbS | solvent: water | solvent.volume: 25.0 | crystalsystem: cubic | shape: spherical | size.length: 6.0 | pdfno_list: 05-592"
+}

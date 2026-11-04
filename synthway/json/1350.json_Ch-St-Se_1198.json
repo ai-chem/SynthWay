@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1350.json_Ch-St-Se_1198",
+  "composition": "Ch-St-Se",
+  "elements": [
+    "Ch",
+    "St",
+    "Se"
+  ],
+  "method": "microwave synthesis",
+  "precursors": [
+    {
+      "name": "Na2SeO3",
+      "mass": 0.05
+    },
+    {
+      "name": "Chi",
+      "mass": 0.5
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium dodecyl sulfate",
+      "mass": 0.05
+    }
+  ],
+  "solvent": {
+    "name": "mixture of distilled water and acetic acid",
+    "volume": 50.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 12.0,
+      "width": 12.0,
+      "depth": 12.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1350.json_Ch-St-Se_1198",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Ch-St-Se | method: microwave synthesis | solvent: mixture of distilled water and acetic acid | solvent.volume: 50.0 | shape: spherical | size.length: 12.0 | size.width: 12.0 | size.depth: 12.0 | precursor: Na2SeO3 (mass 0.05) | precursor: Chi (mass 0.5) | additive: sodium dodecyl sulfate (mass 0.05)"
+}

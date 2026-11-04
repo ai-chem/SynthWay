@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "2187.json_Au@Keratin_3733",
+  "composition": "Au@Keratin",
+  "elements": [
+    "Au",
+    "Ke"
+  ],
+  "precursors": [
+    {
+      "name": "HAuCl4",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "keratin"
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 37.0
+  },
+  "product": {
+    "size": {
+      "length": 2.24,
+      "width": 2.24,
+      "depth": 2.24
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2187.json_Au@Keratin_3733",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Au@Keratin | solvent: water | temperature: 37.0 | size.length: 2.24 | size.width: 2.24 | size.depth: 2.24 | precursor: HAuCl4 (conc 10.0) | additive: keratin | additive: sodium hydroxide (conc 1000.0)"
+}

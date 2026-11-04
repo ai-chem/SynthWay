@@ -1,0 +1,37 @@
+{
+  "synthesis_id": "1029.json_erythromycin_loaded_ZrO2_727",
+  "composition": "erythromycin loaded ZrO2",
+  "elements": [
+    "Zr",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "ZrO2"
+    }
+  ],
+  "additives": [
+    {
+      "name": "erythromycin"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "size": {
+      "length": 80.41,
+      "width": 80.41,
+      "depth": 80.41
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1029.json_erythromycin_loaded_ZrO2_727",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: erythromycin loaded ZrO2 | solvent: water | temperature: 60.0 | size.length: 80.41 | size.width: 80.41 | size.depth: 80.41 | precursor: ZrO2 | additive: erythromycin"
+}

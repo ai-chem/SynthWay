@@ -1,0 +1,36 @@
+{
+  "synthesis_id": "1475.json_ZnO_978",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "plal",
+  "precursors": [
+    {
+      "name": "Zn (plate)"
+    }
+  ],
+  "solvent": {
+    "name": "ultra-pure water",
+    "volume": 30.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "rectangular rod-like",
+    "size": {
+      "length": 72.18,
+      "width": 72.18,
+      "depth": 72.18
+    }
+  },
+  "pdfno_list": [
+    "89-1397"
+  ],
+  "source": {
+    "synthesis_id_original": "1475.json_ZnO_978",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: ZnO | method: plal | solvent: ultra-pure water | solvent.volume: 30.0 | crystalsystem: hexagonal | shape: rectangular rod-like | size.length: 72.18 | size.width: 72.18 | size.depth: 72.18 | precursor: Zn (plate) | pdfno_list: 89-1397"
+}

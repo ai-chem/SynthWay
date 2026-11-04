@@ -1,0 +1,34 @@
+{
+  "synthesis_id": "1500.json_Fe3O4_1912",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "FeCl3/Fe(NO3)3"
+    }
+  ],
+  "additives": [
+    {
+      "name": "allium sativum shoots extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "spinal"
+  },
+  "pdfno_list": [
+    "98-3969 98-0625 98-2012"
+  ],
+  "source": {
+    "synthesis_id_original": "1500.json_Fe3O4_1912",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: Fe3O4 | method: green synthesis | solvent: water | crystalsystem: spinal | precursor: FeCl3/Fe(NO3)3 | additive: allium sativum shoots extract | pdfno_list: 98-3969 98-0625 98-2012"
+}

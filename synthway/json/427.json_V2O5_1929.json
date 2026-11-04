@@ -1,0 +1,25 @@
+{
+  "synthesis_id": "427.json_V2O5_1929",
+  "composition": "V2O5",
+  "elements": [
+    "V",
+    "O"
+  ],
+  "method": "sol-gel",
+  "solvent": {
+    "name": "isopropanol"
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "ribbon"
+  },
+  "pdfno_list": [
+    "41-1426"
+  ],
+  "source": {
+    "synthesis_id_original": "427.json_V2O5_1929",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: V2O5 | method: sol-gel | solvent: isopropanol | crystalsystem: orthorhombic | shape: ribbon | pdfno_list: 41-1426"
+}

@@ -1,0 +1,27 @@
+{
+  "synthesis_id": "282.json_PbO2_1379",
+  "composition": "PbO2",
+  "elements": [
+    "Pb",
+    "O"
+  ],
+  "method": "calcination",
+  "conditions": {
+    "temperature": 600.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "size": {
+      "length": 70.0
+    }
+  },
+  "pdfno_list": [
+    "38-1477"
+  ],
+  "source": {
+    "synthesis_id_original": "282.json_PbO2_1379",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: PbO2 | method: calcination | temperature: 600.0 | crystalsystem: orthorhombic | size.length: 70.0 | pdfno_list: 38-1477"
+}

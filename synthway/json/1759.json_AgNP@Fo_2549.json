@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "1759.json_AgNP@Fo_2549",
+  "composition": "AgNP@Fo",
+  "elements": [
+    "Ag",
+    "N",
+    "P",
+    "Fo"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "fusarium oxysporum fungal filtrate"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 28.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 20.81,
+      "width": 20.81,
+      "depth": 20.81
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1759.json_AgNP@Fo_2549",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: AgNP@Fo | solvent: water | temperature: 28.0 | shape: spherical | size.length: 20.81 | size.width: 20.81 | size.depth: 20.81 | precursor: AgNO3 (conc 1.0) | additive: fusarium oxysporum fungal filtrate"
+}

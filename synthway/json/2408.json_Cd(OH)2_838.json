@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "2408.json_Cd(OH)2_838",
+  "composition": "Cd(OH)2",
+  "elements": [
+    "Cd",
+    "O",
+    "H"
+  ],
+  "method": "assisted hydrothermal",
+  "solvent": {
+    "name": "water",
+    "volume": 110.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "nanowiskers",
+    "size": {
+      "width": 200.0
+    }
+  },
+  "pdfno_list": [
+    "31-0228"
+  ],
+  "source": {
+    "synthesis_id_original": "2408.json_Cd(OH)2_838",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: Cd(OH)2 | method: assisted hydrothermal | solvent: water | solvent.volume: 110.0 | temperature: 200.0 | crystalsystem: hexagonal | shape: nanowiskers | size.width: 200.0 | pdfno_list: 31-0228"
+}

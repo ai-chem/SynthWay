@@ -1,0 +1,59 @@
+{
+  "synthesis_id": "1263.json_CoMnFe2O4_1733",
+  "composition": "CoMnFe2O4",
+  "elements": [
+    "Co",
+    "Mn",
+    "Fe",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "CoCl2·6H2O",
+      "mass": 0.284,
+      "conc": 5.0
+    },
+    {
+      "name": "FeCl3*6H2O",
+      "conc": 6.0
+    },
+    {
+      "name": "MnCl2*2H2O",
+      "conc": 4.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium acetate",
+      "mass": 3.05
+    },
+    {
+      "name": "urea",
+      "mass": 0.6
+    },
+    {
+      "name": "n-heptane"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 13.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 78.0,
+      "width": 78.0,
+      "depth": 78.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1263.json_CoMnFe2O4_1733",
+    "nodes": 20,
+    "edges": 19
+  },
+  "retrieval_text": "composition: CoMnFe2O4 | solvent: deionized water | solvent.volume: 13.0 | temperature: 180.0 | shape: spherical | size.length: 78.0 | size.width: 78.0 | size.depth: 78.0 | precursor: CoCl2·6H2O (mass 0.284; conc 5.0) | precursor: FeCl3*6H2O (conc 6.0) | precursor: MnCl2*2H2O (conc 4.0) | additive: sodium acetate (mass 3.05) | additive: urea (mass 0.6) | additive: n-heptane"
+}

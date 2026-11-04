@@ -1,0 +1,28 @@
+{
+  "synthesis_id": "151.json_B13_2740",
+  "composition": "B13",
+  "elements": [
+    "B"
+  ],
+  "method": "hydrothermal",
+  "solvent": {
+    "name": "double distilled water",
+    "volume": 39.6
+  },
+  "conditions": {
+    "temperature": 120.0,
+    "ph": 13.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic"
+  },
+  "pdfno_list": [
+    "76-1730"
+  ],
+  "source": {
+    "synthesis_id_original": "151.json_B13_2740",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: B13 | method: hydrothermal | solvent: double distilled water | solvent.volume: 39.6 | temperature: 120.0 | pH: 13.0 | crystalsystem: monoclinic | pdfno_list: 76-1730"
+}

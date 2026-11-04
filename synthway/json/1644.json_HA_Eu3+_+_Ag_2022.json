@@ -1,0 +1,32 @@
+{
+  "synthesis_id": "1644.json_HA:Eu3+_+_Ag_2022",
+  "composition": "HA:Eu3+ + Ag",
+  "elements": [
+    "H",
+    "A",
+    "Eu",
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "HA:Eu3+",
+      "mass": 0.1
+    },
+    {
+      "name": "AgNP (sol.)",
+      "mass": 0.1
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "pdfno_list": [
+    "02-1098"
+  ],
+  "source": {
+    "synthesis_id_original": "1644.json_HA:Eu3+_+_Ag_2022",
+    "nodes": 6,
+    "edges": 6
+  },
+  "retrieval_text": "composition: HA:Eu3+ + Ag | solvent: water | precursor: HA:Eu3+ (mass 0.1) | precursor: AgNP (sol.) (mass 0.1) | pdfno_list: 02-1098"
+}

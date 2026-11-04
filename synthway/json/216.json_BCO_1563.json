@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "216.json_BCO_1563",
+  "composition": "BCO",
+  "elements": [
+    "B",
+    "C",
+    "O"
+  ],
+  "solvent": {
+    "name": "11 ethanol-water",
+    "volume": 80.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "shape": "flake",
+    "size": {
+      "length": 205.0,
+      "width": 205.0
+    }
+  },
+  "pdfno_list": [
+    "01-080-1906"
+  ],
+  "source": {
+    "synthesis_id_original": "216.json_BCO_1563",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: BCO | solvent: 11 ethanol-water | solvent.volume: 80.0 | temperature: 180.0 | crystalsystem: tetragonal | shape: flake | size.length: 205.0 | size.width: 205.0 | pdfno_list: 01-080-1906"
+}

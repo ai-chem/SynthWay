@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "601.json_Ni_Doped_SrTiO3_144",
+  "composition": "Ni Doped SrTiO3",
+  "elements": [
+    "Ni",
+    "Do",
+    "Sr",
+    "Ti",
+    "O"
+  ],
+  "method": "solid-state reaction",
+  "precursors": [
+    {
+      "name": "SrCO3"
+    },
+    {
+      "name": "TiO2"
+    },
+    {
+      "name": "NiSO4"
+    }
+  ],
+  "conditions": {
+    "temperature": 1200.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 59.41
+    }
+  },
+  "source": {
+    "synthesis_id_original": "601.json_Ni_Doped_SrTiO3_144",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: Ni Doped SrTiO3 | method: solid-state reaction | temperature: 1200.0 | crystalsystem: cubic | size.length: 59.41 | precursor: SrCO3 | precursor: TiO2 | precursor: NiSO4"
+}

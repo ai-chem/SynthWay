@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "852.json_Co0.6-0.7Fe2.4-2.3O4_2730",
+  "composition": "Co0.6−0.7Fe2.4−2.3O4",
+  "elements": [
+    "Co",
+    "Fe",
+    "O"
+  ],
+  "method": "thermal decomposition",
+  "precursors": [
+    {
+      "name": "Fe(acac)3",
+      "mass": 2.824
+    },
+    {
+      "name": "CoCl2",
+      "mass": 1.04
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleic acid",
+      "mass": 1.128
+    },
+    {
+      "name": "oleylamine",
+      "mass": 1.07
+    },
+    {
+      "name": "benzyl ether"
+    }
+  ],
+  "conditions": {
+    "temperature": 270.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "octahedrons",
+    "size": {
+      "length": 20.0
+    }
+  },
+  "pdfno_list": [
+    "221086"
+  ],
+  "source": {
+    "synthesis_id_original": "852.json_Co0.6-0.7Fe2.4-2.3O4_2730",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: Co0.6−0.7Fe2.4−2.3O4 | method: thermal decomposition | temperature: 270.0 | crystalsystem: cubic | shape: octahedrons | size.length: 20.0 | precursor: Fe(acac)3 (mass 2.824) | precursor: CoCl2 (mass 1.04) | additive: oleic acid (mass 1.128) | additive: oleylamine (mass 1.07) | additive: benzyl ether | pdfno_list: 221086"
+}

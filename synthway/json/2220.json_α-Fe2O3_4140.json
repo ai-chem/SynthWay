@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "2220.json_α-Fe2O3_4140",
+  "composition": "α-Fe2O3",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "coprecipitation",
+  "precursors": [
+    {
+      "name": "FeCl3*6H2O"
+    }
+  ],
+  "additives": [
+    {
+      "name": "ammonium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 150.0
+  },
+  "conditions": {
+    "temperature": 500.0,
+    "ph": 1.0
+  },
+  "product": {
+    "shape": "sphere-like shaped and nanopowders",
+    "size": {
+      "length": 30.0,
+      "width": 30.0,
+      "depth": 30.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2220.json_α-Fe2O3_4140",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: α-Fe2O3 | method: coprecipitation | solvent: water | solvent.volume: 150.0 | temperature: 500.0 | pH: 1.0 | shape: sphere-like shaped and nanopowders | size.length: 30.0 | size.width: 30.0 | size.depth: 30.0 | precursor: FeCl3*6H2O | additive: ammonium hydroxide"
+}

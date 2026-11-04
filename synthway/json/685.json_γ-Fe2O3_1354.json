@@ -1,0 +1,30 @@
+{
+  "synthesis_id": "685.json_γ-Fe2O3_1354",
+  "composition": "γ-Fe2O3",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "reduction",
+  "solvent": {
+    "name": "n-octanol",
+    "volume": 13.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "shape": "truncated triangle nanoplates",
+    "size": {
+      "length": 35.0,
+      "width": 35.0,
+      "depth": 11.5
+    }
+  },
+  "source": {
+    "synthesis_id_original": "685.json_γ-Fe2O3_1354",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: γ-Fe2O3 | method: reduction | solvent: n-octanol | solvent.volume: 13.0 | temperature: 180.0 | shape: truncated triangle nanoplates | size.length: 35.0 | size.width: 35.0 | size.depth: 11.5"
+}

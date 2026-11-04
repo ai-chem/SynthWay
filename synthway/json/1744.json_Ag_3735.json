@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "1744.json_Ag_3735",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1000.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "pomegranate waste extract preparation (pwe)"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 50.0,
+    "ph": 6.8
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 20.0,
+      "width": 20.0,
+      "depth": 20.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1744.json_Ag_3735",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Ag | solvent: water | temperature: 50.0 | pH: 6.8 | shape: spherical | size.length: 20.0 | size.width: 20.0 | size.depth: 20.0 | precursor: AgNO3 (conc 1000.0) | additive: pomegranate waste extract preparation (pwe)"
+}

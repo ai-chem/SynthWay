@@ -1,0 +1,59 @@
+{
+  "synthesis_id": "1302.json_[CuL1H2O].Cl_3764",
+  "composition": "[CuL1H2O].Cl",
+  "elements": [
+    "Cu",
+    "L",
+    "H",
+    "O",
+    "Cl"
+  ],
+  "precursors": [
+    {
+      "name": "C5H8O2",
+      "conc": 1.0
+    },
+    {
+      "name": "CuCl2*2H2O",
+      "mass": 0.1344,
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "metformin",
+      "mass": 0.165,
+      "conc": 1.0
+    },
+    {
+      "name": "sodium hydroxide"
+    },
+    {
+      "name": "ammonium hydroxide",
+      "mass": 0.165,
+      "conc": 1.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0,
+    "ph": 6.5
+  },
+  "product": {
+    "crystalsystem": "triclinic",
+    "shape": "wire",
+    "size": {
+      "length": 27.88,
+      "width": 27.88,
+      "depth": 27.88
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1302.json_[CuL1H2O].Cl_3764",
+    "nodes": 18,
+    "edges": 20
+  },
+  "retrieval_text": "composition: [CuL1H2O].Cl | solvent: water | temperature: 25.0 | pH: 6.5 | crystalsystem: triclinic | shape: wire | size.length: 27.88 | size.width: 27.88 | size.depth: 27.88 | precursor: C5H8O2 (conc 1.0) | precursor: CuCl2*2H2O (mass 0.1344; conc 1.0) | additive: metformin (mass 0.165; conc 1.0) | additive: sodium hydroxide | additive: ammonium hydroxide (mass 0.165; conc 1.0)"
+}

@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "2136.json_Fe3O4_1349",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Fe(acac)3",
+      "mass": 0.71
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleic acid",
+      "mass": 1.69,
+      "conc": 8.0
+    },
+    {
+      "name": "hydrazine"
+    }
+  ],
+  "solvent": {
+    "name": "dibenzylether",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "size": {
+      "length": 8.1,
+      "width": 8.1,
+      "depth": 8.1
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2136.json_Fe3O4_1349",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Fe3O4 | solvent: dibenzylether | solvent.volume: 50.0 | temperature: 200.0 | size.length: 8.1 | size.width: 8.1 | size.depth: 8.1 | precursor: Fe(acac)3 (mass 0.71) | additive: oleic acid (mass 1.69; conc 8.0) | additive: hydrazine"
+}

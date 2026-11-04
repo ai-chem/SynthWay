@@ -1,0 +1,30 @@
+{
+  "synthesis_id": "304.json_CoMnxFe2_1611",
+  "composition": "CoMnxFe2",
+  "elements": [
+    "Co",
+    "Mn",
+    "Fe"
+  ],
+  "method": "sol-gel auto-combustion",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 400.0,
+    "ph": 5.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical"
+  },
+  "pdfno_list": [
+    "03-0864"
+  ],
+  "source": {
+    "synthesis_id_original": "304.json_CoMnxFe2_1611",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: CoMnxFe2 | method: sol-gel auto-combustion | solvent: water | temperature: 400.0 | pH: 5.0 | crystalsystem: cubic | shape: spherical | pdfno_list: 03-0864"
+}

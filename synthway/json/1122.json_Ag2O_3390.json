@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1122.json_Ag2O_3390",
+  "composition": "Ag2O",
+  "elements": [
+    "Ag",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "momordica cymbalaria seed extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 22.1,
+      "width": 22.1,
+      "depth": 22.1
+    }
+  },
+  "pdfno_list": [
+    "76-1393"
+  ],
+  "source": {
+    "synthesis_id_original": "1122.json_Ag2O_3390",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Ag2O | method: green synthesis | solvent: water | temperature: 60.0 | crystalsystem: cubic | shape: spherical | size.length: 22.1 | size.width: 22.1 | size.depth: 22.1 | precursor: AgNO3 (conc 100.0) | additive: momordica cymbalaria seed extract | pdfno_list: 76-1393"
+}

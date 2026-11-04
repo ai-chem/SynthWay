@@ -1,0 +1,51 @@
+{
+  "synthesis_id": "2050.json_Bi5O7I_3109",
+  "composition": "Bi5O7I",
+  "elements": [
+    "Bi",
+    "O",
+    "I"
+  ],
+  "method": "facile hydrothermal",
+  "precursors": [
+    {
+      "name": "Bi(NO3)3⋅5H2O",
+      "conc": 10.0
+    },
+    {
+      "name": "KI",
+      "conc": 30.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 1500.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 40.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "nanobelts",
+    "size": {
+      "length": 50000.0,
+      "width": 50000.0,
+      "depth": 1000.0
+    }
+  },
+  "pdfno_list": [
+    "40-0548"
+  ],
+  "source": {
+    "synthesis_id_original": "2050.json_Bi5O7I_3109",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: Bi5O7I | method: facile hydrothermal | solvent: water | solvent.volume: 40.0 | temperature: 180.0 | crystalsystem: orthorhombic | shape: nanobelts | size.length: 50000.0 | size.width: 50000.0 | size.depth: 1000.0 | precursor: Bi(NO3)3⋅5H2O (conc 10.0) | precursor: KI (conc 30.0) | additive: sodium hydroxide (conc 1500.0) | pdfno_list: 40-0548"
+}

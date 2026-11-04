@@ -1,0 +1,28 @@
+{
+  "synthesis_id": "240.json_PS_1654",
+  "composition": "PS",
+  "elements": [
+    "P",
+    "S"
+  ],
+  "method": "emulsifier-free emulsion polymerization",
+  "solvent": {
+    "name": "water",
+    "volume": 300.0
+  },
+  "conditions": {
+    "temperature": 70.0
+  },
+  "product": {
+    "shape": "nanobeads",
+    "size": {
+      "length": 40.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "240.json_PS_1654",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: PS | method: emulsifier-free emulsion polymerization | solvent: water | solvent.volume: 300.0 | temperature: 70.0 | shape: nanobeads | size.length: 40.0"
+}

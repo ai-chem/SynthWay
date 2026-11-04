@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "1678.json_ZnO_559",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "direct precipitation",
+  "precursors": [
+    {
+      "name": "Zn(NO3)2",
+      "conc": 200.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "potassium hydroxide",
+      "conc": 400.0
+    }
+  ],
+  "solvent": {
+    "name": "deionized water"
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "hexagonal",
+    "size": {
+      "length": 65.0,
+      "width": 65.0,
+      "depth": 65.0
+    }
+  },
+  "pdfno_list": [
+    "75-0592"
+  ],
+  "source": {
+    "synthesis_id_original": "1678.json_ZnO_559",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: ZnO | method: direct precipitation | solvent: deionized water | crystalsystem: hexagonal | shape: hexagonal | size.length: 65.0 | size.width: 65.0 | size.depth: 65.0 | precursor: Zn(NO3)2 (conc 200.0) | additive: potassium hydroxide (conc 400.0) | pdfno_list: 75-0592"
+}

@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "2138.json_Eu2O2S_2362",
+  "composition": "Eu2O2S",
+  "elements": [
+    "Eu",
+    "O",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "[NHEt3]+[Eu(acda)4]-",
+      "mass": 0.4
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleylamine"
+    }
+  ],
+  "solvent": {
+    "name": "trioctylphosphine"
+  },
+  "conditions": {
+    "temperature": 280.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "wire",
+    "size": {
+      "length": 7.0,
+      "width": 3.0,
+      "depth": 3.0
+    }
+  },
+  "pdfno_list": [
+    "26-1418"
+  ],
+  "source": {
+    "synthesis_id_original": "2138.json_Eu2O2S_2362",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Eu2O2S | solvent: trioctylphosphine | temperature: 280.0 | crystalsystem: hexagonal | shape: wire | size.length: 7.0 | size.width: 3.0 | size.depth: 3.0 | precursor: [NHEt3]+[Eu(acda)4]- (mass 0.4) | additive: oleylamine | pdfno_list: 26-1418"
+}

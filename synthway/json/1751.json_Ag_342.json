@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "1751.json_Ag_342",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "rhus chinensis roots extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 54.4,
+      "width": 54.4,
+      "depth": 54.4
+    }
+  },
+  "pdfno_list": [
+    "04-0783"
+  ],
+  "source": {
+    "synthesis_id_original": "1751.json_Ag_342",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Ag | solvent: water | crystalsystem: cubic | shape: spherical | size.length: 54.4 | size.width: 54.4 | size.depth: 54.4 | precursor: AgNO3 (conc 1.0) | additive: rhus chinensis roots extract | pdfno_list: 04-0783"
+}

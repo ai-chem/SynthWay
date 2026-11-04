@@ -1,0 +1,35 @@
+{
+  "synthesis_id": "35.json_MnCO3_4198",
+  "composition": "MnCO3",
+  "elements": [
+    "Mn",
+    "C",
+    "O"
+  ],
+  "method": "temperature",
+  "solvent": {
+    "name": "distilled water",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 600.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "dumbbell",
+    "size": {
+      "length": 13500.0,
+      "width": 13500.0,
+      "depth": 13500.0
+    }
+  },
+  "pdfno_list": [
+    "86-0173"
+  ],
+  "source": {
+    "synthesis_id_original": "35.json_MnCO3_4198",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: MnCO3 | method: temperature | solvent: distilled water | solvent.volume: 20.0 | temperature: 600.0 | crystalsystem: hexagonal | shape: dumbbell | size.length: 13500.0 | size.width: 13500.0 | size.depth: 13500.0 | pdfno_list: 86-0173"
+}

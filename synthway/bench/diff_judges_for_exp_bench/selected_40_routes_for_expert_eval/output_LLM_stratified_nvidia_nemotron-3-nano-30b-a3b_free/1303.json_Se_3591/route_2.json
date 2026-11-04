@@ -1,0 +1,4 @@
+{
+  "retrieval_text": "composition: Se | method: solvothermal | solvent: ethanol | solvent.volume: 40 mL | temperature: 180 °C | ph: 2.5 | crystal_system: hexagonal | shape: nanorod | size.length: 5.0 μm | size.width: 0.05 μm | size.depth: 0.05 μm | precursor: Na2Se | precursor.mass: 0.5 g | precursor.conc: null | additive: null | additive.mass: null | additive.conc: null | seed: Se seed | seed.mass: 10 mg | seed.conc: null",
+  "raw_text": "Route 2: Solvothermal reduction in ethanol  \n1. Dissolve Na₂Se (0.5 g) in ethanol (40 mL) and add ascorbic acid (0.2 g) as a reducing agent; adjust pH to 2.5 with dilute HCl (0.1 M, 1 mL).  \n2. Transfer the solution to an autoclave and heat at 180 °C for 6 h.  \n3. Cool, collect the solid by centrifugation, wash with ethanol, and dry at 50 °C.  \nFinal product: Se obtained as hexagonal nanorods approximately 5.0 μm length × 0.05 μm width × 0.05 μm depth, matching PDF reference 00-014-0256."
+}

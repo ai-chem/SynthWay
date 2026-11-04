@@ -1,0 +1,4 @@
+{
+  "retrieval_text": "composition: 10Co3O4@CeO2 | method: impregnation | solvent: water | solvent.volume: 50.0 | temperature: 90.0 | ph: null | crystal_system: cubic | shape: spherical | size.length: 500.0 | size.width: 500.0 | size.depth: 500.0 | precursor: Co(NO3)2*6H2O | precursor.mass: 0.06 | precursor.conc: null | additive: null | additive.mass: null | additive.conc: null | seed: CeO2 | seed.mass: 0.45 | seed.conc: null",
+  "raw_text": "Route 1: Impregnation method for 10Co3O4@CeO2\n1. Prepare a solution of Co(NO3)2·6H2O (0.06 g) in water (50 mL).\n2. Add CeO2 seeds (0.45 g) to the solution and stir for 30 minutes.\n3. Heat the mixture at 90 °C until the water evaporates.\n4. Calcine the resulting powder at 300–400 °C for 2 hours.\nFinal product: 10Co3O4@CeO2 as spherical particles with a cubic crystal structure, particle size ~500×500×500 nm, matching PDF reference 42-1467, 34-0394."
+}

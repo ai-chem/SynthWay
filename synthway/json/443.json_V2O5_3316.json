@@ -1,0 +1,32 @@
+{
+  "synthesis_id": "443.json_V2O5_3316",
+  "composition": "V2O5",
+  "elements": [
+    "V",
+    "O"
+  ],
+  "method": "depending on the formation of the nanoparticles on cotton cellulose fibers",
+  "solvent": {
+    "name": "water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 500.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "spherical/rod-like",
+    "size": {
+      "length": 210.0
+    }
+  },
+  "pdfno_list": [
+    "89-0612"
+  ],
+  "source": {
+    "synthesis_id_original": "443.json_V2O5_3316",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: V2O5 | method: depending on the formation of the nanoparticles on cotton cellulose fibers | solvent: water | solvent.volume: 50.0 | temperature: 500.0 | crystalsystem: orthorhombic | shape: spherical/rod-like | size.length: 210.0 | pdfno_list: 89-0612"
+}

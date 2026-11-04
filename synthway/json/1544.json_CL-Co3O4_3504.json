@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "1544.json_CL-Co3O4_3504",
+  "composition": "CL-Co3O4",
+  "elements": [
+    "C",
+    "L",
+    "Co",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "CoCl2",
+      "conc": 500.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "curcuma longa root extract"
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 10.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 75.0,
+    "ph": 9.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 99.16,
+      "width": 99.16,
+      "depth": 99.16
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1544.json_CL-Co3O4_3504",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: CL-Co3O4 | method: green synthesis | solvent: water | temperature: 75.0 | pH: 9.0 | crystalsystem: cubic | shape: spherical | size.length: 99.16 | size.width: 99.16 | size.depth: 99.16 | precursor: CoCl2 (conc 500.0) | additive: curcuma longa root extract | additive: sodium hydroxide (conc 10.0)"
+}

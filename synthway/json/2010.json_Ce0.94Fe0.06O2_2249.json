@@ -1,0 +1,51 @@
+{
+  "synthesis_id": "2010.json_Ce0.94Fe0.06O2_2249",
+  "composition": "Ce0.94Fe0.06O2",
+  "elements": [
+    "Ce",
+    "Fe",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "Ce(NO3)3*6H2O",
+      "mass": 0.842,
+      "conc": 1.94
+    },
+    {
+      "name": "Fe(NO3)3*9H2O",
+      "mass": 0.04848,
+      "conc": 0.12
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "mass": 19.2
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 80.0
+  },
+  "conditions": {
+    "temperature": 400.0
+  },
+  "product": {
+    "shape": "wire",
+    "size": {
+      "width": 21.07,
+      "depth": 21.07
+    }
+  },
+  "pdfno_list": [
+    "34-0394, 33-0664"
+  ],
+  "source": {
+    "synthesis_id_original": "2010.json_Ce0.94Fe0.06O2_2249",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: Ce0.94Fe0.06O2 | method: hydrothermal | solvent: water | solvent.volume: 80.0 | temperature: 400.0 | shape: wire | size.width: 21.07 | size.depth: 21.07 | precursor: Ce(NO3)3*6H2O (mass 0.842; conc 1.94) | precursor: Fe(NO3)3*9H2O (mass 0.04848; conc 0.12) | additive: sodium hydroxide (mass 19.2) | pdfno_list: 34-0394, 33-0664"
+}

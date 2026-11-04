@@ -1,0 +1,51 @@
+{
+  "synthesis_id": "1959.json_LaNiO3_2826",
+  "composition": "LaNiO3",
+  "elements": [
+    "La",
+    "Ni",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "La(NO3)3*6H2O",
+      "conc": 1.0
+    },
+    {
+      "name": "Ni(NO3)2*6H2O",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "glycine",
+      "conc": 4.0
+    },
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 0.3
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 25.0
+  },
+  "conditions": {
+    "temperature": 180.0,
+    "ph": 7.0
+  },
+  "product": {
+    "shape": "cube",
+    "size": {
+      "length": 800.0,
+      "width": 800.0,
+      "depth": 800.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1959.json_LaNiO3_2826",
+    "nodes": 16,
+    "edges": 16
+  },
+  "retrieval_text": "composition: LaNiO3 | solvent: water | solvent.volume: 25.0 | temperature: 180.0 | pH: 7.0 | shape: cube | size.length: 800.0 | size.width: 800.0 | size.depth: 800.0 | precursor: La(NO3)3*6H2O (conc 1.0) | precursor: Ni(NO3)2*6H2O (conc 1.0) | additive: glycine (conc 4.0) | additive: polyvinylpyrrolidone (mass 0.3)"
+}

@@ -1,0 +1,28 @@
+{
+  "synthesis_id": "653.json_Au_2814",
+  "composition": "Au",
+  "elements": [
+    "Au"
+  ],
+  "precursors": [
+    {
+      "name": "HAuCl4",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "pc",
+      "conc": 0.1
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "source": {
+    "synthesis_id_original": "653.json_Au_2814",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: Au | solvent: water | precursor: HAuCl4 (conc 10.0) | additive: pc (conc 0.1)"
+}

@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "1432.json_ZnO-QE_1852",
+  "composition": "ZnO-QE",
+  "elements": [
+    "Zn",
+    "O",
+    "Q",
+    "E"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Zn(NO3)2",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "quercetin",
+      "mass": 0.004
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "wire",
+    "size": {
+      "length": 75.0,
+      "width": 15.0,
+      "depth": 15.0
+    }
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "1432.json_ZnO-QE_1852",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: ZnO-QE | method: green synthesis | solvent: water | temperature: 60.0 | crystalsystem: hexagonal | shape: wire | size.length: 75.0 | size.width: 15.0 | size.depth: 15.0 | precursor: Zn(NO3)2 (conc 1.0) | additive: quercetin (mass 0.004) | pdfno_list: 36-1451"
+}

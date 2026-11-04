@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "1445.json_Ce3_MBG_1876",
+  "composition": "Ce3 MBG",
+  "elements": [
+    "Ce",
+    "M",
+    "B",
+    "G"
+  ],
+  "method": "microemulsion assisted sol-gel",
+  "precursors": [
+    {
+      "name": "CTAB",
+      "mass": 2.8
+    },
+    {
+      "name": "Si(OC2H5)4"
+    },
+    {
+      "name": "Ce(NO3)3*6H2O"
+    }
+  ],
+  "additives": [
+    {
+      "name": "ethyl acetate"
+    },
+    {
+      "name": "ammonium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 150.0
+  },
+  "product": {
+    "crystalsystem": "amorphous",
+    "shape": "spherical",
+    "size": {
+      "length": 189.0,
+      "width": 189.0,
+      "depth": 189.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1445.json_Ce3_MBG_1876",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Ce3 MBG | method: microemulsion assisted sol-gel | solvent: deionized water | solvent.volume: 150.0 | crystalsystem: amorphous | shape: spherical | size.length: 189.0 | size.width: 189.0 | size.depth: 189.0 | precursor: CTAB (mass 2.8) | precursor: Si(OC2H5)4 | precursor: Ce(NO3)3*6H2O | additive: ethyl acetate | additive: ammonium hydroxide"
+}

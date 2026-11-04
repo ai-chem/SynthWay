@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "692.json_Cu_1767",
+  "composition": "Cu",
+  "elements": [
+    "Cu"
+  ],
+  "method": "reduction",
+  "precursors": [
+    {
+      "name": "Cu(acac)2",
+      "conc": 20.0
+    },
+    {
+      "name": "C16H34O2",
+      "conc": 60.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleic acid",
+      "conc": 20.0
+    },
+    {
+      "name": "oleyl amine",
+      "conc": 20.0
+    }
+  ],
+  "solvent": {
+    "name": "octyl ether"
+  },
+  "conditions": {
+    "temperature": 150.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 6.0,
+      "width": 6.0,
+      "depth": 6.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "692.json_Cu_1767",
+    "nodes": 15,
+    "edges": 15
+  },
+  "retrieval_text": "composition: Cu | method: reduction | solvent: octyl ether | temperature: 150.0 | shape: spherical | size.length: 6.0 | size.width: 6.0 | size.depth: 6.0 | precursor: Cu(acac)2 (conc 20.0) | precursor: C16H34O2 (conc 60.0) | additive: oleic acid (conc 20.0) | additive: oleyl amine (conc 20.0)"
+}

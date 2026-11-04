@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1861.json_NiO_4034",
+  "composition": "NiO",
+  "elements": [
+    "Ni",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "NiCl3*6H2O",
+      "conc": 1.5
+    }
+  ],
+  "additives": [
+    {
+      "name": "ammonium hydroxide",
+      "mass": 6.7
+    }
+  ],
+  "solvent": {
+    "name": "ethanol and water",
+    "volume": 12.5
+  },
+  "conditions": {
+    "temperature": 150.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "cachet-like",
+    "size": {
+      "length": 65.0,
+      "width": 32.0,
+      "depth": 32.0
+    }
+  },
+  "pdfno_list": [
+    "47-1049"
+  ],
+  "source": {
+    "synthesis_id_original": "1861.json_NiO_4034",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: NiO | method: hydrothermal | solvent: ethanol and water | solvent.volume: 12.5 | temperature: 150.0 | crystalsystem: cubic | shape: cachet-like | size.length: 65.0 | size.width: 32.0 | size.depth: 32.0 | precursor: NiCl3*6H2O (conc 1.5) | additive: ammonium hydroxide (mass 6.7) | pdfno_list: 47-1049"
+}

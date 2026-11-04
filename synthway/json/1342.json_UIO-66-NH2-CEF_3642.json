@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "1342.json_UIO-66-NH2-CEF_3642",
+  "composition": "UIO-66-NH2-CEF",
+  "elements": [
+    "U",
+    "I",
+    "O",
+    "N",
+    "H",
+    "C",
+    "E",
+    "F"
+  ],
+  "precursors": [
+    {
+      "name": "CEF",
+      "mass": 0.0025
+    },
+    {
+      "name": "UIO-66-NH2",
+      "mass": 0.01
+    }
+  ],
+  "solvent": {
+    "name": "PBS",
+    "volume": 10.0
+  },
+  "product": {
+    "size": {
+      "length": 216.43,
+      "width": 216.43,
+      "depth": 216.43
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1342.json_UIO-66-NH2-CEF_3642",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: UIO-66-NH2-CEF | solvent: PBS | solvent.volume: 10.0 | size.length: 216.43 | size.width: 216.43 | size.depth: 216.43 | precursor: CEF (mass 0.0025) | precursor: UIO-66-NH2 (mass 0.01)"
+}

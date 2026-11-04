@@ -1,0 +1,28 @@
+{
+  "synthesis_id": "2427.json_CuGaS2_3405",
+  "composition": "CuGaS2",
+  "elements": [
+    "Cu",
+    "Ga",
+    "S"
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 450.0,
+    "ph": 3.3
+  },
+  "product": {
+    "crystalsystem": "tetragonal"
+  },
+  "pdfno_list": [
+    "75-0103"
+  ],
+  "source": {
+    "synthesis_id_original": "2427.json_CuGaS2_3405",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: CuGaS2 | solvent: water | temperature: 450.0 | pH: 3.3 | crystalsystem: tetragonal | pdfno_list: 75-0103"
+}

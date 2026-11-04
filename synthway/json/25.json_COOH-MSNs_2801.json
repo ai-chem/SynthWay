@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "25.json_COOH-MSNs_2801",
+  "composition": "COOH-MSNs",
+  "elements": [
+    "C",
+    "O",
+    "H",
+    "M",
+    "S",
+    "Ns"
+  ],
+  "precursors": [
+    {
+      "name": "NH2-MSNs",
+      "mass": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "pyromellitic dianhydride (97%)",
+      "conc": 100.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 120.0,
+      "width": 120.0,
+      "depth": 120.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "25.json_COOH-MSNs_2801",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: COOH-MSNs | solvent: water | temperature: 25.0 | shape: spherical | size.length: 120.0 | size.width: 120.0 | size.depth: 120.0 | precursor: NH2-MSNs (mass 1.0) | additive: pyromellitic dianhydride (97%) (conc 100.0)"
+}

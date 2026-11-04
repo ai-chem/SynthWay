@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "1470.json_NB_2531",
+  "composition": "NB",
+  "elements": [
+    "N",
+    "B"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Bentonite"
+    },
+    {
+      "name": "Ni(NO3)2*6H2O"
+    }
+  ],
+  "additives": [
+    {
+      "name": "scrophularia striata extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 64.0,
+      "width": 64.0,
+      "depth": 64.0
+    }
+  },
+  "pdfno_list": [
+    "29-1498 05-0490 87-0712"
+  ],
+  "source": {
+    "synthesis_id_original": "1470.json_NB_2531",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: NB | method: green synthesis | solvent: water | shape: spherical | size.length: 64.0 | size.width: 64.0 | size.depth: 64.0 | precursor: Bentonite | precursor: Ni(NO3)2*6H2O | additive: scrophularia striata extract | pdfno_list: 29-1498 05-0490 87-0712"
+}

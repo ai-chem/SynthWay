@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "1120.json_Chry.A_Al2O3_23",
+  "composition": "Chry.A Al2O3",
+  "elements": [
+    "Ch",
+    "A",
+    "Al",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "AlCl3*6H2O",
+      "mass": 2.4143,
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "mass": 0.4,
+      "conc": 10.0
+    },
+    {
+      "name": "chrysophyllum albidum leaves extract"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 1000.0
+  },
+  "conditions": {
+    "temperature": 90.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 35.75,
+      "width": 35.75,
+      "depth": 35.75
+    }
+  },
+  "pdfno_list": [
+    "05-0566"
+  ],
+  "source": {
+    "synthesis_id_original": "1120.json_Chry.A_Al2O3_23",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: Chry.A Al2O3 | solvent: distilled water | solvent.volume: 1000.0 | temperature: 90.0 | crystalsystem: cubic | shape: spherical | size.length: 35.75 | size.width: 35.75 | size.depth: 35.75 | precursor: AlCl3*6H2O (mass 2.4143; conc 10.0) | additive: sodium hydroxide (mass 0.4; conc 10.0) | additive: chrysophyllum albidum leaves extract | pdfno_list: 05-0566"
+}

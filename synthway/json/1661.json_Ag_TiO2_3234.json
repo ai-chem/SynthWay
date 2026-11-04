@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "1661.json_Ag/TiO2_3234",
+  "composition": "Ag/TiO2",
+  "elements": [
+    "Ag",
+    "Ti",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Ti(OC3H7)4",
+      "conc": 1000.0
+    },
+    {
+      "name": "AgNO3",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "c. pulcherrima flowers extract"
+    }
+  ],
+  "solvent": {
+    "name": "double distilled water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 25.0,
+      "width": 25.0,
+      "depth": 25.0
+    }
+  },
+  "pdfno_list": [
+    "89-3722"
+  ],
+  "source": {
+    "synthesis_id_original": "1661.json_Ag/TiO2_3234",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: Ag/TiO2 | method: green synthesis | solvent: double distilled water | solvent.volume: 100.0 | temperature: 25.0 | crystalsystem: cubic | shape: spherical | size.length: 25.0 | size.width: 25.0 | size.depth: 25.0 | precursor: Ti(OC3H7)4 (conc 1000.0) | precursor: AgNO3 (conc 100.0) | additive: c. pulcherrima flowers extract | pdfno_list: 89-3722"
+}

@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "1037.json_Fe3O4+α-Fe2O3_2675",
+  "composition": "Fe3O4+α-Fe2O3",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "solvothermal reduction",
+  "precursors": [
+    {
+      "name": "FeCl3*6H2O",
+      "mass": 0.675
+    },
+    {
+      "name": "CH3COONa",
+      "mass": 1.8
+    }
+  ],
+  "solvent": {
+    "name": "peg200",
+    "volume": 60.0
+  },
+  "conditions": {
+    "temperature": 240.0
+  },
+  "product": {
+    "shape": "cube",
+    "size": {
+      "length": 128.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1037.json_Fe3O4+α-Fe2O3_2675",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Fe3O4+α-Fe2O3 | method: solvothermal reduction | solvent: peg200 | solvent.volume: 60.0 | temperature: 240.0 | shape: cube | size.length: 128.0 | precursor: FeCl3*6H2O (mass 0.675) | precursor: CH3COONa (mass 1.8)"
+}

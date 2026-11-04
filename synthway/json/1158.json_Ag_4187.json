@@ -1,0 +1,32 @@
+{
+  "synthesis_id": "1158.json_Ag_4187",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water"
+  },
+  "conditions": {
+    "temperature": 27.5
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 350.0,
+      "width": 350.0,
+      "depth": 350.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1158.json_Ag_4187",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: Ag | solvent: distilled water | temperature: 27.5 | shape: spherical | size.length: 350.0 | size.width: 350.0 | size.depth: 350.0 | precursor: AgNO3"
+}

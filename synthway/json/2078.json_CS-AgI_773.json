@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "2078.json_CS-AgI_773",
+  "composition": "CS-AgI",
+  "elements": [
+    "C",
+    "S",
+    "Ag",
+    "I"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 100.0
+    },
+    {
+      "name": "KI",
+      "conc": 150.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "chitosan",
+      "mass": 0.19
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "size": {
+      "length": 40.0,
+      "width": 40.0,
+      "depth": 40.0
+    }
+  },
+  "pdfno_list": [
+    "78-1613"
+  ],
+  "source": {
+    "synthesis_id_original": "2078.json_CS-AgI_773",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: CS-AgI | solvent: water | crystalsystem: hexagonal | size.length: 40.0 | size.width: 40.0 | size.depth: 40.0 | precursor: AgNO3 (conc 100.0) | precursor: KI (conc 150.0) | additive: chitosan (mass 0.19) | pdfno_list: 78-1613"
+}

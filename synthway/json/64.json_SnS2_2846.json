@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "64.json_SnS2_2846",
+  "composition": "SnS2",
+  "elements": [
+    "Sn",
+    "S"
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 64.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 100.0,
+      "width": 100.0,
+      "depth": 100.0
+    }
+  },
+  "pdfno_list": [
+    "22-0951"
+  ],
+  "source": {
+    "synthesis_id_original": "64.json_SnS2_2846",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: SnS2 | solvent: distilled water | solvent.volume: 64.0 | temperature: 180.0 | crystalsystem: hexagonal | shape: spherical | size.length: 100.0 | size.width: 100.0 | size.depth: 100.0 | pdfno_list: 22-0951"
+}

@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "887.json_Fe3Se4_2881",
+  "composition": "Fe3Se4",
+  "elements": [
+    "Fe",
+    "Se"
+  ],
+  "method": "one-pot high-tempera-ture organic-solution-phase method",
+  "precursors": [
+    {
+      "name": "FeCl2*4H2O",
+      "mass": 0.16
+    },
+    {
+      "name": "Se",
+      "mass": 0.079
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleic acid"
+    }
+  ],
+  "solvent": {
+    "name": "oleylamine",
+    "volume": 15.0
+  },
+  "conditions": {
+    "temperature": 300.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "faceted nanoplatelets"
+  },
+  "pdfno_list": [
+    "71-2250"
+  ],
+  "source": {
+    "synthesis_id_original": "887.json_Fe3Se4_2881",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Fe3Se4 | method: one-pot high-tempera-ture organic-solution-phase method | solvent: oleylamine | solvent.volume: 15.0 | temperature: 300.0 | crystalsystem: monoclinic | shape: faceted nanoplatelets | precursor: FeCl2*4H2O (mass 0.16) | precursor: Se (mass 0.079) | additive: oleic acid | pdfno_list: 71-2250"
+}

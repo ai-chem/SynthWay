@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "1651.json_Ag_2358",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "mass": 1.698,
+      "conc": 200.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "filtrate of leaves extracts"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 85.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 48.12,
+      "width": 48.12,
+      "depth": 48.12
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1651.json_Ag_2358",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Ag | solvent: distilled water | solvent.volume: 50.0 | temperature: 85.0 | crystalsystem: cubic | size.length: 48.12 | size.width: 48.12 | size.depth: 48.12 | precursor: AgNO3 (mass 1.698; conc 200.0) | additive: filtrate of leaves extracts"
+}

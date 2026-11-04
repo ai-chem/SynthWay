@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "605.json_SrCO3_2495",
+  "composition": "SrCO3",
+  "elements": [
+    "Sr",
+    "C",
+    "O"
+  ],
+  "method": "mixed solvent",
+  "precursors": [
+    {
+      "name": "Sr(NO3)2"
+    },
+    {
+      "name": "C2H8N2"
+    }
+  ],
+  "additives": [
+    {
+      "name": "hydrazine"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "wire",
+    "size": {
+      "length": 14.8
+    }
+  },
+  "pdfno_list": [
+    "05-0418"
+  ],
+  "source": {
+    "synthesis_id_original": "605.json_SrCO3_2495",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: SrCO3 | method: mixed solvent | solvent: water | temperature: 180.0 | crystalsystem: orthorhombic | shape: wire | size.length: 14.8 | precursor: Sr(NO3)2 | precursor: C2H8N2 | additive: hydrazine | pdfno_list: 05-0418"
+}

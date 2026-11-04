@@ -1,0 +1,34 @@
+{
+  "synthesis_id": "2390.json_SS-Fe3O4_3891",
+  "composition": "SS–Fe3O4",
+  "elements": [
+    "S",
+    "Fe",
+    "O"
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 90.0,
+    "ph": 11.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 23.6,
+      "width": 23.6,
+      "depth": 23.6
+    }
+  },
+  "pdfno_list": [
+    "19-0629"
+  ],
+  "source": {
+    "synthesis_id_original": "2390.json_SS-Fe3O4_3891",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: SS–Fe3O4 | solvent: distilled water | solvent.volume: 100.0 | temperature: 90.0 | pH: 11.0 | shape: spherical | size.length: 23.6 | size.width: 23.6 | size.depth: 23.6 | pdfno_list: 19-0629"
+}

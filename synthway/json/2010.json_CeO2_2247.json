@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "2010.json_CeO2_2247",
+  "composition": "CeO2",
+  "elements": [
+    "Ce",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "Ce(NO3)3*6H2O",
+      "mass": 0.862,
+      "conc": 2.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "mass": 19.2
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 80.0
+  },
+  "conditions": {
+    "temperature": 400.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "wire",
+    "size": {
+      "width": 53.6,
+      "depth": 53.6
+    }
+  },
+  "pdfno_list": [
+    "34-0394"
+  ],
+  "source": {
+    "synthesis_id_original": "2010.json_CeO2_2247",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: CeO2 | method: hydrothermal | solvent: water | solvent.volume: 80.0 | temperature: 400.0 | crystalsystem: cubic | shape: wire | size.width: 53.6 | size.depth: 53.6 | precursor: Ce(NO3)3*6H2O (mass 0.862; conc 2.0) | additive: sodium hydroxide (mass 19.2) | pdfno_list: 34-0394"
+}

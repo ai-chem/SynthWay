@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "1357.json_ZnO_675",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "facile hydrothermal",
+  "precursors": [
+    {
+      "name": "Zn(NO3)2*6H2O",
+      "conc": 150.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 5000.0
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 60.0
+  },
+  "conditions": {
+    "temperature": 180.0,
+    "ph": 12.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "nanoflowers with nanosheet petals",
+    "size": {
+      "length": 33.0,
+      "width": 33.0,
+      "depth": 33.0
+    }
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "1357.json_ZnO_675",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: ZnO | method: facile hydrothermal | solvent: distilled water | solvent.volume: 60.0 | temperature: 180.0 | pH: 12.0 | crystalsystem: hexagonal | shape: nanoflowers with nanosheet petals | size.length: 33.0 | size.width: 33.0 | size.depth: 33.0 | precursor: Zn(NO3)2*6H2O (conc 150.0) | additive: sodium hydroxide (conc 5000.0) | pdfno_list: 36-1451"
+}

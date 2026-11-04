@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "1021.json_Fe3O4_2719",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "FeCl2*4H2O",
+      "conc": 200.0
+    },
+    {
+      "name": "NaOH",
+      "mass": 0.6
+    },
+    {
+      "name": "H4N2*H2O",
+      "mass": 5.16
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 140.0
+  },
+  "product": {
+    "shape": "quadrangle and hexagon",
+    "size": {
+      "width": 40.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1021.json_Fe3O4_2719",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Fe3O4 | method: hydrothermal | solvent: water | temperature: 140.0 | shape: quadrangle and hexagon | size.width: 40.0 | precursor: FeCl2*4H2O (conc 200.0) | precursor: NaOH (mass 0.6) | precursor: H4N2*H2O (mass 5.16)"
+}

@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "1330.json_AgGT_1660",
+  "composition": "AgGT",
+  "elements": [
+    "Ag",
+    "G",
+    "T"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "green tea leaves extract"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water"
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 25.0,
+      "width": 25.0,
+      "depth": 25.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1330.json_AgGT_1660",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: AgGT | method: green synthesis | solvent: deionized water | crystalsystem: cubic | size.length: 25.0 | size.width: 25.0 | size.depth: 25.0 | precursor: AgNO3 (conc 1.0) | additive: green tea leaves extract"
+}

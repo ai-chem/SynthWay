@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "1554.json_Ag_2181",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 5.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "annona senegalensis stem bark extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 17.88,
+      "width": 17.88,
+      "depth": 17.88
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1554.json_Ag_2181",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Ag | method: green synthesis | solvent: water | temperature: 25.0 | shape: spherical | size.length: 17.88 | size.width: 17.88 | size.depth: 17.88 | precursor: AgNO3 (conc 5.0) | additive: annona senegalensis stem bark extract"
+}

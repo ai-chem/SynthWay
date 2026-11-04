@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1060.json_Ag@TiO2_2641",
+  "composition": "Ag@TiO2",
+  "elements": [
+    "Ag",
+    "Ti",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Ti(OBu)4",
+      "conc": 5.75
+    },
+    {
+      "name": "AgNO3",
+      "conc": 3.8
+    }
+  ],
+  "additives": [
+    {
+      "name": "water",
+      "conc": 800.0
+    },
+    {
+      "name": "acetylacetone",
+      "conc": 5.75
+    }
+  ],
+  "solvent": {
+    "name": "ethanol"
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "width": 20.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1060.json_Ag@TiO2_2641",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Ag@TiO2 | solvent: ethanol | shape: spherical | size.width: 20.0 | precursor: Ti(OBu)4 (conc 5.75) | precursor: AgNO3 (conc 3.8) | additive: water (conc 800.0) | additive: acetylacetone (conc 5.75)"
+}

@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "958.json_Ag@dextran_2129",
+  "composition": "Ag@dextran",
+  "elements": [
+    "Ag"
+  ],
+  "method": "reduction",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 10.0
+    },
+    {
+      "name": "NaOH",
+      "conc": 0.1
+    }
+  ],
+  "additives": [
+    {
+      "name": "dextran"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "width": 7.5
+    }
+  },
+  "pdfno_list": [
+    "411402"
+  ],
+  "source": {
+    "synthesis_id_original": "958.json_Ag@dextran_2129",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Ag@dextran | method: reduction | solvent: water | shape: spherical | size.width: 7.5 | precursor: AgNO3 (conc 10.0) | precursor: NaOH (conc 0.1) | additive: dextran | pdfno_list: 411402"
+}

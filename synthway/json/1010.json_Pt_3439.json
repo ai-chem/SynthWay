@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "1010.json_Pt_3439",
+  "composition": "Pt",
+  "elements": [
+    "Pt"
+  ],
+  "method": "polyalcohol reduction",
+  "precursors": [
+    {
+      "name": "Pt(C5H7O2)2",
+      "mass": 0.095
+    },
+    {
+      "name": "C16H34O2",
+      "mass": 0.39
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleylamine",
+      "mass": 0.553
+    }
+  ],
+  "solvent": {
+    "name": "diphenylether",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 110.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "size": {
+      "width": 4.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1010.json_Pt_3439",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Pt | method: polyalcohol reduction | solvent: diphenylether | solvent.volume: 20.0 | temperature: 110.0 | crystalsystem: face-centered cubic | size.width: 4.0 | precursor: Pt(C5H7O2)2 (mass 0.095) | precursor: C16H34O2 (mass 0.39) | additive: oleylamine (mass 0.553)"
+}

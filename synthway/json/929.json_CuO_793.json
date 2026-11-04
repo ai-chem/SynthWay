@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "929.json_CuO_793",
+  "composition": "CuO",
+  "elements": [
+    "Cu",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Cu(NO3)2·6H2O"
+    }
+  ],
+  "additives": [
+    {
+      "name": "a. muricata leaf extract"
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 2000.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "ph": 10.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "spherical"
+  },
+  "pdfno_list": [
+    "48-1548"
+  ],
+  "source": {
+    "synthesis_id_original": "929.json_CuO_793",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: CuO | solvent: water | pH: 10.0 | crystalsystem: monoclinic | shape: spherical | precursor: Cu(NO3)2·6H2O | additive: a. muricata leaf extract | additive: sodium hydroxide (conc 2000.0) | pdfno_list: 48-1548"
+}

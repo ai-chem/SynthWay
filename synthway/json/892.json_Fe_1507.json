@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "892.json_Fe_1507",
+  "composition": "Fe",
+  "elements": [
+    "Fe"
+  ],
+  "precursors": [
+    {
+      "name": "Fe(CO)5",
+      "mass": 0.7
+    }
+  ],
+  "additives": [
+    {
+      "name": "hexadecyltrimethylammonium bromid",
+      "mass": 0.113
+    }
+  ],
+  "solvent": {
+    "name": "octadecylamine"
+  },
+  "conditions": {
+    "temperature": 300.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 18.0,
+      "width": 18.0,
+      "depth": 18.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "892.json_Fe_1507",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Fe | solvent: octadecylamine | temperature: 300.0 | shape: spherical | size.length: 18.0 | size.width: 18.0 | size.depth: 18.0 | precursor: Fe(CO)5 (mass 0.7) | additive: hexadecyltrimethylammonium bromid (mass 0.113)"
+}

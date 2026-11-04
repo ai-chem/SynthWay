@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "164.json_ß-Bi2O3_1332",
+  "composition": "ß-Bi2O3",
+  "elements": [
+    "Bi",
+    "O"
+  ],
+  "method": "gel",
+  "solvent": {
+    "name": "nitric acid",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 100.0
+  },
+  "product": {
+    "shape": "needle-like",
+    "size": {
+      "length": 50.0,
+      "width": 50.0,
+      "depth": 50.0
+    }
+  },
+  "pdfno_list": [
+    "27-50"
+  ],
+  "source": {
+    "synthesis_id_original": "164.json_ß-Bi2O3_1332",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: ß-Bi2O3 | method: gel | solvent: nitric acid | solvent.volume: 50.0 | temperature: 100.0 | shape: needle-like | size.length: 50.0 | size.width: 50.0 | size.depth: 50.0 | pdfno_list: 27-50"
+}

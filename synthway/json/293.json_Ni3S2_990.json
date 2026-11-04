@@ -1,0 +1,28 @@
+{
+  "synthesis_id": "293.json_Ni3S2_990",
+  "composition": "Ni3S2",
+  "elements": [
+    "Ni",
+    "S"
+  ],
+  "method": "hydrothermal",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 150.0
+  },
+  "product": {
+    "crystalsystem": "trigonal",
+    "shape": "plate"
+  },
+  "pdfno_list": [
+    "00-044-1418"
+  ],
+  "source": {
+    "synthesis_id_original": "293.json_Ni3S2_990",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: Ni3S2 | method: hydrothermal | solvent: water | temperature: 150.0 | crystalsystem: trigonal | shape: plate | pdfno_list: 00-044-1418"
+}

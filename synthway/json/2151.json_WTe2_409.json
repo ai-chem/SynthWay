@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "2151.json_WTe2_409",
+  "composition": "WTe2",
+  "elements": [
+    "W",
+    "Te"
+  ],
+  "method": "one-step liquid exfoliation",
+  "precursors": [
+    {
+      "name": "WTe2",
+      "mass": 0.3
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 35.0
+  },
+  "conditions": {
+    "temperature": 4.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "irregular layer",
+    "size": {
+      "depth": 5.4
+    }
+  },
+  "pdfno_list": [
+    "81-1908"
+  ],
+  "source": {
+    "synthesis_id_original": "2151.json_WTe2_409",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: WTe2 | method: one-step liquid exfoliation | solvent: water | solvent.volume: 35.0 | temperature: 4.0 | crystalsystem: orthorhombic | shape: irregular layer | size.depth: 5.4 | precursor: WTe2 (mass 0.3) | pdfno_list: 81-1908"
+}

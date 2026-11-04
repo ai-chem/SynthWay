@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "2072.json_Cu1.8S_1859",
+  "composition": "Cu1.8S",
+  "elements": [
+    "Cu",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "CuCl2",
+      "mass": 0.44
+    }
+  ],
+  "additives": [
+    {
+      "name": "thioacetamide",
+      "mass": 0.19
+    },
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 1.25
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 15.0
+  },
+  "conditions": {
+    "temperature": 75.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "erythrocyte-like",
+    "size": {
+      "length": 160.0,
+      "width": 160.0,
+      "depth": 160.0
+    }
+  },
+  "pdfno_list": [
+    "47-1748"
+  ],
+  "source": {
+    "synthesis_id_original": "2072.json_Cu1.8S_1859",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: Cu1.8S | solvent: ethylene glycol | solvent.volume: 15.0 | temperature: 75.0 | crystalsystem: hexagonal | shape: erythrocyte-like | size.length: 160.0 | size.width: 160.0 | size.depth: 160.0 | precursor: CuCl2 (mass 0.44) | additive: thioacetamide (mass 0.19) | additive: polyvinylpyrrolidone (mass 1.25) | pdfno_list: 47-1748"
+}

@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "1714.json_α-Fe2O3_2372",
+  "composition": "α-Fe2O3",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "coprecipitation",
+  "precursors": [
+    {
+      "name": "FeCl3",
+      "mass": 1.6
+    }
+  ],
+  "additives": [
+    {
+      "name": "catharanthus roseus flowers extract"
+    },
+    {
+      "name": "sodium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "ph": 7.0
+  },
+  "product": {
+    "crystalsystem": "rhombohedral",
+    "shape": "plate",
+    "size": {
+      "length": 51.8,
+      "width": 51.8,
+      "depth": 51.8
+    }
+  },
+  "pdfno_list": [
+    "00-033-0664"
+  ],
+  "source": {
+    "synthesis_id_original": "1714.json_α-Fe2O3_2372",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: α-Fe2O3 | method: coprecipitation | solvent: deionized water | solvent.volume: 50.0 | pH: 7.0 | crystalsystem: rhombohedral | shape: plate | size.length: 51.8 | size.width: 51.8 | size.depth: 51.8 | precursor: FeCl3 (mass 1.6) | additive: catharanthus roseus flowers extract | additive: sodium hydroxide | pdfno_list: 00-033-0664"
+}

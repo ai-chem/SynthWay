@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "1731.json_SP-Ag_847",
+  "composition": "SP-Ag",
+  "elements": [
+    "S",
+    "P",
+    "Ag"
+  ],
+  "method": "bio-reduction",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "leaf extract of s. polyanthum"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 50.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 27.69,
+      "width": 27.69,
+      "depth": 27.69
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1731.json_SP-Ag_847",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: SP-Ag | method: bio-reduction | solvent: distilled water | solvent.volume: 50.0 | shape: spherical | size.length: 27.69 | size.width: 27.69 | size.depth: 27.69 | precursor: AgNO3 (conc 1.0) | additive: leaf extract of s. polyanthum"
+}

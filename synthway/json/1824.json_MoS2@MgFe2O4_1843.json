@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "1824.json_MoS2@MgFe2O4_1843",
+  "composition": "MoS2@MgFe2O4",
+  "elements": [
+    "Mo",
+    "S",
+    "Mg",
+    "Fe",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "ATTM",
+      "mass": 0.132
+    }
+  ],
+  "seeds": [
+    {
+      "name": "MgFe2O4",
+      "mass": 0.05
+    }
+  ],
+  "solvent": {
+    "name": "dimethylformamide",
+    "volume": 60.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "shape": "flower-like",
+    "size": {
+      "length": 200.0,
+      "width": 200.0,
+      "depth": 200.0
+    }
+  },
+  "pdfno_list": [
+    "37-1492, 73-1720"
+  ],
+  "source": {
+    "synthesis_id_original": "1824.json_MoS2@MgFe2O4_1843",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: MoS2@MgFe2O4 | solvent: dimethylformamide | solvent.volume: 60.0 | temperature: 200.0 | shape: flower-like | size.length: 200.0 | size.width: 200.0 | size.depth: 200.0 | precursor: ATTM (mass 0.132) | seed: MgFe2O4 (mass 0.05) | pdfno_list: 37-1492, 73-1720"
+}

@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "1632.json_SiO2_1496",
+  "composition": "SiO2",
+  "elements": [
+    "Si",
+    "O"
+  ],
+  "method": "stober",
+  "precursors": [
+    {
+      "name": "Si(OC2H5)4"
+    }
+  ],
+  "additives": [
+    {
+      "name": "ethanol"
+    },
+    {
+      "name": "ammonium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 6.0
+  },
+  "conditions": {
+    "temperature": 22.0
+  },
+  "product": {
+    "size": {
+      "length": 20.5,
+      "width": 20.5,
+      "depth": 20.5
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1632.json_SiO2_1496",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: SiO2 | method: stober | solvent: deionized water | solvent.volume: 6.0 | temperature: 22.0 | size.length: 20.5 | size.width: 20.5 | size.depth: 20.5 | precursor: Si(OC2H5)4 | additive: ethanol | additive: ammonium hydroxide"
+}

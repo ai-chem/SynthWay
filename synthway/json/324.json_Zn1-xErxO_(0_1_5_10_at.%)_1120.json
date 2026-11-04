@@ -1,0 +1,56 @@
+{
+  "synthesis_id": "324.json_Zn1-xErxO_(0_1_5_10_at.%)_1120",
+  "composition": "Zn1-xErxO (0, 1, 5, 10 at.%)",
+  "elements": [
+    "Zn",
+    "Er",
+    "O"
+  ],
+  "method": "solution-polymerization",
+  "precursors": [
+    {
+      "name": "Zn(NO3)2·6H2O"
+    },
+    {
+      "name": "Er(NO3)3·5H2O"
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinyl alcohol",
+      "mass": 0.4
+    },
+    {
+      "name": "sucrose",
+      "mass": 3.2
+    },
+    {
+      "name": "citric acid"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 70.0,
+    "ph": 1.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "size": {
+      "length": 25.0,
+      "width": 25.0,
+      "depth": 25.0
+    }
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "324.json_Zn1-xErxO_(0_1_5_10_at.%)_1120",
+    "nodes": 18,
+    "edges": 17
+  },
+  "retrieval_text": "composition: Zn1-xErxO (0, 1, 5, 10 at.%) | method: solution-polymerization | solvent: deionized water | solvent.volume: 100.0 | temperature: 70.0 | pH: 1.0 | crystalsystem: hexagonal | size.length: 25.0 | size.width: 25.0 | size.depth: 25.0 | precursor: Zn(NO3)2·6H2O | precursor: Er(NO3)3·5H2O | additive: polyvinyl alcohol (mass 0.4) | additive: sucrose (mass 3.2) | additive: citric acid | pdfno_list: 36-1451"
+}

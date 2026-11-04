@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "2177.json_Se_1421",
+  "composition": "Se",
+  "elements": [
+    "Se"
+  ],
+  "precursors": [
+    {
+      "name": "Na2SeO3",
+      "conc": 50.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "cs",
+      "conc": 0.03
+    },
+    {
+      "name": "ascorbic acid",
+      "conc": 100.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 70.0,
+      "width": 70.0,
+      "depth": 70.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2177.json_Se_1421",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Se | solvent: water | solvent.volume: 10.0 | temperature: 60.0 | shape: spherical | size.length: 70.0 | size.width: 70.0 | size.depth: 70.0 | precursor: Na2SeO3 (conc 50.0) | additive: cs (conc 0.03) | additive: ascorbic acid (conc 100.0)"
+}

@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "1458.json_Ag_155",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "pancratium telanganense young leaves extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "shape": "irregular",
+    "size": {
+      "length": 30.0,
+      "width": 30.0,
+      "depth": 30.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1458.json_Ag_155",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Ag | method: green synthesis | solvent: water | temperature: 25.0 | shape: irregular | size.length: 30.0 | size.width: 30.0 | size.depth: 30.0 | precursor: AgNO3 (conc 1.0) | additive: pancratium telanganense young leaves extract"
+}

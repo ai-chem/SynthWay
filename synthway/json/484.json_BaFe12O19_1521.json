@@ -1,0 +1,27 @@
+{
+  "synthesis_id": "484.json_BaFe12O19_1521",
+  "composition": "BaFe12O19",
+  "elements": [
+    "Ba",
+    "Fe",
+    "O"
+  ],
+  "method": "carbon combustion synthesis of oxides",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 115.0
+  },
+  "product": {
+    "size": {
+      "length": 60.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "484.json_BaFe12O19_1521",
+    "nodes": 5,
+    "edges": 4
+  },
+  "retrieval_text": "composition: BaFe12O19 | method: carbon combustion synthesis of oxides | solvent: water | temperature: 115.0 | size.length: 60.0"
+}

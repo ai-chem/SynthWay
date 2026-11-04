@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1503.json_S_2138",
+  "composition": "S",
+  "elements": [
+    "S"
+  ],
+  "method": "sol-gel",
+  "precursors": [
+    {
+      "name": "Na2SiO3"
+    }
+  ],
+  "additives": [
+    {
+      "name": "bagasse ash"
+    },
+    {
+      "name": "ethanol"
+    },
+    {
+      "name": "ammonia"
+    }
+  ],
+  "solvent": {
+    "name": "hydrochloric acid"
+  },
+  "conditions": {
+    "ph": 7.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 175.0,
+      "width": 175.0,
+      "depth": 175.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1503.json_S_2138",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: S | method: sol-gel | solvent: hydrochloric acid | pH: 7.0 | crystalsystem: cubic | shape: spherical | size.length: 175.0 | size.width: 175.0 | size.depth: 175.0 | precursor: Na2SiO3 | additive: bagasse ash | additive: ethanol | additive: ammonia"
+}

@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "2137.json_MoO3-x_1854",
+  "composition": "MoO3-x",
+  "elements": [
+    "Mo",
+    "O"
+  ],
+  "additives": [
+    {
+      "name": "sh-peg",
+      "mass": 0.00125
+    }
+  ],
+  "seeds": [
+    {
+      "name": "MoS2",
+      "mass": 7e-06
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "size": {
+      "length": 4.0,
+      "width": 4.0,
+      "depth": 4.0
+    }
+  },
+  "pdfno_list": [
+    "47-1320"
+  ],
+  "source": {
+    "synthesis_id_original": "2137.json_MoO3-x_1854",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: MoO3-x | solvent: water | crystalsystem: monoclinic | size.length: 4.0 | size.width: 4.0 | size.depth: 4.0 | additive: sh-peg (mass 0.00125) | seed: MoS2 (mass 7e-06) | pdfno_list: 47-1320"
+}

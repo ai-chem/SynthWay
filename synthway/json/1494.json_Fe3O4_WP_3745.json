@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1494.json_Fe3O4_WP_3745",
+  "composition": "Fe3O4 WP",
+  "elements": [
+    "Fe",
+    "O",
+    "W",
+    "P"
+  ],
+  "method": "coprecipitation",
+  "precursors": [
+    {
+      "name": "FeCl2"
+    },
+    {
+      "name": "FeCl3"
+    }
+  ],
+  "additives": [
+    {
+      "name": "ammonia"
+    },
+    {
+      "name": "tetrabutylammonium"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 14.0,
+      "width": 14.0,
+      "depth": 14.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1494.json_Fe3O4_WP_3745",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Fe3O4 WP | method: coprecipitation | solvent: water | shape: spherical | size.length: 14.0 | size.width: 14.0 | size.depth: 14.0 | precursor: FeCl2 | precursor: FeCl3 | additive: ammonia | additive: tetrabutylammonium"
+}

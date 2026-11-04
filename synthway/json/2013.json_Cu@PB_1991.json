@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "2013.json_Cu@PB_1991",
+  "composition": "Cu@PB",
+  "elements": [
+    "Cu",
+    "P",
+    "B"
+  ],
+  "precursors": [
+    {
+      "name": "Cu(NO3)2",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "methoxy polyethylene glycol 5000",
+      "conc": 0.0388
+    },
+    {
+      "name": "hydrazine hydrate"
+    }
+  ],
+  "seeds": [
+    {
+      "name": "PB",
+      "conc": 25.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 50.0
+  },
+  "product": {
+    "size": {
+      "length": 50.0,
+      "width": 50.0,
+      "depth": 50.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2013.json_Cu@PB_1991",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Cu@PB | solvent: water | temperature: 50.0 | size.length: 50.0 | size.width: 50.0 | size.depth: 50.0 | precursor: Cu(NO3)2 (conc 100.0) | additive: methoxy polyethylene glycol 5000 (conc 0.0388) | additive: hydrazine hydrate | seed: PB (conc 25.0)"
+}

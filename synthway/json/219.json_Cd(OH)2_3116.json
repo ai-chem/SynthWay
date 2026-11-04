@@ -1,0 +1,34 @@
+{
+  "synthesis_id": "219.json_Cd(OH)2_3116",
+  "composition": "Cd(OH)2",
+  "elements": [
+    "Cd",
+    "O",
+    "H"
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 120.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "flower-like",
+    "size": {
+      "length": 10000.0,
+      "width": 10000.0,
+      "depth": 50.0
+    }
+  },
+  "pdfno_list": [
+    "31-0228"
+  ],
+  "source": {
+    "synthesis_id_original": "219.json_Cd(OH)2_3116",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Cd(OH)2 | solvent: distilled water | solvent.volume: 10.0 | temperature: 120.0 | crystalsystem: hexagonal | shape: flower-like | size.length: 10000.0 | size.width: 10000.0 | size.depth: 50.0 | pdfno_list: 31-0228"
+}

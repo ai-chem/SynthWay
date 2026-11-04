@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "25.json_Pt/COOH-MSNs_2802",
+  "composition": "Pt/COOH-MSNs",
+  "elements": [
+    "Pt",
+    "C",
+    "O",
+    "H",
+    "M",
+    "S",
+    "Ns"
+  ],
+  "precursors": [
+    {
+      "name": "COOH-MSNs",
+      "mass": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "cis-diammineplatinum(ii) dichloride (cisplatin, cddp, ≥99.9%)",
+      "conc": 20.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 120.0,
+      "width": 120.0,
+      "depth": 120.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "25.json_Pt/COOH-MSNs_2802",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Pt/COOH-MSNs | solvent: water | shape: spherical | size.length: 120.0 | size.width: 120.0 | size.depth: 120.0 | precursor: COOH-MSNs (mass 1.0) | additive: cis-diammineplatinum(ii) dichloride (cisplatin, cddp, ≥99.9%) (conc 20.0)"
+}

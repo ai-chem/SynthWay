@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "667.json_Au_2106",
+  "composition": "Au",
+  "elements": [
+    "Au"
+  ],
+  "method": "polyol",
+  "precursors": [
+    {
+      "name": "HAuCl4",
+      "mass": 3.7,
+      "conc": 500.0
+    },
+    {
+      "name": "AgNO3",
+      "mass": 0.17,
+      "conc": 500.0
+    },
+    {
+      "name": "H2PdCl4",
+      "mass": 0.16,
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium chloride",
+      "mass": 0.000585,
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol + deionized h2o + pdda",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 120.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "shape": "ditetragonal prisms",
+    "size": {
+      "length": 195.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "667.json_Au_2106",
+    "nodes": 19,
+    "edges": 19
+  },
+  "retrieval_text": "composition: Au | method: polyol | solvent: ethylene glycol + deionized h2o + pdda | solvent.volume: 10.0 | temperature: 120.0 | crystalsystem: face-centered cubic | shape: ditetragonal prisms | size.length: 195.0 | precursor: HAuCl4 (mass 3.7; conc 500.0) | precursor: AgNO3 (mass 0.17; conc 500.0) | precursor: H2PdCl4 (mass 0.16; conc 10.0) | additive: sodium chloride (mass 0.000585; conc 1000.0)"
+}

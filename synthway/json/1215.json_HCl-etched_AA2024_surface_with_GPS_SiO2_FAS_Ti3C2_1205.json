@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "1215.json_HCl-etched_AA2024_surface_with_GPS/SiO2/FAS/Ti3C2_1205",
+  "composition": "HCl-etched AA2024 surface with GPS/SiO2/FAS/Ti3C2",
+  "elements": [
+    "H",
+    "Cl",
+    "A",
+    "G",
+    "P",
+    "S",
+    "Si",
+    "O",
+    "F",
+    "Ti",
+    "C"
+  ],
+  "precursors": [
+    {
+      "name": "Al2024"
+    },
+    {
+      "name": "GPS/SiO2"
+    },
+    {
+      "name": "FAS/Ti3C2"
+    }
+  ],
+  "solvent": {
+    "name": "hydrochloric acid"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "shape": "dense and compact film",
+    "size": {
+      "length": 30000.0,
+      "width": 30000.0,
+      "depth": 30000.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1215.json_HCl-etched_AA2024_surface_with_GPS/SiO2/FAS/Ti3C2_1205",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: HCl-etched AA2024 surface with GPS/SiO2/FAS/Ti3C2 | solvent: hydrochloric acid | temperature: 25.0 | shape: dense and compact film | size.length: 30000.0 | size.width: 30000.0 | size.depth: 30000.0 | precursor: Al2024 | precursor: GPS/SiO2 | precursor: FAS/Ti3C2"
+}

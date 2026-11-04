@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "1600.json_TiO2_3603",
+  "composition": "TiO2",
+  "elements": [
+    "Ti",
+    "O"
+  ],
+  "method": "sol-gel",
+  "precursors": [
+    {
+      "name": "Ti(OC3H7)4",
+      "conc": 0.01
+    }
+  ],
+  "additives": [
+    {
+      "name": "glacial acetic acid"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water"
+  },
+  "product": {
+    "crystalsystem": "tetragonal rutile",
+    "shape": "spherical",
+    "size": {
+      "length": 19.0,
+      "width": 19.0,
+      "depth": 19.0
+    }
+  },
+  "pdfno_list": [
+    "01-089-0552"
+  ],
+  "source": {
+    "synthesis_id_original": "1600.json_TiO2_3603",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: TiO2 | method: sol-gel | solvent: deionized water | crystalsystem: tetragonal rutile | shape: spherical | size.length: 19.0 | size.width: 19.0 | size.depth: 19.0 | precursor: Ti(OC3H7)4 (conc 0.01) | additive: glacial acetic acid | pdfno_list: 01-089-0552"
+}

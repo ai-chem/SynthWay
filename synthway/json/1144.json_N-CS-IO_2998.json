@@ -1,0 +1,56 @@
+{
+  "synthesis_id": "1144.json_N-CS-IO_2998",
+  "composition": "N-CS-IO",
+  "elements": [
+    "N",
+    "C",
+    "S",
+    "I",
+    "O"
+  ],
+  "method": "coprecipitation",
+  "precursors": [
+    {
+      "name": "ferrous chloride tetrahydrate (FeCl2·4H2O)",
+      "conc": 100.0
+    },
+    {
+      "name": "ferric chloride hexahydrate (FeCl3·6H2O)",
+      "conc": 200.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 2.0
+    },
+    {
+      "name": "chitosan",
+      "mass": 80.0
+    },
+    {
+      "name": "acetic acid",
+      "conc": 1000.0
+    },
+    {
+      "name": "nisin solution",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "ph": 11.0
+  },
+  "pdfno_list": [
+    "00-003-0863"
+  ],
+  "source": {
+    "synthesis_id_original": "1144.json_N-CS-IO_2998",
+    "nodes": 17,
+    "edges": 17
+  },
+  "retrieval_text": "composition: N-CS-IO | method: coprecipitation | solvent: deionized water | solvent.volume: 100.0 | pH: 11.0 | precursor: ferrous chloride tetrahydrate (FeCl2·4H2O) (conc 100.0) | precursor: ferric chloride hexahydrate (FeCl3·6H2O) (conc 200.0) | additive: sodium hydroxide (conc 2.0) | additive: chitosan (mass 80.0) | additive: acetic acid (conc 1000.0) | additive: nisin solution (conc 1000.0) | pdfno_list: 00-003-0863"
+}

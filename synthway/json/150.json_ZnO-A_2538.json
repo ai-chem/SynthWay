@@ -1,0 +1,27 @@
+{
+  "synthesis_id": "150.json_ZnO-A_2538",
+  "composition": "ZnO-A",
+  "elements": [
+    "Zn",
+    "O",
+    "A"
+  ],
+  "solvent": {
+    "name": "deionized water"
+  },
+  "conditions": {
+    "temperature": 400.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal wurtzite"
+  },
+  "pdfno_list": [
+    "98-002-9272"
+  ],
+  "source": {
+    "synthesis_id_original": "150.json_ZnO-A_2538",
+    "nodes": 5,
+    "edges": 4
+  },
+  "retrieval_text": "composition: ZnO-A | solvent: deionized water | temperature: 400.0 | crystalsystem: hexagonal wurtzite | pdfno_list: 98-002-9272"
+}

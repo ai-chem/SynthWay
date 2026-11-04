@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "1226.json_ZnO_4156",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "cyperpus rotundus rhizome extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 50.0,
+      "width": 50.0,
+      "depth": 50.0
+    }
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "1226.json_ZnO_4156",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: ZnO | method: green synthesis | solvent: water | crystalsystem: hexagonal | shape: spherical | size.length: 50.0 | size.width: 50.0 | size.depth: 50.0 | precursor: Zn(CH3COO)2 (conc 1.0) | additive: cyperpus rotundus rhizome extract | pdfno_list: 36-1451"
+}

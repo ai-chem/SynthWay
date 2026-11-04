@@ -1,0 +1,8 @@
+Models,Gemini 2.0 Flash,NVIDIA Nemotron 3 Nano 30b A3B,Llama 4 Maverick,Claude Opus 4.5
+Mean score across runs,0.901,0.683,0.907,0.776
+SD of mean score across runs,0.016,0.014,0.014,0.014
+Mean pass rate across runs,0.878,0.467,0.993,0.715
+SD of pass rate across runs,0.051,0.011,0.006,0.065
+Range of mean score across runs,0.031,0.029,0.026,0.026
+Range of pass rate across runs,0.100,0.022,0.011,0.122
+Range of within-run score SD,0.056,0.03,0.045,0.036

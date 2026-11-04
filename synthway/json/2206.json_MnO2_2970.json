@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "2206.json_MnO2_2970",
+  "composition": "MnO2",
+  "elements": [
+    "Mn",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "KMnO4",
+      "conc": 1.5
+    }
+  ],
+  "additives": [
+    {
+      "name": "hydrochloric acid",
+      "conc": 0.1
+    },
+    {
+      "name": "citric acid",
+      "mass": 0.168,
+      "conc": 0.01
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 80.0
+  },
+  "product": {
+    "shape": "hollow",
+    "size": {
+      "length": 150.0,
+      "width": 150.0,
+      "depth": 150.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2206.json_MnO2_2970",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: MnO2 | solvent: water | solvent.volume: 80.0 | shape: hollow | size.length: 150.0 | size.width: 150.0 | size.depth: 150.0 | precursor: KMnO4 (conc 1.5) | additive: hydrochloric acid (conc 0.1) | additive: citric acid (mass 0.168; conc 0.01)"
+}

@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1205.json_Zn-MOF_285",
+  "composition": "Zn-MOF",
+  "elements": [
+    "Zn",
+    "M",
+    "O",
+    "F"
+  ],
+  "precursors": [
+    {
+      "name": "Zn(NO3)2·6H2O",
+      "conc": 2.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "4,6-diamino-2-pyrimidinethiol",
+      "conc": 1.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 150.0
+  },
+  "product": {
+    "crystalsystem": "tetrahedral",
+    "shape": "spherical",
+    "size": {
+      "length": 28.0,
+      "width": 28.0,
+      "depth": 28.0
+    }
+  },
+  "pdfno_list": [
+    "98-004-8345 98-009-4606"
+  ],
+  "source": {
+    "synthesis_id_original": "1205.json_Zn-MOF_285",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Zn-MOF | solvent: water | temperature: 150.0 | crystalsystem: tetrahedral | shape: spherical | size.length: 28.0 | size.width: 28.0 | size.depth: 28.0 | precursor: Zn(NO3)2·6H2O (conc 2.0) | additive: 4,6-diamino-2-pyrimidinethiol (conc 1.0) | pdfno_list: 98-004-8345 98-009-4606"
+}

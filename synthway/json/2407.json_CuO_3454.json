@@ -1,0 +1,31 @@
+{
+  "synthesis_id": "2407.json_CuO_3454",
+  "composition": "CuO",
+  "elements": [
+    "Cu",
+    "O"
+  ],
+  "solvent": {
+    "name": "toluene",
+    "volume": 48.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "size": {
+      "length": 10.5,
+      "width": 10.5,
+      "depth": 10.5
+    }
+  },
+  "pdfno_list": [
+    "45-0937"
+  ],
+  "source": {
+    "synthesis_id_original": "2407.json_CuO_3454",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: CuO | solvent: toluene | solvent.volume: 48.0 | temperature: 180.0 | size.length: 10.5 | size.width: 10.5 | size.depth: 10.5 | pdfno_list: 45-0937"
+}

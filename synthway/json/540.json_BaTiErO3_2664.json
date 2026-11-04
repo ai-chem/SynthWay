@@ -1,0 +1,34 @@
+{
+  "synthesis_id": "540.json_BaTiErO3_2664",
+  "composition": "BaTiErO3",
+  "elements": [
+    "Ba",
+    "Ti",
+    "Er",
+    "O"
+  ],
+  "method": "sol-emulsion-gel",
+  "solvent": {
+    "name": "propanol",
+    "volume": 19.0
+  },
+  "conditions": {
+    "temperature": 850.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "wire",
+    "size": {
+      "length": 26.8
+    }
+  },
+  "pdfno_list": [
+    "79-2263"
+  ],
+  "source": {
+    "synthesis_id_original": "540.json_BaTiErO3_2664",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: BaTiErO3 | method: sol-emulsion-gel | solvent: propanol | solvent.volume: 19.0 | temperature: 850.0 | crystalsystem: cubic | shape: wire | size.length: 26.8 | pdfno_list: 79-2263"
+}

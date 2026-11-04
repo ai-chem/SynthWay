@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "1954.json_Cu2O_2228",
+  "composition": "Cu2O",
+  "elements": [
+    "Cu",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "CuCl2",
+      "mass": 0.067225
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 2000.0
+    },
+    {
+      "name": "ascorbic acid",
+      "conc": 600.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 55.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "cube",
+    "size": {
+      "length": 800.0,
+      "width": 800.0,
+      "depth": 800.0
+    }
+  },
+  "pdfno_list": [
+    "05-0655"
+  ],
+  "source": {
+    "synthesis_id_original": "1954.json_Cu2O_2228",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: Cu2O | method: hydrothermal | solvent: water | solvent.volume: 50.0 | temperature: 55.0 | crystalsystem: cubic | shape: cube | size.length: 800.0 | size.width: 800.0 | size.depth: 800.0 | precursor: CuCl2 (mass 0.067225) | additive: sodium hydroxide (conc 2000.0) | additive: ascorbic acid (conc 600.0) | pdfno_list: 05-0655"
+}

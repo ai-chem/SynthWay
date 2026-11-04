@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "1249.json_MgO_995",
+  "composition": "MgO",
+  "elements": [
+    "Mg",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Mg(NO3)2*6H2O"
+    }
+  ],
+  "additives": [
+    {
+      "name": "justicia adhatoda leaf extract"
+    },
+    {
+      "name": "caustic soda",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "crystalsystem": "irregular",
+    "shape": "flower-like",
+    "size": {
+      "length": 22.96,
+      "width": 22.96,
+      "depth": 22.96
+    }
+  },
+  "pdfno_list": [
+    "96-901-2242"
+  ],
+  "source": {
+    "synthesis_id_original": "1249.json_MgO_995",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: MgO | method: green synthesis | solvent: water | temperature: 80.0 | crystalsystem: irregular | shape: flower-like | size.length: 22.96 | size.width: 22.96 | size.depth: 22.96 | precursor: Mg(NO3)2*6H2O | additive: justicia adhatoda leaf extract | additive: caustic soda (conc 1000.0) | pdfno_list: 96-901-2242"
+}

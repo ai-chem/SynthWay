@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "2405.json_CdS_470",
+  "composition": "CdS",
+  "elements": [
+    "Cd",
+    "S"
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 40.0
+  },
+  "conditions": {
+    "temperature": 100.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 60.0,
+      "width": 60.0,
+      "depth": 60.0
+    }
+  },
+  "pdfno_list": [
+    "41-1049"
+  ],
+  "source": {
+    "synthesis_id_original": "2405.json_CdS_470",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: CdS | solvent: distilled water | solvent.volume: 40.0 | temperature: 100.0 | crystalsystem: hexagonal | shape: spherical | size.length: 60.0 | size.width: 60.0 | size.depth: 60.0 | pdfno_list: 41-1049"
+}

@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "1712.json_GO-Ag_3647",
+  "composition": "GO-Ag",
+  "elements": [
+    "G",
+    "O",
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "tGO",
+      "mass": 0.15
+    },
+    {
+      "name": "AgNO3",
+      "mass": 0.3
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "mass": 1.0,
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 300.0
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "sheets",
+    "size": {
+      "length": 56.2,
+      "width": 56.2,
+      "depth": 56.2
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1712.json_GO-Ag_3647",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: GO-Ag | solvent: distilled water | solvent.volume: 300.0 | temperature: 80.0 | crystalsystem: cubic | shape: sheets | size.length: 56.2 | size.width: 56.2 | size.depth: 56.2 | precursor: tGO (mass 0.15) | precursor: AgNO3 (mass 0.3) | additive: sodium hydroxide (mass 1.0; conc 1000.0)"
+}

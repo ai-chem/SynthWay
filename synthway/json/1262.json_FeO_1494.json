@@ -1,0 +1,37 @@
+{
+  "synthesis_id": "1262.json_FeO_1494",
+  "composition": "FeO",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "FeO",
+      "mass": 2000.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "nicotiana plumbaginifolia leaf extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 60.0,
+      "width": 60.0,
+      "depth": 60.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1262.json_FeO_1494",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: FeO | method: green synthesis | solvent: water | shape: spherical | size.length: 60.0 | size.width: 60.0 | size.depth: 60.0 | precursor: FeO (mass 2000.0) | additive: nicotiana plumbaginifolia leaf extract"
+}

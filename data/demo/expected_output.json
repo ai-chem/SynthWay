@@ -1,0 +1,37 @@
+{
+  "description": "Acceptance criteria for a fresh live run using SS-Faithfulness; generated text and scores are not fixed reference values.",
+  "route_count": 1,
+  "context_count": 3,
+  "route_required_text_fields": [
+    "raw_text",
+    "retrieval_text"
+  ],
+  "score_min": 0.0,
+  "score_max": 1.0,
+  "evaluations": {
+    "chemical_scores.json": [
+      {
+        "score": "score",
+        "threshold": "threshold",
+        "passed": "passed",
+        "reason": "reason"
+      }
+    ],
+    "rag_scores.json": [
+      {
+        "score": "answer_score",
+        "threshold": "answer_threshold",
+        "passed": "answer_passed",
+        "reason": "answer_reason"
+      },
+      {
+        "score": "faithfulness_score",
+        "threshold": "faithfulness_threshold",
+        "passed": "faithfulness_passed",
+        "reason": "faithfulness_reason"
+      }
+    ]
+  },
+  "faithfulness_metric": "ss_faithfulness",
+  "faithfulness_formula": "(3*Q1 + 2*Q2 + 2*Q3 + Q4) / 8"
+}

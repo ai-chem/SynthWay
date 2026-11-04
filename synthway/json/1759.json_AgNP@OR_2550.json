@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "1759.json_AgNP@OR_2550",
+  "composition": "AgNP@OR",
+  "elements": [
+    "Ag",
+    "N",
+    "P",
+    "O",
+    "R"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "orange peel extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 11.77,
+      "width": 11.77,
+      "depth": 11.77
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1759.json_AgNP@OR_2550",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: AgNP@OR | solvent: water | shape: spherical | size.length: 11.77 | size.width: 11.77 | size.depth: 11.77 | precursor: AgNO3 (conc 1.0) | additive: orange peel extract"
+}

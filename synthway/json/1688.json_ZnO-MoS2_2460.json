@@ -1,0 +1,53 @@
+{
+  "synthesis_id": "1688.json_ZnO-MoS2_2460",
+  "composition": "ZnO-MoS2",
+  "elements": [
+    "Zn",
+    "O",
+    "Mo",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2•2H2O",
+      "conc": 200.0
+    },
+    {
+      "name": "MoS2 powder"
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinyl alcohol",
+      "conc": 100.0
+    },
+    {
+      "name": "ammonia"
+    }
+  ],
+  "solvent": {
+    "name": "ethanol",
+    "volume": 80.0
+  },
+  "conditions": {
+    "ph": 9.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "sheets",
+    "size": {
+      "length": 49.0,
+      "width": 49.0,
+      "depth": 49.0
+    }
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "1688.json_ZnO-MoS2_2460",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: ZnO-MoS2 | solvent: ethanol | solvent.volume: 80.0 | pH: 9.0 | crystalsystem: hexagonal | shape: sheets | size.length: 49.0 | size.width: 49.0 | size.depth: 49.0 | precursor: Zn(CH3COO)2•2H2O (conc 200.0) | precursor: MoS2 powder | additive: polyvinyl alcohol (conc 100.0) | additive: ammonia | pdfno_list: 36-1451"
+}

@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "1195.json_CuO_750",
+  "composition": "CuO",
+  "elements": [
+    "Cu",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Cu(NO3)2",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "punica granatum peel extract"
+    },
+    {
+      "name": "sodium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 80.0,
+    "ph": 9.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "spherical",
+    "size": {
+      "length": 18.0,
+      "width": 18.0,
+      "depth": 18.0
+    }
+  },
+  "pdfno_list": [
+    "48-1548"
+  ],
+  "source": {
+    "synthesis_id_original": "1195.json_CuO_750",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: CuO | solvent: distilled water | solvent.volume: 50.0 | temperature: 80.0 | pH: 9.0 | crystalsystem: monoclinic | shape: spherical | size.length: 18.0 | size.width: 18.0 | size.depth: 18.0 | precursor: Cu(NO3)2 (conc 1.0) | additive: punica granatum peel extract | additive: sodium hydroxide | pdfno_list: 48-1548"
+}

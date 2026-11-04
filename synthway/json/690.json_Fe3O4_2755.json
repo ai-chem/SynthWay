@@ -1,0 +1,26 @@
+{
+  "synthesis_id": "690.json_Fe3O4_2755",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "solvent": {
+    "name": "peg and h2o",
+    "volume": 20.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "shape": "wire"
+  },
+  "pdfno_list": [
+    "79-0419"
+  ],
+  "source": {
+    "synthesis_id_original": "690.json_Fe3O4_2755",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: Fe3O4 | method: hydrothermal | solvent: peg and h2o | solvent.volume: 20.0 | crystalsystem: face-centered cubic | shape: wire | pdfno_list: 79-0419"
+}

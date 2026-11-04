@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "990.json_ZnO_229",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2*2H2O",
+      "mass": 0.41
+    },
+    {
+      "name": "KOH",
+      "mass": 0.23
+    }
+  ],
+  "additives": [
+    {
+      "name": "3-aminopropyltriethoxysilane",
+      "mass": 0.075
+    },
+    {
+      "name": "water",
+      "mass": 0.5
+    }
+  ],
+  "solvent": {
+    "name": "ethanol",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 20.0
+  },
+  "product": {
+    "size": {
+      "width": 5.0
+    }
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "990.json_ZnO_229",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: ZnO | solvent: ethanol | solvent.volume: 20.0 | temperature: 20.0 | size.width: 5.0 | precursor: Zn(CH3COO)2*2H2O (mass 0.41) | precursor: KOH (mass 0.23) | additive: 3-aminopropyltriethoxysilane (mass 0.075) | additive: water (mass 0.5) | pdfno_list: 36-1451"
+}

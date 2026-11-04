@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "1294.json_Ag_3150",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "h. tiliaceus leaf extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 25.0,
+      "width": 25.0,
+      "depth": 25.0
+    }
+  },
+  "pdfno_list": [
+    "04-0783"
+  ],
+  "source": {
+    "synthesis_id_original": "1294.json_Ag_3150",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Ag | method: green synthesis | solvent: water | temperature: 25.0 | shape: spherical | size.length: 25.0 | size.width: 25.0 | size.depth: 25.0 | precursor: AgNO3 (conc 1.0) | additive: h. tiliaceus leaf extract | pdfno_list: 04-0783"
+}

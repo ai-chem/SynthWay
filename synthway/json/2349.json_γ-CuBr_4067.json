@@ -1,0 +1,56 @@
+{
+  "synthesis_id": "2349.json_γ-CuBr_4067",
+  "composition": "γ-CuBr",
+  "elements": [
+    "Cu",
+    "Br"
+  ],
+  "precursors": [
+    {
+      "name": "Cu(CH3COO)2",
+      "conc": 1000.0
+    },
+    {
+      "name": "CuO",
+      "conc": 1000.0
+    },
+    {
+      "name": "KBr",
+      "conc": 1000.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "hydroxylamine hydrochloride",
+      "conc": 500.0
+    },
+    {
+      "name": "deionized gelatin (4%)"
+    }
+  ],
+  "solvent": {
+    "name": "sodium hydroxide",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 80.0,
+    "ph": 7.0
+  },
+  "product": {
+    "shape": "cube",
+    "size": {
+      "length": 10.0,
+      "width": 10.0,
+      "depth": 10.0
+    }
+  },
+  "pdfno_list": [
+    "06-0292"
+  ],
+  "source": {
+    "synthesis_id_original": "2349.json_γ-CuBr_4067",
+    "nodes": 17,
+    "edges": 18
+  },
+  "retrieval_text": "composition: γ-CuBr | solvent: sodium hydroxide | solvent.volume: 100.0 | temperature: 80.0 | pH: 7.0 | shape: cube | size.length: 10.0 | size.width: 10.0 | size.depth: 10.0 | precursor: Cu(CH3COO)2 (conc 1000.0) | precursor: CuO (conc 1000.0) | precursor: KBr (conc 1000.0) | additive: hydroxylamine hydrochloride (conc 500.0) | additive: deionized gelatin (4%) | pdfno_list: 06-0292"
+}

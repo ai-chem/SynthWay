@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1716.json_Cu_1077",
+  "composition": "Cu",
+  "elements": [
+    "Cu"
+  ],
+  "precursors": [
+    {
+      "name": "Copper (II) sulfate pentahydrate (CuSO4·5H2O)",
+      "conc": 30.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "ascorbic acid"
+    },
+    {
+      "name": "sodium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "1% polyvinylpyrrolidone (pvp) solution+10 % ascorbic acid solution"
+  },
+  "conditions": {
+    "temperature": 90.0,
+    "ph": 7.0
+  },
+  "product": {
+    "crystalsystem": "polyhedral",
+    "size": {
+      "length": 16.2,
+      "width": 16.2,
+      "depth": 16.2
+    }
+  },
+  "pdfno_list": [
+    "04-0836"
+  ],
+  "source": {
+    "synthesis_id_original": "1716.json_Cu_1077",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Cu | solvent: 1% polyvinylpyrrolidone (pvp) solution+10 % ascorbic acid solution | temperature: 90.0 | pH: 7.0 | crystalsystem: polyhedral | size.length: 16.2 | size.width: 16.2 | size.depth: 16.2 | precursor: Copper (II) sulfate pentahydrate (CuSO4·5H2O) (conc 30.0) | additive: ascorbic acid | additive: sodium hydroxide | pdfno_list: 04-0836"
+}

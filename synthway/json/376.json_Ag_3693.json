@@ -1,0 +1,27 @@
+{
+  "synthesis_id": "376.json_Ag_3693",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "chemical synthesis",
+  "solvent": {
+    "name": "water",
+    "volume": 24.75
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "shape": "plate",
+    "size": {
+      "width": 500.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "376.json_Ag_3693",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: Ag | method: chemical synthesis | solvent: water | solvent.volume: 24.75 | temperature: 25.0 | shape: plate | size.width: 500.0"
+}

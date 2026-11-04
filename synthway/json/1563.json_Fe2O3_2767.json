@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1563.json_Fe2O3_2767",
+  "composition": "Fe2O3",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "green-hydrothermal",
+  "precursors": [
+    {
+      "name": "FeCl3",
+      "mass": 0.502
+    }
+  ],
+  "additives": [
+    {
+      "name": "cocos nucifera l. pulp extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "crystalsystem": "rhombohedral",
+    "shape": "husked rice-shaped",
+    "size": {
+      "length": 92.5,
+      "width": 92.5,
+      "depth": 92.5
+    }
+  },
+  "pdfno_list": [
+    "89-0596"
+  ],
+  "source": {
+    "synthesis_id_original": "1563.json_Fe2O3_2767",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Fe2O3 | method: green-hydrothermal | solvent: water | temperature: 25.0 | crystalsystem: rhombohedral | shape: husked rice-shaped | size.length: 92.5 | size.width: 92.5 | size.depth: 92.5 | precursor: FeCl3 (mass 0.502) | additive: cocos nucifera l. pulp extract | pdfno_list: 89-0596"
+}

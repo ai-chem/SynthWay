@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "498.json_BaFe2O4_497",
+  "composition": "BaFe2O4",
+  "elements": [
+    "Ba",
+    "Fe",
+    "O"
+  ],
+  "method": "auto-combustion",
+  "solvent": {
+    "name": "water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 160.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "wire",
+    "size": {
+      "length": 35.0
+    }
+  },
+  "pdfno_list": [
+    "70-2468"
+  ],
+  "source": {
+    "synthesis_id_original": "498.json_BaFe2O4_497",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: BaFe2O4 | method: auto-combustion | solvent: water | solvent.volume: 100.0 | temperature: 160.0 | crystalsystem: orthorhombic | shape: wire | size.length: 35.0 | pdfno_list: 70-2468"
+}

@@ -1,0 +1,32 @@
+{
+  "synthesis_id": "332.json_CuFe2O4_1150",
+  "composition": "CuFe2O4",
+  "elements": [
+    "Cu",
+    "Fe",
+    "O"
+  ],
+  "method": "polymeric precursor",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "shape": "polyhedral",
+    "size": {
+      "length": 300.0
+    }
+  },
+  "pdfno_list": [
+    "34-0425"
+  ],
+  "source": {
+    "synthesis_id_original": "332.json_CuFe2O4_1150",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: CuFe2O4 | method: polymeric precursor | solvent: water | temperature: 80.0 | crystalsystem: tetragonal | shape: polyhedral | size.length: 300.0 | pdfno_list: 34-0425"
+}

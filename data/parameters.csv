@@ -1,0 +1,22 @@
+Parameter,Description
+precursor,Precursor used in the synthesis procedure
+composition,Composition of the synthesized material
+solvent,Solvent used in the synthesis procedure
+additive,Additive used in the synthesis procedure
+size_width,Width of the synthesized particle or structure
+temperature,Temperature of the synthesis procedure
+size_length,Length of the synthesized particle or structure
+shape,Shape or morphology of the synthesized material
+size_depth,Depth or thickness of the synthesized particle or structure
+method,Synthesis method used in the procedure
+precursor_conc,Concentration of the precursor
+crystalsystem,Crystal system of the synthesized material
+solvent_v,Volume of solvent used in the procedure
+precursor_mass,Mass of precursor used in the procedure
+pdfno,PDF reference number used for phase identification
+additive_conc,Concentration of the additive
+additive_mass,Mass of the additive used in the procedure
+ph,pH of the synthesis medium
+seeds,Seed material used in the procedure
+seed_mass,Mass of the seed material
+seed_conc,Concentration of the seed material

@@ -1,0 +1,28 @@
+{
+  "synthesis_id": "859.json_Fe(OL)3_3598",
+  "composition": "Fe(OL)3",
+  "elements": [
+    "Fe",
+    "O",
+    "L"
+  ],
+  "precursors": [
+    {
+      "name": "NaOL"
+    },
+    {
+      "name": "FeCl3",
+      "mass": 0.081
+    }
+  ],
+  "solvent": {
+    "name": "water + ethanol + hexane",
+    "volume": 40.0
+  },
+  "source": {
+    "synthesis_id_original": "859.json_Fe(OL)3_3598",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: Fe(OL)3 | solvent: water + ethanol + hexane | solvent.volume: 40.0 | precursor: NaOL | precursor: FeCl3 (mass 0.081)"
+}

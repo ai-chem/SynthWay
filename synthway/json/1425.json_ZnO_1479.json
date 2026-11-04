@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "1425.json_ZnO_1479",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Zinc acetate",
+      "conc": 200.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "andrographis alata plant extract"
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 3000.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 70.0,
+    "ph": 12.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "hexagonal",
+    "size": {
+      "length": 45.0,
+      "width": 45.0,
+      "depth": 45.0
+    }
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "1425.json_ZnO_1479",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: ZnO | method: green synthesis | solvent: water | temperature: 70.0 | pH: 12.0 | crystalsystem: hexagonal | shape: hexagonal | size.length: 45.0 | size.width: 45.0 | size.depth: 45.0 | precursor: Zinc acetate (conc 200.0) | additive: andrographis alata plant extract | additive: sodium hydroxide (conc 3000.0) | pdfno_list: 36-1451"
+}

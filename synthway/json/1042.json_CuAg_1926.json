@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1042.json_CuAg_1926",
+  "composition": "CuAg",
+  "elements": [
+    "Cu",
+    "Ag"
+  ],
+  "method": "one-pot reduction method",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 20.0
+    },
+    {
+      "name": "CuCl2",
+      "mass": 0.009
+    },
+    {
+      "name": "C16H35N",
+      "mass": 0.18
+    }
+  ],
+  "additives": [
+    {
+      "name": "glucose",
+      "mass": 0.05
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 100.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "shape": "spherical"
+  },
+  "source": {
+    "synthesis_id_original": "1042.json_CuAg_1926",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: CuAg | method: one-pot reduction method | solvent: water | temperature: 100.0 | crystalsystem: face-centered cubic | shape: spherical | precursor: AgNO3 (conc 20.0) | precursor: CuCl2 (mass 0.009) | precursor: C16H35N (mass 0.18) | additive: glucose (mass 0.05)"
+}

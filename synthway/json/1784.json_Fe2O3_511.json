@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "1784.json_Fe2O3_511",
+  "composition": "Fe2O3",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Fe(NO3)3·9H2O",
+      "mass": 0.042
+    }
+  ],
+  "additives": [
+    {
+      "name": "ps-b-paa-b-peg",
+      "mass": 0.01
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 100.0
+    }
+  ],
+  "solvent": {
+    "name": "tetrahydrofuran",
+    "volume": 2.0
+  },
+  "conditions": {
+    "temperature": 400.0
+  },
+  "product": {
+    "shape": "mesoporous",
+    "size": {
+      "length": 39.0,
+      "width": 39.0,
+      "depth": 39.0
+    }
+  },
+  "pdfno_list": [
+    "33-0664"
+  ],
+  "source": {
+    "synthesis_id_original": "1784.json_Fe2O3_511",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Fe2O3 | solvent: tetrahydrofuran | solvent.volume: 2.0 | temperature: 400.0 | shape: mesoporous | size.length: 39.0 | size.width: 39.0 | size.depth: 39.0 | precursor: Fe(NO3)3·9H2O (mass 0.042) | additive: ps-b-paa-b-peg (mass 0.01) | additive: sodium hydroxide (conc 100.0) | pdfno_list: 33-0664"
+}

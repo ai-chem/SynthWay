@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1175.json_Co3O4_3366",
+  "composition": "Co3O4",
+  "elements": [
+    "Co",
+    "O"
+  ],
+  "method": "mycosynthesis",
+  "precursors": [
+    {
+      "name": "CoCl2*6H2O",
+      "conc": 20.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "aspergillus sojae mcff"
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 5.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "ph": 9.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "flake",
+    "size": {
+      "length": 171.5,
+      "width": 171.5,
+      "depth": 171.5
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1175.json_Co3O4_3366",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Co3O4 | method: mycosynthesis | solvent: water | pH: 9.0 | crystalsystem: cubic | shape: flake | size.length: 171.5 | size.width: 171.5 | size.depth: 171.5 | precursor: CoCl2*6H2O (conc 20.0) | additive: aspergillus sojae mcff | additive: sodium hydroxide (conc 5.0)"
+}

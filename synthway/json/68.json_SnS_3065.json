@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "68.json_SnS_3065",
+  "composition": "SnS",
+  "elements": [
+    "Sn",
+    "S"
+  ],
+  "method": "hydrothermally",
+  "solvent": {
+    "name": "water",
+    "volume": 180.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "size": {
+      "length": 4.0,
+      "width": 4.0,
+      "depth": 4.0
+    }
+  },
+  "pdfno_list": [
+    "39-0354"
+  ],
+  "source": {
+    "synthesis_id_original": "68.json_SnS_3065",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: SnS | method: hydrothermally | solvent: water | solvent.volume: 180.0 | temperature: 200.0 | crystalsystem: orthorhombic | size.length: 4.0 | size.width: 4.0 | size.depth: 4.0 | pdfno_list: 39-0354"
+}

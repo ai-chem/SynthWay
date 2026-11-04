@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "610.json_SPE-Ag_1650",
+  "composition": "SPE-Ag",
+  "elements": [
+    "S",
+    "P",
+    "E",
+    "Ag"
+  ],
+  "method": "biosynthesis",
+  "precursors": [
+    {
+      "name": "AgNO3"
+    }
+  ],
+  "additives": [
+    {
+      "name": "s. pachycarpa extract",
+      "mass": 0.3
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "ph": 12.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 32.0,
+      "width": 32.0,
+      "depth": 32.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "610.json_SPE-Ag_1650",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: SPE-Ag | method: biosynthesis | solvent: water | pH: 12.0 | shape: spherical | size.length: 32.0 | size.width: 32.0 | size.depth: 32.0 | precursor: AgNO3 | additive: s. pachycarpa extract (mass 0.3)"
+}

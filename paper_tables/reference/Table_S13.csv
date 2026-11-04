@@ -1,0 +1,8 @@
+Model,Chemical Plausibility & Consistency,Chemical Plausibility & Consistency,Answer Relevance,Answer Relevance,Faithfulness,Faithfulness
+Model,Average score (0-1),Average score (0-1),Average score (0-1),Average score (0-1),Average score (0-1),Average score (0-1)
+Model,LLM judge,Experts,LLM judge,Experts,LLM judge,Experts
+Claude Opus 4.5,0.840,0.736,1.000,0.981,0.959,0.700
+Gemini 2.0 Flash,0.987,0.793,1.000,0.994,0.960,0.481
+Llama 4 Maverick,0.920,0.788,0.840,1.000,0.939,0.647
+NVIDIA Nemotron 3 Nano 30B A3B,0.803,0.600,1.000,0.944,0.930,0.466
+ALL MODELS,0.888,0.729,0.960,0.980,0.947,0.573

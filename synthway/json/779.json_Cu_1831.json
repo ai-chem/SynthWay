@@ -1,0 +1,37 @@
+{
+  "synthesis_id": "779.json_Cu_1831",
+  "composition": "Cu",
+  "elements": [
+    "Cu"
+  ],
+  "method": "thermal decomposition",
+  "precursors": [
+    {
+      "name": "CuCl2",
+      "mass": 13.4
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium oleate",
+      "mass": 30.4
+    }
+  ],
+  "conditions": {
+    "temperature": 290.0
+  },
+  "product": {
+    "size": {
+      "width": 19.2
+    }
+  },
+  "pdfno_list": [
+    "04-0836"
+  ],
+  "source": {
+    "synthesis_id_original": "779.json_Cu_1831",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: Cu | method: thermal decomposition | temperature: 290.0 | size.width: 19.2 | precursor: CuCl2 (mass 13.4) | additive: sodium oleate (mass 30.4) | pdfno_list: 04-0836"
+}

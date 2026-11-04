@@ -1,0 +1,32 @@
+{
+  "synthesis_id": "239.json_NaxWO3/Ag2O_2631",
+  "composition": "NaxWO3/Ag2O",
+  "elements": [
+    "Na",
+    "W",
+    "O",
+    "Ag"
+  ],
+  "method": "hydrothermal",
+  "solvent": {
+    "name": "water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 50.0,
+    "ph": 9.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "wire"
+  },
+  "pdfno_list": [
+    "42-874"
+  ],
+  "source": {
+    "synthesis_id_original": "239.json_NaxWO3/Ag2O_2631",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: NaxWO3/Ag2O | method: hydrothermal | solvent: water | solvent.volume: 50.0 | temperature: 50.0 | pH: 9.0 | crystalsystem: hexagonal | shape: wire | pdfno_list: 42-874"
+}

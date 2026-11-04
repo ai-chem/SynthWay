@@ -1,0 +1,58 @@
+{
+  "synthesis_id": "1302.json_[CrL3Cl2H2O].11⁄2H2O_3772",
+  "composition": "[CrL3Cl2H2O].1½H2O",
+  "elements": [
+    "Cr",
+    "L",
+    "Cl",
+    "H",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "C5H8O2",
+      "conc": 1.0
+    },
+    {
+      "name": "CrCl3·6H2O",
+      "mass": 0.266,
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "metformin",
+      "mass": 0.165,
+      "conc": 1.0
+    },
+    {
+      "name": "sodium hydroxide"
+    },
+    {
+      "name": "ammonium hydroxide",
+      "mass": 0.165,
+      "conc": 1.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0,
+    "ph": 6.5
+  },
+  "product": {
+    "crystalsystem": "triclinic",
+    "size": {
+      "length": 7.625,
+      "width": 7.625,
+      "depth": 7.625
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1302.json_[CrL3Cl2H2O].11⁄2H2O_3772",
+    "nodes": 17,
+    "edges": 19
+  },
+  "retrieval_text": "composition: [CrL3Cl2H2O].1½H2O | solvent: water | temperature: 25.0 | pH: 6.5 | crystalsystem: triclinic | size.length: 7.625 | size.width: 7.625 | size.depth: 7.625 | precursor: C5H8O2 (conc 1.0) | precursor: CrCl3·6H2O (mass 0.266; conc 1.0) | additive: metformin (mass 0.165; conc 1.0) | additive: sodium hydroxide | additive: ammonium hydroxide (mass 0.165; conc 1.0)"
+}

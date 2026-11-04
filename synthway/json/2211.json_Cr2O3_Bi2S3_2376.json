@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "2211.json_Cr2O3/Bi2S3_2376",
+  "composition": "Cr2O3/Bi2S3",
+  "elements": [
+    "Cr",
+    "O",
+    "Bi",
+    "S"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "Bi(NO3)3·5H2O",
+      "mass": 4.0
+    },
+    {
+      "name": "(NH2)2S",
+      "mass": 1.25
+    }
+  ],
+  "additives": [
+    {
+      "name": "ethanol"
+    }
+  ],
+  "solvent": {
+    "name": "bi-distilled water"
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "shape": "wire",
+    "size": {
+      "length": 3000.0,
+      "width": 100.0,
+      "depth": 100.0
+    }
+  },
+  "pdfno_list": [
+    "84-0279"
+  ],
+  "source": {
+    "synthesis_id_original": "2211.json_Cr2O3/Bi2S3_2376",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Cr2O3/Bi2S3 | method: hydrothermal | solvent: bi-distilled water | temperature: 180.0 | shape: wire | size.length: 3000.0 | size.width: 100.0 | size.depth: 100.0 | precursor: Bi(NO3)3·5H2O (mass 4.0) | precursor: (NH2)2S (mass 1.25) | additive: ethanol | pdfno_list: 84-0279"
+}

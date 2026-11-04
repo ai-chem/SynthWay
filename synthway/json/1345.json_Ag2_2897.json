@@ -1,0 +1,30 @@
+{
+  "synthesis_id": "1345.json_Ag2_2897",
+  "composition": "Ag2",
+  "elements": [
+    "Ag"
+  ],
+  "method": "plasma spraying",
+  "precursors": [
+    {
+      "name": "AgNO3"
+    },
+    {
+      "name": "TiO2"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water"
+  },
+  "product": {
+    "size": {
+      "depth": 60000.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1345.json_Ag2_2897",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: Ag2 | method: plasma spraying | solvent: deionized water | size.depth: 60000.0 | precursor: AgNO3 | precursor: TiO2"
+}

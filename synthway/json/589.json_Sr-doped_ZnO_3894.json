@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "589.json_Sr-doped_ZnO_3894",
+  "composition": "Sr-doped ZnO",
+  "elements": [
+    "Sr",
+    "Zn",
+    "O"
+  ],
+  "method": "ball milling",
+  "precursors": [
+    {
+      "name": "SrCO3"
+    },
+    {
+      "name": "ZnO"
+    }
+  ],
+  "additives": [
+    {
+      "name": "stearic acid"
+    },
+    {
+      "name": "tungsten carbide"
+    }
+  ],
+  "conditions": {
+    "temperature": 400.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 60.0
+    }
+  },
+  "pdfno_list": [
+    "01-089-0511"
+  ],
+  "source": {
+    "synthesis_id_original": "589.json_Sr-doped_ZnO_3894",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Sr-doped ZnO | method: ball milling | temperature: 400.0 | crystalsystem: hexagonal | shape: spherical | size.length: 60.0 | precursor: SrCO3 | precursor: ZnO | additive: stearic acid | additive: tungsten carbide | pdfno_list: 01-089-0511"
+}

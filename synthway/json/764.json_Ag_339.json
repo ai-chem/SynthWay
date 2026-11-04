@@ -1,0 +1,37 @@
+{
+  "synthesis_id": "764.json_Ag_339",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "leaves from c. sinensis"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 37.0
+  },
+  "product": {
+    "size": {
+      "length": 65.0,
+      "width": 65.0,
+      "depth": 65.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "764.json_Ag_339",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: Ag | solvent: water | temperature: 37.0 | size.length: 65.0 | size.width: 65.0 | size.depth: 65.0 | precursor: AgNO3 (conc 1.0) | additive: leaves from c. sinensis"
+}

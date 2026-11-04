@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "866.json_γ-Fe2O3_1904",
+  "composition": "γ-Fe2O3",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "polyol-mediated method",
+  "precursors": [
+    {
+      "name": "FeCl2",
+      "mass": 2.702,
+      "conc": 210.0
+    },
+    {
+      "name": "Na3Cit",
+      "conc": 50.0
+    },
+    {
+      "name": "NaAc",
+      "conc": 760.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "dextran"
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 47.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "shape": "flower-shaped nanoparticles",
+    "size": {
+      "length": 110.0,
+      "width": 110.0,
+      "depth": 110.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "866.json_γ-Fe2O3_1904",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: γ-Fe2O3 | method: polyol-mediated method | solvent: ethylene glycol | solvent.volume: 47.0 | temperature: 200.0 | shape: flower-shaped nanoparticles | size.length: 110.0 | size.width: 110.0 | size.depth: 110.0 | precursor: FeCl2 (mass 2.702; conc 210.0) | precursor: Na3Cit (conc 50.0) | precursor: NaAc (conc 760.0) | additive: dextran"
+}

@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "1043.json_Pd_1288",
+  "composition": "Pd",
+  "elements": [
+    "Pd"
+  ],
+  "method": "reduction",
+  "precursors": [
+    {
+      "name": "PdCl2",
+      "conc": 0.1
+    },
+    {
+      "name": "N2H4*H2O",
+      "mass": 0.3
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "width": 25.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1043.json_Pd_1288",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: Pd | method: reduction | solvent: water | shape: spherical | size.width: 25.0 | precursor: PdCl2 (conc 0.1) | precursor: N2H4*H2O (mass 0.3)"
+}

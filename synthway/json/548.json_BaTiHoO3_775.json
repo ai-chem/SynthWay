@@ -1,0 +1,23 @@
+{
+  "synthesis_id": "548.json_BaTiHoO3_775",
+  "composition": "BaTiHoO3",
+  "elements": [
+    "Ba",
+    "Ti",
+    "Ho",
+    "O"
+  ],
+  "method": "pechini",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 1320.0
+  },
+  "source": {
+    "synthesis_id_original": "548.json_BaTiHoO3_775",
+    "nodes": 4,
+    "edges": 3
+  },
+  "retrieval_text": "composition: BaTiHoO3 | method: pechini | solvent: water | temperature: 1320.0"
+}

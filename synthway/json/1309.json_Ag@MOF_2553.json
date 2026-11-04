@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "1309.json_Ag@MOF_2553",
+  "composition": "Ag@MOF",
+  "elements": [
+    "Ag",
+    "M",
+    "O",
+    "F"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "mass": 0.42
+    }
+  ],
+  "additives": [
+    {
+      "name": "3,5-pyridine-dicarboxylic acid",
+      "mass": 0.14
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 140.0
+  },
+  "product": {
+    "shape": "long rods",
+    "size": {
+      "length": 6000.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1309.json_Ag@MOF_2553",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Ag@MOF | solvent: deionized water | solvent.volume: 20.0 | temperature: 140.0 | shape: long rods | size.length: 6000.0 | precursor: AgNO3 (mass 0.42) | additive: 3,5-pyridine-dicarboxylic acid (mass 0.14)"
+}

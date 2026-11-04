@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "2314.json_CuS_2955",
+  "composition": "CuS",
+  "elements": [
+    "Cu",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "Cu(NO3)2",
+      "mass": 9.38,
+      "conc": 500.0
+    },
+    {
+      "name": "Na2S",
+      "mass": 1.95,
+      "conc": 500.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 100.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 17.73,
+      "width": 17.73,
+      "depth": 17.73
+    }
+  },
+  "pdfno_list": [
+    "78-0876"
+  ],
+  "source": {
+    "synthesis_id_original": "2314.json_CuS_2955",
+    "nodes": 15,
+    "edges": 15
+  },
+  "retrieval_text": "composition: CuS | solvent: water | solvent.volume: 100.0 | temperature: 100.0 | crystalsystem: hexagonal | shape: spherical | size.length: 17.73 | size.width: 17.73 | size.depth: 17.73 | precursor: Cu(NO3)2 (mass 9.38; conc 500.0) | precursor: Na2S (mass 1.95; conc 500.0) | pdfno_list: 78-0876"
+}

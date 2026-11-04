@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "447.json_GA-Ag-Q-Cs_1446",
+  "composition": "GA-Ag-Q-Cs",
+  "elements": [
+    "G",
+    "A",
+    "Ag",
+    "Q",
+    "Cs"
+  ],
+  "precursors": [
+    {
+      "name": "casein",
+      "mass": 0.01
+    },
+    {
+      "name": "GA-Ag-Q (NPs)"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 214.9,
+      "width": 214.9,
+      "depth": 214.9
+    }
+  },
+  "source": {
+    "synthesis_id_original": "447.json_GA-Ag-Q-Cs_1446",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: GA-Ag-Q-Cs | solvent: water | temperature: 25.0 | shape: spherical | size.length: 214.9 | size.width: 214.9 | size.depth: 214.9 | precursor: casein (mass 0.01) | precursor: GA-Ag-Q (NPs)"
+}

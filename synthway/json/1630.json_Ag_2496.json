@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "1630.json_Ag_2496",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "cation reduction",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "ammonia",
+      "conc": 5.0
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 9.6
+    },
+    {
+      "name": "maltose",
+      "conc": 10.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 21.0,
+    "ph": 11.5
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 28.0,
+      "width": 28.0,
+      "depth": 28.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1630.json_Ag_2496",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: Ag | method: cation reduction | solvent: water | temperature: 21.0 | pH: 11.5 | shape: spherical | size.length: 28.0 | size.width: 28.0 | size.depth: 28.0 | precursor: AgNO3 (conc 1.0) | additive: ammonia (conc 5.0) | additive: sodium hydroxide (conc 9.6) | additive: maltose (conc 10.0)"
+}

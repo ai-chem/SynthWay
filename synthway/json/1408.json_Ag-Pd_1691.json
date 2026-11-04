@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1408.json_Ag-Pd_1691",
+  "composition": "Ag–Pd",
+  "elements": [
+    "Ag",
+    "Pd"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "mass": 0.016
+    },
+    {
+      "name": "PdCl2",
+      "mass": 0.016
+    }
+  ],
+  "additives": [
+    {
+      "name": "hibiscus sabdariffa plant extract"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 90.0
+  },
+  "conditions": {
+    "temperature": 75.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 16.77,
+      "width": 16.77,
+      "depth": 16.77
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1408.json_Ag-Pd_1691",
+    "nodes": 14,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Ag–Pd | method: green synthesis | solvent: deionized water | solvent.volume: 90.0 | temperature: 75.0 | crystalsystem: cubic | shape: spherical | size.length: 16.77 | size.width: 16.77 | size.depth: 16.77 | precursor: AgNO3 (mass 0.016) | precursor: PdCl2 (mass 0.016) | additive: hibiscus sabdariffa plant extract"
+}

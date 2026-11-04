@@ -1,0 +1,30 @@
+{
+  "synthesis_id": "2061.json_MoSe2_3300",
+  "composition": "MoSe2",
+  "elements": [
+    "Mo",
+    "Se"
+  ],
+  "precursors": [
+    {
+      "name": "MoSe2",
+      "mass": 2.0
+    }
+  ],
+  "solvent": {
+    "name": "ethanol and water",
+    "volume": 200.0
+  },
+  "product": {
+    "shape": "sheets",
+    "size": {
+      "depth": 0.65
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2061.json_MoSe2_3300",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: MoSe2 | solvent: ethanol and water | solvent.volume: 200.0 | shape: sheets | size.depth: 0.65 | precursor: MoSe2 (mass 2.0)"
+}

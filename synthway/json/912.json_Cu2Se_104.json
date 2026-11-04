@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "912.json_Cu2Se_104",
+  "composition": "Cu2Se",
+  "elements": [
+    "Cu",
+    "Se"
+  ],
+  "precursors": [
+    {
+      "name": "CuCl",
+      "mass": 0.099
+    },
+    {
+      "name": "SeO2",
+      "mass": 0.0555
+    },
+    {
+      "name": "N2H4·H2O",
+      "mass": 0.111
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 160.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical"
+  },
+  "pdfno_list": [
+    "65-2982"
+  ],
+  "source": {
+    "synthesis_id_original": "912.json_Cu2Se_104",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Cu2Se | solvent: ethylene glycol | solvent.volume: 20.0 | temperature: 160.0 | crystalsystem: cubic | shape: spherical | precursor: CuCl (mass 0.099) | precursor: SeO2 (mass 0.0555) | precursor: N2H4·H2O (mass 0.111) | pdfno_list: 65-2982"
+}

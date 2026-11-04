@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "2100.json_Ti3C2_1282",
+  "composition": "Ti3C2",
+  "elements": [
+    "Ti",
+    "C"
+  ],
+  "precursors": [
+    {
+      "name": "Ti3AlC2",
+      "mass": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "potassium hydroxide",
+      "mass": 3.5
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 180.0,
+    "ph": 7.0
+  },
+  "product": {
+    "shape": "sheets",
+    "size": {
+      "length": 103.0,
+      "width": 103.0,
+      "depth": 5.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2100.json_Ti3C2_1282",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Ti3C2 | solvent: water | temperature: 180.0 | pH: 7.0 | shape: sheets | size.length: 103.0 | size.width: 103.0 | size.depth: 5.0 | precursor: Ti3AlC2 (mass 1.0) | additive: potassium hydroxide (mass 3.5)"
+}

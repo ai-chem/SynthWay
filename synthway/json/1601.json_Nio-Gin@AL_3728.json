@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "1601.json_Nio-Gin@AL_3728",
+  "composition": "Nio-Gin@AL",
+  "elements": [
+    "Ni",
+    "Gi",
+    "A",
+    "L"
+  ],
+  "precursors": [
+    {
+      "name": "Gin-Nio"
+    },
+    {
+      "name": "AL (solution)"
+    }
+  ],
+  "additives": [
+    {
+      "name": "calcium chloride"
+    }
+  ],
+  "solvent": {
+    "name": "dmem medium"
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 241.0,
+      "width": 241.0,
+      "depth": 241.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1601.json_Nio-Gin@AL_3728",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Nio-Gin@AL | solvent: dmem medium | temperature: 60.0 | shape: spherical | size.length: 241.0 | size.width: 241.0 | size.depth: 241.0 | precursor: Gin-Nio | precursor: AL (solution) | additive: calcium chloride"
+}

@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "1023.json_Ag_1804",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "mass": 3.214
+    },
+    {
+      "name": "NaBH4",
+      "mass": 0.0133,
+      "conc": 0.1
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinyl alcohol",
+      "mass": 0.013
+    },
+    {
+      "name": "trisodium citrate",
+      "mass": 30.0
+    },
+    {
+      "name": "hydrogen peroxide",
+      "mass": 0.222
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 172.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "cube",
+    "size": {
+      "length": 8.6
+    }
+  },
+  "pdfno_list": [
+    "04-0783"
+  ],
+  "source": {
+    "synthesis_id_original": "1023.json_Ag_1804",
+    "nodes": 18,
+    "edges": 17
+  },
+  "retrieval_text": "composition: Ag | solvent: deionized water | solvent.volume: 172.0 | crystalsystem: cubic | shape: cube | size.length: 8.6 | precursor: AgNO3 (mass 3.214) | precursor: NaBH4 (mass 0.0133; conc 0.1) | additive: polyvinyl alcohol (mass 0.013) | additive: trisodium citrate (mass 30.0) | additive: hydrogen peroxide (mass 0.222) | pdfno_list: 04-0783"
+}

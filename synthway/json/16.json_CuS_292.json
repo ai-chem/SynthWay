@@ -1,0 +1,34 @@
+{
+  "synthesis_id": "16.json_CuS_292",
+  "composition": "CuS",
+  "elements": [
+    "Cu",
+    "S"
+  ],
+  "method": "wet chemical",
+  "solvent": {
+    "name": "deionized water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 50.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 4.7,
+      "width": 4.7,
+      "depth": 4.7
+    }
+  },
+  "pdfno_list": [
+    "06-0464"
+  ],
+  "source": {
+    "synthesis_id_original": "16.json_CuS_292",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: CuS | method: wet chemical | solvent: deionized water | solvent.volume: 100.0 | temperature: 50.0 | crystalsystem: hexagonal | shape: spherical | size.length: 4.7 | size.width: 4.7 | size.depth: 4.7 | pdfno_list: 06-0464"
+}

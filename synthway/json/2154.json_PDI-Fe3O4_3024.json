@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "2154.json_PDI-Fe3O4_3024",
+  "composition": "PDI-Fe3O4",
+  "elements": [
+    "P",
+    "D",
+    "I",
+    "Fe",
+    "O"
+  ],
+  "additives": [
+    {
+      "name": "perylene diimide",
+      "mass": 1.0
+    }
+  ],
+  "seeds": [
+    {
+      "name": "Fe3O4",
+      "mass": 5.0
+    }
+  ],
+  "solvent": {
+    "name": "dimethylform amide",
+    "volume": 1.0
+  },
+  "conditions": {
+    "temperature": 400.0
+  },
+  "product": {
+    "size": {
+      "length": 30.0,
+      "width": 30.0,
+      "depth": 30.0
+    }
+  },
+  "pdfno_list": [
+    "75-1610"
+  ],
+  "source": {
+    "synthesis_id_original": "2154.json_PDI-Fe3O4_3024",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: PDI-Fe3O4 | solvent: dimethylform amide | solvent.volume: 1.0 | temperature: 400.0 | size.length: 30.0 | size.width: 30.0 | size.depth: 30.0 | additive: perylene diimide (mass 1.0) | seed: Fe3O4 (mass 5.0) | pdfno_list: 75-1610"
+}

@@ -1,0 +1,36 @@
+{
+  "synthesis_id": "2041.json_Au_3489",
+  "composition": "Au",
+  "elements": [
+    "Au"
+  ],
+  "method": "microwave synthesis",
+  "precursors": [
+    {
+      "name": "HAuCL4",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "aqueous extract of a. philippense"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "triangular",
+    "size": {
+      "length": 33.9,
+      "width": 33.9,
+      "depth": 33.9
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2041.json_Au_3489",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Au | method: microwave synthesis | solvent: water | shape: triangular | size.length: 33.9 | size.width: 33.9 | size.depth: 33.9 | precursor: HAuCL4 (conc 1.0) | additive: aqueous extract of a. philippense"
+}

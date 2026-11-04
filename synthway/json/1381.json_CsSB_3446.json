@@ -1,0 +1,37 @@
+{
+  "synthesis_id": "1381.json_CsSB_3446",
+  "composition": "CsSB",
+  "elements": [
+    "Cs",
+    "S",
+    "B"
+  ],
+  "precursors": [
+    {
+      "name": "Chi",
+      "mass": 4.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "benzaldehyde"
+    }
+  ],
+  "solvent": {
+    "name": "methanol",
+    "volume": 40.0
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "crystalsystem": "amorphous",
+    "shape": "smooth structure"
+  },
+  "source": {
+    "synthesis_id_original": "1381.json_CsSB_3446",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: CsSB | solvent: methanol | solvent.volume: 40.0 | temperature: 25.0 | crystalsystem: amorphous | shape: smooth structure | precursor: Chi (mass 4.0) | additive: benzaldehyde"
+}

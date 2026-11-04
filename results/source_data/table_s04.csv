@@ -1,0 +1,6 @@
+k,n_cases,composition_coverage,matching_context_fraction,cases_with_requested_k,requested_k_available_rate,contextual_precision,contextual_recall,contextual_relevancy
+1,30,0.667,0.667,30,1.0,0.733,0.847,0.946
+3,30,0.833,0.711,11,0.36666666666666664,0.781,0.915,0.796
+5,30,0.9,0.738,10,0.3333333333333333,0.761,0.883,0.931
+7,30,0.967,0.754,9,0.3,0.753,0.879,0.893
+10,30,1.0,0.774,9,0.3,0.806,0.927,0.86

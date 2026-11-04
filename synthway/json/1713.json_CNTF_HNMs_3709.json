@@ -1,0 +1,58 @@
+{
+  "synthesis_id": "1713.json_CNTF_HNMs_3709",
+  "composition": "CNTF HNMs",
+  "elements": [
+    "C",
+    "N",
+    "T",
+    "F",
+    "H",
+    "Ms"
+  ],
+  "precursors": [
+    {
+      "name": "TiO2",
+      "mass": 0.5
+    },
+    {
+      "name": "Ni(NO3)2*6H2O",
+      "conc": 100.0
+    },
+    {
+      "name": "Chi",
+      "mass": 0.5
+    }
+  ],
+  "additives": [
+    {
+      "name": "farnesol",
+      "mass": 0.05
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 100.0
+    }
+  ],
+  "solvent": {
+    "name": "1% acetic acid",
+    "volume": 50.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "hexagonal",
+    "size": {
+      "length": 35.0,
+      "width": 35.0,
+      "depth": 35.0
+    }
+  },
+  "pdfno_list": [
+    "21-1272"
+  ],
+  "source": {
+    "synthesis_id_original": "1713.json_CNTF_HNMs_3709",
+    "nodes": 18,
+    "edges": 18
+  },
+  "retrieval_text": "composition: CNTF HNMs | solvent: 1% acetic acid | solvent.volume: 50.0 | crystalsystem: cubic | shape: hexagonal | size.length: 35.0 | size.width: 35.0 | size.depth: 35.0 | precursor: TiO2 (mass 0.5) | precursor: Ni(NO3)2*6H2O (conc 100.0) | precursor: Chi (mass 0.5) | additive: farnesol (mass 0.05) | additive: sodium hydroxide (conc 100.0) | pdfno_list: 21-1272"
+}

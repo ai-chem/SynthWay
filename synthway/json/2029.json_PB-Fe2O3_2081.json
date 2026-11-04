@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "2029.json_PB-Fe2O3_2081",
+  "composition": "PB-Fe2O3",
+  "elements": [
+    "P",
+    "B",
+    "Fe",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "K4[Fe(CN)6]*3H2O",
+      "mass": 1.0
+    }
+  ],
+  "seeds": [
+    {
+      "name": "Fe2O3",
+      "mass": 0.1
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "size": {
+      "length": 9.8,
+      "width": 9.8,
+      "depth": 9.8
+    }
+  },
+  "pdfno_list": [
+    "42-1348"
+  ],
+  "source": {
+    "synthesis_id_original": "2029.json_PB-Fe2O3_2081",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: PB-Fe2O3 | solvent: water | size.length: 9.8 | size.width: 9.8 | size.depth: 9.8 | precursor: K4[Fe(CN)6]*3H2O (mass 1.0) | seed: Fe2O3 (mass 0.1) | pdfno_list: 42-1348"
+}

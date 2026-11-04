@@ -1,0 +1,6 @@
+mode,fields,k,num_cases,out_dataset,hit_rate_exact,avg_comp_precision,comp_hit_rate,comp_all_k_rate,avg_pair_precision,pair_hit_rate,avg_precision,avg_recall,avg_relevancy,passed_precision,passed_recall,passed_relevancy
+DATASET,composition,1,30,synthway/output_analysis/retrieval_eval/protocol_usefulness_grid__fields=composition__k=1.json,0.033,0.667,0.667,0.667,,0.0,0.733,0.847,0.946,22/30,25/30,28/30
+DATASET,composition,3,30,synthway/output_analysis/retrieval_eval/protocol_usefulness_grid__fields=composition__k=3.json,0.033,0.711,0.833,0.633,,0.0,0.781,0.915,0.796,21/30,26/30,21/30
+DATASET,composition,5,30,synthway/output_analysis/retrieval_eval/protocol_usefulness_grid__fields=composition__k=5.json,0.033,0.738,0.9,0.633,,0.0,0.761,0.883,0.931,20/30,24/30,27/30
+DATASET,composition,7,30,synthway/output_analysis/retrieval_eval/protocol_usefulness_grid__fields=composition__k=7.json,0.033,0.754,0.967,0.6,,0.0,0.753,0.879,0.893,19/30,23/30,23/30
+DATASET,composition,10,30,synthway/output_analysis/retrieval_eval/protocol_usefulness_grid__fields=composition__k=10.json,0.033,0.774,1.0,0.6,,0.0,0.806,0.927,0.86,21/30,25/30,22/30

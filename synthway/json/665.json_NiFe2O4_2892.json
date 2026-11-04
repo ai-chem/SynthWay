@@ -1,0 +1,54 @@
+{
+  "synthesis_id": "665.json_NiFe2O4_2892",
+  "composition": "NiFe2O4",
+  "elements": [
+    "Ni",
+    "Fe",
+    "O"
+  ],
+  "method": "biosynthesis",
+  "precursors": [
+    {
+      "name": "NiCl2*6H2O",
+      "conc": 4.0
+    },
+    {
+      "name": "FeCl3",
+      "conc": 4.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "m. koenigii extract"
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 95.0,
+    "ph": 10.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 4.0,
+      "width": 4.0,
+      "depth": 4.0
+    }
+  },
+  "pdfno_list": [
+    "10-0325"
+  ],
+  "source": {
+    "synthesis_id_original": "665.json_NiFe2O4_2892",
+    "nodes": 17,
+    "edges": 17
+  },
+  "retrieval_text": "composition: NiFe2O4 | method: biosynthesis | solvent: water | temperature: 95.0 | pH: 10.0 | crystalsystem: cubic | shape: spherical | size.length: 4.0 | size.width: 4.0 | size.depth: 4.0 | precursor: NiCl2*6H2O (conc 4.0) | precursor: FeCl3 (conc 4.0) | additive: m. koenigii extract | additive: sodium hydroxide (conc 1000.0) | pdfno_list: 10-0325"
+}

@@ -1,0 +1,37 @@
+{
+  "synthesis_id": "1165.json_Au_2537",
+  "composition": "Au",
+  "elements": [
+    "Au"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "HAuCl4·3H2O",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "licorice root extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 43.17,
+      "width": 43.17,
+      "depth": 43.17
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1165.json_Au_2537",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Au | method: green synthesis | solvent: water | crystalsystem: cubic | shape: spherical | size.length: 43.17 | size.width: 43.17 | size.depth: 43.17 | precursor: HAuCl4·3H2O (conc 1.0) | additive: licorice root extract"
+}

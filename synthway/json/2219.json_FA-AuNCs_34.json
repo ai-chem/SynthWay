@@ -1,0 +1,61 @@
+{
+  "synthesis_id": "2219.json_FA-AuNCs_34",
+  "composition": "FA-AuNCs",
+  "elements": [
+    "F",
+    "A",
+    "Au",
+    "N",
+    "Cs"
+  ],
+  "precursors": [
+    {
+      "name": "C19H19N7O6",
+      "mass": 5.0
+    },
+    {
+      "name": "HAuCl4",
+      "mass": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium carbonate",
+      "conc": 20.0
+    },
+    {
+      "name": "bovine serum albumin",
+      "conc": 5.0
+    },
+    {
+      "name": "n-hydroxysuccinimide"
+    },
+    {
+      "name": "ethyl(dimethylaminopropyl)carbodiimide"
+    },
+    {
+      "name": "ascorbic acid"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 37.0,
+    "ph": 9.0
+  },
+  "product": {
+    "shape": "nanocluster",
+    "size": {
+      "length": 5.5,
+      "width": 5.5,
+      "depth": 5.5
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2219.json_FA-AuNCs_34",
+    "nodes": 19,
+    "edges": 18
+  },
+  "retrieval_text": "composition: FA-AuNCs | solvent: water | temperature: 37.0 | pH: 9.0 | shape: nanocluster | size.length: 5.5 | size.width: 5.5 | size.depth: 5.5 | precursor: C19H19N7O6 (mass 5.0) | precursor: HAuCl4 (mass 10.0) | additive: sodium carbonate (conc 20.0) | additive: bovine serum albumin (conc 5.0) | additive: n-hydroxysuccinimide | additive: ethyl(dimethylaminopropyl)carbodiimide | additive: ascorbic acid"
+}

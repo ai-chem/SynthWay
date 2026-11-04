@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "2262.json_TiO2_248",
+  "composition": "TiO2",
+  "elements": [
+    "Ti",
+    "O"
+  ],
+  "method": "sol-gel",
+  "precursors": [
+    {
+      "name": "Ti(OCH(CH3)2)4",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "glacial acetic acid",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "deionized water"
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "shape": "spherical",
+    "size": {
+      "length": 6.2,
+      "width": 6.2,
+      "depth": 6.2
+    }
+  },
+  "pdfno_list": [
+    "21-1272"
+  ],
+  "source": {
+    "synthesis_id_original": "2262.json_TiO2_248",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: TiO2 | method: sol-gel | solvent: deionized water | crystalsystem: tetragonal | shape: spherical | size.length: 6.2 | size.width: 6.2 | size.depth: 6.2 | precursor: Ti(OCH(CH3)2)4 (conc 100.0) | additive: glacial acetic acid (conc 1000.0) | pdfno_list: 21-1272"
+}

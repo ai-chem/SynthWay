@@ -1,0 +1,36 @@
+{
+  "synthesis_id": "808.json_Fe3O4_2293",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "polyol",
+  "precursors": [
+    {
+      "name": "Fe(acac)3",
+      "mass": 0.706
+    }
+  ],
+  "solvent": {
+    "name": "triethylene glycol",
+    "volume": 25.0
+  },
+  "conditions": {
+    "temperature": 280.0
+  },
+  "product": {
+    "size": {
+      "width": 7.2
+    }
+  },
+  "pdfno_list": [
+    "19-0629"
+  ],
+  "source": {
+    "synthesis_id_original": "808.json_Fe3O4_2293",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: Fe3O4 | method: polyol | solvent: triethylene glycol | solvent.volume: 25.0 | temperature: 280.0 | size.width: 7.2 | precursor: Fe(acac)3 (mass 0.706) | pdfno_list: 19-0629"
+}

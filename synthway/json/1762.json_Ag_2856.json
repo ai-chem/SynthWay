@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1762.json_Ag_2856",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "chemical reduction",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 200.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "curcuma longa"
+    },
+    {
+      "name": "polyvinylpyrrolidone"
+    }
+  ],
+  "solvent": {
+    "name": "ethanol",
+    "volume": 25.0
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 15.0,
+      "width": 15.0,
+      "depth": 15.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1762.json_Ag_2856",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Ag | method: chemical reduction | solvent: ethanol | solvent.volume: 25.0 | temperature: 60.0 | crystalsystem: cubic | shape: spherical | size.length: 15.0 | size.width: 15.0 | size.depth: 15.0 | precursor: AgNO3 (conc 200.0) | additive: curcuma longa | additive: polyvinylpyrrolidone"
+}

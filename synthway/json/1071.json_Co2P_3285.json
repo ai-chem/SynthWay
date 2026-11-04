@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "1071.json_Co2P_3285",
+  "composition": "Co2P",
+  "elements": [
+    "Co",
+    "P"
+  ],
+  "method": "solvo-hydrothermal",
+  "precursors": [
+    {
+      "name": "Co(NO3)2*6H2O",
+      "mass": 0.732
+    },
+    {
+      "name": "P",
+      "mass": 0.62
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol and water",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "spherical",
+    "size": {
+      "width": 25.0
+    }
+  },
+  "pdfno_list": [
+    "32-0306"
+  ],
+  "source": {
+    "synthesis_id_original": "1071.json_Co2P_3285",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Co2P | method: solvo-hydrothermal | solvent: ethylene glycol and water | solvent.volume: 30.0 | temperature: 200.0 | crystalsystem: orthorhombic | shape: spherical | size.width: 25.0 | precursor: Co(NO3)2*6H2O (mass 0.732) | precursor: P (mass 0.62) | pdfno_list: 32-0306"
+}

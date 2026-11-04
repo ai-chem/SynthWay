@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "1823.json_MoS2/Fe3O4_16",
+  "composition": "MoS2/Fe3O4",
+  "elements": [
+    "Mo",
+    "S",
+    "Fe",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "FeCl3*6H2O",
+      "mass": 0.24
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium acetate",
+      "mass": 0.72
+    }
+  ],
+  "seeds": [
+    {
+      "name": "MoS2",
+      "mass": 0.1
+    }
+  ],
+  "solvent": {
+    "name": "ethanol",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "shape": "flake"
+  },
+  "pdfno_list": [
+    "37-1492, 19-0629"
+  ],
+  "source": {
+    "synthesis_id_original": "1823.json_MoS2/Fe3O4_16",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: MoS2/Fe3O4 | solvent: ethanol | solvent.volume: 30.0 | temperature: 200.0 | shape: flake | precursor: FeCl3*6H2O (mass 0.24) | additive: sodium acetate (mass 0.72) | seed: MoS2 (mass 0.1) | pdfno_list: 37-1492, 19-0629"
+}

@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "1838.json_Pd_682",
+  "composition": "Pd",
+  "elements": [
+    "Pd"
+  ],
+  "method": "one-pot synthesis",
+  "precursors": [
+    {
+      "name": "Na2PdCl4",
+      "mass": 0.003
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 0.013
+    },
+    {
+      "name": "ascorbic acid",
+      "mass": 0.0075
+    },
+    {
+      "name": "potassium bromide",
+      "mass": 0.01875
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "shape": "dendritic",
+    "size": {
+      "length": 18.0,
+      "width": 18.0,
+      "depth": 18.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1838.json_Pd_682",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: Pd | method: one-pot synthesis | solvent: water | temperature: 80.0 | shape: dendritic | size.length: 18.0 | size.width: 18.0 | size.depth: 18.0 | precursor: Na2PdCl4 (mass 0.003) | additive: polyvinylpyrrolidone (mass 0.013) | additive: ascorbic acid (mass 0.0075) | additive: potassium bromide (mass 0.01875)"
+}

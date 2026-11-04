@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1118.json_Ag-decorated_Molybdenum_oxide_NTCs_3214",
+  "composition": "Ag-decorated Molybdenum oxide NTCs",
+  "elements": [
+    "Ag",
+    "Mo",
+    "N",
+    "T",
+    "Cs"
+  ],
+  "method": "arc discharge",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "mass": 0.34,
+      "conc": 0.005
+    },
+    {
+      "name": "MoOx",
+      "mass": 0.34,
+      "conc": 0.005
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 100.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "tubes",
+    "size": {
+      "width": 110.0,
+      "depth": 110.0
+    }
+  },
+  "pdfno_list": [
+    "96-901-5402"
+  ],
+  "source": {
+    "synthesis_id_original": "1118.json_Ag-decorated_Molybdenum_oxide_NTCs_3214",
+    "nodes": 13,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Ag-decorated Molybdenum oxide NTCs | method: arc discharge | solvent: deionized water | solvent.volume: 100.0 | crystalsystem: monoclinic | shape: tubes | size.width: 110.0 | size.depth: 110.0 | precursor: AgNO3 (mass 0.34; conc 0.005) | precursor: MoOx (mass 0.34; conc 0.005) | pdfno_list: 96-901-5402"
+}

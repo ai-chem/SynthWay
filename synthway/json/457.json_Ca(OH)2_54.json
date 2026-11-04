@@ -1,0 +1,22 @@
+{
+  "synthesis_id": "457.json_Ca(OH)2_54",
+  "composition": "Ca(OH)2",
+  "elements": [
+    "Ca",
+    "O",
+    "H"
+  ],
+  "method": "hydrogen plasma-metal reaction",
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 100.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "457.json_Ca(OH)2_54",
+    "nodes": 4,
+    "edges": 3
+  },
+  "retrieval_text": "composition: Ca(OH)2 | method: hydrogen plasma-metal reaction | shape: spherical | size.length: 100.0"
+}

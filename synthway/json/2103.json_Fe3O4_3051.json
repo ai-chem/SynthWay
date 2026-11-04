@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "2103.json_Fe3O4_3051",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "thermodecomposition",
+  "precursors": [
+    {
+      "name": "Fe(acac)3",
+      "conc": 2.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleic acid",
+      "conc": 6.0
+    }
+  ],
+  "solvent": {
+    "name": "diphenylether",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 265.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 3.3,
+      "width": 3.3,
+      "depth": 3.3
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2103.json_Fe3O4_3051",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Fe3O4 | method: thermodecomposition | solvent: diphenylether | solvent.volume: 20.0 | temperature: 265.0 | shape: spherical | size.length: 3.3 | size.width: 3.3 | size.depth: 3.3 | precursor: Fe(acac)3 (conc 2.0) | additive: oleic acid (conc 6.0)"
+}

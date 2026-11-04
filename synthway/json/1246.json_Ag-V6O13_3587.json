@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "1246.json_Ag-V6O13_3587",
+  "composition": "Ag-V6O13",
+  "elements": [
+    "Ag",
+    "V",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "Ag(acac)"
+    },
+    {
+      "name": "V6O13"
+    }
+  ],
+  "additives": [
+    {
+      "name": "hydrogen"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 600.0
+  },
+  "product": {
+    "shape": "sheets",
+    "size": {
+      "length": 16.92,
+      "width": 16.92,
+      "depth": 16.92
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1246.json_Ag-V6O13_3587",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Ag-V6O13 | method: hydrothermal | solvent: water | temperature: 600.0 | shape: sheets | size.length: 16.92 | size.width: 16.92 | size.depth: 16.92 | precursor: Ag(acac) | precursor: V6O13 | additive: hydrogen"
+}

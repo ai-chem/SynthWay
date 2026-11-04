@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "2101.json_HS-Pt_1956",
+  "composition": "HS-Pt",
+  "elements": [
+    "H",
+    "S",
+    "Pt"
+  ],
+  "precursors": [
+    {
+      "name": "HS",
+      "mass": 0.05
+    },
+    {
+      "name": "H2PtCl6",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium borohydride",
+      "conc": 100.0
+    }
+  ],
+  "solvent": {
+    "name": "acetic acid",
+    "volume": 50.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "size": {
+      "length": 4.8,
+      "width": 4.8,
+      "depth": 4.8
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2101.json_HS-Pt_1956",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: HS-Pt | solvent: acetic acid | solvent.volume: 50.0 | crystalsystem: face-centered cubic | size.length: 4.8 | size.width: 4.8 | size.depth: 4.8 | precursor: HS (mass 0.05) | precursor: H2PtCl6 (conc 10.0) | additive: sodium borohydride (conc 100.0)"
+}

@@ -1,0 +1,57 @@
+{
+  "synthesis_id": "973.json_VNTE-W_451",
+  "composition": "VNTE-W",
+  "elements": [
+    "V",
+    "N",
+    "T",
+    "E",
+    "W"
+  ],
+  "method": "two-step phase transfer method",
+  "precursors": [
+    {
+      "name": "WCl6",
+      "mass": 0.1
+    },
+    {
+      "name": "VNTE",
+      "mass": 0.1
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium borohydride",
+      "mass": 0.1
+    },
+    {
+      "name": "etraoctylammonium bromide",
+      "mass": 0.1
+    }
+  ],
+  "solvent": {
+    "name": "ethanol",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 78.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "irregular",
+    "size": {
+      "length": 35.0,
+      "width": 35.0,
+      "depth": 35.0
+    }
+  },
+  "pdfno_list": [
+    "04-0728"
+  ],
+  "source": {
+    "synthesis_id_original": "973.json_VNTE-W_451",
+    "nodes": 17,
+    "edges": 18
+  },
+  "retrieval_text": "composition: VNTE-W | method: two-step phase transfer method | solvent: ethanol | solvent.volume: 10.0 | temperature: 78.0 | crystalsystem: cubic | shape: irregular | size.length: 35.0 | size.width: 35.0 | size.depth: 35.0 | precursor: WCl6 (mass 0.1) | precursor: VNTE (mass 0.1) | additive: sodium borohydride (mass 0.1) | additive: etraoctylammonium bromide (mass 0.1) | pdfno_list: 04-0728"
+}

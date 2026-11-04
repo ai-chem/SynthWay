@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "2178.json_FeTiO3_2960",
+  "composition": "FeTiO3",
+  "elements": [
+    "Fe",
+    "Ti",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "FeCl2",
+      "conc": 660.0
+    },
+    {
+      "name": "Ti(OBu)4",
+      "conc": 660.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 500.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "size": {
+      "length": 35.0,
+      "width": 35.0,
+      "depth": 35.0
+    }
+  },
+  "pdfno_list": [
+    "79-1838"
+  ],
+  "source": {
+    "synthesis_id_original": "2178.json_FeTiO3_2960",
+    "nodes": 12,
+    "edges": 12
+  },
+  "retrieval_text": "composition: FeTiO3 | solvent: water | crystalsystem: hexagonal | size.length: 35.0 | size.width: 35.0 | size.depth: 35.0 | precursor: FeCl2 (conc 660.0) | precursor: Ti(OBu)4 (conc 660.0) | additive: sodium hydroxide (conc 500.0) | pdfno_list: 79-1838"
+}

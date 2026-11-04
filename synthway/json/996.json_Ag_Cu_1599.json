@@ -1,0 +1,57 @@
+{
+  "synthesis_id": "996.json_Ag/Cu_1599",
+  "composition": "Ag/Cu",
+  "elements": [
+    "Ag",
+    "Cu"
+  ],
+  "method": "aqueous (co)reduction method",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "mass": 0.13
+    },
+    {
+      "name": "CuSO4*5H2O",
+      "mass": 0.27
+    }
+  ],
+  "additives": [
+    {
+      "name": "ascorbic acid",
+      "conc": 50.0
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 60.0
+    },
+    {
+      "name": "sodium borohydride",
+      "conc": 11.0
+    },
+    {
+      "name": "hydrazine solution"
+    }
+  ],
+  "solvent": {
+    "name": "aqueous 1.0% w/v chitosan",
+    "volume": 40.0
+  },
+  "conditions": {
+    "ph": 10.0
+  },
+  "product": {
+    "shape": "quasi-spheres",
+    "size": {
+      "length": 44.3,
+      "width": 44.3,
+      "depth": 44.3
+    }
+  },
+  "source": {
+    "synthesis_id_original": "996.json_Ag/Cu_1599",
+    "nodes": 20,
+    "edges": 19
+  },
+  "retrieval_text": "composition: Ag/Cu | method: aqueous (co)reduction method | solvent: aqueous 1.0% w/v chitosan | solvent.volume: 40.0 | pH: 10.0 | shape: quasi-spheres | size.length: 44.3 | size.width: 44.3 | size.depth: 44.3 | precursor: AgNO3 (mass 0.13) | precursor: CuSO4*5H2O (mass 0.27) | additive: ascorbic acid (conc 50.0) | additive: sodium hydroxide (conc 60.0) | additive: sodium borohydride (conc 11.0) | additive: hydrazine solution"
+}

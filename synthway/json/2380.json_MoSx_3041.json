@@ -1,0 +1,29 @@
+{
+  "synthesis_id": "2380.json_MoSx_3041",
+  "composition": "MoSx",
+  "elements": [
+    "Mo",
+    "Sx"
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 80.0
+  },
+  "conditions": {
+    "temperature": 120.0
+  },
+  "product": {
+    "shape": "ball-like",
+    "size": {
+      "length": 180.0,
+      "width": 180.0,
+      "depth": 180.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2380.json_MoSx_3041",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: MoSx | solvent: distilled water | solvent.volume: 80.0 | temperature: 120.0 | shape: ball-like | size.length: 180.0 | size.width: 180.0 | size.depth: 180.0"
+}

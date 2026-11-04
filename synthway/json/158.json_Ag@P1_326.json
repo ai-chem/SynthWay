@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "158.json_Ag@P1_326",
+  "composition": "Ag@P1",
+  "elements": [
+    "Ag",
+    "P"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 20.0
+    },
+    {
+      "name": "MQ",
+      "mass": 0.001625
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium borohydride",
+      "conc": 500.0
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 4.85
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 1.59,
+      "width": 1.59,
+      "depth": 1.59
+    }
+  },
+  "source": {
+    "synthesis_id_original": "158.json_Ag@P1_326",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Ag@P1 | solvent: deionized water | solvent.volume: 4.85 | crystalsystem: cubic | size.length: 1.59 | size.width: 1.59 | size.depth: 1.59 | precursor: AgNO3 (conc 20.0) | precursor: MQ (mass 0.001625) | additive: sodium borohydride (conc 500.0)"
+}

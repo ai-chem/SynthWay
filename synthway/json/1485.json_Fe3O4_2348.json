@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "1485.json_Fe3O4_2348",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Fe(NO3)3*6H2O"
+    }
+  ],
+  "additives": [
+    {
+      "name": "fresh orange juice"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 11.8,
+      "width": 11.8,
+      "depth": 11.8
+    }
+  },
+  "pdfno_list": [
+    "04-005-4319"
+  ],
+  "source": {
+    "synthesis_id_original": "1485.json_Fe3O4_2348",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Fe3O4 | method: green synthesis | solvent: water | crystalsystem: cubic | shape: spherical | size.length: 11.8 | size.width: 11.8 | size.depth: 11.8 | precursor: Fe(NO3)3*6H2O | additive: fresh orange juice | pdfno_list: 04-005-4319"
+}

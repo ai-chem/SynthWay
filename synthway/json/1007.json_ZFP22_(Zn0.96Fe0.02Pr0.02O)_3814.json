@@ -1,0 +1,62 @@
+{
+  "synthesis_id": "1007.json_ZFP22_(Zn0.96Fe0.02Pr0.02O)_3814",
+  "composition": "ZFP22 (Zn0.96Fe0.02Pr0.02O)",
+  "elements": [
+    "Z",
+    "F",
+    "P",
+    "Zn",
+    "Fe",
+    "Pr",
+    "O"
+  ],
+  "method": "sol-gel",
+  "precursors": [
+    {
+      "name": "Zn(NO3)2",
+      "conc": 70.0
+    },
+    {
+      "name": "Fe(NO3)3",
+      "conc": 70.0
+    },
+    {
+      "name": "Pr(NO3)3",
+      "conc": 70.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "citric acid"
+    },
+    {
+      "name": "ammonium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 95.0,
+    "ph": 10.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 19.0,
+      "width": 19.0,
+      "depth": 19.0
+    }
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "1007.json_ZFP22_(Zn0.96Fe0.02Pr0.02O)_3814",
+    "nodes": 18,
+    "edges": 19
+  },
+  "retrieval_text": "composition: ZFP22 (Zn0.96Fe0.02Pr0.02O) | method: sol-gel | solvent: distilled water | solvent.volume: 50.0 | temperature: 95.0 | pH: 10.0 | crystalsystem: hexagonal | shape: spherical | size.length: 19.0 | size.width: 19.0 | size.depth: 19.0 | precursor: Zn(NO3)2 (conc 70.0) | precursor: Fe(NO3)3 (conc 70.0) | precursor: Pr(NO3)3 (conc 70.0) | additive: citric acid | additive: ammonium hydroxide | pdfno_list: 36-1451"
+}

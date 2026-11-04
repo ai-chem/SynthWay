@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "430.json_VC_1242",
+  "composition": "VC",
+  "elements": [
+    "V",
+    "C"
+  ],
+  "method": "thermal",
+  "solvent": {
+    "name": "water",
+    "volume": 400.0
+  },
+  "conditions": {
+    "temperature": 800.0,
+    "ph": 8.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 35.0
+    }
+  },
+  "pdfno_list": [
+    "73-0476"
+  ],
+  "source": {
+    "synthesis_id_original": "430.json_VC_1242",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: VC | method: thermal | solvent: water | solvent.volume: 400.0 | temperature: 800.0 | pH: 8.0 | crystalsystem: cubic | shape: spherical | size.length: 35.0 | pdfno_list: 73-0476"
+}

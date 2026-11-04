@@ -1,0 +1,23 @@
+{
+  "synthesis_id": "483.json_Tb-BaCO3_891",
+  "composition": "Tb-BaCO3",
+  "elements": [
+    "Tb",
+    "Ba",
+    "C",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 90.0
+  },
+  "source": {
+    "synthesis_id_original": "483.json_Tb-BaCO3_891",
+    "nodes": 4,
+    "edges": 3
+  },
+  "retrieval_text": "composition: Tb-BaCO3 | method: hydrothermal | solvent: water | temperature: 90.0"
+}

@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "2298.json_MoS2_4099",
+  "composition": "MoS2",
+  "elements": [
+    "Mo",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "ammonium molybdate tetrahydrate (NH4)6Mo7O24·4H2O"
+    },
+    {
+      "name": "C6H8O7"
+    },
+    {
+      "name": "(NH4)2S"
+    }
+  ],
+  "additives": [
+    {
+      "name": "ammonium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 900.0,
+    "ph": 4.0
+  },
+  "product": {
+    "size": {
+      "length": 50.0,
+      "width": 50.0,
+      "depth": 50.0
+    }
+  },
+  "pdfno_list": [
+    "37-1492"
+  ],
+  "source": {
+    "synthesis_id_original": "2298.json_MoS2_4099",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: MoS2 | solvent: water | temperature: 900.0 | pH: 4.0 | size.length: 50.0 | size.width: 50.0 | size.depth: 50.0 | precursor: ammonium molybdate tetrahydrate (NH4)6Mo7O24·4H2O | precursor: C6H8O7 | precursor: (NH4)2S | additive: ammonium hydroxide | pdfno_list: 37-1492"
+}

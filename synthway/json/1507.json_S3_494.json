@@ -1,0 +1,31 @@
+{
+  "synthesis_id": "1507.json_S3_494",
+  "composition": "S3",
+  "elements": [
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "PVA"
+    },
+    {
+      "name": "Melamine-formaldehyde (MF)"
+    }
+  ],
+  "solvent": {
+    "name": "double distilled water"
+  },
+  "conditions": {
+    "temperature": 90.0
+  },
+  "product": {
+    "crystalsystem": "amorphous",
+    "shape": "film"
+  },
+  "source": {
+    "synthesis_id_original": "1507.json_S3_494",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: S3 | solvent: double distilled water | temperature: 90.0 | crystalsystem: amorphous | shape: film | precursor: PVA | precursor: Melamine-formaldehyde (MF)"
+}

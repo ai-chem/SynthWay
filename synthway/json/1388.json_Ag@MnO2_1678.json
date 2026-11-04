@@ -1,0 +1,51 @@
+{
+  "synthesis_id": "1388.json_Ag@MnO2_1678",
+  "composition": "Ag@MnO2",
+  "elements": [
+    "Ag",
+    "Mn",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "mass": 0.168,
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "acroscyphus sphaerophoroides lichen extract"
+    },
+    {
+      "name": "potassium permanganate",
+      "mass": 0.16,
+      "conc": 1.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "crystalsystem": "cubic and tetragonal",
+    "shape": "spherical",
+    "size": {
+      "length": 13.9,
+      "width": 13.9,
+      "depth": 13.9
+    }
+  },
+  "pdfno_list": [
+    "65-2871 24-0735"
+  ],
+  "source": {
+    "synthesis_id_original": "1388.json_Ag@MnO2_1678",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: Ag@MnO2 | method: green synthesis | solvent: water | temperature: 25.0 | crystalsystem: cubic and tetragonal | shape: spherical | size.length: 13.9 | size.width: 13.9 | size.depth: 13.9 | precursor: AgNO3 (mass 0.168; conc 1.0) | additive: acroscyphus sphaerophoroides lichen extract | additive: potassium permanganate (mass 0.16; conc 1.0) | pdfno_list: 65-2871 24-0735"
+}

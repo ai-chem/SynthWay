@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "2011.json_TiN_3025",
+  "composition": "TiN",
+  "elements": [
+    "Ti",
+    "N"
+  ],
+  "precursors": [
+    {
+      "name": "P25",
+      "mass": 0.3
+    }
+  ],
+  "additives": [
+    {
+      "name": "ammonia"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 800.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "ellipsoidal",
+    "size": {
+      "length": 70.0,
+      "width": 70.0,
+      "depth": 70.0
+    }
+  },
+  "pdfno_list": [
+    "87-0633"
+  ],
+  "source": {
+    "synthesis_id_original": "2011.json_TiN_3025",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: TiN | solvent: water | temperature: 800.0 | crystalsystem: cubic | shape: ellipsoidal | size.length: 70.0 | size.width: 70.0 | size.depth: 70.0 | precursor: P25 (mass 0.3) | additive: ammonia | pdfno_list: 87-0633"
+}

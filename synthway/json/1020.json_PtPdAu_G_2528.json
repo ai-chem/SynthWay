@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "1020.json_PtPdAu/G_2528",
+  "composition": "PtPdAu/G",
+  "elements": [
+    "Pt",
+    "Pd",
+    "Au",
+    "G"
+  ],
+  "method": "coreduction",
+  "precursors": [
+    {
+      "name": "PdCl2",
+      "conc": 20.0
+    },
+    {
+      "name": "H2PtCl6",
+      "conc": 20.0
+    },
+    {
+      "name": "HAuCl4",
+      "conc": 20.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "graphene oxide",
+      "mass": 0.09
+    }
+  ],
+  "solvent": {
+    "name": "water+ethylene glycol",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 130.0
+  },
+  "product": {
+    "size": {
+      "width": 8.5
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1020.json_PtPdAu/G_2528",
+    "nodes": 12,
+    "edges": 13
+  },
+  "retrieval_text": "composition: PtPdAu/G | method: coreduction | solvent: water+ethylene glycol | solvent.volume: 50.0 | temperature: 130.0 | size.width: 8.5 | precursor: PdCl2 (conc 20.0) | precursor: H2PtCl6 (conc 20.0) | precursor: HAuCl4 (conc 20.0) | additive: graphene oxide (mass 0.09)"
+}

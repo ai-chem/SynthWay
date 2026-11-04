@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "1082.json_Au/Co/Fe_2381",
+  "composition": "Au/Co/Fe",
+  "elements": [
+    "Au",
+    "Co",
+    "Fe"
+  ],
+  "precursors": [
+    {
+      "name": "HAuCl4·4H2O",
+      "mass": 0.005
+    },
+    {
+      "name": "CoCl2·6H2O",
+      "mass": 0.0029
+    },
+    {
+      "name": "FeCl3·6H2O",
+      "mass": 0.0481
+    },
+    {
+      "name": "NH3BH3",
+      "mass": 0.055
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 0.1
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 10.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "width": 10.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1082.json_Au/Co/Fe_2381",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Au/Co/Fe | solvent: water | solvent.volume: 10.0 | shape: spherical | size.width: 10.0 | precursor: HAuCl4·4H2O (mass 0.005) | precursor: CoCl2·6H2O (mass 0.0029) | precursor: FeCl3·6H2O (mass 0.0481) | precursor: NH3BH3 (mass 0.055) | additive: polyvinylpyrrolidone (mass 0.1)"
+}

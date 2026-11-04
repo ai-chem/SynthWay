@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1566.json_ZnO_120",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "probe sonication",
+  "precursors": [
+    {
+      "name": "Zn(NO3)2*6H2O",
+      "conc": 1000.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 500.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "flake like rectangular",
+    "size": {
+      "length": 24.1,
+      "width": 24.1,
+      "depth": 24.1
+    }
+  },
+  "pdfno_list": [
+    "89-1397"
+  ],
+  "source": {
+    "synthesis_id_original": "1566.json_ZnO_120",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: ZnO | method: probe sonication | solvent: water | temperature: 60.0 | crystalsystem: hexagonal | shape: flake like rectangular | size.length: 24.1 | size.width: 24.1 | size.depth: 24.1 | precursor: Zn(NO3)2*6H2O (conc 1000.0) | additive: sodium hydroxide (conc 500.0) | pdfno_list: 89-1397"
+}

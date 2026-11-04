@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "2327.json_CoFe2O4_252",
+  "composition": "CoFe2O4",
+  "elements": [
+    "Co",
+    "Fe",
+    "O"
+  ],
+  "method": "coprecipitation",
+  "precursors": [
+    {
+      "name": "Co(CH3COO)2*4H2O"
+    },
+    {
+      "name": "Fe(NO3)3*9H2O"
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water"
+  },
+  "conditions": {
+    "temperature": 120.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 30.0,
+      "width": 30.0,
+      "depth": 30.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2327.json_CoFe2O4_252",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: CoFe2O4 | method: coprecipitation | solvent: deionized water | temperature: 120.0 | shape: spherical | size.length: 30.0 | size.width: 30.0 | size.depth: 30.0 | precursor: Co(CH3COO)2*4H2O | precursor: Fe(NO3)3*9H2O | additive: sodium hydroxide"
+}

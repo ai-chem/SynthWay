@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "2049.json_BiOCl_1525",
+  "composition": "BiOCl",
+  "elements": [
+    "Bi",
+    "O",
+    "Cl"
+  ],
+  "precursors": [
+    {
+      "name": "Bi(NO3)2",
+      "conc": 10.0
+    },
+    {
+      "name": "KCl",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "tris–borate",
+      "conc": 50.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 3.9
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "shape": "sheets",
+    "size": {
+      "length": 100.0,
+      "width": 100.0,
+      "depth": 15.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2049.json_BiOCl_1525",
+    "nodes": 13,
+    "edges": 13
+  },
+  "retrieval_text": "composition: BiOCl | solvent: water | solvent.volume: 3.9 | crystalsystem: tetragonal | shape: sheets | size.length: 100.0 | size.width: 100.0 | size.depth: 15.0 | precursor: Bi(NO3)2 (conc 10.0) | precursor: KCl (conc 10.0) | additive: tris–borate (conc 50.0)"
+}

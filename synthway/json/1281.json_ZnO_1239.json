@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "1281.json_ZnO_1239",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "sol-gel",
+  "precursors": [
+    {
+      "name": "Zn(CH3CO2)2*2H2O",
+      "mass": 20.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide"
+    },
+    {
+      "name": "2-propanol"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 100.0,
+    "ph": 3.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 21.0,
+      "width": 21.0,
+      "depth": 21.0
+    }
+  },
+  "pdfno_list": [
+    "00-005-0664"
+  ],
+  "source": {
+    "synthesis_id_original": "1281.json_ZnO_1239",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: ZnO | method: sol-gel | solvent: deionized water | solvent.volume: 50.0 | temperature: 100.0 | pH: 3.0 | crystalsystem: hexagonal | shape: spherical | size.length: 21.0 | size.width: 21.0 | size.depth: 21.0 | precursor: Zn(CH3CO2)2*2H2O (mass 20.0) | additive: sodium hydroxide | additive: 2-propanol | pdfno_list: 00-005-0664"
+}

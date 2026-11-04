@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "1710.json_ECO/Zn2+-loaded_284",
+  "composition": "ECO/Zn2+-loaded",
+  "elements": [
+    "E",
+    "C",
+    "O",
+    "Zn"
+  ],
+  "precursors": [
+    {
+      "name": "ZnSO4"
+    },
+    {
+      "name": "Zein",
+      "mass": 0.02
+    },
+    {
+      "name": "ECO",
+      "mass": 0.08
+    }
+  ],
+  "additives": [
+    {
+      "name": "pluronic f68"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0,
+    "ph": 12.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 376.9,
+      "width": 376.9,
+      "depth": 376.9
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1710.json_ECO/Zn2+-loaded_284",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: ECO/Zn2+-loaded | solvent: water | temperature: 25.0 | pH: 12.0 | shape: spherical | size.length: 376.9 | size.width: 376.9 | size.depth: 376.9 | precursor: ZnSO4 | precursor: Zein (mass 0.02) | precursor: ECO (mass 0.08) | additive: pluronic f68"
+}

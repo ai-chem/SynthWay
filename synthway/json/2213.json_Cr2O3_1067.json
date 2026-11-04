@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "2213.json_Cr2O3_1067",
+  "composition": "Cr2O3",
+  "elements": [
+    "Cr",
+    "O"
+  ],
+  "method": "simple chemical method",
+  "precursors": [
+    {
+      "name": "CrCl3*6H2O",
+      "conc": 1000.0
+    },
+    {
+      "name": "roselle extract"
+    }
+  ],
+  "solvent": {
+    "name": "roselle extract",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 36.38,
+      "width": 36.38,
+      "depth": 36.38
+    }
+  },
+  "pdfno_list": [
+    "98-009-7850"
+  ],
+  "source": {
+    "synthesis_id_original": "2213.json_Cr2O3_1067",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Cr2O3 | method: simple chemical method | solvent: roselle extract | solvent.volume: 100.0 | temperature: 200.0 | shape: spherical | size.length: 36.38 | size.width: 36.38 | size.depth: 36.38 | precursor: CrCl3*6H2O (conc 1000.0) | precursor: roselle extract | pdfno_list: 98-009-7850"
+}

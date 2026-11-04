@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "975.json_ZnO_1286",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "solvo-hydrothermal",
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2*2H2O",
+      "mass": 7.68,
+      "conc": 500.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "triethanolamine",
+      "conc": 500.0
+    }
+  ],
+  "solvent": {
+    "name": "ethanol"
+  },
+  "conditions": {
+    "temperature": 150.0
+  },
+  "product": {
+    "shape": "near-hexagonal",
+    "size": {
+      "width": 48.0
+    }
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "975.json_ZnO_1286",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: ZnO | method: solvo-hydrothermal | solvent: ethanol | temperature: 150.0 | shape: near-hexagonal | size.width: 48.0 | precursor: Zn(CH3COO)2*2H2O (mass 7.68; conc 500.0) | additive: triethanolamine (conc 500.0) | pdfno_list: 36-1451"
+}

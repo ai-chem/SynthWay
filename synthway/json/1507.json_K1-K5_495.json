@@ -1,0 +1,28 @@
+{
+  "synthesis_id": "1507.json_K1-K5_495",
+  "composition": "K1-K5",
+  "elements": [
+    "K"
+  ],
+  "method": "ex-situ",
+  "precursors": [
+    {
+      "name": "NiO NPs"
+    },
+    {
+      "name": "S3"
+    }
+  ],
+  "solvent": {
+    "name": "double distilled water"
+  },
+  "product": {
+    "shape": "spherical nps on film"
+  },
+  "source": {
+    "synthesis_id_original": "1507.json_K1-K5_495",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: K1-K5 | method: ex-situ | solvent: double distilled water | shape: spherical nps on film | precursor: NiO NPs | precursor: S3"
+}

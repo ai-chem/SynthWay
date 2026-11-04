@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "748.json_FeCo@C_407",
+  "composition": "FeCo@C",
+  "elements": [
+    "Fe",
+    "Co",
+    "C"
+  ],
+  "method": "thermal decomposition",
+  "precursors": [
+    {
+      "name": "Fe(CO)5",
+      "mass": 0.137
+    },
+    {
+      "name": "Co2(CO)8",
+      "mass": 0.239
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleic acid"
+    },
+    {
+      "name": "oleyl amine"
+    }
+  ],
+  "solvent": {
+    "name": "paraffin oil",
+    "volume": 16.0
+  },
+  "conditions": {
+    "temperature": 275.0
+  },
+  "product": {
+    "crystalsystem": "bcc",
+    "shape": "spherical",
+    "size": {
+      "length": 10.0,
+      "width": 10.0,
+      "depth": 10.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "748.json_FeCo@C_407",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: FeCo@C | method: thermal decomposition | solvent: paraffin oil | solvent.volume: 16.0 | temperature: 275.0 | crystalsystem: bcc | shape: spherical | size.length: 10.0 | size.width: 10.0 | size.depth: 10.0 | precursor: Fe(CO)5 (mass 0.137) | precursor: Co2(CO)8 (mass 0.239) | additive: oleic acid | additive: oleyl amine"
+}

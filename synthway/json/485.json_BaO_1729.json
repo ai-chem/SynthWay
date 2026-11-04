@@ -1,0 +1,31 @@
+{
+  "synthesis_id": "485.json_BaO_1729",
+  "composition": "BaO",
+  "elements": [
+    "Ba",
+    "O"
+  ],
+  "method": "thermo-chemical",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 500.0,
+    "ph": 10.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "size": {
+      "length": 29.0
+    }
+  },
+  "pdfno_list": [
+    "89-8425"
+  ],
+  "source": {
+    "synthesis_id_original": "485.json_BaO_1729",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: BaO | method: thermo-chemical | solvent: water | temperature: 500.0 | pH: 10.0 | crystalsystem: tetragonal | size.length: 29.0 | pdfno_list: 89-8425"
+}

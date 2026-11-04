@@ -1,0 +1,31 @@
+id,hit_in_topk,hit_rank,pair_doc_fraction,pair_hit_in_topk,comp_doc_fraction,comp_hit_in_topk,retrieved_k,precision_score,precision_pass,recall_score,recall_pass,relevancy_score,relevancy_pass
+NiO,False,,,,0.4,True,10,0.0,False,0.5,False,0.486,False
+Fe7C3@C,False,,,,1.0,True,1,1.0,True,1.0,True,1.0,True
+Co80Ni20,False,,,,1.0,True,1,1.0,True,1.0,True,1.0,True
+Zn0.1Ni0.9,False,,,,1.0,True,1,1.0,True,1.0,True,1.0,True
+SiO2,False,,,,0.6,True,10,1.0,True,0.429,False,0.603,False
+Au,False,,,,0.1,True,10,0.822,True,1.0,True,0.982,True
+Pt/CdS,False,,,,1.0,True,1,1.0,True,1.0,True,1.0,True
+Сu,False,,,,1.0,True,5,1.0,True,1.0,True,0.778,False
+PEG coated Fe3O4,False,,,,1.0,True,1,1.0,True,1.0,True,1.0,True
+HAp – Ag,False,,,,1.0,True,1,1.0,True,1.0,True,1.0,True
+Ag,False,,,,0.2,True,10,0.708,False,0.6,False,0.771,False
+dodecanethiol-coated Au,False,,,,1.0,True,1,1.0,True,1.0,True,0.083,False
+Ag  (0.25 wt%),True,0,,,1.0,True,1,1.0,True,1.0,True,1.0,True
+Pd@Pt,False,,,,1.0,True,2,1.0,True,1.0,True,1.0,True
+HA-Alg-ZnO,False,,,,0.5,True,2,0.5,False,1.0,True,1.0,True
+Co3O4@NiO,False,,,,1.0,True,1,1.0,True,1.0,True,1.0,True
+Cu2O,False,,,,0.7,True,10,0.333,False,1.0,True,0.946,True
+Mat/PEG-CuO,False,,,,0.5,True,2,0.5,False,1.0,True,0.13,False
+SiO2–ZnO,False,,,,1.0,True,1,1.0,True,1.0,True,1.0,True
+Pt14Ag86,False,,,,1.0,True,1,1.0,True,1.0,True,1.0,True
+GO,False,,,,0.4,True,10,0.365,False,0.6,False,0.697,False
+CD-MOF,False,,,,0.333,True,3,0.5,False,1.0,True,0.917,True
+Se,False,,,,0.7,True,10,0.977,True,1.0,True,0.962,True
+"Zn1-xErxO (0, 1, 5, 10 at.%)",False,,,,1.0,True,1,1.0,True,1.0,True,1.0,True
+Lf-CCAu,False,,,,1.0,True,1,1.0,True,1.0,True,1.0,True
+HfO2@Au,False,,,,1.0,True,1,1.0,True,1.0,True,1.0,True
+ZnO,False,,,,0.3,True,10,0.111,False,0.667,False,0.455,False
+Pd,False,,,,0.5,True,10,0.36,False,1.0,True,1.0,True
+H2TCPP-Fe2O3,False,,,,1.0,True,1,1.0,True,1.0,True,1.0,True
+10Co3O4@CeO2,False,,,,1.0,True,1,1.0,True,1.0,True,1.0,True

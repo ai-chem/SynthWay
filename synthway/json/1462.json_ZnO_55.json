@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1462.json_ZnO_55",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "sol-gel",
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2*2H2O"
+    },
+    {
+      "name": "Cu(CH3COO)2*H2O"
+    }
+  ],
+  "additives": [
+    {
+      "name": "n, n-dimethyl formamide (c3h7no)"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 23.1,
+      "width": 23.1,
+      "depth": 23.1
+    }
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "1462.json_ZnO_55",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: ZnO | method: sol-gel | solvent: water | temperature: 80.0 | crystalsystem: hexagonal | shape: spherical | size.length: 23.1 | size.width: 23.1 | size.depth: 23.1 | precursor: Zn(CH3COO)2*2H2O | precursor: Cu(CH3COO)2*H2O | additive: n, n-dimethyl formamide (c3h7no) | pdfno_list: 36-1451"
+}

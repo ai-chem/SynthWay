@@ -1,0 +1,55 @@
+{
+  "synthesis_id": "1179.json_ZnOsingle_bondCuO_3625",
+  "composition": "ZnOsingle bondCuO",
+  "elements": [
+    "Zn",
+    "Os",
+    "Cu",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2",
+      "mass": 1.6
+    },
+    {
+      "name": "CuCl2",
+      "mass": 0.8
+    }
+  ],
+  "additives": [
+    {
+      "name": "annona muricata leaf extract"
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 70.0,
+    "ph": 8.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 18.62,
+      "width": 18.62,
+      "depth": 18.62
+    }
+  },
+  "pdfno_list": [
+    "036-1451 048-1548"
+  ],
+  "source": {
+    "synthesis_id_original": "1179.json_ZnOsingle_bondCuO_3625",
+    "nodes": 18,
+    "edges": 17
+  },
+  "retrieval_text": "composition: ZnOsingle bondCuO | method: green synthesis | solvent: water | temperature: 70.0 | pH: 8.0 | crystalsystem: hexagonal | shape: spherical | size.length: 18.62 | size.width: 18.62 | size.depth: 18.62 | precursor: Zn(CH3COO)2 (mass 1.6) | precursor: CuCl2 (mass 0.8) | additive: annona muricata leaf extract | additive: sodium hydroxide (conc 1000.0) | pdfno_list: 036-1451 048-1548"
+}

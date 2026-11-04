@@ -1,0 +1,60 @@
+{
+  "synthesis_id": "1840.json_Pd_3544",
+  "composition": "Pd",
+  "elements": [
+    "Pd"
+  ],
+  "precursors": [
+    {
+      "name": "Na2PdCl4",
+      "mass": 0.006
+    },
+    {
+      "name": "Pt(acac)2",
+      "conc": 0.25
+    }
+  ],
+  "additives": [
+    {
+      "name": "ascorbic acid",
+      "mass": 0.06
+    },
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 0.105
+    },
+    {
+      "name": "potassium bromide",
+      "mass": 0.008
+    },
+    {
+      "name": "potassium chloride",
+      "mass": 0.18
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 8.0
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "cube",
+    "size": {
+      "length": 9.0,
+      "width": 9.0,
+      "depth": 9.0
+    }
+  },
+  "pdfno_list": [
+    "46-1043"
+  ],
+  "source": {
+    "synthesis_id_original": "1840.json_Pd_3544",
+    "nodes": 22,
+    "edges": 21
+  },
+  "retrieval_text": "composition: Pd | solvent: deionized water | solvent.volume: 8.0 | temperature: 80.0 | crystalsystem: cubic | shape: cube | size.length: 9.0 | size.width: 9.0 | size.depth: 9.0 | precursor: Na2PdCl4 (mass 0.006) | precursor: Pt(acac)2 (conc 0.25) | additive: ascorbic acid (mass 0.06) | additive: polyvinylpyrrolidone (mass 0.105) | additive: potassium bromide (mass 0.008) | additive: potassium chloride (mass 0.18) | pdfno_list: 46-1043"
+}

@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1392.json_SW-NiO_1945",
+  "composition": "SW-NiO",
+  "elements": [
+    "S",
+    "W",
+    "Ni",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Ni(NO3)2",
+      "conc": 300.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sargassum wightii leaf extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "cube",
+    "size": {
+      "length": 17.5,
+      "width": 17.5,
+      "depth": 17.5
+    }
+  },
+  "pdfno_list": [
+    "01-073-1523"
+  ],
+  "source": {
+    "synthesis_id_original": "1392.json_SW-NiO_1945",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: SW-NiO | method: green synthesis | solvent: water | temperature: 60.0 | crystalsystem: cubic | shape: cube | size.length: 17.5 | size.width: 17.5 | size.depth: 17.5 | precursor: Ni(NO3)2 (conc 300.0) | additive: sargassum wightii leaf extract | pdfno_list: 01-073-1523"
+}

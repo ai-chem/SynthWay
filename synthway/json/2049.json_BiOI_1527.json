@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "2049.json_BiOI_1527",
+  "composition": "BiOI",
+  "elements": [
+    "Bi",
+    "O",
+    "I"
+  ],
+  "precursors": [
+    {
+      "name": "Bi(NO3)2",
+      "conc": 10.0
+    },
+    {
+      "name": "KI",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "tris–borate",
+      "conc": 50.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 3.9
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "shape": "nanonetwork-like",
+    "size": {
+      "length": 20.0,
+      "width": 20.0,
+      "depth": 5.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2049.json_BiOI_1527",
+    "nodes": 13,
+    "edges": 13
+  },
+  "retrieval_text": "composition: BiOI | solvent: water | solvent.volume: 3.9 | crystalsystem: tetragonal | shape: nanonetwork-like | size.length: 20.0 | size.width: 20.0 | size.depth: 5.0 | precursor: Bi(NO3)2 (conc 10.0) | precursor: KI (conc 10.0) | additive: tris–borate (conc 50.0)"
+}

@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "1238.json_polyCu-MOF@Ag_1943",
+  "composition": "polyCu-MOF@Ag",
+  "elements": [
+    "Cu",
+    "M",
+    "O",
+    "F",
+    "Ag"
+  ],
+  "method": "wet chemical",
+  "precursors": [
+    {
+      "name": "polyCu-MOF",
+      "mass": 0.15
+    },
+    {
+      "name": "AgNO3",
+      "mass": 0.05
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium borohydride",
+      "mass": 0.02
+    }
+  ],
+  "solvent": {
+    "name": "methanol",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "crystalsystem": "cubic"
+  },
+  "pdfno_list": [
+    "04-0783"
+  ],
+  "source": {
+    "synthesis_id_original": "1238.json_polyCu-MOF@Ag_1943",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: polyCu-MOF@Ag | method: wet chemical | solvent: methanol | solvent.volume: 20.0 | temperature: 25.0 | crystalsystem: cubic | precursor: polyCu-MOF (mass 0.15) | precursor: AgNO3 (mass 0.05) | additive: sodium borohydride (mass 0.02) | pdfno_list: 04-0783"
+}

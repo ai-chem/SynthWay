@@ -1,0 +1,24 @@
+{
+  "synthesis_id": "668.json_Ag_2615",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "seed-mediated growth",
+  "solvent": {
+    "name": "deionized water",
+    "volume": 10.0
+  },
+  "product": {
+    "shape": "concave octahedrons",
+    "size": {
+      "length": 80.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "668.json_Ag_2615",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: Ag | method: seed-mediated growth | solvent: deionized water | solvent.volume: 10.0 | shape: concave octahedrons | size.length: 80.0"
+}

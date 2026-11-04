@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "2001.json_V2O5_3932",
+  "composition": "V2O5",
+  "elements": [
+    "V",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "VOSO4*nH2O",
+      "conc": 2.4
+    }
+  ],
+  "additives": [
+    {
+      "name": "potassium bromate",
+      "conc": 1.5
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 9.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "size": {
+      "length": 500.0,
+      "width": 500.0,
+      "depth": 500.0
+    }
+  },
+  "pdfno_list": [
+    "26-1449"
+  ],
+  "source": {
+    "synthesis_id_original": "2001.json_V2O5_3932",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: V2O5 | solvent: water | solvent.volume: 9.0 | temperature: 180.0 | crystalsystem: orthorhombic | size.length: 500.0 | size.width: 500.0 | size.depth: 500.0 | precursor: VOSO4*nH2O (conc 2.4) | additive: potassium bromate (conc 1.5) | pdfno_list: 26-1449"
+}

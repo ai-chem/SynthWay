@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "1868.json_PtNi_1132",
+  "composition": "PtNi",
+  "elements": [
+    "Pt",
+    "Ni"
+  ],
+  "precursors": [
+    {
+      "name": "Pt(acac)2",
+      "mass": 0.02
+    },
+    {
+      "name": "Ni(acac)2",
+      "mass": 0.02
+    }
+  ],
+  "additives": [
+    {
+      "name": "cetyltrimethylammonium bromide",
+      "mass": 0.075
+    },
+    {
+      "name": "tungsten hexacarbonyl",
+      "mass": 0.01
+    }
+  ],
+  "solvent": {
+    "name": "oleylamine",
+    "volume": 4.0
+  },
+  "conditions": {
+    "temperature": 170.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "shape": "wire",
+    "size": {
+      "width": 1.2,
+      "depth": 1.2
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1868.json_PtNi_1132",
+    "nodes": 15,
+    "edges": 15
+  },
+  "retrieval_text": "composition: PtNi | solvent: oleylamine | solvent.volume: 4.0 | temperature: 170.0 | crystalsystem: face-centered cubic | shape: wire | size.width: 1.2 | size.depth: 1.2 | precursor: Pt(acac)2 (mass 0.02) | precursor: Ni(acac)2 (mass 0.02) | additive: cetyltrimethylammonium bromide (mass 0.075) | additive: tungsten hexacarbonyl (mass 0.01)"
+}

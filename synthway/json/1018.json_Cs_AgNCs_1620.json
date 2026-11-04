@@ -1,0 +1,51 @@
+{
+  "synthesis_id": "1018.json_Cs/AgNCs_1620",
+  "composition": "Cs/AgNCs",
+  "elements": [
+    "Cs",
+    "Ag",
+    "N"
+  ],
+  "precursors": [
+    {
+      "name": "AgNPs",
+      "conc": 1.0
+    },
+    {
+      "name": "Chi",
+      "mass": 0.04
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide"
+    },
+    {
+      "name": "ginger extract"
+    },
+    {
+      "name": "sodium tripolyphosphate"
+    }
+  ],
+  "solvent": {
+    "name": "1% acetic acid",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 28.61,
+      "width": 28.61,
+      "depth": 28.61
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1018.json_Cs/AgNCs_1620",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Cs/AgNCs | solvent: 1% acetic acid | solvent.volume: 100.0 | temperature: 25.0 | shape: spherical | size.length: 28.61 | size.width: 28.61 | size.depth: 28.61 | precursor: AgNPs (conc 1.0) | precursor: Chi (mass 0.04) | additive: sodium hydroxide | additive: ginger extract | additive: sodium tripolyphosphate"
+}

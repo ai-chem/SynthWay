@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "1582.json_Ag_2044",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "intracellular green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 5.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "bacillus safensis ten12 culture"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 28.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 34.375,
+      "width": 34.375,
+      "depth": 34.375
+    }
+  },
+  "pdfno_list": [
+    "04-0783"
+  ],
+  "source": {
+    "synthesis_id_original": "1582.json_Ag_2044",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Ag | method: intracellular green synthesis | solvent: water | temperature: 28.0 | crystalsystem: cubic | shape: spherical | size.length: 34.375 | size.width: 34.375 | size.depth: 34.375 | precursor: AgNO3 (conc 5.0) | additive: bacillus safensis ten12 culture | pdfno_list: 04-0783"
+}

@@ -1,0 +1,51 @@
+{
+  "synthesis_id": "1120.json_Lam_Al2O3_25",
+  "composition": "Lam Al2O3",
+  "elements": [
+    "La",
+    "Al",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "AlCl3*6H2O",
+      "mass": 2.4143,
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "mass": 0.4,
+      "conc": 10.0
+    },
+    {
+      "name": "mimusops coriacea leaves extract"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 1000.0
+  },
+  "conditions": {
+    "temperature": 90.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 17.83,
+      "width": 17.83,
+      "depth": 17.83
+    }
+  },
+  "pdfno_list": [
+    "05-0566"
+  ],
+  "source": {
+    "synthesis_id_original": "1120.json_Lam_Al2O3_25",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: Lam Al2O3 | solvent: distilled water | solvent.volume: 1000.0 | temperature: 90.0 | crystalsystem: cubic | shape: spherical | size.length: 17.83 | size.width: 17.83 | size.depth: 17.83 | precursor: AlCl3*6H2O (mass 2.4143; conc 10.0) | additive: sodium hydroxide (mass 0.4; conc 10.0) | additive: mimusops coriacea leaves extract | pdfno_list: 05-0566"
+}

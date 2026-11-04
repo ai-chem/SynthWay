@@ -1,0 +1,23 @@
+{
+  "synthesis_id": "541.json_BaTiLaO3_2611",
+  "composition": "BaTiLaO3",
+  "elements": [
+    "Ba",
+    "Ti",
+    "La",
+    "O"
+  ],
+  "method": "pechini",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 1350.0
+  },
+  "source": {
+    "synthesis_id_original": "541.json_BaTiLaO3_2611",
+    "nodes": 4,
+    "edges": 3
+  },
+  "retrieval_text": "composition: BaTiLaO3 | method: pechini | solvent: water | temperature: 1350.0"
+}

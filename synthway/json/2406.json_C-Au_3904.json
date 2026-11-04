@@ -1,0 +1,23 @@
+{
+  "synthesis_id": "2406.json_C-Au_3904",
+  "composition": "C-Au",
+  "elements": [
+    "C",
+    "Au"
+  ],
+  "method": "brust–schiffrin",
+  "product": {
+    "shape": "hexagonal",
+    "size": {
+      "length": 27.5,
+      "width": 27.5,
+      "depth": 27.5
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2406.json_C-Au_3904",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: C-Au | method: brust–schiffrin | shape: hexagonal | size.length: 27.5 | size.width: 27.5 | size.depth: 27.5"
+}

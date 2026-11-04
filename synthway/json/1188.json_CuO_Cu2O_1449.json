@@ -1,0 +1,32 @@
+{
+  "synthesis_id": "1188.json_CuO/Cu2O_1449",
+  "composition": "CuO/Cu2O",
+  "elements": [
+    "Cu",
+    "O"
+  ],
+  "method": "biological",
+  "precursors": [
+    {
+      "name": "CuSO4*5H2O",
+      "conc": 1000.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "fusarium oxysporum extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "source": {
+    "synthesis_id_original": "1188.json_CuO/Cu2O_1449",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: CuO/Cu2O | method: biological | solvent: water | temperature: 25.0 | precursor: CuSO4*5H2O (conc 1000.0) | additive: fusarium oxysporum extract"
+}

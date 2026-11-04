@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "1411.json_MgO_2192",
+  "composition": "MgO",
+  "elements": [
+    "Mg",
+    "O"
+  ],
+  "method": "combustion",
+  "precursors": [
+    {
+      "name": "Mg(NO3)2"
+    }
+  ],
+  "additives": [
+    {
+      "name": "jamun fruit extract"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 450.0
+  },
+  "product": {
+    "shape": "spherical-like",
+    "size": {
+      "length": 10.0,
+      "width": 10.0,
+      "depth": 10.0
+    }
+  },
+  "pdfno_list": [
+    "04-829"
+  ],
+  "source": {
+    "synthesis_id_original": "1411.json_MgO_2192",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: MgO | method: combustion | solvent: water | solvent.volume: 10.0 | temperature: 450.0 | shape: spherical-like | size.length: 10.0 | size.width: 10.0 | size.depth: 10.0 | precursor: Mg(NO3)2 | additive: jamun fruit extract | pdfno_list: 04-829"
+}

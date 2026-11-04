@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "1494.json_Fe3O4/Ag_OP_3748",
+  "composition": "Fe3O4/Ag OP",
+  "elements": [
+    "Fe",
+    "O",
+    "Ag",
+    "P"
+  ],
+  "precursors": [
+    {
+      "name": "Fe3O4 (OP)"
+    },
+    {
+      "name": "AgNO3"
+    }
+  ],
+  "additives": [
+    {
+      "name": "1,2-hexadecanediol"
+    },
+    {
+      "name": "phenyl ether"
+    },
+    {
+      "name": "oleyl amine"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 140.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 19.0,
+      "width": 19.0,
+      "depth": 19.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1494.json_Fe3O4/Ag_OP_3748",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Fe3O4/Ag OP | solvent: water | temperature: 140.0 | shape: spherical | size.length: 19.0 | size.width: 19.0 | size.depth: 19.0 | precursor: Fe3O4 (OP) | precursor: AgNO3 | additive: 1,2-hexadecanediol | additive: phenyl ether | additive: oleyl amine"
+}

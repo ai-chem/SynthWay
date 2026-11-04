@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "1353.json_ZVI_2986",
+  "composition": "ZVI",
+  "elements": [
+    "Z",
+    "V",
+    "I"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "FeSO4*7H2O",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "black tea extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "amorphous",
+    "shape": "spherical",
+    "size": {
+      "length": 8.35,
+      "width": 8.35,
+      "depth": 8.35
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1353.json_ZVI_2986",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: ZVI | method: green synthesis | solvent: water | crystalsystem: amorphous | shape: spherical | size.length: 8.35 | size.width: 8.35 | size.depth: 8.35 | precursor: FeSO4*7H2O (conc 100.0) | additive: black tea extract"
+}

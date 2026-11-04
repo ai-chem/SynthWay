@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "783.json_CeO2_2547",
+  "composition": "CeO2",
+  "elements": [
+    "Ce",
+    "O"
+  ],
+  "method": "microemulsion",
+  "precursors": [
+    {
+      "name": "Ce(NO3)3*6H2O",
+      "mass": 1.0421,
+      "conc": 240.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "cetyltrimethylammonium bromide",
+      "mass": 4.0
+    },
+    {
+      "name": "n-octane",
+      "mass": 14.0
+    },
+    {
+      "name": "butanol",
+      "mass": 3.0
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 10.0
+  },
+  "product": {
+    "shape": "polyhedral",
+    "size": {
+      "width": 3.7
+    }
+  },
+  "source": {
+    "synthesis_id_original": "783.json_CeO2_2547",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: CeO2 | method: microemulsion | solvent: deionized water | solvent.volume: 10.0 | shape: polyhedral | size.width: 3.7 | precursor: Ce(NO3)3*6H2O (mass 1.0421; conc 240.0) | additive: cetyltrimethylammonium bromide (mass 4.0) | additive: n-octane (mass 14.0) | additive: butanol (mass 3.0)"
+}

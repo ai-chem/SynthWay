@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "1188.json_Fe3O4_1448",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "biological",
+  "precursors": [
+    {
+      "name": "FeSO4*7H2O",
+      "conc": 1000.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "fusarium oxysporum extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 50.0,
+      "width": 50.0,
+      "depth": 50.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1188.json_Fe3O4_1448",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Fe3O4 | method: biological | solvent: water | temperature: 25.0 | shape: spherical | size.length: 50.0 | size.width: 50.0 | size.depth: 50.0 | precursor: FeSO4*7H2O (conc 1000.0) | additive: fusarium oxysporum extract"
+}

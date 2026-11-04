@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "1826.json_Por-NiCo2S4_2649",
+  "composition": "Por-NiCo2S4",
+  "elements": [
+    "Po",
+    "Ni",
+    "Co",
+    "S"
+  ],
+  "method": "solvo-hydrothermal",
+  "precursors": [
+    {
+      "name": "Co(NO3)2·6H2O",
+      "conc": 0.25
+    },
+    {
+      "name": "Ni(NO3)2·6H2O",
+      "conc": 0.125
+    }
+  ],
+  "additives": [
+    {
+      "name": "porphyrin",
+      "mass": 0.003
+    }
+  ],
+  "solvent": {
+    "name": "glycerin-isopropanol",
+    "volume": 48.0
+  },
+  "conditions": {
+    "temperature": 180.0,
+    "ph": 9.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 570.0,
+      "width": 570.0,
+      "depth": 570.0
+    }
+  },
+  "pdfno_list": [
+    "20-0782"
+  ],
+  "source": {
+    "synthesis_id_original": "1826.json_Por-NiCo2S4_2649",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: Por-NiCo2S4 | method: solvo-hydrothermal | solvent: glycerin-isopropanol | solvent.volume: 48.0 | temperature: 180.0 | pH: 9.0 | shape: spherical | size.length: 570.0 | size.width: 570.0 | size.depth: 570.0 | precursor: Co(NO3)2·6H2O (conc 0.25) | precursor: Ni(NO3)2·6H2O (conc 0.125) | additive: porphyrin (mass 0.003) | pdfno_list: 20-0782"
+}

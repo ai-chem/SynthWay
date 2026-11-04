@@ -1,0 +1,11 @@
+{
+  "composition": "Se",
+  "method": null,
+  "rag_topk": 3,
+  "query": "composition: Se | Se method | Se method | Se method | Se mass | Se mass | Se mass | Se–ODE | Se–ODE | Se–ODE | composition Pt–Se | composition Pt–Se | composition Pt–Se | composition Ch-St-Se | composition Ch-St-Se | composition Ch-St-Se | composition S | composition S | composition S | composition E | composition E | composition E",
+  "retrieval_context": [
+    "composition: Se | method: reduction | solvent: water | precursor: Na2SeO3 (conc 1.0) | precursor: C3H7NO2S (conc 5.0)",
+    "composition: Se | method: reduction | solvent: water | precursor: Na2SeO3 (conc 1.0) | precursor: C3H7NO2S (conc 6.0)",
+    "composition: Se | method: reduction | solvent: water | size.width: 100.0 | precursor: Na2SeO3 (conc 1.0) | precursor: C3H7NO2S (conc 2.0)"
+  ]
+}

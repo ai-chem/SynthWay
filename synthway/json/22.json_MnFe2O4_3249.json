@@ -1,0 +1,32 @@
+{
+  "synthesis_id": "22.json_MnFe2O4_3249",
+  "composition": "MnFe2O4",
+  "elements": [
+    "Mn",
+    "Fe",
+    "O"
+  ],
+  "method": "coprecipitation",
+  "solvent": {
+    "name": "sodium hydroxide",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 95.0
+  },
+  "product": {
+    "crystalsystem": "spinel",
+    "shape": "cube",
+    "size": {
+      "length": 30.0,
+      "width": 30.0,
+      "depth": 30.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "22.json_MnFe2O4_3249",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: MnFe2O4 | method: coprecipitation | solvent: sodium hydroxide | solvent.volume: 100.0 | temperature: 95.0 | crystalsystem: spinel | shape: cube | size.length: 30.0 | size.width: 30.0 | size.depth: 30.0"
+}

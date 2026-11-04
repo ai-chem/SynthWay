@@ -1,0 +1,36 @@
+{
+  "synthesis_id": "2229.json_Ag_1244",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "chemical reduction",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium borohydride",
+      "conc": 2.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical"
+  },
+  "source": {
+    "synthesis_id_original": "2229.json_Ag_1244",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Ag | method: chemical reduction | solvent: water | temperature: 25.0 | crystalsystem: cubic | shape: spherical | precursor: AgNO3 (conc 1.0) | additive: sodium borohydride (conc 2.0)"
+}

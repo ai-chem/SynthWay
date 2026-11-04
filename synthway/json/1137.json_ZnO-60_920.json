@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "1137.json_ZnO-60_920",
+  "composition": "ZnO-60",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "biosynthesis",
+  "precursors": [
+    {
+      "name": "Zinc nitrate didydrate (Zn(NO3)2•2H2O)",
+      "mass": 6.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "cucumis maderaspatanus leaf extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 19.0,
+      "width": 19.0,
+      "depth": 19.0
+    }
+  },
+  "pdfno_list": [
+    "361451"
+  ],
+  "source": {
+    "synthesis_id_original": "1137.json_ZnO-60_920",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: ZnO-60 | method: biosynthesis | solvent: water | temperature: 60.0 | shape: spherical | size.length: 19.0 | size.width: 19.0 | size.depth: 19.0 | precursor: Zinc nitrate didydrate (Zn(NO3)2•2H2O) (mass 6.0) | additive: cucumis maderaspatanus leaf extract | pdfno_list: 361451"
+}

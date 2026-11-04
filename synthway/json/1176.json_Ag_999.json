@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "1176.json_Ag_999",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "chemical reduction",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "mass": 0.25
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 0.14
+    },
+    {
+      "name": "sodium borohydride",
+      "mass": 0.14
+    },
+    {
+      "name": "ethanol"
+    },
+    {
+      "name": "sodium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 50.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "cube",
+    "size": {
+      "length": 50.0,
+      "width": 50.0,
+      "depth": 50.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1176.json_Ag_999",
+    "nodes": 16,
+    "edges": 16
+  },
+  "retrieval_text": "composition: Ag | method: chemical reduction | solvent: deionized water | solvent.volume: 50.0 | crystalsystem: cubic | shape: cube | size.length: 50.0 | size.width: 50.0 | size.depth: 50.0 | precursor: AgNO3 (mass 0.25) | additive: polyvinylpyrrolidone (mass 0.14) | additive: sodium borohydride (mass 0.14) | additive: ethanol | additive: sodium hydroxide"
+}

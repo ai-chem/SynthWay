@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "2214.json_BaCO3_780",
+  "composition": "BaCO3",
+  "elements": [
+    "Ba",
+    "C",
+    "O"
+  ],
+  "method": "homogeneous precipitation",
+  "precursors": [
+    {
+      "name": "BaCl2 · 2H2O",
+      "mass": 19.541
+    },
+    {
+      "name": "(NH2)2CO",
+      "mass": 28.81
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "mass": 8.0
+    },
+    {
+      "name": "citric  acid  (ca)"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 85.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "needle like"
+  },
+  "pdfno_list": [
+    "05-0378"
+  ],
+  "source": {
+    "synthesis_id_original": "2214.json_BaCO3_780",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: BaCO3 | method: homogeneous precipitation | solvent: water | solvent.volume: 100.0 | temperature: 85.0 | crystalsystem: orthorhombic | shape: needle like | precursor: BaCl2 · 2H2O (mass 19.541) | precursor: (NH2)2CO (mass 28.81) | additive: sodium hydroxide (mass 8.0) | additive: citric  acid  (ca) | pdfno_list: 05-0378"
+}

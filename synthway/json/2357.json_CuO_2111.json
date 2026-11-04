@@ -1,0 +1,35 @@
+{
+  "synthesis_id": "2357.json_CuO_2111",
+  "composition": "CuO",
+  "elements": [
+    "Cu",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Cu(CH3COO)2*H2O",
+      "mass": 0.06
+    }
+  ],
+  "solvent": {
+    "name": "dimethylformamide",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 45.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 6.9,
+      "width": 6.9,
+      "depth": 6.9
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2357.json_CuO_2111",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: CuO | solvent: dimethylformamide | solvent.volume: 50.0 | temperature: 45.0 | shape: spherical | size.length: 6.9 | size.width: 6.9 | size.depth: 6.9 | precursor: Cu(CH3COO)2*H2O (mass 0.06)"
+}

@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "1491.json_Ag_1133",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "moringa oleifera leaf extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 82.5,
+      "width": 82.5,
+      "depth": 82.5
+    }
+  },
+  "pdfno_list": [
+    "84-0713 04-0783"
+  ],
+  "source": {
+    "synthesis_id_original": "1491.json_Ag_1133",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Ag | method: green synthesis | solvent: water | crystalsystem: cubic | size.length: 82.5 | size.width: 82.5 | size.depth: 82.5 | precursor: AgNO3 (conc 1.0) | additive: moringa oleifera leaf extract | pdfno_list: 84-0713 04-0783"
+}

@@ -1,0 +1,37 @@
+{
+  "synthesis_id": "1299.json_FAg_2403",
+  "composition": "FAg",
+  "elements": [
+    "F",
+    "Ag"
+  ],
+  "method": "microwave-assisted green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 5.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "fig fruit extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 20.0,
+      "width": 20.0,
+      "depth": 20.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1299.json_FAg_2403",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: FAg | method: microwave-assisted green synthesis | solvent: water | shape: spherical | size.length: 20.0 | size.width: 20.0 | size.depth: 20.0 | precursor: AgNO3 (conc 5.0) | additive: fig fruit extract"
+}

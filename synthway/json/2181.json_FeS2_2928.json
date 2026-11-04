@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "2181.json_FeS2_2928",
+  "composition": "FeS2",
+  "elements": [
+    "Fe",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "S",
+      "mass": 0.36
+    }
+  ],
+  "seeds": [
+    {
+      "name": "Fe3O4",
+      "conc": 0.12
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 500.0
+  },
+  "product": {
+    "size": {
+      "length": 70.0,
+      "width": 70.0,
+      "depth": 70.0
+    }
+  },
+  "pdfno_list": [
+    "42-1340"
+  ],
+  "source": {
+    "synthesis_id_original": "2181.json_FeS2_2928",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: FeS2 | solvent: water | temperature: 500.0 | size.length: 70.0 | size.width: 70.0 | size.depth: 70.0 | precursor: S (mass 0.36) | seed: Fe3O4 (conc 0.12) | pdfno_list: 42-1340"
+}

@@ -1,0 +1,35 @@
+{
+  "synthesis_id": "89.json_CuFeS2_1665",
+  "composition": "CuFeS2",
+  "elements": [
+    "Cu",
+    "Fe",
+    "S"
+  ],
+  "method": "hydrothermal",
+  "solvent": {
+    "name": "aqueous",
+    "volume": 45.0
+  },
+  "conditions": {
+    "temperature": 250.0
+  },
+  "product": {
+    "crystalsystem": "chalcopyrite",
+    "shape": "wire",
+    "size": {
+      "length": 30.0,
+      "width": 30.0,
+      "depth": 30.0
+    }
+  },
+  "pdfno_list": [
+    "37-471"
+  ],
+  "source": {
+    "synthesis_id_original": "89.json_CuFeS2_1665",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: CuFeS2 | method: hydrothermal | solvent: aqueous | solvent.volume: 45.0 | temperature: 250.0 | crystalsystem: chalcopyrite | shape: wire | size.length: 30.0 | size.width: 30.0 | size.depth: 30.0 | pdfno_list: 37-471"
+}

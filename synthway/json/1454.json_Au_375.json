@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "1454.json_Au_375",
+  "composition": "Au",
+  "elements": [
+    "Au"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "HAuCl4",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "ocimum basilicum extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 31.5,
+      "width": 31.5,
+      "depth": 31.5
+    }
+  },
+  "pdfno_list": [
+    "65-2870"
+  ],
+  "source": {
+    "synthesis_id_original": "1454.json_Au_375",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Au | method: green synthesis | solvent: water | temperature: 25.0 | crystalsystem: cubic | shape: spherical | size.length: 31.5 | size.width: 31.5 | size.depth: 31.5 | precursor: HAuCl4 (conc 1.0) | additive: ocimum basilicum extract | pdfno_list: 65-2870"
+}

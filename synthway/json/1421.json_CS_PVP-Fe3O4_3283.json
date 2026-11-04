@@ -1,0 +1,54 @@
+{
+  "synthesis_id": "1421.json_CS/PVP-Fe3O4_3283",
+  "composition": "CS/PVP-Fe3O4",
+  "elements": [
+    "C",
+    "S",
+    "P",
+    "V",
+    "Fe",
+    "O"
+  ],
+  "method": "coprecipitation",
+  "precursors": [
+    {
+      "name": "FeSO4*7H2O",
+      "conc": 500.0
+    },
+    {
+      "name": "Chi"
+    },
+    {
+      "name": "PVP"
+    }
+  ],
+  "additives": [
+    {
+      "name": "hydrazine hydrate",
+      "conc": 500.0
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 500.0
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol"
+  },
+  "conditions": {
+    "temperature": 12.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical"
+  },
+  "pdfno_list": [
+    "01-075-0033"
+  ],
+  "source": {
+    "synthesis_id_original": "1421.json_CS/PVP-Fe3O4_3283",
+    "nodes": 14,
+    "edges": 14
+  },
+  "retrieval_text": "composition: CS/PVP-Fe3O4 | method: coprecipitation | solvent: ethylene glycol | temperature: 12.0 | crystalsystem: cubic | shape: spherical | precursor: FeSO4*7H2O (conc 500.0) | precursor: Chi | precursor: PVP | additive: hydrazine hydrate (conc 500.0) | additive: sodium hydroxide (conc 500.0) | pdfno_list: 01-075-0033"
+}

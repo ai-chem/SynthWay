@@ -1,0 +1,30 @@
+{
+  "synthesis_id": "575.json_SrFe12O19_1254",
+  "composition": "SrFe12O19",
+  "elements": [
+    "Sr",
+    "Fe",
+    "O"
+  ],
+  "method": "sol-gel hydrothermal",
+  "precursors": [
+    {
+      "name": "Sr(NO3)2"
+    },
+    {
+      "name": "Fe(NO3)3*9H2O"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "source": {
+    "synthesis_id_original": "575.json_SrFe12O19_1254",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: SrFe12O19 | method: sol-gel hydrothermal | solvent: water | temperature: 180.0 | precursor: Sr(NO3)2 | precursor: Fe(NO3)3*9H2O"
+}

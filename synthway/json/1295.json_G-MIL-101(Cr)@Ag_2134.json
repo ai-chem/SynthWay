@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "1295.json_G-MIL-101(Cr)@Ag_2134",
+  "composition": "G-MIL-101(Cr)@Ag",
+  "elements": [
+    "G",
+    "M",
+    "I",
+    "L",
+    "Cr",
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "G-MIL-101(Cr)",
+      "mass": 0.168
+    },
+    {
+      "name": "AgNO3",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "nigella sativa extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 100.0
+  },
+  "source": {
+    "synthesis_id_original": "1295.json_G-MIL-101(Cr)@Ag_2134",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: G-MIL-101(Cr)@Ag | solvent: water | temperature: 100.0 | precursor: G-MIL-101(Cr) (mass 0.168) | precursor: AgNO3 (conc 10.0) | additive: nigella sativa extract"
+}

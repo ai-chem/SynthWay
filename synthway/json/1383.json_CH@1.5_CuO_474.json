@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "1383.json_CH@1.5_CuO_474",
+  "composition": "CH@1.5 CuO",
+  "elements": [
+    "C",
+    "H",
+    "Cu",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "CHNPs"
+    },
+    {
+      "name": "CuONPs"
+    }
+  ],
+  "additives": [
+    {
+      "name": "caustic soda",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "spherical"
+  },
+  "pdfno_list": [
+    "089-2529"
+  ],
+  "source": {
+    "synthesis_id_original": "1383.json_CH@1.5_CuO_474",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: CH@1.5 CuO | solvent: water | crystalsystem: monoclinic | shape: spherical | precursor: CHNPs | precursor: CuONPs | additive: caustic soda (conc 1000.0) | pdfno_list: 089-2529"
+}

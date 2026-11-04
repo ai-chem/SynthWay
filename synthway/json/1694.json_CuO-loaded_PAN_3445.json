@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "1694.json_CuO-loaded_PAN_3445",
+  "composition": "CuO-loaded PAN",
+  "elements": [
+    "Cu",
+    "O",
+    "P",
+    "A",
+    "N"
+  ],
+  "method": "electrospinning",
+  "precursors": [
+    {
+      "name": "PAN",
+      "mass": 8.0
+    },
+    {
+      "name": "CuO"
+    }
+  ],
+  "additives": [
+    {
+      "name": "dimethylformamide"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 37.0,
+      "width": 37.0,
+      "depth": 37.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1694.json_CuO-loaded_PAN_3445",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: CuO-loaded PAN | method: electrospinning | solvent: water | temperature: 25.0 | crystalsystem: hexagonal | shape: spherical | size.length: 37.0 | size.width: 37.0 | size.depth: 37.0 | precursor: PAN (mass 8.0) | precursor: CuO | additive: dimethylformamide"
+}

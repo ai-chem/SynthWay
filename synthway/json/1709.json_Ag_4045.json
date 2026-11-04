@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "1709.json_Ag_4045",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "dragon fruit extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "ph": 3.35
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 26.2,
+      "width": 26.2,
+      "depth": 26.2
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1709.json_Ag_4045",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Ag | solvent: water | pH: 3.35 | crystalsystem: cubic | shape: spherical | size.length: 26.2 | size.width: 26.2 | size.depth: 26.2 | precursor: AgNO3 (conc 10.0) | additive: dragon fruit extract"
+}

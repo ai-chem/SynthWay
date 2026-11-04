@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "663.json_BaCO3:Eu3+_3692",
+  "composition": "BaCO3:Eu3+",
+  "elements": [
+    "Ba",
+    "C",
+    "O",
+    "Eu"
+  ],
+  "method": "autocombustion",
+  "precursors": [
+    {
+      "name": "Ba(NO3)2",
+      "mass": 2.61
+    },
+    {
+      "name": "C6H8O7",
+      "mass": 3.84
+    },
+    {
+      "name": "Eu(NO3)3⋅6H2O",
+      "conc": 20.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 15.0
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "nanocrystallite",
+    "size": {
+      "length": 54.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "663.json_BaCO3:Eu3+_3692",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: BaCO3:Eu3+ | method: autocombustion | solvent: water | solvent.volume: 15.0 | temperature: 60.0 | crystalsystem: orthorhombic | shape: nanocrystallite | size.length: 54.0 | precursor: Ba(NO3)2 (mass 2.61) | precursor: C6H8O7 (mass 3.84) | precursor: Eu(NO3)3⋅6H2O (conc 20.0)"
+}

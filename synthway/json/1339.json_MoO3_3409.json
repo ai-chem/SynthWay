@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1339.json_MoO3_3409",
+  "composition": "MoO3",
+  "elements": [
+    "Mo",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Mo(CH3COO)2",
+      "mass": 4.28
+    }
+  ],
+  "additives": [
+    {
+      "name": "terminalia arjuna bark extract"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "cube",
+    "size": {
+      "length": 325.0,
+      "width": 325.0,
+      "depth": 325.0
+    }
+  },
+  "pdfno_list": [
+    "350609"
+  ],
+  "source": {
+    "synthesis_id_original": "1339.json_MoO3_3409",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: MoO3 | method: green synthesis | solvent: distilled water | solvent.volume: 100.0 | temperature: 60.0 | crystalsystem: orthorhombic | shape: cube | size.length: 325.0 | size.width: 325.0 | size.depth: 325.0 | precursor: Mo(CH3COO)2 (mass 4.28) | additive: terminalia arjuna bark extract | pdfno_list: 350609"
+}

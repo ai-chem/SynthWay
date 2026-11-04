@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "787.json_Co3O4_69",
+  "composition": "Co3O4",
+  "elements": [
+    "Co",
+    "O"
+  ],
+  "method": "biosynthesis",
+  "precursors": [
+    {
+      "name": "CoCl2·6H2O",
+      "conc": 1000.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "arishta leaves aqueous extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 600.0
+  },
+  "product": {
+    "size": {
+      "length": 44.9,
+      "width": 44.9,
+      "depth": 44.9
+    }
+  },
+  "source": {
+    "synthesis_id_original": "787.json_Co3O4_69",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Co3O4 | method: biosynthesis | solvent: water | temperature: 600.0 | size.length: 44.9 | size.width: 44.9 | size.depth: 44.9 | precursor: CoCl2·6H2O (conc 1000.0) | additive: arishta leaves aqueous extract"
+}

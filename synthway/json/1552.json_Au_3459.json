@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "1552.json_Au_3459",
+  "composition": "Au",
+  "elements": [
+    "Au"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "HAuCl4*3H2O",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "allium cepa l. leaves extract"
+    },
+    {
+      "name": "deionized water",
+      "mass": 80.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 60.5,
+      "width": 60.5,
+      "depth": 60.5
+    }
+  },
+  "pdfno_list": [
+    "01-1174"
+  ],
+  "source": {
+    "synthesis_id_original": "1552.json_Au_3459",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Au | method: green synthesis | solvent: water | shape: spherical | size.length: 60.5 | size.width: 60.5 | size.depth: 60.5 | precursor: HAuCl4*3H2O (conc 1.0) | additive: allium cepa l. leaves extract | additive: deionized water (mass 80.0) | pdfno_list: 01-1174"
+}

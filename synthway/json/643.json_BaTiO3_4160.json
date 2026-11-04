@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "643.json_BaTiO3_4160",
+  "composition": "BaTiO3",
+  "elements": [
+    "Ba",
+    "Ti",
+    "O"
+  ],
+  "method": "vapor-diffusion sol–gel",
+  "precursors": [
+    {
+      "name": "BaTi(OR)6",
+      "conc": 420.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "hydrochloric acid",
+      "mass": 2.0,
+      "conc": 750.0
+    }
+  ],
+  "solvent": {
+    "name": "n-butanol+2-methoxypropanol,",
+    "volume": 1.1
+  },
+  "conditions": {
+    "temperature": 16.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "size": {
+      "length": 5.9
+    }
+  },
+  "pdfno_list": [
+    "75-0215"
+  ],
+  "source": {
+    "synthesis_id_original": "643.json_BaTiO3_4160",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: BaTiO3 | method: vapor-diffusion sol–gel | solvent: n-butanol+2-methoxypropanol, | solvent.volume: 1.1 | temperature: 16.0 | crystalsystem: tetragonal | size.length: 5.9 | precursor: BaTi(OR)6 (conc 420.0) | additive: hydrochloric acid (mass 2.0; conc 750.0) | pdfno_list: 75-0215"
+}

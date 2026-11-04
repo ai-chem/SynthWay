@@ -1,0 +1,29 @@
+{
+  "synthesis_id": "289.json_PdeCeO2_729",
+  "composition": "PdeCeO2",
+  "elements": [
+    "Pd",
+    "Ce",
+    "O"
+  ],
+  "method": "sol-gel",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 700.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 15.2
+    }
+  },
+  "source": {
+    "synthesis_id_original": "289.json_PdeCeO2_729",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: PdeCeO2 | method: sol-gel | solvent: water | temperature: 700.0 | crystalsystem: cubic | shape: spherical | size.length: 15.2"
+}

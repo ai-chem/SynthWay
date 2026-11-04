@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "2167.json_Fe0.5Co0.5_35",
+  "composition": "Fe0.5Co0.5",
+  "elements": [
+    "Fe",
+    "Co"
+  ],
+  "precursors": [
+    {
+      "name": "FeCl2•4H2O"
+    },
+    {
+      "name": "CoCl2·6H2O"
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 0.3
+    },
+    {
+      "name": "sodium borohydride",
+      "mass": 0.2648
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 30.0
+  },
+  "product": {
+    "crystalsystem": "amorphous",
+    "shape": "spherical",
+    "size": {
+      "length": 12.8,
+      "width": 12.8,
+      "depth": 12.8
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2167.json_Fe0.5Co0.5_35",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Fe0.5Co0.5 | solvent: water | solvent.volume: 30.0 | crystalsystem: amorphous | shape: spherical | size.length: 12.8 | size.width: 12.8 | size.depth: 12.8 | precursor: FeCl2•4H2O | precursor: CoCl2·6H2O | additive: polyvinylpyrrolidone (mass 0.3) | additive: sodium borohydride (mass 0.2648)"
+}

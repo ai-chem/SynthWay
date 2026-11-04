@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "1232.json_ZnO_869",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "ZnCl2",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "ficus carica latex"
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 29.3,
+      "width": 29.3,
+      "depth": 29.3
+    }
+  },
+  "pdfno_list": [
+    "89-0510"
+  ],
+  "source": {
+    "synthesis_id_original": "1232.json_ZnO_869",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: ZnO | method: green synthesis | solvent: water | temperature: 60.0 | crystalsystem: hexagonal | shape: spherical | size.length: 29.3 | size.width: 29.3 | size.depth: 29.3 | precursor: ZnCl2 (conc 100.0) | additive: ficus carica latex | additive: sodium hydroxide (conc 1000.0) | pdfno_list: 89-0510"
+}

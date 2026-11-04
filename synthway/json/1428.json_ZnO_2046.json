@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "1428.json_ZnO_2046",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "coprecipitation",
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 100.0
+    }
+  ],
+  "solvent": {
+    "name": "double distilled water",
+    "volume": 100.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "flake",
+    "size": {
+      "length": 30.0,
+      "width": 30.0,
+      "depth": 30.0
+    }
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "1428.json_ZnO_2046",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: ZnO | method: coprecipitation | solvent: double distilled water | solvent.volume: 100.0 | crystalsystem: hexagonal | shape: flake | size.length: 30.0 | size.width: 30.0 | size.depth: 30.0 | precursor: Zn(CH3COO)2 (conc 100.0) | additive: sodium hydroxide (conc 100.0) | pdfno_list: 36-1451"
+}

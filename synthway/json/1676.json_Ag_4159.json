@@ -1,0 +1,36 @@
+{
+  "synthesis_id": "1676.json_Ag_4159",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 9.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "aqueous extract of aloe maculata"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "spherical",
+    "shape": "spherical",
+    "size": {
+      "length": 17.5,
+      "width": 17.5,
+      "depth": 17.5
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1676.json_Ag_4159",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Ag | solvent: water | crystalsystem: spherical | shape: spherical | size.length: 17.5 | size.width: 17.5 | size.depth: 17.5 | precursor: AgNO3 (conc 9.0) | additive: aqueous extract of aloe maculata"
+}

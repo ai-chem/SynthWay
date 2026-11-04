@@ -1,0 +1,37 @@
+{
+  "synthesis_id": "1491.json_CuO_1134",
+  "composition": "CuO",
+  "elements": [
+    "Cu",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "CuSO4*5H2O",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "moringa oleifera leaf extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 61.1,
+      "width": 61.1,
+      "depth": 61.1
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1491.json_CuO_1134",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: CuO | method: green synthesis | solvent: water | crystalsystem: cubic | size.length: 61.1 | size.width: 61.1 | size.depth: 61.1 | precursor: CuSO4*5H2O (conc 10.0) | additive: moringa oleifera leaf extract"
+}

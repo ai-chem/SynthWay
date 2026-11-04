@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "1434.json_B3_ZnO_1037",
+  "composition": "B3 ZnO",
+  "elements": [
+    "B",
+    "Zn",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "ZnSO4·7H2O",
+      "conc": 200.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 1000.0
+    },
+    {
+      "name": "azadirachta indica barks"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 40.0
+  },
+  "product": {
+    "crystalsystem": "wurtzite",
+    "shape": "bar",
+    "size": {
+      "length": 200.0,
+      "width": 45.0,
+      "depth": 45.0
+    }
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "1434.json_B3_ZnO_1037",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: B3 ZnO | method: green synthesis | solvent: water | temperature: 40.0 | crystalsystem: wurtzite | shape: bar | size.length: 200.0 | size.width: 45.0 | size.depth: 45.0 | precursor: ZnSO4·7H2O (conc 200.0) | additive: sodium hydroxide (conc 1000.0) | additive: azadirachta indica barks | pdfno_list: 36-1451"
+}

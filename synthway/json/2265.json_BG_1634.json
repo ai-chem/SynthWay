@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "2265.json_BG_1634",
+  "composition": "BG",
+  "elements": [
+    "B",
+    "G"
+  ],
+  "method": "hummers method",
+  "precursors": [
+    {
+      "name": "GO",
+      "mass": 0.06
+    },
+    {
+      "name": "BiCl3",
+      "mass": 2.0
+    },
+    {
+      "name": "C2H5NS",
+      "mass": 0.75
+    },
+    {
+      "name": "CTAB",
+      "mass": 0.35
+    }
+  ],
+  "solvent": {
+    "name": "dimethyl formamide",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic"
+  },
+  "pdfno_list": [
+    "65-2435"
+  ],
+  "source": {
+    "synthesis_id_original": "2265.json_BG_1634",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: BG | method: hummers method | solvent: dimethyl formamide | solvent.volume: 30.0 | temperature: 200.0 | crystalsystem: orthorhombic | precursor: GO (mass 0.06) | precursor: BiCl3 (mass 2.0) | precursor: C2H5NS (mass 0.75) | precursor: CTAB (mass 0.35) | pdfno_list: 65-2435"
+}

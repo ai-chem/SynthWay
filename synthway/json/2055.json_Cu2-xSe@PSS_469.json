@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "2055.json_Cu2-xSe@PSS_469",
+  "composition": "Cu2-xSe@PSS",
+  "elements": [
+    "Cu",
+    "Se",
+    "P",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "SeO2",
+      "conc": 100.0
+    },
+    {
+      "name": "CuSO4•5H2O",
+      "conc": 400.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "polystyrene sulfonate",
+      "mass": 0.00625
+    },
+    {
+      "name": "vc",
+      "conc": 800.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 5.5
+  },
+  "conditions": {
+    "temperature": 30.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "grain-like",
+    "size": {
+      "length": 40.0,
+      "width": 40.0,
+      "depth": 40.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2055.json_Cu2-xSe@PSS_469",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: Cu2-xSe@PSS | solvent: water | solvent.volume: 5.5 | temperature: 30.0 | crystalsystem: cubic | shape: grain-like | size.length: 40.0 | size.width: 40.0 | size.depth: 40.0 | precursor: SeO2 (conc 100.0) | precursor: CuSO4•5H2O (conc 400.0) | additive: polystyrene sulfonate (mass 0.00625) | additive: vc (conc 800.0)"
+}

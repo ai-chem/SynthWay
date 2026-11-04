@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "1411.json_1%_Sm3+_MgO_doped_2188",
+  "composition": "1% Sm3+ MgO doped",
+  "elements": [
+    "Sm",
+    "Mg",
+    "O"
+  ],
+  "method": "combustion",
+  "precursors": [
+    {
+      "name": "Mg(NO3)2"
+    },
+    {
+      "name": "Sm(NO3)3*6H2O"
+    }
+  ],
+  "additives": [
+    {
+      "name": "jamun fruit extract"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 450.0
+  },
+  "product": {
+    "shape": "spherical-like",
+    "size": {
+      "length": 11.0,
+      "width": 11.0,
+      "depth": 11.0
+    }
+  },
+  "pdfno_list": [
+    "04-829"
+  ],
+  "source": {
+    "synthesis_id_original": "1411.json_1%_Sm3+_MgO_doped_2188",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: 1% Sm3+ MgO doped | method: combustion | solvent: water | solvent.volume: 10.0 | temperature: 450.0 | shape: spherical-like | size.length: 11.0 | size.width: 11.0 | size.depth: 11.0 | precursor: Mg(NO3)2 | precursor: Sm(NO3)3*6H2O | additive: jamun fruit extract | pdfno_list: 04-829"
+}

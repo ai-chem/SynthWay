@@ -1,0 +1,29 @@
+{
+  "synthesis_id": "467.json_MgO_1219",
+  "composition": "MgO",
+  "elements": [
+    "Mg",
+    "O"
+  ],
+  "method": "solution-based synthesis",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 110.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "nanolamella",
+    "size": {
+      "length": 100.0,
+      "width": 10.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "467.json_MgO_1219",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: MgO | method: solution-based synthesis | solvent: water | temperature: 110.0 | crystalsystem: hexagonal | shape: nanolamella | size.length: 100.0 | size.width: 10.0"
+}

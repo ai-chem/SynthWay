@@ -1,0 +1,37 @@
+{
+  "synthesis_id": "2373.json_Ag_4162",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "borohydride reduction",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium borohydride",
+      "conc": 2.0
+    }
+  ],
+  "solvent": {
+    "name": "ultrapure grade distilled water"
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 14.3,
+      "width": 14.3,
+      "depth": 14.3
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2373.json_Ag_4162",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Ag | method: borohydride reduction | solvent: ultrapure grade distilled water | shape: spherical | size.length: 14.3 | size.width: 14.3 | size.depth: 14.3 | precursor: AgNO3 (conc 1.0) | additive: sodium borohydride (conc 2.0)"
+}

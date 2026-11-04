@@ -1,0 +1,34 @@
+{
+  "synthesis_id": "179.json_BaTiO3_892",
+  "composition": "BaTiO3",
+  "elements": [
+    "Ba",
+    "Ti",
+    "O"
+  ],
+  "method": "electrospinning, sol-gel",
+  "solvent": {
+    "name": "ethanol"
+  },
+  "conditions": {
+    "temperature": 750.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "shape": "nanofibers",
+    "size": {
+      "length": 10000.0,
+      "width": 200.0,
+      "depth": 200.0
+    }
+  },
+  "pdfno_list": [
+    "31-0174"
+  ],
+  "source": {
+    "synthesis_id_original": "179.json_BaTiO3_892",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: BaTiO3 | method: electrospinning, sol-gel | solvent: ethanol | temperature: 750.0 | crystalsystem: tetragonal | shape: nanofibers | size.length: 10000.0 | size.width: 200.0 | size.depth: 200.0 | pdfno_list: 31-0174"
+}

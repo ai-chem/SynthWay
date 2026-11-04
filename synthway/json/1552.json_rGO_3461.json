@@ -1,0 +1,31 @@
+{
+  "synthesis_id": "1552.json_rGO_3461",
+  "composition": "rGO",
+  "elements": [
+    "G",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "GO"
+    }
+  ],
+  "additives": [
+    {
+      "name": "allium cepa l. leaves extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "silk"
+  },
+  "source": {
+    "synthesis_id_original": "1552.json_rGO_3461",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: rGO | method: green synthesis | solvent: water | shape: silk | precursor: GO | additive: allium cepa l. leaves extract"
+}

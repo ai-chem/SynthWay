@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "1024.json_Au_93",
+  "composition": "Au",
+  "elements": [
+    "Au"
+  ],
+  "precursors": [
+    {
+      "name": "HAuCl4",
+      "conc": 20.0
+    },
+    {
+      "name": "C6H8O6",
+      "mass": 0.0488,
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "hepes",
+      "conc": 100.0
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 9.0
+  },
+  "conditions": {
+    "temperature": 4.0,
+    "ph": 7.4
+  },
+  "product": {
+    "shape": "star",
+    "size": {
+      "width": 80.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1024.json_Au_93",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: Au | solvent: water | solvent.volume: 9.0 | temperature: 4.0 | pH: 7.4 | shape: star | size.width: 80.0 | precursor: HAuCl4 (conc 20.0) | precursor: C6H8O6 (mass 0.0488; conc 100.0) | additive: hepes (conc 100.0) | additive: sodium hydroxide (conc 1000.0)"
+}

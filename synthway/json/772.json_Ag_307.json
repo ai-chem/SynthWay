@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "772.json_Ag_307",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "mass": 0.0169,
+      "conc": 1.0
+    },
+    {
+      "name": "C7H6O5",
+      "mass": 0.01
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 7700.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 80.0,
+    "ph": 10.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "width": 89.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "772.json_Ag_307",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Ag | solvent: water | solvent.volume: 100.0 | temperature: 80.0 | pH: 10.0 | shape: spherical | size.width: 89.0 | precursor: AgNO3 (mass 0.0169; conc 1.0) | precursor: C7H6O5 (mass 0.01) | additive: sodium hydroxide (conc 7700.0)"
+}

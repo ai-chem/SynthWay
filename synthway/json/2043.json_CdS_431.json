@@ -1,0 +1,37 @@
+{
+  "synthesis_id": "2043.json_CdS_431",
+  "composition": "CdS",
+  "elements": [
+    "Cd",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "Cd(SOCPh)2Lut2",
+      "mass": 1.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 400.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 10.0,
+      "width": 10.0,
+      "depth": 10.0
+    }
+  },
+  "pdfno_list": [
+    "42-1411, 41-1049"
+  ],
+  "source": {
+    "synthesis_id_original": "2043.json_CdS_431",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: CdS | solvent: water | temperature: 400.0 | shape: spherical | size.length: 10.0 | size.width: 10.0 | size.depth: 10.0 | precursor: Cd(SOCPh)2Lut2 (mass 1.0) | pdfno_list: 42-1411, 41-1049"
+}

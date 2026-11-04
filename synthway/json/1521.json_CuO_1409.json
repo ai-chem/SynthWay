@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "1521.json_CuO_1409",
+  "composition": "CuO",
+  "elements": [
+    "Cu",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "CuSO4⋅5H2O",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "bacillus vallismortis mdu6 biosurfactant",
+      "mass": 0.32
+    },
+    {
+      "name": "hydrazine hydrate"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 70.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "spherical",
+    "size": {
+      "length": 115.0,
+      "width": 115.0,
+      "depth": 115.0
+    }
+  },
+  "pdfno_list": [
+    "89-2531"
+  ],
+  "source": {
+    "synthesis_id_original": "1521.json_CuO_1409",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: CuO | solvent: water | temperature: 70.0 | crystalsystem: monoclinic | shape: spherical | size.length: 115.0 | size.width: 115.0 | size.depth: 115.0 | precursor: CuSO4⋅5H2O (conc 1.0) | additive: bacillus vallismortis mdu6 biosurfactant (mass 0.32) | additive: hydrazine hydrate | pdfno_list: 89-2531"
+}

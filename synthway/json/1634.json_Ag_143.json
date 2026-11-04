@@ -1,0 +1,36 @@
+{
+  "synthesis_id": "1634.json_Ag_143",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 5.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "c. frutescens and t. indica extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 72.2,
+      "width": 72.2,
+      "depth": 72.2
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1634.json_Ag_143",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Ag | solvent: water | crystalsystem: cubic | shape: spherical | size.length: 72.2 | size.width: 72.2 | size.depth: 72.2 | precursor: AgNO3 (conc 5.0) | additive: c. frutescens and t. indica extract"
+}

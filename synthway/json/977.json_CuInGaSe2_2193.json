@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "977.json_CuInGaSe2_2193",
+  "composition": "CuInGaSe2",
+  "elements": [
+    "Cu",
+    "In",
+    "Ga",
+    "Se"
+  ],
+  "method": "solvo-hydrothermal",
+  "precursors": [
+    {
+      "name": "Cu",
+      "mass": 0.635
+    },
+    {
+      "name": "In",
+      "mass": 0.348
+    },
+    {
+      "name": "Se",
+      "mass": 1.579
+    },
+    {
+      "name": "Ga",
+      "mass": 0.348
+    }
+  ],
+  "solvent": {
+    "name": "ethylenediamine",
+    "volume": 40.0
+  },
+  "conditions": {
+    "temperature": 140.0
+  },
+  "product": {
+    "shape": "plate"
+  },
+  "source": {
+    "synthesis_id_original": "977.json_CuInGaSe2_2193",
+    "nodes": 13,
+    "edges": 13
+  },
+  "retrieval_text": "composition: CuInGaSe2 | method: solvo-hydrothermal | solvent: ethylenediamine | solvent.volume: 40.0 | temperature: 140.0 | shape: plate | precursor: Cu (mass 0.635) | precursor: In (mass 0.348) | precursor: Se (mass 1.579) | precursor: Ga (mass 0.348)"
+}

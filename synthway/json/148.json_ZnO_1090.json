@@ -1,0 +1,28 @@
+{
+  "synthesis_id": "148.json_ZnO_1090",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "hydrolysis",
+  "solvent": {
+    "name": "ethanol"
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "size": {
+      "length": 5.5,
+      "width": 5.5,
+      "depth": 5.5
+    }
+  },
+  "source": {
+    "synthesis_id_original": "148.json_ZnO_1090",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: ZnO | method: hydrolysis | solvent: ethanol | temperature: 60.0 | size.length: 5.5 | size.width: 5.5 | size.depth: 5.5"
+}

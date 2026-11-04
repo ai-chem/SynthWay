@@ -1,0 +1,36 @@
+{
+  "synthesis_id": "1078.json_C_2045",
+  "composition": "C",
+  "elements": [
+    "C"
+  ],
+  "method": "solvo-hydrothermal",
+  "precursors": [
+    {
+      "name": "C6H8O6",
+      "mass": 1.6
+    },
+    {
+      "name": "C2H6O2",
+      "mass": 16.5
+    }
+  ],
+  "solvent": {
+    "name": "triple distilled water",
+    "volume": 25.0
+  },
+  "conditions": {
+    "temperature": 160.0
+  },
+  "product": {
+    "size": {
+      "width": 5.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1078.json_C_2045",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: C | method: solvo-hydrothermal | solvent: triple distilled water | solvent.volume: 25.0 | temperature: 160.0 | size.width: 5.0 | precursor: C6H8O6 (mass 1.6) | precursor: C2H6O2 (mass 16.5)"
+}

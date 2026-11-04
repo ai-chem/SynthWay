@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "1378.json_CAU-17/Ag/CQDs_3481",
+  "composition": "CAU-17/Ag/CQDs",
+  "elements": [
+    "C",
+    "A",
+    "U",
+    "Ag",
+    "Q",
+    "Ds"
+  ],
+  "method": "solvo-hydrothermal",
+  "precursors": [
+    {
+      "name": "H3BTC",
+      "mass": 0.84056
+    },
+    {
+      "name": "Bi(NO3)3·5H2O",
+      "mass": 0.2425
+    },
+    {
+      "name": "AgNO3",
+      "mass": 0.1
+    },
+    {
+      "name": "CQDs",
+      "mass": 0.05
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone 27000-30000",
+      "mass": 0.1
+    }
+  ],
+  "solvent": {
+    "name": "dimethylformamide and methanol",
+    "volume": 60.0
+  },
+  "product": {
+    "shape": "lamellar structure"
+  },
+  "source": {
+    "synthesis_id_original": "1378.json_CAU-17/Ag/CQDs_3481",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: CAU-17/Ag/CQDs | method: solvo-hydrothermal | solvent: dimethylformamide and methanol | solvent.volume: 60.0 | shape: lamellar structure | precursor: H3BTC (mass 0.84056) | precursor: Bi(NO3)3·5H2O (mass 0.2425) | precursor: AgNO3 (mass 0.1) | precursor: CQDs (mass 0.05) | additive: polyvinylpyrrolidone 27000-30000 (mass 0.1)"
+}

@@ -1,0 +1,61 @@
+{
+  "synthesis_id": "1586.json_Ag-NiO2@PVA_NC_3777",
+  "composition": "Ag-NiO2@PVA NC",
+  "elements": [
+    "Ag",
+    "Ni",
+    "O",
+    "P",
+    "V",
+    "A",
+    "N",
+    "C"
+  ],
+  "precursors": [
+    {
+      "name": "PVA",
+      "mass": 0.085
+    },
+    {
+      "name": "Ag (NPs)"
+    },
+    {
+      "name": "NiO2 NPs"
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium dodecyl sulfate",
+      "mass": 0.05
+    },
+    {
+      "name": "sodium borohydride",
+      "mass": 50.0
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 40.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical-nanospheres",
+    "size": {
+      "length": 15.53,
+      "width": 15.53,
+      "depth": 15.53
+    }
+  },
+  "pdfno_list": [
+    "82-0007"
+  ],
+  "source": {
+    "synthesis_id_original": "1586.json_Ag-NiO2@PVA_NC_3777",
+    "nodes": 18,
+    "edges": 17
+  },
+  "retrieval_text": "composition: Ag-NiO2@PVA NC | solvent: deionized water | solvent.volume: 20.0 | temperature: 40.0 | crystalsystem: hexagonal | shape: spherical-nanospheres | size.length: 15.53 | size.width: 15.53 | size.depth: 15.53 | precursor: PVA (mass 0.085) | precursor: Ag (NPs) | precursor: NiO2 NPs | additive: sodium dodecyl sulfate (mass 0.05) | additive: sodium borohydride (mass 50.0) | pdfno_list: 82-0007"
+}

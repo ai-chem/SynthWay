@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "578.json_SrWO4_1693",
+  "composition": "SrWO4",
+  "elements": [
+    "Sr",
+    "W",
+    "O"
+  ],
+  "method": "reverse micelle/microemulsion",
+  "precursors": [
+    {
+      "name": "Sr(NO3)2",
+      "conc": 300.0
+    },
+    {
+      "name": "Na2WO4*2H2O",
+      "conc": 300.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "cetyltrimethylammonium bromide"
+    },
+    {
+      "name": "n-pentanol"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 140.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "shape": "nanopeanuts",
+    "size": {
+      "length": 60.0
+    }
+  },
+  "pdfno_list": [
+    "08-0490"
+  ],
+  "source": {
+    "synthesis_id_original": "578.json_SrWO4_1693",
+    "nodes": 13,
+    "edges": 13
+  },
+  "retrieval_text": "composition: SrWO4 | method: reverse micelle/microemulsion | solvent: water | temperature: 140.0 | crystalsystem: tetragonal | shape: nanopeanuts | size.length: 60.0 | precursor: Sr(NO3)2 (conc 300.0) | precursor: Na2WO4*2H2O (conc 300.0) | additive: cetyltrimethylammonium bromide | additive: n-pentanol | pdfno_list: 08-0490"
+}

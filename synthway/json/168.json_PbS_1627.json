@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "168.json_PbS_1627",
+  "composition": "PbS",
+  "elements": [
+    "Pb",
+    "S"
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 15.0
+  },
+  "conditions": {
+    "temperature": 160.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "shape": "wire",
+    "size": {
+      "length": 1250.0,
+      "width": 35.0,
+      "depth": 35.0
+    }
+  },
+  "pdfno_list": [
+    "05-592"
+  ],
+  "source": {
+    "synthesis_id_original": "168.json_PbS_1627",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: PbS | solvent: distilled water | solvent.volume: 15.0 | temperature: 160.0 | crystalsystem: face-centered cubic | shape: wire | size.length: 1250.0 | size.width: 35.0 | size.depth: 35.0 | pdfno_list: 05-592"
+}

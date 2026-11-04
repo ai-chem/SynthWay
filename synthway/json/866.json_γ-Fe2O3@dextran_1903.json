@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "866.json_γ-Fe2O3@dextran_1903",
+  "composition": "γ-Fe2O3@dextran",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "polyol",
+  "precursors": [
+    {
+      "name": "FeCl3*6H2O",
+      "mass": 1.08
+    },
+    {
+      "name": "NaOH",
+      "mass": 0.64
+    },
+    {
+      "name": "FeCl2·4H2O",
+      "mass": 0.398
+    },
+    {
+      "name": "Fe(NO3)3",
+      "mass": 8.25
+    }
+  ],
+  "additives": [
+    {
+      "name": "dextran"
+    }
+  ],
+  "solvent": {
+    "name": "diethylene glycol and n-methyldiethanolamine (nmdea) (1:1 v/v, 80 g)"
+  },
+  "conditions": {
+    "temperature": 210.0
+  },
+  "product": {
+    "shape": "flower-shaped nanoparticles",
+    "size": {
+      "length": 47.0,
+      "width": 47.0,
+      "depth": 47.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "866.json_γ-Fe2O3@dextran_1903",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: γ-Fe2O3@dextran | method: polyol | solvent: diethylene glycol and n-methyldiethanolamine (nmdea) (1:1 v/v, 80 g) | temperature: 210.0 | shape: flower-shaped nanoparticles | size.length: 47.0 | size.width: 47.0 | size.depth: 47.0 | precursor: FeCl3*6H2O (mass 1.08) | precursor: NaOH (mass 0.64) | precursor: FeCl2·4H2O (mass 0.398) | precursor: Fe(NO3)3 (mass 8.25) | additive: dextran"
+}

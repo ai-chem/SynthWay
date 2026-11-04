@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "1733.json_Ag_4154",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "orange extract"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 5.0
+  },
+  "conditions": {
+    "temperature": 60.0,
+    "ph": 4.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "size": {
+      "length": 25.0,
+      "width": 25.0,
+      "depth": 25.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1733.json_Ag_4154",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Ag | solvent: distilled water | solvent.volume: 5.0 | temperature: 60.0 | pH: 4.0 | crystalsystem: face-centered cubic | size.length: 25.0 | size.width: 25.0 | size.depth: 25.0 | precursor: AgNO3 (conc 10.0) | additive: orange extract"
+}

@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "1207.json_Ag-Doped_ZnO_3631",
+  "composition": "Ag-Doped ZnO",
+  "elements": [
+    "Ag",
+    "Do",
+    "Zn",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "ZnO (nanosheets)"
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 0.01
+    },
+    {
+      "name": "silver nitrate",
+      "mass": 0.012
+    },
+    {
+      "name": "sodium borohydride"
+    }
+  ],
+  "solvent": {
+    "name": "absolute ethanol"
+  },
+  "product": {
+    "shape": "sheets"
+  },
+  "source": {
+    "synthesis_id_original": "1207.json_Ag-Doped_ZnO_3631",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: Ag-Doped ZnO | solvent: absolute ethanol | shape: sheets | precursor: ZnO (nanosheets) | additive: polyvinylpyrrolidone (mass 0.01) | additive: silver nitrate (mass 0.012) | additive: sodium borohydride"
+}

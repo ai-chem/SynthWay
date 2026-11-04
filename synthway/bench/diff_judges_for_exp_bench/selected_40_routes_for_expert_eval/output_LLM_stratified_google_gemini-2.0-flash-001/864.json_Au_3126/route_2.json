@@ -1,0 +1,4 @@
+{
+  "retrieval_text": "composition: Au | method: sputtering | solvent: null | solvent.volume: null | temperature: 25.0 | ph: null | crystal_system: cubic | shape: film | size.length: 10000.0 | size.width: 10000.0 | size.depth: 0.1 | precursor: Au | precursor.mass: null | precursor.conc: null | additive: null | additive.mass: null | additive.conc: null | seed: null | seed.mass: null | seed.conc: null",
+  "raw_text": "Route 2: Sputtering Deposition of Gold\n1. Place a silicon wafer substrate in a sputtering chamber.\n2. Introduce argon gas into the chamber to a pressure of 5 mTorr.\n3. Sputter a gold target (99.99% purity) using a DC power of 100 W for 60 minutes to deposit a thin film of gold onto the silicon wafer. The substrate temperature is maintained at 25 °C during deposition.\nFinal product: Au thin film with a cubic crystal structure and a film shape, size 10000 × 10000 × 0.1 nm. The product's phase PDF number is 04-0784."
+}

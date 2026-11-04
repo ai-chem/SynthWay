@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "916.json_CoS_2533",
+  "composition": "CoS",
+  "elements": [
+    "Co",
+    "S"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "CoCl2",
+      "conc": 1000.0
+    },
+    {
+      "name": "CH4N2S",
+      "conc": 2000.0
+    }
+  ],
+  "solvent": {
+    "name": "methanol"
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "cube",
+    "size": {
+      "length": 25.0,
+      "width": 25.0,
+      "depth": 25.0
+    }
+  },
+  "pdfno_list": [
+    "47-1738"
+  ],
+  "source": {
+    "synthesis_id_original": "916.json_CoS_2533",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: CoS | method: hydrothermal | solvent: methanol | temperature: 180.0 | crystalsystem: cubic | shape: cube | size.length: 25.0 | size.width: 25.0 | size.depth: 25.0 | precursor: CoCl2 (conc 1000.0) | precursor: CH4N2S (conc 2000.0) | pdfno_list: 47-1738"
+}

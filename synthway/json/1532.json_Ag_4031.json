@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "1532.json_Ag_4031",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 4.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "ficus hispida linn. f. leaf extract"
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 100.0
+    },
+    {
+      "name": "phosphoric acid",
+      "conc": 100.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 90.0,
+    "ph": 9.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 20.0,
+      "width": 20.0,
+      "depth": 20.0
+    }
+  },
+  "pdfno_list": [
+    "04-0783"
+  ],
+  "source": {
+    "synthesis_id_original": "1532.json_Ag_4031",
+    "nodes": 17,
+    "edges": 17
+  },
+  "retrieval_text": "composition: Ag | method: green synthesis | solvent: water | temperature: 90.0 | pH: 9.0 | crystalsystem: cubic | shape: spherical | size.length: 20.0 | size.width: 20.0 | size.depth: 20.0 | precursor: AgNO3 (conc 4.0) | additive: ficus hispida linn. f. leaf extract | additive: sodium hydroxide (conc 100.0) | additive: phosphoric acid (conc 100.0) | pdfno_list: 04-0783"
+}

@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "1418.json_RC-Se_825",
+  "composition": "RC-Se",
+  "elements": [
+    "R",
+    "C",
+    "Se"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Chi"
+    },
+    {
+      "name": "Na2SeO3"
+    }
+  ],
+  "additives": [
+    {
+      "name": "rosa roxburghii extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 4.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 84.56,
+      "width": 84.56,
+      "depth": 84.56
+    }
+  },
+  "pdfno_list": [
+    "06-0362"
+  ],
+  "source": {
+    "synthesis_id_original": "1418.json_RC-Se_825",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: RC-Se | method: green synthesis | solvent: water | temperature: 4.0 | crystalsystem: hexagonal | shape: spherical | size.length: 84.56 | size.width: 84.56 | size.depth: 84.56 | precursor: Chi | precursor: Na2SeO3 | additive: rosa roxburghii extract | pdfno_list: 06-0362"
+}

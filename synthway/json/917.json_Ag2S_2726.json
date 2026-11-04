@@ -1,0 +1,36 @@
+{
+  "synthesis_id": "917.json_Ag2S_2726",
+  "composition": "Ag2S",
+  "elements": [
+    "Ag",
+    "S"
+  ],
+  "method": "sonochemical",
+  "precursors": [
+    {
+      "name": "AgNO3"
+    }
+  ],
+  "solvent": {
+    "name": "1-dodecanethiol",
+    "volume": 10.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "spherical",
+    "size": {
+      "length": 10.0,
+      "width": 10.0,
+      "depth": 10.0
+    }
+  },
+  "pdfno_list": [
+    "014-0072"
+  ],
+  "source": {
+    "synthesis_id_original": "917.json_Ag2S_2726",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Ag2S | method: sonochemical | solvent: 1-dodecanethiol | solvent.volume: 10.0 | crystalsystem: monoclinic | shape: spherical | size.length: 10.0 | size.width: 10.0 | size.depth: 10.0 | precursor: AgNO3 | pdfno_list: 014-0072"
+}

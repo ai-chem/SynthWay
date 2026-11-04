@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1771.json_NiCo2O4-Au_150",
+  "composition": "NiCo2O4-Au",
+  "elements": [
+    "Ni",
+    "Co",
+    "O",
+    "Au"
+  ],
+  "precursors": [
+    {
+      "name": "HAuCl4",
+      "conc": 20.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium borohydride",
+      "conc": 4.0
+    }
+  ],
+  "seeds": [
+    {
+      "name": "NiCo2O4",
+      "mass": 0.1
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 10.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "blocky"
+  },
+  "pdfno_list": [
+    "20-0781"
+  ],
+  "source": {
+    "synthesis_id_original": "1771.json_NiCo2O4-Au_150",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: NiCo2O4-Au | solvent: water | solvent.volume: 10.0 | crystalsystem: cubic | shape: blocky | precursor: HAuCl4 (conc 20.0) | additive: sodium borohydride (conc 4.0) | seed: NiCo2O4 (mass 0.1) | pdfno_list: 20-0781"
+}

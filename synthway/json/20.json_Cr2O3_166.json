@@ -1,0 +1,28 @@
+{
+  "synthesis_id": "20.json_Cr2O3_166",
+  "composition": "Cr2O3",
+  "elements": [
+    "Cr",
+    "O"
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 120.0
+  },
+  "conditions": {
+    "temperature": 700.0
+  },
+  "product": {
+    "size": {
+      "length": 56.96,
+      "width": 56.96,
+      "depth": 56.96
+    }
+  },
+  "source": {
+    "synthesis_id_original": "20.json_Cr2O3_166",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: Cr2O3 | solvent: deionized water | solvent.volume: 120.0 | temperature: 700.0 | size.length: 56.96 | size.width: 56.96 | size.depth: 56.96"
+}

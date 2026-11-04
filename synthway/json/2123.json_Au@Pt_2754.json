@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "2123.json_Au@Pt_2754",
+  "composition": "Au@Pt",
+  "elements": [
+    "Au",
+    "Pt"
+  ],
+  "precursors": [
+    {
+      "name": "PtCl4(2-)",
+      "conc": 2.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "ascorbic acid",
+      "conc": 100.0
+    },
+    {
+      "name": "cetyltrimethylammonium bromide",
+      "conc": 100.0
+    }
+  ],
+  "seeds": [
+    {
+      "name": "Au"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 30.0
+  },
+  "product": {
+    "size": {
+      "length": 50.0,
+      "width": 3.0,
+      "depth": 3.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2123.json_Au@Pt_2754",
+    "nodes": 12,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Au@Pt | solvent: water | temperature: 30.0 | size.length: 50.0 | size.width: 3.0 | size.depth: 3.0 | precursor: PtCl4(2-) (conc 2.0) | additive: ascorbic acid (conc 100.0) | additive: cetyltrimethylammonium bromide (conc 100.0) | seed: Au"
+}

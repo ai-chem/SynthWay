@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "1606.json_Ag_2327",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "aqueous e. abbyssinica extract"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water"
+  },
+  "conditions": {
+    "temperature": 80.0,
+    "ph": 13.0
+  },
+  "product": {
+    "size": {
+      "length": 9.2,
+      "width": 9.2,
+      "depth": 9.2
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1606.json_Ag_2327",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Ag | method: green synthesis | solvent: distilled water | temperature: 80.0 | pH: 13.0 | size.length: 9.2 | size.width: 9.2 | size.depth: 9.2 | precursor: AgNO3 (conc 1.0) | additive: aqueous e. abbyssinica extract"
+}

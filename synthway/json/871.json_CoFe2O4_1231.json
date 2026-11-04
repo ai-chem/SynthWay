@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "871.json_CoFe2O4_1231",
+  "composition": "CoFe2O4",
+  "elements": [
+    "Co",
+    "Fe",
+    "O"
+  ],
+  "method": "thermal treatment",
+  "precursors": [
+    {
+      "name": "Co(NO3)2",
+      "mass": 0.018
+    },
+    {
+      "name": "Fe(NO3)3*9H2O",
+      "mass": 0.048
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 3.0
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 450.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "size": {
+      "width": 12.5
+    }
+  },
+  "pdfno_list": [
+    "22-108"
+  ],
+  "source": {
+    "synthesis_id_original": "871.json_CoFe2O4_1231",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: CoFe2O4 | method: thermal treatment | solvent: deionized water | solvent.volume: 100.0 | temperature: 450.0 | crystalsystem: face-centered cubic | size.width: 12.5 | precursor: Co(NO3)2 (mass 0.018) | precursor: Fe(NO3)3*9H2O (mass 0.048) | additive: polyvinylpyrrolidone (mass 3.0) | pdfno_list: 22-108"
+}

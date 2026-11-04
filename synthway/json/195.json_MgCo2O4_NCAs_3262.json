@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "195.json_MgCo2O4_NCAs_3262",
+  "composition": "MgCo2O4 NCAs",
+  "elements": [
+    "Mg",
+    "Co",
+    "O",
+    "N",
+    "C",
+    "As"
+  ],
+  "method": "hydrothermal",
+  "solvent": {
+    "name": "deionized water",
+    "volume": 40.0
+  },
+  "conditions": {
+    "temperature": 400.0
+  },
+  "product": {
+    "crystalsystem": "cubic spinel",
+    "shape": "grain",
+    "size": {
+      "length": 90.0,
+      "width": 90.0,
+      "depth": 90.0
+    }
+  },
+  "pdfno_list": [
+    "02-1073"
+  ],
+  "source": {
+    "synthesis_id_original": "195.json_MgCo2O4_NCAs_3262",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: MgCo2O4 NCAs | method: hydrothermal | solvent: deionized water | solvent.volume: 40.0 | temperature: 400.0 | crystalsystem: cubic spinel | shape: grain | size.length: 90.0 | size.width: 90.0 | size.depth: 90.0 | pdfno_list: 02-1073"
+}

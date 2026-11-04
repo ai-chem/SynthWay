@@ -1,0 +1,66 @@
+{
+  "synthesis_id": "2264.json_Bi2S3_1613",
+  "composition": "Bi2S3",
+  "elements": [
+    "Bi",
+    "S"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "Bi(NO3)3·5H2O",
+      "mass": 0.546,
+      "conc": 1.125
+    },
+    {
+      "name": "Bi2O3",
+      "mass": 0.05,
+      "conc": 0.1
+    },
+    {
+      "name": "TAA",
+      "mass": 0.05,
+      "conc": 0.7
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 0.465,
+      "conc": 0.0465
+    },
+    {
+      "name": "urea",
+      "mass": 0.241,
+      "conc": 4.05
+    },
+    {
+      "name": "ethylene glycol"
+    }
+  ],
+  "solvent": {
+    "name": "nitric acid",
+    "volume": 15.0
+  },
+  "conditions": {
+    "temperature": 150.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "hollow nanospheres",
+    "size": {
+      "length": 180.0,
+      "width": 180.0,
+      "depth": 180.0
+    }
+  },
+  "pdfno_list": [
+    "89-8964"
+  ],
+  "source": {
+    "synthesis_id_original": "2264.json_Bi2S3_1613",
+    "nodes": 26,
+    "edges": 26
+  },
+  "retrieval_text": "composition: Bi2S3 | method: hydrothermal | solvent: nitric acid | solvent.volume: 15.0 | temperature: 150.0 | crystalsystem: orthorhombic | shape: hollow nanospheres | size.length: 180.0 | size.width: 180.0 | size.depth: 180.0 | precursor: Bi(NO3)3·5H2O (mass 0.546; conc 1.125) | precursor: Bi2O3 (mass 0.05; conc 0.1) | precursor: TAA (mass 0.05; conc 0.7) | additive: polyvinylpyrrolidone (mass 0.465; conc 0.0465) | additive: urea (mass 0.241; conc 4.05) | additive: ethylene glycol | pdfno_list: 89-8964"
+}

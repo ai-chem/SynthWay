@@ -1,0 +1,121 @@
+ID,generator,composition,route,criterion,v1,v2,v3,judge_mean,analysis_order,subgroup
+5,Claude Opus 4.5,10Co3O4@CeO2,route_1,CPC,0.5,0.8,0.7,0.667,1,composition_rare
+5,Claude Opus 4.5,10Co3O4@CeO2,route_1,Relevance,1.0,1.0,1.0,1.0,1,composition_rare
+5,Claude Opus 4.5,10Co3O4@CeO2,route_1,Faithfulness,1.0,1.0,1.0,1.0,1,composition_rare
+4,Claude Opus 4.5,Ag,route_3,CPC,0.9,0.9,0.9,0.9,2,composition_top
+4,Claude Opus 4.5,Ag,route_3,Relevance,1.0,1.0,1.0,1.0,2,composition_top
+4,Claude Opus 4.5,Ag,route_3,Faithfulness,1.0,1.0,1.0,1.0,2,composition_top
+10,Claude Opus 4.5,Au,route_1,CPC,0.9,0.9,0.9,0.9,3,composition_top
+10,Claude Opus 4.5,Au,route_1,Relevance,1.0,1.0,1.0,1.0,3,composition_top
+10,Claude Opus 4.5,Au,route_1,Faithfulness,1.0,1.0,1.0,1.0,3,composition_top
+1,Claude Opus 4.5,CD-MOF,route_2,CPC,0.9,0.9,0.9,0.9,4,composition_rare
+1,Claude Opus 4.5,CD-MOF,route_2,Relevance,1.0,1.0,1.0,1.0,4,composition_rare
+1,Claude Opus 4.5,CD-MOF,route_2,Faithfulness,0.75,0.75,0.667,0.722,4,composition_rare
+9,Claude Opus 4.5,Cu,route_1,CPC,0.9,0.9,0.8,0.867,5,composition_top
+9,Claude Opus 4.5,Cu,route_1,Relevance,1.0,1.0,1.0,1.0,5,composition_top
+9,Claude Opus 4.5,Cu,route_1,Faithfulness,1.0,1.0,1.0,1.0,5,composition_top
+8,Claude Opus 4.5,Cu2O,route_2,CPC,0.9,0.8,0.9,0.867,6,composition_top
+8,Claude Opus 4.5,Cu2O,route_2,Relevance,1.0,1.0,1.0,1.0,6,composition_top
+8,Claude Opus 4.5,Cu2O,route_2,Faithfulness,1.0,1.0,1.0,1.0,6,composition_top
+6,Claude Opus 4.5,PEG coated Fe3O4,route_1,CPC,0.8,0.8,0.8,0.8,7,composition_rare
+6,Claude Opus 4.5,PEG coated Fe3O4,route_1,Relevance,1.0,1.0,1.0,1.0,7,composition_rare
+6,Claude Opus 4.5,PEG coated Fe3O4,route_1,Faithfulness,1.0,1.0,1.0,1.0,7,composition_rare
+2,Claude Opus 4.5,Se,route_2,CPC,0.9,0.9,0.9,0.9,8,composition_top
+2,Claude Opus 4.5,Se,route_2,Relevance,1.0,1.0,1.0,1.0,8,composition_top
+2,Claude Opus 4.5,Se,route_2,Faithfulness,1.0,0.895,0.895,0.93,8,composition_top
+7,Claude Opus 4.5,SiO2,route_2,CPC,0.9,0.9,0.9,0.9,9,composition_top
+7,Claude Opus 4.5,SiO2,route_2,Relevance,1.0,1.0,1.0,1.0,9,composition_top
+7,Claude Opus 4.5,SiO2,route_2,Faithfulness,1.0,1.0,1.0,1.0,9,composition_top
+3,Claude Opus 4.5,Zn0.1Ni0.9,route_1,CPC,0.7,0.7,0.7,0.7,10,composition_rare
+3,Claude Opus 4.5,Zn0.1Ni0.9,route_1,Relevance,1.0,1.0,1.0,1.0,10,composition_rare
+3,Claude Opus 4.5,Zn0.1Ni0.9,route_1,Faithfulness,0.929,1.0,0.882,0.937,10,composition_rare
+15,Gemini 2.0 Flash,10Co3O4@CeO2,route_1,CPC,1.0,0.8,1.0,0.933,11,composition_rare
+15,Gemini 2.0 Flash,10Co3O4@CeO2,route_1,Relevance,1.0,1.0,1.0,1.0,11,composition_rare
+15,Gemini 2.0 Flash,10Co3O4@CeO2,route_1,Faithfulness,1.0,1.0,1.0,1.0,11,composition_rare
+14,Gemini 2.0 Flash,Ag,route_1,CPC,1.0,1.0,1.0,1.0,12,composition_top
+14,Gemini 2.0 Flash,Ag,route_1,Relevance,1.0,1.0,1.0,1.0,12,composition_top
+14,Gemini 2.0 Flash,Ag,route_1,Faithfulness,1.0,1.0,1.0,1.0,12,composition_top
+20,Gemini 2.0 Flash,Au,route_2,CPC,1.0,1.0,1.0,1.0,13,composition_top
+20,Gemini 2.0 Flash,Au,route_2,Relevance,1.0,1.0,1.0,1.0,13,composition_top
+20,Gemini 2.0 Flash,Au,route_2,Faithfulness,1.0,1.0,1.0,1.0,13,composition_top
+11,Gemini 2.0 Flash,CD-MOF,route_2,CPC,1.0,1.0,1.0,1.0,14,composition_rare
+11,Gemini 2.0 Flash,CD-MOF,route_2,Relevance,1.0,1.0,1.0,1.0,14,composition_rare
+11,Gemini 2.0 Flash,CD-MOF,route_2,Faithfulness,1.0,1.0,1.0,1.0,14,composition_rare
+18,Gemini 2.0 Flash,Cu2O,route_1,CPC,1.0,1.0,1.0,1.0,15,composition_top
+18,Gemini 2.0 Flash,Cu2O,route_1,Relevance,1.0,1.0,1.0,1.0,15,composition_top
+18,Gemini 2.0 Flash,Cu2O,route_1,Faithfulness,1.0,0.889,1.0,0.963,15,composition_top
+16,Gemini 2.0 Flash,PEG coated Fe3O4,route_3,CPC,0.9,1.0,1.0,0.967,16,composition_rare
+16,Gemini 2.0 Flash,PEG coated Fe3O4,route_3,Relevance,1.0,1.0,1.0,1.0,16,composition_rare
+16,Gemini 2.0 Flash,PEG coated Fe3O4,route_3,Faithfulness,0.857,0.714,0.714,0.762,16,composition_rare
+12,Gemini 2.0 Flash,Se,route_2,CPC,1.0,1.0,1.0,1.0,17,composition_top
+12,Gemini 2.0 Flash,Se,route_2,Relevance,1.0,1.0,1.0,1.0,17,composition_top
+12,Gemini 2.0 Flash,Se,route_2,Faithfulness,1.0,1.0,1.0,1.0,17,composition_top
+17,Gemini 2.0 Flash,SiO2,route_2,CPC,1.0,1.0,1.0,1.0,18,composition_top
+17,Gemini 2.0 Flash,SiO2,route_2,Relevance,1.0,1.0,1.0,1.0,18,composition_top
+17,Gemini 2.0 Flash,SiO2,route_2,Faithfulness,1.0,1.0,1.0,1.0,18,composition_top
+13,Gemini 2.0 Flash,Zn0.1Ni0.9,route_1,CPC,1.0,0.9,1.0,0.967,19,composition_rare
+13,Gemini 2.0 Flash,Zn0.1Ni0.9,route_1,Relevance,1.0,1.0,1.0,1.0,19,composition_rare
+13,Gemini 2.0 Flash,Zn0.1Ni0.9,route_1,Faithfulness,0.875,0.875,0.875,0.875,19,composition_rare
+19,Gemini 2.0 Flash,Сu,route_3,CPC,1.0,1.0,1.0,1.0,20,composition_top
+19,Gemini 2.0 Flash,Сu,route_3,Relevance,1.0,1.0,1.0,1.0,20,composition_top
+19,Gemini 2.0 Flash,Сu,route_3,Faithfulness,1.0,1.0,1.0,1.0,20,composition_top
+25,Llama 4 Maverick,10Co3O4@CeO2,route_1,CPC,0.9,1.0,0.8,0.9,21,composition_rare
+25,Llama 4 Maverick,10Co3O4@CeO2,route_1,Relevance,0.938,1.0,1.0,0.979,21,composition_rare
+25,Llama 4 Maverick,10Co3O4@CeO2,route_1,Faithfulness,1.0,1.0,1.0,1.0,21,composition_rare
+24,Llama 4 Maverick,Ag,route_2,CPC,1.0,0.9,0.9,0.933,22,composition_top
+24,Llama 4 Maverick,Ag,route_2,Relevance,1.0,0.455,0.444,0.633,22,composition_top
+24,Llama 4 Maverick,Ag,route_2,Faithfulness,0.909,0.923,0.308,0.713,22,composition_top
+30,Llama 4 Maverick,Au,route_1,CPC,1.0,1.0,0.9,0.967,23,composition_top
+30,Llama 4 Maverick,Au,route_1,Relevance,1.0,1.0,1.0,1.0,23,composition_top
+30,Llama 4 Maverick,Au,route_1,Faithfulness,0.9,0.636,0.9,0.812,23,composition_top
+21,Llama 4 Maverick,CD-MOF,route_1,CPC,0.9,0.8,0.9,0.867,24,composition_rare
+21,Llama 4 Maverick,CD-MOF,route_1,Relevance,1.0,1.0,1.0,1.0,24,composition_rare
+21,Llama 4 Maverick,CD-MOF,route_1,Faithfulness,1.0,1.0,0.9,0.967,24,composition_rare
+28,Llama 4 Maverick,Cu2O,route_2,CPC,0.9,0.9,0.9,0.9,25,composition_top
+28,Llama 4 Maverick,Cu2O,route_2,Relevance,0.455,0.455,0.455,0.455,25,composition_top
+28,Llama 4 Maverick,Cu2O,route_2,Faithfulness,1.0,1.0,1.0,1.0,25,composition_top
+26,Llama 4 Maverick,PEG coated Fe3O4,route_2,CPC,1.0,0.9,1.0,0.967,26,composition_rare
+26,Llama 4 Maverick,PEG coated Fe3O4,route_2,Relevance,0.933,0.357,0.357,0.549,26,composition_rare
+26,Llama 4 Maverick,PEG coated Fe3O4,route_2,Faithfulness,0.929,0.909,0.929,0.922,26,composition_rare
+22,Llama 4 Maverick,Se,route_1,CPC,0.8,0.9,0.8,0.833,27,composition_top
+22,Llama 4 Maverick,Se,route_1,Relevance,1.0,1.0,0.364,0.788,27,composition_top
+22,Llama 4 Maverick,Se,route_1,Faithfulness,1.0,1.0,1.0,1.0,27,composition_top
+27,Llama 4 Maverick,SiO2,route_2,CPC,0.9,0.8,0.9,0.867,28,composition_top
+27,Llama 4 Maverick,SiO2,route_2,Relevance,1.0,1.0,1.0,1.0,28,composition_top
+27,Llama 4 Maverick,SiO2,route_2,Faithfulness,1.0,1.0,1.0,1.0,28,composition_top
+23,Llama 4 Maverick,Zn0.1Ni0.9,route_1,CPC,1.0,1.0,1.0,1.0,29,composition_rare
+23,Llama 4 Maverick,Zn0.1Ni0.9,route_1,Relevance,1.0,1.0,1.0,1.0,29,composition_rare
+23,Llama 4 Maverick,Zn0.1Ni0.9,route_1,Faithfulness,1.0,0.917,1.0,0.972,29,composition_rare
+29,Llama 4 Maverick,Сu,route_1,CPC,1.0,1.0,0.9,0.967,30,composition_top
+29,Llama 4 Maverick,Сu,route_1,Relevance,1.0,1.0,1.0,1.0,30,composition_top
+29,Llama 4 Maverick,Сu,route_1,Faithfulness,1.0,1.0,1.0,1.0,30,composition_top
+35,Nemotron 3 Nano 30B A3B,10Co3O4@CeO2,route_1,CPC,0.9,0.9,0.9,0.9,31,composition_rare
+35,Nemotron 3 Nano 30B A3B,10Co3O4@CeO2,route_1,Relevance,1.0,1.0,1.0,1.0,31,composition_rare
+35,Nemotron 3 Nano 30B A3B,10Co3O4@CeO2,route_1,Faithfulness,1.0,0.833,1.0,0.944,31,composition_rare
+34,Nemotron 3 Nano 30B A3B,Ag,route_1,CPC,0.9,0.9,0.9,0.9,32,composition_top
+34,Nemotron 3 Nano 30B A3B,Ag,route_1,Relevance,1.0,1.0,1.0,1.0,32,composition_top
+34,Nemotron 3 Nano 30B A3B,Ag,route_1,Faithfulness,1.0,1.0,1.0,1.0,32,composition_top
+40,Nemotron 3 Nano 30B A3B,Au,route_3,CPC,1.0,0.8,0.8,0.867,33,composition_top
+40,Nemotron 3 Nano 30B A3B,Au,route_3,Relevance,1.0,1.0,1.0,1.0,33,composition_top
+40,Nemotron 3 Nano 30B A3B,Au,route_3,Faithfulness,1.0,0.5,0.833,0.778,33,composition_top
+31,Nemotron 3 Nano 30B A3B,CD-MOF,route_3,CPC,0.7,0.3,0.6,0.533,34,composition_rare
+31,Nemotron 3 Nano 30B A3B,CD-MOF,route_3,Relevance,1.0,1.0,1.0,1.0,34,composition_rare
+31,Nemotron 3 Nano 30B A3B,CD-MOF,route_3,Faithfulness,1.0,1.0,0.778,0.926,34,composition_rare
+38,Nemotron 3 Nano 30B A3B,Cu2O,route_1,CPC,1.0,0.9,0.6,0.833,35,composition_top
+38,Nemotron 3 Nano 30B A3B,Cu2O,route_1,Relevance,1.0,1.0,1.0,1.0,35,composition_top
+38,Nemotron 3 Nano 30B A3B,Cu2O,route_1,Faithfulness,1.0,1.0,0.833,0.944,35,composition_top
+36,Nemotron 3 Nano 30B A3B,PEG coated Fe3O4,route_1,CPC,0.8,0.8,0.9,0.833,36,composition_rare
+36,Nemotron 3 Nano 30B A3B,PEG coated Fe3O4,route_1,Relevance,1.0,1.0,1.0,1.0,36,composition_rare
+36,Nemotron 3 Nano 30B A3B,PEG coated Fe3O4,route_1,Faithfulness,0.8,0.8,0.8,0.8,36,composition_rare
+32,Nemotron 3 Nano 30B A3B,Se,route_2,CPC,0.5,0.2,0.7,0.467,37,composition_top
+32,Nemotron 3 Nano 30B A3B,Se,route_2,Relevance,1.0,1.0,1.0,1.0,37,composition_top
+32,Nemotron 3 Nano 30B A3B,Se,route_2,Faithfulness,1.0,1.0,0.8,0.933,37,composition_top
+37,Nemotron 3 Nano 30B A3B,SiO2,route_1,CPC,1.0,0.9,0.9,0.933,38,composition_top
+37,Nemotron 3 Nano 30B A3B,SiO2,route_1,Relevance,1.0,1.0,1.0,1.0,38,composition_top
+37,Nemotron 3 Nano 30B A3B,SiO2,route_1,Faithfulness,1.0,1.0,1.0,1.0,38,composition_top
+33,Nemotron 3 Nano 30B A3B,Zn0.1Ni0.9,route_1,CPC,1.0,0.9,0.9,0.933,39,composition_rare
+33,Nemotron 3 Nano 30B A3B,Zn0.1Ni0.9,route_1,Relevance,1.0,1.0,1.0,1.0,39,composition_rare
+33,Nemotron 3 Nano 30B A3B,Zn0.1Ni0.9,route_1,Faithfulness,1.0,1.0,1.0,1.0,39,composition_rare
+39,Nemotron 3 Nano 30B A3B,Сu,route_1,CPC,0.9,0.7,0.9,0.833,40,composition_top
+39,Nemotron 3 Nano 30B A3B,Сu,route_1,Relevance,1.0,1.0,1.0,1.0,40,composition_top
+39,Nemotron 3 Nano 30B A3B,Сu,route_1,Faithfulness,1.0,0.909,1.0,0.97,40,composition_top

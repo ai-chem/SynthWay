@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "1293.json_ZnO_3411",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "solid state synthesis",
+  "precursors": [
+    {
+      "name": "Zn(NO3)2",
+      "mass": 4.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "xanthan gum",
+      "mass": 1.0
+    },
+    {
+      "name": "sodium hydroxide",
+      "mass": 2.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "hexagonal",
+    "size": {
+      "length": 40.0,
+      "width": 40.0,
+      "depth": 40.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1293.json_ZnO_3411",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: ZnO | method: solid state synthesis | solvent: water | crystalsystem: hexagonal | shape: hexagonal | size.length: 40.0 | size.width: 40.0 | size.depth: 40.0 | precursor: Zn(NO3)2 (mass 4.0) | additive: xanthan gum (mass 1.0) | additive: sodium hydroxide (mass 2.0)"
+}

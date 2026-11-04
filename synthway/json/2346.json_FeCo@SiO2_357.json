@@ -1,0 +1,62 @@
+{
+  "synthesis_id": "2346.json_FeCo@SiO2_357",
+  "composition": "FeCo@SiO2",
+  "elements": [
+    "Fe",
+    "Co",
+    "Si",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "FeCl2·4H2O"
+    },
+    {
+      "name": "Co(Ac)2·4H2O"
+    },
+    {
+      "name": "FeCo",
+      "mass": 0.1
+    },
+    {
+      "name": "Si(OC2H5)4"
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide"
+    },
+    {
+      "name": "ethylene glycol"
+    },
+    {
+      "name": "ammonium hydroxide"
+    },
+    {
+      "name": "ethanol"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 130.0
+  },
+  "product": {
+    "size": {
+      "length": 30.0,
+      "width": 30.0,
+      "depth": 30.0
+    }
+  },
+  "pdfno_list": [
+    "49-1567"
+  ],
+  "source": {
+    "synthesis_id_original": "2346.json_FeCo@SiO2_357",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: FeCo@SiO2 | solvent: deionized water | solvent.volume: 10.0 | temperature: 130.0 | size.length: 30.0 | size.width: 30.0 | size.depth: 30.0 | precursor: FeCl2·4H2O | precursor: Co(Ac)2·4H2O | precursor: FeCo (mass 0.1) | precursor: Si(OC2H5)4 | additive: sodium hydroxide | additive: ethylene glycol | additive: ammonium hydroxide | additive: ethanol | pdfno_list: 49-1567"
+}

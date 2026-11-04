@@ -1,0 +1,55 @@
+{
+  "synthesis_id": "1626.json_CQD/ZnO_2412",
+  "composition": "CQD/ZnO",
+  "elements": [
+    "C",
+    "Q",
+    "D",
+    "Zn",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Zn(NO3)2*6H2O",
+      "mass": 5.95
+    },
+    {
+      "name": "CQDs"
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "mass": 1.6
+    },
+    {
+      "name": "cetyltrimethylammonium bromide",
+      "mass": 0.5
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 60.0
+  },
+  "conditions": {
+    "temperature": 90.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "wire",
+    "size": {
+      "length": 1720.0,
+      "width": 1720.0,
+      "depth": 1720.0
+    }
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "1626.json_CQD/ZnO_2412",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: CQD/ZnO | solvent: deionized water | solvent.volume: 60.0 | temperature: 90.0 | crystalsystem: hexagonal | shape: wire | size.length: 1720.0 | size.width: 1720.0 | size.depth: 1720.0 | precursor: Zn(NO3)2*6H2O (mass 5.95) | precursor: CQDs | additive: sodium hydroxide (mass 1.6) | additive: cetyltrimethylammonium bromide (mass 0.5) | pdfno_list: 36-1451"
+}

@@ -1,0 +1,53 @@
+{
+  "synthesis_id": "999.json_NiFe2O4_3064",
+  "composition": "NiFe2O4",
+  "elements": [
+    "Ni",
+    "Fe",
+    "O"
+  ],
+  "method": "coprecipitation",
+  "precursors": [
+    {
+      "name": "Fe(NO3)3*9H2O",
+      "conc": 200.0
+    },
+    {
+      "name": "Ni(NO3)2*6H2O",
+      "conc": 100.0
+    },
+    {
+      "name": "N2H4*H2O",
+      "mass": 5.16
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyethylene oxide",
+      "mass": 0.4
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 300.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "shape": "wire",
+    "size": {
+      "length": 144.5,
+      "width": 62.5
+    }
+  },
+  "pdfno_list": [
+    "10-0325"
+  ],
+  "source": {
+    "synthesis_id_original": "999.json_NiFe2O4_3064",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: NiFe2O4 | method: coprecipitation | solvent: water | temperature: 300.0 | crystalsystem: face-centered cubic | shape: wire | size.length: 144.5 | size.width: 62.5 | precursor: Fe(NO3)3*9H2O (conc 200.0) | precursor: Ni(NO3)2*6H2O (conc 100.0) | precursor: N2H4*H2O (mass 5.16) | additive: polyethylene oxide (mass 0.4) | pdfno_list: 10-0325"
+}

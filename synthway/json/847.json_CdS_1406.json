@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "847.json_CdS_1406",
+  "composition": "CdS",
+  "elements": [
+    "Cd",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "CH4N2S",
+      "conc": 1000.0
+    },
+    {
+      "name": "CdSO4*8H2O",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "cetyltrimethylammonium bromide",
+      "mass": 0.104
+    }
+  ],
+  "solvent": {
+    "name": "t‐c4h9oh+c6h12",
+    "volume": 29.0
+  },
+  "conditions": {
+    "temperature": 150.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 40.0,
+      "width": 40.0,
+      "depth": 40.0
+    }
+  },
+  "pdfno_list": [
+    "01-074-5617"
+  ],
+  "source": {
+    "synthesis_id_original": "847.json_CdS_1406",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: CdS | solvent: t‐c4h9oh+c6h12 | solvent.volume: 29.0 | temperature: 150.0 | crystalsystem: cubic | size.length: 40.0 | size.width: 40.0 | size.depth: 40.0 | precursor: CH4N2S (conc 1000.0) | precursor: CdSO4*8H2O (conc 100.0) | additive: cetyltrimethylammonium bromide (mass 0.104) | pdfno_list: 01-074-5617"
+}

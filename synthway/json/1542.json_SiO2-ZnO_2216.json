@@ -1,0 +1,55 @@
+{
+  "synthesis_id": "1542.json_SiO2-ZnO_2216",
+  "composition": "SiO2–ZnO",
+  "elements": [
+    "Si",
+    "O",
+    "Zn"
+  ],
+  "method": "chemical synthesis",
+  "precursors": [
+    {
+      "name": "Si(OC2H5)4"
+    },
+    {
+      "name": "Zn(CH3COO)2",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "ammonia"
+    },
+    {
+      "name": "polyethylene glycol"
+    },
+    {
+      "name": "sodium hydroxide"
+    },
+    {
+      "name": "nitric acid"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 60.0,
+    "ph": 6.0
+  },
+  "product": {
+    "shape": "irregular",
+    "size": {
+      "length": 95.0,
+      "width": 95.0,
+      "depth": 95.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1542.json_SiO2-ZnO_2216",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: SiO2–ZnO | method: chemical synthesis | solvent: deionized water | solvent.volume: 50.0 | temperature: 60.0 | pH: 6.0 | shape: irregular | size.length: 95.0 | size.width: 95.0 | size.depth: 95.0 | precursor: Si(OC2H5)4 | precursor: Zn(CH3COO)2 (conc 100.0) | additive: ammonia | additive: polyethylene glycol | additive: sodium hydroxide | additive: nitric acid"
+}

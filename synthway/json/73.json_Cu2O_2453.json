@@ -1,0 +1,32 @@
+{
+  "synthesis_id": "73.json_Cu2O_2453",
+  "composition": "Cu2O",
+  "elements": [
+    "Cu",
+    "O"
+  ],
+  "solvent": {
+    "name": "c18h37n",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 230.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "size": {
+      "length": 9.0,
+      "width": 9.0,
+      "depth": 9.0
+    }
+  },
+  "pdfno_list": [
+    "85-1326"
+  ],
+  "source": {
+    "synthesis_id_original": "73.json_Cu2O_2453",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: Cu2O | solvent: c18h37n | solvent.volume: 10.0 | temperature: 230.0 | crystalsystem: face-centered cubic | size.length: 9.0 | size.width: 9.0 | size.depth: 9.0 | pdfno_list: 85-1326"
+}

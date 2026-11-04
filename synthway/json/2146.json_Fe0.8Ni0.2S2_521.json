@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "2146.json_Fe0.8Ni0.2S2_521",
+  "composition": "Fe0.8Ni0.2S2",
+  "elements": [
+    "Fe",
+    "Ni",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "Fe(NO3)3·9H2O",
+      "mass": 3.636,
+      "conc": 9.0
+    },
+    {
+      "name": "Ni(NO3)2·6H2O",
+      "mass": 0.291,
+      "conc": 1.0
+    },
+    {
+      "name": "Na2S·9H2O",
+      "mass": 2.4,
+      "conc": 10.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "shape": "sheets"
+  },
+  "pdfno_list": [
+    "03-1131"
+  ],
+  "source": {
+    "synthesis_id_original": "2146.json_Fe0.8Ni0.2S2_521",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Fe0.8Ni0.2S2 | solvent: water | solvent.volume: 50.0 | temperature: 80.0 | shape: sheets | precursor: Fe(NO3)3·9H2O (mass 3.636; conc 9.0) | precursor: Ni(NO3)2·6H2O (mass 0.291; conc 1.0) | precursor: Na2S·9H2O (mass 2.4; conc 10.0) | pdfno_list: 03-1131"
+}

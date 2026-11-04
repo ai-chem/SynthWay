@@ -1,0 +1,28 @@
+{
+  "synthesis_id": "267.json_CdSe_315",
+  "composition": "CdSe",
+  "elements": [
+    "Cd",
+    "Se"
+  ],
+  "method": "solvo-hydrothermal",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 50.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 50.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "267.json_CdSe_315",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: CdSe | method: solvo-hydrothermal | solvent: water | temperature: 50.0 | crystalsystem: hexagonal | shape: spherical | size.length: 50.0"
+}

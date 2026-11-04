@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "1416.json_MnO2_3897",
+  "composition": "MnO2",
+  "elements": [
+    "Mn",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Mn(CH3COO)2",
+      "conc": 5.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "tridax procumbens leaf extract"
+    }
+  ],
+  "solvent": {
+    "name": "double distilled water"
+  },
+  "conditions": {
+    "temperature": 70.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "size": {
+      "length": 0.328,
+      "width": 0.328,
+      "depth": 0.328
+    }
+  },
+  "pdfno_list": [
+    "96-101-1263"
+  ],
+  "source": {
+    "synthesis_id_original": "1416.json_MnO2_3897",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: MnO2 | method: green synthesis | solvent: double distilled water | temperature: 70.0 | crystalsystem: tetragonal | size.length: 0.328 | size.width: 0.328 | size.depth: 0.328 | precursor: Mn(CH3COO)2 (conc 5.0) | additive: tridax procumbens leaf extract | pdfno_list: 96-101-1263"
+}

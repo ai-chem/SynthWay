@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "2152.json_ZnO_3820",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "modified sol-gel method",
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2",
+      "conc": 25.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "yeast extract",
+      "mass": 3.0
+    }
+  ],
+  "solvent": {
+    "name": "ultrapure water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 500.0
+  },
+  "product": {
+    "crystalsystem": "polycrystalline",
+    "shape": "nanosphere",
+    "size": {
+      "length": 20.0,
+      "width": 20.0,
+      "depth": 20.0
+    }
+  },
+  "pdfno_list": [
+    "89-1397"
+  ],
+  "source": {
+    "synthesis_id_original": "2152.json_ZnO_3820",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: ZnO | method: modified sol-gel method | solvent: ultrapure water | solvent.volume: 100.0 | temperature: 500.0 | crystalsystem: polycrystalline | shape: nanosphere | size.length: 20.0 | size.width: 20.0 | size.depth: 20.0 | precursor: Zn(CH3COO)2 (conc 25.0) | additive: yeast extract (mass 3.0) | pdfno_list: 89-1397"
+}

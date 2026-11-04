@@ -1,0 +1,51 @@
+{
+  "synthesis_id": "1806.json_RhPt_3061",
+  "composition": "RhPt",
+  "elements": [
+    "Rh",
+    "Pt"
+  ],
+  "method": "one-pot wet chemical",
+  "precursors": [
+    {
+      "name": "H2PtCl6",
+      "conc": 10.0
+    },
+    {
+      "name": "RhCl3",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "ca",
+      "conc": 10.0
+    },
+    {
+      "name": "sodium borohydride",
+      "conc": 60.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 16.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "flower-like microspheres",
+    "size": {
+      "length": 3.5,
+      "width": 3.5,
+      "depth": 3.5
+    }
+  },
+  "pdfno_list": [
+    "05-0685, 04-0802"
+  ],
+  "source": {
+    "synthesis_id_original": "1806.json_RhPt_3061",
+    "nodes": 17,
+    "edges": 17
+  },
+  "retrieval_text": "composition: RhPt | method: one-pot wet chemical | solvent: water | solvent.volume: 16.0 | crystalsystem: cubic | shape: flower-like microspheres | size.length: 3.5 | size.width: 3.5 | size.depth: 3.5 | precursor: H2PtCl6 (conc 10.0) | precursor: RhCl3 (conc 10.0) | additive: ca (conc 10.0) | additive: sodium borohydride (conc 60.0) | pdfno_list: 05-0685, 04-0802"
+}

@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "1675.json_Ag_204",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "aqueous extracts of a. absinthium"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 125.5,
+      "width": 125.5,
+      "depth": 125.5
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1675.json_Ag_204",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Ag | method: green synthesis | solvent: water | solvent.volume: 10.0 | temperature: 25.0 | shape: spherical | size.length: 125.5 | size.width: 125.5 | size.depth: 125.5 | precursor: AgNO3 (conc 1.0) | additive: aqueous extracts of a. absinthium"
+}

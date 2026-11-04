@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "513.json_Au@saponins_niosomes_998",
+  "composition": "Au@saponins niosomes",
+  "elements": [
+    "Au"
+  ],
+  "method": "one-pot biogenic synthesis",
+  "precursors": [
+    {
+      "name": "HAuCl4",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sapindus mukorossi pericarps extract"
+    },
+    {
+      "name": "sodium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 50.0,
+    "ph": 7.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 3.0,
+      "width": 3.0,
+      "depth": 3.0
+    }
+  },
+  "pdfno_list": [
+    "04-0784"
+  ],
+  "source": {
+    "synthesis_id_original": "513.json_Au@saponins_niosomes_998",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Au@saponins niosomes | method: one-pot biogenic synthesis | solvent: water | temperature: 50.0 | pH: 7.0 | crystalsystem: cubic | shape: spherical | size.length: 3.0 | size.width: 3.0 | size.depth: 3.0 | precursor: HAuCl4 (conc 1.0) | additive: sapindus mukorossi pericarps extract | additive: sodium hydroxide | pdfno_list: 04-0784"
+}

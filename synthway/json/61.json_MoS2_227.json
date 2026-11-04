@@ -1,0 +1,31 @@
+{
+  "synthesis_id": "61.json_MoS2_227",
+  "composition": "MoS2",
+  "elements": [
+    "Mo",
+    "S"
+  ],
+  "method": "hydrothermal",
+  "solvent": {
+    "name": "water",
+    "volume": 40.0
+  },
+  "conditions": {
+    "temperature": 220.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "sheets",
+    "size": {
+      "length": 220.9,
+      "width": 220.9,
+      "depth": 220.9
+    }
+  },
+  "source": {
+    "synthesis_id_original": "61.json_MoS2_227",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: MoS2 | method: hydrothermal | solvent: water | solvent.volume: 40.0 | temperature: 220.0 | crystalsystem: hexagonal | shape: sheets | size.length: 220.9 | size.width: 220.9 | size.depth: 220.9"
+}

@@ -1,0 +1,37 @@
+{
+  "synthesis_id": "402.json_ZnO_3388",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Zn(NO3)2·6H2O",
+      "conc": 130.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 1300.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "size": {
+      "length": 49.0,
+      "width": 49.0,
+      "depth": 49.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "402.json_ZnO_3388",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: ZnO | solvent: water | crystalsystem: hexagonal | size.length: 49.0 | size.width: 49.0 | size.depth: 49.0 | precursor: Zn(NO3)2·6H2O (conc 130.0) | additive: sodium hydroxide (conc 1300.0)"
+}

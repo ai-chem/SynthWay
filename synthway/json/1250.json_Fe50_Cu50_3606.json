@@ -1,0 +1,36 @@
+{
+  "synthesis_id": "1250.json_Fe50/Cu50_3606",
+  "composition": "Fe50/Cu50",
+  "elements": [
+    "Fe",
+    "Cu"
+  ],
+  "method": "electric explosion",
+  "precursors": [
+    {
+      "name": "Cu"
+    },
+    {
+      "name": "Fe"
+    }
+  ],
+  "solvent": {
+    "name": "argon-oxygen mixture"
+  },
+  "product": {
+    "size": {
+      "length": 105.0,
+      "width": 105.0,
+      "depth": 105.0
+    }
+  },
+  "pdfno_list": [
+    "060545 440706 351091"
+  ],
+  "source": {
+    "synthesis_id_original": "1250.json_Fe50/Cu50_3606",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: Fe50/Cu50 | method: electric explosion | solvent: argon-oxygen mixture | size.length: 105.0 | size.width: 105.0 | size.depth: 105.0 | precursor: Cu | precursor: Fe | pdfno_list: 060545 440706 351091"
+}

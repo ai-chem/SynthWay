@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "1089.json_Pd_3958",
+  "composition": "Pd",
+  "elements": [
+    "Pd"
+  ],
+  "method": "pyrolysis",
+  "precursors": [
+    {
+      "name": "Pd3(OAc)6",
+      "mass": 0.2
+    },
+    {
+      "name": "C12H26S",
+      "mass": 1.65
+    }
+  ],
+  "solvent": {
+    "name": "toluene",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 95.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "shape": "spherical",
+    "size": {
+      "width": 3.5
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1089.json_Pd_3958",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Pd | method: pyrolysis | solvent: toluene | solvent.volume: 50.0 | temperature: 95.0 | crystalsystem: face-centered cubic | shape: spherical | size.width: 3.5 | precursor: Pd3(OAc)6 (mass 0.2) | precursor: C12H26S (mass 1.65)"
+}

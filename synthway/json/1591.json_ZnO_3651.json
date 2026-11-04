@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "1591.json_ZnO_3651",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "polyol hydrolysis",
+  "precursors": [
+    {
+      "name": "Zn(CH3CO2)2*2H2O",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium acetate",
+      "conc": 10.0
+    }
+  ],
+  "solvent": {
+    "name": "diethylene glycol"
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "oval",
+    "size": {
+      "length": 18.0,
+      "width": 18.0,
+      "depth": 18.0
+    }
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "1591.json_ZnO_3651",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: ZnO | method: polyol hydrolysis | solvent: diethylene glycol | crystalsystem: hexagonal | shape: oval | size.length: 18.0 | size.width: 18.0 | size.depth: 18.0 | precursor: Zn(CH3CO2)2*2H2O (conc 100.0) | additive: sodium acetate (conc 10.0) | pdfno_list: 36-1451"
+}

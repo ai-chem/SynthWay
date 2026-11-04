@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "2035.json_MnSe_993",
+  "composition": "MnSe",
+  "elements": [
+    "Mn",
+    "Se"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "Mn(CH3COO)2*4H2O",
+      "conc": 4.0
+    },
+    {
+      "name": "SeO2",
+      "conc": 4.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium dodecyl sulfate",
+      "mass": 2.0
+    }
+  ],
+  "solvent": {
+    "name": "glycerol + n2h4×4h2o",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "size": {
+      "length": 2500.0,
+      "width": 2500.0,
+      "depth": 2500.0
+    }
+  },
+  "pdfno_list": [
+    "11-0683"
+  ],
+  "source": {
+    "synthesis_id_original": "2035.json_MnSe_993",
+    "nodes": 14,
+    "edges": 14
+  },
+  "retrieval_text": "composition: MnSe | method: hydrothermal | solvent: glycerol + n2h4×4h2o | solvent.volume: 20.0 | temperature: 180.0 | size.length: 2500.0 | size.width: 2500.0 | size.depth: 2500.0 | precursor: Mn(CH3COO)2*4H2O (conc 4.0) | precursor: SeO2 (conc 4.0) | additive: sodium dodecyl sulfate (mass 2.0) | pdfno_list: 11-0683"
+}

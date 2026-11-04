@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1982.json_Co3O4/CuO_2109",
+  "composition": "Co3O4/CuO",
+  "elements": [
+    "Co",
+    "O",
+    "Cu"
+  ],
+  "precursors": [
+    {
+      "name": "Co(NO3)2⋅6H2O",
+      "mass": 0.058
+    },
+    {
+      "name": "CuCl2⋅2H2O",
+      "mass": 0.034
+    }
+  ],
+  "additives": [
+    {
+      "name": "2-methylimidazole",
+      "mass": 0.197
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 10.0
+  },
+  "product": {
+    "shape": "wire",
+    "size": {
+      "length": 2000.0,
+      "width": 350.0,
+      "depth": 350.0
+    }
+  },
+  "pdfno_list": [
+    "01-080-1532, 01-089-5899"
+  ],
+  "source": {
+    "synthesis_id_original": "1982.json_Co3O4/CuO_2109",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Co3O4/CuO | solvent: water | solvent.volume: 10.0 | shape: wire | size.length: 2000.0 | size.width: 350.0 | size.depth: 350.0 | precursor: Co(NO3)2⋅6H2O (mass 0.058) | precursor: CuCl2⋅2H2O (mass 0.034) | additive: 2-methylimidazole (mass 0.197) | pdfno_list: 01-080-1532, 01-089-5899"
+}

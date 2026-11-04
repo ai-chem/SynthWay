@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "1972.json_Fe3O4_3288",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "coprecipitation",
+  "precursors": [
+    {
+      "name": "FeCl3*6H2O",
+      "conc": 0.1
+    },
+    {
+      "name": "FeCl2*xH2O",
+      "conc": 0.05
+    }
+  ],
+  "additives": [
+    {
+      "name": "dopamine hydrochloride",
+      "conc": 0.1
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 0.4
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 2.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 3.5,
+      "width": 3.5,
+      "depth": 3.5
+    }
+  },
+  "pdfno_list": [
+    "01-075-0449"
+  ],
+  "source": {
+    "synthesis_id_original": "1972.json_Fe3O4_3288",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: Fe3O4 | method: coprecipitation | solvent: water | solvent.volume: 2.0 | crystalsystem: cubic | size.length: 3.5 | size.width: 3.5 | size.depth: 3.5 | precursor: FeCl3*6H2O (conc 0.1) | precursor: FeCl2*xH2O (conc 0.05) | additive: dopamine hydrochloride (conc 0.1) | additive: sodium hydroxide (conc 0.4) | pdfno_list: 01-075-0449"
+}

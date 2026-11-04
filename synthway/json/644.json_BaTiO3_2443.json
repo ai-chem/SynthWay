@@ -1,0 +1,61 @@
+{
+  "synthesis_id": "644.json_BaTiO3_2443",
+  "composition": "BaTiO3",
+  "elements": [
+    "Ba",
+    "Ti",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "[Ba(OH)2*H2O",
+      "conc": 37.5
+    },
+    {
+      "name": "Ti(OtBu)4",
+      "conc": 25.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "diethylene glycol",
+      "mass": 5.6
+    },
+    {
+      "name": "glycolic acid",
+      "mass": 1.49
+    },
+    {
+      "name": "ethanol",
+      "mass": 7.89
+    },
+    {
+      "name": "ammonia solution",
+      "mass": 4.0
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "shape": "nanopowders",
+    "size": {
+      "length": 30.0
+    }
+  },
+  "pdfno_list": [
+    "05-0626, 31-0174"
+  ],
+  "source": {
+    "synthesis_id_original": "644.json_BaTiO3_2443",
+    "nodes": 21,
+    "edges": 20
+  },
+  "retrieval_text": "composition: BaTiO3 | method: hydrothermal | solvent: deionized water | solvent.volume: 10.0 | temperature: 200.0 | crystalsystem: tetragonal | shape: nanopowders | size.length: 30.0 | precursor: [Ba(OH)2*H2O (conc 37.5) | precursor: Ti(OtBu)4 (conc 25.0) | additive: diethylene glycol (mass 5.6) | additive: glycolic acid (mass 1.49) | additive: ethanol (mass 7.89) | additive: ammonia solution (mass 4.0) | pdfno_list: 05-0626, 31-0174"
+}

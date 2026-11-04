@@ -1,0 +1,34 @@
+{
+  "synthesis_id": "116.json_Li4Ti5O12_3957",
+  "composition": "Li4Ti5O12",
+  "elements": [
+    "Li",
+    "Ti",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "solvent": {
+    "name": "ethanol",
+    "volume": 180.0
+  },
+  "conditions": {
+    "temperature": 600.0
+  },
+  "product": {
+    "crystalsystem": "cubic spinel",
+    "shape": "flower-like",
+    "size": {
+      "width": 10.0,
+      "depth": 10.0
+    }
+  },
+  "pdfno_list": [
+    "26-1198"
+  ],
+  "source": {
+    "synthesis_id_original": "116.json_Li4Ti5O12_3957",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Li4Ti5O12 | method: hydrothermal | solvent: ethanol | solvent.volume: 180.0 | temperature: 600.0 | crystalsystem: cubic spinel | shape: flower-like | size.width: 10.0 | size.depth: 10.0 | pdfno_list: 26-1198"
+}

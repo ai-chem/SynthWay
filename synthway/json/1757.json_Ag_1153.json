@@ -1,0 +1,35 @@
+{
+  "synthesis_id": "1757.json_Ag_1153",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "b. megaterium supernatant"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 103.4,
+      "width": 103.4,
+      "depth": 103.4
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1757.json_Ag_1153",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: Ag | solvent: water | shape: spherical | size.length: 103.4 | size.width: 103.4 | size.depth: 103.4 | precursor: AgNO3 (conc 1.0) | additive: b. megaterium supernatant"
+}

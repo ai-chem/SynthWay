@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "2395.json_unfunctionalized_Fe3O4@SiO2_IO_1283",
+  "composition": "unfunctionalized Fe3O4@SiO2 IO",
+  "elements": [
+    "Fe",
+    "O",
+    "Si",
+    "I"
+  ],
+  "precursors": [
+    {
+      "name": "Fe3O4 (NPs)",
+      "mass": 0.08
+    },
+    {
+      "name": "Si(OC2H5)4",
+      "mass": 0.14,
+      "conc": 0.672
+    }
+  ],
+  "additives": [
+    {
+      "name": "tetrabutylammonium hydroxide",
+      "mass": 0.01
+    },
+    {
+      "name": "ethanol"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 20.0
+  },
+  "product": {
+    "size": {
+      "length": 188.0,
+      "width": 188.0,
+      "depth": 188.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2395.json_unfunctionalized_Fe3O4@SiO2_IO_1283",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: unfunctionalized Fe3O4@SiO2 IO | solvent: distilled water | solvent.volume: 20.0 | size.length: 188.0 | size.width: 188.0 | size.depth: 188.0 | precursor: Fe3O4 (NPs) (mass 0.08) | precursor: Si(OC2H5)4 (mass 0.14; conc 0.672) | additive: tetrabutylammonium hydroxide (mass 0.01) | additive: ethanol"
+}

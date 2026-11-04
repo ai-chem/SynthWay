@@ -1,0 +1,36 @@
+{
+  "synthesis_id": "1046.json_Ag_3895",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "mass": 0.34
+    },
+    {
+      "name": "C18H37N",
+      "mass": 32.52
+    }
+  ],
+  "solvent": {
+    "name": "oleylamine",
+    "volume": 40.0
+  },
+  "conditions": {
+    "temperature": 140.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "width": 4.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1046.json_Ag_3895",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Ag | solvent: oleylamine | solvent.volume: 40.0 | temperature: 140.0 | shape: spherical | size.width: 4.0 | precursor: AgNO3 (mass 0.34) | precursor: C18H37N (mass 32.52)"
+}

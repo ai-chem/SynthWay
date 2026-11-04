@@ -1,0 +1,4 @@
+{
+  "retrieval_text": "composition: Se | method: reduction | solvent: water | solvent.volume: 100 | temperature: 80 | ph: null | crystal_system: trigonal | shape: nanoparticles | size.length: 500 | size.width: 100 | size.depth: 100 | precursor: Na2SeO3 | precursor.mass: 1.0 | precursor.conc: null | additive: C3H7NO2S | additive.mass: null | additive.conc: 5.0 | seed: null | seed.mass: null | seed.conc: null",
+  "raw_text": "Route 1: Reduction method for Se\n1. Prepare a solution by dissolving Na2SeO3 (1.0 g) in deionized water (100 mL). \n2. Add C3H7NO2S (5.0 M, 20 mL) as a reducing agent to the solution.\n3. Stir the mixture at room temperature for 2 hours, then heat at 80 °C for 1 hour.\n4. Collect the precipitated Se by centrifugation, wash with deionized water, and dry at 60 °C.\nFinal product: Se as nanoparticles with a trigonal crystal structure, particle size ~100×100×500 nm, matching PDF reference 01-073-0465."
+}

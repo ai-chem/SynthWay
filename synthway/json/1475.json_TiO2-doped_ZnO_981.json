@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "1475.json_TiO2-doped_ZnO_981",
+  "composition": "TiO2-doped ZnO",
+  "elements": [
+    "Ti",
+    "O",
+    "Zn"
+  ],
+  "method": "plal",
+  "precursors": [
+    {
+      "name": "Zn (plate)"
+    },
+    {
+      "name": "Ti (plate)"
+    }
+  ],
+  "solvent": {
+    "name": "ultra-pure water"
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "size": {
+      "length": 86.43,
+      "width": 86.43,
+      "depth": 86.43
+    }
+  },
+  "pdfno_list": [
+    "89-1397 21-1272"
+  ],
+  "source": {
+    "synthesis_id_original": "1475.json_TiO2-doped_ZnO_981",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: TiO2-doped ZnO | method: plal | solvent: ultra-pure water | crystalsystem: hexagonal | size.length: 86.43 | size.width: 86.43 | size.depth: 86.43 | precursor: Zn (plate) | precursor: Ti (plate) | pdfno_list: 89-1397 21-1272"
+}

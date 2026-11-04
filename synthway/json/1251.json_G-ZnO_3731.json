@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "1251.json_G-ZnO_3731",
+  "composition": "G-ZnO",
+  "elements": [
+    "G",
+    "Zn",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Zn(COOCH3)2·2H2O",
+      "mass": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "goldthread extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 25.0,
+      "width": 25.0,
+      "depth": 25.0
+    }
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "1251.json_G-ZnO_3731",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: G-ZnO | method: green synthesis | solvent: water | crystalsystem: hexagonal | shape: spherical | size.length: 25.0 | size.width: 25.0 | size.depth: 25.0 | precursor: Zn(COOCH3)2·2H2O (mass 10.0) | additive: goldthread extract | pdfno_list: 36-1451"
+}

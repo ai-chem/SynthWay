@@ -1,0 +1,53 @@
+{
+  "synthesis_id": "102.json_ZnO/CS/Ag2O_928",
+  "composition": "ZnO/CS/Ag2O",
+  "elements": [
+    "Zn",
+    "O",
+    "C",
+    "S",
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "ZnCl2",
+      "mass": 2.0
+    },
+    {
+      "name": "AgNO3",
+      "conc": 100.0
+    },
+    {
+      "name": "Chi",
+      "mass": 0.2
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 2000.0
+    }
+  ],
+  "solvent": {
+    "name": "acetic acid",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 25.0,
+    "ph": 12.0
+  },
+  "product": {
+    "shape": "irregular",
+    "size": {
+      "length": 30.0,
+      "width": 30.0,
+      "depth": 30.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "102.json_ZnO/CS/Ag2O_928",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: ZnO/CS/Ag2O | solvent: acetic acid | solvent.volume: 100.0 | temperature: 25.0 | pH: 12.0 | shape: irregular | size.length: 30.0 | size.width: 30.0 | size.depth: 30.0 | precursor: ZnCl2 (mass 2.0) | precursor: AgNO3 (conc 100.0) | precursor: Chi (mass 0.2) | additive: sodium hydroxide (conc 2000.0)"
+}

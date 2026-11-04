@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1971.json_PtPd/GNs_934",
+  "composition": "PtPd/GNs",
+  "elements": [
+    "Pt",
+    "Pd",
+    "G",
+    "Ns"
+  ],
+  "precursors": [
+    {
+      "name": "K2PdCl4",
+      "conc": 10.0
+    },
+    {
+      "name": "K2PtCl4",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "graphene oxide",
+      "mass": 0.0002
+    }
+  ],
+  "solvent": {
+    "name": "ethanol",
+    "volume": 1.5
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "size": {
+      "length": 16.0,
+      "width": 16.0,
+      "depth": 16.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1971.json_PtPd/GNs_934",
+    "nodes": 12,
+    "edges": 12
+  },
+  "retrieval_text": "composition: PtPd/GNs | solvent: ethanol | solvent.volume: 1.5 | crystalsystem: face-centered cubic | size.length: 16.0 | size.width: 16.0 | size.depth: 16.0 | precursor: K2PdCl4 (conc 10.0) | precursor: K2PtCl4 (conc 10.0) | additive: graphene oxide (mass 0.0002)"
+}

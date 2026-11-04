@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "1629.json_TiO2_1864",
+  "composition": "TiO2",
+  "elements": [
+    "Ti",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Ti(OC3H7)4"
+    }
+  ],
+  "additives": [
+    {
+      "name": "m. indica leaf extracts"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 18.9,
+      "width": 18.9,
+      "depth": 18.9
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1629.json_TiO2_1864",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: TiO2 | solvent: water | temperature: 80.0 | shape: spherical | size.length: 18.9 | size.width: 18.9 | size.depth: 18.9 | precursor: Ti(OC3H7)4 | additive: m. indica leaf extracts"
+}

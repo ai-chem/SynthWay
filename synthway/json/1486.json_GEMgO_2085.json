@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1486.json_GEMgO_2085",
+  "composition": "GEMgO",
+  "elements": [
+    "G",
+    "E",
+    "Mg",
+    "O"
+  ],
+  "method": "one-pot synthesis",
+  "precursors": [
+    {
+      "name": "Mg(NO3)2*6H2O",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "chara zeylanica algal extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 65.0,
+      "width": 65.0,
+      "depth": 65.0
+    }
+  },
+  "pdfno_list": [
+    "89-7746"
+  ],
+  "source": {
+    "synthesis_id_original": "1486.json_GEMgO_2085",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: GEMgO | method: one-pot synthesis | solvent: water | temperature: 60.0 | crystalsystem: cubic | shape: spherical | size.length: 65.0 | size.width: 65.0 | size.depth: 65.0 | precursor: Mg(NO3)2*6H2O (conc 100.0) | additive: chara zeylanica algal extract | pdfno_list: 89-7746"
+}

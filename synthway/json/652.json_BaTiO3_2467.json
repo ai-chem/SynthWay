@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "652.json_BaTiO3_2467",
+  "composition": "BaTiO3",
+  "elements": [
+    "Ba",
+    "Ti",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "Ba(OH)2"
+    },
+    {
+      "name": "Ti(OH)4"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 45.0
+  },
+  "conditions": {
+    "temperature": 100.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 75.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "652.json_BaTiO3_2467",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: BaTiO3 | method: hydrothermal | solvent: water | solvent.volume: 45.0 | temperature: 100.0 | crystalsystem: cubic | shape: spherical | size.length: 75.0 | precursor: Ba(OH)2 | precursor: Ti(OH)4"
+}

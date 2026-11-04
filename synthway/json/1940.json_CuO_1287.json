@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1940.json_CuO_1287",
+  "composition": "CuO",
+  "elements": [
+    "Cu",
+    "O"
+  ],
+  "method": "quick-precipitation",
+  "precursors": [
+    {
+      "name": "Cu(CH3COO)2",
+      "conc": 20.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "glacial acetic acid"
+    },
+    {
+      "name": "sodium hydroxide",
+      "mass": 4.0
+    }
+  ],
+  "solvent": {
+    "name": "naoh aqueous solution",
+    "volume": 10.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "size": {
+      "length": 6.3,
+      "width": 6.3,
+      "depth": 6.3
+    }
+  },
+  "pdfno_list": [
+    "72-0629"
+  ],
+  "source": {
+    "synthesis_id_original": "1940.json_CuO_1287",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: CuO | method: quick-precipitation | solvent: naoh aqueous solution | solvent.volume: 10.0 | crystalsystem: monoclinic | size.length: 6.3 | size.width: 6.3 | size.depth: 6.3 | precursor: Cu(CH3COO)2 (conc 20.0) | additive: glacial acetic acid | additive: sodium hydroxide (mass 4.0) | pdfno_list: 72-0629"
+}

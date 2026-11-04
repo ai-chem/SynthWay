@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "2135.json_Co3O4_2640",
+  "composition": "Co3O4",
+  "elements": [
+    "Co",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Co(CH3COO)2·4H2O",
+      "mass": 0.5
+    }
+  ],
+  "additives": [
+    {
+      "name": "ammonia (25%)"
+    }
+  ],
+  "solvent": {
+    "name": "ethanol",
+    "volume": 15.0
+  },
+  "conditions": {
+    "temperature": 150.0
+  },
+  "product": {
+    "shape": "cube",
+    "size": {
+      "length": 19.0,
+      "width": 19.0,
+      "depth": 19.0
+    }
+  },
+  "pdfno_list": [
+    "76-1802"
+  ],
+  "source": {
+    "synthesis_id_original": "2135.json_Co3O4_2640",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Co3O4 | solvent: ethanol | solvent.volume: 15.0 | temperature: 150.0 | shape: cube | size.length: 19.0 | size.width: 19.0 | size.depth: 19.0 | precursor: Co(CH3COO)2·4H2O (mass 0.5) | additive: ammonia (25%) | pdfno_list: 76-1802"
+}

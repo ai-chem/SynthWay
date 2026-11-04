@@ -1,0 +1,37 @@
+{
+  "synthesis_id": "1533.json_Au_3327",
+  "composition": "Au",
+  "elements": [
+    "Au"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "HAuCl4",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "galaxaura elongata",
+      "mass": 1.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "truncated triangular",
+    "size": {
+      "length": 40.49,
+      "width": 40.49,
+      "depth": 40.49
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1533.json_Au_3327",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Au | method: green synthesis | solvent: water | shape: truncated triangular | size.length: 40.49 | size.width: 40.49 | size.depth: 40.49 | precursor: HAuCl4 (conc 1.0) | additive: galaxaura elongata (mass 1.0)"
+}

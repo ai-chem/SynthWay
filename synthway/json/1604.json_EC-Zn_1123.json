@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "1604.json_EC-Zn_1123",
+  "composition": "EC-Zn",
+  "elements": [
+    "E",
+    "C",
+    "Zn"
+  ],
+  "method": "biosynthesis",
+  "precursors": [
+    {
+      "name": "Purified gum (E. camaldulensis)",
+      "mass": 5.0
+    },
+    {
+      "name": "Zn(NO3)2",
+      "mass": 0.2
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 500.0
+  },
+  "product": {
+    "shape": "irregular"
+  },
+  "source": {
+    "synthesis_id_original": "1604.json_EC-Zn_1123",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: EC-Zn | method: biosynthesis | solvent: distilled water | solvent.volume: 500.0 | shape: irregular | precursor: Purified gum (E. camaldulensis) (mass 5.0) | precursor: Zn(NO3)2 (mass 0.2)"
+}

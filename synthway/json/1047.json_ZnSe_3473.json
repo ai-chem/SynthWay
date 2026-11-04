@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "1047.json_ZnSe_3473",
+  "composition": "ZnSe",
+  "elements": [
+    "Zn",
+    "Se"
+  ],
+  "method": "thermal treatment",
+  "precursors": [
+    {
+      "name": "Se",
+      "mass": 0.0316
+    },
+    {
+      "name": "Zn(NO3)2",
+      "mass": 0.0756
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 2.0
+    }
+  ],
+  "solvent": {
+    "name": "deionized water+ethylenediamine",
+    "volume": 150.0
+  },
+  "conditions": {
+    "temperature": 700.0
+  },
+  "product": {
+    "crystalsystem": "cubic zinc blended s",
+    "size": {
+      "width": 18.0
+    }
+  },
+  "pdfno_list": [
+    "01-088-2345"
+  ],
+  "source": {
+    "synthesis_id_original": "1047.json_ZnSe_3473",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: ZnSe | method: thermal treatment | solvent: deionized water+ethylenediamine | solvent.volume: 150.0 | temperature: 700.0 | crystalsystem: cubic zinc blended s | size.width: 18.0 | precursor: Se (mass 0.0316) | precursor: Zn(NO3)2 (mass 0.0756) | additive: polyvinylpyrrolidone (mass 2.0) | pdfno_list: 01-088-2345"
+}

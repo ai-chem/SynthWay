@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1437.json_ZrO2/Gd2O3_(ZG)_3385",
+  "composition": "ZrO2/Gd2O3 (ZG)",
+  "elements": [
+    "Zr",
+    "O",
+    "Gd",
+    "Z",
+    "G"
+  ],
+  "method": "hydrothermal green synthesis",
+  "precursors": [
+    {
+      "name": "ZrO2 (NPs)",
+      "mass": 1.0
+    },
+    {
+      "name": "Gd(NO3)3",
+      "conc": 0.5
+    }
+  ],
+  "additives": [
+    {
+      "name": "corallo carpus epigaeus plant extract"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 120.0
+  },
+  "product": {
+    "crystalsystem": "cubic, monoclinic and tetragonal"
+  },
+  "pdfno_list": [
+    "12-0797 37-1484 79-1769"
+  ],
+  "source": {
+    "synthesis_id_original": "1437.json_ZrO2/Gd2O3_(ZG)_3385",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: ZrO2/Gd2O3 (ZG) | method: hydrothermal green synthesis | solvent: water | solvent.volume: 50.0 | temperature: 120.0 | crystalsystem: cubic, monoclinic and tetragonal | precursor: ZrO2 (NPs) (mass 1.0) | precursor: Gd(NO3)3 (conc 0.5) | additive: corallo carpus epigaeus plant extract | pdfno_list: 12-0797 37-1484 79-1769"
+}

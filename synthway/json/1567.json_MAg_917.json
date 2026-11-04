@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "1567.json_MAg_917",
+  "composition": "MAg",
+  "elements": [
+    "M",
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 0.9
+    }
+  ],
+  "additives": [
+    {
+      "name": "opuntia ficus-indica mucilage extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "shape": "ellipsoidal",
+    "size": {
+      "length": 40.0,
+      "width": 40.0,
+      "depth": 40.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1567.json_MAg_917",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: MAg | method: green synthesis | solvent: water | temperature: 80.0 | shape: ellipsoidal | size.length: 40.0 | size.width: 40.0 | size.depth: 40.0 | precursor: AgNO3 (conc 0.9) | additive: opuntia ficus-indica mucilage extract"
+}

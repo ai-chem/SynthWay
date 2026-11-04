@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "2111.json_MnO2_574",
+  "composition": "MnO2",
+  "elements": [
+    "Mn",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "MnSO4∙H2O",
+      "mass": 3.38
+    }
+  ],
+  "additives": [
+    {
+      "name": "ammonium persulfate",
+      "mass": 4.58
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 80.0
+  },
+  "conditions": {
+    "temperature": 90.0
+  },
+  "product": {
+    "shape": "wire",
+    "size": {
+      "length": 450.0,
+      "width": 59.0,
+      "depth": 59.0
+    }
+  },
+  "pdfno_list": [
+    "14-0644"
+  ],
+  "source": {
+    "synthesis_id_original": "2111.json_MnO2_574",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: MnO2 | solvent: water | solvent.volume: 80.0 | temperature: 90.0 | shape: wire | size.length: 450.0 | size.width: 59.0 | size.depth: 59.0 | precursor: MnSO4∙H2O (mass 3.38) | additive: ammonium persulfate (mass 4.58) | pdfno_list: 14-0644"
+}

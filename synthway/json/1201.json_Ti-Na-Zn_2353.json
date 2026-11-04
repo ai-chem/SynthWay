@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "1201.json_Ti-Na-Zn_2353",
+  "composition": "Ti-Na-Zn",
+  "elements": [
+    "Ti",
+    "Na",
+    "Zn"
+  ],
+  "method": "chemical and thermal treatment",
+  "precursors": [
+    {
+      "name": "Ti"
+    },
+    {
+      "name": "Zn(NO3)2",
+      "conc": 1000.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 5000.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 40.0
+  },
+  "product": {
+    "shape": "sheets"
+  },
+  "source": {
+    "synthesis_id_original": "1201.json_Ti-Na-Zn_2353",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Ti-Na-Zn | method: chemical and thermal treatment | solvent: water | temperature: 40.0 | shape: sheets | precursor: Ti | precursor: Zn(NO3)2 (conc 1000.0) | additive: sodium hydroxide (conc 5000.0)"
+}

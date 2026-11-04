@@ -1,0 +1,31 @@
+{
+  "synthesis_id": "544.json_BaTiLaSbO3_1031",
+  "composition": "BaTiLaSbO3",
+  "elements": [
+    "Ba",
+    "Ti",
+    "La",
+    "Sb",
+    "O"
+  ],
+  "method": "pechini",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 1300.0
+  },
+  "product": {
+    "crystalsystem": "pseudocubic",
+    "shape": "polygonal grain",
+    "size": {
+      "length": 2500.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "544.json_BaTiLaSbO3_1031",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: BaTiLaSbO3 | method: pechini | solvent: water | temperature: 1300.0 | crystalsystem: pseudocubic | shape: polygonal grain | size.length: 2500.0"
+}

@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "602.json_TiO2_4093",
+  "composition": "TiO2",
+  "elements": [
+    "Ti",
+    "O"
+  ],
+  "method": "biogenic synthesis",
+  "precursors": [
+    {
+      "name": "Ti(SO4)2",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "aqueous luffa acutangula leaves extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "hexagonal",
+    "size": {
+      "length": 29.5,
+      "width": 29.5,
+      "depth": 29.5
+    }
+  },
+  "source": {
+    "synthesis_id_original": "602.json_TiO2_4093",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: TiO2 | method: biogenic synthesis | solvent: water | crystalsystem: hexagonal | shape: hexagonal | size.length: 29.5 | size.width: 29.5 | size.depth: 29.5 | precursor: Ti(SO4)2 (conc 1.0) | additive: aqueous luffa acutangula leaves extract"
+}

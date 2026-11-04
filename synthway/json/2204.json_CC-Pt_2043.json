@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "2204.json_CC-Pt_2043",
+  "composition": "CC-Pt",
+  "elements": [
+    "C",
+    "Pt"
+  ],
+  "precursors": [
+    {
+      "name": "H2PtCl6",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "cc",
+      "mass": 0.094
+    },
+    {
+      "name": "sodium borohydride",
+      "conc": 200.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 47.0
+  },
+  "product": {
+    "size": {
+      "length": 4.2,
+      "width": 4.2,
+      "depth": 4.2
+    }
+  },
+  "pdfno_list": [
+    "87-0640"
+  ],
+  "source": {
+    "synthesis_id_original": "2204.json_CC-Pt_2043",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: CC-Pt | solvent: water | solvent.volume: 47.0 | size.length: 4.2 | size.width: 4.2 | size.depth: 4.2 | precursor: H2PtCl6 (conc 10.0) | additive: cc (mass 0.094) | additive: sodium borohydride (conc 200.0) | pdfno_list: 87-0640"
+}

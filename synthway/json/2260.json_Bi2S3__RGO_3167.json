@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "2260.json_Bi2S3_/RGO_3167",
+  "composition": "Bi2S3 /RGO",
+  "elements": [
+    "Bi",
+    "S",
+    "R",
+    "G",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Bi(NO3)3·5H2O"
+    },
+    {
+      "name": "l-cysteine"
+    },
+    {
+      "name": "GO",
+      "mass": 0.01
+    }
+  ],
+  "additives": [
+    {
+      "name": "poly(sodium-p-styrenesul-fonate)",
+      "mass": 0.15
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 25.0
+  },
+  "conditions": {
+    "temperature": 150.0
+  },
+  "product": {
+    "size": {
+      "length": 3.0,
+      "width": 3.0,
+      "depth": 3.0
+    }
+  },
+  "pdfno_list": [
+    "17-0320"
+  ],
+  "source": {
+    "synthesis_id_original": "2260.json_Bi2S3_/RGO_3167",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Bi2S3 /RGO | solvent: water | solvent.volume: 25.0 | temperature: 150.0 | size.length: 3.0 | size.width: 3.0 | size.depth: 3.0 | precursor: Bi(NO3)3·5H2O | precursor: l-cysteine | precursor: GO (mass 0.01) | additive: poly(sodium-p-styrenesul-fonate) (mass 0.15) | pdfno_list: 17-0320"
+}

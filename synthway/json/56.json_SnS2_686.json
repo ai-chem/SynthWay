@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "56.json_SnS2_686",
+  "composition": "SnS2",
+  "elements": [
+    "Sn",
+    "S"
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 160.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "aloe-like",
+    "size": {
+      "length": 200.0,
+      "width": 50.0,
+      "depth": 50.0
+    }
+  },
+  "pdfno_list": [
+    "23-0677"
+  ],
+  "source": {
+    "synthesis_id_original": "56.json_SnS2_686",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: SnS2 | solvent: water | solvent.volume: 100.0 | temperature: 160.0 | crystalsystem: hexagonal | shape: aloe-like | size.length: 200.0 | size.width: 50.0 | size.depth: 50.0 | pdfno_list: 23-0677"
+}

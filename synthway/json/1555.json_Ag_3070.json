@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "1555.json_Ag_3070",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "azadirachta indica leaves"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 100.0
+  },
+  "product": {
+    "shape": "triangular",
+    "size": {
+      "length": 20.0,
+      "width": 20.0,
+      "depth": 20.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1555.json_Ag_3070",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Ag | method: green synthesis | solvent: water | temperature: 100.0 | shape: triangular | size.length: 20.0 | size.width: 20.0 | size.depth: 20.0 | precursor: AgNO3 (conc 1.0) | additive: azadirachta indica leaves"
+}

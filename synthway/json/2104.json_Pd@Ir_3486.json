@@ -1,0 +1,51 @@
+{
+  "synthesis_id": "2104.json_Pd@Ir_3486",
+  "composition": "Pd@Ir",
+  "elements": [
+    "Pd",
+    "Ir"
+  ],
+  "precursors": [
+    {
+      "name": "Na3IrCl6·xH2O",
+      "mass": 0.00125
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 0.1
+    },
+    {
+      "name": "ascorbic acid",
+      "mass": 0.06
+    }
+  ],
+  "seeds": [
+    {
+      "name": "Pd",
+      "mass": 0.005
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "shape": "cube",
+    "size": {
+      "length": 15.2,
+      "width": 15.2,
+      "depth": 15.2
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2104.json_Pd@Ir_3486",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: Pd@Ir | solvent: ethylene glycol | solvent.volume: 10.0 | temperature: 200.0 | shape: cube | size.length: 15.2 | size.width: 15.2 | size.depth: 15.2 | precursor: Na3IrCl6·xH2O (mass 0.00125) | additive: polyvinylpyrrolidone (mass 0.1) | additive: ascorbic acid (mass 0.06) | seed: Pd (mass 0.005)"
+}

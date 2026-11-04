@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "989.json_Ag_3828",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "reduction",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    },
+    {
+      "name": "NaBH4",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "humic acid",
+      "mass": 0.0001
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "size": {
+      "width": 5.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "989.json_Ag_3828",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Ag | method: reduction | solvent: water | size.width: 5.0 | precursor: AgNO3 (conc 1.0) | precursor: NaBH4 (conc 10.0) | additive: humic acid (mass 0.0001)"
+}

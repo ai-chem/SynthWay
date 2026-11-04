@@ -1,0 +1,25 @@
+{
+  "synthesis_id": "271.json_PbS/PVA_345",
+  "composition": "PbS/PVA",
+  "elements": [
+    "Pb",
+    "S",
+    "P",
+    "V",
+    "A"
+  ],
+  "method": "controlled precipitation",
+  "solvent": {
+    "name": "water",
+    "volume": 100.0
+  },
+  "product": {
+    "crystalsystem": "cubic"
+  },
+  "source": {
+    "synthesis_id_original": "271.json_PbS/PVA_345",
+    "nodes": 5,
+    "edges": 4
+  },
+  "retrieval_text": "composition: PbS/PVA | method: controlled precipitation | solvent: water | solvent.volume: 100.0 | crystalsystem: cubic"
+}

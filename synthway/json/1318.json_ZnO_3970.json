@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "1318.json_ZnO_3970",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "co-precipitation green synthesis",
+  "precursors": [
+    {
+      "name": "Zn(NO3)2*6H2O",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "saussurea lappa rhizome extract"
+    },
+    {
+      "name": "edta",
+      "mass": 0.1
+    },
+    {
+      "name": "ammonium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 75.0,
+    "ph": 12.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "hexagonal",
+    "size": {
+      "length": 123.5,
+      "width": 123.5,
+      "depth": 123.5
+    }
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "1318.json_ZnO_3970",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: ZnO | method: co-precipitation green synthesis | solvent: water | temperature: 75.0 | pH: 12.0 | crystalsystem: hexagonal | shape: hexagonal | size.length: 123.5 | size.width: 123.5 | size.depth: 123.5 | precursor: Zn(NO3)2*6H2O (conc 100.0) | additive: saussurea lappa rhizome extract | additive: edta (mass 0.1) | additive: ammonium hydroxide | pdfno_list: 36-1451"
+}

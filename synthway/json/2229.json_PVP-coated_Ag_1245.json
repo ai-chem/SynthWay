@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "2229.json_PVP-coated_Ag_1245",
+  "composition": "PVP-coated Ag",
+  "elements": [
+    "P",
+    "V",
+    "Ag"
+  ],
+  "method": "chemical reduction",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium borohydride",
+      "conc": 2.0
+    },
+    {
+      "name": "polyvinylpyrrolidone",
+      "conc": 2.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 16.0,
+      "width": 16.0,
+      "depth": 16.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2229.json_PVP-coated_Ag_1245",
+    "nodes": 14,
+    "edges": 14
+  },
+  "retrieval_text": "composition: PVP-coated Ag | method: chemical reduction | solvent: water | temperature: 25.0 | crystalsystem: cubic | shape: spherical | size.length: 16.0 | size.width: 16.0 | size.depth: 16.0 | precursor: AgNO3 (conc 1.0) | additive: sodium borohydride (conc 2.0) | additive: polyvinylpyrrolidone (conc 2.0)"
+}

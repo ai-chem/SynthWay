@@ -1,0 +1,30 @@
+{
+  "synthesis_id": "151.json_B10_2737",
+  "composition": "B10",
+  "elements": [
+    "B"
+  ],
+  "method": "hydrothermal",
+  "solvent": {
+    "name": "double distilled water",
+    "volume": 39.6
+  },
+  "conditions": {
+    "temperature": 120.0,
+    "ph": 10.0
+  },
+  "product": {
+    "shape": "grains",
+    "size": {
+      "length": 25.0,
+      "width": 25.0,
+      "depth": 25.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "151.json_B10_2737",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: B10 | method: hydrothermal | solvent: double distilled water | solvent.volume: 39.6 | temperature: 120.0 | pH: 10.0 | shape: grains | size.length: 25.0 | size.width: 25.0 | size.depth: 25.0"
+}

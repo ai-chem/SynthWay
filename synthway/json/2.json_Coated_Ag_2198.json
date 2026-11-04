@@ -1,0 +1,30 @@
+{
+  "synthesis_id": "2.json_Coated_Ag_2198",
+  "composition": "Coated Ag",
+  "elements": [
+    "Co",
+    "Ag"
+  ],
+  "method": "chemical reduction",
+  "precursors": [
+    {
+      "name": "AgNO3"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "size": {
+      "length": 12.5,
+      "width": 12.5,
+      "depth": 12.5
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2.json_Coated_Ag_2198",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: Coated Ag | method: chemical reduction | solvent: water | size.length: 12.5 | size.width: 12.5 | size.depth: 12.5 | precursor: AgNO3"
+}

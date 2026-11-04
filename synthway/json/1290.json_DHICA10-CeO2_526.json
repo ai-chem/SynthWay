@@ -1,0 +1,51 @@
+{
+  "synthesis_id": "1290.json_DHICA10-CeO2_526",
+  "composition": "DHICA10-CeO2",
+  "elements": [
+    "D",
+    "H",
+    "I",
+    "C",
+    "A",
+    "Ce",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "Ce(NO3)3∙6H2O",
+      "conc": 50.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 170.0
+    },
+    {
+      "name": "5,6-dihydroxyindole-2-carboxylic acid (dhica)-in-ethanol"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 100.0,
+    "ph": 7.0
+  },
+  "product": {
+    "crystalsystem": "fluorite cubic",
+    "shape": "three-dimensional isotropic nanopolyhedra",
+    "size": {
+      "length": 12.5,
+      "width": 12.5,
+      "depth": 12.5
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1290.json_DHICA10-CeO2_526",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: DHICA10-CeO2 | method: hydrothermal | solvent: water | temperature: 100.0 | pH: 7.0 | crystalsystem: fluorite cubic | shape: three-dimensional isotropic nanopolyhedra | size.length: 12.5 | size.width: 12.5 | size.depth: 12.5 | precursor: Ce(NO3)3∙6H2O (conc 50.0) | additive: sodium hydroxide (conc 170.0) | additive: 5,6-dihydroxyindole-2-carboxylic acid (dhica)-in-ethanol"
+}

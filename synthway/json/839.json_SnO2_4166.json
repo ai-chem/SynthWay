@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "839.json_SnO2_4166",
+  "composition": "SnO2",
+  "elements": [
+    "Sn",
+    "O"
+  ],
+  "method": "coprecipitation",
+  "precursors": [
+    {
+      "name": "SnCl4",
+      "conc": 670.0
+    },
+    {
+      "name": "NH4OH"
+    }
+  ],
+  "additives": [
+    {
+      "name": "triton x-100"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 600.0,
+    "ph": 8.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "shape": "spherical"
+  },
+  "pdfno_list": [
+    "00-072-1147"
+  ],
+  "source": {
+    "synthesis_id_original": "839.json_SnO2_4166",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: SnO2 | method: coprecipitation | solvent: water | temperature: 600.0 | pH: 8.0 | crystalsystem: tetragonal | shape: spherical | precursor: SnCl4 (conc 670.0) | precursor: NH4OH | additive: triton x-100 | pdfno_list: 00-072-1147"
+}

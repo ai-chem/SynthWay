@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "1747.json_LM-Ag_304",
+  "composition": "LM-Ag",
+  "elements": [
+    "L",
+    "M",
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "extract of  leea macrophylla (lm) leaf"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 22.0,
+      "width": 22.0,
+      "depth": 22.0
+    }
+  },
+  "pdfno_list": [
+    "04-0783"
+  ],
+  "source": {
+    "synthesis_id_original": "1747.json_LM-Ag_304",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: LM-Ag | solvent: water | crystalsystem: cubic | shape: spherical | size.length: 22.0 | size.width: 22.0 | size.depth: 22.0 | precursor: AgNO3 (conc 10.0) | additive: extract of  leea macrophylla (lm) leaf | pdfno_list: 04-0783"
+}

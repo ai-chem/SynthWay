@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "125.json_Ag2S_1258",
+  "composition": "Ag2S",
+  "elements": [
+    "Ag",
+    "S"
+  ],
+  "method": "sol–gel synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3*H2O",
+      "mass": 8.491
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium sulphide",
+      "mass": 1.95
+    },
+    {
+      "name": "n-methyl-2-pyrrolidone"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 70.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "spherical",
+    "size": {
+      "length": 42.0,
+      "width": 42.0,
+      "depth": 42.0
+    }
+  },
+  "pdfno_list": [
+    "00-014-0072"
+  ],
+  "source": {
+    "synthesis_id_original": "125.json_Ag2S_1258",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Ag2S | method: sol–gel synthesis | solvent: water | temperature: 70.0 | crystalsystem: monoclinic | shape: spherical | size.length: 42.0 | size.width: 42.0 | size.depth: 42.0 | precursor: AgNO3*H2O (mass 8.491) | additive: sodium sulphide (mass 1.95) | additive: n-methyl-2-pyrrolidone | pdfno_list: 00-014-0072"
+}

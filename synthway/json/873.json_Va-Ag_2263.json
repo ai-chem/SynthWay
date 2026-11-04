@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "873.json_Va-Ag_2263",
+  "composition": "Va-Ag",
+  "elements": [
+    "Va",
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3"
+    }
+  ],
+  "additives": [
+    {
+      "name": "leaf extracts of v. amygdalina"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 50.0,
+    "ph": 7.0
+  },
+  "product": {
+    "size": {
+      "length": 4.26,
+      "width": 4.26,
+      "depth": 4.26
+    }
+  },
+  "source": {
+    "synthesis_id_original": "873.json_Va-Ag_2263",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Va-Ag | method: green synthesis | solvent: water | temperature: 50.0 | pH: 7.0 | size.length: 4.26 | size.width: 4.26 | size.depth: 4.26 | precursor: AgNO3 | additive: leaf extracts of v. amygdalina"
+}

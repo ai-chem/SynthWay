@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "1377.json_Tr4+_doped_ZrO2_(TZO)_875",
+  "composition": "Tr4+ doped ZrO2  (TZO)",
+  "elements": [
+    "Tr",
+    "Zr",
+    "O",
+    "T",
+    "Z"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "ZrO2",
+      "mass": 2.417,
+      "conc": 100.0
+    },
+    {
+      "name": "Te"
+    }
+  ],
+  "additives": [
+    {
+      "name": "hydrazine"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 75.0
+  },
+  "conditions": {
+    "temperature": 160.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic and tetragonal",
+    "shape": "spherical",
+    "size": {
+      "length": 25.0,
+      "width": 25.0,
+      "depth": 25.0
+    }
+  },
+  "pdfno_list": [
+    "65-1022 89-7710"
+  ],
+  "source": {
+    "synthesis_id_original": "1377.json_Tr4+_doped_ZrO2_(TZO)_875",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: Tr4+ doped ZrO2  (TZO) | method: hydrothermal | solvent: deionized water | solvent.volume: 75.0 | temperature: 160.0 | crystalsystem: monoclinic and tetragonal | shape: spherical | size.length: 25.0 | size.width: 25.0 | size.depth: 25.0 | precursor: ZrO2 (mass 2.417; conc 100.0) | precursor: Te | additive: hydrazine | pdfno_list: 65-1022 89-7710"
+}

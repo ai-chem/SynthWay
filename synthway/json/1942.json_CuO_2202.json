@@ -1,0 +1,36 @@
+{
+  "synthesis_id": "1942.json_CuO_2202",
+  "composition": "CuO",
+  "elements": [
+    "Cu",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Cu(NO3)2•3H2O",
+      "mass": 2.3
+    }
+  ],
+  "additives": [
+    {
+      "name": "urea",
+      "mass": 1.7
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 25.0
+  },
+  "conditions": {
+    "temperature": 450.0
+  },
+  "pdfno_list": [
+    "65-2309"
+  ],
+  "source": {
+    "synthesis_id_original": "1942.json_CuO_2202",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: CuO | solvent: water | solvent.volume: 25.0 | temperature: 450.0 | precursor: Cu(NO3)2•3H2O (mass 2.3) | additive: urea (mass 1.7) | pdfno_list: 65-2309"
+}

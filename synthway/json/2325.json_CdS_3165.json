@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "2325.json_CdS_3165",
+  "composition": "CdS",
+  "elements": [
+    "Cd",
+    "S"
+  ],
+  "solvent": {
+    "name": "mercaptoethanol",
+    "volume": 80.0
+  },
+  "conditions": {
+    "temperature": 65.0,
+    "ph": 9.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 1.3,
+      "width": 1.3,
+      "depth": 1.3
+    }
+  },
+  "pdfno_list": [
+    "75-1546"
+  ],
+  "source": {
+    "synthesis_id_original": "2325.json_CdS_3165",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: CdS | solvent: mercaptoethanol | solvent.volume: 80.0 | temperature: 65.0 | pH: 9.0 | crystalsystem: cubic | size.length: 1.3 | size.width: 1.3 | size.depth: 1.3 | pdfno_list: 75-1546"
+}

@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "1446.json_PACAg_2150",
+  "composition": "PACAg",
+  "elements": [
+    "P",
+    "A",
+    "C",
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Proanthocyanidin"
+    },
+    {
+      "name": "AgNO3"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "size": {
+      "length": 177.46,
+      "width": 177.46,
+      "depth": 177.46
+    }
+  },
+  "pdfno_list": [
+    "89-3722"
+  ],
+  "source": {
+    "synthesis_id_original": "1446.json_PACAg_2150",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: PACAg | method: green synthesis | solvent: water | temperature: 25.0 | size.length: 177.46 | size.width: 177.46 | size.depth: 177.46 | precursor: Proanthocyanidin | precursor: AgNO3 | pdfno_list: 89-3722"
+}

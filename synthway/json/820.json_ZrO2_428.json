@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "820.json_ZrO2_428",
+  "composition": "ZrO2",
+  "elements": [
+    "Zr",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Zr(NO3)4*5H2O",
+      "mass": 0.215
+    },
+    {
+      "name": "CO(NH2)2"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 70.0
+  },
+  "conditions": {
+    "temperature": 450.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 17.0,
+      "width": 17.0,
+      "depth": 17.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "820.json_ZrO2_428",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: ZrO2 | solvent: deionized water | solvent.volume: 70.0 | temperature: 450.0 | shape: spherical | size.length: 17.0 | size.width: 17.0 | size.depth: 17.0 | precursor: Zr(NO3)4*5H2O (mass 0.215) | precursor: CO(NH2)2"
+}

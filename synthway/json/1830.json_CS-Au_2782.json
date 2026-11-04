@@ -1,0 +1,55 @@
+{
+  "synthesis_id": "1830.json_CS-Au_2782",
+  "composition": "CS-Au",
+  "elements": [
+    "C",
+    "S",
+    "Au"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "HAuCl4",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "low molecular weight chitosan",
+      "mass": 0.0225
+    },
+    {
+      "name": "acetic acid",
+      "mass": 0.12
+    },
+    {
+      "name": "hot water lignosus rhinocerotis sclerotial extract",
+      "mass": 0.4
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 65.0,
+    "ph": 4.5
+  },
+  "product": {
+    "crystalsystem": "spherical",
+    "shape": "spherical",
+    "size": {
+      "length": 125.3,
+      "width": 125.3,
+      "depth": 125.3
+    }
+  },
+  "pdfno_list": [
+    "71-4615"
+  ],
+  "source": {
+    "synthesis_id_original": "1830.json_CS-Au_2782",
+    "nodes": 19,
+    "edges": 18
+  },
+  "retrieval_text": "composition: CS-Au | method: green synthesis | solvent: water | temperature: 65.0 | pH: 4.5 | crystalsystem: spherical | shape: spherical | size.length: 125.3 | size.width: 125.3 | size.depth: 125.3 | precursor: HAuCl4 (conc 100.0) | additive: low molecular weight chitosan (mass 0.0225) | additive: acetic acid (mass 0.12) | additive: hot water lignosus rhinocerotis sclerotial extract (mass 0.4) | pdfno_list: 71-4615"
+}

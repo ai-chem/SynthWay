@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "2104.json_Pd_3484",
+  "composition": "Pd",
+  "elements": [
+    "Pd"
+  ],
+  "precursors": [
+    {
+      "name": "Na2PdCl4",
+      "mass": 0.057
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 0.105
+    },
+    {
+      "name": "ascorbic acid",
+      "mass": 0.06
+    },
+    {
+      "name": "potassium bromide",
+      "mass": 0.3
+    },
+    {
+      "name": "potassium chloride",
+      "mass": 0.185
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 8.0
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "shape": "cube",
+    "size": {
+      "length": 14.0,
+      "width": 14.0,
+      "depth": 14.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2104.json_Pd_3484",
+    "nodes": 18,
+    "edges": 17
+  },
+  "retrieval_text": "composition: Pd | solvent: water | solvent.volume: 8.0 | temperature: 80.0 | shape: cube | size.length: 14.0 | size.width: 14.0 | size.depth: 14.0 | precursor: Na2PdCl4 (mass 0.057) | additive: polyvinylpyrrolidone (mass 0.105) | additive: ascorbic acid (mass 0.06) | additive: potassium bromide (mass 0.3) | additive: potassium chloride (mass 0.185)"
+}

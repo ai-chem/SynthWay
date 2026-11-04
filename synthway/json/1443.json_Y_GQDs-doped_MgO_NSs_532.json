@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "1443.json_Y/GQDs-doped_MgO_NSs_532",
+  "composition": "Y/GQDs-doped MgO NSs",
+  "elements": [
+    "Y",
+    "G",
+    "Q",
+    "Ds",
+    "Mg",
+    "O",
+    "N",
+    "Ss"
+  ],
+  "method": "coprecipitation",
+  "precursors": [
+    {
+      "name": "MgCl2*6H2O",
+      "conc": 250.0
+    },
+    {
+      "name": "Y(NO3)3*6H2"
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "ph": 12.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal, cubic and monoclinic"
+  },
+  "pdfno_list": [
+    "00-020-0669 01-076-1363 00-045-0946 01-075-1525 96-901-3256"
+  ],
+  "source": {
+    "synthesis_id_original": "1443.json_Y/GQDs-doped_MgO_NSs_532",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Y/GQDs-doped MgO NSs | method: coprecipitation | solvent: water | pH: 12.0 | crystalsystem: hexagonal, cubic and monoclinic | precursor: MgCl2*6H2O (conc 250.0) | precursor: Y(NO3)3*6H2 | additive: sodium hydroxide (conc 1000.0) | pdfno_list: 00-020-0669 01-076-1363 00-045-0946 01-075-1525 96-901-3256"
+}

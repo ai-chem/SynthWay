@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "700.json_Mn_2840",
+  "composition": "Mn",
+  "elements": [
+    "Mn"
+  ],
+  "precursors": [
+    {
+      "name": "MnCl2",
+      "mass": 0.05
+    },
+    {
+      "name": "n-BuLi",
+      "conc": 1600.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleic acid",
+      "mass": 0.23
+    }
+  ],
+  "solvent": {
+    "name": "diphenylether",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 13.1,
+      "width": 13.1,
+      "depth": 13.1
+    }
+  },
+  "source": {
+    "synthesis_id_original": "700.json_Mn_2840",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Mn | solvent: diphenylether | solvent.volume: 10.0 | temperature: 200.0 | shape: spherical | size.length: 13.1 | size.width: 13.1 | size.depth: 13.1 | precursor: MnCl2 (mass 0.05) | precursor: n-BuLi (conc 1600.0) | additive: oleic acid (mass 0.23)"
+}

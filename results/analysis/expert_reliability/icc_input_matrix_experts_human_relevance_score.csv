@@ -1,0 +1,41 @@
+route_id,1,2,3,4
+10__anthropic_claude-opus-4.5__Au,1.0,1.0,1.0,1.0
+11__google_gemini-2.0-flash-001__CD-MOF,1.0,1.0,1.0,1.0
+12__google_gemini-2.0-flash-001__Se,1.0,1.0,1.0,1.0
+13__google_gemini-2.0-flash-001__Zn0.1Ni0.9,1.0,1.0,1.0,1.0
+14__google_gemini-2.0-flash-001__Ag,1.0,1.0,0.75,1.0
+15__google_gemini-2.0-flash-001__10Co3O4@CeO2,1.0,1.0,1.0,1.0
+16__google_gemini-2.0-flash-001__PEG coated Fe3O4,1.0,1.0,1.0,1.0
+17__google_gemini-2.0-flash-001__SiO2,1.0,1.0,1.0,1.0
+18__google_gemini-2.0-flash-001__Cu2O,1.0,1.0,1.0,1.0
+19__google_gemini-2.0-flash-001__Сu,1.0,1.0,1.0,1.0
+1__anthropic_claude-opus-4.5__CD-MOF,1.0,1.0,1.0,1.0
+20__google_gemini-2.0-flash-001__Au,1.0,1.0,1.0,1.0
+21__meta-llama_llama-4-maverick__CD-MOF,1.0,1.0,1.0,1.0
+22__meta-llama_llama-4-maverick__Se,1.0,1.0,1.0,1.0
+23__meta-llama_llama-4-maverick__Zn0.1Ni0.9,1.0,1.0,1.0,1.0
+24__meta-llama_llama-4-maverick__Ag,1.0,1.0,1.0,1.0
+25__meta-llama_llama-4-maverick__10Co3O4@CeO2,1.0,1.0,1.0,1.0
+26__meta-llama_llama-4-maverick__PEG coated Fe3O4,1.0,1.0,1.0,1.0
+27__meta-llama_llama-4-maverick__SiO2,1.0,1.0,1.0,1.0
+28__meta-llama_llama-4-maverick__Cu2O,1.0,1.0,1.0,1.0
+29__meta-llama_llama-4-maverick__Сu,1.0,1.0,1.0,1.0
+2__anthropic_claude-opus-4.5__Se,1.0,1.0,1.0,1.0
+30__meta-llama_llama-4-maverick__Au,1.0,1.0,1.0,1.0
+31__nvidia_nemotron-3-nano-30b-a3b_free__CD-MOF,0.25,0.25,1.0,0.5
+32__nvidia_nemotron-3-nano-30b-a3b_free__Se,1.0,1.0,1.0,1.0
+33__nvidia_nemotron-3-nano-30b-a3b_free__Zn0.1Ni0.9,1.0,1.0,0.75,1.0
+34__nvidia_nemotron-3-nano-30b-a3b_free__Ag,1.0,1.0,1.0,1.0
+35__nvidia_nemotron-3-nano-30b-a3b_free__10Co3O4@CeO2,1.0,1.0,1.0,1.0
+36__nvidia_nemotron-3-nano-30b-a3b_free__PEG coated Fe3O4,1.0,1.0,1.0,1.0
+37__nvidia_nemotron-3-nano-30b-a3b_free__SiO2,1.0,1.0,1.0,1.0
+38__nvidia_nemotron-3-nano-30b-a3b_free__Cu2O,1.0,1.0,1.0,1.0
+39__nvidia_nemotron-3-nano-30b-a3b_free__Сu,1.0,1.0,1.0,1.0
+3__anthropic_claude-opus-4.5__Zn0.1Ni0.9,1.0,1.0,1.0,1.0
+40__nvidia_nemotron-3-nano-30b-a3b_free__Au,1.0,1.0,1.0,1.0
+4__anthropic_claude-opus-4.5__Ag,1.0,1.0,1.0,1.0
+5__anthropic_claude-opus-4.5__10Co3O4@CeO2,1.0,1.0,1.0,1.0
+6__anthropic_claude-opus-4.5__PEG coated Fe3O4,1.0,1.0,1.0,1.0
+7__anthropic_claude-opus-4.5__SiO2,1.0,1.0,0.75,1.0
+8__anthropic_claude-opus-4.5__Cu2O,1.0,1.0,0.75,1.0
+9__anthropic_claude-opus-4.5__Сu,1.0,1.0,0.75,1.0

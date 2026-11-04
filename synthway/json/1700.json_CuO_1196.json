@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1700.json_CuO_1196",
+  "composition": "CuO",
+  "elements": [
+    "Cu",
+    "O"
+  ],
+  "method": "chemical synthesis",
+  "precursors": [
+    {
+      "name": "Cu(NO3)2",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone"
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 500.0
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 120.0
+  },
+  "product": {
+    "size": {
+      "length": 84.0,
+      "width": 84.0,
+      "depth": 84.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1700.json_CuO_1196",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: CuO | method: chemical synthesis | solvent: distilled water | solvent.volume: 50.0 | temperature: 120.0 | size.length: 84.0 | size.width: 84.0 | size.depth: 84.0 | precursor: Cu(NO3)2 (conc 100.0) | additive: polyvinylpyrrolidone | additive: sodium hydroxide (conc 500.0)"
+}

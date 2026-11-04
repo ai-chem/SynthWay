@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "10.json_CuO_1095",
+  "composition": "CuO",
+  "elements": [
+    "Cu",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "solvent": {
+    "name": "double distilled water"
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "nanoneedles",
+    "size": {
+      "length": 750.0,
+      "width": 42.5,
+      "depth": 42.5
+    }
+  },
+  "pdfno_list": [
+    "05-0661"
+  ],
+  "source": {
+    "synthesis_id_original": "10.json_CuO_1095",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: CuO | method: hydrothermal | solvent: double distilled water | temperature: 180.0 | crystalsystem: monoclinic | shape: nanoneedles | size.length: 750.0 | size.width: 42.5 | size.depth: 42.5 | pdfno_list: 05-0661"
+}

@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "1907.json_CoP_377",
+  "composition": "CoP",
+  "elements": [
+    "Co",
+    "P"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "CoSO4·7H2O",
+      "mass": 1.41
+    },
+    {
+      "name": "NaH2PO2",
+      "mass": 0.6
+    }
+  ],
+  "additives": [
+    {
+      "name": "urea",
+      "mass": 1.9
+    },
+    {
+      "name": "sodium fluoride"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 300.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "spherical"
+  },
+  "pdfno_list": [
+    "29-0497"
+  ],
+  "source": {
+    "synthesis_id_original": "1907.json_CoP_377",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: CoP | method: hydrothermal | solvent: water | solvent.volume: 30.0 | temperature: 300.0 | crystalsystem: orthorhombic | shape: spherical | precursor: CoSO4·7H2O (mass 1.41) | precursor: NaH2PO2 (mass 0.6) | additive: urea (mass 1.9) | additive: sodium fluoride | pdfno_list: 29-0497"
+}

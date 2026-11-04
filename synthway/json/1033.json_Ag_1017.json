@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1033.json_Ag_1017",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 50.0
+    },
+    {
+      "name": "hexamine",
+      "mass": 0.028,
+      "conc": 2.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "starch",
+      "mass": 0.1
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "ph": 2.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "shape": "spherical",
+    "size": {
+      "width": 18.1979
+    }
+  },
+  "pdfno_list": [
+    "04-0783"
+  ],
+  "source": {
+    "synthesis_id_original": "1033.json_Ag_1017",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Ag | solvent: water | pH: 2.0 | crystalsystem: face-centered cubic | shape: spherical | size.width: 18.1979 | precursor: AgNO3 (conc 50.0) | precursor: hexamine (mass 0.028; conc 2.0) | additive: starch (mass 0.1) | pdfno_list: 04-0783"
+}

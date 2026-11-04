@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "1319.json_Cu2O_(CM)_3374",
+  "composition": "Cu2O  (CM)",
+  "elements": [
+    "Cu",
+    "O",
+    "C",
+    "M"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Cu(CH3COO)2",
+      "conc": 1000.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 50.0
+    },
+    {
+      "name": "myrica esculenta methanol fruits extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "sheets with entrapped spherical particles",
+    "size": {
+      "length": 22.04,
+      "width": 22.04,
+      "depth": 22.04
+    }
+  },
+  "pdfno_list": [
+    "05-0667"
+  ],
+  "source": {
+    "synthesis_id_original": "1319.json_Cu2O_(CM)_3374",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Cu2O  (CM) | method: green synthesis | solvent: water | temperature: 60.0 | crystalsystem: cubic | shape: sheets with entrapped spherical particles | size.length: 22.04 | size.width: 22.04 | size.depth: 22.04 | precursor: Cu(CH3COO)2 (conc 1000.0) | additive: sodium hydroxide (conc 50.0) | additive: myrica esculenta methanol fruits extract | pdfno_list: 05-0667"
+}

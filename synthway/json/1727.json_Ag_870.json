@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "1727.json_Ag_870",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "biosynthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "mass": 0.17
+    }
+  ],
+  "additives": [
+    {
+      "name": "aloe vera extract"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "hexagonal",
+    "size": {
+      "length": 20.22,
+      "width": 20.22,
+      "depth": 20.22
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1727.json_Ag_870",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Ag | method: biosynthesis | solvent: deionized water | solvent.volume: 100.0 | temperature: 60.0 | crystalsystem: hexagonal | shape: hexagonal | size.length: 20.22 | size.width: 20.22 | size.depth: 20.22 | precursor: AgNO3 (mass 0.17) | additive: aloe vera extract"
+}

@@ -1,0 +1,27 @@
+{
+  "synthesis_id": "200.json_Fe_FeO_Fe3O4_a-FeO(OH)_g-FeO(OH)_1524",
+  "composition": "Fe, FeO, Fe3O4, a-FeO(OH), g-FeO(OH)",
+  "elements": [
+    "Fe",
+    "O",
+    "H"
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 400.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 155.0,
+      "width": 155.0,
+      "depth": 155.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "200.json_Fe_FeO_Fe3O4_a-FeO(OH)_g-FeO(OH)_1524",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: Fe, FeO, Fe3O4, a-FeO(OH), g-FeO(OH) | solvent: distilled water | solvent.volume: 400.0 | shape: spherical | size.length: 155.0 | size.width: 155.0 | size.depth: 155.0"
+}

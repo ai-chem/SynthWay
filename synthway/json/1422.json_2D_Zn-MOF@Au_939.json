@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "1422.json_2D_Zn-MOF@Au_939",
+  "composition": "2D Zn-MOF@Au",
+  "elements": [
+    "D",
+    "Zn",
+    "M",
+    "O",
+    "F",
+    "Au"
+  ],
+  "method": "one-pot synthesis",
+  "precursors": [
+    {
+      "name": "2D Zn-MOF"
+    },
+    {
+      "name": "Au NPs"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "laminar structure"
+  },
+  "source": {
+    "synthesis_id_original": "1422.json_2D_Zn-MOF@Au_939",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: 2D Zn-MOF@Au | method: one-pot synthesis | solvent: water | shape: laminar structure | precursor: 2D Zn-MOF | precursor: Au NPs"
+}

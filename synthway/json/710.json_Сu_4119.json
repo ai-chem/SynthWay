@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "710.json_Сu_4119",
+  "composition": "Сu",
+  "method": "reduction",
+  "precursors": [
+    {
+      "name": "Cu(NO3)2*2.5H2O",
+      "mass": 34.5,
+      "conc": 43.0
+    },
+    {
+      "name": "N2H4*H2O",
+      "mass": 0.0392,
+      "conc": 19600.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyacrylic acid sodium salt"
+    }
+  ],
+  "seeds": [
+    {
+      "name": "Ag",
+      "mass": 0.65,
+      "conc": 1.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 5.0,
+      "width": 5.0,
+      "depth": 5.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "710.json_Сu_4119",
+    "nodes": 18,
+    "edges": 17
+  },
+  "retrieval_text": "composition: Сu | method: reduction | solvent: water | crystalsystem: face-centered cubic | shape: spherical | size.length: 5.0 | size.width: 5.0 | size.depth: 5.0 | precursor: Cu(NO3)2*2.5H2O (mass 34.5; conc 43.0) | precursor: N2H4*H2O (mass 0.0392; conc 19600.0) | additive: polyacrylic acid sodium salt | seed: Ag (mass 0.65; conc 1.0)"
+}

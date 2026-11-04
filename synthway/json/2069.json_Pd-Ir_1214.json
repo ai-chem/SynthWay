@@ -1,0 +1,55 @@
+{
+  "synthesis_id": "2069.json_Pd-Ir_1214",
+  "composition": "Pd-Ir",
+  "elements": [
+    "Pd",
+    "Ir"
+  ],
+  "method": "seed-mediated growth",
+  "precursors": [
+    {
+      "name": "KBr",
+      "mass": 0.45
+    },
+    {
+      "name": "Na3IrCl6*xH2O",
+      "mass": 0.2
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 0.1
+    },
+    {
+      "name": "ascorbic acid",
+      "mass": 0.05
+    }
+  ],
+  "seeds": [
+    {
+      "name": "Pd"
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 8.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "shape": "cube",
+    "size": {
+      "length": 19.2,
+      "width": 19.2,
+      "depth": 19.2
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2069.json_Pd-Ir_1214",
+    "nodes": 18,
+    "edges": 17
+  },
+  "retrieval_text": "composition: Pd-Ir | method: seed-mediated growth | solvent: ethylene glycol | solvent.volume: 8.0 | temperature: 200.0 | shape: cube | size.length: 19.2 | size.width: 19.2 | size.depth: 19.2 | precursor: KBr (mass 0.45) | precursor: Na3IrCl6*xH2O (mass 0.2) | additive: polyvinylpyrrolidone (mass 0.1) | additive: ascorbic acid (mass 0.05) | seed: Pd"
+}

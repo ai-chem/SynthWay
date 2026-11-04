@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1797.json_CS-Au_3027",
+  "composition": "CS-Au",
+  "elements": [
+    "C",
+    "S",
+    "Au"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "HAuCl4·3H2O",
+      "conc": 1.25
+    }
+  ],
+  "additives": [
+    {
+      "name": "chitosan"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 80.0,
+    "ph": 7.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 16.9,
+      "width": 16.9,
+      "depth": 16.9
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1797.json_CS-Au_3027",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: CS-Au | method: green synthesis | solvent: water | solvent.volume: 50.0 | temperature: 80.0 | pH: 7.0 | crystalsystem: cubic | shape: spherical | size.length: 16.9 | size.width: 16.9 | size.depth: 16.9 | precursor: HAuCl4·3H2O (conc 1.25) | additive: chitosan"
+}

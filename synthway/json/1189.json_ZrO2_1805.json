@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1189.json_ZrO2_1805",
+  "composition": "ZrO2",
+  "elements": [
+    "Zr",
+    "O"
+  ],
+  "method": "sol-gel",
+  "precursors": [
+    {
+      "name": "ZrCl4",
+      "conc": 2000.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "ammonia solution"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water"
+  },
+  "conditions": {
+    "ph": 11.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "small pebbles, large stony",
+    "size": {
+      "length": 13.0,
+      "width": 13.0,
+      "depth": 13.0
+    }
+  },
+  "pdfno_list": [
+    "00-013-0307"
+  ],
+  "source": {
+    "synthesis_id_original": "1189.json_ZrO2_1805",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: ZrO2 | method: sol-gel | solvent: deionized water | pH: 11.0 | crystalsystem: monoclinic | shape: small pebbles, large stony | size.length: 13.0 | size.width: 13.0 | size.depth: 13.0 | precursor: ZrCl4 (conc 2000.0) | additive: ammonia solution | pdfno_list: 00-013-0307"
+}

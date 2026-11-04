@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "1737.json_Ag_1685",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "mass": 0.01427
+    }
+  ],
+  "additives": [
+    {
+      "name": "strawberry seed (ss) extract"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 70.0
+  },
+  "conditions": {
+    "ph": 8.4
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 60.0,
+      "width": 60.0,
+      "depth": 60.0
+    }
+  },
+  "pdfno_list": [
+    "04-0784"
+  ],
+  "source": {
+    "synthesis_id_original": "1737.json_Ag_1685",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Ag | solvent: distilled water | solvent.volume: 70.0 | pH: 8.4 | crystalsystem: cubic | shape: spherical | size.length: 60.0 | size.width: 60.0 | size.depth: 60.0 | precursor: AgNO3 (mass 0.01427) | additive: strawberry seed (ss) extract | pdfno_list: 04-0784"
+}

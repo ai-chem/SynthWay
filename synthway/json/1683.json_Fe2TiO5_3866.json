@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "1683.json_Fe2TiO5_3866",
+  "composition": "Fe2TiO5",
+  "elements": [
+    "Fe",
+    "Ti",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Fe(NO3)·9 H2O",
+      "mass": 4.0
+    },
+    {
+      "name": "Ti(OCH)(CH3)2",
+      "mass": 1.4
+    }
+  ],
+  "additives": [
+    {
+      "name": "aqueous lemon peel extract"
+    },
+    {
+      "name": "oxalic acid"
+    }
+  ],
+  "solvent": {
+    "name": "ethoanol",
+    "volume": 20.0
+  },
+  "conditions": {
+    "ph": 2.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "size": {
+      "length": 50.0,
+      "width": 50.0,
+      "depth": 50.0
+    }
+  },
+  "pdfno_list": [
+    "76-1158"
+  ],
+  "source": {
+    "synthesis_id_original": "1683.json_Fe2TiO5_3866",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: Fe2TiO5 | method: green synthesis | solvent: ethoanol | solvent.volume: 20.0 | pH: 2.0 | crystalsystem: orthorhombic | size.length: 50.0 | size.width: 50.0 | size.depth: 50.0 | precursor: Fe(NO3)·9 H2O (mass 4.0) | precursor: Ti(OCH)(CH3)2 (mass 1.4) | additive: aqueous lemon peel extract | additive: oxalic acid | pdfno_list: 76-1158"
+}

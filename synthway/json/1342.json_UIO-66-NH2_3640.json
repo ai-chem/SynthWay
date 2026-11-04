@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "1342.json_UIO-66-NH2_3640",
+  "composition": "UIO-66-NH2",
+  "elements": [
+    "U",
+    "I",
+    "O",
+    "N",
+    "H"
+  ],
+  "precursors": [
+    {
+      "name": "C8H6O4",
+      "mass": 0.39
+    },
+    {
+      "name": "ZrCl4",
+      "mass": 0.54
+    }
+  ],
+  "additives": [
+    {
+      "name": "chloroform"
+    }
+  ],
+  "solvent": {
+    "name": "dimethylformamide",
+    "volume": 31.0
+  },
+  "conditions": {
+    "temperature": 120.0
+  },
+  "product": {
+    "shape": "hexagonal",
+    "size": {
+      "length": 191.65,
+      "width": 191.65,
+      "depth": 191.65
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1342.json_UIO-66-NH2_3640",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: UIO-66-NH2 | solvent: dimethylformamide | solvent.volume: 31.0 | temperature: 120.0 | shape: hexagonal | size.length: 191.65 | size.width: 191.65 | size.depth: 191.65 | precursor: C8H6O4 (mass 0.39) | precursor: ZrCl4 (mass 0.54) | additive: chloroform"
+}

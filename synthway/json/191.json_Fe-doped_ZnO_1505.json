@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "191.json_Fe-doped_ZnO_1505",
+  "composition": "Fe-doped ZnO",
+  "elements": [
+    "Fe",
+    "Zn",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2·2H2O",
+      "conc": 0.5
+    }
+  ],
+  "additives": [
+    {
+      "name": "iron(III) chloride hexahydrate"
+    }
+  ],
+  "solvent": {
+    "name": "double distilled water"
+  },
+  "conditions": {
+    "ph": 7.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 17.0,
+      "width": 17.0,
+      "depth": 17.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "191.json_Fe-doped_ZnO_1505",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Fe-doped ZnO | solvent: double distilled water | pH: 7.0 | shape: spherical | size.length: 17.0 | size.width: 17.0 | size.depth: 17.0 | precursor: Zn(CH3COO)2·2H2O (conc 0.5) | additive: iron(III) chloride hexahydrate"
+}

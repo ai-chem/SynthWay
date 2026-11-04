@@ -1,0 +1,37 @@
+{
+  "synthesis_id": "1250.json_Fe66/Cu34_3605",
+  "composition": "Fe66/Cu34",
+  "elements": [
+    "Fe",
+    "Cu"
+  ],
+  "method": "electric explosion",
+  "precursors": [
+    {
+      "name": "Cu"
+    },
+    {
+      "name": "Fe"
+    }
+  ],
+  "solvent": {
+    "name": "argon-oxygen mixture"
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 45.0,
+      "width": 45.0,
+      "depth": 45.0
+    }
+  },
+  "pdfno_list": [
+    "060545 440706 351091"
+  ],
+  "source": {
+    "synthesis_id_original": "1250.json_Fe66/Cu34_3605",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Fe66/Cu34 | method: electric explosion | solvent: argon-oxygen mixture | crystalsystem: cubic | size.length: 45.0 | size.width: 45.0 | size.depth: 45.0 | precursor: Cu | precursor: Fe | pdfno_list: 060545 440706 351091"
+}

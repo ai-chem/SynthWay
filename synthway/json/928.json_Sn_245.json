@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "928.json_Sn_245",
+  "composition": "Sn",
+  "elements": [
+    "Sn"
+  ],
+  "method": "modified polyol process",
+  "precursors": [
+    {
+      "name": "C16H30O4Sn"
+    },
+    {
+      "name": "NaBH4",
+      "mass": 2.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 1.0
+    }
+  ],
+  "solvent": {
+    "name": "diethylene glycol"
+  },
+  "conditions": {
+    "temperature": 20.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 13.1,
+      "width": 13.1,
+      "depth": 13.1
+    }
+  },
+  "source": {
+    "synthesis_id_original": "928.json_Sn_245",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Sn | method: modified polyol process | solvent: diethylene glycol | temperature: 20.0 | shape: spherical | size.length: 13.1 | size.width: 13.1 | size.depth: 13.1 | precursor: C16H30O4Sn | precursor: NaBH4 (mass 2.0) | additive: polyvinylpyrrolidone (mass 1.0)"
+}

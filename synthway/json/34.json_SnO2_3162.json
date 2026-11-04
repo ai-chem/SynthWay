@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "34.json_SnO2_3162",
+  "composition": "SnO2",
+  "elements": [
+    "Sn",
+    "O"
+  ],
+  "solvent": {
+    "name": "double distilled water",
+    "volume": 70.0
+  },
+  "conditions": {
+    "temperature": 160.0
+  },
+  "product": {
+    "crystalsystem": "rutile",
+    "shape": "flower-like",
+    "size": {
+      "length": 241.0,
+      "width": 241.0,
+      "depth": 241.0
+    }
+  },
+  "pdfno_list": [
+    "41-1445"
+  ],
+  "source": {
+    "synthesis_id_original": "34.json_SnO2_3162",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: SnO2 | solvent: double distilled water | solvent.volume: 70.0 | temperature: 160.0 | crystalsystem: rutile | shape: flower-like | size.length: 241.0 | size.width: 241.0 | size.depth: 241.0 | pdfno_list: 41-1445"
+}

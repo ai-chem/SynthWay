@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "1930.json_TiO2_1012",
+  "composition": "TiO2",
+  "elements": [
+    "Ti",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "TiO2 (P25)",
+      "mass": 0.4
+    }
+  ],
+  "additives": [
+    {
+      "name": "nitric acid",
+      "mass": 2.0
+    },
+    {
+      "name": "butyl-methyl imidazolium chloride bmi.cl",
+      "mass": 0.5
+    }
+  ],
+  "solvent": {
+    "name": "hydrogen peroxide",
+    "volume": 5.0
+  },
+  "conditions": {
+    "temperature": 130.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 35.0,
+      "width": 35.0,
+      "depth": 35.0
+    }
+  },
+  "pdfno_list": [
+    "021-1272"
+  ],
+  "source": {
+    "synthesis_id_original": "1930.json_TiO2_1012",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: TiO2 | solvent: hydrogen peroxide | solvent.volume: 5.0 | temperature: 130.0 | shape: spherical | size.length: 35.0 | size.width: 35.0 | size.depth: 35.0 | precursor: TiO2 (P25) (mass 0.4) | additive: nitric acid (mass 2.0) | additive: butyl-methyl imidazolium chloride bmi.cl (mass 0.5) | pdfno_list: 021-1272"
+}

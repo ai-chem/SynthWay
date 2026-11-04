@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "102.json_ZnO-MPA_924",
+  "composition": "ZnO-MPA",
+  "elements": [
+    "Zn",
+    "O",
+    "M",
+    "P",
+    "A"
+  ],
+  "method": "coprecipitation",
+  "precursors": [
+    {
+      "name": "ZnCl2",
+      "mass": 2.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "mercaptopropionic acid"
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 2000.0
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "ph": 11.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 38.0,
+      "width": 38.0,
+      "depth": 38.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "102.json_ZnO-MPA_924",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: ZnO-MPA | method: coprecipitation | solvent: distilled water | solvent.volume: 100.0 | pH: 11.0 | shape: spherical | size.length: 38.0 | size.width: 38.0 | size.depth: 38.0 | precursor: ZnCl2 (mass 2.0) | additive: mercaptopropionic acid | additive: sodium hydroxide (conc 2000.0)"
+}

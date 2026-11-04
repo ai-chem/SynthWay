@@ -1,0 +1,53 @@
+{
+  "synthesis_id": "2023.json_Fe60Co40_1023",
+  "composition": "Fe60Co40",
+  "elements": [
+    "Fe",
+    "Co"
+  ],
+  "precursors": [
+    {
+      "name": "Fe(acac)3",
+      "conc": 0.75
+    },
+    {
+      "name": "Co(acac)2",
+      "conc": 0.5
+    }
+  ],
+  "additives": [
+    {
+      "name": "1,2-hexadecanediol",
+      "conc": 1.5
+    },
+    {
+      "name": "oleic acid",
+      "conc": 4.37
+    },
+    {
+      "name": "trioctylphosphine",
+      "conc": 5.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 300.0
+  },
+  "product": {
+    "crystalsystem": "bcc",
+    "shape": "wire",
+    "size": {
+      "length": 100.0,
+      "width": 6.0,
+      "depth": 6.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2023.json_Fe60Co40_1023",
+    "nodes": 18,
+    "edges": 17
+  },
+  "retrieval_text": "composition: Fe60Co40 | solvent: water | temperature: 300.0 | crystalsystem: bcc | shape: wire | size.length: 100.0 | size.width: 6.0 | size.depth: 6.0 | precursor: Fe(acac)3 (conc 0.75) | precursor: Co(acac)2 (conc 0.5) | additive: 1,2-hexadecanediol (conc 1.5) | additive: oleic acid (conc 4.37) | additive: trioctylphosphine (conc 5.0)"
+}

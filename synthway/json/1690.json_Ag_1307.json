@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1690.json_Ag_1307",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "olive leaf extract"
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 100.0
+    },
+    {
+      "name": "phosphoric acid",
+      "conc": 100.0
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 10.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 12.0,
+      "width": 12.0,
+      "depth": 12.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1690.json_Ag_1307",
+    "nodes": 14,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Ag | solvent: deionized water | solvent.volume: 10.0 | crystalsystem: cubic | shape: spherical | size.length: 12.0 | size.width: 12.0 | size.depth: 12.0 | precursor: AgNO3 (conc 1.0) | additive: olive leaf extract | additive: sodium hydroxide (conc 100.0) | additive: phosphoric acid (conc 100.0)"
+}

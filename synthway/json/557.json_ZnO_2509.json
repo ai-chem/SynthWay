@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "557.json_ZnO_2509",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "solvo-hydrothermal",
+  "precursors": [
+    {
+      "name": "C10H14O4Zn·xH2O",
+      "mass": 0.28,
+      "conc": 1.06
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 35.0,
+      "width": 35.0,
+      "depth": 35.0
+    }
+  },
+  "pdfno_list": [
+    "89-0510"
+  ],
+  "source": {
+    "synthesis_id_original": "557.json_ZnO_2509",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: ZnO | method: solvo-hydrothermal | solvent: water | temperature: 200.0 | crystalsystem: hexagonal | shape: spherical | size.length: 35.0 | size.width: 35.0 | size.depth: 35.0 | precursor: C10H14O4Zn·xH2O (mass 0.28; conc 1.06) | pdfno_list: 89-0510"
+}

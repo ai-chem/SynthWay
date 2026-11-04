@@ -1,0 +1,72 @@
+{
+  "synthesis_id": "646.json_BaTiO3_1579",
+  "composition": "BaTiO3",
+  "elements": [
+    "Ba",
+    "Ti",
+    "O"
+  ],
+  "method": "emulsion precipitation",
+  "precursors": [
+    {
+      "name": "BaCl2",
+      "conc": 10.0
+    },
+    {
+      "name": "Ti(OC3H7)4",
+      "conc": 5.0
+    },
+    {
+      "name": "HCl",
+      "conc": 50.0
+    },
+    {
+      "name": "H2O2",
+      "conc": 160.0
+    },
+    {
+      "name": "C10H16N2O8",
+      "conc": 160.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "tetramethyl ammonium hydroxide"
+    },
+    {
+      "name": "decane",
+      "mass": 60.0
+    },
+    {
+      "name": "nonyl phenol tetra-ethyleneglycol ether",
+      "mass": 1.0
+    },
+    {
+      "name": "didodecyldimethylammonium bromide",
+      "mass": 1.0
+    },
+    {
+      "name": "poly-(octadecyl methacrylate)"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 500.0
+  },
+  "conditions": {
+    "temperature": 50.0,
+    "ph": 9.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 5.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "646.json_BaTiO3_1579",
+    "nodes": 24,
+    "edges": 25
+  },
+  "retrieval_text": "composition: BaTiO3 | method: emulsion precipitation | solvent: water | solvent.volume: 500.0 | temperature: 50.0 | pH: 9.0 | crystalsystem: cubic | size.length: 5.0 | precursor: BaCl2 (conc 10.0) | precursor: Ti(OC3H7)4 (conc 5.0) | precursor: HCl (conc 50.0) | precursor: H2O2 (conc 160.0) | precursor: C10H16N2O8 (conc 160.0) | additive: tetramethyl ammonium hydroxide | additive: decane (mass 60.0) | additive: nonyl phenol tetra-ethyleneglycol ether (mass 1.0) | additive: didodecyldimethylammonium bromide (mass 1.0) | additive: poly-(octadecyl methacrylate)"
+}

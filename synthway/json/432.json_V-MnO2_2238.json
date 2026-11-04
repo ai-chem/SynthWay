@@ -1,0 +1,32 @@
+{
+  "synthesis_id": "432.json_V-MnO2_2238",
+  "composition": "V-MnO2",
+  "elements": [
+    "V",
+    "Mn",
+    "O"
+  ],
+  "method": "redox",
+  "solvent": {
+    "name": "water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 450.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "size": {
+      "length": 62.5
+    }
+  },
+  "pdfno_list": [
+    "44-0141"
+  ],
+  "source": {
+    "synthesis_id_original": "432.json_V-MnO2_2238",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: V-MnO2 | method: redox | solvent: water | solvent.volume: 50.0 | temperature: 450.0 | crystalsystem: tetragonal | size.length: 62.5 | pdfno_list: 44-0141"
+}

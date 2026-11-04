@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "227.json_NP-MoC1-x/C_679",
+  "composition": "NP-MoC1-x/C",
+  "elements": [
+    "N",
+    "P",
+    "Mo",
+    "C"
+  ],
+  "method": "solution-based synthesis",
+  "precursors": [
+    {
+      "name": "Mo(CO)6",
+      "mass": 0.264,
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "chcl3",
+      "mass": 0.67
+    },
+    {
+      "name": "acetone",
+      "mass": 44.31
+    }
+  ],
+  "solvent": {
+    "name": "n2"
+  },
+  "conditions": {
+    "temperature": 300.0
+  },
+  "product": {
+    "shape": "multipodal",
+    "size": {
+      "length": 2.2
+    }
+  },
+  "source": {
+    "synthesis_id_original": "227.json_NP-MoC1-x/C_679",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: NP-MoC1-x/C | method: solution-based synthesis | solvent: n2 | temperature: 300.0 | shape: multipodal | size.length: 2.2 | precursor: Mo(CO)6 (mass 0.264; conc 1.0) | additive: chcl3 (mass 0.67) | additive: acetone (mass 44.31)"
+}

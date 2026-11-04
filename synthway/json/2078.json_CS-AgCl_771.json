@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "2078.json_CS-AgCl_771",
+  "composition": "CS-AgCl",
+  "elements": [
+    "C",
+    "S",
+    "Ag",
+    "Cl"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 100.0
+    },
+    {
+      "name": "KCl",
+      "conc": 150.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "chitosan",
+      "mass": 0.19
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 48.2,
+      "width": 48.2,
+      "depth": 48.2
+    }
+  },
+  "pdfno_list": [
+    "31-1238"
+  ],
+  "source": {
+    "synthesis_id_original": "2078.json_CS-AgCl_771",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: CS-AgCl | solvent: water | crystalsystem: cubic | size.length: 48.2 | size.width: 48.2 | size.depth: 48.2 | precursor: AgNO3 (conc 100.0) | precursor: KCl (conc 150.0) | additive: chitosan (mass 0.19) | pdfno_list: 31-1238"
+}

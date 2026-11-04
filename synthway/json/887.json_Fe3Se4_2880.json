@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "887.json_Fe3Se4_2880",
+  "composition": "Fe3Se4",
+  "elements": [
+    "Fe",
+    "Se"
+  ],
+  "method": "one-pot high-tempera-ture organic-solution-phase method",
+  "precursors": [
+    {
+      "name": "Fe(acac)3",
+      "mass": 0.53
+    },
+    {
+      "name": "Se",
+      "mass": 0.158
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleic acid"
+    },
+    {
+      "name": "oleylamine"
+    }
+  ],
+  "solvent": {
+    "name": "oleylamine",
+    "volume": 15.0
+  },
+  "conditions": {
+    "temperature": 300.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "sheets"
+  },
+  "pdfno_list": [
+    "71-2250"
+  ],
+  "source": {
+    "synthesis_id_original": "887.json_Fe3Se4_2880",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Fe3Se4 | method: one-pot high-tempera-ture organic-solution-phase method | solvent: oleylamine | solvent.volume: 15.0 | temperature: 300.0 | crystalsystem: monoclinic | shape: sheets | precursor: Fe(acac)3 (mass 0.53) | precursor: Se (mass 0.158) | additive: oleic acid | additive: oleylamine | pdfno_list: 71-2250"
+}

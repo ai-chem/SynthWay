@@ -1,0 +1,54 @@
+{
+  "synthesis_id": "2052.json_Gentamicin_loaded_Fe3O4_1917",
+  "composition": "Gentamicin loaded Fe3O4",
+  "elements": [
+    "Ge",
+    "Fe",
+    "O"
+  ],
+  "method": "coprecipitation",
+  "precursors": [
+    {
+      "name": "FeCl3",
+      "conc": 300.0
+    },
+    {
+      "name": "FeCl2",
+      "conc": 300.0
+    },
+    {
+      "name": "Gentamicin",
+      "mass": 15.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 1500.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "ph": 12.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 10.76,
+      "width": 10.76,
+      "depth": 10.76
+    }
+  },
+  "pdfno_list": [
+    "19-0629"
+  ],
+  "source": {
+    "synthesis_id_original": "2052.json_Gentamicin_loaded_Fe3O4_1917",
+    "nodes": 17,
+    "edges": 17
+  },
+  "retrieval_text": "composition: Gentamicin loaded Fe3O4 | method: coprecipitation | solvent: water | pH: 12.0 | crystalsystem: cubic | shape: spherical | size.length: 10.76 | size.width: 10.76 | size.depth: 10.76 | precursor: FeCl3 (conc 300.0) | precursor: FeCl2 (conc 300.0) | precursor: Gentamicin (mass 15.0) | additive: sodium hydroxide (conc 1500.0) | pdfno_list: 19-0629"
+}

@@ -1,0 +1,35 @@
+{
+  "synthesis_id": "1073.json_ZnO_140",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2",
+      "conc": 50.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "c. igneus leaves extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 120.0
+  },
+  "product": {
+    "shape": "spherical"
+  },
+  "source": {
+    "synthesis_id_original": "1073.json_ZnO_140",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: ZnO | method: green synthesis | solvent: water | temperature: 120.0 | shape: spherical | precursor: Zn(CH3COO)2 (conc 50.0) | additive: c. igneus leaves extract"
+}

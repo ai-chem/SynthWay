@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "778.json_FePt_1388",
+  "composition": "FePt",
+  "elements": [
+    "Fe",
+    "Pt"
+  ],
+  "precursors": [
+    {
+      "name": "Pt(C5H7O2)2",
+      "mass": 0.18
+    },
+    {
+      "name": "Na2[Fe(CO)4]",
+      "mass": 0.0639
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleyl amine"
+    },
+    {
+      "name": "oleic acid"
+    }
+  ],
+  "solvent": {
+    "name": "nonadecane"
+  },
+  "conditions": {
+    "temperature": 334.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 1.67,
+      "width": 1.67,
+      "depth": 1.67
+    }
+  },
+  "source": {
+    "synthesis_id_original": "778.json_FePt_1388",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: FePt | solvent: nonadecane | temperature: 334.0 | crystalsystem: face-centered cubic | shape: spherical | size.length: 1.67 | size.width: 1.67 | size.depth: 1.67 | precursor: Pt(C5H7O2)2 (mass 0.18) | precursor: Na2[Fe(CO)4] (mass 0.0639) | additive: oleyl amine | additive: oleic acid"
+}

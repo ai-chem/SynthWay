@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "1367.json_G-CuO_1681",
+  "composition": "G-CuO",
+  "elements": [
+    "G",
+    "Cu",
+    "O"
+  ],
+  "method": "co-precipitation green synthesis",
+  "precursors": [
+    {
+      "name": "copper sulfate pentahydrate (CuSO4·5H2O)",
+      "mass": 0.3
+    }
+  ],
+  "additives": [
+    {
+      "name": "cupressocyparis leylandii leaf extract"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 100.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "polyhedrons",
+    "size": {
+      "length": 1620.0,
+      "width": 1620.0,
+      "depth": 1620.0
+    }
+  },
+  "pdfno_list": [
+    "96-901-2955"
+  ],
+  "source": {
+    "synthesis_id_original": "1367.json_G-CuO_1681",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: G-CuO | method: co-precipitation green synthesis | solvent: distilled water | solvent.volume: 100.0 | crystalsystem: monoclinic | shape: polyhedrons | size.length: 1620.0 | size.width: 1620.0 | size.depth: 1620.0 | precursor: copper sulfate pentahydrate (CuSO4·5H2O) (mass 0.3) | additive: cupressocyparis leylandii leaf extract | pdfno_list: 96-901-2955"
+}

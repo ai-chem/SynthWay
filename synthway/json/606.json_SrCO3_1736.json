@@ -1,0 +1,57 @@
+{
+  "synthesis_id": "606.json_SrCO3_1736",
+  "composition": "SrCO3",
+  "elements": [
+    "Sr",
+    "C",
+    "O"
+  ],
+  "method": "mixed solvent",
+  "precursors": [
+    {
+      "name": "C29H32O13",
+      "mass": 0.837
+    },
+    {
+      "name": "SrCl2⋅6H2O",
+      "mass": 0.267
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium carbonate",
+      "mass": 0.106
+    },
+    {
+      "name": "ethanol:water (1:1)",
+      "mass": 40.0
+    },
+    {
+      "name": "citric acid",
+      "mass": 0.026
+    }
+  ],
+  "solvent": {
+    "name": "ethanol:water (8:1)",
+    "volume": 180.0
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "dumbbell",
+    "size": {
+      "length": 86.8
+    }
+  },
+  "pdfno_list": [
+    "05-0418"
+  ],
+  "source": {
+    "synthesis_id_original": "606.json_SrCO3_1736",
+    "nodes": 19,
+    "edges": 18
+  },
+  "retrieval_text": "composition: SrCO3 | method: mixed solvent | solvent: ethanol:water (8:1) | solvent.volume: 180.0 | temperature: 25.0 | crystalsystem: orthorhombic | shape: dumbbell | size.length: 86.8 | precursor: C29H32O13 (mass 0.837) | precursor: SrCl2⋅6H2O (mass 0.267) | additive: sodium carbonate (mass 0.106) | additive: ethanol:water (1:1) (mass 40.0) | additive: citric acid (mass 0.026) | pdfno_list: 05-0418"
+}

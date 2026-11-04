@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "358.json_ZnO_570",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Zn(NO3)2",
+      "mass": 5.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "cinnamomum verum extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 27.0,
+      "width": 27.0,
+      "depth": 27.0
+    }
+  },
+  "pdfno_list": [
+    "89-0510"
+  ],
+  "source": {
+    "synthesis_id_original": "358.json_ZnO_570",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: ZnO | solvent: water | crystalsystem: hexagonal | shape: spherical | size.length: 27.0 | size.width: 27.0 | size.depth: 27.0 | precursor: Zn(NO3)2 (mass 5.0) | additive: cinnamomum verum extract | pdfno_list: 89-0510"
+}

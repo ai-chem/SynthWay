@@ -1,0 +1,10 @@
+{
+  "composition": "Ag",
+  "method": null,
+  "num_routes": 1,
+  "rag_topk": 3,
+  "generator": "anthropic/claude-opus-4.5",
+  "judge": "meta-llama/llama-4-maverick",
+  "threshold": 0.8,
+  "rpm_limit": 15
+}

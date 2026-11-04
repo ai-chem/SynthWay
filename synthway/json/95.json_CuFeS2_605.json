@@ -1,0 +1,34 @@
+{
+  "synthesis_id": "95.json_CuFeS2_605",
+  "composition": "CuFeS2",
+  "elements": [
+    "Cu",
+    "Fe",
+    "S"
+  ],
+  "solvent": {
+    "name": "anhydrous ethylenediamine",
+    "volume": 45.0
+  },
+  "conditions": {
+    "temperature": 220.0
+  },
+  "product": {
+    "crystalsystem": "chalcopyrite",
+    "shape": "wire",
+    "size": {
+      "length": 1000.0,
+      "width": 50.0,
+      "depth": 50.0
+    }
+  },
+  "pdfno_list": [
+    "37-0471"
+  ],
+  "source": {
+    "synthesis_id_original": "95.json_CuFeS2_605",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: CuFeS2 | solvent: anhydrous ethylenediamine | solvent.volume: 45.0 | temperature: 220.0 | crystalsystem: chalcopyrite | shape: wire | size.length: 1000.0 | size.width: 50.0 | size.depth: 50.0 | pdfno_list: 37-0471"
+}

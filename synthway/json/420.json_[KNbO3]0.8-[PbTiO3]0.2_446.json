@@ -1,0 +1,34 @@
+{
+  "synthesis_id": "420.json_[KNbO3]0.8-[PbTiO3]0.2_446",
+  "composition": "[KNbO3]0.8–[PbTiO3]0.2",
+  "elements": [
+    "K",
+    "Nb",
+    "O",
+    "Pb",
+    "Ti"
+  ],
+  "method": "hydrothermal",
+  "solvent": {
+    "name": "water",
+    "volume": 140.0
+  },
+  "conditions": {
+    "temperature": 210.0
+  },
+  "product": {
+    "shape": "parallelepiped",
+    "size": {
+      "length": 50.0
+    }
+  },
+  "pdfno_list": [
+    "47-561"
+  ],
+  "source": {
+    "synthesis_id_original": "420.json_[KNbO3]0.8-[PbTiO3]0.2_446",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: [KNbO3]0.8–[PbTiO3]0.2 | method: hydrothermal | solvent: water | solvent.volume: 140.0 | temperature: 210.0 | shape: parallelepiped | size.length: 50.0 | pdfno_list: 47-561"
+}

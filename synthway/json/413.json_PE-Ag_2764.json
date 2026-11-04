@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "413.json_PE-Ag_2764",
+  "composition": "PE-Ag",
+  "elements": [
+    "P",
+    "E",
+    "Ag"
+  ],
+  "method": "biosynthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 2.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "p. integrifolia root extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "ph": 6.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 45.0,
+      "width": 45.0,
+      "depth": 45.0
+    }
+  },
+  "pdfno_list": [
+    "040783"
+  ],
+  "source": {
+    "synthesis_id_original": "413.json_PE-Ag_2764",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: PE-Ag | method: biosynthesis | solvent: water | pH: 6.0 | shape: spherical | size.length: 45.0 | size.width: 45.0 | size.depth: 45.0 | precursor: AgNO3 (conc 2.0) | additive: p. integrifolia root extract | pdfno_list: 040783"
+}

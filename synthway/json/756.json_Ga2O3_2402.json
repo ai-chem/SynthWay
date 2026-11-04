@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "756.json_Ga2O3_2402",
+  "composition": "Ga2O3",
+  "elements": [
+    "Ga",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "Ga2O3"
+    },
+    {
+      "name": "HCl"
+    },
+    {
+      "name": "NaOH",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 35.0
+  },
+  "conditions": {
+    "temperature": 180.0,
+    "ph": 8.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "spindle-like nanorod arrays",
+    "size": {
+      "width": 100.0
+    }
+  },
+  "pdfno_list": [
+    "43-1012"
+  ],
+  "source": {
+    "synthesis_id_original": "756.json_Ga2O3_2402",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Ga2O3 | method: hydrothermal | solvent: deionized water | solvent.volume: 35.0 | temperature: 180.0 | pH: 8.0 | crystalsystem: monoclinic | shape: spindle-like nanorod arrays | size.width: 100.0 | precursor: Ga2O3 | precursor: HCl | precursor: NaOH (conc 1000.0) | pdfno_list: 43-1012"
+}

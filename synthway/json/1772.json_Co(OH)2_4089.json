@@ -1,0 +1,53 @@
+{
+  "synthesis_id": "1772.json_Co(OH)2_4089",
+  "composition": "Co(OH)2",
+  "elements": [
+    "Co",
+    "O",
+    "H"
+  ],
+  "precursors": [
+    {
+      "name": "CoCl2*6H2O",
+      "mass": 0.0085
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 1.665
+    },
+    {
+      "name": "sodium thiosulfate",
+      "conc": 600.0
+    }
+  ],
+  "seeds": [
+    {
+      "name": "Cu2O",
+      "mass": 0.025
+    }
+  ],
+  "solvent": {
+    "name": "ethanol and water",
+    "volume": 50.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "cube",
+    "size": {
+      "length": 500.0,
+      "width": 500.0,
+      "depth": 500.0
+    }
+  },
+  "pdfno_list": [
+    "05-0667"
+  ],
+  "source": {
+    "synthesis_id_original": "1772.json_Co(OH)2_4089",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: Co(OH)2 | solvent: ethanol and water | solvent.volume: 50.0 | crystalsystem: cubic | shape: cube | size.length: 500.0 | size.width: 500.0 | size.depth: 500.0 | precursor: CoCl2*6H2O (mass 0.0085) | additive: polyvinylpyrrolidone (mass 1.665) | additive: sodium thiosulfate (conc 600.0) | seed: Cu2O (mass 0.025) | pdfno_list: 05-0667"
+}

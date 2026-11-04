@@ -1,0 +1,30 @@
+{
+  "synthesis_id": "314.json_PVA/CS/V2O5_146",
+  "composition": "PVA/CS/V2O5",
+  "elements": [
+    "P",
+    "V",
+    "A",
+    "C",
+    "S",
+    "O"
+  ],
+  "method": "laser ablation",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 50.0
+  },
+  "product": {
+    "size": {
+      "length": 62.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "314.json_PVA/CS/V2O5_146",
+    "nodes": 5,
+    "edges": 4
+  },
+  "retrieval_text": "composition: PVA/CS/V2O5 | method: laser ablation | solvent: water | temperature: 50.0 | size.length: 62.0"
+}

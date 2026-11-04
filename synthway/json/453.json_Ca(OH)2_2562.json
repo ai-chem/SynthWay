@@ -1,0 +1,28 @@
+{
+  "synthesis_id": "453.json_Ca(OH)2_2562",
+  "composition": "Ca(OH)2",
+  "elements": [
+    "Ca",
+    "O",
+    "H"
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 90.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "hexagonal",
+    "size": {
+      "length": 175.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "453.json_Ca(OH)2_2562",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: Ca(OH)2 | solvent: water | temperature: 90.0 | crystalsystem: hexagonal | shape: hexagonal | size.length: 175.0"
+}

@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1375.json_Ag-Cs-Cot_4123",
+  "composition": "Ag-Cs-Cot",
+  "elements": [
+    "Ag",
+    "Cs",
+    "Co"
+  ],
+  "precursors": [
+    {
+      "name": "cotton"
+    },
+    {
+      "name": "Chi"
+    },
+    {
+      "name": "AgNPs"
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "mass": 1.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 0.0
+  },
+  "product": {
+    "crystalsystem": "amorphous",
+    "shape": "smooth surface"
+  },
+  "pdfno_list": [
+    "04-0783"
+  ],
+  "source": {
+    "synthesis_id_original": "1375.json_Ag-Cs-Cot_4123",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Ag-Cs-Cot | solvent: water | temperature: 0.0 | crystalsystem: amorphous | shape: smooth surface | precursor: cotton | precursor: Chi | precursor: AgNPs | additive: sodium hydroxide (mass 1.0) | pdfno_list: 04-0783"
+}

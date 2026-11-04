@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "997.json_CuInSe2_1668",
+  "composition": "CuInSe2",
+  "elements": [
+    "Cu",
+    "In",
+    "Se"
+  ],
+  "method": "solvo-hydrothermal",
+  "precursors": [
+    {
+      "name": "Se",
+      "mass": 0.205
+    },
+    {
+      "name": "CuCl2*2H2O",
+      "mass": 0.221
+    },
+    {
+      "name": "InCl3*4H2O",
+      "mass": 0.38
+    }
+  ],
+  "solvent": {
+    "name": "diethylamine",
+    "volume": 45.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "width": 15.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "997.json_CuInSe2_1668",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: CuInSe2 | method: solvo-hydrothermal | solvent: diethylamine | solvent.volume: 45.0 | temperature: 180.0 | shape: spherical | size.width: 15.0 | precursor: Se (mass 0.205) | precursor: CuCl2*2H2O (mass 0.221) | precursor: InCl3*4H2O (mass 0.38)"
+}

@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "1714.json_Ni_doped_α-Fe2O3_2371",
+  "composition": "Ni doped α-Fe2O3",
+  "elements": [
+    "Ni",
+    "Fe",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "FeCl3",
+      "mass": 1.456
+    },
+    {
+      "name": "NiCl2",
+      "mass": 0.144
+    }
+  ],
+  "additives": [
+    {
+      "name": "catharanthus roseus flowers extract"
+    },
+    {
+      "name": "sodium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "ph": 5.0
+  },
+  "product": {
+    "shape": "cube",
+    "size": {
+      "length": 55.6,
+      "width": 55.6,
+      "depth": 55.6
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1714.json_Ni_doped_α-Fe2O3_2371",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Ni doped α-Fe2O3 | solvent: deionized water | solvent.volume: 50.0 | pH: 5.0 | shape: cube | size.length: 55.6 | size.width: 55.6 | size.depth: 55.6 | precursor: FeCl3 (mass 1.456) | precursor: NiCl2 (mass 0.144) | additive: catharanthus roseus flowers extract | additive: sodium hydroxide"
+}

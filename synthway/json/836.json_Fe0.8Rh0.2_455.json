@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "836.json_Fe0.8Rh0.2_455",
+  "composition": "Fe0.8Rh0.2",
+  "elements": [
+    "Fe",
+    "Rh"
+  ],
+  "method": "simultaneous decomposition",
+  "precursors": [
+    {
+      "name": "Fe[N(Si(CH3)3)2]2"
+    },
+    {
+      "name": "Rh(C3H5)3"
+    },
+    {
+      "name": "C16H35N"
+    }
+  ],
+  "solvent": {
+    "name": "methylcyclohexane"
+  },
+  "conditions": {
+    "temperature": 110.0
+  },
+  "product": {
+    "crystalsystem": "bcc",
+    "size": {
+      "length": 1.8,
+      "width": 1.8,
+      "depth": 1.8
+    }
+  },
+  "source": {
+    "synthesis_id_original": "836.json_Fe0.8Rh0.2_455",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Fe0.8Rh0.2 | method: simultaneous decomposition | solvent: methylcyclohexane | temperature: 110.0 | crystalsystem: bcc | size.length: 1.8 | size.width: 1.8 | size.depth: 1.8 | precursor: Fe[N(Si(CH3)3)2]2 | precursor: Rh(C3H5)3 | precursor: C16H35N"
+}

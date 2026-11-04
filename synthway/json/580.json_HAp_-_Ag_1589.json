@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "580.json_HAp_-_Ag_1589",
+  "composition": "HAp – Ag",
+  "elements": [
+    "H",
+    "Ap",
+    "Ag"
+  ],
+  "method": "coprecipitation",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "diammonium phosphate"
+    }
+  ],
+  "seeds": [
+    {
+      "name": "CaO"
+    }
+  ],
+  "solvent": {
+    "name": "double distilled water"
+  },
+  "conditions": {
+    "temperature": 150.0
+  },
+  "product": {
+    "shape": "ellipsoidal"
+  },
+  "source": {
+    "synthesis_id_original": "580.json_HAp_-_Ag_1589",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: HAp – Ag | method: coprecipitation | solvent: double distilled water | temperature: 150.0 | shape: ellipsoidal | precursor: AgNO3 (conc 1.0) | additive: diammonium phosphate | seed: CaO"
+}

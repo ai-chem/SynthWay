@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1239.json_FeO_1271",
+  "composition": "FeO",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "biosynthesis",
+  "precursors": [
+    {
+      "name": "FeSO4*7H2O",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "h. sabdariffa calyces extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 52.5
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 61.0,
+      "width": 61.0,
+      "depth": 61.0
+    }
+  },
+  "pdfno_list": [
+    "74-1886"
+  ],
+  "source": {
+    "synthesis_id_original": "1239.json_FeO_1271",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: FeO | method: biosynthesis | solvent: water | temperature: 52.5 | crystalsystem: cubic | shape: spherical | size.length: 61.0 | size.width: 61.0 | size.depth: 61.0 | precursor: FeSO4*7H2O (conc 1.0) | additive: h. sabdariffa calyces extract | pdfno_list: 74-1886"
+}

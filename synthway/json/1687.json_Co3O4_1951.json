@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1687.json_Co3O4_1951",
+  "composition": "Co3O4",
+  "elements": [
+    "Co",
+    "O"
+  ],
+  "method": "thermal decomposition",
+  "precursors": [
+    {
+      "name": "CoCl2",
+      "mass": 5.8,
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "oxalic acid",
+      "mass": 12.61,
+      "conc": 100.0
+    }
+  ],
+  "solvent": {
+    "name": "ethanol",
+    "volume": 100.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "irregular",
+    "size": {
+      "length": 50.0,
+      "width": 50.0,
+      "depth": 50.0
+    }
+  },
+  "pdfno_list": [
+    "76-1802"
+  ],
+  "source": {
+    "synthesis_id_original": "1687.json_Co3O4_1951",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: Co3O4 | method: thermal decomposition | solvent: ethanol | solvent.volume: 100.0 | crystalsystem: cubic | shape: irregular | size.length: 50.0 | size.width: 50.0 | size.depth: 50.0 | precursor: CoCl2 (mass 5.8; conc 100.0) | additive: oxalic acid (mass 12.61; conc 100.0) | pdfno_list: 76-1802"
+}

@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "638.json_MSNs/MoS2_3969",
+  "composition": "MSNs/MoS2",
+  "elements": [
+    "M",
+    "S",
+    "Ns",
+    "Mo"
+  ],
+  "method": "outside-in",
+  "precursors": [
+    {
+      "name": "SiO2 (mesoporous NPs)",
+      "mass": 50.0
+    },
+    {
+      "name": "(NH4)2MoS4",
+      "mass": 325.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyethylene glycol 400",
+      "mass": 22.6
+    }
+  ],
+  "solvent": {
+    "name": "ethanol:water (7:3)",
+    "volume": 32.5
+  },
+  "conditions": {
+    "temperature": 220.0
+  },
+  "product": {
+    "shape": "sheets",
+    "size": {
+      "length": 147.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "638.json_MSNs/MoS2_3969",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: MSNs/MoS2 | method: outside-in | solvent: ethanol:water (7:3) | solvent.volume: 32.5 | temperature: 220.0 | shape: sheets | size.length: 147.0 | precursor: SiO2 (mesoporous NPs) (mass 50.0) | precursor: (NH4)2MoS4 (mass 325.0) | additive: polyethylene glycol 400 (mass 22.6)"
+}

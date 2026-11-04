@@ -1,0 +1,60 @@
+{
+  "synthesis_id": "302.json_ChiTiO@Zn_241",
+  "composition": "ChiTiO@Zn",
+  "elements": [
+    "Ch",
+    "Ti",
+    "O",
+    "Zn"
+  ],
+  "precursors": [
+    {
+      "name": "TiO2",
+      "mass": 2.5
+    },
+    {
+      "name": "Chi",
+      "mass": 0.3
+    }
+  ],
+  "additives": [
+    {
+      "name": "diethanolamine"
+    },
+    {
+      "name": "zinc sulfate"
+    },
+    {
+      "name": "titania",
+      "mass": 0.1
+    },
+    {
+      "name": "sodium borohydride"
+    },
+    {
+      "name": "paraffin"
+    },
+    {
+      "name": "glutaraldehyde",
+      "mass": 0.1
+    }
+  ],
+  "solvent": {
+    "name": "ethanol",
+    "volume": 80.0
+  },
+  "product": {
+    "shape": "non-spherical",
+    "size": {
+      "length": 260.0,
+      "width": 260.0,
+      "depth": 260.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "302.json_ChiTiO@Zn_241",
+    "nodes": 18,
+    "edges": 18
+  },
+  "retrieval_text": "composition: ChiTiO@Zn | solvent: ethanol | solvent.volume: 80.0 | shape: non-spherical | size.length: 260.0 | size.width: 260.0 | size.depth: 260.0 | precursor: TiO2 (mass 2.5) | precursor: Chi (mass 0.3) | additive: diethanolamine | additive: zinc sulfate | additive: titania (mass 0.1) | additive: sodium borohydride | additive: paraffin | additive: glutaraldehyde (mass 0.1)"
+}

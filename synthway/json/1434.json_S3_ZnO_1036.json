@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "1434.json_S3_ZnO_1036",
+  "composition": "S3 ZnO",
+  "elements": [
+    "S",
+    "Zn",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "ZnSO4·7H2O",
+      "conc": 200.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 1000.0
+    },
+    {
+      "name": "azadirachta indica seeds"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 40.0
+  },
+  "product": {
+    "crystalsystem": "wurtzite",
+    "shape": "block",
+    "size": {
+      "length": 107.5,
+      "width": 75.0,
+      "depth": 75.0
+    }
+  },
+  "pdfno_list": [
+    "05-0664"
+  ],
+  "source": {
+    "synthesis_id_original": "1434.json_S3_ZnO_1036",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: S3 ZnO | method: green synthesis | solvent: water | temperature: 40.0 | crystalsystem: wurtzite | shape: block | size.length: 107.5 | size.width: 75.0 | size.depth: 75.0 | precursor: ZnSO4·7H2O (conc 200.0) | additive: sodium hydroxide (conc 1000.0) | additive: azadirachta indica seeds | pdfno_list: 05-0664"
+}

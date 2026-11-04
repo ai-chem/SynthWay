@@ -1,0 +1,29 @@
+{
+  "synthesis_id": "2270.json_Sb2S3_2477",
+  "composition": "Sb2S3",
+  "elements": [
+    "Sb",
+    "S"
+  ],
+  "method": "mechanochemical",
+  "precursors": [
+    {
+      "name": "Sb (powder)"
+    },
+    {
+      "name": "S"
+    }
+  ],
+  "product": {
+    "crystalsystem": "orthorhombic"
+  },
+  "pdfno_list": [
+    "42-1393"
+  ],
+  "source": {
+    "synthesis_id_original": "2270.json_Sb2S3_2477",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: Sb2S3 | method: mechanochemical | crystalsystem: orthorhombic | precursor: Sb (powder) | precursor: S | pdfno_list: 42-1393"
+}

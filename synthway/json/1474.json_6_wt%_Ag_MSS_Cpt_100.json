@@ -1,0 +1,37 @@
+{
+  "synthesis_id": "1474.json_6_wt%_Ag/MSS/Cpt_100",
+  "composition": "6 wt% Ag/MSS/Cpt",
+  "elements": [
+    "Ag",
+    "M",
+    "S",
+    "Cp"
+  ],
+  "precursors": [
+    {
+      "name": "Pt(NH3)2Cl2",
+      "mass": 0.03
+    },
+    {
+      "name": "6 wt% Ag/MSS",
+      "mass": 0.6
+    }
+  ],
+  "solvent": {
+    "name": "saline solution",
+    "volume": 10.0
+  },
+  "product": {
+    "size": {
+      "length": 3.3,
+      "width": 3.3,
+      "depth": 3.3
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1474.json_6_wt%_Ag/MSS/Cpt_100",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: 6 wt% Ag/MSS/Cpt | solvent: saline solution | solvent.volume: 10.0 | size.length: 3.3 | size.width: 3.3 | size.depth: 3.3 | precursor: Pt(NH3)2Cl2 (mass 0.03) | precursor: 6 wt% Ag/MSS (mass 0.6)"
+}

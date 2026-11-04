@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "1584.json_PpIX-Ag_691",
+  "composition": "PpIX-Ag",
+  "elements": [
+    "Pp",
+    "I",
+    "X",
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "cysPpIX"
+    },
+    {
+      "name": "AgNPs",
+      "mass": 0.001
+    }
+  ],
+  "solvent": {
+    "name": "dimethylformamide",
+    "volume": 4.5
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "size": {
+      "length": 42.2,
+      "width": 42.2,
+      "depth": 42.2
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1584.json_PpIX-Ag_691",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: PpIX-Ag | solvent: dimethylformamide | solvent.volume: 4.5 | temperature: 25.0 | size.length: 42.2 | size.width: 42.2 | size.depth: 42.2 | precursor: cysPpIX | precursor: AgNPs (mass 0.001)"
+}

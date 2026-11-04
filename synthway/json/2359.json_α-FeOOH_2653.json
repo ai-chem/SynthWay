@@ -1,0 +1,28 @@
+{
+  "synthesis_id": "2359.json_α-FeOOH_2653",
+  "composition": "α-FeOOH",
+  "elements": [
+    "Fe",
+    "O",
+    "H"
+  ],
+  "solvent": {
+    "name": "2-propanol",
+    "volume": 0.308
+  },
+  "conditions": {
+    "ph": 9.0
+  },
+  "product": {
+    "shape": "disc-like"
+  },
+  "pdfno_list": [
+    "29-0713"
+  ],
+  "source": {
+    "synthesis_id_original": "2359.json_α-FeOOH_2653",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: α-FeOOH | solvent: 2-propanol | solvent.volume: 0.308 | pH: 9.0 | shape: disc-like | pdfno_list: 29-0713"
+}

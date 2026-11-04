@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1440.json_Cu-doped_ZnO_3436",
+  "composition": "Cu-doped ZnO",
+  "elements": [
+    "Cu",
+    "Zn",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "Zinc acetate dihydrate (Zn (CH3COO)2·2H2O)",
+      "conc": 1000.0
+    },
+    {
+      "name": "Copper acetate monohydrate (Cu (CH3COO)2·H2O)",
+      "conc": 250.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "ammonium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water"
+  },
+  "conditions": {
+    "temperature": 150.0,
+    "ph": 11.0
+  },
+  "product": {
+    "size": {
+      "length": 25.164,
+      "width": 25.164,
+      "depth": 25.164
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1440.json_Cu-doped_ZnO_3436",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Cu-doped ZnO | method: hydrothermal | solvent: deionized water | temperature: 150.0 | pH: 11.0 | size.length: 25.164 | size.width: 25.164 | size.depth: 25.164 | precursor: Zinc acetate dihydrate (Zn (CH3COO)2·2H2O) (conc 1000.0) | precursor: Copper acetate monohydrate (Cu (CH3COO)2·H2O) (conc 250.0) | additive: ammonium hydroxide"
+}

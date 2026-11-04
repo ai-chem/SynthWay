@@ -1,0 +1,26 @@
+{
+  "synthesis_id": "475.json_BaCO3_3435",
+  "composition": "BaCO3",
+  "elements": [
+    "Ba",
+    "C",
+    "O"
+  ],
+  "method": "eggshell membrane",
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "wire",
+    "size": {
+      "length": 200.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "475.json_BaCO3_3435",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: BaCO3 | method: eggshell membrane | solvent: water | crystalsystem: orthorhombic | shape: wire | size.length: 200.0"
+}

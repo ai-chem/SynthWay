@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "656.json_BaTiO3_167",
+  "composition": "BaTiO3",
+  "elements": [
+    "Ba",
+    "Ti",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "Ba(OH)2*8H2O"
+    },
+    {
+      "name": "TiO2",
+      "mass": 3.5
+    }
+  ],
+  "additives": [
+    {
+      "name": "potassium hydroxide",
+      "conc": 5.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 150.0,
+    "ph": 8.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 50.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "656.json_BaTiO3_167",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: BaTiO3 | method: hydrothermal | solvent: water | temperature: 150.0 | pH: 8.0 | crystalsystem: cubic | size.length: 50.0 | precursor: Ba(OH)2*8H2O | precursor: TiO2 (mass 3.5) | additive: potassium hydroxide (conc 5.0)"
+}

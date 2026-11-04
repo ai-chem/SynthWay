@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "2079.json_CuS_290",
+  "composition": "CuS",
+  "elements": [
+    "Cu",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "CuCl2",
+      "conc": 1.0
+    },
+    {
+      "name": "Na2S",
+      "conc": 1000.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "polystyrene sulfonate",
+      "mass": 0.5
+    },
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 1.25
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 90.0
+  },
+  "product": {
+    "size": {
+      "length": 3.5,
+      "width": 3.5,
+      "depth": 3.5
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2079.json_CuS_290",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: CuS | solvent: water | solvent.volume: 50.0 | temperature: 90.0 | size.length: 3.5 | size.width: 3.5 | size.depth: 3.5 | precursor: CuCl2 (conc 1.0) | precursor: Na2S (conc 1000.0) | additive: polystyrene sulfonate (mass 0.5) | additive: polyvinylpyrrolidone (mass 1.25)"
+}

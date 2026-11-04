@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "447.json_GA-Ag-Q_1445",
+  "composition": "GA-Ag-Q",
+  "elements": [
+    "G",
+    "A",
+    "Ag",
+    "Q"
+  ],
+  "precursors": [
+    {
+      "name": "C21H20O11",
+      "mass": 0.01
+    },
+    {
+      "name": "GA-Ag (Nanoparticles)"
+    }
+  ],
+  "solvent": {
+    "name": "methanol"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 208.93,
+      "width": 208.93,
+      "depth": 208.93
+    }
+  },
+  "source": {
+    "synthesis_id_original": "447.json_GA-Ag-Q_1445",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: GA-Ag-Q | solvent: methanol | temperature: 25.0 | shape: spherical | size.length: 208.93 | size.width: 208.93 | size.depth: 208.93 | precursor: C21H20O11 (mass 0.01) | precursor: GA-Ag (Nanoparticles)"
+}

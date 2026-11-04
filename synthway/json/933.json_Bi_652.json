@@ -1,0 +1,61 @@
+{
+  "synthesis_id": "933.json_Bi_652",
+  "composition": "Bi",
+  "elements": [
+    "Bi"
+  ],
+  "method": "solution reduction",
+  "precursors": [
+    {
+      "name": "NaH2PO2·H2O",
+      "conc": 5000.0
+    },
+    {
+      "name": "Bi(NO3)3",
+      "conc": 500.0
+    },
+    {
+      "name": "NaOH",
+      "mass": 2.4,
+      "conc": 1714.3
+    }
+  ],
+  "additives": [
+    {
+      "name": "tartaric acid",
+      "mass": 0.6
+    },
+    {
+      "name": "nitric acid",
+      "mass": 0.567
+    },
+    {
+      "name": "sodium oleate",
+      "mass": 0.015
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 15.0
+  },
+  "conditions": {
+    "temperature": 90.0
+  },
+  "product": {
+    "crystalsystem": "rhombohedral",
+    "shape": "wire",
+    "size": {
+      "length": 50.0,
+      "width": 10.0
+    }
+  },
+  "pdfno_list": [
+    "05-0519"
+  ],
+  "source": {
+    "synthesis_id_original": "933.json_Bi_652",
+    "nodes": 23,
+    "edges": 22
+  },
+  "retrieval_text": "composition: Bi | method: solution reduction | solvent: distilled water | solvent.volume: 15.0 | temperature: 90.0 | crystalsystem: rhombohedral | shape: wire | size.length: 50.0 | size.width: 10.0 | precursor: NaH2PO2·H2O (conc 5000.0) | precursor: Bi(NO3)3 (conc 500.0) | precursor: NaOH (mass 2.4; conc 1714.3) | additive: tartaric acid (mass 0.6) | additive: nitric acid (mass 0.567) | additive: sodium oleate (mass 0.015) | pdfno_list: 05-0519"
+}

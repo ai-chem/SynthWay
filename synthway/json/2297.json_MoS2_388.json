@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "2297.json_MoS2_388",
+  "composition": "MoS2",
+  "elements": [
+    "Mo",
+    "S"
+  ],
+  "method": "solvo/hydrothermal",
+  "precursors": [
+    {
+      "name": "(NH4)6Mo7O24·4H2O",
+      "mass": 0.618
+    },
+    {
+      "name": "CH4N2S",
+      "mass": 1.14
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyethylene glycol 400"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 8.75
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "sheets",
+    "size": {
+      "length": 300.0
+    }
+  },
+  "pdfno_list": [
+    "37-1492"
+  ],
+  "source": {
+    "synthesis_id_original": "2297.json_MoS2_388",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: MoS2 | method: solvo/hydrothermal | solvent: distilled water | solvent.volume: 8.75 | temperature: 200.0 | crystalsystem: hexagonal | shape: sheets | size.length: 300.0 | precursor: (NH4)6Mo7O24·4H2O (mass 0.618) | precursor: CH4N2S (mass 1.14) | additive: polyethylene glycol 400 | pdfno_list: 37-1492"
+}

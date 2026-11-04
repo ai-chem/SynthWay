@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "25.json_NH2-MSNs_2800",
+  "composition": "NH2-MSNs",
+  "elements": [
+    "N",
+    "H",
+    "M",
+    "S",
+    "Ns"
+  ],
+  "precursors": [
+    {
+      "name": "MSNs",
+      "mass": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "aptes (98%)",
+      "conc": 100.0
+    }
+  ],
+  "solvent": {
+    "name": "toluene"
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 120.0,
+      "width": 120.0,
+      "depth": 120.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "25.json_NH2-MSNs_2800",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: NH2-MSNs | solvent: toluene | temperature: 80.0 | shape: spherical | size.length: 120.0 | size.width: 120.0 | size.depth: 120.0 | precursor: MSNs (mass 1.0) | additive: aptes (98%) (conc 100.0)"
+}

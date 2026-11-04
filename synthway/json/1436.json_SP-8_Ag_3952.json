@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "1436.json_SP-8_Ag_3952",
+  "composition": "SP-8 Ag",
+  "elements": [
+    "S",
+    "P",
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sarcochlamys pulcherrima leaf extract"
+    }
+  ],
+  "solvent": {
+    "name": "double distilled water",
+    "volume": 2.1
+  },
+  "conditions": {
+    "temperature": 65.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 27.0,
+      "width": 27.0,
+      "depth": 27.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1436.json_SP-8_Ag_3952",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: SP-8 Ag | method: green synthesis | solvent: double distilled water | solvent.volume: 2.1 | temperature: 65.0 | shape: spherical | size.length: 27.0 | size.width: 27.0 | size.depth: 27.0 | precursor: AgNO3 (conc 10.0) | additive: sarcochlamys pulcherrima leaf extract"
+}

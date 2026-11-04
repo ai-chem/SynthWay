@@ -1,0 +1,34 @@
+{
+  "synthesis_id": "1083.json_С_2884",
+  "composition": "С",
+  "method": "hydrothermal oxidation",
+  "precursors": [
+    {
+      "name": "C6H12O6",
+      "mass": 1.0
+    },
+    {
+      "name": "NaOH",
+      "mass": 1.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 15.0
+  },
+  "conditions": {
+    "temperature": 160.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "width": 85.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1083.json_С_2884",
+    "nodes": 10,
+    "edges": 10
+  },
+  "retrieval_text": "composition: С | method: hydrothermal oxidation | solvent: water | solvent.volume: 15.0 | temperature: 160.0 | shape: spherical | size.width: 85.0 | precursor: C6H12O6 (mass 1.0) | precursor: NaOH (mass 1.0)"
+}

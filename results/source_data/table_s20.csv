@@ -1,0 +1,67 @@
+route_label,target_material,generator_model,path,raw_text,CPC__self_judge,CPC__cross_judge_no_self,expert_CPC_mean4,Faithfulness_original__self_judge,Faithfulness_NEW_expert_logic__cross_judge_no_self,expert_Faithfulness_mean4,Answer_relevance_original__self_judge,expert_Answer_relevance_mean4
+Cu2O_Sonochemical,Cu2O,anthropic_claude-opus-4.5,synthway/generation_routes/output_LLM_stratified_anthropic_claude-opus-4.5/2365.json_Cu2O_4138/route_2.json,"Route 2: Sonochemical Method for Cu2O
+
+1. Weigh copper(II) acetate monohydrate (Cu(CH3COO)2·H2O, 0.5 g) and transfer it into a round-bottom flask containing glycerol (15 mL) as the solvent.
+
+2. Disperse the copper acetate in glycerol by gentle stirring until a homogeneous blue-green mixture is obtained. Adjust the pH to approximately 9 by adding a small amount of aqueous ammonia solution (NH3·H2O, concentration 100 mM, 2 mL).
+
+3. Place the flask in an ultrasonic bath and apply sonication at 40 kHz frequency. Simultaneously heat the reaction vessel to 60°C and maintain these conditions for 2 hours. The ultrasonic cavitation combined with the reducing properties of glycerol at elevated temperature will induce the reduction of Cu(II) to Cu(I).
+
+4. After sonication, the suspension should display a characteristic brick-red color indicating Cu2O formation. Allow the mixture to cool naturally to room temperature.
+
+5. Collect the product by centrifugation at 8000 rpm, wash repeatedly with ethanol to remove residual glycerol, and dry under vacuum at 50°C for 12 hours.
+
+Final product: Cu2O with a cubic crystal structure (cuprite phase), spherical particles with an average size of 150 nm × 150 nm × 150 nm, matching PDF reference 05-0667.
+
+
+---",0.867,0.867,0.812,1.0,0.781,0.906,1.0,0.938
+Cu2O_Precipitation,Cu2O,google_gemini-2.0-flash-001,synthway/generation_routes/output_LLM_stratified_google_gemini-2.0-flash-001/2365.json_Cu2O_4138/route_1.json,"Route 1: Solution Precipitation of Cu2O
+
+1. Prepare a solution of copper(II) chloride dihydrate (CuCl2·2H2O, 2.0 g) in deionized water (50 mL).
+2. Separately, prepare a solution of sodium hydroxide (NaOH, 1.0 M) in deionized water (20 mL).
+3. Slowly add the sodium hydroxide solution to the copper(II) chloride solution under constant stirring. The pH should increase to approximately 10–11.
+4. Add ascorbic acid (0.5 g) as a reducing agent to the mixture. Continue stirring for 30 minutes at room temperature.
+5. Heat the solution to 60 °C and maintain this temperature for 2 hours while stirring, causing the formation of Cu2O particles.
+6. Allow the solution to cool to room temperature. Collect the precipitate by centrifugation, washing several times with deionized water and ethanol to remove residual ions.
+7. Dry the resulting Cu2O powder in a vacuum oven at 60 °C for 12 hours.
+
+Final product: Cu2O as spherical nanoparticles with a cubic crystal structure, particle size approximately 50 × 50 × 50 nm, matching PDF reference 05-0667.",1.0,0.922,1.0,0.963,0.529,0.438,1.0,1.0
+10Co3O4@CeO2_gemini,10Co3O4@CeO2,google_gemini-2.0-flash-001,synthway/generation_routes/output_LLM_stratified_google_gemini-2.0-flash-001/1799.json_10Co3O4@CeO2_1730/route_1.json,"Route 1: Impregnation method for 10Co3O4@CeO2
+
+1. Prepare a solution of cobalt(II) nitrate hexahydrate (Co(NO3)2*6H2O, 0.06 g) in deionized water (50 mL).
+2. Add cerium(IV) oxide powder (CeO2, 0.45 g) to the cobalt nitrate solution and stir vigorously for 24 hours at room temperature to ensure complete impregnation of the CeO2 support with the cobalt precursor.
+3. Adjust the pH of the solution to approximately 7.0 using dilute ammonia solution.
+4. Dry the resulting slurry in an oven at 100 °C for 12 hours to remove excess water.
+5. Calcine the dried powder in air at 500 °C for 4 hours to decompose the cobalt nitrate and form cobalt oxide nanoparticles supported on ceria.
+Final product: 10Co3O4@CeO2 as spherical nanoparticles with a cubic crystal structure, particle size approximately 500×500×500 nm, matching PDF reference numbers 42-1467 and 34-0394.",0.933,0.778,0.812,1.0,0.741,0.875,1.0,1.0
+10Co3O4@CeO2_Llama 4 Maverick,10Co3O4@CeO2,meta-llama_llama-4-maverick,synthway/generation_routes/output_LLM_stratified_meta-llama_llama-4-maverick/1799.json_10Co3O4@CeO2_1730/route_1.json,"Route 1: Impregnation method for 10Co3O4@CeO2
+1. Prepare a solution of Co(NO3)2·6H2O (0.06 g) in water (50 mL).
+2. Add CeO2 seeds (0.45 g) to the solution and stir for 30 minutes.
+3. Heat the mixture at 90 °C until the water evaporates.
+4. Calcine the resulting powder at 300–400 °C for 2 hours.
+Final product: 10Co3O4@CeO2 as spherical particles with a cubic crystal structure, particle size ~500×500×500 nm, matching PDF reference 42-1467, 34-0394.",0.9,0.711,0.788,1.0,0.788,1.0,0.979,1.0
+10Co3O4@CeO2_Nvidia,10Co3O4@CeO2,nvidia_nemotron-3-nano-30b-a3b_free,synthway/generation_routes/output_LLM_stratified_nvidia_nemotron-3-nano-30b-a3b_free/1799.json_10Co3O4@CeO2_1730/route_1.json,"Route 1: Impregnation method for 10Co3O4@CeO2  
+1. Dissolve Co(NO3)2·6H2O (0.06 g) in 50.0 mL de‑ionized water and adjust the solution to pH 7.0 using a few drops of 0.1 M NaOH; add CeO2 seed (0.45 g) and stir for 10 min.  
+2. Introduce urea (0.10 g) as a pH‑buffering additive and continue stirring for another 5 min.  
+3. By incipient wetness impregnation the CeO2 support is coated with the cobalt solution, then the wet solid is dried at 120 °C for 4 h.  
+4. Calcine the dried powder in air at 350 °C for 2 h to convert the cobalt nitrate to 10Co3O4 while preserving the CeO2 core, yielding the target 10Co3O4@CeO2.  
+Final product: cubic crystal system, spherical morphology with an average size of 500 × 500 × 500 nm; pdfno_list: 34-0394, 23-0484.",0.9,0.778,1.0,0.944,0.635,0.75,1.0,1.0
+Ag NW,Ag,anthropic_claude-opus-4.5,synthway/generation_routes/output_LLM_stratified_anthropic_claude-opus-4.5/1561.json_Ag_1749/route_3.json,"Route 3: Polyol Synthesis Method for Ag Nanowires
+
+1. Prepare the reaction medium by adding 50 mL of ethylene glycol to a 250 mL three-neck round-bottom flask equipped with a reflux condenser and magnetic stirrer.
+
+2. Add polyvinylpyrrolidone (PVP, molecular weight ~55,000, 0.6 g) to the ethylene glycol and heat to 160°C while stirring until completely dissolved. PVP serves as a structure-directing additive.
+
+3. Separately dissolve AgNO₃ (0.25 g, concentration 30 mM) in 10 mL of ethylene glycol by gentle warming to 50°C.
+
+4. Add a small amount of NaCl (0.002 g, serving as a nucleation control additive) to the hot ethylene glycol solution to provide chloride ions that help control the growth of silver nanowires.
+
+5. Slowly inject the AgNO₃ solution into the heated ethylene glycol-PVP mixture at 160°C over 5 minutes using a syringe pump. Maintain vigorous stirring throughout.
+
+6. Continue heating the reaction mixture at 160°C for 1.5 hours under inert nitrogen atmosphere. The solution will progressively change from colorless to yellow to gray-green as nanowires form.
+
+7. Cool the reaction mixture to room temperature. Add 100 mL of acetone to precipitate the silver nanowires. Centrifuge at 6,000 rpm for 10 minutes.
+
+8. Wash the product sequentially with acetone and ethanol to remove residual ethylene glycol and PVP. Dry at 60°C under vacuum.
+
+Final product: Elemental silver (Ag) with face-centered cubic crystal structure in nanowire morphology. Dimensions approximately 100 nm (width) × 100 nm (depth) × 5000 nm (length). Phase identification matches PDF reference 04-0783.",0.9,0.8,1.0,1.0,0.105,0.156,1.0,1.0

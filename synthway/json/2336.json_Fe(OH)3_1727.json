@@ -1,0 +1,23 @@
+{
+  "synthesis_id": "2336.json_Fe(OH)3_1727",
+  "composition": "Fe(OH)3",
+  "elements": [
+    "Fe",
+    "O",
+    "H"
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 400.0
+  },
+  "conditions": {
+    "temperature": 80.0,
+    "ph": 8.0
+  },
+  "source": {
+    "synthesis_id_original": "2336.json_Fe(OH)3_1727",
+    "nodes": 5,
+    "edges": 4
+  },
+  "retrieval_text": "composition: Fe(OH)3 | solvent: distilled water | solvent.volume: 400.0 | temperature: 80.0 | pH: 8.0"
+}

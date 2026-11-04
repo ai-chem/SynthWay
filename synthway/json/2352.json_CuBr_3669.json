@@ -1,0 +1,31 @@
+{
+  "synthesis_id": "2352.json_CuBr_3669",
+  "composition": "CuBr",
+  "elements": [
+    "Cu",
+    "Br"
+  ],
+  "method": "soaking method",
+  "precursors": [
+    {
+      "name": "CuSO4",
+      "conc": 800.0
+    },
+    {
+      "name": "C8H15N2Br",
+      "mass": 0.5
+    }
+  ],
+  "solvent": {
+    "name": "double distilled water"
+  },
+  "pdfno_list": [
+    "01-683"
+  ],
+  "source": {
+    "synthesis_id_original": "2352.json_CuBr_3669",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: CuBr | method: soaking method | solvent: double distilled water | precursor: CuSO4 (conc 800.0) | precursor: C8H15N2Br (mass 0.5) | pdfno_list: 01-683"
+}

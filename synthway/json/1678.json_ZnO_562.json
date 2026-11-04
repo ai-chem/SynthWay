@@ -1,0 +1,37 @@
+{
+  "synthesis_id": "1678.json_ZnO_562",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Zn(NO3)2",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "c. halicacabum leaf extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "hexagonal",
+    "size": {
+      "length": 48.0,
+      "width": 48.0,
+      "depth": 48.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1678.json_ZnO_562",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: ZnO | solvent: water | crystalsystem: hexagonal | shape: hexagonal | size.length: 48.0 | size.width: 48.0 | size.depth: 48.0 | precursor: Zn(NO3)2 (conc 1.0) | additive: c. halicacabum leaf extract"
+}

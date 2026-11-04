@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "1381.json_ECsSB_3447",
+  "composition": "ECsSB",
+  "elements": [
+    "E",
+    "Cs",
+    "S",
+    "B"
+  ],
+  "precursors": [
+    {
+      "name": "CsSB",
+      "mass": 3.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 1.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "crystalsystem": "amorphous",
+    "shape": "smooth structure"
+  },
+  "source": {
+    "synthesis_id_original": "1381.json_ECsSB_3447",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: ECsSB | solvent: water | temperature: 25.0 | crystalsystem: amorphous | shape: smooth structure | precursor: CsSB (mass 3.0) | additive: sodium hydroxide (conc 1.0)"
+}

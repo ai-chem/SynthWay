@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "1612.json_At-Pt_1164",
+  "composition": "At-Pt",
+  "elements": [
+    "At",
+    "Pt"
+  ],
+  "precursors": [
+    {
+      "name": "H2PtCl6·6H2O",
+      "conc": 1.9
+    }
+  ],
+  "additives": [
+    {
+      "name": "a. halimus leaves extract"
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 100.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 95.0,
+    "ph": 9.6
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 2.0,
+      "width": 2.0,
+      "depth": 2.0
+    }
+  },
+  "pdfno_list": [
+    "04-0802"
+  ],
+  "source": {
+    "synthesis_id_original": "1612.json_At-Pt_1164",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: At-Pt | solvent: water | temperature: 95.0 | pH: 9.6 | crystalsystem: cubic | shape: spherical | size.length: 2.0 | size.width: 2.0 | size.depth: 2.0 | precursor: H2PtCl6·6H2O (conc 1.9) | additive: a. halimus leaves extract | additive: sodium hydroxide (conc 100.0) | pdfno_list: 04-0802"
+}

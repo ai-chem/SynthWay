@@ -1,0 +1,36 @@
+{
+  "synthesis_id": "242.json_SA/PANi-TiO2_2868",
+  "composition": "SA/PANi‑TiO2",
+  "elements": [
+    "S",
+    "A",
+    "P",
+    "Ni",
+    "Ti",
+    "O"
+  ],
+  "method": "sol-gel",
+  "solvent": {
+    "name": "water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 100.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "shape": "nanofller",
+    "size": {
+      "length": 25.0
+    }
+  },
+  "pdfno_list": [
+    "01-089-0552"
+  ],
+  "source": {
+    "synthesis_id_original": "242.json_SA/PANi-TiO2_2868",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: SA/PANi‑TiO2 | method: sol-gel | solvent: water | solvent.volume: 100.0 | temperature: 100.0 | crystalsystem: tetragonal | shape: nanofller | size.length: 25.0 | pdfno_list: 01-089-0552"
+}

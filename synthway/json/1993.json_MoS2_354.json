@@ -1,0 +1,35 @@
+{
+  "synthesis_id": "1993.json_MoS2_354",
+  "composition": "MoS2",
+  "elements": [
+    "Mo",
+    "S"
+  ],
+  "method": "one-step hydrothermal",
+  "precursors": [
+    {
+      "name": "(NH4)2MoS4",
+      "mass": 0.01
+    }
+  ],
+  "solvent": {
+    "name": "water+eg",
+    "volume": 15.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "size": {
+      "length": 390.0,
+      "width": 390.0,
+      "depth": 390.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1993.json_MoS2_354",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: MoS2 | method: one-step hydrothermal | solvent: water+eg | solvent.volume: 15.0 | temperature: 180.0 | size.length: 390.0 | size.width: 390.0 | size.depth: 390.0 | precursor: (NH4)2MoS4 (mass 0.01)"
+}

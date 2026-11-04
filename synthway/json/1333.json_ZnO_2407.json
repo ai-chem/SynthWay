@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "1333.json_ZnO_2407",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "chemical precipitation",
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "urea"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water"
+  },
+  "conditions": {
+    "temperature": 115.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 27.5,
+      "width": 27.5,
+      "depth": 27.5
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1333.json_ZnO_2407",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: ZnO | method: chemical precipitation | solvent: deionized water | temperature: 115.0 | shape: spherical | size.length: 27.5 | size.width: 27.5 | size.depth: 27.5 | precursor: Zn(CH3COO)2 (conc 100.0) | additive: urea"
+}

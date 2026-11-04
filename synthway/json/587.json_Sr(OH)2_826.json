@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "587.json_Sr(OH)2_826",
+  "composition": "Sr(OH)2",
+  "elements": [
+    "Sr",
+    "O",
+    "H"
+  ],
+  "method": "homogeneous precipitation",
+  "precursors": [
+    {
+      "name": "Sr(NO3)2",
+      "conc": 700.0
+    },
+    {
+      "name": "NaOH",
+      "conc": 300.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "size": {
+      "length": 25.0
+    }
+  },
+  "pdfno_list": [
+    "27-847"
+  ],
+  "source": {
+    "synthesis_id_original": "587.json_Sr(OH)2_826",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Sr(OH)2 | method: homogeneous precipitation | solvent: water | temperature: 60.0 | crystalsystem: orthorhombic | size.length: 25.0 | precursor: Sr(NO3)2 (conc 700.0) | precursor: NaOH (conc 300.0) | pdfno_list: 27-847"
+}

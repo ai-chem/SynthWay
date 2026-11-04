@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "391.json_Ni-Co-Fe-O_1858",
+  "composition": "Ni-Co-Fe-O",
+  "elements": [
+    "Ni",
+    "Co",
+    "Fe",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Ni(NO3)3*9H2O",
+      "mass": 3.0
+    },
+    {
+      "name": "Fe(NO3)3*9H2O",
+      "conc": 200.0
+    },
+    {
+      "name": "C6H8O7*H2O",
+      "conc": 400.0
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 40.0
+  },
+  "conditions": {
+    "temperature": 100.0,
+    "ph": 7.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 5.1,
+      "width": 5.1,
+      "depth": 5.1
+    }
+  },
+  "pdfno_list": [
+    "22-1086"
+  ],
+  "source": {
+    "synthesis_id_original": "391.json_Ni-Co-Fe-O_1858",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: Ni-Co-Fe-O | solvent: distilled water | solvent.volume: 40.0 | temperature: 100.0 | pH: 7.0 | crystalsystem: cubic | shape: spherical | size.length: 5.1 | size.width: 5.1 | size.depth: 5.1 | precursor: Ni(NO3)3*9H2O (mass 3.0) | precursor: Fe(NO3)3*9H2O (conc 200.0) | precursor: C6H8O7*H2O (conc 400.0) | pdfno_list: 22-1086"
+}

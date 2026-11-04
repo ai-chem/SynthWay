@@ -1,0 +1,61 @@
+{
+  "synthesis_id": "2083.json_Cu2ZnSn(SxSe1-x)4_3794",
+  "composition": "Cu2ZnSn(SxSe1-x)4",
+  "elements": [
+    "Cu",
+    "Zn",
+    "Sn",
+    "Sx",
+    "Se"
+  ],
+  "method": "solvo-hydrothermal",
+  "precursors": [
+    {
+      "name": "Cu(CH3COO)2⋅H2O",
+      "conc": 0.36
+    },
+    {
+      "name": "Zn(CH3COO)2⋅2H2O",
+      "conc": 0.25
+    },
+    {
+      "name": "SnCl2",
+      "conc": 0.205
+    },
+    {
+      "name": "Se"
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 1.0
+    },
+    {
+      "name": "thioacetamide"
+    }
+  ],
+  "solvent": {
+    "name": "mea",
+    "volume": 15.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "size": {
+      "length": 7.5,
+      "width": 7.5,
+      "depth": 7.5
+    }
+  },
+  "pdfno_list": [
+    "70-8930"
+  ],
+  "source": {
+    "synthesis_id_original": "2083.json_Cu2ZnSn(SxSe1-x)4_3794",
+    "nodes": 19,
+    "edges": 18
+  },
+  "retrieval_text": "composition: Cu2ZnSn(SxSe1-x)4 | method: solvo-hydrothermal | solvent: mea | solvent.volume: 15.0 | temperature: 180.0 | size.length: 7.5 | size.width: 7.5 | size.depth: 7.5 | precursor: Cu(CH3COO)2⋅H2O (conc 0.36) | precursor: Zn(CH3COO)2⋅2H2O (conc 0.25) | precursor: SnCl2 (conc 0.205) | precursor: Se | additive: polyvinylpyrrolidone (mass 1.0) | additive: thioacetamide | pdfno_list: 70-8930"
+}

@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "1774.json_Rh_2787",
+  "composition": "Rh",
+  "elements": [
+    "Rh"
+  ],
+  "precursors": [
+    {
+      "name": "Na3RhCl6",
+      "conc": 20.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "peo-b-pmma",
+      "mass": 5.0
+    },
+    {
+      "name": "ascorbic acid",
+      "conc": 100.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 1.4
+  },
+  "conditions": {
+    "temperature": 90.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical"
+  },
+  "source": {
+    "synthesis_id_original": "1774.json_Rh_2787",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Rh | solvent: water | solvent.volume: 1.4 | temperature: 90.0 | crystalsystem: cubic | shape: spherical | precursor: Na3RhCl6 (conc 20.0) | additive: peo-b-pmma (mass 5.0) | additive: ascorbic acid (conc 100.0)"
+}

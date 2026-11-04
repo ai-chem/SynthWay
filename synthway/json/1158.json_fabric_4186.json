@@ -1,0 +1,27 @@
+{
+  "synthesis_id": "1158.json_fabric_4186",
+  "composition": "fabric",
+  "precursors": [
+    {
+      "name": "cotton gauze"
+    },
+    {
+      "name": "AgNO3"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water"
+  },
+  "conditions": {
+    "temperature": 27.5
+  },
+  "product": {
+    "shape": "film with spherical nps"
+  },
+  "source": {
+    "synthesis_id_original": "1158.json_fabric_4186",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: fabric | solvent: distilled water | temperature: 27.5 | shape: film with spherical nps | precursor: cotton gauze | precursor: AgNO3"
+}

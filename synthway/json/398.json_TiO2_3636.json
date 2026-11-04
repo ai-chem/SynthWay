@@ -1,0 +1,27 @@
+{
+  "synthesis_id": "398.json_TiO2_3636",
+  "composition": "TiO2",
+  "elements": [
+    "Ti",
+    "O"
+  ],
+  "method": "facile",
+  "solvent": {
+    "name": "water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 450.0
+  },
+  "product": {
+    "size": {
+      "length": 7.5
+    }
+  },
+  "source": {
+    "synthesis_id_original": "398.json_TiO2_3636",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: TiO2 | method: facile | solvent: water | solvent.volume: 100.0 | temperature: 450.0 | size.length: 7.5"
+}

@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "826.json_SnO2_1250",
+  "composition": "SnO2",
+  "elements": [
+    "Sn",
+    "O"
+  ],
+  "method": "chemical precipitation",
+  "precursors": [
+    {
+      "name": "SnCl2*2H2O",
+      "conc": 10.0
+    },
+    {
+      "name": "C2H5NO2",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium dodecyl sulfate",
+      "conc": 3000.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "crystalsystem": "rutile",
+    "shape": "spherical",
+    "size": {
+      "length": 5.0,
+      "width": 5.0,
+      "depth": 5.0
+    }
+  },
+  "pdfno_list": [
+    "41-1445"
+  ],
+  "source": {
+    "synthesis_id_original": "826.json_SnO2_1250",
+    "nodes": 16,
+    "edges": 16
+  },
+  "retrieval_text": "composition: SnO2 | method: chemical precipitation | solvent: water | solvent.volume: 100.0 | temperature: 200.0 | crystalsystem: rutile | shape: spherical | size.length: 5.0 | size.width: 5.0 | size.depth: 5.0 | precursor: SnCl2*2H2O (conc 10.0) | precursor: C2H5NO2 (conc 10.0) | additive: sodium dodecyl sulfate (conc 3000.0) | pdfno_list: 41-1445"
+}

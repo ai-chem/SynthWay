@@ -1,0 +1,53 @@
+{
+  "synthesis_id": "3.json_Au_3079",
+  "composition": "Au",
+  "elements": [
+    "Au"
+  ],
+  "precursors": [
+    {
+      "name": "HAuCl4",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "cetyltrimethylammonium bromide",
+      "conc": 200.0
+    },
+    {
+      "name": "silver nitrate",
+      "conc": 4.0
+    },
+    {
+      "name": "ascorbic acid",
+      "conc": 100.0
+    },
+    {
+      "name": "sodium borohydride",
+      "conc": 2.25
+    }
+  ],
+  "seeds": [
+    {
+      "name": "NaBH4"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "flower-like",
+    "size": {
+      "length": 370.0,
+      "width": 370.0,
+      "depth": 370.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "3.json_Au_3079",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: Au | solvent: water | shape: flower-like | size.length: 370.0 | size.width: 370.0 | size.depth: 370.0 | precursor: HAuCl4 (conc 1.0) | additive: cetyltrimethylammonium bromide (conc 200.0) | additive: silver nitrate (conc 4.0) | additive: ascorbic acid (conc 100.0) | additive: sodium borohydride (conc 2.25) | seed: NaBH4"
+}

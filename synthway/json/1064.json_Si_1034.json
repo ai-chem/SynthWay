@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "1064.json_Si_1034",
+  "composition": "Si",
+  "elements": [
+    "Si"
+  ],
+  "method": "stober",
+  "precursors": [
+    {
+      "name": "Si(OC2H5)4",
+      "mass": 1.2129
+    },
+    {
+      "name": "[Ru(phen)3]Cl2",
+      "mass": 0.0015
+    },
+    {
+      "name": "NH4OH",
+      "mass": 6.37
+    }
+  ],
+  "solvent": {
+    "name": "ethanol",
+    "volume": 18.7
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "width": 440.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1064.json_Si_1034",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Si | method: stober | solvent: ethanol | solvent.volume: 18.7 | shape: spherical | size.width: 440.0 | precursor: Si(OC2H5)4 (mass 1.2129) | precursor: [Ru(phen)3]Cl2 (mass 0.0015) | precursor: NH4OH (mass 6.37)"
+}

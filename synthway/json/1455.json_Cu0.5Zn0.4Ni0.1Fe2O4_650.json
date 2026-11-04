@@ -1,0 +1,61 @@
+{
+  "synthesis_id": "1455.json_Cu0.5Zn0.4Ni0.1Fe2O4_650",
+  "composition": "Cu0.5Zn0.4Ni0.1Fe2O4",
+  "elements": [
+    "Cu",
+    "Zn",
+    "Ni",
+    "Fe",
+    "O"
+  ],
+  "method": "sol-gel combustion",
+  "precursors": [
+    {
+      "name": "iron nitrate (Fe(NO3)3·9H2O)",
+      "conc": 0.2
+    },
+    {
+      "name": "Zn(NO3)2*6H2O",
+      "conc": 0.04
+    },
+    {
+      "name": "nickel nitrate (Ni(NO3)2·6H2O)",
+      "conc": 0.01
+    },
+    {
+      "name": "Cu(NO3)2*6H2O",
+      "conc": 0.05
+    }
+  ],
+  "additives": [
+    {
+      "name": "ammonium hydroxide"
+    },
+    {
+      "name": "citric acid",
+      "conc": 0.3
+    }
+  ],
+  "solvent": {
+    "name": "deionized water"
+  },
+  "conditions": {
+    "temperature": 100.0,
+    "ph": 7.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "irregular",
+    "size": {
+      "length": 60.0,
+      "width": 60.0,
+      "depth": 60.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1455.json_Cu0.5Zn0.4Ni0.1Fe2O4_650",
+    "nodes": 21,
+    "edges": 20
+  },
+  "retrieval_text": "composition: Cu0.5Zn0.4Ni0.1Fe2O4 | method: sol-gel combustion | solvent: deionized water | temperature: 100.0 | pH: 7.0 | crystalsystem: cubic | shape: irregular | size.length: 60.0 | size.width: 60.0 | size.depth: 60.0 | precursor: iron nitrate (Fe(NO3)3·9H2O) (conc 0.2) | precursor: Zn(NO3)2*6H2O (conc 0.04) | precursor: nickel nitrate (Ni(NO3)2·6H2O) (conc 0.01) | precursor: Cu(NO3)2*6H2O (conc 0.05) | additive: ammonium hydroxide | additive: citric acid (conc 0.3)"
+}

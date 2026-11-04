@@ -1,0 +1,34 @@
+{
+  "synthesis_id": "2277.json_ZnO_4110",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2",
+      "conc": 500.0
+    },
+    {
+      "name": "C6H15NO3"
+    }
+  ],
+  "additives": [
+    {
+      "name": "triethanolamine"
+    }
+  ],
+  "solvent": {
+    "name": "ethanol"
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "source": {
+    "synthesis_id_original": "2277.json_ZnO_4110",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: ZnO | solvent: ethanol | temperature: 60.0 | precursor: Zn(CH3COO)2 (conc 500.0) | precursor: C6H15NO3 | additive: triethanolamine"
+}

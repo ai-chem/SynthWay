@@ -1,0 +1,28 @@
+{
+  "synthesis_id": "279.json_PbS_2548",
+  "composition": "PbS",
+  "elements": [
+    "Pb",
+    "S"
+  ],
+  "method": "hot-injection",
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "shape": "star",
+    "size": {
+      "length": 6.0
+    }
+  },
+  "pdfno_list": [
+    "00-005-0592"
+  ],
+  "source": {
+    "synthesis_id_original": "279.json_PbS_2548",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: PbS | method: hot-injection | solvent: water | crystalsystem: face-centered cubic | shape: star | size.length: 6.0 | pdfno_list: 00-005-0592"
+}

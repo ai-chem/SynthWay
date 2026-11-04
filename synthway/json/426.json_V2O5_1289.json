@@ -1,0 +1,31 @@
+{
+  "synthesis_id": "426.json_V2O5_1289",
+  "composition": "V2O5",
+  "elements": [
+    "V",
+    "O"
+  ],
+  "method": "sol-gel",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 400.0
+  },
+  "product": {
+    "crystalsystem": "bariandite",
+    "shape": "spherical",
+    "size": {
+      "length": 15.0
+    }
+  },
+  "pdfno_list": [
+    "890612"
+  ],
+  "source": {
+    "synthesis_id_original": "426.json_V2O5_1289",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: V2O5 | method: sol-gel | solvent: water | temperature: 400.0 | crystalsystem: bariandite | shape: spherical | size.length: 15.0 | pdfno_list: 890612"
+}

@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "2053.json_CoOOH_1302",
+  "composition": "CoOOH",
+  "elements": [
+    "Co",
+    "O",
+    "H"
+  ],
+  "precursors": [
+    {
+      "name": "CoCl2",
+      "conc": 10.0
+    },
+    {
+      "name": "NaClO",
+      "conc": 900.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "flake",
+    "size": {
+      "length": 100.0,
+      "width": 100.0
+    }
+  },
+  "pdfno_list": [
+    "07-0169"
+  ],
+  "source": {
+    "synthesis_id_original": "2053.json_CoOOH_1302",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: CoOOH | solvent: water | shape: flake | size.length: 100.0 | size.width: 100.0 | precursor: CoCl2 (conc 10.0) | precursor: NaClO (conc 900.0) | additive: sodium hydroxide (conc 1000.0) | pdfno_list: 07-0169"
+}

@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "1801.json_RuTe_3464",
+  "composition": "RuTe",
+  "elements": [
+    "Ru",
+    "Te"
+  ],
+  "precursors": [
+    {
+      "name": "RuCl3",
+      "conc": 10.0
+    }
+  ],
+  "seeds": [
+    {
+      "name": "Te"
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "wire",
+    "size": {
+      "length": 130.0,
+      "width": 14.0,
+      "depth": 14.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1801.json_RuTe_3464",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: RuTe | solvent: ethylene glycol | solvent.volume: 20.0 | temperature: 200.0 | crystalsystem: hexagonal | shape: wire | size.length: 130.0 | size.width: 14.0 | size.depth: 14.0 | precursor: RuCl3 (conc 10.0) | seed: Te"
+}

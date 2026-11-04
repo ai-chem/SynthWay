@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "2258.json_BI2S3_107",
+  "composition": "BI2S3",
+  "elements": [
+    "B",
+    "I",
+    "S"
+  ],
+  "method": "solvothermal decomposition",
+  "precursors": [
+    {
+      "name": "BiCl3",
+      "conc": 5.0
+    },
+    {
+      "name": "thiourea (NH2CSNH2)",
+      "conc": 10.0
+    }
+  ],
+  "solvent": {
+    "name": "pyridine",
+    "volume": 80.0
+  },
+  "conditions": {
+    "temperature": 140.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "wire",
+    "size": {
+      "length": 3000.0,
+      "width": 30.0,
+      "depth": 30.0
+    }
+  },
+  "pdfno_list": [
+    "17-320"
+  ],
+  "source": {
+    "synthesis_id_original": "2258.json_BI2S3_107",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: BI2S3 | method: solvothermal decomposition | solvent: pyridine | solvent.volume: 80.0 | temperature: 140.0 | crystalsystem: orthorhombic | shape: wire | size.length: 3000.0 | size.width: 30.0 | size.depth: 30.0 | precursor: BiCl3 (conc 5.0) | precursor: thiourea (NH2CSNH2) (conc 10.0) | pdfno_list: 17-320"
+}

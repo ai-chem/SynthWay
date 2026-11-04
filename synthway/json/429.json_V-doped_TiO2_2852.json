@@ -1,0 +1,30 @@
+{
+  "synthesis_id": "429.json_V-doped_TiO2_2852",
+  "composition": "V-doped TiO2",
+  "elements": [
+    "V",
+    "Ti",
+    "O"
+  ],
+  "method": "alkaline hydrolysis",
+  "solvent": {
+    "name": "water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 100.0,
+    "ph": 12.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 23.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "429.json_V-doped_TiO2_2852",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: V-doped TiO2 | method: alkaline hydrolysis | solvent: water | solvent.volume: 50.0 | temperature: 100.0 | pH: 12.0 | shape: spherical | size.length: 23.0"
+}

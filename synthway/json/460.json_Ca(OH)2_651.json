@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "460.json_Ca(OH)2_651",
+  "composition": "Ca(OH)2",
+  "elements": [
+    "Ca",
+    "O",
+    "H"
+  ],
+  "method": "hydrothermal",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 50.0,
+    "ph": 13.56
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "polycrystalline",
+    "size": {
+      "length": 296.0
+    }
+  },
+  "pdfno_list": [
+    "00-004-0733"
+  ],
+  "source": {
+    "synthesis_id_original": "460.json_Ca(OH)2_651",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: Ca(OH)2 | method: hydrothermal | solvent: water | temperature: 50.0 | pH: 13.56 | crystalsystem: hexagonal | shape: polycrystalline | size.length: 296.0 | pdfno_list: 00-004-0733"
+}

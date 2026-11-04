@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "1077.json_SnO2-CuO_2507",
+  "composition": "SnO2-CuO",
+  "elements": [
+    "Sn",
+    "O",
+    "Cu"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "Na2SnO3·3H2O",
+      "mass": 0.641
+    },
+    {
+      "name": "Cu(NO3)2·3H2O",
+      "mass": 0.483
+    },
+    {
+      "name": "NH4OH"
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium citrate dihydrate",
+      "mass": 0.12
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 160.0,
+    "ph": 9.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal/monoclinic"
+  },
+  "pdfno_list": [
+    "41-1445 89-5895"
+  ],
+  "source": {
+    "synthesis_id_original": "1077.json_SnO2-CuO_2507",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: SnO2-CuO | method: hydrothermal | solvent: ethylene glycol | solvent.volume: 20.0 | temperature: 160.0 | pH: 9.0 | crystalsystem: tetragonal/monoclinic | precursor: Na2SnO3·3H2O (mass 0.641) | precursor: Cu(NO3)2·3H2O (mass 0.483) | precursor: NH4OH | additive: sodium citrate dihydrate (mass 0.12) | pdfno_list: 41-1445 89-5895"
+}

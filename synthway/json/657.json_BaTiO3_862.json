@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "657.json_BaTiO3_862",
+  "composition": "BaTiO3",
+  "elements": [
+    "Ba",
+    "Ti",
+    "O"
+  ],
+  "method": "solvo-hydrothermal",
+  "precursors": [
+    {
+      "name": "Ba(OH)2*8H2O",
+      "conc": 2.0
+    },
+    {
+      "name": "Ti(OBu)4"
+    }
+  ],
+  "solvent": {
+    "name": "methanol",
+    "volume": 15.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "size": {
+      "length": 25.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "657.json_BaTiO3_862",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: BaTiO3 | method: solvo-hydrothermal | solvent: methanol | solvent.volume: 15.0 | temperature: 180.0 | crystalsystem: tetragonal | size.length: 25.0 | precursor: Ba(OH)2*8H2O (conc 2.0) | precursor: Ti(OBu)4"
+}

@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "2263.json_Bi2O3_799",
+  "composition": "Bi2O3",
+  "elements": [
+    "Bi",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "BiCl3",
+      "conc": 2.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "ethylenediamine"
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 190.0
+  },
+  "product": {
+    "shape": "flower-like",
+    "size": {
+      "length": 500.0,
+      "width": 30.0,
+      "depth": 30.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2263.json_Bi2O3_799",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Bi2O3 | solvent: ethylene glycol | solvent.volume: 50.0 | temperature: 190.0 | shape: flower-like | size.length: 500.0 | size.width: 30.0 | size.depth: 30.0 | precursor: BiCl3 (conc 2.0) | additive: ethylenediamine"
+}

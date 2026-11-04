@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "173.json_PbS_2006",
+  "composition": "PbS",
+  "elements": [
+    "Pb",
+    "S"
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 140.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "shape": "tetrapod like",
+    "size": {
+      "length": 1500.0,
+      "width": 450.0,
+      "depth": 450.0
+    }
+  },
+  "pdfno_list": [
+    "78-1901"
+  ],
+  "source": {
+    "synthesis_id_original": "173.json_PbS_2006",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: PbS | solvent: deionized water | solvent.volume: 100.0 | temperature: 140.0 | crystalsystem: face-centered cubic | shape: tetrapod like | size.length: 1500.0 | size.width: 450.0 | size.depth: 450.0 | pdfno_list: 78-1901"
+}

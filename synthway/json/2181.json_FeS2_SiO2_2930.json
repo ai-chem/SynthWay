@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "2181.json_FeS2/SiO2_2930",
+  "composition": "FeS2/SiO2",
+  "elements": [
+    "Fe",
+    "S",
+    "Si",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "S",
+      "mass": 0.36
+    }
+  ],
+  "seeds": [
+    {
+      "name": "Fe3O4/SiO2",
+      "conc": 0.12
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 500.0
+  },
+  "product": {
+    "shape": "spherical shell",
+    "size": {
+      "length": 1250.0,
+      "width": 1250.0,
+      "depth": 1250.0
+    }
+  },
+  "pdfno_list": [
+    "42-1340"
+  ],
+  "source": {
+    "synthesis_id_original": "2181.json_FeS2/SiO2_2930",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: FeS2/SiO2 | solvent: water | temperature: 500.0 | shape: spherical shell | size.length: 1250.0 | size.width: 1250.0 | size.depth: 1250.0 | precursor: S (mass 0.36) | seed: Fe3O4/SiO2 (conc 0.12) | pdfno_list: 42-1340"
+}

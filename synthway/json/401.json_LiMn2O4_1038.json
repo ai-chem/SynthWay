@@ -1,0 +1,32 @@
+{
+  "synthesis_id": "401.json_LiMn2O4_1038",
+  "composition": "LiMn2O4",
+  "elements": [
+    "Li",
+    "Mn",
+    "O"
+  ],
+  "method": "solid-state combustion",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 800.0
+  },
+  "product": {
+    "crystalsystem": "spinel",
+    "shape": "octahedral",
+    "size": {
+      "length": 188.1
+    }
+  },
+  "pdfno_list": [
+    "35-0782"
+  ],
+  "source": {
+    "synthesis_id_original": "401.json_LiMn2O4_1038",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: LiMn2O4 | method: solid-state combustion | solvent: water | temperature: 800.0 | crystalsystem: spinel | shape: octahedral | size.length: 188.1 | pdfno_list: 35-0782"
+}

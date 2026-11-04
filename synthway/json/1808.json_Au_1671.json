@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "1808.json_Au_1671",
+  "composition": "Au",
+  "elements": [
+    "Au"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "HAuCl4",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "olea europaea (oe) fruit extract and acacia nilotica (an) husk extract"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 80.0,
+    "ph": 7.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 44.96,
+      "width": 44.96,
+      "depth": 44.96
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1808.json_Au_1671",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Au | method: green synthesis | solvent: water | solvent.volume: 50.0 | temperature: 80.0 | pH: 7.0 | shape: spherical | size.length: 44.96 | size.width: 44.96 | size.depth: 44.96 | precursor: HAuCl4 (conc 1.0) | additive: olea europaea (oe) fruit extract and acacia nilotica (an) husk extract"
+}

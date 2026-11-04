@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1496.json_NiO_711",
+  "composition": "NiO",
+  "elements": [
+    "Ni",
+    "O"
+  ],
+  "method": "sol-gel",
+  "precursors": [
+    {
+      "name": "Ni(NO3)2*6H2O",
+      "mass": 5.8
+    }
+  ],
+  "additives": [
+    {
+      "name": "citric acid",
+      "mass": 4.2
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 70.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 32.0,
+      "width": 32.0,
+      "depth": 32.0
+    }
+  },
+  "pdfno_list": [
+    "96-101-0094"
+  ],
+  "source": {
+    "synthesis_id_original": "1496.json_NiO_711",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: NiO | method: sol-gel | solvent: deionized water | solvent.volume: 100.0 | temperature: 70.0 | crystalsystem: cubic | shape: spherical | size.length: 32.0 | size.width: 32.0 | size.depth: 32.0 | precursor: Ni(NO3)2*6H2O (mass 5.8) | additive: citric acid (mass 4.2) | pdfno_list: 96-101-0094"
+}

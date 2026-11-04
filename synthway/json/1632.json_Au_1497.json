@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1632.json_Au_1497",
+  "composition": "Au",
+  "elements": [
+    "Au"
+  ],
+  "method": "alkaline reduction",
+  "precursors": [
+    {
+      "name": "(CH2OH)4PCl",
+      "conc": 85.0
+    },
+    {
+      "name": "AuCl3",
+      "conc": 25.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 1000.0
+    },
+    {
+      "name": "trisodium citrate",
+      "conc": 68.0
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 43.16
+  },
+  "product": {
+    "size": {
+      "length": 5.0,
+      "width": 5.0,
+      "depth": 5.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1632.json_Au_1497",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Au | method: alkaline reduction | solvent: deionized water | solvent.volume: 43.16 | size.length: 5.0 | size.width: 5.0 | size.depth: 5.0 | precursor: (CH2OH)4PCl (conc 85.0) | precursor: AuCl3 (conc 25.0) | additive: sodium hydroxide (conc 1000.0) | additive: trisodium citrate (conc 68.0)"
+}

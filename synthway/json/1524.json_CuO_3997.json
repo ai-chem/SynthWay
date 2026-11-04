@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "1524.json_CuO_3997",
+  "composition": "CuO",
+  "elements": [
+    "Cu",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Cu(NO3)2",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sugarcane juice"
+    },
+    {
+      "name": "ammonium hydroxide",
+      "conc": 500.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 80.0,
+    "ph": 10.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "cube",
+    "size": {
+      "length": 60.5,
+      "width": 60.5,
+      "depth": 60.5
+    }
+  },
+  "pdfno_list": [
+    "80-1916"
+  ],
+  "source": {
+    "synthesis_id_original": "1524.json_CuO_3997",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: CuO | method: green synthesis | solvent: water | temperature: 80.0 | pH: 10.0 | crystalsystem: monoclinic | shape: cube | size.length: 60.5 | size.width: 60.5 | size.depth: 60.5 | precursor: Cu(NO3)2 (conc 100.0) | additive: sugarcane juice | additive: ammonium hydroxide (conc 500.0) | pdfno_list: 80-1916"
+}

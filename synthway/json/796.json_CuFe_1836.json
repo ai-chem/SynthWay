@@ -1,0 +1,27 @@
+{
+  "synthesis_id": "796.json_CuFe_1836",
+  "composition": "CuFe",
+  "elements": [
+    "Cu",
+    "Fe"
+  ],
+  "method": "co-reduction",
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 170.0
+  },
+  "product": {
+    "shape": "roughly spherical",
+    "size": {
+      "length": 30.0,
+      "width": 30.0,
+      "depth": 30.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "796.json_CuFe_1836",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: CuFe | method: co-reduction | solvent: ethylene glycol | solvent.volume: 170.0 | shape: roughly spherical | size.length: 30.0 | size.width: 30.0 | size.depth: 30.0"
+}

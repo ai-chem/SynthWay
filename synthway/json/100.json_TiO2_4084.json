@@ -1,0 +1,30 @@
+{
+  "synthesis_id": "100.json_TiO2_4084",
+  "composition": "TiO2",
+  "elements": [
+    "Ti",
+    "O"
+  ],
+  "method": "sol-gel",
+  "solvent": {
+    "name": "absolute ethanol",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 600.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 40.0,
+      "width": 40.0,
+      "depth": 40.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "100.json_TiO2_4084",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: TiO2 | method: sol-gel | solvent: absolute ethanol | solvent.volume: 10.0 | temperature: 600.0 | shape: spherical | size.length: 40.0 | size.width: 40.0 | size.depth: 40.0"
+}

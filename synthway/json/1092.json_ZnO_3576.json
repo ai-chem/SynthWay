@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "1092.json_ZnO_3576",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Zn(PS2O2C16H34)2",
+      "mass": 0.618
+    },
+    {
+      "name": "NaOH",
+      "mass": 0.032
+    }
+  ],
+  "solvent": {
+    "name": "tetrahydrofuran",
+    "volume": 15.0
+  },
+  "conditions": {
+    "temperature": 40.0
+  },
+  "product": {
+    "size": {
+      "width": 3.85
+    }
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "1092.json_ZnO_3576",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: ZnO | solvent: tetrahydrofuran | solvent.volume: 15.0 | temperature: 40.0 | size.width: 3.85 | precursor: Zn(PS2O2C16H34)2 (mass 0.618) | precursor: NaOH (mass 0.032) | pdfno_list: 36-1451"
+}

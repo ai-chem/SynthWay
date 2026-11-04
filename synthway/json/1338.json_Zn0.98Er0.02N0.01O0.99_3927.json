@@ -1,0 +1,53 @@
+{
+  "synthesis_id": "1338.json_Zn0.98Er0.02N0.01O0.99_3927",
+  "composition": "Zn0.98Er0.02N0.01O0.99",
+  "elements": [
+    "Zn",
+    "Er",
+    "N",
+    "O"
+  ],
+  "method": "chemical co-precipitation",
+  "precursors": [
+    {
+      "name": "zinc nitrate hexahydrate (Zn(NO3)2⋅6H2O)",
+      "conc": 20.0
+    },
+    {
+      "name": "erbium nitrate pentahydrate (Er(NO3)3·5H2O)"
+    },
+    {
+      "name": "CO(NH2)2"
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 80.0
+    }
+  ],
+  "solvent": {
+    "name": "deionized water"
+  },
+  "conditions": {
+    "ph": 7.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "wire",
+    "size": {
+      "length": 299.0,
+      "width": 299.0,
+      "depth": 299.0
+    }
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "1338.json_Zn0.98Er0.02N0.01O0.99_3927",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: Zn0.98Er0.02N0.01O0.99 | method: chemical co-precipitation | solvent: deionized water | pH: 7.0 | crystalsystem: hexagonal | shape: wire | size.length: 299.0 | size.width: 299.0 | size.depth: 299.0 | precursor: zinc nitrate hexahydrate (Zn(NO3)2⋅6H2O) (conc 20.0) | precursor: erbium nitrate pentahydrate (Er(NO3)3·5H2O) | precursor: CO(NH2)2 | additive: sodium hydroxide (conc 80.0) | pdfno_list: 36-1451"
+}

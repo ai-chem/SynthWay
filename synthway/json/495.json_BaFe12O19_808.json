@@ -1,0 +1,29 @@
+{
+  "synthesis_id": "495.json_BaFe12O19_808",
+  "composition": "BaFe12O19",
+  "elements": [
+    "Ba",
+    "Fe",
+    "O"
+  ],
+  "method": "coprecipitation",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 925.0,
+    "ph": 10.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "size": {
+      "length": 8.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "495.json_BaFe12O19_808",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: BaFe12O19 | method: coprecipitation | solvent: water | temperature: 925.0 | pH: 10.0 | crystalsystem: hexagonal | size.length: 8.0"
+}

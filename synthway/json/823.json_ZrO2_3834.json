@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "823.json_ZrO2_3834",
+  "composition": "ZrO2",
+  "elements": [
+    "Zr",
+    "O"
+  ],
+  "method": "modified coprecipitation",
+  "precursors": [
+    {
+      "name": "Zr(NO3)2·6H2O",
+      "conc": 200.0
+    },
+    {
+      "name": "KOH",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 900.0,
+    "ph": 10.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 184.0,
+      "width": 184.0,
+      "depth": 184.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "823.json_ZrO2_3834",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: ZrO2 | method: modified coprecipitation | solvent: water | temperature: 900.0 | pH: 10.0 | shape: spherical | size.length: 184.0 | size.width: 184.0 | size.depth: 184.0 | precursor: Zr(NO3)2·6H2O (conc 200.0) | precursor: KOH (conc 1000.0)"
+}

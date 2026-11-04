@@ -1,0 +1,36 @@
+{
+  "synthesis_id": "1653.json_Ag_1089",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "mass": 0.01
+    }
+  ],
+  "additives": [
+    {
+      "name": "kefir fermented supernatant"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 10.0
+  },
+  "product": {
+    "size": {
+      "length": 20.0,
+      "width": 20.0,
+      "depth": 20.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1653.json_Ag_1089",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Ag | method: green synthesis | solvent: water | solvent.volume: 10.0 | size.length: 20.0 | size.width: 20.0 | size.depth: 20.0 | precursor: AgNO3 (mass 0.01) | additive: kefir fermented supernatant"
+}

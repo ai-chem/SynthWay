@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "2223.json_Cu2+_190",
+  "composition": "Cu2+",
+  "elements": [
+    "Cu"
+  ],
+  "precursors": [
+    {
+      "name": "CuCl2*2H2O",
+      "conc": 20.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "ascorbic acid",
+      "conc": 100.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 12.0,
+      "width": 12.0,
+      "depth": 12.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2223.json_Cu2+_190",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Cu2+ | solvent: water | temperature: 80.0 | shape: spherical | size.length: 12.0 | size.width: 12.0 | size.depth: 12.0 | precursor: CuCl2*2H2O (conc 20.0) | additive: ascorbic acid (conc 100.0)"
+}

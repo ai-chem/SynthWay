@@ -1,0 +1,31 @@
+{
+  "synthesis_id": "1040.json_5-bromoindole-capped_ZnO_3072",
+  "composition": "5-bromoindole-capped ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "microwave synthesis",
+  "solvent": {
+    "name": "deionized water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 100.0,
+    "ph": 9.0
+  },
+  "product": {
+    "shape": "wire",
+    "size": {
+      "length": 193.7,
+      "width": 193.7,
+      "depth": 193.7
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1040.json_5-bromoindole-capped_ZnO_3072",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: 5-bromoindole-capped ZnO | method: microwave synthesis | solvent: deionized water | solvent.volume: 100.0 | temperature: 100.0 | pH: 9.0 | shape: wire | size.length: 193.7 | size.width: 193.7 | size.depth: 193.7"
+}

@@ -1,0 +1,53 @@
+{
+  "synthesis_id": "1804.json_CuMnO2_1934",
+  "composition": "CuMnO2",
+  "elements": [
+    "Cu",
+    "Mn",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "MnSO4⋅H2O",
+      "mass": 0.4
+    },
+    {
+      "name": "CuSO4*0.5H2O",
+      "mass": 0.69
+    }
+  ],
+  "additives": [
+    {
+      "name": "potassium permanganate",
+      "mass": 1.0
+    },
+    {
+      "name": "acryl amide",
+      "conc": 15.0
+    }
+  ],
+  "solvent": {
+    "name": "ultrapure water",
+    "volume": 40.0
+  },
+  "conditions": {
+    "temperature": 100.0
+  },
+  "product": {
+    "shape": "petal-like structure of flower",
+    "size": {
+      "length": 400.0,
+      "width": 400.0,
+      "depth": 400.0
+    }
+  },
+  "pdfno_list": [
+    "34-0394"
+  ],
+  "source": {
+    "synthesis_id_original": "1804.json_CuMnO2_1934",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: CuMnO2 | solvent: ultrapure water | solvent.volume: 40.0 | temperature: 100.0 | shape: petal-like structure of flower | size.length: 400.0 | size.width: 400.0 | size.depth: 400.0 | precursor: MnSO4⋅H2O (mass 0.4) | precursor: CuSO4*0.5H2O (mass 0.69) | additive: potassium permanganate (mass 1.0) | additive: acryl amide (conc 15.0) | pdfno_list: 34-0394"
+}

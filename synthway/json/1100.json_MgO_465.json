@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "1100.json_MgO_465",
+  "composition": "MgO",
+  "elements": [
+    "Mg",
+    "O"
+  ],
+  "method": "coprecipitation",
+  "precursors": [
+    {
+      "name": "MgSO4",
+      "conc": 700.0
+    },
+    {
+      "name": "NaOH",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 300.0
+  },
+  "conditions": {
+    "temperature": 550.0,
+    "ph": 10.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical"
+  },
+  "pdfno_list": [
+    "01-078-0430"
+  ],
+  "source": {
+    "synthesis_id_original": "1100.json_MgO_465",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: MgO | method: coprecipitation | solvent: distilled water | solvent.volume: 300.0 | temperature: 550.0 | pH: 10.0 | crystalsystem: cubic | shape: spherical | precursor: MgSO4 (conc 700.0) | precursor: NaOH (conc 1000.0) | pdfno_list: 01-078-0430"
+}

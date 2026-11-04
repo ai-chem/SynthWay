@@ -1,0 +1,32 @@
+{
+  "synthesis_id": "517.json_BaTiNdO3_2677",
+  "composition": "BaTiNdO3",
+  "elements": [
+    "Ba",
+    "Ti",
+    "Nd",
+    "O"
+  ],
+  "method": "sol-gel",
+  "solvent": {
+    "name": "acetylacetone"
+  },
+  "conditions": {
+    "temperature": 750.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "size": {
+      "length": 39.0
+    }
+  },
+  "pdfno_list": [
+    "79-2265"
+  ],
+  "source": {
+    "synthesis_id_original": "517.json_BaTiNdO3_2677",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: BaTiNdO3 | method: sol-gel | solvent: acetylacetone | temperature: 750.0 | crystalsystem: tetragonal | size.length: 39.0 | pdfno_list: 79-2265"
+}

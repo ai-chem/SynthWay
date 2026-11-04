@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "925.json_Ag2O_527",
+  "composition": "Ag2O",
+  "elements": [
+    "Ag",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 10.0
+    },
+    {
+      "name": "P(C6H4SO3K)2",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "trisodium citrate",
+      "conc": 100.0
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 100.0
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 18.5
+  },
+  "conditions": {
+    "temperature": 11.0
+  },
+  "product": {
+    "shape": "hexapods"
+  },
+  "pdfno_list": [
+    "12-0793"
+  ],
+  "source": {
+    "synthesis_id_original": "925.json_Ag2O_527",
+    "nodes": 12,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Ag2O | solvent: deionized water | solvent.volume: 18.5 | temperature: 11.0 | shape: hexapods | precursor: AgNO3 (conc 10.0) | precursor: P(C6H4SO3K)2 (conc 10.0) | additive: trisodium citrate (conc 100.0) | additive: sodium hydroxide (conc 100.0) | pdfno_list: 12-0793"
+}

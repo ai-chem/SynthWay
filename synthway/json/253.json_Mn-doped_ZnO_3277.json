@@ -1,0 +1,32 @@
+{
+  "synthesis_id": "253.json_Mn-doped_ZnO_3277",
+  "composition": "Mn-doped ZnO",
+  "elements": [
+    "Mn",
+    "Zn",
+    "O"
+  ],
+  "method": "precipitation",
+  "solvent": {
+    "name": "ethanol"
+  },
+  "conditions": {
+    "temperature": 110.0,
+    "ph": 8.3
+  },
+  "product": {
+    "crystalsystem": "wurtzite",
+    "size": {
+      "length": 25.0
+    }
+  },
+  "pdfno_list": [
+    "01-089-1397"
+  ],
+  "source": {
+    "synthesis_id_original": "253.json_Mn-doped_ZnO_3277",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: Mn-doped ZnO | method: precipitation | solvent: ethanol | temperature: 110.0 | pH: 8.3 | crystalsystem: wurtzite | size.length: 25.0 | pdfno_list: 01-089-1397"
+}

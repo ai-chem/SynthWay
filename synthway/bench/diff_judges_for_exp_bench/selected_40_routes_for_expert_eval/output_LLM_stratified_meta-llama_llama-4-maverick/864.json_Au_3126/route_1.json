@@ -1,0 +1,4 @@
+{
+  "retrieval_text": "composition: Au | method: Turkevich | solvent: water | solvent.volume: 100.0 | temperature: 100 | ph: 6.0 | crystal_system: cubic | shape: spherical | size.length: 15.0 | size.width: 15.0 | size.depth: 15.0 | precursor: HAuCl4 | precursor.conc: 0.01 | additive: trisodium citrate | additive.conc: 0.1",
+  "raw_text": "Route 1: Turkevich Method\n1. Prepare a solution of HAuCl4 (0.01 M, 100 mL) in deionized water.\n2. Heat the solution to boiling point (~100 °C).\n3. Add trisodium citrate (0.1 M, 10 mL) to the boiling solution while stirring vigorously.\n4. Continue boiling for another 15 minutes until the solution color changes to red-wine.\n5. Allow the solution to cool to room temperature.\nFinal product: Au nanoparticles with a cubic crystal structure, spherical shape, and particle size ~15×15×15 nm, matching PDF reference 04-0784."
+}

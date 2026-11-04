@@ -1,0 +1,51 @@
+{
+  "synthesis_id": "1869.json_Pd-Fe3O4_2060",
+  "composition": "Pd–Fe3O4",
+  "elements": [
+    "Pd",
+    "Fe",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "H2PdCl4",
+      "conc": 20.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "trisodium citrate",
+      "mass": 0.02
+    },
+    {
+      "name": "ascorbic acid",
+      "conc": 100.0
+    }
+  ],
+  "seeds": [
+    {
+      "name": "Fe3O4"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 9.5
+  },
+  "conditions": {
+    "temperature": 105.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 15.0,
+      "width": 4.7,
+      "depth": 4.7
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1869.json_Pd-Fe3O4_2060",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Pd–Fe3O4 | solvent: water | solvent.volume: 9.5 | temperature: 105.0 | shape: spherical | size.length: 15.0 | size.width: 4.7 | size.depth: 4.7 | precursor: H2PdCl4 (conc 20.0) | additive: trisodium citrate (mass 0.02) | additive: ascorbic acid (conc 100.0) | seed: Fe3O4"
+}

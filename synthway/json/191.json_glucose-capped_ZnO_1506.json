@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "191.json_glucose-capped_ZnO_1506",
+  "composition": "glucose-capped ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2·2H2O",
+      "conc": 0.5
+    }
+  ],
+  "additives": [
+    {
+      "name": "glucose",
+      "conc": 200.0
+    }
+  ],
+  "solvent": {
+    "name": "double distilled water"
+  },
+  "conditions": {
+    "ph": 7.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 17.8,
+      "width": 17.8,
+      "depth": 17.8
+    }
+  },
+  "source": {
+    "synthesis_id_original": "191.json_glucose-capped_ZnO_1506",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: glucose-capped ZnO | solvent: double distilled water | pH: 7.0 | shape: spherical | size.length: 17.8 | size.width: 17.8 | size.depth: 17.8 | precursor: Zn(CH3COO)2·2H2O (conc 0.5) | additive: glucose (conc 200.0)"
+}

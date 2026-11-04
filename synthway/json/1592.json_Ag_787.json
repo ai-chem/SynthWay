@@ -1,0 +1,36 @@
+{
+  "synthesis_id": "1592.json_Ag_787",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 2.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "tabernaemontana divaricate aqueous solutions"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "rod like structures",
+    "size": {
+      "length": 57.0,
+      "width": 57.0,
+      "depth": 57.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1592.json_Ag_787",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Ag | method: green synthesis | solvent: water | shape: rod like structures | size.length: 57.0 | size.width: 57.0 | size.depth: 57.0 | precursor: AgNO3 (conc 2.0) | additive: tabernaemontana divaricate aqueous solutions"
+}

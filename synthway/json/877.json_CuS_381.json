@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "877.json_CuS_381",
+  "composition": "CuS",
+  "elements": [
+    "Cu",
+    "S"
+  ],
+  "method": "chemical co-precipitation",
+  "precursors": [
+    {
+      "name": "Cu(CH3COO)2*H2O",
+      "mass": 0.199
+    },
+    {
+      "name": "Na2S2O3*5H2O",
+      "mass": 1.056
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 200.0
+  },
+  "conditions": {
+    "temperature": 90.0,
+    "ph": 5.5
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "size": {
+      "width": 30.0
+    }
+  },
+  "pdfno_list": [
+    "04-004-8695"
+  ],
+  "source": {
+    "synthesis_id_original": "877.json_CuS_381",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: CuS | method: chemical co-precipitation | solvent: distilled water | solvent.volume: 200.0 | temperature: 90.0 | pH: 5.5 | crystalsystem: hexagonal | size.width: 30.0 | precursor: Cu(CH3COO)2*H2O (mass 0.199) | precursor: Na2S2O3*5H2O (mass 1.056) | pdfno_list: 04-004-8695"
+}

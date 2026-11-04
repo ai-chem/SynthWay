@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "1732.json_Ag_3209",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3 (sol.)",
+      "conc": 0.1
+    }
+  ],
+  "additives": [
+    {
+      "name": "conocarpus lancifolius fruits extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 30.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 22.5,
+      "width": 22.5,
+      "depth": 22.5
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1732.json_Ag_3209",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Ag | method: green synthesis | solvent: water | temperature: 30.0 | shape: spherical | size.length: 22.5 | size.width: 22.5 | size.depth: 22.5 | precursor: AgNO3 (sol.) (conc 0.1) | additive: conocarpus lancifolius fruits extract"
+}

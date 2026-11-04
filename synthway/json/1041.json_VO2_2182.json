@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1041.json_VO2_2182",
+  "composition": "VO2",
+  "elements": [
+    "V",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "V2O5",
+      "conc": 3.5
+    }
+  ],
+  "additives": [
+    {
+      "name": "hydrochloric acid",
+      "mass": 7.131
+    },
+    {
+      "name": "hydrazine hydrochloride",
+      "mass": 1.0
+    },
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 1.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 300.0
+  },
+  "product": {
+    "size": {
+      "width": 23.9
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1041.json_VO2_2182",
+    "nodes": 12,
+    "edges": 12
+  },
+  "retrieval_text": "composition: VO2 | solvent: water | solvent.volume: 20.0 | temperature: 300.0 | size.width: 23.9 | precursor: V2O5 (conc 3.5) | additive: hydrochloric acid (mass 7.131) | additive: hydrazine hydrochloride (mass 1.0) | additive: polyvinylpyrrolidone (mass 1.0)"
+}

@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "1569.json_Ag_3780",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "terpenes-rich extract (tre)"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "spherical",
+    "shape": "spherical",
+    "size": {
+      "length": 430.0,
+      "width": 430.0,
+      "depth": 430.0
+    }
+  },
+  "pdfno_list": [
+    "89-3722"
+  ],
+  "source": {
+    "synthesis_id_original": "1569.json_Ag_3780",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Ag | method: green synthesis | solvent: water | crystalsystem: spherical | shape: spherical | size.length: 430.0 | size.width: 430.0 | size.depth: 430.0 | precursor: AgNO3 (conc 1.0) | additive: terpenes-rich extract (tre) | pdfno_list: 89-3722"
+}

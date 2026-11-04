@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "1501.json_Ag_1331",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "biosynthesis",
+  "precursors": [
+    {
+      "name": "AgNO3"
+    }
+  ],
+  "additives": [
+    {
+      "name": "penicillium atramentosum km extract"
+    }
+  ],
+  "solvent": {
+    "name": "double deionized water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 15.0,
+      "width": 15.0,
+      "depth": 15.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1501.json_Ag_1331",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Ag | method: biosynthesis | solvent: double deionized water | temperature: 25.0 | shape: spherical | size.length: 15.0 | size.width: 15.0 | size.depth: 15.0 | precursor: AgNO3 | additive: penicillium atramentosum km extract"
+}

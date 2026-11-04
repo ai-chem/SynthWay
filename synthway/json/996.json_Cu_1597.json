@@ -1,0 +1,55 @@
+{
+  "synthesis_id": "996.json_Cu_1597",
+  "composition": "Cu",
+  "elements": [
+    "Cu"
+  ],
+  "method": "aqueous (co)reduction method",
+  "precursors": [
+    {
+      "name": "CuSO4*5H2O",
+      "mass": 0.4
+    }
+  ],
+  "additives": [
+    {
+      "name": "ascorbic acid",
+      "conc": 50.0
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 60.0
+    },
+    {
+      "name": "sodium borohydride",
+      "conc": 50.0
+    },
+    {
+      "name": "hydrazine solution"
+    }
+  ],
+  "solvent": {
+    "name": "aqueous 1.0% w/v chitosan",
+    "volume": 40.0
+  },
+  "conditions": {
+    "ph": 10.0
+  },
+  "product": {
+    "shape": "quasi-spheres",
+    "size": {
+      "length": 63.1,
+      "width": 63.1,
+      "depth": 63.1
+    }
+  },
+  "pdfno_list": [
+    "18840"
+  ],
+  "source": {
+    "synthesis_id_original": "996.json_Cu_1597",
+    "nodes": 18,
+    "edges": 18
+  },
+  "retrieval_text": "composition: Cu | method: aqueous (co)reduction method | solvent: aqueous 1.0% w/v chitosan | solvent.volume: 40.0 | pH: 10.0 | shape: quasi-spheres | size.length: 63.1 | size.width: 63.1 | size.depth: 63.1 | precursor: CuSO4*5H2O (mass 0.4) | additive: ascorbic acid (conc 50.0) | additive: sodium hydroxide (conc 60.0) | additive: sodium borohydride (conc 50.0) | additive: hydrazine solution | pdfno_list: 18840"
+}

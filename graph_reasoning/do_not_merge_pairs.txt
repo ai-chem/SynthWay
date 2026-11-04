@@ -1,0 +1,150 @@
+# Pairs that must NOT be merged (tab-separated, UTF-8)
+composition:ZFP20 (Zn0.98Fe0.02O)	composition:ZFP21 (Zn0.97Fe0.02Pr0.01O)
+composition:ZFP22 (Zn0.96Fe0.02Pr0.02O)	composition:ZFP23 (Zn0.95Fe0.02Pr0.03O)
+
+precursor:FeCl3·6H2O	precursor:FeCl2·6H2O
+
+composition:Ag20Fe80	composition:Ag80Fe20
+composition:Ag60Fe40	composition:Ag40Fe60
+
+composition:BGP-M-Ag (0.25 wt%)	composition:BGP-Ag (0.25 wt%)
+composition:BGP-M-Ag (2.0 wt%)	composition:BGP-Ag (2.0 wt%)
+
+composition:GA-Te  (10:2)	composition:GA-Te  (10:1)
+composition:GA-Te  (10:3)	composition:GA-Te  (10:1)
+composition:GA-Te  (3:2)	composition:GA-Te  (3:1)
+composition:GA-Te  (3:3)	composition:GA-Te  (3:1)
+composition:GA-Te  (5:2)	composition:GA-Te  (5:1)
+composition:GA-Te  (5:3)	composition:GA-Te  (5:1)
+
+composition:HCl-etched AA2024 surface with FAS/SiO2/Ti3C2	composition:HCl-etched AA2024 surface with GPS/SiO2/FAS/Ti3C2
+composition:HCl-etched AA2024 surface with GPS/SiO2	composition:HCl-etched AA2024 surface with GPS/SiO2/FAS/Ti3C2
+
+composition:polyCu-MOF@Ag	composition:polyCu-MOF
+
+composition:ZnO2/Ag/PDA-Mt	composition:ZnO1/Ag/PDA-Mt
+composition:ZnO4/Ag/PDA-Mt	composition:ZnO1/Ag/PDA-Mt
+
+precursor:Ce(NO3)3∙6H2O	precursor:Ce(NO3)3
+
+composition:DHICA2-CeO2	composition:DHICA-CeO2
+
+additive:boldo + acerola axtract (b20a)	additive:boldo + acerola axtract (b10a)
+additive:onion + acerola axtract (c20a)	additive:onion + acerola axtract (c10a)
+
+composition:Na.[VOL3O2SO2]	composition:Na.[VOL2O2SO2]
+composition:[CrL3Cl2H2O].1½H2O	composition:[CrL2Cl2H2O].2H2O
+composition:[CuL2H2O].Cl	composition:[CuL1H2O].Cl
+composition:[CuL3H2O]. Cl	composition:[CuL1H2O].Cl
+
+composition:SnxNi1-xO (x = 0.04)	composition:SnxNi1-xO (x = 0.02)
+composition:SnxNi1-xO (x = 0.06)	composition:SnxNi1-xO (x = 0.02)
+
+composition:PCL-GO	composition:PCL-GO-Ag
+
+composition:Zn0.98Er0.02N0.01O0.99	composition:Zn0.97Er0.03N0.01O0.99
+composition:Zn0.99Er0.01N0.01O0.99	composition:Zn0.97Er0.03N0.01O0.99
+
+composition:Nio/NiO	composition:NiO
+
+composition:CAU-17/CQDs	composition:CAU-17/Ag/CQDs
+
+composition:AgCu-SiO2@150	composition:AgCu-SiO2@125
+
+composition:3% Sm3+ MgO doped	composition:1% Sm3+ MgO doped
+composition:5% Sm3+ MgO doped	composition:7% Sm3+ MgO doped
+
+composition:CuO/ZnO70:30	composition:CuO/ZnO30:70
+
+composition:2D Zn-MOF@Au	composition:2D Zn-MOF
+precursor:3D Zn-MOF	precursor:2D Zn-MOF
+composition:3D Zn-MOF	composition:3D Zn-MOF@Au
+
+composition:MOFs@Ag-B	composition:MOFs@Ag-B@BBR
+
+crystalsystem:hexagonal, monoclinic and tetragonal	crystalsystem:cubic, hexagonal, monoclinic and tetragonal
+
+composition:Ag/Y2O3	composition:Ag-Au/Y2O3
+composition:CuPOM-MOF	composition:CuPOM-MOF@S
+
+composition:1 wt% Ag/MSS	composition:1 wt% Ag/MSS/Cpt
+composition:6 wt% Ag/MSS	composition:6 wt% Ag/MSS/Cpt
+
+composition:ZnO doped TiO2	composition:TiO2-doped ZnO
+
+composition:MnOx (SM)	composition:MnOx
+
+additive:dry zea mays lea husks extract	additive:fresh zea mays lea husks extract
+additive:dry zea mays lea husk extract	additive:fresh zea mays lea husks extract
+additive:fresh zea mays lea silk extract	additive:dry zea mays lea silk extract
+
+composition:2-dex (Ag-CNF films)	composition:1-dex (Ag-CNF films)
+composition:3-dex (Ag-CNF films)	composition:1-dex (Ag-CNF films)
+
+additive:cassia fistula ethanolic leaves extract	additive:cassia fistula leaves extract
+additive:lawsonia inermis plant leaves and bark extract	additive:lawsonia inermis leaf extract
+
+composition:AgNP50°C-1:1	composition:AgNP50°C-1:2
+
+composition:CDs	composition:CdS
+
+precursor:C6H6O2	precursor:C2H6O2
+precursor:RhCl3∙3H2O	precursor:FeCl3∙6H2O
+
+additive:3-aminopropyldimethylethoxysilane	additive:3-aminopropylethoxysilane
+
+precursor:Mn(CH3COO)2∙4H2O	precursor:Mn(CH3COO)2
+
+composition:Mn0.6Co0.4O	composition:Mn0.4Co0.6O
+composition:Mn0.8Co0.2O	composition:Mn0.2Co0.8O
+
+precursor:NiCl3*6H2O	precursor:NiCl2*6H2O
+composition:Fe0.3-NiCo2O4	composition:Fe0.1-NiCo2O4
+composition:Fe0.5-NiCo2O4	composition:Fe0.1-NiCo2O4
+
+precursor:(NH4)6Mo7O4·4H2O	precursor:(NH4)6Mo7O24*4H2O
+precursor:Mn(NO3)2∙4H2O	precursor:Mn(NO3)2
+precursor:Fe(NO3)2*9H2O	precursor:Fe(NO3)3·9H2O
+
+additive:polyvinylpyrrolidone 1300	additive:polyvinylpyrrolidone 1300000
+additive:polyethylene glycol 6000	additive:polyethylene glycol 600
+
+composition:Cu-CuFe2O4	composition:CuFe2O4
+
+precursor:K3[Fe(CN)6]*3H2O	precursor:K4[Fe(CN)6]*3H2O
+precursor:Bi(NO3)2	precursor:Bi(NO3)3
+
+composition:Au–Ag	composition:Ag-Au
+
+precursor:K4[Fe(CN)6]	precursor:K4[Fe(CN)6]*3H2O
+precursor:MnSO4∙H2O	precursor:FeCl3∙6H2O
+
+composition:H2TCPP-Fe3O4	composition:H2TCPP-Fe2O3
+composition:ZnFeO4	composition:ZnFe2O4
+
+additive:polyethylene glycol 4000	additive:polyethylene glycol 400
+
+composition:AgBr/AgIO3-3	composition:AgBr/AgIO3-2
+
+precursor:H2PtCl6∙6H2O	precursor:FeCl3∙6H2O
+
+solvent:anhydrous alcohol	solvent:anhydrous ethanol
+
+composition:Ni–La/BaTiO3	composition:Ni/La–BaTiO3
+composition:Ni-La-BaTiO3	composition:Ni/La–BaTiO3
+
+composition:BaTiErYbLiO3	composition:BaTiErYbO3
+
+composition:AuAg@PC-FeII	composition:AuAg@PC-FeIII
+composition:AuAg@PC-FeI	composition:AuAg@PC-FeIII
+
+composition:Au0.75Fe0.25	composition:Au0.25Fe0.75
+
+solvent:ethylenediamine/ethanolamine = 2:1	solvent:ethylenediamine/ethanolamine = 3:0
+solvent:ethylenediamine/ethanolamine = 1:1	solvent:ethylenediamine/ethanolamine = 3:0
+
+composition:Fe2O3@dextran	composition:γ-Fe2O3@dextran
+
+composition:Ag/Fe2O3 (2L)	composition:Ag/Fe2O3 (1L)
+composition:Ag/TiO2 (2L)	composition:Ag/TiO2 (1L)
+composition:Ag/ZnO (2L)	composition:Ag/ZnO (1L)

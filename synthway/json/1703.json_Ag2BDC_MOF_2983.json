@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "1703.json_Ag2BDC_MOF_2983",
+  "composition": "Ag2BDC MOF",
+  "elements": [
+    "Ag",
+    "B",
+    "D",
+    "C",
+    "M",
+    "O",
+    "F"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "mass": 0.077
+    },
+    {
+      "name": "H2BDC",
+      "mass": 0.17
+    }
+  ],
+  "additives": [
+    {
+      "name": "ammonia"
+    },
+    {
+      "name": "dimethyl sulfoxide"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 50.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "rhombohedral",
+    "size": {
+      "length": 20000.0,
+      "width": 20000.0,
+      "depth": 20000.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1703.json_Ag2BDC_MOF_2983",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Ag2BDC MOF | solvent: water | temperature: 50.0 | crystalsystem: monoclinic | shape: rhombohedral | size.length: 20000.0 | size.width: 20000.0 | size.depth: 20000.0 | precursor: AgNO3 (mass 0.077) | precursor: H2BDC (mass 0.17) | additive: ammonia | additive: dimethyl sulfoxide"
+}

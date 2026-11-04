@@ -1,0 +1,51 @@
+{
+  "synthesis_id": "862.json_CuFe2O4_3916",
+  "composition": "CuFe2O4",
+  "elements": [
+    "Cu",
+    "Fe",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Cu(NO3)2*3H2O",
+      "conc": 50.0
+    },
+    {
+      "name": "Fe(NO3)3*9H2O",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "cissus rotundifolia leaf extract"
+    },
+    {
+      "name": "ammonia solution"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 90.0,
+    "ph": 8.0
+  },
+  "product": {
+    "shape": "irregular",
+    "size": {
+      "length": 24.0,
+      "width": 24.0,
+      "depth": 24.0
+    }
+  },
+  "pdfno_list": [
+    "25-0283"
+  ],
+  "source": {
+    "synthesis_id_original": "862.json_CuFe2O4_3916",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: CuFe2O4 | solvent: water | temperature: 90.0 | pH: 8.0 | shape: irregular | size.length: 24.0 | size.width: 24.0 | size.depth: 24.0 | precursor: Cu(NO3)2*3H2O (conc 50.0) | precursor: Fe(NO3)3*9H2O (conc 100.0) | additive: cissus rotundifolia leaf extract | additive: ammonia solution | pdfno_list: 25-0283"
+}

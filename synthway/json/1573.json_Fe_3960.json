@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1573.json_Fe_3960",
+  "composition": "Fe",
+  "elements": [
+    "Fe"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Fe(CH3COO)2",
+      "conc": 3.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "plumeria obtusa extract"
+    },
+    {
+      "name": "ammonium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 70.0,
+    "ph": 9.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 50.0,
+      "width": 50.0,
+      "depth": 50.0
+    }
+  },
+  "pdfno_list": [
+    "95-905-1447"
+  ],
+  "source": {
+    "synthesis_id_original": "1573.json_Fe_3960",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Fe | method: green synthesis | solvent: water | temperature: 70.0 | pH: 9.0 | shape: spherical | size.length: 50.0 | size.width: 50.0 | size.depth: 50.0 | precursor: Fe(CH3COO)2 (conc 3.0) | additive: plumeria obtusa extract | additive: ammonium hydroxide | pdfno_list: 95-905-1447"
+}

@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "1638.json_AML-20@Ag_403",
+  "composition": "AML-20@Ag",
+  "elements": [
+    "A",
+    "M",
+    "L",
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AL"
+    },
+    {
+      "name": "AgNO3"
+    }
+  ],
+  "additives": [
+    {
+      "name": "3-chloro-2-hydroxypropyltri methylammonium chloridechloride (chmac)"
+    },
+    {
+      "name": "nitric acid"
+    }
+  ],
+  "solvent": {
+    "name": "sodium hydroxide"
+  },
+  "conditions": {
+    "temperature": 80.0,
+    "ph": 7.0
+  },
+  "product": {
+    "crystalsystem": "jcpds data (no. 65–2871)",
+    "shape": "spherical",
+    "size": {
+      "length": 24.7,
+      "width": 24.7,
+      "depth": 24.7
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1638.json_AML-20@Ag_403",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: AML-20@Ag | solvent: sodium hydroxide | temperature: 80.0 | pH: 7.0 | crystalsystem: jcpds data (no. 65–2871) | shape: spherical | size.length: 24.7 | size.width: 24.7 | size.depth: 24.7 | precursor: AL | precursor: AgNO3 | additive: 3-chloro-2-hydroxypropyltri methylammonium chloridechloride (chmac) | additive: nitric acid"
+}

@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "1484.json_PVA/Chi/Se_2926",
+  "composition": "PVA/Chi/Se",
+  "elements": [
+    "P",
+    "V",
+    "A",
+    "Ch",
+    "Se"
+  ],
+  "precursors": [
+    {
+      "name": "PVA",
+      "mass": 0.5
+    },
+    {
+      "name": "Chi",
+      "mass": 0.5
+    },
+    {
+      "name": "Se (NPs)"
+    }
+  ],
+  "additives": [
+    {
+      "name": "acetic acid"
+    }
+  ],
+  "solvent": {
+    "name": "ultra-pure water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 50.0
+  },
+  "product": {
+    "size": {
+      "length": 17.0,
+      "width": 17.0,
+      "depth": 17.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1484.json_PVA/Chi/Se_2926",
+    "nodes": 12,
+    "edges": 12
+  },
+  "retrieval_text": "composition: PVA/Chi/Se | solvent: ultra-pure water | solvent.volume: 50.0 | temperature: 50.0 | size.length: 17.0 | size.width: 17.0 | size.depth: 17.0 | precursor: PVA (mass 0.5) | precursor: Chi (mass 0.5) | precursor: Se (NPs) | additive: acetic acid"
+}

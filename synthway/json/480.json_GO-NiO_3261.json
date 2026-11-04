@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "480.json_GO-NiO_3261",
+  "composition": "GO-NiO",
+  "elements": [
+    "G",
+    "O",
+    "Ni"
+  ],
+  "precursors": [
+    {
+      "name": "Ni(CH3COO)2"
+    },
+    {
+      "name": "GO"
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide"
+    },
+    {
+      "name": "triton x-100"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 65.0
+  },
+  "conditions": {
+    "temperature": 150.0
+  },
+  "product": {
+    "crystalsystem": "bunsenite",
+    "shape": "rice grain like structure"
+  },
+  "pdfno_list": [
+    "44-1159"
+  ],
+  "source": {
+    "synthesis_id_original": "480.json_GO-NiO_3261",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: GO-NiO | solvent: deionized water | solvent.volume: 65.0 | temperature: 150.0 | crystalsystem: bunsenite | shape: rice grain like structure | precursor: Ni(CH3COO)2 | precursor: GO | additive: sodium hydroxide | additive: triton x-100 | pdfno_list: 44-1159"
+}

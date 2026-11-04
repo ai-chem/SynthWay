@@ -1,0 +1,37 @@
+{
+  "synthesis_id": "620.json_SM-Ag_700",
+  "composition": "SM-Ag",
+  "elements": [
+    "S",
+    "M",
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3"
+    }
+  ],
+  "additives": [
+    {
+      "name": "sm extract"
+    }
+  ],
+  "solvent": {
+    "name": "double distilled water"
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 75.14,
+      "width": 75.14,
+      "depth": 75.14
+    }
+  },
+  "source": {
+    "synthesis_id_original": "620.json_SM-Ag_700",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: SM-Ag | method: green synthesis | solvent: double distilled water | shape: spherical | size.length: 75.14 | size.width: 75.14 | size.depth: 75.14 | precursor: AgNO3 | additive: sm extract"
+}

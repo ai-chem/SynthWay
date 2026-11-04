@@ -1,0 +1,54 @@
+{
+  "synthesis_id": "2243.json_CdSe_752",
+  "composition": "CdSe",
+  "elements": [
+    "Cd",
+    "Se"
+  ],
+  "precursors": [
+    {
+      "name": "Se",
+      "conc": 1.0
+    },
+    {
+      "name": "CdCl2",
+      "conc": 5.0
+    },
+    {
+      "name": "Na2SeSO3",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium sulfite",
+      "conc": 10.0
+    },
+    {
+      "name": "thioglycerol",
+      "conc": 5.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 100.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical and nearly monodisperse",
+    "size": {
+      "length": 3.5,
+      "width": 3.5,
+      "depth": 3.5
+    }
+  },
+  "pdfno_list": [
+    "19-191"
+  ],
+  "source": {
+    "synthesis_id_original": "2243.json_CdSe_752",
+    "nodes": 19,
+    "edges": 18
+  },
+  "retrieval_text": "composition: CdSe | solvent: water | solvent.volume: 100.0 | crystalsystem: cubic | shape: spherical and nearly monodisperse | size.length: 3.5 | size.width: 3.5 | size.depth: 3.5 | precursor: Se (conc 1.0) | precursor: CdCl2 (conc 5.0) | precursor: Na2SeSO3 (conc 10.0) | additive: sodium sulfite (conc 10.0) | additive: thioglycerol (conc 5.0) | pdfno_list: 19-191"
+}

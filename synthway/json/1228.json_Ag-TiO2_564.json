@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1228.json_Ag-TiO2_564",
+  "composition": "Ag-TiO2",
+  "elements": [
+    "Ag",
+    "Ti",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    },
+    {
+      "name": "TiO2",
+      "conc": 2.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "maple leaf extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "anatase",
+    "size": {
+      "length": 32.32,
+      "width": 32.32,
+      "depth": 32.32
+    }
+  },
+  "pdfno_list": [
+    "89-3722"
+  ],
+  "source": {
+    "synthesis_id_original": "1228.json_Ag-TiO2_564",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Ag-TiO2 | method: green synthesis | solvent: water | crystalsystem: anatase | size.length: 32.32 | size.width: 32.32 | size.depth: 32.32 | precursor: AgNO3 (conc 1.0) | precursor: TiO2 (conc 2.0) | additive: maple leaf extract | pdfno_list: 89-3722"
+}

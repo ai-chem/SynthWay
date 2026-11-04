@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "1255.json_Fe-MOG_2076",
+  "composition": "Fe-MOG",
+  "elements": [
+    "Fe",
+    "M",
+    "O",
+    "G"
+  ],
+  "method": "solvo-hydrothermal",
+  "precursors": [
+    {
+      "name": "C48H32N4O8",
+      "mass": 0.158,
+      "conc": 0.2
+    },
+    {
+      "name": "Fe(NO3)3·9H2O",
+      "mass": 0.323,
+      "conc": 0.8
+    }
+  ],
+  "solvent": {
+    "name": "n-methylpyrrolidone",
+    "volume": 40.0
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "shape": "porous mesh"
+  },
+  "source": {
+    "synthesis_id_original": "1255.json_Fe-MOG_2076",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Fe-MOG | method: solvo-hydrothermal | solvent: n-methylpyrrolidone | solvent.volume: 40.0 | temperature: 25.0 | shape: porous mesh | precursor: C48H32N4O8 (mass 0.158; conc 0.2) | precursor: Fe(NO3)3·9H2O (mass 0.323; conc 0.8)"
+}

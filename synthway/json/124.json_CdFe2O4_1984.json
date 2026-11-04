@@ -1,0 +1,31 @@
+{
+  "synthesis_id": "124.json_CdFe2O4_1984",
+  "composition": "CdFe2O4",
+  "elements": [
+    "Cd",
+    "Fe",
+    "O"
+  ],
+  "solvent": {
+    "name": "aqueous",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 800.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 12.0,
+      "width": 12.0,
+      "depth": 12.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "124.json_CdFe2O4_1984",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: CdFe2O4 | solvent: aqueous | solvent.volume: 100.0 | temperature: 800.0 | crystalsystem: cubic | shape: spherical | size.length: 12.0 | size.width: 12.0 | size.depth: 12.0"
+}

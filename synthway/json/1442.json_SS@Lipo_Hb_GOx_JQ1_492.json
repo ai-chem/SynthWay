@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "1442.json_SS@Lipo/Hb/GOx/JQ1_492",
+  "composition": "SS@Lipo/Hb/GOx/JQ1",
+  "elements": [
+    "S",
+    "Li",
+    "Hb",
+    "G",
+    "Ox",
+    "J",
+    "Q"
+  ],
+  "precursors": [
+    {
+      "name": "DPPC"
+    },
+    {
+      "name": "DOTAP"
+    },
+    {
+      "name": "DSPE-PEG2000"
+    },
+    {
+      "name": "JQ1"
+    },
+    {
+      "name": "Hb"
+    },
+    {
+      "name": "GOx"
+    }
+  ],
+  "solvent": {
+    "name": "chloroform"
+  },
+  "product": {
+    "size": {
+      "length": 102.7,
+      "width": 102.7,
+      "depth": 102.7
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1442.json_SS@Lipo/Hb/GOx/JQ1_492",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: SS@Lipo/Hb/GOx/JQ1 | solvent: chloroform | size.length: 102.7 | size.width: 102.7 | size.depth: 102.7 | precursor: DPPC | precursor: DOTAP | precursor: DSPE-PEG2000 | precursor: JQ1 | precursor: Hb | precursor: GOx"
+}

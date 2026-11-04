@@ -1,0 +1,31 @@
+{
+  "synthesis_id": "400.json_MoS2_31",
+  "composition": "MoS2",
+  "elements": [
+    "Mo",
+    "S"
+  ],
+  "solvent": {
+    "name": "ethanol",
+    "volume": 24.0
+  },
+  "conditions": {
+    "temperature": 800.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "plate",
+    "size": {
+      "length": 50000.0
+    }
+  },
+  "pdfno_list": [
+    "37-1492"
+  ],
+  "source": {
+    "synthesis_id_original": "400.json_MoS2_31",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: MoS2 | solvent: ethanol | solvent.volume: 24.0 | temperature: 800.0 | crystalsystem: hexagonal | shape: plate | size.length: 50000.0 | pdfno_list: 37-1492"
+}

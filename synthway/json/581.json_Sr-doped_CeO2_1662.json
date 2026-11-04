@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "581.json_Sr-doped_CeO2_1662",
+  "composition": "Sr-doped CeO2",
+  "elements": [
+    "Sr",
+    "Ce",
+    "O"
+  ],
+  "method": "coprecipitation",
+  "precursors": [
+    {
+      "name": "SrCl2·6H2O",
+      "mass": 0.01599
+    },
+    {
+      "name": "Ce(NO3)3·6H2O",
+      "mass": 0.842
+    }
+  ],
+  "additives": [
+    {
+      "name": "ammonia solution"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 200.0
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "crystalsystem": "dot-like",
+    "shape": "spherical",
+    "size": {
+      "length": 10.0
+    }
+  },
+  "pdfno_list": [
+    "43-1002"
+  ],
+  "source": {
+    "synthesis_id_original": "581.json_Sr-doped_CeO2_1662",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Sr-doped CeO2 | method: coprecipitation | solvent: water | solvent.volume: 200.0 | temperature: 60.0 | crystalsystem: dot-like | shape: spherical | size.length: 10.0 | precursor: SrCl2·6H2O (mass 0.01599) | precursor: Ce(NO3)3·6H2O (mass 0.842) | additive: ammonia solution | pdfno_list: 43-1002"
+}

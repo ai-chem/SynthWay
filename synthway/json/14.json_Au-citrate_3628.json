@@ -1,0 +1,34 @@
+{
+  "synthesis_id": "14.json_Au-citrate_3628",
+  "composition": "Au-citrate",
+  "elements": [
+    "Au"
+  ],
+  "precursors": [
+    {
+      "name": "HAuCl4",
+      "conc": 0.5
+    }
+  ],
+  "additives": [
+    {
+      "name": "trisodium citrate"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "size": {
+      "length": 7.3,
+      "width": 7.3,
+      "depth": 7.3
+    }
+  },
+  "source": {
+    "synthesis_id_original": "14.json_Au-citrate_3628",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: Au-citrate | solvent: water | size.length: 7.3 | size.width: 7.3 | size.depth: 7.3 | precursor: HAuCl4 (conc 0.5) | additive: trisodium citrate"
+}

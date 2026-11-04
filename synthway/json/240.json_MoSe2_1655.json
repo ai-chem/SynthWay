@@ -1,0 +1,35 @@
+{
+  "synthesis_id": "240.json_MoSe2_1655",
+  "composition": "MoSe2",
+  "elements": [
+    "Mo",
+    "Se"
+  ],
+  "method": "electrospinning",
+  "seeds": [
+    {
+      "name": "PS",
+      "mass": 1.0
+    }
+  ],
+  "solvent": {
+    "name": "ammonium hydroxide:ethyl alcohol",
+    "volume": 13.0
+  },
+  "conditions": {
+    "temperature": 100.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "sheets",
+    "size": {
+      "length": 4.5
+    }
+  },
+  "source": {
+    "synthesis_id_original": "240.json_MoSe2_1655",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: MoSe2 | method: electrospinning | solvent: ammonium hydroxide:ethyl alcohol | solvent.volume: 13.0 | temperature: 100.0 | crystalsystem: hexagonal | shape: sheets | size.length: 4.5 | seed: PS (mass 1.0)"
+}

@@ -1,0 +1,36 @@
+{
+  "synthesis_id": "1470.json_NB/PES_2532",
+  "composition": "NB/PES",
+  "elements": [
+    "N",
+    "B",
+    "P",
+    "E",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "NBNPs"
+    },
+    {
+      "name": "PES"
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone"
+    }
+  ],
+  "solvent": {
+    "name": "dimethylacetamide (dmac)"
+  },
+  "product": {
+    "shape": "asymmetric"
+  },
+  "source": {
+    "synthesis_id_original": "1470.json_NB/PES_2532",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: NB/PES | solvent: dimethylacetamide (dmac) | shape: asymmetric | precursor: NBNPs | precursor: PES | additive: polyvinylpyrrolidone"
+}

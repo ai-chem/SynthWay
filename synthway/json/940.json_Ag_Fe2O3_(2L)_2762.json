@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "940.json_Ag/Fe2O3_(2L)_2762",
+  "composition": "Ag/Fe2O3 (2L)",
+  "elements": [
+    "Ag",
+    "Fe",
+    "O",
+    "L"
+  ],
+  "precursors": [
+    {
+      "name": "Fe(NO3)3"
+    }
+  ],
+  "additives": [
+    {
+      "name": "diethyl amine",
+      "mass": 2.9
+    },
+    {
+      "name": "pluronic f-127",
+      "mass": 1.3
+    },
+    {
+      "name": "silver nitrate",
+      "mass": 5.0
+    }
+  ],
+  "solvent": {
+    "name": "ethanol",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 65.0
+  },
+  "product": {
+    "crystalsystem": "rhombohedral",
+    "shape": "flat",
+    "size": {
+      "depth": 688.0
+    }
+  },
+  "pdfno_list": [
+    "33-0664"
+  ],
+  "source": {
+    "synthesis_id_original": "940.json_Ag/Fe2O3_(2L)_2762",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Ag/Fe2O3 (2L) | solvent: ethanol | solvent.volume: 20.0 | temperature: 65.0 | crystalsystem: rhombohedral | shape: flat | size.depth: 688.0 | precursor: Fe(NO3)3 | additive: diethyl amine (mass 2.9) | additive: pluronic f-127 (mass 1.3) | additive: silver nitrate (mass 5.0) | pdfno_list: 33-0664"
+}

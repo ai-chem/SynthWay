@@ -1,0 +1,35 @@
+{
+  "synthesis_id": "1477.json_GA:Pul_fibers_blended_with_ZnO_4025",
+  "composition": "GA:Pul fibers blended with ZnO",
+  "elements": [
+    "G",
+    "A",
+    "Pu",
+    "Zn",
+    "O"
+  ],
+  "method": "centrifugal spinning",
+  "precursors": [
+    {
+      "name": "GA:Pul"
+    },
+    {
+      "name": "ZnO"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 40.0
+  },
+  "product": {
+    "shape": "homogenous fibers"
+  },
+  "source": {
+    "synthesis_id_original": "1477.json_GA:Pul_fibers_blended_with_ZnO_4025",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: GA:Pul fibers blended with ZnO | method: centrifugal spinning | solvent: water | temperature: 40.0 | shape: homogenous fibers | precursor: GA:Pul | precursor: ZnO"
+}

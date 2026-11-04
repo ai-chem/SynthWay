@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "1326.json_SA-Fe_1739",
+  "composition": "SA-Fe",
+  "elements": [
+    "S",
+    "A",
+    "Fe"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "FeSO4·7H2O",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "clove"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "amorphous",
+    "shape": "spherical",
+    "size": {
+      "length": 67.17,
+      "width": 67.17,
+      "depth": 67.17
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1326.json_SA-Fe_1739",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: SA-Fe | method: green synthesis | solvent: water | crystalsystem: amorphous | shape: spherical | size.length: 67.17 | size.width: 67.17 | size.depth: 67.17 | precursor: FeSO4·7H2O (conc 100.0) | additive: clove"
+}

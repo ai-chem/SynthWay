@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1374.json_PHB/CTS/1%CUR-Ag_3231",
+  "composition": "PHB/CTS/1%CUR-Ag",
+  "elements": [
+    "P",
+    "H",
+    "B",
+    "C",
+    "T",
+    "S",
+    "U",
+    "R",
+    "Ag"
+  ],
+  "method": "electrospinning",
+  "precursors": [
+    {
+      "name": "CUR-AgNP"
+    },
+    {
+      "name": "PHB/CTS"
+    }
+  ],
+  "solvent": {
+    "name": "trifluoroacetic acide (tfa)"
+  },
+  "conditions": {
+    "temperature": 55.0
+  },
+  "product": {
+    "shape": "smooth fibers",
+    "size": {
+      "length": 150.0,
+      "width": 150.0,
+      "depth": 150.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1374.json_PHB/CTS/1%CUR-Ag_3231",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: PHB/CTS/1%CUR-Ag | method: electrospinning | solvent: trifluoroacetic acide (tfa) | temperature: 55.0 | shape: smooth fibers | size.length: 150.0 | size.width: 150.0 | size.depth: 150.0 | precursor: CUR-AgNP | precursor: PHB/CTS"
+}

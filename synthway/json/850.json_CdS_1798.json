@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "850.json_CdS_1798",
+  "composition": "CdS",
+  "elements": [
+    "Cd",
+    "S"
+  ],
+  "method": "solvo-hydrothermal",
+  "precursors": [
+    {
+      "name": "CdCl2",
+      "mass": 0.0036
+    },
+    {
+      "name": "C2H5NS",
+      "mass": 0.0015
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleic acid"
+    }
+  ],
+  "solvent": {
+    "name": "n-heptane + distilled water",
+    "volume": 39.8
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal+cubic",
+    "shape": "wire",
+    "size": {
+      "length": 4000.0,
+      "width": 300.0,
+      "depth": 300.0
+    }
+  },
+  "pdfno_list": [
+    "41-1049"
+  ],
+  "source": {
+    "synthesis_id_original": "850.json_CdS_1798",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: CdS | method: solvo-hydrothermal | solvent: n-heptane + distilled water | solvent.volume: 39.8 | temperature: 180.0 | crystalsystem: hexagonal+cubic | shape: wire | size.length: 4000.0 | size.width: 300.0 | size.depth: 300.0 | precursor: CdCl2 (mass 0.0036) | precursor: C2H5NS (mass 0.0015) | additive: oleic acid | pdfno_list: 41-1049"
+}

@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "139.json_α-Fe2O3_224",
+  "composition": "α-Fe2O3",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "sol",
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 800.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "size": {
+      "length": 1150.0,
+      "width": 1150.0,
+      "depth": 1150.0
+    }
+  },
+  "pdfno_list": [
+    "86-0550"
+  ],
+  "source": {
+    "synthesis_id_original": "139.json_α-Fe2O3_224",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: α-Fe2O3 | method: sol | solvent: ethylene glycol | solvent.volume: 50.0 | temperature: 800.0 | crystalsystem: hexagonal | size.length: 1150.0 | size.width: 1150.0 | size.depth: 1150.0 | pdfno_list: 86-0550"
+}

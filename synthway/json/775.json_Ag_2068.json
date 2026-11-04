@@ -1,0 +1,34 @@
+{
+  "synthesis_id": "775.json_Ag_2068",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 100.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 200.0
+  },
+  "conditions": {
+    "temperature": 28.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 21.0,
+      "width": 21.0,
+      "depth": 21.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "775.json_Ag_2068",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Ag | solvent: water | solvent.volume: 200.0 | temperature: 28.0 | shape: spherical | size.length: 21.0 | size.width: 21.0 | size.depth: 21.0 | precursor: AgNO3 (conc 100.0)"
+}

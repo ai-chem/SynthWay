@@ -1,0 +1,23 @@
+{
+  "synthesis_id": "2425.json_Se-ODE_8",
+  "composition": "Se–ODE",
+  "elements": [
+    "Se",
+    "O",
+    "D",
+    "E"
+  ],
+  "solvent": {
+    "name": "octadecene",
+    "volume": 1.0
+  },
+  "conditions": {
+    "temperature": 70.0
+  },
+  "source": {
+    "synthesis_id_original": "2425.json_Se-ODE_8",
+    "nodes": 4,
+    "edges": 3
+  },
+  "retrieval_text": "composition: Se–ODE | solvent: octadecene | solvent.volume: 1.0 | temperature: 70.0"
+}

@@ -1,0 +1,35 @@
+{
+  "synthesis_id": "2389.json_Zn-doped_MnS_186",
+  "composition": "Zn-doped MnS",
+  "elements": [
+    "Zn",
+    "Mn",
+    "S"
+  ],
+  "method": "solvo-hydrothermal",
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 60.0
+  },
+  "conditions": {
+    "temperature": 220.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 20.62,
+      "width": 20.62,
+      "depth": 20.62
+    }
+  },
+  "pdfno_list": [
+    "40-1289"
+  ],
+  "source": {
+    "synthesis_id_original": "2389.json_Zn-doped_MnS_186",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Zn-doped MnS | method: solvo-hydrothermal | solvent: ethylene glycol | solvent.volume: 60.0 | temperature: 220.0 | crystalsystem: hexagonal | shape: spherical | size.length: 20.62 | size.width: 20.62 | size.depth: 20.62 | pdfno_list: 40-1289"
+}

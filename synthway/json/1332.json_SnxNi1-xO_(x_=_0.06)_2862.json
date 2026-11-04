@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "1332.json_SnxNi1-xO_(x_=_0.06)_2862",
+  "composition": "SnxNi1-xO (x = 0.06)",
+  "elements": [
+    "Sn",
+    "Ni",
+    "O"
+  ],
+  "method": "sol-gel",
+  "precursors": [
+    {
+      "name": "Ni(NO3)2*6H2O"
+    }
+  ],
+  "additives": [
+    {
+      "name": "citric acid"
+    },
+    {
+      "name": "ammonia",
+      "conc": 1000.0
+    },
+    {
+      "name": "tin chloride"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water"
+  },
+  "conditions": {
+    "temperature": 80.0,
+    "ph": 8.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 14.86,
+      "width": 14.86,
+      "depth": 14.86
+    }
+  },
+  "pdfno_list": [
+    "78-042"
+  ],
+  "source": {
+    "synthesis_id_original": "1332.json_SnxNi1-xO_(x_=_0.06)_2862",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: SnxNi1-xO (x = 0.06) | method: sol-gel | solvent: distilled water | temperature: 80.0 | pH: 8.0 | crystalsystem: cubic | shape: spherical | size.length: 14.86 | size.width: 14.86 | size.depth: 14.86 | precursor: Ni(NO3)2*6H2O | additive: citric acid | additive: ammonia (conc 1000.0) | additive: tin chloride | pdfno_list: 78-042"
+}

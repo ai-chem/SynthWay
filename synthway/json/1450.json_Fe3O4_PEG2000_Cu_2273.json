@@ -1,0 +1,56 @@
+{
+  "synthesis_id": "1450.json_Fe3O4/PEG2000/Cu_2273",
+  "composition": "Fe3O4/PEG2000/Cu",
+  "elements": [
+    "Fe",
+    "O",
+    "P",
+    "E",
+    "G",
+    "Cu"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Fe3O4 (NPs)",
+      "mass": 0.5
+    },
+    {
+      "name": "PEG2000",
+      "mass": 0.2
+    },
+    {
+      "name": "Cu(OAc)2·2H2O",
+      "mass": 0.1
+    }
+  ],
+  "additives": [
+    {
+      "name": "green tea leaves extract"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 170.0
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 30.0,
+      "width": 30.0,
+      "depth": 30.0
+    }
+  },
+  "pdfno_list": [
+    "19-0629"
+  ],
+  "source": {
+    "synthesis_id_original": "1450.json_Fe3O4/PEG2000/Cu_2273",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: Fe3O4/PEG2000/Cu | method: green synthesis | solvent: water | solvent.volume: 170.0 | temperature: 80.0 | crystalsystem: cubic | size.length: 30.0 | size.width: 30.0 | size.depth: 30.0 | precursor: Fe3O4 (NPs) (mass 0.5) | precursor: PEG2000 (mass 0.2) | precursor: Cu(OAc)2·2H2O (mass 0.1) | additive: green tea leaves extract | pdfno_list: 19-0629"
+}

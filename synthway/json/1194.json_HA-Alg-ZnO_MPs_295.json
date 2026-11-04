@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "1194.json_HA-Alg-ZnO_MPs_295",
+  "composition": "HA-Alg-ZnO MPs",
+  "elements": [
+    "H",
+    "A",
+    "Al",
+    "Zn",
+    "O",
+    "M",
+    "Ps"
+  ],
+  "precursors": [
+    {
+      "name": "Zn(NO3)2*6H2O",
+      "conc": 200.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium alginate"
+    },
+    {
+      "name": "ammonium hydroxide"
+    },
+    {
+      "name": "calcium chloride",
+      "conc": 250.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical"
+  },
+  "pdfno_list": [
+    "00-001-1136"
+  ],
+  "source": {
+    "synthesis_id_original": "1194.json_HA-Alg-ZnO_MPs_295",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: HA-Alg-ZnO MPs | solvent: water | temperature: 80.0 | crystalsystem: hexagonal | shape: spherical | precursor: Zn(NO3)2*6H2O (conc 200.0) | additive: sodium alginate | additive: ammonium hydroxide | additive: calcium chloride (conc 250.0) | pdfno_list: 00-001-1136"
+}

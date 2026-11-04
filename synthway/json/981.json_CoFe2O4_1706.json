@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "981.json_CoFe2O4_1706",
+  "composition": "CoFe2O4",
+  "elements": [
+    "Co",
+    "Fe",
+    "O"
+  ],
+  "method": "precipitation",
+  "precursors": [
+    {
+      "name": "FeCl3*6H2O",
+      "conc": 697.0
+    },
+    {
+      "name": "CoCl2*6H2O",
+      "conc": 632.0
+    },
+    {
+      "name": "NaOH",
+      "conc": 1500.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "hydrochloric acid",
+      "conc": 400.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 80.0,
+    "ph": 12.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "width": 15.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "981.json_CoFe2O4_1706",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: CoFe2O4 | method: precipitation | solvent: water | temperature: 80.0 | pH: 12.0 | crystalsystem: cubic | size.width: 15.0 | precursor: FeCl3*6H2O (conc 697.0) | precursor: CoCl2*6H2O (conc 632.0) | precursor: NaOH (conc 1500.0) | additive: hydrochloric acid (conc 400.0)"
+}

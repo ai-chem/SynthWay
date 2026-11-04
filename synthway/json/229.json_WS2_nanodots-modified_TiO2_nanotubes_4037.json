@@ -1,0 +1,55 @@
+{
+  "synthesis_id": "229.json_WS2_nanodots-modified_TiO2_nanotubes_4037",
+  "composition": "WS2 nanodots-modified TiO2 nanotubes",
+  "elements": [
+    "W",
+    "S",
+    "Ti",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "Na2WO4·2H2O",
+      "conc": 1.2
+    },
+    {
+      "name": "TiO2 (nanotubes)",
+      "conc": 12.0
+    },
+    {
+      "name": "C3H7NO2S",
+      "conc": 3.6
+    }
+  ],
+  "additives": [
+    {
+      "name": "hydrochloric acid",
+      "conc": 2000.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 160.0
+  },
+  "conditions": {
+    "temperature": 200.0,
+    "ph": 3.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "nanodot",
+    "size": {
+      "length": 8.0
+    }
+  },
+  "pdfno_list": [
+    "73-1764"
+  ],
+  "source": {
+    "synthesis_id_original": "229.json_WS2_nanodots-modified_TiO2_nanotubes_4037",
+    "nodes": 18,
+    "edges": 17
+  },
+  "retrieval_text": "composition: WS2 nanodots-modified TiO2 nanotubes | method: hydrothermal | solvent: water | solvent.volume: 160.0 | temperature: 200.0 | pH: 3.0 | crystalsystem: hexagonal | shape: nanodot | size.length: 8.0 | precursor: Na2WO4·2H2O (conc 1.2) | precursor: TiO2 (nanotubes) (conc 12.0) | precursor: C3H7NO2S (conc 3.6) | additive: hydrochloric acid (conc 2000.0) | pdfno_list: 73-1764"
+}

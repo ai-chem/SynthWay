@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "1844.json_Co3O4-CeO2_1227",
+  "composition": "Co3O4-CeO2",
+  "elements": [
+    "Co",
+    "O",
+    "Ce"
+  ],
+  "precursors": [
+    {
+      "name": "Co(NO3)2·6H2O",
+      "conc": 500.0
+    },
+    {
+      "name": "Ce(NO3)2·6H2O",
+      "conc": 500.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 500.0
+    }
+  ],
+  "solvent": {
+    "name": "sodium carbonate solution"
+  },
+  "conditions": {
+    "temperature": 270.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "irregular",
+    "size": {
+      "length": 17.0,
+      "width": 17.0,
+      "depth": 17.0
+    }
+  },
+  "pdfno_list": [
+    "42-1467, 34-0394"
+  ],
+  "source": {
+    "synthesis_id_original": "1844.json_Co3O4-CeO2_1227",
+    "nodes": 14,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Co3O4-CeO2 | solvent: sodium carbonate solution | temperature: 270.0 | crystalsystem: cubic | shape: irregular | size.length: 17.0 | size.width: 17.0 | size.depth: 17.0 | precursor: Co(NO3)2·6H2O (conc 500.0) | precursor: Ce(NO3)2·6H2O (conc 500.0) | additive: sodium hydroxide (conc 500.0) | pdfno_list: 42-1467, 34-0394"
+}

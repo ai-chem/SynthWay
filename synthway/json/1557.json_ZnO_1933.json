@@ -1,0 +1,37 @@
+{
+  "synthesis_id": "1557.json_ZnO_1933",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sorghum panicle extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "round spherical",
+    "size": {
+      "length": 70.0,
+      "width": 70.0,
+      "depth": 70.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1557.json_ZnO_1933",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: ZnO | method: green synthesis | solvent: water | shape: round spherical | size.length: 70.0 | size.width: 70.0 | size.depth: 70.0 | precursor: Zn(CH3COO)2 (conc 100.0) | additive: sorghum panicle extract"
+}

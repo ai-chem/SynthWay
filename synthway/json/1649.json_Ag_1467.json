@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "1649.json_Ag_1467",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "g. sylvestre leaf extract"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water"
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 25.0,
+      "width": 25.0,
+      "depth": 25.0
+    }
+  },
+  "pdfno_list": [
+    "04-0783"
+  ],
+  "source": {
+    "synthesis_id_original": "1649.json_Ag_1467",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Ag | solvent: deionized water | temperature: 60.0 | shape: spherical | size.length: 25.0 | size.width: 25.0 | size.depth: 25.0 | precursor: AgNO3 (conc 10.0) | additive: g. sylvestre leaf extract | pdfno_list: 04-0783"
+}

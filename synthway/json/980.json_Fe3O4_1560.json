@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "980.json_Fe3O4_1560",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "FeCl2 ·4H2O",
+      "mass": 0.25
+    },
+    {
+      "name": "NH4OH",
+      "mass": 1.1225
+    }
+  ],
+  "solvent": {
+    "name": "ethanol and water",
+    "volume": 12.75
+  },
+  "conditions": {
+    "temperature": 134.0
+  },
+  "product": {
+    "shape": "spherical or slightly ellipsoidal",
+    "size": {
+      "width": 19.9
+    }
+  },
+  "source": {
+    "synthesis_id_original": "980.json_Fe3O4_1560",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Fe3O4 | method: hydrothermal | solvent: ethanol and water | solvent.volume: 12.75 | temperature: 134.0 | shape: spherical or slightly ellipsoidal | size.width: 19.9 | precursor: FeCl2 ·4H2O (mass 0.25) | precursor: NH4OH (mass 1.1225)"
+}

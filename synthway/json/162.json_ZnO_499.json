@@ -1,0 +1,34 @@
+{
+  "synthesis_id": "162.json_ZnO_499",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "thermal",
+  "solvent": {
+    "name": "methanol",
+    "volume": 14.0
+  },
+  "conditions": {
+    "temperature": 250.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal wurtzite",
+    "shape": "spherical",
+    "size": {
+      "length": 31.8,
+      "width": 31.8,
+      "depth": 31.8
+    }
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "162.json_ZnO_499",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: ZnO | method: thermal | solvent: methanol | solvent.volume: 14.0 | temperature: 250.0 | crystalsystem: hexagonal wurtzite | shape: spherical | size.length: 31.8 | size.width: 31.8 | size.depth: 31.8 | pdfno_list: 36-1451"
+}

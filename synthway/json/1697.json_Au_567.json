@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "1697.json_Au_567",
+  "composition": "Au",
+  "elements": [
+    "Au"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "HAuCl4·xH2O",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "supernatant of bacillus subtilis"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "size": {
+      "length": 51.0,
+      "width": 51.0,
+      "depth": 51.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1697.json_Au_567",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Au | method: green synthesis | solvent: water | solvent.volume: 10.0 | temperature: 25.0 | size.length: 51.0 | size.width: 51.0 | size.depth: 51.0 | precursor: HAuCl4·xH2O (conc 1.0) | additive: supernatant of bacillus subtilis"
+}

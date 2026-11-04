@@ -1,0 +1,30 @@
+{
+  "synthesis_id": "210.json_CdS_200",
+  "composition": "CdS",
+  "elements": [
+    "Cd",
+    "S"
+  ],
+  "method": "sol-gel",
+  "solvent": {
+    "name": "ethanol"
+  },
+  "conditions": {
+    "temperature": 250.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal+cubic",
+    "shape": "grain",
+    "size": {
+      "length": 12.84,
+      "width": 12.84,
+      "depth": 12.84
+    }
+  },
+  "source": {
+    "synthesis_id_original": "210.json_CdS_200",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: CdS | method: sol-gel | solvent: ethanol | temperature: 250.0 | crystalsystem: hexagonal+cubic | shape: grain | size.length: 12.84 | size.width: 12.84 | size.depth: 12.84"
+}

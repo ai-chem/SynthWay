@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "1628.json_SiO2_1340",
+  "composition": "SiO2",
+  "elements": [
+    "Si",
+    "O"
+  ],
+  "method": "stober",
+  "additives": [
+    {
+      "name": "ethanol"
+    },
+    {
+      "name": "ammonium hydroxide",
+      "conc": 930.0
+    },
+    {
+      "name": "tetraethoxysilane",
+      "conc": 12.4
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "size": {
+      "length": 230.0,
+      "width": 230.0,
+      "depth": 230.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1628.json_SiO2_1340",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: SiO2 | method: stober | solvent: water | temperature: 25.0 | size.length: 230.0 | size.width: 230.0 | size.depth: 230.0 | additive: ethanol | additive: ammonium hydroxide (conc 930.0) | additive: tetraethoxysilane (conc 12.4)"
+}

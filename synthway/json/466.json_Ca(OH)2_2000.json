@@ -1,0 +1,28 @@
+{
+  "synthesis_id": "466.json_Ca(OH)2_2000",
+  "composition": "Ca(OH)2",
+  "elements": [
+    "Ca",
+    "O",
+    "H"
+  ],
+  "method": "bottom-up",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 90.0
+  },
+  "product": {
+    "shape": "plate",
+    "size": {
+      "length": 300.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "466.json_Ca(OH)2_2000",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: Ca(OH)2 | method: bottom-up | solvent: water | temperature: 90.0 | shape: plate | size.length: 300.0"
+}

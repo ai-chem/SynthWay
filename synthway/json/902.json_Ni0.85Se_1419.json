@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "902.json_Ni0.85Se_1419",
+  "composition": "Ni0.85Se",
+  "elements": [
+    "Ni",
+    "Se"
+  ],
+  "method": "solvo-hydrothermal",
+  "precursors": [
+    {
+      "name": "Ni(NO3)2*6H2O",
+      "mass": 0.697
+    },
+    {
+      "name": "SeO2",
+      "mass": 0.222
+    }
+  ],
+  "solvent": {
+    "name": "benzyl alcohol",
+    "volume": 40.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 30.0,
+      "width": 30.0,
+      "depth": 30.0
+    }
+  },
+  "pdfno_list": [
+    "18-0888"
+  ],
+  "source": {
+    "synthesis_id_original": "902.json_Ni0.85Se_1419",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Ni0.85Se | method: solvo-hydrothermal | solvent: benzyl alcohol | solvent.volume: 40.0 | temperature: 180.0 | crystalsystem: hexagonal | shape: spherical | size.length: 30.0 | size.width: 30.0 | size.depth: 30.0 | precursor: Ni(NO3)2*6H2O (mass 0.697) | precursor: SeO2 (mass 0.222) | pdfno_list: 18-0888"
+}

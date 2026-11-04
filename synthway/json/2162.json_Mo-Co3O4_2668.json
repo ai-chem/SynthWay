@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "2162.json_Mo-Co3O4_2668",
+  "composition": "Mo-Co3O4",
+  "elements": [
+    "Mo",
+    "Co",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Co(NO3)2•6H2O",
+      "mass": 0.383
+    },
+    {
+      "name": "Mo(acac)2"
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 0.63
+    }
+  ],
+  "solvent": {
+    "name": "dimethylformamide and ethanol",
+    "volume": 7.0
+  },
+  "conditions": {
+    "temperature": 550.0
+  },
+  "product": {
+    "shape": "nanotubes",
+    "size": {
+      "width": 170.0,
+      "depth": 170.0
+    }
+  },
+  "pdfno_list": [
+    "43-1003"
+  ],
+  "source": {
+    "synthesis_id_original": "2162.json_Mo-Co3O4_2668",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Mo-Co3O4 | solvent: dimethylformamide and ethanol | solvent.volume: 7.0 | temperature: 550.0 | shape: nanotubes | size.width: 170.0 | size.depth: 170.0 | precursor: Co(NO3)2•6H2O (mass 0.383) | precursor: Mo(acac)2 | additive: polyvinylpyrrolidone (mass 0.63) | pdfno_list: 43-1003"
+}

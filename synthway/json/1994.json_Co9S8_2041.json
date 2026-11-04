@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "1994.json_Co9S8_2041",
+  "composition": "Co9S8",
+  "elements": [
+    "Co",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "CoCl2·6H2O",
+      "conc": 1.5
+    },
+    {
+      "name": "Na2S",
+      "conc": 500.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "ammonium fluoride",
+      "conc": 5.0
+    },
+    {
+      "name": "urea",
+      "conc": 1.5
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 15.0
+  },
+  "conditions": {
+    "temperature": 160.0
+  },
+  "product": {
+    "shape": "nanotubes",
+    "size": {
+      "length": 150.0,
+      "width": 150.0,
+      "depth": 150.0
+    }
+  },
+  "pdfno_list": [
+    "86-2273"
+  ],
+  "source": {
+    "synthesis_id_original": "1994.json_Co9S8_2041",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: Co9S8 | solvent: water | solvent.volume: 15.0 | temperature: 160.0 | shape: nanotubes | size.length: 150.0 | size.width: 150.0 | size.depth: 150.0 | precursor: CoCl2·6H2O (conc 1.5) | precursor: Na2S (conc 500.0) | additive: ammonium fluoride (conc 5.0) | additive: urea (conc 1.5) | pdfno_list: 86-2273"
+}

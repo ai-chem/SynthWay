@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "2281.json_NiOx_505",
+  "composition": "NiOx",
+  "elements": [
+    "Ni",
+    "Ox"
+  ],
+  "method": "sol-gel",
+  "precursors": [
+    {
+      "name": "Ni(NO3)2*6H2O",
+      "mass": 5.8
+    },
+    {
+      "name": "C6H8O7*H2O",
+      "mass": 4.2
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 400.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "shape": "hexagonal/cubic particle",
+    "size": {
+      "length": 17.3,
+      "width": 17.3,
+      "depth": 17.3
+    }
+  },
+  "pdfno_list": [
+    "04-0835"
+  ],
+  "source": {
+    "synthesis_id_original": "2281.json_NiOx_505",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: NiOx | method: sol-gel | solvent: deionized water | solvent.volume: 100.0 | temperature: 400.0 | crystalsystem: face-centered cubic | shape: hexagonal/cubic particle | size.length: 17.3 | size.width: 17.3 | size.depth: 17.3 | precursor: Ni(NO3)2*6H2O (mass 5.8) | precursor: C6H8O7*H2O (mass 4.2) | pdfno_list: 04-0835"
+}

@@ -1,0 +1,36 @@
+{
+  "synthesis_id": "1443.json_MgO_530",
+  "composition": "MgO",
+  "elements": [
+    "Mg",
+    "O"
+  ],
+  "method": "coprecipitation",
+  "precursors": [
+    {
+      "name": "MgCl2*6H2O",
+      "conc": 250.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "hexagonal",
+    "size": {
+      "length": 75.0,
+      "width": 75.0,
+      "depth": 75.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1443.json_MgO_530",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: MgO | method: coprecipitation | solvent: water | temperature: 80.0 | crystalsystem: hexagonal | shape: hexagonal | size.length: 75.0 | size.width: 75.0 | size.depth: 75.0 | precursor: MgCl2*6H2O (conc 250.0)"
+}

@@ -1,0 +1,28 @@
+{
+  "synthesis_id": "33.json_FB_2873",
+  "composition": "FB",
+  "elements": [
+    "F",
+    "B"
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 350.0
+  },
+  "product": {
+    "shape": "rice-like",
+    "size": {
+      "length": 110.0,
+      "width": 25.0,
+      "depth": 25.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "33.json_FB_2873",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: FB | solvent: water | temperature: 350.0 | shape: rice-like | size.length: 110.0 | size.width: 25.0 | size.depth: 25.0"
+}

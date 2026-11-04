@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "1192.json_GA-Te_(10:1)_1111",
+  "composition": "GA-Te  (10:1)",
+  "elements": [
+    "G",
+    "A",
+    "Te"
+  ],
+  "method": "single-step reduction",
+  "precursors": [
+    {
+      "name": "K2TeO3",
+      "conc": 10.0
+    },
+    {
+      "name": "GA",
+      "conc": 1.0
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 100.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 19.74,
+      "width": 19.74,
+      "depth": 19.74
+    }
+  },
+  "pdfno_list": [
+    "36-1452"
+  ],
+  "source": {
+    "synthesis_id_original": "1192.json_GA-Te_(10:1)_1111",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: GA-Te  (10:1) | method: single-step reduction | solvent: distilled water | solvent.volume: 100.0 | crystalsystem: hexagonal | shape: spherical | size.length: 19.74 | size.width: 19.74 | size.depth: 19.74 | precursor: K2TeO3 (conc 10.0) | precursor: GA (conc 1.0) | pdfno_list: 36-1452"
+}

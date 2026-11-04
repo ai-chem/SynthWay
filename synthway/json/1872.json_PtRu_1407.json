@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "1872.json_PtRu_1407",
+  "composition": "PtRu",
+  "elements": [
+    "Pt",
+    "Ru"
+  ],
+  "precursors": [
+    {
+      "name": "H2PtCl6⋅xH2O",
+      "conc": 20.0
+    },
+    {
+      "name": "RuCl3",
+      "conc": 20.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone 10",
+      "mass": 0.05,
+      "conc": 0.005
+    },
+    {
+      "name": "sodium borohydride",
+      "conc": 80.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 47.0
+  },
+  "conditions": {
+    "temperature": 50.0
+  },
+  "product": {
+    "size": {
+      "length": 3.53,
+      "width": 3.53,
+      "depth": 3.53
+    }
+  },
+  "pdfno_list": [
+    "04 0802, 06 0662"
+  ],
+  "source": {
+    "synthesis_id_original": "1872.json_PtRu_1407",
+    "nodes": 16,
+    "edges": 16
+  },
+  "retrieval_text": "composition: PtRu | solvent: water | solvent.volume: 47.0 | temperature: 50.0 | size.length: 3.53 | size.width: 3.53 | size.depth: 3.53 | precursor: H2PtCl6⋅xH2O (conc 20.0) | precursor: RuCl3 (conc 20.0) | additive: polyvinylpyrrolidone 10 (mass 0.05; conc 0.005) | additive: sodium borohydride (conc 80.0) | pdfno_list: 04 0802, 06 0662"
+}

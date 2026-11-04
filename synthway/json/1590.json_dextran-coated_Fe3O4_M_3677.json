@@ -1,0 +1,55 @@
+{
+  "synthesis_id": "1590.json_dextran-coated_Fe3O4_M_3677",
+  "composition": "dextran-coated Fe3O4 M",
+  "elements": [
+    "Fe",
+    "O",
+    "M"
+  ],
+  "method": "one-step",
+  "precursors": [
+    {
+      "name": "Dextran"
+    },
+    {
+      "name": "FeCl3*6H2O"
+    }
+  ],
+  "additives": [
+    {
+      "name": "hydrazine hydrate"
+    },
+    {
+      "name": "sulfate heptahydrate"
+    },
+    {
+      "name": "ammonia"
+    },
+    {
+      "name": "argon"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 60.0,
+    "ph": 10.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 13.0,
+      "width": 13.0,
+      "depth": 13.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1590.json_dextran-coated_Fe3O4_M_3677",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: dextran-coated Fe3O4 M | method: one-step | solvent: deionized water | solvent.volume: 30.0 | temperature: 60.0 | pH: 10.0 | crystalsystem: cubic | shape: spherical | size.length: 13.0 | size.width: 13.0 | size.depth: 13.0 | precursor: Dextran | precursor: FeCl3*6H2O | additive: hydrazine hydrate | additive: sulfate heptahydrate | additive: ammonia | additive: argon"
+}

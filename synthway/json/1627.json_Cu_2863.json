@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "1627.json_Cu_2863",
+  "composition": "Cu",
+  "elements": [
+    "Cu"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Cu(NO3)2"
+    }
+  ],
+  "additives": [
+    {
+      "name": "garcinia mangosteen leaf extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 70.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 26.51,
+      "width": 26.51,
+      "depth": 26.51
+    }
+  },
+  "pdfno_list": [
+    "04-0836"
+  ],
+  "source": {
+    "synthesis_id_original": "1627.json_Cu_2863",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Cu | method: green synthesis | solvent: water | temperature: 70.0 | crystalsystem: cubic | shape: spherical | size.length: 26.51 | size.width: 26.51 | size.depth: 26.51 | precursor: Cu(NO3)2 | additive: garcinia mangosteen leaf extract | pdfno_list: 04-0836"
+}

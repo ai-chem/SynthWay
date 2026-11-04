@@ -1,0 +1,36 @@
+{
+  "synthesis_id": "840.json_ZnO_1009",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "laser ablation",
+  "precursors": [
+    {
+      "name": "Zn"
+    }
+  ],
+  "solvent": {
+    "name": "double distilled water",
+    "volume": 1.0
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 32.31,
+      "width": 32.31,
+      "depth": 32.31
+    }
+  },
+  "source": {
+    "synthesis_id_original": "840.json_ZnO_1009",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: ZnO | method: laser ablation | solvent: double distilled water | solvent.volume: 1.0 | temperature: 25.0 | crystalsystem: hexagonal | shape: spherical | size.length: 32.31 | size.width: 32.31 | size.depth: 32.31 | precursor: Zn"
+}

@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "972.json_ZnTiO3_580",
+  "composition": "ZnTiO3",
+  "elements": [
+    "Zn",
+    "Ti",
+    "O"
+  ],
+  "method": "sol-gel",
+  "precursors": [
+    {
+      "name": "Ti(OBu)4",
+      "mass": 0.0986
+    },
+    {
+      "name": "[Zn(CH3COO)2]*2H2O"
+    }
+  ],
+  "additives": [
+    {
+      "name": "benzene-1,3,5-tricarboxylic acid",
+      "mass": 0.1827
+    }
+  ],
+  "solvent": {
+    "name": "ethanol"
+  },
+  "conditions": {
+    "temperature": 700.0
+  },
+  "product": {
+    "crystalsystem": "rohombohedral",
+    "size": {
+      "width": 36.0
+    }
+  },
+  "pdfno_list": [
+    "25-0671"
+  ],
+  "source": {
+    "synthesis_id_original": "972.json_ZnTiO3_580",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: ZnTiO3 | method: sol-gel | solvent: ethanol | temperature: 700.0 | crystalsystem: rohombohedral | size.width: 36.0 | precursor: Ti(OBu)4 (mass 0.0986) | precursor: [Zn(CH3COO)2]*2H2O | additive: benzene-1,3,5-tricarboxylic acid (mass 0.1827) | pdfno_list: 25-0671"
+}

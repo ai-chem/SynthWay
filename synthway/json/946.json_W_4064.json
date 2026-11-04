@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "946.json_W_4064",
+  "composition": "W",
+  "elements": [
+    "W"
+  ],
+  "method": "thermolytic decomposition",
+  "precursors": [
+    {
+      "name": "W(CO)6",
+      "mass": 3.5
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleic acid",
+      "mass": 1.7
+    },
+    {
+      "name": "oleyl amine",
+      "mass": 1.605
+    }
+  ],
+  "solvent": {
+    "name": "diphenylether",
+    "volume": 40.0
+  },
+  "conditions": {
+    "temperature": 600.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "width": 80.0
+    }
+  },
+  "pdfno_list": [
+    "04-0806"
+  ],
+  "source": {
+    "synthesis_id_original": "946.json_W_4064",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: W | method: thermolytic decomposition | solvent: diphenylether | solvent.volume: 40.0 | temperature: 600.0 | shape: spherical | size.width: 80.0 | precursor: W(CO)6 (mass 3.5) | additive: oleic acid (mass 1.7) | additive: oleyl amine (mass 1.605) | pdfno_list: 04-0806"
+}

@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "2372.json_CuO_3192",
+  "composition": "CuO",
+  "elements": [
+    "Cu",
+    "O"
+  ],
+  "method": "thermal decomposition",
+  "precursors": [
+    {
+      "name": "Na2CO3",
+      "conc": 500.0
+    },
+    {
+      "name": "CuSO4",
+      "conc": 500.0
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 600.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 30.0,
+      "width": 30.0,
+      "depth": 30.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2372.json_CuO_3192",
+    "nodes": 12,
+    "edges": 12
+  },
+  "retrieval_text": "composition: CuO | method: thermal decomposition | solvent: deionized water | solvent.volume: 100.0 | temperature: 600.0 | shape: spherical | size.length: 30.0 | size.width: 30.0 | size.depth: 30.0 | precursor: Na2CO3 (conc 500.0) | precursor: CuSO4 (conc 500.0)"
+}

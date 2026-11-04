@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1595.json_OL-Au_NAPs_1066",
+  "composition": "OL-Au NAPs",
+  "elements": [
+    "O",
+    "L",
+    "Au",
+    "N",
+    "A",
+    "Ps"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "HAuCl4·3H2O",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "extract of olea europaea leaves"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water"
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 10.4,
+      "width": 10.4,
+      "depth": 10.4
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1595.json_OL-Au_NAPs_1066",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: OL-Au NAPs | method: green synthesis | solvent: distilled water | temperature: 80.0 | shape: spherical | size.length: 10.4 | size.width: 10.4 | size.depth: 10.4 | precursor: HAuCl4·3H2O (conc 1.0) | additive: extract of olea europaea leaves"
+}

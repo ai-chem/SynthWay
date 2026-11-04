@@ -1,0 +1,34 @@
+{
+  "synthesis_id": "62.json_SnS2_4161",
+  "composition": "SnS2",
+  "elements": [
+    "Sn",
+    "S"
+  ],
+  "method": "hydrothermal",
+  "solvent": {
+    "name": "distilled water",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "hexagonal nanoflakes",
+    "size": {
+      "length": 500.0,
+      "width": 500.0,
+      "depth": 40.0
+    }
+  },
+  "pdfno_list": [
+    "23-0677"
+  ],
+  "source": {
+    "synthesis_id_original": "62.json_SnS2_4161",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: SnS2 | method: hydrothermal | solvent: distilled water | solvent.volume: 30.0 | temperature: 180.0 | crystalsystem: hexagonal | shape: hexagonal nanoflakes | size.length: 500.0 | size.width: 500.0 | size.depth: 40.0 | pdfno_list: 23-0677"
+}

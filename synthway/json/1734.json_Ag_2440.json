@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "1734.json_Ag_2440",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "biosynthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "plant aqueous extracts"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "ph": 6.6
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 17.5,
+      "width": 17.5,
+      "depth": 17.5
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1734.json_Ag_2440",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Ag | method: biosynthesis | solvent: water | pH: 6.6 | crystalsystem: cubic | shape: spherical | size.length: 17.5 | size.width: 17.5 | size.depth: 17.5 | precursor: AgNO3 (conc 1.0) | additive: plant aqueous extracts"
+}

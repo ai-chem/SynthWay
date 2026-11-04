@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "1342.json_UIO-66-CEF_3641",
+  "composition": "UIO-66-CEF",
+  "elements": [
+    "U",
+    "I",
+    "O",
+    "C",
+    "E",
+    "F"
+  ],
+  "precursors": [
+    {
+      "name": "CEF",
+      "mass": 0.0025
+    },
+    {
+      "name": "UIO-66",
+      "mass": 0.01
+    }
+  ],
+  "solvent": {
+    "name": "PBS",
+    "volume": 10.0
+  },
+  "product": {
+    "size": {
+      "length": 198.55,
+      "width": 198.55,
+      "depth": 198.55
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1342.json_UIO-66-CEF_3641",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: UIO-66-CEF | solvent: PBS | solvent.volume: 10.0 | size.length: 198.55 | size.width: 198.55 | size.depth: 198.55 | precursor: CEF (mass 0.0025) | precursor: UIO-66 (mass 0.01)"
+}

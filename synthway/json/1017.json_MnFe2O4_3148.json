@@ -1,0 +1,51 @@
+{
+  "synthesis_id": "1017.json_MnFe2O4_3148",
+  "composition": "MnFe2O4",
+  "elements": [
+    "Mn",
+    "Fe",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Fe(acac)3",
+      "mass": 0.706
+    },
+    {
+      "name": "Mn(acac)2",
+      "mass": 0.253
+    },
+    {
+      "name": "C16H34O2",
+      "mass": 2.58
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleic acid",
+      "mass": 1.692
+    },
+    {
+      "name": "oleyl amine",
+      "mass": 1.602
+    }
+  ],
+  "solvent": {
+    "name": "benzyl ether",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "size": {
+      "width": 7.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1017.json_MnFe2O4_3148",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: MnFe2O4 | solvent: benzyl ether | solvent.volume: 20.0 | temperature: 200.0 | size.width: 7.0 | precursor: Fe(acac)3 (mass 0.706) | precursor: Mn(acac)2 (mass 0.253) | precursor: C16H34O2 (mass 2.58) | additive: oleic acid (mass 1.692) | additive: oleyl amine (mass 1.602)"
+}

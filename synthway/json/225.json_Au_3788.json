@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "225.json_Au_3788",
+  "composition": "Au",
+  "elements": [
+    "Au"
+  ],
+  "method": "biosynthesis",
+  "precursors": [
+    {
+      "name": "HAuCl4*3H2O",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "polychaetes crude extracts"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 25.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 24.36,
+      "width": 24.36,
+      "depth": 24.36
+    }
+  },
+  "source": {
+    "synthesis_id_original": "225.json_Au_3788",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Au | method: biosynthesis | solvent: water | solvent.volume: 25.0 | crystalsystem: cubic | shape: spherical | size.length: 24.36 | size.width: 24.36 | size.depth: 24.36 | precursor: HAuCl4*3H2O (conc 1.0) | additive: polychaetes crude extracts"
+}

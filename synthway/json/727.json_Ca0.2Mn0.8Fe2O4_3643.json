@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "727.json_Ca0.2Mn0.8Fe2O4_3643",
+  "composition": "Ca0.2Mn0.8Fe2O4",
+  "elements": [
+    "Ca",
+    "Mn",
+    "Fe",
+    "O"
+  ],
+  "method": "sol-gel",
+  "precursors": [
+    {
+      "name": "Fe(NO3)3*9H2O"
+    },
+    {
+      "name": "Mn(NO3)2*4H2O"
+    },
+    {
+      "name": "Ca(NO3)2*4H2O"
+    }
+  ],
+  "additives": [
+    {
+      "name": "citric acid",
+      "conc": 600.0
+    },
+    {
+      "name": "trisodium citrate",
+      "conc": 300.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 500.0,
+    "ph": 7.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical and cubic",
+    "size": {
+      "width": 9.8
+    }
+  },
+  "source": {
+    "synthesis_id_original": "727.json_Ca0.2Mn0.8Fe2O4_3643",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Ca0.2Mn0.8Fe2O4 | method: sol-gel | solvent: water | temperature: 500.0 | pH: 7.0 | crystalsystem: cubic | shape: spherical and cubic | size.width: 9.8 | precursor: Fe(NO3)3*9H2O | precursor: Mn(NO3)2*4H2O | precursor: Ca(NO3)2*4H2O | additive: citric acid (conc 600.0) | additive: trisodium citrate (conc 300.0)"
+}

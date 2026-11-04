@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "2241.json_VO2(R)_3711",
+  "composition": "VO2(R)",
+  "elements": [
+    "V",
+    "O",
+    "R"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "V2O5",
+      "mass": 0.3
+    }
+  ],
+  "additives": [
+    {
+      "name": "hydrazine monohydrate"
+    },
+    {
+      "name": "ammonium metatungstate pentahydrate"
+    }
+  ],
+  "solvent": {
+    "name": "hydrogen peroxide",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 260.0
+  },
+  "product": {
+    "shape": "pherical particles with narrow particle size",
+    "size": {
+      "length": 17.8,
+      "width": 17.8,
+      "depth": 17.8
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2241.json_VO2(R)_3711",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: VO2(R) | method: hydrothermal | solvent: hydrogen peroxide | solvent.volume: 10.0 | temperature: 260.0 | shape: pherical particles with narrow particle size | size.length: 17.8 | size.width: 17.8 | size.depth: 17.8 | precursor: V2O5 (mass 0.3) | additive: hydrazine monohydrate | additive: ammonium metatungstate pentahydrate"
+}

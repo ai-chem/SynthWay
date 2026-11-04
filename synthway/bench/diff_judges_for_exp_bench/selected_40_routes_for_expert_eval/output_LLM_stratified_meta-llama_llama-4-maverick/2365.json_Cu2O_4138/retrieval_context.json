@@ -1,0 +1,11 @@
+{
+  "composition": "Cu2O",
+  "method": null,
+  "rag_topk": 3,
+  "query": "composition: Cu2O | Cu2O CA | Cu2O CA | Cu2O CA | CuO/Cu2O | CuO/Cu2O | CuO/Cu2O | Cu2O method | Cu2O method | Cu2O method | Cu2O CM | Cu2O CM | Cu2O CM | composition CuO/Cu2O | composition CuO/Cu2O | composition CuO/Cu2O | composition Cu@Cu2O | composition Cu@Cu2O | composition Cu@Cu2O | composition Cu2 | composition Cu2 | composition Cu2 | composition CuO | composition CuO | composition CuO",
+  "retrieval_context": [
+    "composition: CuO/Cu2O | method: biological | solvent: water | temperature: 25.0 | precursor: CuSO4*5H2O (conc 1000.0) | additive: fusarium oxysporum extract",
+    "composition: Cu2O  (CA) | method: green synthesis | solvent: water | temperature: 60.0 | crystalsystem: cubic | shape: spherical | size.length: 25.45 | size.width: 25.45 | size.depth: 25.45 | precursor: Cu(CH3COO)2 (conc 1000.0) | additive: sodium hydroxide (conc 50.0) | additive: myrica esculenta aqueous fruits extract | pdfno_list: 05-0667",
+    "composition: Cu2O | method: sonochemical | solvent: glycerol | solvent.volume: 15.0 | temperature: 60.0 | shape: spherical | size.length: 150.0 | size.width: 150.0 | size.depth: 150.0 | precursor: Cu(CH3COO)2 (mass 0.5) | pdfno_list: 05-0667"
+  ]
+}

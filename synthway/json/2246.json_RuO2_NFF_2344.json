@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "2246.json_RuO2/NFF_2344",
+  "composition": "RuO2/NFF",
+  "elements": [
+    "Ru",
+    "O",
+    "N",
+    "F"
+  ],
+  "precursors": [
+    {
+      "name": "RuO2",
+      "mass": 0.005
+    },
+    {
+      "name": "NFF"
+    }
+  ],
+  "additives": [
+    {
+      "name": "nafion"
+    },
+    {
+      "name": "alcohol"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 0.75
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "source": {
+    "synthesis_id_original": "2246.json_RuO2/NFF_2344",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: RuO2/NFF | solvent: water | solvent.volume: 0.75 | temperature: 60.0 | precursor: RuO2 (mass 0.005) | precursor: NFF | additive: nafion | additive: alcohol"
+}

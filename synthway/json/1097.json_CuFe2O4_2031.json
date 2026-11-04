@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "1097.json_CuFe2O4_2031",
+  "composition": "CuFe2O4",
+  "elements": [
+    "Cu",
+    "Fe",
+    "O"
+  ],
+  "method": "solid-state reaction",
+  "precursors": [
+    {
+      "name": "Cu(CH3COO)2·H2O",
+      "mass": 200.0
+    },
+    {
+      "name": "Fe(NO3)3·9H2O",
+      "mass": 808.0
+    },
+    {
+      "name": "NaOH",
+      "mass": 320.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium chloride",
+      "mass": 117.0
+    }
+  ],
+  "conditions": {
+    "temperature": 600.0
+  },
+  "product": {
+    "size": {
+      "width": 70.0
+    }
+  },
+  "pdfno_list": [
+    "35-0425"
+  ],
+  "source": {
+    "synthesis_id_original": "1097.json_CuFe2O4_2031",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: CuFe2O4 | method: solid-state reaction | temperature: 600.0 | size.width: 70.0 | precursor: Cu(CH3COO)2·H2O (mass 200.0) | precursor: Fe(NO3)3·9H2O (mass 808.0) | precursor: NaOH (mass 320.0) | additive: sodium chloride (mass 117.0) | pdfno_list: 35-0425"
+}

@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "1958.json_LaCoO3_2457",
+  "composition": "LaCoO3",
+  "elements": [
+    "La",
+    "Co",
+    "O"
+  ],
+  "method": "sol-gel",
+  "precursors": [
+    {
+      "name": "Co(NO3)3·6H2O",
+      "conc": 2.0
+    },
+    {
+      "name": "La(NO3)3·6H2O",
+      "conc": 2.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "citric acid",
+      "conc": 4.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 700.0
+  },
+  "product": {
+    "shape": "wire",
+    "size": {
+      "length": 70.0,
+      "width": 70.0,
+      "depth": 70.0
+    }
+  },
+  "pdfno_list": [
+    "48-0123"
+  ],
+  "source": {
+    "synthesis_id_original": "1958.json_LaCoO3_2457",
+    "nodes": 14,
+    "edges": 14
+  },
+  "retrieval_text": "composition: LaCoO3 | method: sol-gel | solvent: water | temperature: 700.0 | shape: wire | size.length: 70.0 | size.width: 70.0 | size.depth: 70.0 | precursor: Co(NO3)3·6H2O (conc 2.0) | precursor: La(NO3)3·6H2O (conc 2.0) | additive: citric acid (conc 4.0) | pdfno_list: 48-0123"
+}

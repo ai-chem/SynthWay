@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "872.json_CoFe2O4_2992",
+  "composition": "CoFe2O4",
+  "elements": [
+    "Co",
+    "Fe",
+    "O"
+  ],
+  "method": "coprecipitation",
+  "precursors": [
+    {
+      "name": "Co(NO3)3",
+      "conc": 500.0
+    },
+    {
+      "name": "Fe(NO3)3",
+      "conc": 1000.0
+    },
+    {
+      "name": "NaOH",
+      "conc": 2000.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 160.0,
+    "ph": 6.3
+  },
+  "product": {
+    "size": {
+      "width": 14.1
+    }
+  },
+  "pdfno_list": [
+    "22-1086"
+  ],
+  "source": {
+    "synthesis_id_original": "872.json_CoFe2O4_2992",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: CoFe2O4 | method: coprecipitation | solvent: water | temperature: 160.0 | pH: 6.3 | size.width: 14.1 | precursor: Co(NO3)3 (conc 500.0) | precursor: Fe(NO3)3 (conc 1000.0) | precursor: NaOH (conc 2000.0) | pdfno_list: 22-1086"
+}

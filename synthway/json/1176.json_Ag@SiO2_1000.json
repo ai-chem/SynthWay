@@ -1,0 +1,68 @@
+{
+  "synthesis_id": "1176.json_Ag@SiO2_1000",
+  "composition": "Ag@SiO2",
+  "elements": [
+    "Ag",
+    "Si",
+    "O"
+  ],
+  "method": "chemical reduction",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "mass": 0.25
+    },
+    {
+      "name": "Si(OC2H5)4"
+    },
+    {
+      "name": "C9H23NO3Si",
+      "mass": 0.25
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 0.14
+    },
+    {
+      "name": "sodium borohydride",
+      "mass": 0.35
+    },
+    {
+      "name": "ethanol"
+    },
+    {
+      "name": "sodium hydroxide"
+    },
+    {
+      "name": "cetyltrimethylammonium bromide",
+      "mass": 1.15
+    },
+    {
+      "name": "ammonia"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "core-shell",
+    "size": {
+      "length": 150.0,
+      "width": 150.0,
+      "depth": 150.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1176.json_Ag@SiO2_1000",
+    "nodes": 23,
+    "edges": 23
+  },
+  "retrieval_text": "composition: Ag@SiO2 | method: chemical reduction | solvent: deionized water | solvent.volume: 50.0 | temperature: 25.0 | crystalsystem: cubic | shape: core-shell | size.length: 150.0 | size.width: 150.0 | size.depth: 150.0 | precursor: AgNO3 (mass 0.25) | precursor: Si(OC2H5)4 | precursor: C9H23NO3Si (mass 0.25) | additive: polyvinylpyrrolidone (mass 0.14) | additive: sodium borohydride (mass 0.35) | additive: ethanol | additive: sodium hydroxide | additive: cetyltrimethylammonium bromide (mass 1.15) | additive: ammonia"
+}

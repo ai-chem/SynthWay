@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "2340.json_NiTPP_1174",
+  "composition": "NiTPP",
+  "elements": [
+    "Ni",
+    "T",
+    "P"
+  ],
+  "method": "single emulsion-solvent evaporation method",
+  "precursors": [
+    {
+      "name": "NiTPP",
+      "mass": 0.01
+    }
+  ],
+  "additives": [
+    {
+      "name": "poly(d,l-lactide-co-glycolide)"
+    },
+    {
+      "name": "polyvinyl alcohol"
+    }
+  ],
+  "solvent": {
+    "name": "methylene chloride",
+    "volume": 2.5
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 322.9,
+      "width": 322.9,
+      "depth": 322.9
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2340.json_NiTPP_1174",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: NiTPP | method: single emulsion-solvent evaporation method | solvent: methylene chloride | solvent.volume: 2.5 | shape: spherical | size.length: 322.9 | size.width: 322.9 | size.depth: 322.9 | precursor: NiTPP (mass 0.01) | additive: poly(d,l-lactide-co-glycolide) | additive: polyvinyl alcohol"
+}

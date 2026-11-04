@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "1785.json_V2O5_518",
+  "composition": "V2O5",
+  "elements": [
+    "V",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "V2O5",
+      "mass": 0.182
+    }
+  ],
+  "additives": [
+    {
+      "name": "hydrogen peroxide"
+    },
+    {
+      "name": "ammonium dihydrogen phosphate",
+      "mass": 0.173
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "flower-like",
+    "size": {
+      "length": 14000.0,
+      "width": 14000.0,
+      "depth": 14000.0
+    }
+  },
+  "pdfno_list": [
+    "41-1426"
+  ],
+  "source": {
+    "synthesis_id_original": "1785.json_V2O5_518",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: V2O5 | solvent: water | solvent.volume: 30.0 | temperature: 180.0 | crystalsystem: orthorhombic | shape: flower-like | size.length: 14000.0 | size.width: 14000.0 | size.depth: 14000.0 | precursor: V2O5 (mass 0.182) | additive: hydrogen peroxide | additive: ammonium dihydrogen phosphate (mass 0.173) | pdfno_list: 41-1426"
+}

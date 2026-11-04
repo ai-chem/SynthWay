@@ -1,0 +1,11 @@
+{
+  "composition": "SiO2",
+  "method": null,
+  "rag_topk": 3,
+  "query": "composition: SiO2 | silica | silica | silica | SiO2 method | SiO2 method | SiO2 method | SiO2 gel | SiO2 gel | SiO2 gel | composition SiO2–ZnO | composition SiO2–ZnO | composition SiO2–ZnO | composition Ag-SiO2 | composition Ag-SiO2 | composition Ag-SiO2 | composition GO/SiO2 | composition GO/SiO2 | composition GO/SiO2 | composition Ag/SiO2 | composition Ag/SiO2 | composition Ag/SiO2",
+  "retrieval_context": [
+    "composition: SiO2 | solvent: water",
+    "composition: Ag-SiO2 | method: polyol | solvent: ethylene glycol | solvent.volume: 100.0 | crystalsystem: cubic | precursor: SiO2 | precursor: AgNO3 (conc 15.0) | additive: polyvinylpyrrolidone | pdfno_list: 04-0783",
+    "composition: GO/SiO2 | solvent: ethanol and water | temperature: 85.0 | shape: layers | precursor: GO | precursor: SiO2 | additive: sodium dodecyl sulfate"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "synthesis_id": "501.json_BaSiO3-BaCO3_2748",
+  "composition": "BaSiO3–BaCO3",
+  "elements": [
+    "Ba",
+    "Si",
+    "O",
+    "C"
+  ],
+  "method": "sonochemical",
+  "solvent": {
+    "name": "water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 100.0,
+    "ph": 10.0
+  },
+  "product": {
+    "shape": "hollow nanospheres",
+    "size": {
+      "length": 112.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "501.json_BaSiO3-BaCO3_2748",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: BaSiO3–BaCO3 | method: sonochemical | solvent: water | solvent.volume: 50.0 | temperature: 100.0 | pH: 10.0 | shape: hollow nanospheres | size.length: 112.0"
+}

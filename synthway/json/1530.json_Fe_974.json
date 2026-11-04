@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "1530.json_Fe_974",
+  "composition": "Fe",
+  "elements": [
+    "Fe"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "(NH4)2Fe(SO4)2*6H2O",
+      "conc": 5.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "eucalyptus robusta leaf extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 40.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 60.25,
+      "width": 60.25,
+      "depth": 60.25
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1530.json_Fe_974",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Fe | method: green synthesis | solvent: water | temperature: 40.0 | shape: spherical | size.length: 60.25 | size.width: 60.25 | size.depth: 60.25 | precursor: (NH4)2Fe(SO4)2*6H2O (conc 5.0) | additive: eucalyptus robusta leaf extract"
+}

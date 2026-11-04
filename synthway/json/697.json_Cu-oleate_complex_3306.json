@@ -1,0 +1,26 @@
+{
+  "synthesis_id": "697.json_Cu-oleate_complex_3306",
+  "composition": "Cu-oleate complex",
+  "elements": [
+    "Cu"
+  ],
+  "precursors": [
+    {
+      "name": "CuCl2",
+      "mass": 1.08
+    },
+    {
+      "name": "C18H33NaO2",
+      "mass": 3.65
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "source": {
+    "synthesis_id_original": "697.json_Cu-oleate_complex_3306",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: Cu-oleate complex | solvent: water | precursor: CuCl2 (mass 1.08) | precursor: C18H33NaO2 (mass 3.65)"
+}

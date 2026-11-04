@@ -1,0 +1,54 @@
+{
+  "synthesis_id": "1086.json_AuPd_255",
+  "composition": "AuPd",
+  "elements": [
+    "Au",
+    "Pd"
+  ],
+  "method": "galvanic displacement",
+  "precursors": [
+    {
+      "name": "HAuCl4",
+      "mass": 1019.335
+    },
+    {
+      "name": "Na2PdCl",
+      "mass": 294.21
+    },
+    {
+      "name": "CoCl2*6H2O",
+      "mass": 0.0085
+    },
+    {
+      "name": "Na3C6H5O7*2H2O",
+      "mass": 0.02
+    },
+    {
+      "name": "NaBH4",
+      "mass": 0.005
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 25.0
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "shape": "flower-like",
+    "size": {
+      "width": 30.0
+    }
+  },
+  "pdfno_list": [
+    "89-3697 87-0645"
+  ],
+  "source": {
+    "synthesis_id_original": "1086.json_AuPd_255",
+    "nodes": 19,
+    "edges": 18
+  },
+  "retrieval_text": "composition: AuPd | method: galvanic displacement | solvent: water | solvent.volume: 25.0 | temperature: 25.0 | crystalsystem: face-centered cubic | shape: flower-like | size.width: 30.0 | precursor: HAuCl4 (mass 1019.335) | precursor: Na2PdCl (mass 294.21) | precursor: CoCl2*6H2O (mass 0.0085) | precursor: Na3C6H5O7*2H2O (mass 0.02) | precursor: NaBH4 (mass 0.005) | pdfno_list: 89-3697 87-0645"
+}

@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "2105.json_Pd/Pt3_3871",
+  "composition": "Pd/Pt3",
+  "elements": [
+    "Pd",
+    "Pt"
+  ],
+  "precursors": [
+    {
+      "name": "H2PdCl4",
+      "conc": 0.05
+    },
+    {
+      "name": "H2PtCl6",
+      "conc": 0.05
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 50.0
+  },
+  "product": {
+    "shape": "wire",
+    "size": {
+      "width": 11.0,
+      "depth": 11.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2105.json_Pd/Pt3_3871",
+    "nodes": 10,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Pd/Pt3 | solvent: ethylene glycol | solvent.volume: 30.0 | temperature: 50.0 | shape: wire | size.width: 11.0 | size.depth: 11.0 | precursor: H2PdCl4 (conc 0.05) | precursor: H2PtCl6 (conc 0.05)"
+}

@@ -1,0 +1,35 @@
+{
+  "synthesis_id": "967.json_ZnO_3524",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "Zn(NO3)2·4H2O",
+      "mass": 2.0
+    },
+    {
+      "name": "NH4OH"
+    }
+  ],
+  "solvent": {
+    "name": "double distilled water",
+    "volume": 200.0
+  },
+  "conditions": {
+    "temperature": 120.0,
+    "ph": 7.5
+  },
+  "pdfno_list": [
+    "05-664"
+  ],
+  "source": {
+    "synthesis_id_original": "967.json_ZnO_3524",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: ZnO | method: hydrothermal | solvent: double distilled water | solvent.volume: 200.0 | temperature: 120.0 | pH: 7.5 | precursor: Zn(NO3)2·4H2O (mass 2.0) | precursor: NH4OH | pdfno_list: 05-664"
+}

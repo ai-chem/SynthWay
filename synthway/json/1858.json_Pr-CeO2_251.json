@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "1858.json_Pr-CeO2_251",
+  "composition": "Pr-CeO2",
+  "elements": [
+    "Pr",
+    "Ce",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Ce(NO3)3·6H2O",
+      "conc": 94.0
+    },
+    {
+      "name": "Pr(NO3)3·6H2O",
+      "conc": 10.0
+    }
+  ],
+  "solvent": {
+    "name": "sodium hydroxide",
+    "volume": 125.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "cube",
+    "size": {
+      "length": 25.0,
+      "width": 25.0,
+      "depth": 25.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1858.json_Pr-CeO2_251",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Pr-CeO2 | solvent: sodium hydroxide | solvent.volume: 125.0 | temperature: 180.0 | crystalsystem: cubic | shape: cube | size.length: 25.0 | size.width: 25.0 | size.depth: 25.0 | precursor: Ce(NO3)3·6H2O (conc 94.0) | precursor: Pr(NO3)3·6H2O (conc 10.0)"
+}

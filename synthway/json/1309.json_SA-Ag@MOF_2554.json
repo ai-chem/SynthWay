@@ -1,0 +1,37 @@
+{
+  "synthesis_id": "1309.json_SA-Ag@MOF_2554",
+  "composition": "SA-Ag@MOF",
+  "elements": [
+    "S",
+    "A",
+    "Ag",
+    "M",
+    "O",
+    "F"
+  ],
+  "precursors": [
+    {
+      "name": "C6H7NaO6",
+      "mass": 0.08
+    },
+    {
+      "name": "Ag@MOF"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "shape": "long needles"
+  },
+  "source": {
+    "synthesis_id_original": "1309.json_SA-Ag@MOF_2554",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: SA-Ag@MOF | solvent: deionized water | solvent.volume: 20.0 | temperature: 25.0 | shape: long needles | precursor: C6H7NaO6 (mass 0.08) | precursor: Ag@MOF"
+}

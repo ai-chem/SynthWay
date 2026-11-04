@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1895.json_Cu0.89Zn0.11O_3617",
+  "composition": "Cu0.89Zn0.11O",
+  "elements": [
+    "Cu",
+    "Zn",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Cu(CH3COO)2",
+      "mass": 3.0
+    },
+    {
+      "name": "Zn(CH3COO)2",
+      "mass": 1.0
+    }
+  ],
+  "solvent": {
+    "name": "ethanol",
+    "volume": 90.0
+  },
+  "conditions": {
+    "temperature": 60.0,
+    "ph": 8.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "aggregated",
+    "size": {
+      "length": 7.0,
+      "width": 7.0,
+      "depth": 7.0
+    }
+  },
+  "pdfno_list": [
+    "89 2529"
+  ],
+  "source": {
+    "synthesis_id_original": "1895.json_Cu0.89Zn0.11O_3617",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Cu0.89Zn0.11O | solvent: ethanol | solvent.volume: 90.0 | temperature: 60.0 | pH: 8.0 | crystalsystem: monoclinic | shape: aggregated | size.length: 7.0 | size.width: 7.0 | size.depth: 7.0 | precursor: Cu(CH3COO)2 (mass 3.0) | precursor: Zn(CH3COO)2 (mass 1.0) | pdfno_list: 89 2529"
+}

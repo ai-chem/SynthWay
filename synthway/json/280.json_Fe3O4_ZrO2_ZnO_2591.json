@@ -1,0 +1,51 @@
+{
+  "synthesis_id": "280.json_Fe3O4/ZrO2/ZnO_2591",
+  "composition": "Fe3O4/ZrO2/ZnO",
+  "elements": [
+    "Fe",
+    "O",
+    "Zr",
+    "Zn"
+  ],
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2",
+      "mass": 20.0,
+      "conc": 100.0
+    },
+    {
+      "name": "Fe3O4/ZrO2",
+      "mass": 0.03
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "ethanol",
+    "volume": 10.0
+  },
+  "conditions": {
+    "ph": 11.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 10.0,
+      "width": 10.0,
+      "depth": 10.0
+    }
+  },
+  "pdfno_list": [
+    "00-027-0997"
+  ],
+  "source": {
+    "synthesis_id_original": "280.json_Fe3O4/ZrO2/ZnO_2591",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: Fe3O4/ZrO2/ZnO | solvent: ethanol | solvent.volume: 10.0 | pH: 11.0 | crystalsystem: hexagonal | shape: spherical | size.length: 10.0 | size.width: 10.0 | size.depth: 10.0 | precursor: Zn(CH3COO)2 (mass 20.0; conc 100.0) | precursor: Fe3O4/ZrO2 (mass 0.03) | additive: sodium hydroxide | pdfno_list: 00-027-0997"
+}

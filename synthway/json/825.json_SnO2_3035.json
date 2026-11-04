@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "825.json_SnO2_3035",
+  "composition": "SnO2",
+  "elements": [
+    "Sn",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "SnCl4*5H2O"
+    }
+  ],
+  "solvent": {
+    "name": "2-propanol and distilled water with a ratio of 4:1"
+  },
+  "conditions": {
+    "ph": 12.0
+  },
+  "product": {
+    "size": {
+      "length": 3.0,
+      "width": 3.0,
+      "depth": 3.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "825.json_SnO2_3035",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: SnO2 | method: hydrothermal | solvent: 2-propanol and distilled water with a ratio of 4:1 | pH: 12.0 | size.length: 3.0 | size.width: 3.0 | size.depth: 3.0 | precursor: SnCl4*5H2O"
+}

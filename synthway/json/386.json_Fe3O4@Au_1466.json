@@ -1,0 +1,29 @@
+{
+  "synthesis_id": "386.json_Fe3O4@Au_1466",
+  "composition": "Fe3O4@Au",
+  "elements": [
+    "Fe",
+    "O",
+    "Au"
+  ],
+  "method": "coprecipitation",
+  "solvent": {
+    "name": "water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 600.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 18.6
+    }
+  },
+  "source": {
+    "synthesis_id_original": "386.json_Fe3O4@Au_1466",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: Fe3O4@Au | method: coprecipitation | solvent: water | solvent.volume: 50.0 | temperature: 600.0 | shape: spherical | size.length: 18.6"
+}

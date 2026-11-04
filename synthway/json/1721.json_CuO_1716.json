@@ -1,0 +1,37 @@
+{
+  "synthesis_id": "1721.json_CuO_1716",
+  "composition": "CuO",
+  "elements": [
+    "Cu",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "CuSO4*5H2O",
+      "mass": 2.54,
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "green extract of c. deodara"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 100.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "shape": "spherical"
+  },
+  "pdfno_list": [
+    "96-901-5925"
+  ],
+  "source": {
+    "synthesis_id_original": "1721.json_CuO_1716",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: CuO | solvent: distilled water | solvent.volume: 100.0 | crystalsystem: face-centered cubic | shape: spherical | precursor: CuSO4*5H2O (mass 2.54; conc 100.0) | additive: green extract of c. deodara | pdfno_list: 96-901-5925"
+}

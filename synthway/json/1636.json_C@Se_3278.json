@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "1636.json_C@Se_3278",
+  "composition": "C@Se",
+  "elements": [
+    "C",
+    "Se"
+  ],
+  "method": "biosynthesis",
+  "precursors": [
+    {
+      "name": "Na2SeO3",
+      "mass": 0.0173
+    }
+  ],
+  "additives": [
+    {
+      "name": "c. caspius aqueous extract"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 10.0
+  },
+  "product": {
+    "crystalsystem": "trigonal",
+    "shape": "spherical",
+    "size": {
+      "length": 20.34,
+      "width": 20.34,
+      "depth": 20.34
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1636.json_C@Se_3278",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: C@Se | method: biosynthesis | solvent: deionized water | solvent.volume: 10.0 | crystalsystem: trigonal | shape: spherical | size.length: 20.34 | size.width: 20.34 | size.depth: 20.34 | precursor: Na2SeO3 (mass 0.0173) | additive: c. caspius aqueous extract"
+}

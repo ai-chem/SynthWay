@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "1329.json_Ag_2245",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "chemical reduction",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.5
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium borohydride",
+      "conc": 4.5
+    },
+    {
+      "name": "sodium dodecyl sulfate",
+      "conc": 3.0
+    }
+  ],
+  "solvent": {
+    "name": "double distilled water"
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 7.5,
+      "width": 7.5,
+      "depth": 7.5
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1329.json_Ag_2245",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Ag | method: chemical reduction | solvent: double distilled water | crystalsystem: face-centered cubic | shape: spherical | size.length: 7.5 | size.width: 7.5 | size.depth: 7.5 | precursor: AgNO3 (conc 1.5) | additive: sodium borohydride (conc 4.5) | additive: sodium dodecyl sulfate (conc 3.0)"
+}

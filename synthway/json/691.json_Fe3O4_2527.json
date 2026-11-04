@@ -1,0 +1,34 @@
+{
+  "synthesis_id": "691.json_Fe3O4_2527",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "solvent": {
+    "name": "water",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 200.0,
+    "ph": 10.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "hexagonal nanoplates",
+    "size": {
+      "width": 400.0,
+      "depth": 60.0
+    }
+  },
+  "pdfno_list": [
+    "86-1354"
+  ],
+  "source": {
+    "synthesis_id_original": "691.json_Fe3O4_2527",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Fe3O4 | method: hydrothermal | solvent: water | solvent.volume: 20.0 | temperature: 200.0 | pH: 10.0 | crystalsystem: cubic | shape: hexagonal nanoplates | size.width: 400.0 | size.depth: 60.0 | pdfno_list: 86-1354"
+}

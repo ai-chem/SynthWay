@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "346.json_NiFe2O4_2811",
+  "composition": "NiFe2O4",
+  "elements": [
+    "Ni",
+    "Fe",
+    "O"
+  ],
+  "method": "solvo-hydrothermal",
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 170.0
+    }
+  },
+  "pdfno_list": [
+    "10-0325"
+  ],
+  "source": {
+    "synthesis_id_original": "346.json_NiFe2O4_2811",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: NiFe2O4 | method: solvo-hydrothermal | solvent: ethylene glycol | solvent.volume: 30.0 | temperature: 180.0 | crystalsystem: cubic | shape: spherical | size.length: 170.0 | pdfno_list: 10-0325"
+}

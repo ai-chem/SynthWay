@@ -1,0 +1,31 @@
+{
+  "synthesis_id": "421.json_Re(SnO2)_578",
+  "composition": "Re(SnO2)",
+  "elements": [
+    "Re",
+    "Sn",
+    "O"
+  ],
+  "method": "coprecipitation",
+  "solvent": {
+    "name": "water",
+    "volume": 244.0
+  },
+  "conditions": {
+    "temperature": 50.0,
+    "ph": 1.4
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "spherical"
+  },
+  "pdfno_list": [
+    "33-1374, 50-1429, 46-1088, 17-0600, 09-0274"
+  ],
+  "source": {
+    "synthesis_id_original": "421.json_Re(SnO2)_578",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: Re(SnO2) | method: coprecipitation | solvent: water | solvent.volume: 244.0 | temperature: 50.0 | pH: 1.4 | crystalsystem: monoclinic | shape: spherical | pdfno_list: 33-1374, 50-1429, 46-1088, 17-0600, 09-0274"
+}

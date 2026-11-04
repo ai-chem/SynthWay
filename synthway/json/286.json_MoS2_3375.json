@@ -1,0 +1,30 @@
+{
+  "synthesis_id": "286.json_MoS2_3375",
+  "composition": "MoS2",
+  "elements": [
+    "Mo",
+    "S"
+  ],
+  "method": "chemical bath deposition",
+  "solvent": {
+    "name": "water",
+    "volume": 20.5
+  },
+  "conditions": {
+    "temperature": 25.0,
+    "ph": 1.0
+  },
+  "product": {
+    "crystalsystem": "rhombohedral",
+    "shape": "flake"
+  },
+  "pdfno_list": [
+    "77-0341"
+  ],
+  "source": {
+    "synthesis_id_original": "286.json_MoS2_3375",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: MoS2 | method: chemical bath deposition | solvent: water | solvent.volume: 20.5 | temperature: 25.0 | pH: 1.0 | crystalsystem: rhombohedral | shape: flake | pdfno_list: 77-0341"
+}

@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "1522.json_Fe2O3_2698",
+  "composition": "Fe2O3",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Fe(NO3)3*9H2O",
+      "mass": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "dry zea mays lea silk extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 12.5,
+      "width": 12.5,
+      "depth": 12.5
+    }
+  },
+  "pdfno_list": [
+    "00-033-0664"
+  ],
+  "source": {
+    "synthesis_id_original": "1522.json_Fe2O3_2698",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Fe2O3 | method: green synthesis | solvent: water | temperature: 60.0 | shape: spherical | size.length: 12.5 | size.width: 12.5 | size.depth: 12.5 | precursor: Fe(NO3)3*9H2O (mass 10.0) | additive: dry zea mays lea silk extract | pdfno_list: 00-033-0664"
+}

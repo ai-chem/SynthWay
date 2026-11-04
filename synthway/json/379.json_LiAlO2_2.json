@@ -1,0 +1,27 @@
+{
+  "synthesis_id": "379.json_LiAlO2_2",
+  "composition": "LiAlO2",
+  "elements": [
+    "Li",
+    "Al",
+    "O"
+  ],
+  "method": "aqueous chemical",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 110.0
+  },
+  "product": {
+    "size": {
+      "length": 120.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "379.json_LiAlO2_2",
+    "nodes": 5,
+    "edges": 4
+  },
+  "retrieval_text": "composition: LiAlO2 | method: aqueous chemical | solvent: water | temperature: 110.0 | size.length: 120.0"
+}

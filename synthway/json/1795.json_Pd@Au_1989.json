@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1795.json_Pd@Au_1989",
+  "composition": "Pd@Au",
+  "elements": [
+    "Pd",
+    "Au"
+  ],
+  "precursors": [
+    {
+      "name": "AuPPh3Cl",
+      "mass": 50.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "hydrazine hydrate"
+    }
+  ],
+  "seeds": [
+    {
+      "name": "Pd"
+    }
+  ],
+  "solvent": {
+    "name": "dimethylformamide",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 90.0
+  },
+  "product": {
+    "shape": "hexagonal plates",
+    "size": {
+      "length": 40.0,
+      "width": 40.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1795.json_Pd@Au_1989",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Pd@Au | solvent: dimethylformamide | solvent.volume: 10.0 | temperature: 90.0 | shape: hexagonal plates | size.length: 40.0 | size.width: 40.0 | precursor: AuPPh3Cl (mass 50.0) | additive: hydrazine hydrate | seed: Pd"
+}

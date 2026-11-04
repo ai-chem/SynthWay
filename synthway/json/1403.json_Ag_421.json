@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "1403.json_Ag_421",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "barringtonia acutangula bark extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 6.8,
+      "width": 6.8,
+      "depth": 6.8
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1403.json_Ag_421",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Ag | method: green synthesis | solvent: water | temperature: 25.0 | crystalsystem: cubic | size.length: 6.8 | size.width: 6.8 | size.depth: 6.8 | precursor: AgNO3 (conc 1.0) | additive: barringtonia acutangula bark extract"
+}

@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1795.json_Pd@Pt_1990",
+  "composition": "Pd@Pt",
+  "elements": [
+    "Pd",
+    "Pt"
+  ],
+  "precursors": [
+    {
+      "name": "Pt(acac)2",
+      "mass": 2.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "hydrazine hydrate"
+    }
+  ],
+  "seeds": [
+    {
+      "name": "Pd"
+    }
+  ],
+  "solvent": {
+    "name": "dimethylformamide",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 100.0
+  },
+  "product": {
+    "shape": "hexagonal plates",
+    "size": {
+      "length": 40.0,
+      "width": 40.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1795.json_Pd@Pt_1990",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Pd@Pt | solvent: dimethylformamide | solvent.volume: 10.0 | temperature: 100.0 | shape: hexagonal plates | size.length: 40.0 | size.width: 40.0 | precursor: Pt(acac)2 (mass 2.0) | additive: hydrazine hydrate | seed: Pd"
+}

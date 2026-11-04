@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "380.json_GO_115",
+  "composition": "GO",
+  "elements": [
+    "G",
+    "O"
+  ],
+  "method": "hummers method",
+  "precursors": [
+    {
+      "name": "Graphene",
+      "mass": 3.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sulphuric acid"
+    },
+    {
+      "name": "sodium nitrate",
+      "mass": 1.5
+    },
+    {
+      "name": "potassium permanganate",
+      "mass": 9.0
+    },
+    {
+      "name": "hydrogen peroxide"
+    }
+  ],
+  "solvent": {
+    "name": "milliq water",
+    "volume": 400.0
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "shape": "wrinkled sheet-like shape",
+    "size": {
+      "length": 17.0,
+      "width": 17.0,
+      "depth": 17.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "380.json_GO_115",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: GO | method: hummers method | solvent: milliq water | solvent.volume: 400.0 | temperature: 80.0 | shape: wrinkled sheet-like shape | size.length: 17.0 | size.width: 17.0 | size.depth: 17.0 | precursor: Graphene (mass 3.0) | additive: sulphuric acid | additive: sodium nitrate (mass 1.5) | additive: potassium permanganate (mass 9.0) | additive: hydrogen peroxide"
+}

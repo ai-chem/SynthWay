@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "2166.json_Fe3O4_1018",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "coprecipitation",
+  "precursors": [
+    {
+      "name": "FeCl3*6H2O",
+      "mass": 20.3,
+      "conc": 75.0
+    },
+    {
+      "name": "FeCl2*4H2O",
+      "mass": 14.9,
+      "conc": 75.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "ammonia (25%)"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 160.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 14.0,
+      "width": 14.0,
+      "depth": 14.0
+    }
+  },
+  "pdfno_list": [
+    "019-0629, 039-1346"
+  ],
+  "source": {
+    "synthesis_id_original": "2166.json_Fe3O4_1018",
+    "nodes": 16,
+    "edges": 16
+  },
+  "retrieval_text": "composition: Fe3O4 | method: coprecipitation | solvent: water | solvent.volume: 50.0 | temperature: 160.0 | shape: spherical | size.length: 14.0 | size.width: 14.0 | size.depth: 14.0 | precursor: FeCl3*6H2O (mass 20.3; conc 75.0) | precursor: FeCl2*4H2O (mass 14.9; conc 75.0) | additive: ammonia (25%) | pdfno_list: 019-0629, 039-1346"
+}

@@ -1,0 +1,36 @@
+{
+  "synthesis_id": "2200.json_MnO2/GQD_3774",
+  "composition": "MnO2/GQD",
+  "elements": [
+    "Mn",
+    "O",
+    "G",
+    "Q",
+    "D"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "KMnO4",
+      "mass": 0.5
+    }
+  ],
+  "additives": [
+    {
+      "name": "gqd"
+    }
+  ],
+  "solvent": {
+    "name": "ethanol and water",
+    "volume": 35.0
+  },
+  "conditions": {
+    "temperature": 100.0
+  },
+  "source": {
+    "synthesis_id_original": "2200.json_MnO2/GQD_3774",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: MnO2/GQD | method: hydrothermal | solvent: ethanol and water | solvent.volume: 35.0 | temperature: 100.0 | precursor: KMnO4 (mass 0.5) | additive: gqd"
+}

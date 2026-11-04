@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "2060.json_KFePW12O40_4036",
+  "composition": "KFePW12O40",
+  "elements": [
+    "K",
+    "Fe",
+    "P",
+    "W",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "KCl",
+      "mass": 0.07455,
+      "conc": 1.0
+    },
+    {
+      "name": "FeCl2*4H2O",
+      "mass": 0.19881,
+      "conc": 1.0
+    },
+    {
+      "name": "H3[PW12O40]",
+      "mass": 2.8802,
+      "conc": 2.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 160.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 20.0,
+      "width": 20.0,
+      "depth": 20.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2060.json_KFePW12O40_4036",
+    "nodes": 16,
+    "edges": 16
+  },
+  "retrieval_text": "composition: KFePW12O40 | method: hydrothermal | solvent: water | temperature: 160.0 | shape: spherical | size.length: 20.0 | size.width: 20.0 | size.depth: 20.0 | precursor: KCl (mass 0.07455; conc 1.0) | precursor: FeCl2*4H2O (mass 0.19881; conc 1.0) | precursor: H3[PW12O40] (mass 2.8802; conc 2.0)"
+}

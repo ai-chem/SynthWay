@@ -1,0 +1,31 @@
+{
+  "synthesis_id": "2407.json_CdO_3453",
+  "composition": "CdO",
+  "elements": [
+    "Cd",
+    "O"
+  ],
+  "solvent": {
+    "name": "toluene",
+    "volume": 48.0
+  },
+  "conditions": {
+    "temperature": 240.0
+  },
+  "product": {
+    "size": {
+      "length": 12.0,
+      "width": 12.0,
+      "depth": 12.0
+    }
+  },
+  "pdfno_list": [
+    "05-0640"
+  ],
+  "source": {
+    "synthesis_id_original": "2407.json_CdO_3453",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: CdO | solvent: toluene | solvent.volume: 48.0 | temperature: 240.0 | size.length: 12.0 | size.width: 12.0 | size.depth: 12.0 | pdfno_list: 05-0640"
+}

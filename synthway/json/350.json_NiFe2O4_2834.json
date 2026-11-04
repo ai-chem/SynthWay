@@ -1,0 +1,29 @@
+{
+  "synthesis_id": "350.json_NiFe2O4_2834",
+  "composition": "NiFe2O4",
+  "elements": [
+    "Ni",
+    "Fe",
+    "O"
+  ],
+  "method": "template",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 900.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "wire"
+  },
+  "pdfno_list": [
+    "10-0325"
+  ],
+  "source": {
+    "synthesis_id_original": "350.json_NiFe2O4_2834",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: NiFe2O4 | method: template | solvent: water | temperature: 900.0 | crystalsystem: cubic | shape: wire | pdfno_list: 10-0325"
+}

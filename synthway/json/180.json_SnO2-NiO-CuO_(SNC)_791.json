@@ -1,0 +1,60 @@
+{
+  "synthesis_id": "180.json_SnO2-NiO-CuO_(SNC)_791",
+  "composition": "SnO2-NiO-CuO (SNC)",
+  "elements": [
+    "Sn",
+    "O",
+    "Ni",
+    "Cu",
+    "S",
+    "N",
+    "C"
+  ],
+  "precursors": [
+    {
+      "name": "SnCl2·2H2O",
+      "mass": 3.78
+    },
+    {
+      "name": "NiSO4·6H2O",
+      "mass": 4.48
+    },
+    {
+      "name": "CuSO4·5H2O",
+      "mass": 3.93
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 2.0
+    },
+    {
+      "name": "methanol"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "ph": 10.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 14.0,
+      "width": 14.0,
+      "depth": 14.0
+    }
+  },
+  "pdfno_list": [
+    "00-030-0496"
+  ],
+  "source": {
+    "synthesis_id_original": "180.json_SnO2-NiO-CuO_(SNC)_791",
+    "nodes": 18,
+    "edges": 17
+  },
+  "retrieval_text": "composition: SnO2-NiO-CuO (SNC) | solvent: deionized water | solvent.volume: 50.0 | pH: 10.0 | crystalsystem: cubic | size.length: 14.0 | size.width: 14.0 | size.depth: 14.0 | precursor: SnCl2·2H2O (mass 3.78) | precursor: NiSO4·6H2O (mass 4.48) | precursor: CuSO4·5H2O (mass 3.93) | additive: sodium hydroxide (conc 2.0) | additive: methanol | pdfno_list: 00-030-0496"
+}

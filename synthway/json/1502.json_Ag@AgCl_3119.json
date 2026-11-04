@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1502.json_Ag@AgCl_3119",
+  "composition": "Ag@AgCl",
+  "elements": [
+    "Ag",
+    "Cl"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "green algae extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 95.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 7.0,
+      "width": 7.0,
+      "depth": 7.0
+    }
+  },
+  "pdfno_list": [
+    "01-087-0719 31-1238"
+  ],
+  "source": {
+    "synthesis_id_original": "1502.json_Ag@AgCl_3119",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Ag@AgCl | method: green synthesis | solvent: water | temperature: 95.0 | crystalsystem: cubic | shape: spherical | size.length: 7.0 | size.width: 7.0 | size.depth: 7.0 | precursor: AgNO3 (conc 1.0) | additive: green algae extract | pdfno_list: 01-087-0719 31-1238"
+}

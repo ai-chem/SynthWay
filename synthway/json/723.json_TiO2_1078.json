@@ -1,0 +1,27 @@
+{
+  "synthesis_id": "723.json_TiO2_1078",
+  "composition": "TiO2",
+  "elements": [
+    "Ti",
+    "O"
+  ],
+  "method": "gas flame combustion method",
+  "product": {
+    "crystalsystem": "21-1272",
+    "shape": "spherical",
+    "size": {
+      "length": 9.0,
+      "width": 9.0,
+      "depth": 9.0
+    }
+  },
+  "pdfno_list": [
+    "21-1272"
+  ],
+  "source": {
+    "synthesis_id_original": "723.json_TiO2_1078",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: TiO2 | method: gas flame combustion method | crystalsystem: 21-1272 | shape: spherical | size.length: 9.0 | size.width: 9.0 | size.depth: 9.0 | pdfno_list: 21-1272"
+}

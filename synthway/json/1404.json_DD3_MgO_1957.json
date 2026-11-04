@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "1404.json_DD3/MgO_1957",
+  "composition": "DD3/MgO",
+  "elements": [
+    "D",
+    "Mg",
+    "O"
+  ],
+  "method": "autoclave",
+  "precursors": [
+    {
+      "name": "DD3-clay (DD3)"
+    },
+    {
+      "name": "Mg(NO3)2*4H2O"
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 300.0
+  },
+  "product": {
+    "shape": "rough surface with nano-spherical geometries",
+    "size": {
+      "length": 45.0,
+      "width": 45.0,
+      "depth": 45.0
+    }
+  },
+  "pdfno_list": [
+    "45-0946 15-0776 01-0424"
+  ],
+  "source": {
+    "synthesis_id_original": "1404.json_DD3/MgO_1957",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: DD3/MgO | method: autoclave | solvent: distilled water | solvent.volume: 100.0 | temperature: 300.0 | shape: rough surface with nano-spherical geometries | size.length: 45.0 | size.width: 45.0 | size.depth: 45.0 | precursor: DD3-clay (DD3) | precursor: Mg(NO3)2*4H2O | additive: sodium hydroxide | pdfno_list: 45-0946 15-0776 01-0424"
+}

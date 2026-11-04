@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1522.json_Cu2O_2678",
+  "composition": "Cu2O",
+  "elements": [
+    "Cu",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "copper II acetate monohydrate (Cu(C₂H₃O₂)₂•H₂O)",
+      "mass": 2.25
+    }
+  ],
+  "additives": [
+    {
+      "name": "fresh zea mays lea husks extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 75.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 60.0,
+      "width": 60.0,
+      "depth": 60.0
+    }
+  },
+  "pdfno_list": [
+    "05-0667"
+  ],
+  "source": {
+    "synthesis_id_original": "1522.json_Cu2O_2678",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Cu2O | method: green synthesis | solvent: water | temperature: 75.0 | crystalsystem: cubic | shape: spherical | size.length: 60.0 | size.width: 60.0 | size.depth: 60.0 | precursor: copper II acetate monohydrate (Cu(C₂H₃O₂)₂•H₂O) (mass 2.25) | additive: fresh zea mays lea husks extract | pdfno_list: 05-0667"
+}

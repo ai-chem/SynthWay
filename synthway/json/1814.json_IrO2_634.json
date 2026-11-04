@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "1814.json_IrO2_634",
+  "composition": "IrO2",
+  "elements": [
+    "Ir",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "IrCl3*6H2O",
+      "mass": 0.1493
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 80.0,
+    "ph": 12.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 24.05,
+      "width": 24.05,
+      "depth": 24.05
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1814.json_IrO2_634",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: IrO2 | solvent: water | solvent.volume: 50.0 | temperature: 80.0 | pH: 12.0 | shape: spherical | size.length: 24.05 | size.width: 24.05 | size.depth: 24.05 | precursor: IrCl3*6H2O (mass 0.1493) | additive: sodium hydroxide (conc 1000.0)"
+}

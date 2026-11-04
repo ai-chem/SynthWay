@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "664.json_CuO_2357",
+  "composition": "CuO",
+  "elements": [
+    "Cu",
+    "O"
+  ],
+  "method": "reduction",
+  "precursors": [
+    {
+      "name": "CuSO4·5H2O",
+      "conc": 5.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 50.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "spherical",
+    "size": {
+      "length": 9.0,
+      "width": 9.0,
+      "depth": 9.0
+    }
+  },
+  "pdfno_list": [
+    "80-1916"
+  ],
+  "source": {
+    "synthesis_id_original": "664.json_CuO_2357",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: CuO | method: reduction | solvent: water | solvent.volume: 10.0 | temperature: 50.0 | crystalsystem: monoclinic | shape: spherical | size.length: 9.0 | size.width: 9.0 | size.depth: 9.0 | precursor: CuSO4·5H2O (conc 5.0) | pdfno_list: 80-1916"
+}

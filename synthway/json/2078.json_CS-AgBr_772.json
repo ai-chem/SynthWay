@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "2078.json_CS-AgBr_772",
+  "composition": "CS-AgBr",
+  "elements": [
+    "C",
+    "S",
+    "Ag",
+    "Br"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 100.0
+    },
+    {
+      "name": "KBr",
+      "conc": 150.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "chitosan",
+      "mass": 0.19
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 42.6,
+      "width": 42.6,
+      "depth": 42.6
+    }
+  },
+  "pdfno_list": [
+    "06-0438"
+  ],
+  "source": {
+    "synthesis_id_original": "2078.json_CS-AgBr_772",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: CS-AgBr | solvent: water | crystalsystem: cubic | size.length: 42.6 | size.width: 42.6 | size.depth: 42.6 | precursor: AgNO3 (conc 100.0) | precursor: KBr (conc 150.0) | additive: chitosan (mass 0.19) | pdfno_list: 06-0438"
+}

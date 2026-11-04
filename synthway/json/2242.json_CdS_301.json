@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "2242.json_CdS_301",
+  "composition": "CdS",
+  "elements": [
+    "Cd",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "CdCl2·2.5H2O",
+      "mass": 5.841
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium sulfide nonahydrate",
+      "mass": 6.144
+    }
+  ],
+  "solvent": {
+    "name": "c18eo10",
+    "volume": 8.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 5.5,
+      "width": 5.5,
+      "depth": 5.5
+    }
+  },
+  "pdfno_list": [
+    "10-454"
+  ],
+  "source": {
+    "synthesis_id_original": "2242.json_CdS_301",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: CdS | solvent: c18eo10 | solvent.volume: 8.0 | crystalsystem: cubic | shape: spherical | size.length: 5.5 | size.width: 5.5 | size.depth: 5.5 | precursor: CdCl2·2.5H2O (mass 5.841) | additive: sodium sulfide nonahydrate (mass 6.144) | pdfno_list: 10-454"
+}

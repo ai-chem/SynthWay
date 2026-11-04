@@ -1,0 +1,35 @@
+{
+  "synthesis_id": "1710.json_ECO/zein_281",
+  "composition": "ECO/zein",
+  "elements": [
+    "E",
+    "C",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Zein",
+      "mass": 0.02
+    },
+    {
+      "name": "ECO"
+    }
+  ],
+  "additives": [
+    {
+      "name": "pluronic f68"
+    }
+  ],
+  "solvent": {
+    "name": "ethanol"
+  },
+  "product": {
+    "shape": "spherical"
+  },
+  "source": {
+    "synthesis_id_original": "1710.json_ECO/zein_281",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: ECO/zein | solvent: ethanol | shape: spherical | precursor: Zein (mass 0.02) | precursor: ECO | additive: pluronic f68"
+}

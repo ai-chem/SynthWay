@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "1113.json_CuO_3034",
+  "composition": "CuO",
+  "elements": [
+    "Cu",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "CuSO4"
+    }
+  ],
+  "additives": [
+    {
+      "name": "t. stans flower extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 75.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic crystal",
+    "shape": "spherical",
+    "size": {
+      "length": 30.47,
+      "width": 30.47,
+      "depth": 30.47
+    }
+  },
+  "pdfno_list": [
+    "65-2309"
+  ],
+  "source": {
+    "synthesis_id_original": "1113.json_CuO_3034",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: CuO | method: green synthesis | solvent: water | temperature: 75.0 | crystalsystem: monoclinic crystal | shape: spherical | size.length: 30.47 | size.width: 30.47 | size.depth: 30.47 | precursor: CuSO4 | additive: t. stans flower extract | pdfno_list: 65-2309"
+}

@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "2094.json_Ir_3648",
+  "composition": "Ir",
+  "elements": [
+    "Ir"
+  ],
+  "precursors": [
+    {
+      "name": "IrCl3",
+      "conc": 10.0
+    }
+  ],
+  "seeds": [
+    {
+      "name": "Ag"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 90.0,
+      "width": 90.0,
+      "depth": 90.0
+    }
+  },
+  "pdfno_list": [
+    "06-0598"
+  ],
+  "source": {
+    "synthesis_id_original": "2094.json_Ir_3648",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Ir | solvent: water | temperature: 200.0 | crystalsystem: cubic | size.length: 90.0 | size.width: 90.0 | size.depth: 90.0 | precursor: IrCl3 (conc 10.0) | seed: Ag | pdfno_list: 06-0598"
+}

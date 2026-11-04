@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "2.json_Ag2O_2200",
+  "composition": "Ag2O",
+  "elements": [
+    "Ag",
+    "O"
+  ],
+  "method": "chemical reduction",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "mass": 0.85,
+      "conc": 5.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "mass": 0.39,
+      "conc": 10.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 27.0
+  },
+  "product": {
+    "size": {
+      "length": 23.0,
+      "width": 23.0,
+      "depth": 23.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2.json_Ag2O_2200",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Ag2O | method: chemical reduction | solvent: water | solvent.volume: 50.0 | temperature: 27.0 | size.length: 23.0 | size.width: 23.0 | size.depth: 23.0 | precursor: AgNO3 (mass 0.85; conc 5.0) | additive: sodium hydroxide (mass 0.39; conc 10.0)"
+}

@@ -1,0 +1,36 @@
+{
+  "synthesis_id": "1817.json_VOx_3502",
+  "composition": "VOx",
+  "elements": [
+    "V",
+    "Ox"
+  ],
+  "precursors": [
+    {
+      "name": "V2O5",
+      "mass": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "hydrochloric acid",
+      "conc": 0.001
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "shape": "flake"
+  },
+  "source": {
+    "synthesis_id_original": "1817.json_VOx_3502",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: VOx | solvent: water | solvent.volume: 20.0 | temperature: 60.0 | shape: flake | precursor: V2O5 (mass 1.0) | additive: hydrochloric acid (conc 0.001)"
+}

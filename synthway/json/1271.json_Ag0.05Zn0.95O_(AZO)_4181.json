@@ -1,0 +1,56 @@
+{
+  "synthesis_id": "1271.json_Ag0.05Zn0.95O_(AZO)_4181",
+  "composition": "Ag0.05Zn0.95O  (AZO)",
+  "elements": [
+    "Ag",
+    "Zn",
+    "O",
+    "A",
+    "Z"
+  ],
+  "method": "co-precipitation green synthesis",
+  "precursors": [
+    {
+      "name": "ZnNO3·6H2O",
+      "conc": 1000.0
+    },
+    {
+      "name": "AgNO3",
+      "conc": 1000.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "aloe barbadensis miller gel extract"
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "distilled water"
+  },
+  "conditions": {
+    "temperature": 80.0,
+    "ph": 10.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal+cubic",
+    "shape": "globular",
+    "size": {
+      "length": 51.62,
+      "width": 51.62,
+      "depth": 51.62
+    }
+  },
+  "pdfno_list": [
+    "36-1451 1-087-0597"
+  ],
+  "source": {
+    "synthesis_id_original": "1271.json_Ag0.05Zn0.95O_(AZO)_4181",
+    "nodes": 17,
+    "edges": 17
+  },
+  "retrieval_text": "composition: Ag0.05Zn0.95O  (AZO) | method: co-precipitation green synthesis | solvent: distilled water | temperature: 80.0 | pH: 10.0 | crystalsystem: hexagonal+cubic | shape: globular | size.length: 51.62 | size.width: 51.62 | size.depth: 51.62 | precursor: ZnNO3·6H2O (conc 1000.0) | precursor: AgNO3 (conc 1000.0) | additive: aloe barbadensis miller gel extract | additive: sodium hydroxide (conc 1000.0) | pdfno_list: 36-1451 1-087-0597"
+}

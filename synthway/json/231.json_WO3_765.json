@@ -1,0 +1,30 @@
+{
+  "synthesis_id": "231.json_WO3_765",
+  "composition": "WO3",
+  "elements": [
+    "W",
+    "O"
+  ],
+  "method": "solution combustion",
+  "solvent": {
+    "name": "hydrogen peroxide"
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "size": {
+      "length": 11.5
+    }
+  },
+  "pdfno_list": [
+    "01-084-0886"
+  ],
+  "source": {
+    "synthesis_id_original": "231.json_WO3_765",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: WO3 | method: solution combustion | solvent: hydrogen peroxide | temperature: 200.0 | crystalsystem: orthorhombic | size.length: 11.5 | pdfno_list: 01-084-0886"
+}

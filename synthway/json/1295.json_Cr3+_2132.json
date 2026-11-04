@@ -1,0 +1,37 @@
+{
+  "synthesis_id": "1295.json_Cr3+_2132",
+  "composition": "Cr3+",
+  "elements": [
+    "Cr"
+  ],
+  "precursors": [
+    {
+      "name": "K2Cr2O7",
+      "mass": 0.75,
+      "conc": 2.5
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium metabisulfite",
+      "mass": 1.45,
+      "conc": 7.5
+    },
+    {
+      "name": "nitric acid"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 60.0
+  },
+  "conditions": {
+    "ph": 2.1
+  },
+  "source": {
+    "synthesis_id_original": "1295.json_Cr3+_2132",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Cr3+ | solvent: distilled water | solvent.volume: 60.0 | pH: 2.1 | precursor: K2Cr2O7 (mass 0.75; conc 2.5) | additive: sodium metabisulfite (mass 1.45; conc 7.5) | additive: nitric acid"
+}

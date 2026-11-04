@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1426.json_Syn-Au_2763",
+  "composition": "Syn-Au",
+  "elements": [
+    "Sy",
+    "Au"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "HAuCl4",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "synechococcus moorigangae ethanol extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 8.2,
+      "width": 8.2,
+      "depth": 8.2
+    }
+  },
+  "pdfno_list": [
+    "04-0784"
+  ],
+  "source": {
+    "synthesis_id_original": "1426.json_Syn-Au_2763",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Syn-Au | method: green synthesis | solvent: water | temperature: 25.0 | crystalsystem: cubic | shape: spherical | size.length: 8.2 | size.width: 8.2 | size.depth: 8.2 | precursor: HAuCl4 (conc 1.0) | additive: synechococcus moorigangae ethanol extract | pdfno_list: 04-0784"
+}

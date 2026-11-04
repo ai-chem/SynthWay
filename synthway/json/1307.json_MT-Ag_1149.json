@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "1307.json_MT-Ag_1149",
+  "composition": "MT-Ag",
+  "elements": [
+    "M",
+    "T",
+    "Ag"
+  ],
+  "method": "myco-synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "mass": 0.0212,
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "dimethyl sulfoxide"
+    }
+  ],
+  "solvent": {
+    "name": "milliq water",
+    "volume": 125.0
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 13.0,
+      "width": 13.0,
+      "depth": 13.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1307.json_MT-Ag_1149",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: MT-Ag | method: myco-synthesis | solvent: milliq water | solvent.volume: 125.0 | temperature: 25.0 | crystalsystem: cubic | size.length: 13.0 | size.width: 13.0 | size.depth: 13.0 | precursor: AgNO3 (mass 0.0212; conc 1.0) | additive: dimethyl sulfoxide"
+}

@@ -1,0 +1,35 @@
+{
+  "synthesis_id": "2334.json_QCu_2798",
+  "composition": "QCu",
+  "elements": [
+    "Q",
+    "Cu"
+  ],
+  "precursors": [
+    {
+      "name": "Cu(CH3COO)2",
+      "conc": 5.0
+    }
+  ],
+  "solvent": {
+    "name": "plant extract",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 4.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 39.3,
+      "width": 39.3,
+      "depth": 39.3
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2334.json_QCu_2798",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: QCu | solvent: plant extract | solvent.volume: 10.0 | temperature: 4.0 | shape: spherical | size.length: 39.3 | size.width: 39.3 | size.depth: 39.3 | precursor: Cu(CH3COO)2 (conc 5.0)"
+}

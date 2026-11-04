@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "115.json_SnO2_22",
+  "composition": "SnO2",
+  "elements": [
+    "Sn",
+    "O"
+  ],
+  "method": "sol-gel",
+  "solvent": {
+    "name": "deionized water"
+  },
+  "conditions": {
+    "temperature": 350.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal rutile",
+    "shape": "spherical",
+    "size": {
+      "length": 9.65,
+      "width": 9.65,
+      "depth": 9.65
+    }
+  },
+  "pdfno_list": [
+    "00-041-1445"
+  ],
+  "source": {
+    "synthesis_id_original": "115.json_SnO2_22",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: SnO2 | method: sol-gel | solvent: deionized water | temperature: 350.0 | crystalsystem: tetragonal rutile | shape: spherical | size.length: 9.65 | size.width: 9.65 | size.depth: 9.65 | pdfno_list: 00-041-1445"
+}

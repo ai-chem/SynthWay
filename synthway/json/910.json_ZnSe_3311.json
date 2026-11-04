@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "910.json_ZnSe_3311",
+  "composition": "ZnSe",
+  "elements": [
+    "Zn",
+    "Se"
+  ],
+  "method": "wet chemical",
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2*2H2O",
+      "conc": 2.2
+    },
+    {
+      "name": "Na2SeO3*5H2O",
+      "conc": 0.2
+    }
+  ],
+  "additives": [
+    {
+      "name": "2,3-dimercapto-1-propanol",
+      "conc": 0.1
+    }
+  ],
+  "solvent": {
+    "name": "n,n - dimethyl formamide",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "width": 1.9
+    }
+  },
+  "pdfno_list": [
+    "05-522"
+  ],
+  "source": {
+    "synthesis_id_original": "910.json_ZnSe_3311",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: ZnSe | method: wet chemical | solvent: n,n - dimethyl formamide | solvent.volume: 50.0 | temperature: 80.0 | crystalsystem: cubic | size.width: 1.9 | precursor: Zn(CH3COO)2*2H2O (conc 2.2) | precursor: Na2SeO3*5H2O (conc 0.2) | additive: 2,3-dimercapto-1-propanol (conc 0.1) | pdfno_list: 05-522"
+}

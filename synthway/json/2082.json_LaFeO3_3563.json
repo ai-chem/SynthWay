@@ -1,0 +1,51 @@
+{
+  "synthesis_id": "2082.json_LaFeO3_3563",
+  "composition": "LaFeO3",
+  "elements": [
+    "La",
+    "Fe",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "La(NO3)3⋅6H2O",
+      "conc": 4.0
+    },
+    {
+      "name": "Fe(NO3)3⋅9H2O",
+      "conc": 4.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "citric acid",
+      "conc": 24.0
+    }
+  ],
+  "solvent": {
+    "name": "double distilled water",
+    "volume": 40.0
+  },
+  "conditions": {
+    "temperature": 800.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "spherical",
+    "size": {
+      "length": 4400.0,
+      "width": 4400.0,
+      "depth": 4400.0
+    }
+  },
+  "pdfno_list": [
+    "37-1493"
+  ],
+  "source": {
+    "synthesis_id_original": "2082.json_LaFeO3_3563",
+    "nodes": 16,
+    "edges": 16
+  },
+  "retrieval_text": "composition: LaFeO3 | method: hydrothermal | solvent: double distilled water | solvent.volume: 40.0 | temperature: 800.0 | crystalsystem: orthorhombic | shape: spherical | size.length: 4400.0 | size.width: 4400.0 | size.depth: 4400.0 | precursor: La(NO3)3⋅6H2O (conc 4.0) | precursor: Fe(NO3)3⋅9H2O (conc 4.0) | additive: citric acid (conc 24.0) | pdfno_list: 37-1493"
+}

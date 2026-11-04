@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "1512.json_CuO_3802",
+  "composition": "CuO",
+  "elements": [
+    "Cu",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Cu(CH3COO)2",
+      "mass": 0.558,
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "justicia adhatoda leaf extract"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 30.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "size": {
+      "length": 33.0,
+      "width": 33.0,
+      "depth": 33.0
+    }
+  },
+  "pdfno_list": [
+    "01-080-1268"
+  ],
+  "source": {
+    "synthesis_id_original": "1512.json_CuO_3802",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: CuO | method: green synthesis | solvent: distilled water | solvent.volume: 30.0 | crystalsystem: monoclinic | size.length: 33.0 | size.width: 33.0 | size.depth: 33.0 | precursor: Cu(CH3COO)2 (mass 0.558; conc 100.0) | additive: justicia adhatoda leaf extract | pdfno_list: 01-080-1268"
+}

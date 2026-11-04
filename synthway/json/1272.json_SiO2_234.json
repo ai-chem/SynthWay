@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1272.json_SiO2_234",
+  "composition": "SiO2",
+  "elements": [
+    "Si",
+    "O"
+  ],
+  "method": "stober",
+  "precursors": [
+    {
+      "name": "Si(OC2H5)4"
+    }
+  ],
+  "additives": [
+    {
+      "name": "cetyltrimethylammonium bromide",
+      "mass": 0.7
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 2000.0
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 400.0
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "crystalsystem": "amorphous",
+    "shape": "spherical",
+    "size": {
+      "length": 157.0,
+      "width": 157.0,
+      "depth": 157.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1272.json_SiO2_234",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: SiO2 | method: stober | solvent: distilled water | solvent.volume: 400.0 | temperature: 80.0 | crystalsystem: amorphous | shape: spherical | size.length: 157.0 | size.width: 157.0 | size.depth: 157.0 | precursor: Si(OC2H5)4 | additive: cetyltrimethylammonium bromide (mass 0.7) | additive: sodium hydroxide (conc 2000.0)"
+}

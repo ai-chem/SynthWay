@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "207.json_FeS2_868",
+  "composition": "FeS2",
+  "elements": [
+    "Fe",
+    "S"
+  ],
+  "solvent": {
+    "name": "oleylamine",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 230.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "cube",
+    "size": {
+      "length": 60.0,
+      "width": 60.0,
+      "depth": 60.0
+    }
+  },
+  "pdfno_list": [
+    "42-1340"
+  ],
+  "source": {
+    "synthesis_id_original": "207.json_FeS2_868",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: FeS2 | solvent: oleylamine | solvent.volume: 10.0 | temperature: 230.0 | crystalsystem: cubic | shape: cube | size.length: 60.0 | size.width: 60.0 | size.depth: 60.0 | pdfno_list: 42-1340"
+}

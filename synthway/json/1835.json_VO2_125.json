@@ -1,0 +1,51 @@
+{
+  "synthesis_id": "1835.json_VO2_125",
+  "composition": "VO2",
+  "elements": [
+    "V",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "V2O5",
+      "mass": 0.2
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium citrate dihydrate",
+      "mass": 0.44
+    },
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 0.2
+    },
+    {
+      "name": "hydrogen peroxide"
+    },
+    {
+      "name": "sodium borohydride",
+      "mass": 0.2
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "small round",
+    "size": {
+      "length": 10.0,
+      "width": 10.0,
+      "depth": 10.0
+    }
+  },
+  "pdfno_list": [
+    "31-1438"
+  ],
+  "source": {
+    "synthesis_id_original": "1835.json_VO2_125",
+    "nodes": 15,
+    "edges": 15
+  },
+  "retrieval_text": "composition: VO2 | solvent: water | shape: small round | size.length: 10.0 | size.width: 10.0 | size.depth: 10.0 | precursor: V2O5 (mass 0.2) | additive: sodium citrate dihydrate (mass 0.44) | additive: polyvinylpyrrolidone (mass 0.2) | additive: hydrogen peroxide | additive: sodium borohydride (mass 0.2) | pdfno_list: 31-1438"
+}

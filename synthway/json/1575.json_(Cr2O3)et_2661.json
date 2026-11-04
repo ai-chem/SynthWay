@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1575.json_(Cr2O3)et_2661",
+  "composition": "(Cr2O3)et",
+  "elements": [
+    "Cr",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Cr(CH3COO)3",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "cassia fistula ethanolic leaves extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 70.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 14.85,
+      "width": 14.85,
+      "depth": 14.85
+    }
+  },
+  "pdfno_list": [
+    "38-1479"
+  ],
+  "source": {
+    "synthesis_id_original": "1575.json_(Cr2O3)et_2661",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: (Cr2O3)et | method: green synthesis | solvent: water | temperature: 70.0 | crystalsystem: hexagonal | shape: spherical | size.length: 14.85 | size.width: 14.85 | size.depth: 14.85 | precursor: Cr(CH3COO)3 (conc 100.0) | additive: cassia fistula ethanolic leaves extract | pdfno_list: 38-1479"
+}

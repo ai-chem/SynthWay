@@ -1,0 +1,26 @@
+{
+  "synthesis_id": "1786.json_Au_3417",
+  "composition": "Au",
+  "elements": [
+    "Au"
+  ],
+  "method": "brust-schiffrin two-phase method",
+  "additives": [
+    {
+      "name": "pentanethiol"
+    }
+  ],
+  "product": {
+    "size": {
+      "length": 2.0,
+      "width": 2.0,
+      "depth": 2.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1786.json_Au_3417",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: Au | method: brust-schiffrin two-phase method | size.length: 2.0 | size.width: 2.0 | size.depth: 2.0 | additive: pentanethiol"
+}

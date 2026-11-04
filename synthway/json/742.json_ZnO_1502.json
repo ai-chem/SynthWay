@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "742.json_ZnO_1502",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "ZnSO4",
+      "conc": 200.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "extract of a. precatorius"
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 200.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 60.0,
+    "ph": 9.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "cubical",
+    "size": {
+      "length": 23.94,
+      "width": 23.94,
+      "depth": 23.94
+    }
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "742.json_ZnO_1502",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: ZnO | method: green synthesis | solvent: water | temperature: 60.0 | pH: 9.0 | crystalsystem: hexagonal | shape: cubical | size.length: 23.94 | size.width: 23.94 | size.depth: 23.94 | precursor: ZnSO4 (conc 200.0) | additive: extract of a. precatorius | additive: sodium hydroxide (conc 200.0) | pdfno_list: 36-1451"
+}

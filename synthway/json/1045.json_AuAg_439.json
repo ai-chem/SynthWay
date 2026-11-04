@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1045.json_AuAg_439",
+  "composition": "AuAg",
+  "elements": [
+    "Au",
+    "Ag"
+  ],
+  "method": "reduction",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 10.0
+    },
+    {
+      "name": "HAuCl4·4H2O",
+      "conc": 10.0
+    },
+    {
+      "name": "Na3C6H5O7",
+      "conc": 100.0
+    }
+  ],
+  "solvent": {
+    "name": "boiled deionized water",
+    "volume": 78.0
+  },
+  "conditions": {
+    "temperature": 100.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 33.0,
+      "width": 33.0,
+      "depth": 33.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1045.json_AuAg_439",
+    "nodes": 14,
+    "edges": 14
+  },
+  "retrieval_text": "composition: AuAg | method: reduction | solvent: boiled deionized water | solvent.volume: 78.0 | temperature: 100.0 | shape: spherical | size.length: 33.0 | size.width: 33.0 | size.depth: 33.0 | precursor: AgNO3 (conc 10.0) | precursor: HAuCl4·4H2O (conc 10.0) | precursor: Na3C6H5O7 (conc 100.0)"
+}

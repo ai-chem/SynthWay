@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "1865.json_Fe0.5-NiCo2O4_1794",
+  "composition": "Fe0.5-NiCo2O4",
+  "elements": [
+    "Fe",
+    "Ni",
+    "Co",
+    "O"
+  ],
+  "method": "precipitation",
+  "precursors": [
+    {
+      "name": "Ni(NO3)2*6H2O",
+      "conc": 0.5
+    },
+    {
+      "name": "Co(NO3)2",
+      "conc": 2.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "urea",
+      "conc": 5.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 80.0
+  },
+  "conditions": {
+    "temperature": 500.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "wire",
+    "size": {
+      "length": 166.3,
+      "width": 14.3,
+      "depth": 14.3
+    }
+  },
+  "pdfno_list": [
+    "73-1702"
+  ],
+  "source": {
+    "synthesis_id_original": "1865.json_Fe0.5-NiCo2O4_1794",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: Fe0.5-NiCo2O4 | method: precipitation | solvent: water | solvent.volume: 80.0 | temperature: 500.0 | crystalsystem: cubic | shape: wire | size.length: 166.3 | size.width: 14.3 | size.depth: 14.3 | precursor: Ni(NO3)2*6H2O (conc 0.5) | precursor: Co(NO3)2 (conc 2.0) | additive: urea (conc 5.0) | pdfno_list: 73-1702"
+}

@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "1308.json_CSM/ZnO_2716",
+  "composition": "CSM/ZnO",
+  "elements": [
+    "C",
+    "S",
+    "M",
+    "Zn",
+    "O"
+  ],
+  "method": "solution casting",
+  "precursors": [
+    {
+      "name": "PCL"
+    },
+    {
+      "name": "CSM"
+    },
+    {
+      "name": "ZnO (NPs)"
+    }
+  ],
+  "additives": [
+    {
+      "name": "glycerol"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water containing sodium azide"
+  },
+  "conditions": {
+    "temperature": 40.0
+  },
+  "product": {
+    "shape": "double-layer structure"
+  },
+  "source": {
+    "synthesis_id_original": "1308.json_CSM/ZnO_2716",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: CSM/ZnO | method: solution casting | solvent: distilled water containing sodium azide | temperature: 40.0 | shape: double-layer structure | precursor: PCL | precursor: CSM | precursor: ZnO (NPs) | additive: glycerol"
+}

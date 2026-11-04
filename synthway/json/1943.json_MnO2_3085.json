@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "1943.json_MnO2_3085",
+  "composition": "MnO2",
+  "elements": [
+    "Mn",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Mn(CH3COO)2",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide"
+    },
+    {
+      "name": "m13-e4",
+      "conc": 1.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "ph": 10.0
+  },
+  "product": {
+    "shape": "filamentous",
+    "size": {
+      "length": 45.0,
+      "width": 45.0,
+      "depth": 45.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1943.json_MnO2_3085",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: MnO2 | solvent: water | pH: 10.0 | shape: filamentous | size.length: 45.0 | size.width: 45.0 | size.depth: 45.0 | precursor: Mn(CH3COO)2 (conc 1.0) | additive: sodium hydroxide | additive: m13-e4 (conc 1.0)"
+}

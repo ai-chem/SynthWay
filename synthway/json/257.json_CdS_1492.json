@@ -1,0 +1,29 @@
+{
+  "synthesis_id": "257.json_CdS_1492",
+  "composition": "CdS",
+  "elements": [
+    "Cd",
+    "S"
+  ],
+  "method": "chemical precipitation",
+  "solvent": {
+    "name": "water",
+    "volume": 200.0
+  },
+  "product": {
+    "crystalsystem": "cubic-zinc blende",
+    "shape": "spherical",
+    "size": {
+      "length": 100.0
+    }
+  },
+  "pdfno_list": [
+    "10-0454"
+  ],
+  "source": {
+    "synthesis_id_original": "257.json_CdS_1492",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: CdS | method: chemical precipitation | solvent: water | solvent.volume: 200.0 | crystalsystem: cubic-zinc blende | shape: spherical | size.length: 100.0 | pdfno_list: 10-0454"
+}

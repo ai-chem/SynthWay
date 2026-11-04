@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "1402.json_Cu-SiO2_624",
+  "composition": "Cu-SiO2",
+  "elements": [
+    "Cu",
+    "Si",
+    "O"
+  ],
+  "method": "polyol",
+  "precursors": [
+    {
+      "name": "SiO2"
+    },
+    {
+      "name": "Cu(CH3COO)2*H2O",
+      "conc": 15.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone"
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 100.0
+  },
+  "product": {
+    "crystalsystem": "cubic"
+  },
+  "pdfno_list": [
+    "04-0836"
+  ],
+  "source": {
+    "synthesis_id_original": "1402.json_Cu-SiO2_624",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Cu-SiO2 | method: polyol | solvent: ethylene glycol | solvent.volume: 100.0 | crystalsystem: cubic | precursor: SiO2 | precursor: Cu(CH3COO)2*H2O (conc 15.0) | additive: polyvinylpyrrolidone | pdfno_list: 04-0836"
+}

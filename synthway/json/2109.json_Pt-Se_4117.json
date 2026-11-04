@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "2109.json_Pt-Se_4117",
+  "composition": "Pt–Se",
+  "elements": [
+    "Pt",
+    "Se"
+  ],
+  "precursors": [
+    {
+      "name": "H2PtCl6",
+      "conc": 5.0
+    },
+    {
+      "name": "Na2SeO3",
+      "conc": 5.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "ascorbic acid",
+      "mass": 17.6
+    },
+    {
+      "name": "polyvinylpyrrolidone",
+      "conc": 50.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 7.0
+  },
+  "product": {
+    "shape": "irregular",
+    "size": {
+      "length": 13.5,
+      "width": 13.5,
+      "depth": 13.5
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2109.json_Pt-Se_4117",
+    "nodes": 14,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Pt–Se | solvent: water | solvent.volume: 7.0 | shape: irregular | size.length: 13.5 | size.width: 13.5 | size.depth: 13.5 | precursor: H2PtCl6 (conc 5.0) | precursor: Na2SeO3 (conc 5.0) | additive: ascorbic acid (mass 17.6) | additive: polyvinylpyrrolidone (conc 50.0)"
+}

@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "213.json_LFL-ZnO_4157",
+  "composition": "LFL-ZnO",
+  "elements": [
+    "L",
+    "F",
+    "Zn",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "[Zn(CH3COO)2]·2 H2O"
+    },
+    {
+      "name": "LFL"
+    }
+  ],
+  "additives": [
+    {
+      "name": "ethanol solution"
+    },
+    {
+      "name": "sodium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "ph": 12.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 41.0,
+      "width": 41.0,
+      "depth": 41.0
+    }
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "213.json_LFL-ZnO_4157",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: LFL-ZnO | solvent: water | pH: 12.0 | crystalsystem: hexagonal | shape: spherical | size.length: 41.0 | size.width: 41.0 | size.depth: 41.0 | precursor: [Zn(CH3COO)2]·2 H2O | precursor: LFL | additive: ethanol solution | additive: sodium hydroxide | pdfno_list: 36-1451"
+}

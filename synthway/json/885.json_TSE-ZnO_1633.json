@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "885.json_TSE-ZnO_1633",
+  "composition": "TSE-ZnO",
+  "elements": [
+    "T",
+    "S",
+    "E",
+    "Zn",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "ZnSO4·7H2O",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "stem extract of t. cordifolia"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 65.65,
+      "width": 65.65,
+      "depth": 65.65
+    }
+  },
+  "source": {
+    "synthesis_id_original": "885.json_TSE-ZnO_1633",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: TSE-ZnO | solvent: water | shape: spherical | size.length: 65.65 | size.width: 65.65 | size.depth: 65.65 | precursor: ZnSO4·7H2O (conc 1.0) | additive: stem extract of t. cordifolia"
+}

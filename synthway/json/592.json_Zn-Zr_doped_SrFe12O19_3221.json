@@ -1,0 +1,53 @@
+{
+  "synthesis_id": "592.json_Zn-Zr_doped_SrFe12O19_3221",
+  "composition": "Zn–Zr doped SrFe12O19",
+  "elements": [
+    "Zn",
+    "Zr",
+    "Sr",
+    "Fe",
+    "O"
+  ],
+  "method": "sol–gel auto combustion",
+  "precursors": [
+    {
+      "name": "Sr(NO3)2"
+    },
+    {
+      "name": "Fe(NO3)3·9H2O"
+    },
+    {
+      "name": "ZrO(NO3)2·H2O"
+    },
+    {
+      "name": "Zn(NO3)3·9H2O"
+    }
+  ],
+  "additives": [
+    {
+      "name": "citric acid"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 950.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "hexagonal",
+    "size": {
+      "length": 90.0
+    }
+  },
+  "pdfno_list": [
+    "84-1531"
+  ],
+  "source": {
+    "synthesis_id_original": "592.json_Zn-Zr_doped_SrFe12O19_3221",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Zn–Zr doped SrFe12O19 | method: sol–gel auto combustion | solvent: water | temperature: 950.0 | crystalsystem: hexagonal | shape: hexagonal | size.length: 90.0 | precursor: Sr(NO3)2 | precursor: Fe(NO3)3·9H2O | precursor: ZrO(NO3)2·H2O | precursor: Zn(NO3)3·9H2O | additive: citric acid | pdfno_list: 84-1531"
+}

@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1025.json_CuFeSe2_977",
+  "composition": "CuFeSe2",
+  "elements": [
+    "Cu",
+    "Fe",
+    "Se"
+  ],
+  "precursors": [
+    {
+      "name": "CuCl",
+      "mass": 0.03
+    },
+    {
+      "name": "FeCl3",
+      "mass": 0.081
+    },
+    {
+      "name": "Se",
+      "mass": 0.05
+    }
+  ],
+  "solvent": {
+    "name": "octadecylamine",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "shape": "cuboid",
+    "size": {
+      "width": 100.0
+    }
+  },
+  "pdfno_list": [
+    "81-1959"
+  ],
+  "source": {
+    "synthesis_id_original": "1025.json_CuFeSe2_977",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: CuFeSe2 | solvent: octadecylamine | solvent.volume: 10.0 | temperature: 200.0 | shape: cuboid | size.width: 100.0 | precursor: CuCl (mass 0.03) | precursor: FeCl3 (mass 0.081) | precursor: Se (mass 0.05) | pdfno_list: 81-1959"
+}

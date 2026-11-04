@@ -1,0 +1,30 @@
+{
+  "synthesis_id": "88.json_ZnO_1593",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "sol-gel",
+  "solvent": {
+    "name": "ethanol",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 500.0,
+    "ph": 8.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal wurtzite",
+    "shape": "flake"
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "88.json_ZnO_1593",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: ZnO | method: sol-gel | solvent: ethanol | solvent.volume: 50.0 | temperature: 500.0 | pH: 8.0 | crystalsystem: hexagonal wurtzite | shape: flake | pdfno_list: 36-1451"
+}

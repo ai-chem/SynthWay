@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "1851.json_Mn3O4_3127",
+  "composition": "Mn3O4",
+  "elements": [
+    "Mn",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "KMnO4",
+      "mass": 1.0,
+      "conc": 6.3
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleic acid",
+      "conc": 0.063
+    },
+    {
+      "name": "ammonium fluoride",
+      "conc": 10.0
+    }
+  ],
+  "solvent": {
+    "name": "ultrapure water",
+    "volume": 500.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "shape": "urchin-like",
+    "size": {
+      "length": 750.0,
+      "width": 750.0,
+      "depth": 750.0
+    }
+  },
+  "pdfno_list": [
+    "24 0734"
+  ],
+  "source": {
+    "synthesis_id_original": "1851.json_Mn3O4_3127",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: Mn3O4 | solvent: ultrapure water | solvent.volume: 500.0 | temperature: 200.0 | crystalsystem: tetragonal | shape: urchin-like | size.length: 750.0 | size.width: 750.0 | size.depth: 750.0 | precursor: KMnO4 (mass 1.0; conc 6.3) | additive: oleic acid (conc 0.063) | additive: ammonium fluoride (conc 10.0) | pdfno_list: 24 0734"
+}

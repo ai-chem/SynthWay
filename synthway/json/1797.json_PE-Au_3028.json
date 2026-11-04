@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1797.json_PE-Au_3028",
+  "composition": "PE-Au",
+  "elements": [
+    "P",
+    "E",
+    "Au"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "HAuCl4·3H2O",
+      "conc": 1.25
+    }
+  ],
+  "additives": [
+    {
+      "name": "punica granatum l. extract"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 80.0,
+    "ph": 7.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 25.0,
+      "width": 25.0,
+      "depth": 25.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1797.json_PE-Au_3028",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: PE-Au | method: green synthesis | solvent: water | solvent.volume: 50.0 | temperature: 80.0 | pH: 7.0 | crystalsystem: cubic | shape: spherical | size.length: 25.0 | size.width: 25.0 | size.depth: 25.0 | precursor: HAuCl4·3H2O (conc 1.25) | additive: punica granatum l. extract"
+}

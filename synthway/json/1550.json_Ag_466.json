@@ -1,0 +1,36 @@
+{
+  "synthesis_id": "1550.json_Ag_466",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 0.1
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 40.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 15.0,
+      "width": 15.0,
+      "depth": 15.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1550.json_Ag_466",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Ag | method: green synthesis | solvent: water | solvent.volume: 10.0 | temperature: 40.0 | crystalsystem: cubic | shape: spherical | size.length: 15.0 | size.width: 15.0 | size.depth: 15.0 | precursor: AgNO3 (conc 0.1)"
+}

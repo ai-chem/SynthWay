@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "1722.json_Hu-Ag_2459",
+  "composition": "Hu-Ag",
+  "elements": [
+    "Hu",
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3"
+    }
+  ],
+  "additives": [
+    {
+      "name": "h. ulmarius extract"
+    }
+  ],
+  "solvent": {
+    "name": "double distilled water"
+  },
+  "conditions": {
+    "temperature": 37.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 40.0,
+      "width": 40.0,
+      "depth": 40.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1722.json_Hu-Ag_2459",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: Hu-Ag | solvent: double distilled water | temperature: 37.0 | shape: spherical | size.length: 40.0 | size.width: 40.0 | size.depth: 40.0 | precursor: AgNO3 | additive: h. ulmarius extract"
+}

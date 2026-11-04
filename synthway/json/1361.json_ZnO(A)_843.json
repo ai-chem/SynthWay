@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "1361.json_ZnO(A)_843",
+  "composition": "ZnO(A)",
+  "elements": [
+    "Zn",
+    "O",
+    "A"
+  ],
+  "method": "coprecipitation",
+  "precursors": [
+    {
+      "name": "Zn(NO3)2",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "rod shaped",
+    "size": {
+      "length": 158.0,
+      "width": 158.0,
+      "depth": 158.0
+    }
+  },
+  "pdfno_list": [
+    "80- 0074"
+  ],
+  "source": {
+    "synthesis_id_original": "1361.json_ZnO(A)_843",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: ZnO(A) | method: coprecipitation | solvent: water | crystalsystem: hexagonal | shape: rod shaped | size.length: 158.0 | size.width: 158.0 | size.depth: 158.0 | precursor: Zn(NO3)2 (conc 100.0) | additive: sodium hydroxide (conc 1000.0) | pdfno_list: 80- 0074"
+}

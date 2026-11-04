@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "883.json_FeSbO4_798",
+  "composition": "FeSbO4",
+  "elements": [
+    "Fe",
+    "Sb",
+    "O"
+  ],
+  "method": "hydrolysis-precipitation method",
+  "precursors": [
+    {
+      "name": "Fe(NO3)3",
+      "conc": 100.0
+    },
+    {
+      "name": "Sb(NO3)3",
+      "conc": 100.0
+    },
+    {
+      "name": "NaOH",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 600.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "shape": "cube",
+    "size": {
+      "width": 52.0
+    }
+  },
+  "pdfno_list": [
+    "00-034-0372"
+  ],
+  "source": {
+    "synthesis_id_original": "883.json_FeSbO4_798",
+    "nodes": 14,
+    "edges": 14
+  },
+  "retrieval_text": "composition: FeSbO4 | method: hydrolysis-precipitation method | solvent: water | solvent.volume: 50.0 | temperature: 600.0 | crystalsystem: tetragonal | shape: cube | size.width: 52.0 | precursor: Fe(NO3)3 (conc 100.0) | precursor: Sb(NO3)3 (conc 100.0) | precursor: NaOH (conc 1000.0) | pdfno_list: 00-034-0372"
+}

@@ -1,0 +1,29 @@
+{
+  "synthesis_id": "741.json_Ni_2789",
+  "composition": "Ni",
+  "elements": [
+    "Ni"
+  ],
+  "method": "reduction",
+  "solvent": {
+    "name": "dichlorobenzene",
+    "volume": 40.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 11.0,
+      "width": 11.0,
+      "depth": 11.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "741.json_Ni_2789",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: Ni | method: reduction | solvent: dichlorobenzene | solvent.volume: 40.0 | temperature: 180.0 | crystalsystem: cubic | size.length: 11.0 | size.width: 11.0 | size.depth: 11.0"
+}

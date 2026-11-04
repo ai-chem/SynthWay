@@ -1,0 +1,54 @@
+{
+  "synthesis_id": "843.json_NiFe2O4_3361",
+  "composition": "NiFe2O4",
+  "elements": [
+    "Ni",
+    "Fe",
+    "O"
+  ],
+  "method": "coprecipitation",
+  "precursors": [
+    {
+      "name": "NaOH",
+      "conc": 3000.0
+    },
+    {
+      "name": "FeCl3*6H2O",
+      "conc": 400.0
+    },
+    {
+      "name": "NiCl2*6H2O",
+      "conc": 200.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleic acid"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 1000.0,
+    "ph": 12.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 28.0,
+      "width": 28.0,
+      "depth": 28.0
+    }
+  },
+  "pdfno_list": [
+    "742081"
+  ],
+  "source": {
+    "synthesis_id_original": "843.json_NiFe2O4_3361",
+    "nodes": 18,
+    "edges": 17
+  },
+  "retrieval_text": "composition: NiFe2O4 | method: coprecipitation | solvent: water | temperature: 1000.0 | pH: 12.0 | crystalsystem: cubic | shape: spherical | size.length: 28.0 | size.width: 28.0 | size.depth: 28.0 | precursor: NaOH (conc 3000.0) | precursor: FeCl3*6H2O (conc 400.0) | precursor: NiCl2*6H2O (conc 200.0) | additive: oleic acid | pdfno_list: 742081"
+}

@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "191.json_ZnO_1504",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2·2H2O",
+      "conc": 0.5
+    }
+  ],
+  "additives": [
+    {
+      "name": "ammonium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "double distilled water"
+  },
+  "conditions": {
+    "ph": 7.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 21.0,
+      "width": 21.0,
+      "depth": 21.0
+    }
+  },
+  "pdfno_list": [
+    "01-074-0534"
+  ],
+  "source": {
+    "synthesis_id_original": "191.json_ZnO_1504",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: ZnO | solvent: double distilled water | pH: 7.0 | shape: spherical | size.length: 21.0 | size.width: 21.0 | size.depth: 21.0 | precursor: Zn(CH3COO)2·2H2O (conc 0.5) | additive: ammonium hydroxide | pdfno_list: 01-074-0534"
+}

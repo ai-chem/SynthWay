@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1785.json_V2O5_517",
+  "composition": "V2O5",
+  "elements": [
+    "V",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "V2O5",
+      "mass": 0.364
+    }
+  ],
+  "additives": [
+    {
+      "name": "hydrogen peroxide"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 15.0
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "sheets",
+    "size": {
+      "length": 300.0,
+      "width": 300.0,
+      "depth": 20.0
+    }
+  },
+  "pdfno_list": [
+    "41-1426"
+  ],
+  "source": {
+    "synthesis_id_original": "1785.json_V2O5_517",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: V2O5 | solvent: water | solvent.volume: 15.0 | temperature: 60.0 | crystalsystem: orthorhombic | shape: sheets | size.length: 300.0 | size.width: 300.0 | size.depth: 20.0 | precursor: V2O5 (mass 0.364) | additive: hydrogen peroxide | pdfno_list: 41-1426"
+}

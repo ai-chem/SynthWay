@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1035.json_ZnFe2O4_1825",
+  "composition": "ZnFe2O4",
+  "elements": [
+    "Zn",
+    "Fe",
+    "O"
+  ],
+  "method": "solvo-hydrothermal",
+  "precursors": [
+    {
+      "name": "FeCl3*6H2O",
+      "mass": 0.54
+    },
+    {
+      "name": "ZnCl2",
+      "mass": 0.14
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium acetate",
+      "mass": 0.8
+    }
+  ],
+  "solvent": {
+    "name": "glycerol and water",
+    "volume": 30.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "width": 20.0
+    }
+  },
+  "pdfno_list": [
+    "77-0011"
+  ],
+  "source": {
+    "synthesis_id_original": "1035.json_ZnFe2O4_1825",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: ZnFe2O4 | method: solvo-hydrothermal | solvent: glycerol and water | solvent.volume: 30.0 | crystalsystem: cubic | shape: spherical | size.width: 20.0 | precursor: FeCl3*6H2O (mass 0.54) | precursor: ZnCl2 (mass 0.14) | additive: sodium acetate (mass 0.8) | pdfno_list: 77-0011"
+}

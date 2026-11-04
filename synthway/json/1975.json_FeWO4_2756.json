@@ -1,0 +1,55 @@
+{
+  "synthesis_id": "1975.json_FeWO4_2756",
+  "composition": "FeWO4",
+  "elements": [
+    "Fe",
+    "W",
+    "O"
+  ],
+  "method": "thermal-decomposition",
+  "precursors": [
+    {
+      "name": "W(CO)6",
+      "conc": 1.0
+    },
+    {
+      "name": "Fe(acac)2",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "1,2-dodecanediol",
+      "mass": 1.5
+    },
+    {
+      "name": "oleic acid"
+    },
+    {
+      "name": "oleylamine"
+    }
+  ],
+  "solvent": {
+    "name": "benzyl ether",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 260.0
+  },
+  "product": {
+    "shape": "sheets",
+    "size": {
+      "length": 15.7,
+      "width": 15.7
+    }
+  },
+  "pdfno_list": [
+    "46-1446"
+  ],
+  "source": {
+    "synthesis_id_original": "1975.json_FeWO4_2756",
+    "nodes": 16,
+    "edges": 16
+  },
+  "retrieval_text": "composition: FeWO4 | method: thermal-decomposition | solvent: benzyl ether | solvent.volume: 20.0 | temperature: 260.0 | shape: sheets | size.length: 15.7 | size.width: 15.7 | precursor: W(CO)6 (conc 1.0) | precursor: Fe(acac)2 (conc 1.0) | additive: 1,2-dodecanediol (mass 1.5) | additive: oleic acid | additive: oleylamine | pdfno_list: 46-1446"
+}

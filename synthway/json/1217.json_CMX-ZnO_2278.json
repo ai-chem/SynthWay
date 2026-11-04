@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1217.json_CMX-ZnO_2278",
+  "composition": "CMX-ZnO",
+  "elements": [
+    "C",
+    "M",
+    "X",
+    "Zn",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2*2H2O",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "cordia myxa gum polysaccharide"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 121.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "hexagonal",
+    "size": {
+      "length": 91.12,
+      "width": 91.12,
+      "depth": 91.12
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1217.json_CMX-ZnO_2278",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: CMX-ZnO | method: green synthesis | solvent: water | temperature: 121.0 | crystalsystem: hexagonal | shape: hexagonal | size.length: 91.12 | size.width: 91.12 | size.depth: 91.12 | precursor: Zn(CH3COO)2*2H2O (conc 1.0) | additive: cordia myxa gum polysaccharide"
+}

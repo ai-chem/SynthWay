@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "1336.json_Ag_822",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "saussurea costus root extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 22.0,
+      "width": 22.0,
+      "depth": 22.0
+    }
+  },
+  "pdfno_list": [
+    "04-0783"
+  ],
+  "source": {
+    "synthesis_id_original": "1336.json_Ag_822",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Ag | method: green synthesis | solvent: water | temperature: 25.0 | crystalsystem: cubic | shape: spherical | size.length: 22.0 | size.width: 22.0 | size.depth: 22.0 | precursor: AgNO3 (conc 1.0) | additive: saussurea costus root extract | pdfno_list: 04-0783"
+}

@@ -1,0 +1,36 @@
+{
+  "synthesis_id": "1592.json_Ag_785",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 2.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "basella alba aqueous solutions"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "wire",
+    "size": {
+      "length": 40.0,
+      "width": 40.0,
+      "depth": 40.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1592.json_Ag_785",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Ag | method: green synthesis | solvent: water | shape: wire | size.length: 40.0 | size.width: 40.0 | size.depth: 40.0 | precursor: AgNO3 (conc 2.0) | additive: basella alba aqueous solutions"
+}

@@ -1,0 +1,60 @@
+{
+  "synthesis_id": "1263.json_CoFe2O4_@S.C_1734",
+  "composition": "CoFe2O4 @S.C",
+  "elements": [
+    "Co",
+    "Fe",
+    "O",
+    "S",
+    "C"
+  ],
+  "precursors": [
+    {
+      "name": "CoCl2·6H2O",
+      "mass": 0.284,
+      "conc": 5.0
+    },
+    {
+      "name": "FeCl3*6H2O",
+      "mass": 0.378,
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "etanolic extract of swertia chirata"
+    },
+    {
+      "name": "sodium acetate",
+      "mass": 3.05
+    },
+    {
+      "name": "urea",
+      "mass": 0.6
+    },
+    {
+      "name": "n-heptane"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 13.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 51.0,
+      "width": 51.0,
+      "depth": 51.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1263.json_CoFe2O4_@S.C_1734",
+    "nodes": 20,
+    "edges": 19
+  },
+  "retrieval_text": "composition: CoFe2O4 @S.C | solvent: deionized water | solvent.volume: 13.0 | temperature: 180.0 | shape: spherical | size.length: 51.0 | size.width: 51.0 | size.depth: 51.0 | precursor: CoCl2·6H2O (mass 0.284; conc 5.0) | precursor: FeCl3*6H2O (mass 0.378; conc 10.0) | additive: etanolic extract of swertia chirata | additive: sodium acetate (mass 3.05) | additive: urea (mass 0.6) | additive: n-heptane"
+}

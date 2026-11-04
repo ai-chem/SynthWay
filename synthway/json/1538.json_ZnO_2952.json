@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "1538.json_ZnO_2952",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "sunscreen",
+      "mass": 0.1
+    }
+  ],
+  "additives": [
+    {
+      "name": "tetrahydrofuran"
+    },
+    {
+      "name": "ethanol"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "wire"
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "1538.json_ZnO_2952",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: ZnO | solvent: water | crystalsystem: hexagonal | shape: wire | precursor: sunscreen (mass 0.1) | additive: tetrahydrofuran | additive: ethanol | pdfno_list: 36-1451"
+}

@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "795.json_CuNi_2586",
+  "composition": "CuNi",
+  "elements": [
+    "Cu",
+    "Ni"
+  ],
+  "precursors": [
+    {
+      "name": "Ni(acac)2",
+      "mass": 1.028
+    },
+    {
+      "name": "CuCl2·2H2O",
+      "mass": 0.228
+    },
+    {
+      "name": "P(C4H9)3",
+      "mass": 0.809
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 220.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "size": {
+      "length": 65.0,
+      "width": 65.0,
+      "depth": 65.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "795.json_CuNi_2586",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: CuNi | solvent: water | temperature: 220.0 | crystalsystem: face-centered cubic | size.length: 65.0 | size.width: 65.0 | size.depth: 65.0 | precursor: Ni(acac)2 (mass 1.028) | precursor: CuCl2·2H2O (mass 0.228) | precursor: P(C4H9)3 (mass 0.809)"
+}

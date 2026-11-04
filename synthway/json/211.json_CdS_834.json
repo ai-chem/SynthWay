@@ -1,0 +1,24 @@
+{
+  "synthesis_id": "211.json_CdS_834",
+  "composition": "CdS",
+  "elements": [
+    "Cd",
+    "S"
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 80.0,
+    "ph": 10.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal"
+  },
+  "source": {
+    "synthesis_id_original": "211.json_CdS_834",
+    "nodes": 5,
+    "edges": 4
+  },
+  "retrieval_text": "composition: CdS | solvent: water | temperature: 80.0 | pH: 10.0 | crystalsystem: hexagonal"
+}

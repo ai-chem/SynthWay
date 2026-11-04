@@ -1,0 +1,35 @@
+{
+  "synthesis_id": "856.json_Au_950",
+  "composition": "Au",
+  "elements": [
+    "Au"
+  ],
+  "precursors": [
+    {
+      "name": "HAuCl4*3H2O",
+      "conc": 10.0
+    },
+    {
+      "name": "NaBH4",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "cetyltrimethylammonium bromide",
+      "conc": 100.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "source": {
+    "synthesis_id_original": "856.json_Au_950",
+    "nodes": 8,
+    "edges": 8
+  },
+  "retrieval_text": "composition: Au | solvent: water | temperature: 25.0 | precursor: HAuCl4*3H2O (conc 10.0) | precursor: NaBH4 (conc 10.0) | additive: cetyltrimethylammonium bromide (conc 100.0)"
+}

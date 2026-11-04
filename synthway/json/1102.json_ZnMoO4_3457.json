@@ -1,0 +1,37 @@
+{
+  "synthesis_id": "1102.json_ZnMoO4_3457",
+  "composition": "ZnMoO4",
+  "elements": [
+    "Zn",
+    "Mo",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "ZnCl2",
+      "mass": 136.0
+    },
+    {
+      "name": "Na2MoO4*2H2O",
+      "mass": 242.0
+    }
+  ],
+  "solvent": {
+    "name": "distilled water"
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "size": {
+      "width": 48.0
+    }
+  },
+  "pdfno_list": [
+    "01-072-1486"
+  ],
+  "source": {
+    "synthesis_id_original": "1102.json_ZnMoO4_3457",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: ZnMoO4 | solvent: distilled water | crystalsystem: hexagonal | size.width: 48.0 | precursor: ZnCl2 (mass 136.0) | precursor: Na2MoO4*2H2O (mass 242.0) | pdfno_list: 01-072-1486"
+}

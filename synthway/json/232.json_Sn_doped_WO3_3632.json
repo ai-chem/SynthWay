@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "232.json_Sn_doped_WO3_3632",
+  "composition": "Sn doped WO3",
+  "elements": [
+    "Sn",
+    "W",
+    "O"
+  ],
+  "method": "coprecipitation",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 300.0,
+    "ph": 1.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "plate",
+    "size": {
+      "length": 13.0
+    }
+  },
+  "pdfno_list": [
+    "043-1035"
+  ],
+  "source": {
+    "synthesis_id_original": "232.json_Sn_doped_WO3_3632",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: Sn doped WO3 | method: coprecipitation | solvent: water | temperature: 300.0 | pH: 1.0 | crystalsystem: monoclinic | shape: plate | size.length: 13.0 | pdfno_list: 043-1035"
+}

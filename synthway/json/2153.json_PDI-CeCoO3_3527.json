@@ -1,0 +1,63 @@
+{
+  "synthesis_id": "2153.json_PDI-CeCoO3_3527",
+  "composition": "PDI-CeCoO3",
+  "elements": [
+    "P",
+    "D",
+    "I",
+    "Ce",
+    "Co",
+    "O"
+  ],
+  "method": "sol-gel",
+  "precursors": [
+    {
+      "name": "Ce(NO3)3∙6H2O",
+      "mass": 1.0
+    },
+    {
+      "name": "Co(NO3)3∙6H2O",
+      "mass": 0.8
+    }
+  ],
+  "additives": [
+    {
+      "name": "edta",
+      "mass": 1.5
+    },
+    {
+      "name": "citric acid",
+      "mass": 1.5
+    },
+    {
+      "name": "dimethylformamide"
+    },
+    {
+      "name": "n,n-dicarboxymethyl perylene-diimide"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 25.0
+  },
+  "conditions": {
+    "temperature": 800.0,
+    "ph": 8.0
+  },
+  "product": {
+    "size": {
+      "length": 35.0,
+      "width": 35.0,
+      "depth": 35.0
+    }
+  },
+  "pdfno_list": [
+    "43-1002, 43-1003"
+  ],
+  "source": {
+    "synthesis_id_original": "2153.json_PDI-CeCoO3_3527",
+    "nodes": 19,
+    "edges": 19
+  },
+  "retrieval_text": "composition: PDI-CeCoO3 | method: sol-gel | solvent: water | solvent.volume: 25.0 | temperature: 800.0 | pH: 8.0 | size.length: 35.0 | size.width: 35.0 | size.depth: 35.0 | precursor: Ce(NO3)3∙6H2O (mass 1.0) | precursor: Co(NO3)3∙6H2O (mass 0.8) | additive: edta (mass 1.5) | additive: citric acid (mass 1.5) | additive: dimethylformamide | additive: n,n-dicarboxymethyl perylene-diimide | pdfno_list: 43-1002, 43-1003"
+}

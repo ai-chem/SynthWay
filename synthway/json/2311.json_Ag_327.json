@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "2311.json_Ag_327",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "mass": 3.4
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone"
+    },
+    {
+      "name": "glucose"
+    },
+    {
+      "name": "sodium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 80.0
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "size": {
+      "length": 50.0,
+      "width": 50.0,
+      "depth": 50.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2311.json_Ag_327",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Ag | solvent: water | solvent.volume: 80.0 | temperature: 60.0 | size.length: 50.0 | size.width: 50.0 | size.depth: 50.0 | precursor: AgNO3 (mass 3.4) | additive: polyvinylpyrrolidone | additive: glucose | additive: sodium hydroxide"
+}

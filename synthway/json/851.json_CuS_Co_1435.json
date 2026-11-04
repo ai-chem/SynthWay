@@ -1,0 +1,53 @@
+{
+  "synthesis_id": "851.json_CuS:Co_1435",
+  "composition": "CuS:Co",
+  "elements": [
+    "Cu",
+    "S",
+    "Co"
+  ],
+  "precursors": [
+    {
+      "name": "CuCl2·6H2O",
+      "conc": 100.0
+    },
+    {
+      "name": "CoCl2·2H2O",
+      "mass": 5.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "ammonium hydroxide"
+    },
+    {
+      "name": "sodium sulfide",
+      "conc": 100.0
+    }
+  ],
+  "seeds": [
+    {
+      "name": "CuS"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 140.0
+  },
+  "conditions": {
+    "temperature": 400.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical"
+  },
+  "pdfno_list": [
+    "06-0464"
+  ],
+  "source": {
+    "synthesis_id_original": "851.json_CuS:Co_1435",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: CuS:Co | solvent: water | solvent.volume: 140.0 | temperature: 400.0 | crystalsystem: hexagonal | shape: spherical | precursor: CuCl2·6H2O (conc 100.0) | precursor: CoCl2·2H2O (mass 5.0) | additive: ammonium hydroxide | additive: sodium sulfide (conc 100.0) | seed: CuS | pdfno_list: 06-0464"
+}

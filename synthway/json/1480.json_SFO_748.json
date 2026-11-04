@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "1480.json_SFO_748",
+  "composition": "SFO",
+  "elements": [
+    "S",
+    "F",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "SnCl2*2H2O",
+      "conc": 95.0
+    },
+    {
+      "name": "Fe(NO3)2*6H2O",
+      "conc": 5.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "morinda citrifolia leaves extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "shape": "spherical",
+    "size": {
+      "length": 40.0,
+      "width": 40.0,
+      "depth": 40.0
+    }
+  },
+  "pdfno_list": [
+    "41-1445"
+  ],
+  "source": {
+    "synthesis_id_original": "1480.json_SFO_748",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: SFO | method: green synthesis | solvent: water | temperature: 80.0 | crystalsystem: tetragonal | shape: spherical | size.length: 40.0 | size.width: 40.0 | size.depth: 40.0 | precursor: SnCl2*2H2O (conc 95.0) | precursor: Fe(NO3)2*6H2O (conc 5.0) | additive: morinda citrifolia leaves extract | pdfno_list: 41-1445"
+}

@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "2070.json_CoS_2625",
+  "composition": "CoS",
+  "elements": [
+    "Co",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "CoCl2*6H2O",
+      "mass": 0.5948
+    }
+  ],
+  "additives": [
+    {
+      "name": "thiourea",
+      "mass": 0.7612
+    }
+  ],
+  "solvent": {
+    "name": "water+ethylene glycol",
+    "volume": 25.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical"
+  },
+  "pdfno_list": [
+    "65-3418"
+  ],
+  "source": {
+    "synthesis_id_original": "2070.json_CoS_2625",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: CoS | solvent: water+ethylene glycol | solvent.volume: 25.0 | temperature: 180.0 | crystalsystem: hexagonal | shape: spherical | precursor: CoCl2*6H2O (mass 0.5948) | additive: thiourea (mass 0.7612) | pdfno_list: 65-3418"
+}

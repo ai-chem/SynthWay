@@ -1,0 +1,31 @@
+{
+  "synthesis_id": "4.json_BaTiO3_3467",
+  "composition": "BaTiO3",
+  "elements": [
+    "Ba",
+    "Ti",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "solvent": {
+    "name": "degassed, deionized (nanopure) water",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 240.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "size": {
+      "length": 1000.0,
+      "width": 1000.0,
+      "depth": 1000.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "4.json_BaTiO3_3467",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: BaTiO3 | method: hydrothermal | solvent: degassed, deionized (nanopure) water | solvent.volume: 10.0 | temperature: 240.0 | crystalsystem: tetragonal | size.length: 1000.0 | size.width: 1000.0 | size.depth: 1000.0"
+}

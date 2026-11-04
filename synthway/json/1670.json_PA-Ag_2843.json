@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "1670.json_PA-Ag_2843",
+  "composition": "PA-Ag",
+  "elements": [
+    "P",
+    "A",
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "phyllanthus niruri leaves extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 45.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 20.0,
+      "width": 20.0,
+      "depth": 20.0
+    }
+  },
+  "pdfno_list": [
+    "01-087-0719"
+  ],
+  "source": {
+    "synthesis_id_original": "1670.json_PA-Ag_2843",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: PA-Ag | solvent: water | temperature: 45.0 | shape: spherical | size.length: 20.0 | size.width: 20.0 | size.depth: 20.0 | precursor: AgNO3 (conc 1.0) | additive: phyllanthus niruri leaves extract | pdfno_list: 01-087-0719"
+}

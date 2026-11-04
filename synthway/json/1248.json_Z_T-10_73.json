@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1248.json_Z/T-10_73",
+  "composition": "Z/T-10",
+  "elements": [
+    "Z",
+    "T"
+  ],
+  "precursors": [
+    {
+      "name": "Mg3Si4O10(OH)2",
+      "mass": 0.7
+    },
+    {
+      "name": "Zn(NO3)2",
+      "mass": 0.298
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "mass": 0.2
+    }
+  ],
+  "solvent": {
+    "name": "ethanol",
+    "volume": 150.0
+  },
+  "conditions": {
+    "temperature": 75.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 10.3,
+      "width": 10.3,
+      "depth": 10.3
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1248.json_Z/T-10_73",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Z/T-10 | solvent: ethanol | solvent.volume: 150.0 | temperature: 75.0 | shape: spherical | size.length: 10.3 | size.width: 10.3 | size.depth: 10.3 | precursor: Mg3Si4O10(OH)2 (mass 0.7) | precursor: Zn(NO3)2 (mass 0.298) | additive: sodium hydroxide (mass 0.2)"
+}

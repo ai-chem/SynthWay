@@ -1,0 +1,32 @@
+{
+  "synthesis_id": "452.json_CaO/Ca(OH)2_2674",
+  "composition": "CaO/Ca(OH)2",
+  "elements": [
+    "Ca",
+    "O",
+    "H"
+  ],
+  "method": "controlled precipitation",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 200.0,
+    "ph": 10.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "size": {
+      "length": 43.3
+    }
+  },
+  "pdfno_list": [
+    "44-1481"
+  ],
+  "source": {
+    "synthesis_id_original": "452.json_CaO/Ca(OH)2_2674",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: CaO/Ca(OH)2 | method: controlled precipitation | solvent: water | temperature: 200.0 | pH: 10.0 | crystalsystem: hexagonal | size.length: 43.3 | pdfno_list: 44-1481"
+}

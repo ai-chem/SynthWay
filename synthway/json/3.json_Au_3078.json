@@ -1,0 +1,36 @@
+{
+  "synthesis_id": "3.json_Au_3078",
+  "composition": "Au",
+  "elements": [
+    "Au"
+  ],
+  "precursors": [
+    {
+      "name": "HAuCl4",
+      "conc": 1.3
+    }
+  ],
+  "additives": [
+    {
+      "name": "tannic acid",
+      "conc": 6.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 10.0,
+      "width": 10.0,
+      "depth": 10.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "3.json_Au_3078",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Au | solvent: water | shape: spherical | size.length: 10.0 | size.width: 10.0 | size.depth: 10.0 | precursor: HAuCl4 (conc 1.3) | additive: tannic acid (conc 6.0)"
+}

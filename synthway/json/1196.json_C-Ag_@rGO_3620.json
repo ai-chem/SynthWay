@@ -1,0 +1,37 @@
+{
+  "synthesis_id": "1196.json_C-Ag_@rGO_3620",
+  "composition": "C-Ag @rGO",
+  "elements": [
+    "C",
+    "Ag",
+    "G",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "C-Ag (NPs)"
+    },
+    {
+      "name": "rGO",
+      "mass": 0.05
+    }
+  ],
+  "solvent": {
+    "name": "double distilled water",
+    "volume": 10.0
+  },
+  "product": {
+    "shape": "wrinkled sheet-like shape",
+    "size": {
+      "length": 22.9,
+      "width": 22.9,
+      "depth": 22.9
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1196.json_C-Ag_@rGO_3620",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: C-Ag @rGO | solvent: double distilled water | solvent.volume: 10.0 | shape: wrinkled sheet-like shape | size.length: 22.9 | size.width: 22.9 | size.depth: 22.9 | precursor: C-Ag (NPs) | precursor: rGO (mass 0.05)"
+}

@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "998.json_Fe3O4_2176",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "coprecipitation",
+  "precursors": [
+    {
+      "name": "FeSO4*7H2O",
+      "mass": 2.8
+    },
+    {
+      "name": "Fe2(SO4)3",
+      "mass": 4.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium dodecyl sulfate",
+      "mass": 0.3
+    },
+    {
+      "name": "sodium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "ph": 12.0
+  },
+  "product": {
+    "shape": "cube",
+    "size": {
+      "width": 51.2
+    }
+  },
+  "source": {
+    "synthesis_id_original": "998.json_Fe3O4_2176",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Fe3O4 | method: coprecipitation | solvent: distilled water | solvent.volume: 100.0 | pH: 12.0 | shape: cube | size.width: 51.2 | precursor: FeSO4*7H2O (mass 2.8) | precursor: Fe2(SO4)3 (mass 4.0) | additive: sodium dodecyl sulfate (mass 0.3) | additive: sodium hydroxide"
+}

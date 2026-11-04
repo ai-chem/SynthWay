@@ -1,0 +1,28 @@
+{
+  "synthesis_id": "718.json_γ-A1203_1953",
+  "composition": "γ-A1203",
+  "elements": [
+    "A"
+  ],
+  "method": "chemical precipitation",
+  "solvent": {
+    "name": "deionized water"
+  },
+  "conditions": {
+    "temperature": 40.0,
+    "ph": 4.2
+  },
+  "product": {
+    "size": {
+      "length": 23.8,
+      "width": 23.8,
+      "depth": 23.8
+    }
+  },
+  "source": {
+    "synthesis_id_original": "718.json_γ-A1203_1953",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: γ-A1203 | method: chemical precipitation | solvent: deionized water | temperature: 40.0 | pH: 4.2 | size.length: 23.8 | size.width: 23.8 | size.depth: 23.8"
+}

@@ -1,0 +1,37 @@
+{
+  "synthesis_id": "1623.json_MCM-41_silica_809",
+  "composition": "MCM-41 silica",
+  "elements": [
+    "M",
+    "C"
+  ],
+  "precursors": [
+    {
+      "name": "C16H34BrN",
+      "mass": 1.0,
+      "conc": 2.74
+    },
+    {
+      "name": "Si(OC2H5)4",
+      "conc": 25.7
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water"
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical"
+  },
+  "source": {
+    "synthesis_id_original": "1623.json_MCM-41_silica_809",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: MCM-41 silica | solvent: deionized water | crystalsystem: hexagonal | shape: spherical | precursor: C16H34BrN (mass 1.0; conc 2.74) | precursor: Si(OC2H5)4 (conc 25.7) | additive: sodium hydroxide"
+}

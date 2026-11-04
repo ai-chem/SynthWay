@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "1326.json_SA-M_1740",
+  "composition": "SA-M",
+  "elements": [
+    "S",
+    "A",
+    "M"
+  ],
+  "method": "co-precipitation green synthesis",
+  "precursors": [
+    {
+      "name": "FeCl3*6H2O",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "clove"
+    },
+    {
+      "name": "ammonium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 60.0,
+    "ph": 10.0
+  },
+  "product": {
+    "shape": "irregular"
+  },
+  "pdfno_list": [
+    "00-001-1111"
+  ],
+  "source": {
+    "synthesis_id_original": "1326.json_SA-M_1740",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: SA-M | method: co-precipitation green synthesis | solvent: water | temperature: 60.0 | pH: 10.0 | shape: irregular | precursor: FeCl3*6H2O (conc 100.0) | additive: clove | additive: ammonium hydroxide | pdfno_list: 00-001-1111"
+}

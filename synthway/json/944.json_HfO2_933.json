@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "944.json_HfO2_933",
+  "composition": "HfO2",
+  "elements": [
+    "Hf",
+    "O"
+  ],
+  "method": "sonochemical",
+  "precursors": [
+    {
+      "name": "HfCl4",
+      "conc": 100.0
+    },
+    {
+      "name": "NaOH",
+      "conc": 400.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 500.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "spherical",
+    "size": {
+      "length": 30.0,
+      "width": 30.0,
+      "depth": 30.0
+    }
+  },
+  "pdfno_list": [
+    "06-0318"
+  ],
+  "source": {
+    "synthesis_id_original": "944.json_HfO2_933",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: HfO2 | method: sonochemical | solvent: water | temperature: 500.0 | crystalsystem: monoclinic | shape: spherical | size.length: 30.0 | size.width: 30.0 | size.depth: 30.0 | precursor: HfCl4 (conc 100.0) | precursor: NaOH (conc 400.0) | pdfno_list: 06-0318"
+}

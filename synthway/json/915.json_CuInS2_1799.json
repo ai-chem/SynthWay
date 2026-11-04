@@ -1,0 +1,55 @@
+{
+  "synthesis_id": "915.json_CuInS2_1799",
+  "composition": "CuInS2",
+  "elements": [
+    "Cu",
+    "In",
+    "S"
+  ],
+  "method": "solvo-hydrothermal",
+  "precursors": [
+    {
+      "name": "Cu(Ac)2·H2O",
+      "mass": 199.65
+    },
+    {
+      "name": "In(Ac)3",
+      "mass": 82.03
+    },
+    {
+      "name": "CH4N2S",
+      "mass": 304.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "octadecylamine",
+      "mass": 3240.0
+    }
+  ],
+  "solvent": {
+    "name": "ethanol",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "shape": "spherical",
+    "size": {
+      "length": 8.5,
+      "width": 8.5,
+      "depth": 8.5
+    }
+  },
+  "pdfno_list": [
+    "85-1575"
+  ],
+  "source": {
+    "synthesis_id_original": "915.json_CuInS2_1799",
+    "nodes": 19,
+    "edges": 18
+  },
+  "retrieval_text": "composition: CuInS2 | method: solvo-hydrothermal | solvent: ethanol | solvent.volume: 50.0 | temperature: 200.0 | crystalsystem: tetragonal | shape: spherical | size.length: 8.5 | size.width: 8.5 | size.depth: 8.5 | precursor: Cu(Ac)2·H2O (mass 199.65) | precursor: In(Ac)3 (mass 82.03) | precursor: CH4N2S (mass 304.0) | additive: octadecylamine (mass 3240.0) | pdfno_list: 85-1575"
+}

@@ -1,0 +1,32 @@
+{
+  "synthesis_id": "893.json_Fe7C3@C_1724",
+  "composition": "Fe7C3@C",
+  "elements": [
+    "Fe",
+    "C"
+  ],
+  "method": "high pressure–high temperature synthesis",
+  "precursors": [
+    {
+      "name": "Fe(C5H5)2"
+    }
+  ],
+  "conditions": {
+    "temperature": 560.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 25.0,
+      "width": 25.0,
+      "depth": 25.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "893.json_Fe7C3@C_1724",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: Fe7C3@C | method: high pressure–high temperature synthesis | temperature: 560.0 | crystalsystem: hexagonal | shape: spherical | size.length: 25.0 | size.width: 25.0 | size.depth: 25.0 | precursor: Fe(C5H5)2"
+}

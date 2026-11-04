@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "1240.json_Ag_2302",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "chemical reduction",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "chitosan"
+    },
+    {
+      "name": "ascorbic acid"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 20.95,
+      "width": 20.95,
+      "depth": 20.95
+    }
+  },
+  "pdfno_list": [
+    "04-0783"
+  ],
+  "source": {
+    "synthesis_id_original": "1240.json_Ag_2302",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Ag | method: chemical reduction | solvent: water | crystalsystem: cubic | shape: spherical | size.length: 20.95 | size.width: 20.95 | size.depth: 20.95 | precursor: AgNO3 (conc 10.0) | additive: chitosan | additive: ascorbic acid | pdfno_list: 04-0783"
+}

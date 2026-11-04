@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "2043.json_CdS_434",
+  "composition": "CdS",
+  "elements": [
+    "Cd",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "Cd(SOCPh)2Lut2",
+      "mass": 1.0
+    }
+  ],
+  "solvent": {
+    "name": "nh3",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 26.85
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 4.0,
+      "width": 4.0,
+      "depth": 4.0
+    }
+  },
+  "pdfno_list": [
+    "42-1411, 41-1049"
+  ],
+  "source": {
+    "synthesis_id_original": "2043.json_CdS_434",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: CdS | solvent: nh3 | solvent.volume: 50.0 | temperature: 26.85 | shape: spherical | size.length: 4.0 | size.width: 4.0 | size.depth: 4.0 | precursor: Cd(SOCPh)2Lut2 (mass 1.0) | pdfno_list: 42-1411, 41-1049"
+}

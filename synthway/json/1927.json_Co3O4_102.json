@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1927.json_Co3O4_102",
+  "composition": "Co3O4",
+  "elements": [
+    "Co",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Co(CH3COO)2·4H2O",
+      "mass": 0.5
+    }
+  ],
+  "additives": [
+    {
+      "name": "ammonia"
+    }
+  ],
+  "solvent": {
+    "name": "ethanol and water",
+    "volume": 25.0
+  },
+  "conditions": {
+    "temperature": 150.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "cube",
+    "size": {
+      "length": 20.0,
+      "width": 20.0,
+      "depth": 20.0
+    }
+  },
+  "pdfno_list": [
+    "09-0418"
+  ],
+  "source": {
+    "synthesis_id_original": "1927.json_Co3O4_102",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Co3O4 | solvent: ethanol and water | solvent.volume: 25.0 | temperature: 150.0 | crystalsystem: cubic | shape: cube | size.length: 20.0 | size.width: 20.0 | size.depth: 20.0 | precursor: Co(CH3COO)2·4H2O (mass 0.5) | additive: ammonia | pdfno_list: 09-0418"
+}

@@ -1,0 +1,27 @@
+{
+  "synthesis_id": "377.json_Ag-PEG_3638",
+  "composition": "Ag-PEG",
+  "elements": [
+    "Ag",
+    "P",
+    "E",
+    "G"
+  ],
+  "method": "electrochemical",
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 30.36
+    }
+  },
+  "source": {
+    "synthesis_id_original": "377.json_Ag-PEG_3638",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: Ag-PEG | method: electrochemical | solvent: water | crystalsystem: cubic | shape: spherical | size.length: 30.36"
+}

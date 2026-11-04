@@ -1,0 +1,55 @@
+{
+  "synthesis_id": "1349.json_Ag/ZnO_2635",
+  "composition": "Ag/ZnO",
+  "elements": [
+    "Ag",
+    "Zn",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Zn(CH3CO2)2•2H2O",
+      "mass": 4.4
+    },
+    {
+      "name": "AgNO3",
+      "mass": 0.5
+    }
+  ],
+  "additives": [
+    {
+      "name": "capsicum chinense fruit extract"
+    },
+    {
+      "name": "hydroxide solution",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 85.0,
+    "ph": 7.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal+cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 27.3,
+      "width": 27.3,
+      "depth": 27.3
+    }
+  },
+  "pdfno_list": [
+    "36-1451 04-0783"
+  ],
+  "source": {
+    "synthesis_id_original": "1349.json_Ag/ZnO_2635",
+    "nodes": 19,
+    "edges": 18
+  },
+  "retrieval_text": "composition: Ag/ZnO | method: green synthesis | solvent: distilled water | solvent.volume: 20.0 | temperature: 85.0 | pH: 7.0 | crystalsystem: hexagonal+cubic | shape: spherical | size.length: 27.3 | size.width: 27.3 | size.depth: 27.3 | precursor: Zn(CH3CO2)2•2H2O (mass 4.4) | precursor: AgNO3 (mass 0.5) | additive: capsicum chinense fruit extract | additive: hydroxide solution (conc 1000.0) | pdfno_list: 36-1451 04-0783"
+}

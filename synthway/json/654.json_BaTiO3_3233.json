@@ -1,0 +1,29 @@
+{
+  "synthesis_id": "654.json_BaTiO3_3233",
+  "composition": "BaTiO3",
+  "elements": [
+    "Ba",
+    "Ti",
+    "O"
+  ],
+  "method": "mechanochemical",
+  "precursors": [
+    {
+      "name": "BaCO3"
+    },
+    {
+      "name": "TiO2"
+    }
+  ],
+  "product": {
+    "size": {
+      "length": 10.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "654.json_BaTiO3_3233",
+    "nodes": 5,
+    "edges": 4
+  },
+  "retrieval_text": "composition: BaTiO3 | method: mechanochemical | size.length: 10.0 | precursor: BaCO3 | precursor: TiO2"
+}

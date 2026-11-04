@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "502.json_Silver_nanoparticle@catechol_formaldehyde_resin_microspheres_(Ag@CFRs)_1431",
+  "composition": "Silver nanoparticle@catechol formaldehyde resin microspheres (Ag@CFRs)",
+  "elements": [
+    "Si",
+    "Ag",
+    "C",
+    "F",
+    "Rs"
+  ],
+  "method": "polycondensation",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "hexamethylenetetramine",
+      "conc": 5.0
+    },
+    {
+      "name": "catechol",
+      "conc": 10.0
+    }
+  ],
+  "solvent": {
+    "name": "deionized water"
+  },
+  "conditions": {
+    "temperature": 160.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 880.0,
+      "width": 880.0,
+      "depth": 880.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "502.json_Silver_nanoparticle@catechol_formaldehyde_resin_microspheres_(Ag@CFRs)_1431",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Silver nanoparticle@catechol formaldehyde resin microspheres (Ag@CFRs) | method: polycondensation | solvent: deionized water | temperature: 160.0 | shape: spherical | size.length: 880.0 | size.width: 880.0 | size.depth: 880.0 | precursor: AgNO3 (conc 1.0) | additive: hexamethylenetetramine (conc 5.0) | additive: catechol (conc 10.0)"
+}

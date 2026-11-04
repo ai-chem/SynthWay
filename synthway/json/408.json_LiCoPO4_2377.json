@@ -1,0 +1,29 @@
+{
+  "synthesis_id": "408.json_LiCoPO4_2377",
+  "composition": "LiCoPO4",
+  "elements": [
+    "Li",
+    "Co",
+    "P",
+    "O"
+  ],
+  "method": "high-temperature solid-state",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 700.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 130.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "408.json_LiCoPO4_2377",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: LiCoPO4 | method: high-temperature solid-state | solvent: water | temperature: 700.0 | crystalsystem: cubic | size.length: 130.0"
+}

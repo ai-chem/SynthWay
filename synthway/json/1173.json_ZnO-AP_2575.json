@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "1173.json_ZnO-AP_2575",
+  "composition": "ZnO-AP",
+  "elements": [
+    "Zn",
+    "O",
+    "A",
+    "P"
+  ],
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2",
+      "mass": 0.367
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "mass": 0.128
+    },
+    {
+      "name": "aptes"
+    },
+    {
+      "name": "ammonia"
+    },
+    {
+      "name": "polyethylene glycol 600"
+    }
+  ],
+  "solvent": {
+    "name": "triethylene glycol",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "crystalsystem": "jcpds 01–075–6445",
+    "size": {
+      "length": 6.34,
+      "width": 6.34,
+      "depth": 6.34
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1173.json_ZnO-AP_2575",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: ZnO-AP | solvent: triethylene glycol | solvent.volume: 30.0 | temperature: 60.0 | crystalsystem: jcpds 01–075–6445 | size.length: 6.34 | size.width: 6.34 | size.depth: 6.34 | precursor: Zn(CH3COO)2 (mass 0.367) | additive: sodium hydroxide (mass 0.128) | additive: aptes | additive: ammonia | additive: polyethylene glycol 600"
+}

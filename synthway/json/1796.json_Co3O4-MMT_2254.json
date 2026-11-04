@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "1796.json_Co3O4-MMT_2254",
+  "composition": "Co3O4-MMT",
+  "elements": [
+    "Co",
+    "O",
+    "M",
+    "T"
+  ],
+  "precursors": [
+    {
+      "name": "Co(NO3)2",
+      "mass": 0.291,
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "methylcyclopentadienyl manganese tricarbonyl",
+      "mass": 0.3
+    },
+    {
+      "name": "ammonium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "h2o2:c2h5oh",
+    "volume": 13.0
+  },
+  "conditions": {
+    "temperature": 170.0
+  },
+  "product": {
+    "size": {
+      "length": 15.0,
+      "width": 15.0,
+      "depth": 15.0
+    }
+  },
+  "pdfno_list": [
+    "42-1467"
+  ],
+  "source": {
+    "synthesis_id_original": "1796.json_Co3O4-MMT_2254",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Co3O4-MMT | solvent: h2o2:c2h5oh | solvent.volume: 13.0 | temperature: 170.0 | size.length: 15.0 | size.width: 15.0 | size.depth: 15.0 | precursor: Co(NO3)2 (mass 0.291; conc 1.0) | additive: methylcyclopentadienyl manganese tricarbonyl (mass 0.3) | additive: ammonium hydroxide | pdfno_list: 42-1467"
+}

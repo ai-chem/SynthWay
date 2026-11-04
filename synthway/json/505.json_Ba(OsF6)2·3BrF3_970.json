@@ -1,0 +1,22 @@
+{
+  "synthesis_id": "505.json_Ba(OsF6)2·3BrF3_970",
+  "composition": "Ba(OsF6)2·3BrF3",
+  "elements": [
+    "Ba",
+    "Os",
+    "F",
+    "Br"
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 120.0
+  },
+  "source": {
+    "synthesis_id_original": "505.json_Ba(OsF6)2·3BrF3_970",
+    "nodes": 3,
+    "edges": 2
+  },
+  "retrieval_text": "composition: Ba(OsF6)2·3BrF3 | solvent: water | temperature: 120.0"
+}

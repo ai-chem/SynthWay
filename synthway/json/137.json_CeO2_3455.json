@@ -1,0 +1,35 @@
+{
+  "synthesis_id": "137.json_CeO2_3455",
+  "composition": "CeO2",
+  "elements": [
+    "Ce",
+    "O"
+  ],
+  "method": "sol-gel",
+  "solvent": {
+    "name": "deionized water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 700.0,
+    "ph": 11.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 15.96,
+      "width": 15.96,
+      "depth": 15.96
+    }
+  },
+  "pdfno_list": [
+    "01-081-0792"
+  ],
+  "source": {
+    "synthesis_id_original": "137.json_CeO2_3455",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: CeO2 | method: sol-gel | solvent: deionized water | solvent.volume: 100.0 | temperature: 700.0 | pH: 11.0 | crystalsystem: face-centered cubic | shape: spherical | size.length: 15.96 | size.width: 15.96 | size.depth: 15.96 | pdfno_list: 01-081-0792"
+}

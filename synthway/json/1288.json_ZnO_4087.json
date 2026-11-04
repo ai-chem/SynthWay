@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1288.json_ZnO_4087",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Zn(OAc)2·2H2O",
+      "mass": 1.1
+    }
+  ],
+  "additives": [
+    {
+      "name": "potassium hydroxide",
+      "conc": 1750.0
+    }
+  ],
+  "solvent": {
+    "name": "ethanol and water",
+    "volume": 41.5
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "wire",
+    "size": {
+      "length": 28.9,
+      "width": 28.9,
+      "depth": 28.9
+    }
+  },
+  "pdfno_list": [
+    "79-2205"
+  ],
+  "source": {
+    "synthesis_id_original": "1288.json_ZnO_4087",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: ZnO | solvent: ethanol and water | solvent.volume: 41.5 | temperature: 25.0 | crystalsystem: hexagonal | shape: wire | size.length: 28.9 | size.width: 28.9 | size.depth: 28.9 | precursor: Zn(OAc)2·2H2O (mass 1.1) | additive: potassium hydroxide (conc 1750.0) | pdfno_list: 79-2205"
+}

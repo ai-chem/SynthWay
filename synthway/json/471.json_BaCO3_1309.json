@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "471.json_BaCO3_1309",
+  "composition": "BaCO3",
+  "elements": [
+    "Ba",
+    "C",
+    "O"
+  ],
+  "method": "decomposition",
+  "solvent": {
+    "name": "ethanol",
+    "volume": 25.0
+  },
+  "conditions": {
+    "temperature": 700.0
+  },
+  "product": {
+    "shape": "bean-like",
+    "size": {
+      "length": 70.0,
+      "width": 35.0
+    }
+  },
+  "pdfno_list": [
+    "45-1471"
+  ],
+  "source": {
+    "synthesis_id_original": "471.json_BaCO3_1309",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: BaCO3 | method: decomposition | solvent: ethanol | solvent.volume: 25.0 | temperature: 700.0 | shape: bean-like | size.length: 70.0 | size.width: 35.0 | pdfno_list: 45-1471"
+}

@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "1561.json_Ag_1749",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.75
+    }
+  ],
+  "additives": [
+    {
+      "name": "artemisia herba-alba oil extract"
+    },
+    {
+      "name": "mentha oil extract"
+    },
+    {
+      "name": "rosmarinus oil extract"
+    },
+    {
+      "name": "ranunculus oil extract"
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 200.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 40.0,
+    "ph": 12.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "oval-shape"
+  },
+  "pdfno_list": [
+    "04-0783"
+  ],
+  "source": {
+    "synthesis_id_original": "1561.json_Ag_1749",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: Ag | method: green synthesis | solvent: water | temperature: 40.0 | pH: 12.0 | crystalsystem: cubic | shape: oval-shape | precursor: AgNO3 (conc 1.75) | additive: artemisia herba-alba oil extract | additive: mentha oil extract | additive: rosmarinus oil extract | additive: ranunculus oil extract | additive: sodium hydroxide (conc 200.0) | pdfno_list: 04-0783"
+}

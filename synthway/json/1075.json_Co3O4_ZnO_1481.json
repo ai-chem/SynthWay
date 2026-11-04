@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "1075.json_Co3O4/ZnO_1481",
+  "composition": "Co3O4/ZnO",
+  "elements": [
+    "Co",
+    "O",
+    "Zn"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2·2H2O",
+      "mass": 0.439
+    },
+    {
+      "name": "Co(CH3COO)2·4H2O",
+      "mass": 0.005
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 0.5
+    }
+  ],
+  "solvent": {
+    "name": "ethanol",
+    "volume": 70.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "source": {
+    "synthesis_id_original": "1075.json_Co3O4/ZnO_1481",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Co3O4/ZnO | method: hydrothermal | solvent: ethanol | solvent.volume: 70.0 | temperature: 180.0 | precursor: Zn(CH3COO)2·2H2O (mass 0.439) | precursor: Co(CH3COO)2·4H2O (mass 0.005) | additive: polyvinylpyrrolidone (mass 0.5)"
+}

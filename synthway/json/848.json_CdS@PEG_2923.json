@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "848.json_CdS@PEG_2923",
+  "composition": "CdS@PEG",
+  "elements": [
+    "Cd",
+    "S",
+    "P",
+    "E",
+    "G"
+  ],
+  "precursors": [
+    {
+      "name": "CdCl2",
+      "conc": 2.0
+    },
+    {
+      "name": "Na2S",
+      "conc": 2.0
+    },
+    {
+      "name": "PEG"
+    },
+    {
+      "name": "PEI"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 20.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 4.0,
+      "width": 4.0,
+      "depth": 4.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "848.json_CdS@PEG_2923",
+    "nodes": 12,
+    "edges": 12
+  },
+  "retrieval_text": "composition: CdS@PEG | solvent: water | temperature: 20.0 | shape: spherical | size.length: 4.0 | size.width: 4.0 | size.depth: 4.0 | precursor: CdCl2 (conc 2.0) | precursor: Na2S (conc 2.0) | precursor: PEG | precursor: PEI"
+}

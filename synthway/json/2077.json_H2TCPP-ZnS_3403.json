@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "2077.json_H2TCPP-ZnS_3403",
+  "composition": "H2TCPP-ZnS",
+  "elements": [
+    "H",
+    "T",
+    "C",
+    "P",
+    "Zn",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "hydrochloric acid",
+      "conc": 500.0
+    },
+    {
+      "name": "thioacetamide",
+      "conc": 400.0
+    },
+    {
+      "name": "tetrakis(carboxyphenyl)porphyrin",
+      "mass": 0.2
+    }
+  ],
+  "solvent": {
+    "name": "hydrochloric acid",
+    "volume": 250.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 7.5,
+      "width": 7.5,
+      "depth": 7.5
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2077.json_H2TCPP-ZnS_3403",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: H2TCPP-ZnS | solvent: hydrochloric acid | solvent.volume: 250.0 | crystalsystem: cubic | size.length: 7.5 | size.width: 7.5 | size.depth: 7.5 | precursor: Zn(CH3COO)2 (conc 1.0) | additive: hydrochloric acid (conc 500.0) | additive: thioacetamide (conc 400.0) | additive: tetrakis(carboxyphenyl)porphyrin (mass 0.2)"
+}

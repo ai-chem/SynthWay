@@ -1,0 +1,30 @@
+{
+  "synthesis_id": "175.json_PbS_665",
+  "composition": "PbS",
+  "elements": [
+    "Pb",
+    "S"
+  ],
+  "solvent": {
+    "name": "na2s",
+    "volume": 100.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "wire",
+    "size": {
+      "length": 1000.0,
+      "width": 100.0,
+      "depth": 100.0
+    }
+  },
+  "pdfno_list": [
+    "05-0592"
+  ],
+  "source": {
+    "synthesis_id_original": "175.json_PbS_665",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: PbS | solvent: na2s | solvent.volume: 100.0 | crystalsystem: cubic | shape: wire | size.length: 1000.0 | size.width: 100.0 | size.depth: 100.0 | pdfno_list: 05-0592"
+}

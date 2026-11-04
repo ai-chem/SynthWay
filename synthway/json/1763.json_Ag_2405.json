@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1763.json_Ag_2405",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "chemical reduction",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "carboxymethyl cellulose",
+      "conc": 500.0
+    },
+    {
+      "name": "glucose",
+      "conc": 100.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 32.0
+  },
+  "conditions": {
+    "temperature": 30.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 10.0,
+      "width": 10.0,
+      "depth": 10.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1763.json_Ag_2405",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: Ag | method: chemical reduction | solvent: water | solvent.volume: 32.0 | temperature: 30.0 | crystalsystem: cubic | shape: spherical | size.length: 10.0 | size.width: 10.0 | size.depth: 10.0 | precursor: AgNO3 (conc 1.0) | additive: carboxymethyl cellulose (conc 500.0) | additive: glucose (conc 100.0)"
+}

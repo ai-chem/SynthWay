@@ -1,0 +1,61 @@
+{
+  "synthesis_id": "2295.json_FA-conjugated_Fe3O4_3539",
+  "composition": "FA-conjugated Fe3O4",
+  "elements": [
+    "F",
+    "A",
+    "Fe",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Fe3O4 (NPs)",
+      "mass": 0.13
+    },
+    {
+      "name": "C19H19N7O6",
+      "mass": 0.1,
+      "conc": 0.23
+    },
+    {
+      "name": "EDC",
+      "mass": 0.036,
+      "conc": 0.19
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 0.5
+    },
+    {
+      "name": "tetraethylorthosilicate",
+      "mass": 0.1,
+      "conc": 0.48
+    },
+    {
+      "name": "aptms",
+      "conc": 1.1
+    }
+  ],
+  "solvent": {
+    "name": "isopropanol",
+    "volume": 100.0
+  },
+  "conditions": {
+    "ph": 10.0
+  },
+  "product": {
+    "size": {
+      "length": 18.4,
+      "width": 18.4,
+      "depth": 18.4
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2295.json_FA-conjugated_Fe3O4_3539",
+    "nodes": 22,
+    "edges": 21
+  },
+  "retrieval_text": "composition: FA-conjugated Fe3O4 | solvent: isopropanol | solvent.volume: 100.0 | pH: 10.0 | size.length: 18.4 | size.width: 18.4 | size.depth: 18.4 | precursor: Fe3O4 (NPs) (mass 0.13) | precursor: C19H19N7O6 (mass 0.1; conc 0.23) | precursor: EDC (mass 0.036; conc 0.19) | additive: polyvinylpyrrolidone (mass 0.5) | additive: tetraethylorthosilicate (mass 0.1; conc 0.48) | additive: aptms (conc 1.1)"
+}

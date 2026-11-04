@@ -1,0 +1,37 @@
+{
+  "synthesis_id": "1178.json_Copper_ions-based_3721",
+  "composition": "Copper ions-based",
+  "elements": [
+    "Co"
+  ],
+  "method": "coprecipitation green synthesis",
+  "precursors": [
+    {
+      "name": "Cu(NO3)2*3H2O",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "deionized water"
+    },
+    {
+      "name": "sodium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 100.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic"
+  },
+  "source": {
+    "synthesis_id_original": "1178.json_Copper_ions-based_3721",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: Copper ions-based | method: coprecipitation green synthesis | solvent: water | temperature: 100.0 | crystalsystem: monoclinic | precursor: Cu(NO3)2*3H2O (conc 100.0) | additive: deionized water | additive: sodium hydroxide"
+}

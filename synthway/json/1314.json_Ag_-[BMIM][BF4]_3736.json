@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "1314.json_Ag_-[BMIM][BF4]_3736",
+  "composition": "Ag -[BMIM][BF4]",
+  "elements": [
+    "Ag",
+    "B",
+    "M",
+    "I",
+    "F"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "mass": 0.22,
+      "conc": 30.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "trisodium citrate",
+      "mass": 0.15,
+      "conc": 30.0
+    }
+  ],
+  "solvent": {
+    "name": "[bmim][bf4]",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 40.0,
+    "ph": 8.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 360.0,
+      "width": 360.0,
+      "depth": 360.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1314.json_Ag_-[BMIM][BF4]_3736",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: Ag -[BMIM][BF4] | method: green synthesis | solvent: [bmim][bf4] | solvent.volume: 30.0 | temperature: 40.0 | pH: 8.0 | crystalsystem: cubic | shape: spherical | size.length: 360.0 | size.width: 360.0 | size.depth: 360.0 | precursor: AgNO3 (mass 0.22; conc 30.0) | additive: trisodium citrate (mass 0.15; conc 30.0)"
+}

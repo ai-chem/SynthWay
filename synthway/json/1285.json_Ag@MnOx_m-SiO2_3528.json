@@ -1,0 +1,51 @@
+{
+  "synthesis_id": "1285.json_Ag@MnOx/m-SiO2_3528",
+  "composition": "Ag@MnOx/m-SiO2",
+  "elements": [
+    "Ag",
+    "Mn",
+    "Ox",
+    "Si",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 0.5
+    },
+    {
+      "name": "DDA,>98 %",
+      "conc": 10.0
+    },
+    {
+      "name": "Mn(NO3)2",
+      "conc": 3.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "tetraethylorthosilicate"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water+ethanol",
+    "volume": 87.0
+  },
+  "conditions": {
+    "temperature": 45.0
+  },
+  "product": {
+    "shape": "nano-spherical",
+    "size": {
+      "length": 100.0,
+      "width": 100.0,
+      "depth": 100.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1285.json_Ag@MnOx/m-SiO2_3528",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Ag@MnOx/m-SiO2 | solvent: deionized water+ethanol | solvent.volume: 87.0 | temperature: 45.0 | shape: nano-spherical | size.length: 100.0 | size.width: 100.0 | size.depth: 100.0 | precursor: AgNO3 (conc 0.5) | precursor: DDA,>98 % (conc 10.0) | precursor: Mn(NO3)2 (conc 3.0) | additive: tetraethylorthosilicate"
+}

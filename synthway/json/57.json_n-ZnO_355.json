@@ -1,0 +1,32 @@
+{
+  "synthesis_id": "57.json_n-ZnO_355",
+  "composition": "n-ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "solvent": {
+    "name": "distilled water"
+  },
+  "conditions": {
+    "temperature": 450.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "wire",
+    "size": {
+      "length": 272.5,
+      "width": 272.5,
+      "depth": 272.5
+    }
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "57.json_n-ZnO_355",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: n-ZnO | solvent: distilled water | temperature: 450.0 | crystalsystem: hexagonal | shape: wire | size.length: 272.5 | size.width: 272.5 | size.depth: 272.5 | pdfno_list: 36-1451"
+}

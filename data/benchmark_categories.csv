@@ -1,0 +1,11 @@
+Factor,Group,Value
+Composition frequency, composition_top, Most common composition
+, composition_rare," Rare composition, appears exactly once"
+Formula type (simple/complex), formula_simple," Simple formula: e.g., single-element metals, binary oxides"
+, formula_complex," Complex formula: multicomponent systems, doped systems, core–shell/composites"
+Synthesis method frequency, method_frequent, Frequently used synthesis method
+, method_rare, Rare method (single case)
+Recipe complexity, recipe_minimal," Minimalist synthesis: one precursor, no additives"
+, recipe_normal, Moderate complexity: 1-2 precursors + at least one additive
+, recipe_hardcore, Multicomponent synthesis: ≥4 precursors and/or ≥3 additives
+, recipe_seed_mediated, Seed-mediated synthesis

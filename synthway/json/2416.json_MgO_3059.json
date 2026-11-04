@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "2416.json_MgO_3059",
+  "composition": "MgO",
+  "elements": [
+    "Mg",
+    "O"
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 500.0,
+    "ph": 12.5
+  },
+  "product": {
+    "shape": "spherical and cubic",
+    "size": {
+      "length": 55.0,
+      "width": 55.0,
+      "depth": 55.0
+    }
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "2416.json_MgO_3059",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: MgO | solvent: deionized water | solvent.volume: 100.0 | temperature: 500.0 | pH: 12.5 | shape: spherical and cubic | size.length: 55.0 | size.width: 55.0 | size.depth: 55.0 | pdfno_list: 36-1451"
+}

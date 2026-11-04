@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "719.json_Ag_1279",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "reduction",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 0.74
+    },
+    {
+      "name": "Na3C6H5O7",
+      "conc": 6.8
+    }
+  ],
+  "additives": [
+    {
+      "name": "tannic acid",
+      "conc": 0.0118
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "width": 26.6
+    }
+  },
+  "source": {
+    "synthesis_id_original": "719.json_Ag_1279",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Ag | method: reduction | solvent: water | solvent.volume: 100.0 | temperature: 60.0 | shape: spherical | size.width: 26.6 | precursor: AgNO3 (conc 0.74) | precursor: Na3C6H5O7 (conc 6.8) | additive: tannic acid (conc 0.0118)"
+}

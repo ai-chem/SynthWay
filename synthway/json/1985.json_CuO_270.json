@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1985.json_CuO_270",
+  "composition": "CuO",
+  "elements": [
+    "Cu",
+    "O"
+  ],
+  "method": "thermal reduction",
+  "precursors": [
+    {
+      "name": "Cu(NO3)2⋅3H2O",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "citric acid",
+      "conc": 1.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 700.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "size": {
+      "length": 29.0,
+      "width": 29.0,
+      "depth": 29.0
+    }
+  },
+  "pdfno_list": [
+    "801916"
+  ],
+  "source": {
+    "synthesis_id_original": "1985.json_CuO_270",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: CuO | method: thermal reduction | solvent: water | temperature: 700.0 | crystalsystem: monoclinic | size.length: 29.0 | size.width: 29.0 | size.depth: 29.0 | precursor: Cu(NO3)2⋅3H2O (conc 1.0) | additive: citric acid (conc 1.0) | pdfno_list: 801916"
+}

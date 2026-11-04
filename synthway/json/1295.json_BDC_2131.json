@@ -1,0 +1,36 @@
+{
+  "synthesis_id": "1295.json_BDC_2131",
+  "composition": "BDC",
+  "elements": [
+    "B",
+    "D",
+    "C"
+  ],
+  "precursors": [
+    {
+      "name": "PET bottles",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 10000.0
+    },
+    {
+      "name": "sulfuric acid"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "ph": 2.0
+  },
+  "source": {
+    "synthesis_id_original": "1295.json_BDC_2131",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: BDC | solvent: water | pH: 2.0 | precursor: PET bottles (conc 100.0) | additive: sodium hydroxide (conc 10000.0) | additive: sulfuric acid"
+}

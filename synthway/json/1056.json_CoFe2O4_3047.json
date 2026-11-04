@@ -1,0 +1,53 @@
+{
+  "synthesis_id": "1056.json_CoFe2O4_3047",
+  "composition": "CoFe2O4",
+  "elements": [
+    "Co",
+    "Fe",
+    "O"
+  ],
+  "method": "thermal decomposition",
+  "precursors": [
+    {
+      "name": "CoCl2",
+      "mass": 0.576
+    },
+    {
+      "name": "FeCl3",
+      "mass": 0.683
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium acetate",
+      "mass": 0.5
+    },
+    {
+      "name": "ethanolamine",
+      "mass": 15.8
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 150.0
+  },
+  "product": {
+    "crystalsystem": "cubic spinel",
+    "shape": "spherical",
+    "size": {
+      "width": 35.0
+    }
+  },
+  "pdfno_list": [
+    "03-0864"
+  ],
+  "source": {
+    "synthesis_id_original": "1056.json_CoFe2O4_3047",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: CoFe2O4 | method: thermal decomposition | solvent: ethylene glycol | solvent.volume: 30.0 | temperature: 150.0 | crystalsystem: cubic spinel | shape: spherical | size.width: 35.0 | precursor: CoCl2 (mass 0.576) | precursor: FeCl3 (mass 0.683) | additive: sodium acetate (mass 0.5) | additive: ethanolamine (mass 15.8) | pdfno_list: 03-0864"
+}

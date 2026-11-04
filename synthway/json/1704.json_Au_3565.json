@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1704.json_Au_3565",
+  "composition": "Au",
+  "elements": [
+    "Au"
+  ],
+  "precursors": [
+    {
+      "name": "aqueous tetrachloroauric acid trihydrate (HAuCl4·3H2O)",
+      "conc": 2.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "s. wightiana extract",
+      "mass": 50.0
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 500.0
+  },
+  "conditions": {
+    "temperature": 52.5
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "cube",
+    "size": {
+      "length": 15.96,
+      "width": 15.96,
+      "depth": 15.96
+    }
+  },
+  "pdfno_list": [
+    "040784"
+  ],
+  "source": {
+    "synthesis_id_original": "1704.json_Au_3565",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Au | solvent: deionized water | solvent.volume: 500.0 | temperature: 52.5 | crystalsystem: cubic | shape: cube | size.length: 15.96 | size.width: 15.96 | size.depth: 15.96 | precursor: aqueous tetrachloroauric acid trihydrate (HAuCl4·3H2O) (conc 2.0) | additive: s. wightiana extract (mass 50.0) | pdfno_list: 040784"
+}

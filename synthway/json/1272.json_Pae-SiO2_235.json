@@ -1,0 +1,36 @@
+{
+  "synthesis_id": "1272.json_Pae-SiO2_235",
+  "composition": "Pae-SiO2",
+  "elements": [
+    "Pa",
+    "Si",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "SiO2-NH2 (NPs)",
+      "mass": 0.025
+    },
+    {
+      "name": "C23H28O11"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water"
+  },
+  "product": {
+    "crystalsystem": "amorphous",
+    "shape": "spherical",
+    "size": {
+      "length": 226.0,
+      "width": 226.0,
+      "depth": 226.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1272.json_Pae-SiO2_235",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Pae-SiO2 | solvent: distilled water | crystalsystem: amorphous | shape: spherical | size.length: 226.0 | size.width: 226.0 | size.depth: 226.0 | precursor: SiO2-NH2 (NPs) (mass 0.025) | precursor: C23H28O11"
+}

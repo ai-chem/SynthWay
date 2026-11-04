@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "1536.json_Se_1788",
+  "composition": "Se",
+  "elements": [
+    "Se"
+  ],
+  "method": "bio-reduction",
+  "precursors": [
+    {
+      "name": "SeO3^2-",
+      "conc": 0.5
+    }
+  ],
+  "additives": [
+    {
+      "name": "halomonas boliviensis strain h-10"
+    },
+    {
+      "name": "r2a"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 190.0,
+      "width": 190.0,
+      "depth": 190.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1536.json_Se_1788",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Se | method: bio-reduction | solvent: water | shape: spherical | size.length: 190.0 | size.width: 190.0 | size.depth: 190.0 | precursor: SeO3^2- (conc 0.5) | additive: halomonas boliviensis strain h-10 | additive: r2a"
+}

@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "868.json_AuPd_2869",
+  "composition": "AuPd",
+  "elements": [
+    "Au",
+    "Pd"
+  ],
+  "precursors": [
+    {
+      "name": "HAuCl4",
+      "mass": 1019.0,
+      "conc": 5.0
+    },
+    {
+      "name": "K2PdCl4",
+      "mass": 415.0,
+      "conc": 5.0
+    },
+    {
+      "name": "C6H8O6",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 47.0
+  },
+  "product": {
+    "shape": "flower-like",
+    "size": {
+      "length": 28.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "868.json_AuPd_2869",
+    "nodes": 13,
+    "edges": 13
+  },
+  "retrieval_text": "composition: AuPd | solvent: water | solvent.volume: 47.0 | shape: flower-like | size.length: 28.0 | precursor: HAuCl4 (mass 1019.0; conc 5.0) | precursor: K2PdCl4 (mass 415.0; conc 5.0) | precursor: C6H8O6 (conc 100.0) | additive: polyvinylpyrrolidone"
+}

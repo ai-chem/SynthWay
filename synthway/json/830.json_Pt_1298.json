@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "830.json_Pt_1298",
+  "composition": "Pt",
+  "elements": [
+    "Pt"
+  ],
+  "method": "modified polyol process",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 60.0
+    },
+    {
+      "name": "H2PtCl6*6H2O",
+      "conc": 0.625
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone",
+      "conc": 375.0
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol"
+  },
+  "product": {
+    "shape": "octahedra",
+    "size": {
+      "width": 9.8
+    }
+  },
+  "source": {
+    "synthesis_id_original": "830.json_Pt_1298",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Pt | method: modified polyol process | solvent: ethylene glycol | shape: octahedra | size.width: 9.8 | precursor: AgNO3 (conc 60.0) | precursor: H2PtCl6*6H2O (conc 0.625) | additive: polyvinylpyrrolidone (conc 375.0)"
+}

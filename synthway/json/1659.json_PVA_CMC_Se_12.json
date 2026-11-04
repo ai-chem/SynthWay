@@ -1,0 +1,36 @@
+{
+  "synthesis_id": "1659.json_PVA/CMC/Se_12",
+  "composition": "PVA/CMC/Se",
+  "elements": [
+    "P",
+    "V",
+    "A",
+    "C",
+    "M",
+    "Se"
+  ],
+  "method": "casting",
+  "precursors": [
+    {
+      "name": "PVA"
+    },
+    {
+      "name": "CMC"
+    },
+    {
+      "name": "Se (NPs)"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 40.0
+  },
+  "source": {
+    "synthesis_id_original": "1659.json_PVA/CMC/Se_12",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: PVA/CMC/Se | method: casting | solvent: water | temperature: 40.0 | precursor: PVA | precursor: CMC | precursor: Se (NPs)"
+}

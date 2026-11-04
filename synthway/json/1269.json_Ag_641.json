@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "1269.json_Ag_641",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3"
+    }
+  ],
+  "additives": [
+    {
+      "name": "glucose"
+    },
+    {
+      "name": "eryngium billardieri methanolic extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 37.0,
+    "ph": 7.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 59.5,
+      "width": 59.5,
+      "depth": 59.5
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1269.json_Ag_641",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Ag | method: green synthesis | solvent: water | temperature: 37.0 | pH: 7.0 | shape: spherical | size.length: 59.5 | size.width: 59.5 | size.depth: 59.5 | precursor: AgNO3 | additive: glucose | additive: eryngium billardieri methanolic extract"
+}

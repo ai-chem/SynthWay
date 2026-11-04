@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "2251.json_Au_2946",
+  "composition": "Au",
+  "elements": [
+    "Au"
+  ],
+  "method": "modified frens method",
+  "precursors": [
+    {
+      "name": "HAuCl4"
+    }
+  ],
+  "additives": [
+    {
+      "name": "trisodium citrate"
+    },
+    {
+      "name": "tris"
+    }
+  ],
+  "seeds": [
+    {
+      "name": "AgNO3"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 98.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 38.0,
+      "width": 38.0,
+      "depth": 38.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2251.json_Au_2946",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Au | method: modified frens method | solvent: water | temperature: 98.0 | shape: spherical | size.length: 38.0 | size.width: 38.0 | size.depth: 38.0 | precursor: HAuCl4 | additive: trisodium citrate | additive: tris | seed: AgNO3"
+}

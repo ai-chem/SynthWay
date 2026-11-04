@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "726.json_Au_3698",
+  "composition": "Au",
+  "elements": [
+    "Au"
+  ],
+  "precursors": [
+    {
+      "name": "HAuCl4*3H2O",
+      "mass": 0.005
+    },
+    {
+      "name": "Na3C6H5O7*2H2O",
+      "mass": 0.015
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 50.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "width": 14.2
+    }
+  },
+  "source": {
+    "synthesis_id_original": "726.json_Au_3698",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: Au | solvent: deionized water | solvent.volume: 50.0 | shape: spherical | size.width: 14.2 | precursor: HAuCl4*3H2O (mass 0.005) | precursor: Na3C6H5O7*2H2O (mass 0.015)"
+}

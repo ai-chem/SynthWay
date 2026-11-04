@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "1052.json_ZnO_625",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Zn(NO₃)₂*6H2O",
+      "conc": 500.0
+    },
+    {
+      "name": "NaOH",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal wurtzite",
+    "shape": "spherical",
+    "size": {
+      "width": 31.5
+    }
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "1052.json_ZnO_625",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: ZnO | solvent: water | temperature: 80.0 | crystalsystem: hexagonal wurtzite | shape: spherical | size.width: 31.5 | precursor: Zn(NO₃)₂*6H2O (conc 500.0) | precursor: NaOH (conc 1000.0) | pdfno_list: 36-1451"
+}

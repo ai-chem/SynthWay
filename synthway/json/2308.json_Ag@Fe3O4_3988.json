@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "2308.json_Ag@Fe3O4_3988",
+  "composition": "Ag@Fe3O4",
+  "elements": [
+    "Ag",
+    "Fe",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Fe(NO3)3·9H2O",
+      "mass": 1.616
+    },
+    {
+      "name": "CH3COONa·3H2O",
+      "mass": 4.763
+    },
+    {
+      "name": "AgNO3",
+      "mass": 0.1
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 40.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 140.0,
+      "width": 140.0,
+      "depth": 140.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2308.json_Ag@Fe3O4_3988",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Ag@Fe3O4 | solvent: ethylene glycol | solvent.volume: 40.0 | temperature: 200.0 | shape: spherical | size.length: 140.0 | size.width: 140.0 | size.depth: 140.0 | precursor: Fe(NO3)3·9H2O (mass 1.616) | precursor: CH3COONa·3H2O (mass 4.763) | precursor: AgNO3 (mass 0.1)"
+}

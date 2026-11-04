@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "491.json_α-Fe2O3_2876",
+  "composition": "α-Fe2O3",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "FeCl3",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "piper betel leaf extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "rhombohedral",
+    "shape": "cube",
+    "size": {
+      "length": 25.17,
+      "width": 25.17,
+      "depth": 25.17
+    }
+  },
+  "pdfno_list": [
+    "33-0664"
+  ],
+  "source": {
+    "synthesis_id_original": "491.json_α-Fe2O3_2876",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: α-Fe2O3 | method: green synthesis | solvent: water | crystalsystem: rhombohedral | shape: cube | size.length: 25.17 | size.width: 25.17 | size.depth: 25.17 | precursor: FeCl3 (conc 100.0) | additive: piper betel leaf extract | pdfno_list: 33-0664"
+}

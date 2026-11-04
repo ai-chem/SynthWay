@@ -1,0 +1,37 @@
+{
+  "synthesis_id": "1029.json_ampicillin_loaded_ZrO2_726",
+  "composition": "ampicillin loaded ZrO2",
+  "elements": [
+    "Zr",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "ZrO2"
+    }
+  ],
+  "additives": [
+    {
+      "name": "ampicillin"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "size": {
+      "length": 73.99,
+      "width": 73.99,
+      "depth": 73.99
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1029.json_ampicillin_loaded_ZrO2_726",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: ampicillin loaded ZrO2 | solvent: water | temperature: 60.0 | size.length: 73.99 | size.width: 73.99 | size.depth: 73.99 | precursor: ZrO2 | additive: ampicillin"
+}

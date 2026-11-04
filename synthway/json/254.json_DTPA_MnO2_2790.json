@@ -1,0 +1,27 @@
+{
+  "synthesis_id": "254.json_DTPA/MnO2_2790",
+  "composition": "DTPA/MnO2",
+  "elements": [
+    "D",
+    "T",
+    "P",
+    "A",
+    "Mn",
+    "O"
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 20.0
+  },
+  "product": {
+    "size": {
+      "length": 224.5
+    }
+  },
+  "source": {
+    "synthesis_id_original": "254.json_DTPA/MnO2_2790",
+    "nodes": 4,
+    "edges": 3
+  },
+  "retrieval_text": "composition: DTPA/MnO2 | solvent: water | solvent.volume: 20.0 | size.length: 224.5"
+}

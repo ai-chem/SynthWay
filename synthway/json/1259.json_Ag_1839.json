@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "1259.json_Ag_1839",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "biogenic synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "mass": 0.424,
+      "conc": 5.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "potato extract"
+    }
+  ],
+  "solvent": {
+    "name": "distilled deionized water"
+  },
+  "product": {
+    "shape": "nearly spherical",
+    "size": {
+      "length": 13.65,
+      "width": 13.65,
+      "depth": 13.65
+    }
+  },
+  "pdfno_list": [
+    "04-0783"
+  ],
+  "source": {
+    "synthesis_id_original": "1259.json_Ag_1839",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Ag | method: biogenic synthesis | solvent: distilled deionized water | shape: nearly spherical | size.length: 13.65 | size.width: 13.65 | size.depth: 13.65 | precursor: AgNO3 (mass 0.424; conc 5.0) | additive: potato extract | pdfno_list: 04-0783"
+}

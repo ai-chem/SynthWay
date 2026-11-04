@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "522.json_BaTiErO3_1226",
+  "composition": "BaTiErO3",
+  "elements": [
+    "Ba",
+    "Ti",
+    "Er",
+    "O"
+  ],
+  "method": "sol-gel",
+  "solvent": {
+    "name": "isopropylic alcohol"
+  },
+  "conditions": {
+    "temperature": 700.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "shape": "films",
+    "size": {
+      "length": 30.0
+    }
+  },
+  "pdfno_list": [
+    "05-0626"
+  ],
+  "source": {
+    "synthesis_id_original": "522.json_BaTiErO3_1226",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: BaTiErO3 | method: sol-gel | solvent: isopropylic alcohol | temperature: 700.0 | crystalsystem: tetragonal | shape: films | size.length: 30.0 | pdfno_list: 05-0626"
+}

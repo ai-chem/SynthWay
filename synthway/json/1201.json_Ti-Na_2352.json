@@ -1,0 +1,35 @@
+{
+  "synthesis_id": "1201.json_Ti-Na_2352",
+  "composition": "Ti-Na",
+  "elements": [
+    "Ti",
+    "Na"
+  ],
+  "method": "chemical and thermal treatment",
+  "precursors": [
+    {
+      "name": "Ti"
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 5000.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "shape": "sheets"
+  },
+  "source": {
+    "synthesis_id_original": "1201.json_Ti-Na_2352",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: Ti-Na | method: chemical and thermal treatment | solvent: water | temperature: 60.0 | shape: sheets | precursor: Ti | additive: sodium hydroxide (conc 5000.0)"
+}

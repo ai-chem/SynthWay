@@ -1,0 +1,51 @@
+{
+  "synthesis_id": "1055.json_Co_1243",
+  "composition": "Co",
+  "elements": [
+    "Co"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "CoCl2·6H2O",
+      "mass": 0.1064,
+      "conc": 350.0
+    },
+    {
+      "name": "KOH",
+      "conc": 1000.0
+    },
+    {
+      "name": "N2H4*H2O",
+      "conc": 1000.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleic acid",
+      "conc": 50.0
+    }
+  ],
+  "solvent": {
+    "name": "deionized water"
+  },
+  "conditions": {
+    "temperature": 160.0
+  },
+  "product": {
+    "crystalsystem": "hcp",
+    "shape": "spherical",
+    "size": {
+      "width": 22.89
+    }
+  },
+  "pdfno_list": [
+    "05-0727"
+  ],
+  "source": {
+    "synthesis_id_original": "1055.json_Co_1243",
+    "nodes": 16,
+    "edges": 16
+  },
+  "retrieval_text": "composition: Co | method: hydrothermal | solvent: deionized water | temperature: 160.0 | crystalsystem: hcp | shape: spherical | size.width: 22.89 | precursor: CoCl2·6H2O (mass 0.1064; conc 350.0) | precursor: KOH (conc 1000.0) | precursor: N2H4*H2O (conc 1000.0) | additive: oleic acid (conc 50.0) | pdfno_list: 05-0727"
+}

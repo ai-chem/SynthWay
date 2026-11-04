@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "1352.json_Zn-MMO1_2285",
+  "composition": "Zn-MMO1",
+  "elements": [
+    "Zn",
+    "M",
+    "O"
+  ],
+  "method": "hydrothermal coprecipitation",
+  "precursors": [
+    {
+      "name": "ZnO"
+    },
+    {
+      "name": "wastewater (Mg2+, Al3+, Fe3+)"
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 8000.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 150.0,
+    "ph": 10.0
+  },
+  "product": {
+    "shape": "lamellar"
+  },
+  "source": {
+    "synthesis_id_original": "1352.json_Zn-MMO1_2285",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Zn-MMO1 | method: hydrothermal coprecipitation | solvent: water | temperature: 150.0 | pH: 10.0 | shape: lamellar | precursor: ZnO | precursor: wastewater (Mg2+, Al3+, Fe3+) | additive: sodium hydroxide (conc 8000.0)"
+}

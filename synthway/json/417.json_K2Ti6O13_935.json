@@ -1,0 +1,28 @@
+{
+  "synthesis_id": "417.json_K2Ti6O13_935",
+  "composition": "K2Ti6O13",
+  "elements": [
+    "K",
+    "Ti",
+    "O"
+  ],
+  "method": "sol-gel",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 350.0
+  },
+  "product": {
+    "shape": "nanobelt"
+  },
+  "pdfno_list": [
+    "74-274"
+  ],
+  "source": {
+    "synthesis_id_original": "417.json_K2Ti6O13_935",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: K2Ti6O13 | method: sol-gel | solvent: water | temperature: 350.0 | shape: nanobelt | pdfno_list: 74-274"
+}

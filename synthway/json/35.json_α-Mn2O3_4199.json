@@ -1,0 +1,29 @@
+{
+  "synthesis_id": "35.json_α-Mn2O3_4199",
+  "composition": "α-Mn2O3",
+  "elements": [
+    "Mn",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "solvent": {
+    "name": "distilled water",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "dumbbell and microspheres"
+  },
+  "pdfno_list": [
+    "78-390"
+  ],
+  "source": {
+    "synthesis_id_original": "35.json_α-Mn2O3_4199",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: α-Mn2O3 | method: hydrothermal | solvent: distilled water | solvent.volume: 20.0 | temperature: 200.0 | crystalsystem: cubic | shape: dumbbell and microspheres | pdfno_list: 78-390"
+}

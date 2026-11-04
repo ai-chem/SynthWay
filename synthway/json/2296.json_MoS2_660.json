@@ -1,0 +1,61 @@
+{
+  "synthesis_id": "2296.json_MoS2_660",
+  "composition": "MoS2",
+  "elements": [
+    "Mo",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "(NH4)6Mo7O24*4H2O",
+      "conc": 12.0
+    },
+    {
+      "name": "CH4N2S",
+      "conc": 336.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "cetyltrimethylammonium bromide",
+      "mass": 0.037
+    },
+    {
+      "name": "sodium dodecylbenzene sulfonate",
+      "mass": 0.055
+    },
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 0.0625
+    },
+    {
+      "name": "hydrochloric acid"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 25.0
+  },
+  "conditions": {
+    "temperature": 240.0,
+    "ph": 2.0
+  },
+  "product": {
+    "crystalsystem": "two-layer hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 300.0,
+      "width": 300.0,
+      "depth": 300.0
+    }
+  },
+  "pdfno_list": [
+    "37-1492"
+  ],
+  "source": {
+    "synthesis_id_original": "2296.json_MoS2_660",
+    "nodes": 22,
+    "edges": 21
+  },
+  "retrieval_text": "composition: MoS2 | solvent: water | solvent.volume: 25.0 | temperature: 240.0 | pH: 2.0 | crystalsystem: two-layer hexagonal | shape: spherical | size.length: 300.0 | size.width: 300.0 | size.depth: 300.0 | precursor: (NH4)6Mo7O24*4H2O (conc 12.0) | precursor: CH4N2S (conc 336.0) | additive: cetyltrimethylammonium bromide (mass 0.037) | additive: sodium dodecylbenzene sulfonate (mass 0.055) | additive: polyvinylpyrrolidone (mass 0.0625) | additive: hydrochloric acid | pdfno_list: 37-1492"
+}

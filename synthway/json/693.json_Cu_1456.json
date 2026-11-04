@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "693.json_Cu_1456",
+  "composition": "Cu",
+  "elements": [
+    "Cu"
+  ],
+  "method": "reduction",
+  "precursors": [
+    {
+      "name": "CuSO4·5H2O",
+      "conc": 500.0
+    },
+    {
+      "name": "C12H25NaO4S",
+      "conc": 100.0
+    },
+    {
+      "name": "N2H4*H2O"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 60.0,
+      "width": 60.0,
+      "depth": 60.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "693.json_Cu_1456",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Cu | method: reduction | solvent: water | shape: spherical | size.length: 60.0 | size.width: 60.0 | size.depth: 60.0 | precursor: CuSO4·5H2O (conc 500.0) | precursor: C12H25NaO4S (conc 100.0) | precursor: N2H4*H2O"
+}

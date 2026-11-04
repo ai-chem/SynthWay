@@ -1,0 +1,51 @@
+{
+  "synthesis_id": "2114.json_MnFe2O4_2160",
+  "composition": "MnFe2O4",
+  "elements": [
+    "Mn",
+    "Fe",
+    "O"
+  ],
+  "method": "coprecipitation",
+  "precursors": [
+    {
+      "name": "FeCl3",
+      "conc": 800.0
+    },
+    {
+      "name": "MnCl2",
+      "conc": 400.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 7000.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 5.0
+  },
+  "conditions": {
+    "temperature": 100.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 3.16,
+      "width": 3.16,
+      "depth": 3.16
+    }
+  },
+  "pdfno_list": [
+    "01-074-2403"
+  ],
+  "source": {
+    "synthesis_id_original": "2114.json_MnFe2O4_2160",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: MnFe2O4 | method: coprecipitation | solvent: water | solvent.volume: 5.0 | temperature: 100.0 | crystalsystem: cubic | shape: spherical | size.length: 3.16 | size.width: 3.16 | size.depth: 3.16 | precursor: FeCl3 (conc 800.0) | precursor: MnCl2 (conc 400.0) | additive: sodium hydroxide (conc 7000.0) | pdfno_list: 01-074-2403"
+}

@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "1273.json_Ag_813",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "cinnamomum verum bark extract"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water"
+  },
+  "conditions": {
+    "temperature": 90.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "cube",
+    "size": {
+      "length": 55.225,
+      "width": 55.225,
+      "depth": 55.225
+    }
+  },
+  "pdfno_list": [
+    "98-018-1730"
+  ],
+  "source": {
+    "synthesis_id_original": "1273.json_Ag_813",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Ag | method: green synthesis | solvent: distilled water | temperature: 90.0 | crystalsystem: cubic | shape: cube | size.length: 55.225 | size.width: 55.225 | size.depth: 55.225 | precursor: AgNO3 (conc 1.0) | additive: cinnamomum verum bark extract | pdfno_list: 98-018-1730"
+}

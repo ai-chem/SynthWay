@@ -1,0 +1,56 @@
+{
+  "synthesis_id": "2350.json_CuBr_263",
+  "composition": "CuBr",
+  "elements": [
+    "Cu",
+    "Br"
+  ],
+  "precursors": [
+    {
+      "name": "CuO",
+      "conc": 500.0
+    },
+    {
+      "name": "Cu(CH3COO)2",
+      "conc": 500.0
+    },
+    {
+      "name": "KBr",
+      "conc": 500.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "hydroxylamine hydrochloride",
+      "conc": 300.0
+    },
+    {
+      "name": "hydrochloric acid"
+    }
+  ],
+  "solvent": {
+    "name": "sodium hydroxide",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 80.0,
+    "ph": 6.0
+  },
+  "product": {
+    "shape": "flake",
+    "size": {
+      "length": 15.0,
+      "width": 15.0,
+      "depth": 15.0
+    }
+  },
+  "pdfno_list": [
+    "06-0292"
+  ],
+  "source": {
+    "synthesis_id_original": "2350.json_CuBr_263",
+    "nodes": 17,
+    "edges": 18
+  },
+  "retrieval_text": "composition: CuBr | solvent: sodium hydroxide | solvent.volume: 100.0 | temperature: 80.0 | pH: 6.0 | shape: flake | size.length: 15.0 | size.width: 15.0 | size.depth: 15.0 | precursor: CuO (conc 500.0) | precursor: Cu(CH3COO)2 (conc 500.0) | precursor: KBr (conc 500.0) | additive: hydroxylamine hydrochloride (conc 300.0) | additive: hydrochloric acid | pdfno_list: 06-0292"
+}

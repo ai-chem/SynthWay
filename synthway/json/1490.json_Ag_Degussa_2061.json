@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "1490.json_Ag/Degussa_2061",
+  "composition": "Ag/Degussa",
+  "elements": [
+    "Ag",
+    "De"
+  ],
+  "method": "one-pot microwave synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "mass": 0.033974,
+      "conc": 2.0
+    },
+    {
+      "name": "TiO2 (Degussa Anatase)",
+      "mass": 0.005
+    }
+  ],
+  "additives": [
+    {
+      "name": "banana waste peduncles (bwp) juice extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 70.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "coral-like",
+    "size": {
+      "length": 25.0,
+      "width": 25.0,
+      "depth": 25.0
+    }
+  },
+  "pdfno_list": [
+    "21-1276 21-1272 04-0783"
+  ],
+  "source": {
+    "synthesis_id_original": "1490.json_Ag/Degussa_2061",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: Ag/Degussa | method: one-pot microwave synthesis | solvent: water | temperature: 70.0 | crystalsystem: cubic | shape: coral-like | size.length: 25.0 | size.width: 25.0 | size.depth: 25.0 | precursor: AgNO3 (mass 0.033974; conc 2.0) | precursor: TiO2 (Degussa Anatase) (mass 0.005) | additive: banana waste peduncles (bwp) juice extract | pdfno_list: 21-1276 21-1272 04-0783"
+}

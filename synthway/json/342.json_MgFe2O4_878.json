@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "342.json_MgFe2O4_878",
+  "composition": "MgFe2O4",
+  "elements": [
+    "Mg",
+    "Fe",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 180.0,
+    "ph": 12.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 12.5
+    }
+  },
+  "pdfno_list": [
+    "88-1936"
+  ],
+  "source": {
+    "synthesis_id_original": "342.json_MgFe2O4_878",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: MgFe2O4 | method: hydrothermal | solvent: water | temperature: 180.0 | pH: 12.0 | crystalsystem: cubic | shape: spherical | size.length: 12.5 | pdfno_list: 88-1936"
+}

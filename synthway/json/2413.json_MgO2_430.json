@@ -1,0 +1,31 @@
+{
+  "synthesis_id": "2413.json_MgO2_430",
+  "composition": "MgO2",
+  "elements": [
+    "Mg",
+    "O"
+  ],
+  "solvent": {
+    "name": "deionized water 30% h2o2",
+    "volume": 130.0
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "nano-rods",
+    "size": {
+      "length": 166.0
+    }
+  },
+  "pdfno_list": [
+    "78-0430"
+  ],
+  "source": {
+    "synthesis_id_original": "2413.json_MgO2_430",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: MgO2 | solvent: deionized water 30% h2o2 | solvent.volume: 130.0 | temperature: 25.0 | crystalsystem: cubic | shape: nano-rods | size.length: 166.0 | pdfno_list: 78-0430"
+}

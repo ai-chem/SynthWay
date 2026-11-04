@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "1802.json_Cu1.2Te_588",
+  "composition": "Cu1.2Te",
+  "elements": [
+    "Cu",
+    "Te"
+  ],
+  "precursors": [
+    {
+      "name": "CuCl",
+      "mass": 0.1
+    },
+    {
+      "name": "Te",
+      "mass": 0.128
+    }
+  ],
+  "additives": [
+    {
+      "name": "trioctylphosphine oxide",
+      "mass": 1.5
+    },
+    {
+      "name": "n-lithiohexamethyldisilazane",
+      "conc": 500.0
+    }
+  ],
+  "solvent": {
+    "name": "oleylamine",
+    "volume": 24.0
+  },
+  "conditions": {
+    "temperature": 160.0
+  },
+  "product": {
+    "shape": "cuboid",
+    "size": {
+      "length": 17.0,
+      "width": 11.0,
+      "depth": 9.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1802.json_Cu1.2Te_588",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: Cu1.2Te | solvent: oleylamine | solvent.volume: 24.0 | temperature: 160.0 | shape: cuboid | size.length: 17.0 | size.width: 11.0 | size.depth: 9.0 | precursor: CuCl (mass 0.1) | precursor: Te (mass 0.128) | additive: trioctylphosphine oxide (mass 1.5) | additive: n-lithiohexamethyldisilazane (conc 500.0)"
+}

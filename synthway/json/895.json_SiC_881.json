@@ -1,0 +1,37 @@
+{
+  "synthesis_id": "895.json_SiC_881",
+  "composition": "SiC",
+  "elements": [
+    "Si",
+    "C"
+  ],
+  "method": "carbothermal reduction",
+  "precursors": [
+    {
+      "name": "SiO2"
+    },
+    {
+      "name": "C"
+    }
+  ],
+  "conditions": {
+    "temperature": 1550.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 65.0,
+      "width": 65.0,
+      "depth": 65.0
+    }
+  },
+  "pdfno_list": [
+    "29-1129"
+  ],
+  "source": {
+    "synthesis_id_original": "895.json_SiC_881",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: SiC | method: carbothermal reduction | temperature: 1550.0 | shape: spherical | size.length: 65.0 | size.width: 65.0 | size.depth: 65.0 | precursor: SiO2 | precursor: C | pdfno_list: 29-1129"
+}

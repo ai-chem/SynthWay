@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "1234.json_SS316L_with_Mat/PEG-CuO_1711",
+  "composition": "SS316L with Mat/PEG-CuO",
+  "elements": [
+    "S",
+    "L",
+    "Ma",
+    "P",
+    "E",
+    "G",
+    "Cu",
+    "O"
+  ],
+  "method": "airbrush spray",
+  "precursors": [
+    {
+      "name": "Mat/PEG-CuO NPs"
+    },
+    {
+      "name": "SS316L"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 60.0,
+      "width": 60.0,
+      "depth": 60.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1234.json_SS316L_with_Mat/PEG-CuO_1711",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: SS316L with Mat/PEG-CuO | method: airbrush spray | solvent: water | shape: spherical | size.length: 60.0 | size.width: 60.0 | size.depth: 60.0 | precursor: Mat/PEG-CuO NPs | precursor: SS316L"
+}

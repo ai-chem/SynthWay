@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "1296.json_Se_1868",
+  "composition": "Se",
+  "elements": [
+    "Se"
+  ],
+  "method": "biosynthesis",
+  "precursors": [
+    {
+      "name": "Na2SeO3",
+      "conc": 20.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "boldo",
+      "conc": 20.0
+    }
+  ],
+  "solvent": {
+    "name": "distilled water"
+  },
+  "conditions": {
+    "temperature": 30.0,
+    "ph": 7.0
+  },
+  "product": {
+    "crystalsystem": "trigonal",
+    "shape": "spherical",
+    "size": {
+      "length": 280.0,
+      "width": 280.0,
+      "depth": 280.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1296.json_Se_1868",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Se | method: biosynthesis | solvent: distilled water | temperature: 30.0 | pH: 7.0 | crystalsystem: trigonal | shape: spherical | size.length: 280.0 | size.width: 280.0 | size.depth: 280.0 | precursor: Na2SeO3 (conc 20.0) | additive: boldo (conc 20.0)"
+}

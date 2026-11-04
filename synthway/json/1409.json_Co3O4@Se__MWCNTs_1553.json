@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "1409.json_Co3O4@Se_/MWCNTs_1553",
+  "composition": "Co3O4@Se /MWCNTs",
+  "elements": [
+    "Co",
+    "O",
+    "Se",
+    "M",
+    "W",
+    "C",
+    "N",
+    "Ts"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "MWCNTs",
+      "mass": 0.1
+    },
+    {
+      "name": "Co(NO3)2",
+      "mass": 0.25
+    },
+    {
+      "name": "SeO2",
+      "mass": 0.5
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 100.0
+    }
+  ],
+  "solvent": {
+    "name": "p-tsa",
+    "volume": 70.0
+  },
+  "conditions": {
+    "temperature": 220.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal+cubic",
+    "shape": "nanotubes with nanospherical-shaped and nanocube-shaped nps"
+  },
+  "source": {
+    "synthesis_id_original": "1409.json_Co3O4@Se_/MWCNTs_1553",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Co3O4@Se /MWCNTs | method: hydrothermal | solvent: p-tsa | solvent.volume: 70.0 | temperature: 220.0 | crystalsystem: hexagonal+cubic | shape: nanotubes with nanospherical-shaped and nanocube-shaped nps | precursor: MWCNTs (mass 0.1) | precursor: Co(NO3)2 (mass 0.25) | precursor: SeO2 (mass 0.5) | additive: sodium hydroxide (conc 100.0)"
+}

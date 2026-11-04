@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1099.json_CuFe2O4_2766",
+  "composition": "CuFe2O4",
+  "elements": [
+    "Cu",
+    "Fe",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "FeCl3⋅6H2O",
+      "mass": 270.0
+    },
+    {
+      "name": "CuCl2*2H2O",
+      "mass": 170.5
+    },
+    {
+      "name": "NaOH",
+      "conc": 3400.0
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "shape": "pseudo-spherical",
+    "size": {
+      "width": 32.0
+    }
+  },
+  "pdfno_list": [
+    "00-025-0283"
+  ],
+  "source": {
+    "synthesis_id_original": "1099.json_CuFe2O4_2766",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: CuFe2O4 | method: hydrothermal | solvent: deionized water | solvent.volume: 30.0 | temperature: 180.0 | shape: pseudo-spherical | size.width: 32.0 | precursor: FeCl3⋅6H2O (mass 270.0) | precursor: CuCl2*2H2O (mass 170.5) | precursor: NaOH (conc 3400.0) | pdfno_list: 00-025-0283"
+}

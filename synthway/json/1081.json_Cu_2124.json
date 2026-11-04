@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1081.json_Cu_2124",
+  "composition": "Cu",
+  "elements": [
+    "Cu"
+  ],
+  "precursors": [
+    {
+      "name": "CS2",
+      "mass": 63.0
+    },
+    {
+      "name": "C16H37N",
+      "mass": 1.81
+    },
+    {
+      "name": "NH3*H2O",
+      "mass": 0.72
+    },
+    {
+      "name": "N2H4*H2O",
+      "mass": 0.6192
+    },
+    {
+      "name": "CuSO4",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "cs2/water",
+    "volume": 75.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "size": {
+      "width": 2.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1081.json_Cu_2124",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Cu | solvent: cs2/water | solvent.volume: 75.0 | crystalsystem: face-centered cubic | size.width: 2.0 | precursor: CS2 (mass 63.0) | precursor: C16H37N (mass 1.81) | precursor: NH3*H2O (mass 0.72) | precursor: N2H4*H2O (mass 0.6192) | precursor: CuSO4 (conc 1000.0)"
+}

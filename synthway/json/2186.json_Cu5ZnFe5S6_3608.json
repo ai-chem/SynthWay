@@ -1,0 +1,60 @@
+{
+  "synthesis_id": "2186.json_Cu5ZnFe5S6_3608",
+  "composition": "Cu5ZnFe5S6",
+  "elements": [
+    "Cu",
+    "Zn",
+    "Fe",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "CuCl",
+      "conc": 0.1
+    },
+    {
+      "name": "ZnCl2",
+      "conc": 0.1
+    },
+    {
+      "name": "Fe(acac)3",
+      "conc": 0.1
+    },
+    {
+      "name": "S",
+      "conc": 0.6
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleylamine"
+    },
+    {
+      "name": "oleic acid"
+    }
+  ],
+  "solvent": {
+    "name": "octadecene",
+    "volume": 9.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 12.0,
+      "width": 12.0,
+      "depth": 12.0
+    }
+  },
+  "pdfno_list": [
+    "370471"
+  ],
+  "source": {
+    "synthesis_id_original": "2186.json_Cu5ZnFe5S6_3608",
+    "nodes": 17,
+    "edges": 18
+  },
+  "retrieval_text": "composition: Cu5ZnFe5S6 | solvent: octadecene | solvent.volume: 9.0 | temperature: 200.0 | shape: spherical | size.length: 12.0 | size.width: 12.0 | size.depth: 12.0 | precursor: CuCl (conc 0.1) | precursor: ZnCl2 (conc 0.1) | precursor: Fe(acac)3 (conc 0.1) | precursor: S (conc 0.6) | additive: oleylamine | additive: oleic acid | pdfno_list: 370471"
+}

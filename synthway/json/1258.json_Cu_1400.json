@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "1258.json_Cu_1400",
+  "composition": "Cu",
+  "elements": [
+    "Cu"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Cu (CH2COO)2·H2O",
+      "mass": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "centella asiatica leaves extract"
+    }
+  ],
+  "solvent": {
+    "name": "double distilled water",
+    "volume": 100.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 41.4,
+      "width": 41.4,
+      "depth": 41.4
+    }
+  },
+  "pdfno_list": [
+    "04-836"
+  ],
+  "source": {
+    "synthesis_id_original": "1258.json_Cu_1400",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Cu | method: green synthesis | solvent: double distilled water | solvent.volume: 100.0 | crystalsystem: cubic | shape: spherical | size.length: 41.4 | size.width: 41.4 | size.depth: 41.4 | precursor: Cu (CH2COO)2·H2O (mass 1.0) | additive: centella asiatica leaves extract | pdfno_list: 04-836"
+}

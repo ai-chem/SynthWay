@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1366.json_ST-Ag_1581",
+  "composition": "ST-Ag",
+  "elements": [
+    "S",
+    "T",
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 40.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "potato extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 15.49,
+      "width": 15.49,
+      "depth": 15.49
+    }
+  },
+  "pdfno_list": [
+    "04-0783"
+  ],
+  "source": {
+    "synthesis_id_original": "1366.json_ST-Ag_1581",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: ST-Ag | method: green synthesis | solvent: water | temperature: 25.0 | crystalsystem: cubic | shape: spherical | size.length: 15.49 | size.width: 15.49 | size.depth: 15.49 | precursor: AgNO3 (conc 40.0) | additive: potato extract | pdfno_list: 04-0783"
+}

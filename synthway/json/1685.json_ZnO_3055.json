@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "1685.json_ZnO_3055",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "precipitation",
+  "precursors": [
+    {
+      "name": "Zn(NO3)2"
+    }
+  ],
+  "additives": [
+    {
+      "name": "ammonium carbonate"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water"
+  },
+  "conditions": {
+    "temperature": 90.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 394.4,
+      "width": 394.4,
+      "depth": 394.4
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1685.json_ZnO_3055",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: ZnO | method: precipitation | solvent: deionized water | temperature: 90.0 | shape: spherical | size.length: 394.4 | size.width: 394.4 | size.depth: 394.4 | precursor: Zn(NO3)2 | additive: ammonium carbonate"
+}

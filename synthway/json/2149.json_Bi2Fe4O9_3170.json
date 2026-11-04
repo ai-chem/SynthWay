@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "2149.json_Bi2Fe4O9_3170",
+  "composition": "Bi2Fe4O9",
+  "elements": [
+    "Bi",
+    "Fe",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "Bi(NO3)3*5H2O",
+      "mass": 4.85
+    },
+    {
+      "name": "Fe(NO3)3*9H2O",
+      "mass": 4.04
+    }
+  ],
+  "additives": [
+    {
+      "name": "nitric acid"
+    },
+    {
+      "name": "potassium hydroxide",
+      "conc": 8000.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 13.0
+  },
+  "conditions": {
+    "temperature": 200.0,
+    "ph": 8.5
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "sheets"
+  },
+  "pdfno_list": [
+    "00-025-0090"
+  ],
+  "source": {
+    "synthesis_id_original": "2149.json_Bi2Fe4O9_3170",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: Bi2Fe4O9 | method: hydrothermal | solvent: water | solvent.volume: 13.0 | temperature: 200.0 | pH: 8.5 | crystalsystem: orthorhombic | shape: sheets | precursor: Bi(NO3)3*5H2O (mass 4.85) | precursor: Fe(NO3)3*9H2O (mass 4.04) | additive: nitric acid | additive: potassium hydroxide (conc 8000.0) | pdfno_list: 00-025-0090"
+}

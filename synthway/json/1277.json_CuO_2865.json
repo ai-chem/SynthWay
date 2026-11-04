@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "1277.json_CuO_2865",
+  "composition": "CuO",
+  "elements": [
+    "Cu",
+    "O"
+  ],
+  "method": "biosynthesis",
+  "precursors": [
+    {
+      "name": "CuSO4",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "cell-free supernatant (cfs) or the cells extracted from culture supernatant"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 37.0
+  },
+  "product": {
+    "shape": "sphere-shaped",
+    "size": {
+      "length": 7.9,
+      "width": 7.9,
+      "depth": 7.9
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1277.json_CuO_2865",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: CuO | method: biosynthesis | solvent: water | temperature: 37.0 | shape: sphere-shaped | size.length: 7.9 | size.width: 7.9 | size.depth: 7.9 | precursor: CuSO4 (conc 1.0) | additive: cell-free supernatant (cfs) or the cells extracted from culture supernatant"
+}

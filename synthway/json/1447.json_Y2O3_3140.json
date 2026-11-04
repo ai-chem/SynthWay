@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "1447.json_Y2O3_3140",
+  "composition": "Y2O3",
+  "elements": [
+    "Y",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Yttrium nitrate hexahydrate (Y(NO3)3·6H2O)",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "1-butyl-3-methylimidazolium hexafluorophosphate"
+    },
+    {
+      "name": "justicia adhatoda leaves extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 120.0
+  },
+  "product": {
+    "shape": "sponge",
+    "size": {
+      "length": 37.0,
+      "width": 37.0,
+      "depth": 37.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1447.json_Y2O3_3140",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Y2O3 | method: green synthesis | solvent: water | temperature: 120.0 | shape: sponge | size.length: 37.0 | size.width: 37.0 | size.depth: 37.0 | precursor: Yttrium nitrate hexahydrate (Y(NO3)3·6H2O) (conc 100.0) | additive: 1-butyl-3-methylimidazolium hexafluorophosphate | additive: justicia adhatoda leaves extract"
+}

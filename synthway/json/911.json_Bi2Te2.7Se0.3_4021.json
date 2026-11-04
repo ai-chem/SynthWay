@@ -1,0 +1,60 @@
+{
+  "synthesis_id": "911.json_Bi2Te2.7Se0.3_4021",
+  "composition": "Bi2Te2.7Se0.3",
+  "elements": [
+    "Bi",
+    "Te",
+    "Se"
+  ],
+  "method": "water-based chemical reaction",
+  "precursors": [
+    {
+      "name": "Bi(NO3)3",
+      "mass": 23.7
+    },
+    {
+      "name": "Se",
+      "mass": 0.711
+    },
+    {
+      "name": "Te",
+      "mass": 10.368
+    },
+    {
+      "name": "NaBH4"
+    }
+  ],
+  "additives": [
+    {
+      "name": "ascorbic acid"
+    },
+    {
+      "name": "edta",
+      "conc": 150.0
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 5000.0
+    }
+  ],
+  "solvent": {
+    "name": "deionized water"
+  },
+  "conditions": {
+    "temperature": 100.0,
+    "ph": 11.0
+  },
+  "product": {
+    "crystalsystem": "rhombohedral",
+    "shape": "spherical"
+  },
+  "pdfno_list": [
+    "50-0954"
+  ],
+  "source": {
+    "synthesis_id_original": "911.json_Bi2Te2.7Se0.3_4021",
+    "nodes": 20,
+    "edges": 19
+  },
+  "retrieval_text": "composition: Bi2Te2.7Se0.3 | method: water-based chemical reaction | solvent: deionized water | temperature: 100.0 | pH: 11.0 | crystalsystem: rhombohedral | shape: spherical | precursor: Bi(NO3)3 (mass 23.7) | precursor: Se (mass 0.711) | precursor: Te (mass 10.368) | precursor: NaBH4 | additive: ascorbic acid | additive: edta (conc 150.0) | additive: sodium hydroxide (conc 5000.0) | pdfno_list: 50-0954"
+}

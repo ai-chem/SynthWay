@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "1203.json_PDA@Cu_1085",
+  "composition": "PDA@Cu",
+  "elements": [
+    "P",
+    "D",
+    "A",
+    "Cu"
+  ],
+  "method": "redox reaction",
+  "precursors": [
+    {
+      "name": "CuCl2*2H2O",
+      "mass": 0.25
+    },
+    {
+      "name": "PDA (NPs)"
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide"
+    },
+    {
+      "name": "ascorbic acid",
+      "conc": 625.0
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 20.0
+  },
+  "conditions": {
+    "ph": 7.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 220.0,
+      "width": 220.0,
+      "depth": 220.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1203.json_PDA@Cu_1085",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: PDA@Cu | method: redox reaction | solvent: deionized water | solvent.volume: 20.0 | pH: 7.0 | shape: spherical | size.length: 220.0 | size.width: 220.0 | size.depth: 220.0 | precursor: CuCl2*2H2O (mass 0.25) | precursor: PDA (NPs) | additive: sodium hydroxide | additive: ascorbic acid (conc 625.0)"
+}

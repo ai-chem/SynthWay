@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "841.json_CdS_47",
+  "composition": "CdS",
+  "elements": [
+    "Cd",
+    "S"
+  ],
+  "method": "chemical reduction",
+  "precursors": [
+    {
+      "name": "CdCl2",
+      "mass": 0.805
+    },
+    {
+      "name": "S",
+      "mass": 0.128
+    },
+    {
+      "name": "NaBH4",
+      "mass": 0.332
+    }
+  ],
+  "solvent": {
+    "name": "tetrahydrofuran"
+  },
+  "conditions": {
+    "temperature": 30.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "size": {
+      "length": 8.0,
+      "width": 8.0,
+      "depth": 8.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "841.json_CdS_47",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: CdS | method: chemical reduction | solvent: tetrahydrofuran | temperature: 30.0 | crystalsystem: hexagonal | size.length: 8.0 | size.width: 8.0 | size.depth: 8.0 | precursor: CdCl2 (mass 0.805) | precursor: S (mass 0.128) | precursor: NaBH4 (mass 0.332)"
+}

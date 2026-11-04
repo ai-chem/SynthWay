@@ -1,0 +1,56 @@
+{
+  "synthesis_id": "1988.json_BaFe12O19_1026",
+  "composition": "BaFe12O19",
+  "elements": [
+    "Ba",
+    "Fe",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "BaCl2",
+      "mass": 16.0
+    },
+    {
+      "name": "Fe2O3",
+      "mass": 8.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium chloride"
+    },
+    {
+      "name": "acetic acid"
+    }
+  ],
+  "seeds": [
+    {
+      "name": "BaFe12O19",
+      "mass": 0.12
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 1150.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "plate",
+    "size": {
+      "length": 1700.0,
+      "width": 1700.0
+    }
+  },
+  "pdfno_list": [
+    "43-0002"
+  ],
+  "source": {
+    "synthesis_id_original": "1988.json_BaFe12O19_1026",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: BaFe12O19 | solvent: water | temperature: 1150.0 | crystalsystem: hexagonal | shape: plate | size.length: 1700.0 | size.width: 1700.0 | precursor: BaCl2 (mass 16.0) | precursor: Fe2O3 (mass 8.0) | additive: sodium chloride | additive: acetic acid | seed: BaFe12O19 (mass 0.12) | pdfno_list: 43-0002"
+}

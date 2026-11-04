@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "2228.json_ZnO_1963",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Zn(NO3)2*6H2O",
+      "conc": 200.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "potassium hydroxide",
+      "conc": 400.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 500.0
+  },
+  "product": {
+    "size": {
+      "length": 20.0,
+      "width": 20.0,
+      "depth": 20.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2228.json_ZnO_1963",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: ZnO | solvent: water | temperature: 500.0 | size.length: 20.0 | size.width: 20.0 | size.depth: 20.0 | precursor: Zn(NO3)2*6H2O (conc 200.0) | additive: potassium hydroxide (conc 400.0)"
+}

@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "2213.json_Cr2O3_1069",
+  "composition": "Cr2O3",
+  "elements": [
+    "Cr",
+    "O"
+  ],
+  "method": "sol-gel",
+  "precursors": [
+    {
+      "name": "Roselle powder",
+      "mass": 5.0
+    },
+    {
+      "name": "Cr2(SO4)3",
+      "mass": 13.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 600.0,
+    "ph": 7.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 91.92,
+      "width": 91.92,
+      "depth": 91.92
+    }
+  },
+  "pdfno_list": [
+    "98-009-7850"
+  ],
+  "source": {
+    "synthesis_id_original": "2213.json_Cr2O3_1069",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Cr2O3 | method: sol-gel | solvent: water | solvent.volume: 100.0 | temperature: 600.0 | pH: 7.0 | shape: spherical | size.length: 91.92 | size.width: 91.92 | size.depth: 91.92 | precursor: Roselle powder (mass 5.0) | precursor: Cr2(SO4)3 (mass 13.0) | pdfno_list: 98-009-7850"
+}

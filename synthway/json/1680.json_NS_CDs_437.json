@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "1680.json_NS/CDs_437",
+  "composition": "NS/CDs",
+  "elements": [
+    "N",
+    "S",
+    "C",
+    "Ds"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "EFB",
+      "mass": 2.5
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium thiosulfate",
+      "conc": 400.0
+    },
+    {
+      "name": "p-phenylenediamine",
+      "conc": 200.0
+    }
+  ],
+  "solvent": {
+    "name": "ultrapure water"
+  },
+  "conditions": {
+    "temperature": 220.0
+  },
+  "source": {
+    "synthesis_id_original": "1680.json_NS/CDs_437",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: NS/CDs | method: hydrothermal | solvent: ultrapure water | temperature: 220.0 | precursor: EFB (mass 2.5) | additive: sodium thiosulfate (conc 400.0) | additive: p-phenylenediamine (conc 200.0)"
+}

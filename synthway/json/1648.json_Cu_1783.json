@@ -1,0 +1,35 @@
+{
+  "synthesis_id": "1648.json_Cu_1783",
+  "composition": "Cu",
+  "elements": [
+    "Cu"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "CuSO4",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "bacterial cell wall polysaccharides (cps)",
+      "conc": 1.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 45.0
+  },
+  "product": {
+    "shape": "spherical"
+  },
+  "source": {
+    "synthesis_id_original": "1648.json_Cu_1783",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: Cu | method: green synthesis | solvent: water | temperature: 45.0 | shape: spherical | precursor: CuSO4 (conc 1.0) | additive: bacterial cell wall polysaccharides (cps) (conc 1.0)"
+}

@@ -1,0 +1,56 @@
+{
+  "synthesis_id": "1022.json_CsPbBr3_1443",
+  "composition": "CsPbBr3",
+  "elements": [
+    "Cs",
+    "Pb",
+    "Br"
+  ],
+  "precursors": [
+    {
+      "name": "PbBr",
+      "mass": 0.1468
+    },
+    {
+      "name": "CsBr",
+      "mass": 0.0851
+    },
+    {
+      "name": "NH3",
+      "mass": 0.0394
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleylamine",
+      "mass": 0.4878
+    },
+    {
+      "name": "oleic acid",
+      "mass": 1.602
+    }
+  ],
+  "solvent": {
+    "name": "dimethylformamide",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 90.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "spherical",
+    "size": {
+      "width": 10.5
+    }
+  },
+  "pdfno_list": [
+    "01 072 7929"
+  ],
+  "source": {
+    "synthesis_id_original": "1022.json_CsPbBr3_1443",
+    "nodes": 18,
+    "edges": 17
+  },
+  "retrieval_text": "composition: CsPbBr3 | solvent: dimethylformamide | solvent.volume: 10.0 | temperature: 90.0 | crystalsystem: orthorhombic | shape: spherical | size.width: 10.5 | precursor: PbBr (mass 0.1468) | precursor: CsBr (mass 0.0851) | precursor: NH3 (mass 0.0394) | additive: oleylamine (mass 0.4878) | additive: oleic acid (mass 1.602) | pdfno_list: 01 072 7929"
+}

@@ -1,0 +1,31 @@
+{
+  "synthesis_id": "2385.json_DMO_418",
+  "composition": "DMO",
+  "elements": [
+    "D",
+    "M",
+    "O"
+  ],
+  "method": "gle phase of dmo",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 1000.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "packed grains",
+    "size": {
+      "length": 1380.0,
+      "width": 1380.0,
+      "depth": 1380.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2385.json_DMO_418",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: DMO | method: gle phase of dmo | solvent: water | temperature: 1000.0 | crystalsystem: orthorhombic | shape: packed grains | size.length: 1380.0 | size.width: 1380.0 | size.depth: 1380.0"
+}

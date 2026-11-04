@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "1964.json_Pt_3378",
+  "composition": "Pt",
+  "elements": [
+    "Pt"
+  ],
+  "precursors": [
+    {
+      "name": "H2PtCl6"
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium citrate-0.05%"
+    },
+    {
+      "name": "sodium borohydride"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 116.0
+  },
+  "product": {
+    "size": {
+      "length": 30.0,
+      "width": 30.0,
+      "depth": 30.0
+    }
+  },
+  "pdfno_list": [
+    "88-2343"
+  ],
+  "source": {
+    "synthesis_id_original": "1964.json_Pt_3378",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Pt | solvent: water | solvent.volume: 116.0 | size.length: 30.0 | size.width: 30.0 | size.depth: 30.0 | precursor: H2PtCl6 | additive: sodium citrate-0.05% | additive: sodium borohydride | pdfno_list: 88-2343"
+}

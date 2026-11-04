@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1137.json_ZnO-US_922",
+  "composition": "ZnO-US",
+  "elements": [
+    "Zn",
+    "O",
+    "U",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "Zinc nitrate didydrate (Zn(NO3)2•2H2O)",
+      "mass": 6.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "dichloromethane"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 30.0,
+      "width": 30.0,
+      "depth": 30.0
+    }
+  },
+  "pdfno_list": [
+    "361451"
+  ],
+  "source": {
+    "synthesis_id_original": "1137.json_ZnO-US_922",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: ZnO-US | solvent: water | temperature: 60.0 | shape: spherical | size.length: 30.0 | size.width: 30.0 | size.depth: 30.0 | precursor: Zinc nitrate didydrate (Zn(NO3)2•2H2O) (mass 6.0) | additive: dichloromethane | pdfno_list: 361451"
+}

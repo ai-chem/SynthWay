@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "2209.json_Cr2O3_1487",
+  "composition": "Cr2O3",
+  "elements": [
+    "Cr",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Cr(OH)3"
+    },
+    {
+      "name": "(Cr(NO3)3·9H2O)"
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 1073.0
+  },
+  "product": {
+    "shape": "nearly round shape and ellipsoidal shape",
+    "size": {
+      "length": 32.1,
+      "width": 22.7
+    }
+  },
+  "pdfno_list": [
+    "85-0869"
+  ],
+  "source": {
+    "synthesis_id_original": "2209.json_Cr2O3_1487",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Cr2O3 | solvent: water | temperature: 1073.0 | shape: nearly round shape and ellipsoidal shape | size.length: 32.1 | size.width: 22.7 | precursor: Cr(OH)3 | precursor: (Cr(NO3)3·9H2O) | additive: sodium hydroxide | pdfno_list: 85-0869"
+}

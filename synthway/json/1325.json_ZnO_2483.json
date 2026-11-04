@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1325.json_ZnO_2483",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Zinc acetate",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "cassia alata fresh leaf extract"
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 2000.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 80.0,
+    "ph": 12.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 70.0,
+      "width": 70.0,
+      "depth": 70.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1325.json_ZnO_2483",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: ZnO | method: green synthesis | solvent: water | temperature: 80.0 | pH: 12.0 | shape: spherical | size.length: 70.0 | size.width: 70.0 | size.depth: 70.0 | precursor: Zinc acetate (conc 10.0) | additive: cassia alata fresh leaf extract | additive: sodium hydroxide (conc 2000.0)"
+}

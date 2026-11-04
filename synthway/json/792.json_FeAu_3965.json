@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "792.json_FeAu_3965",
+  "composition": "FeAu",
+  "elements": [
+    "Fe",
+    "Au"
+  ],
+  "method": "reduction",
+  "precursors": [
+    {
+      "name": "Fe(CO)5",
+      "mass": 9.8
+    },
+    {
+      "name": "Au(CH3COO)3",
+      "mass": 9.35
+    },
+    {
+      "name": "C16H34O2"
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleic acid",
+      "mass": 0.705
+    },
+    {
+      "name": "oleyl amine",
+      "mass": 0.6675
+    }
+  ],
+  "solvent": {
+    "name": "dioctylether",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 250.0
+  },
+  "product": {
+    "size": {
+      "width": 7.7
+    }
+  },
+  "source": {
+    "synthesis_id_original": "792.json_FeAu_3965",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: FeAu | method: reduction | solvent: dioctylether | solvent.volume: 20.0 | temperature: 250.0 | size.width: 7.7 | precursor: Fe(CO)5 (mass 9.8) | precursor: Au(CH3COO)3 (mass 9.35) | precursor: C16H34O2 | additive: oleic acid (mass 0.705) | additive: oleyl amine (mass 0.6675)"
+}

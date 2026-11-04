@@ -1,0 +1,32 @@
+{
+  "synthesis_id": "470.json_BaCO3_1892",
+  "composition": "BaCO3",
+  "elements": [
+    "Ba",
+    "C",
+    "O"
+  ],
+  "method": "microwave synthesis",
+  "solvent": {
+    "name": "water",
+    "volume": 510.0
+  },
+  "conditions": {
+    "temperature": 1000.0
+  },
+  "product": {
+    "shape": "wire",
+    "size": {
+      "length": 41.6
+    }
+  },
+  "pdfno_list": [
+    "45-1471, 01-0506"
+  ],
+  "source": {
+    "synthesis_id_original": "470.json_BaCO3_1892",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: BaCO3 | method: microwave synthesis | solvent: water | solvent.volume: 510.0 | temperature: 1000.0 | shape: wire | size.length: 41.6 | pdfno_list: 45-1471, 01-0506"
+}

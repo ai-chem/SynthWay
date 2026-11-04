@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "945.json_W_128",
+  "composition": "W",
+  "elements": [
+    "W"
+  ],
+  "method": "solvothermal decomposition",
+  "precursors": [
+    {
+      "name": "W(CO)6",
+      "mass": 0.704
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleic acid",
+      "mass": 1.7
+    },
+    {
+      "name": "trioctyl phosphine oxide",
+      "mass": 2.32
+    }
+  ],
+  "solvent": {
+    "name": "diphenylether",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 600.0
+  },
+  "product": {
+    "crystalsystem": "body centered cubic",
+    "shape": "spherical",
+    "size": {
+      "width": 25.0
+    }
+  },
+  "pdfno_list": [
+    "04-0806"
+  ],
+  "source": {
+    "synthesis_id_original": "945.json_W_128",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: W | method: solvothermal decomposition | solvent: diphenylether | solvent.volume: 30.0 | temperature: 600.0 | crystalsystem: body centered cubic | shape: spherical | size.width: 25.0 | precursor: W(CO)6 (mass 0.704) | additive: oleic acid (mass 1.7) | additive: trioctyl phosphine oxide (mass 2.32) | pdfno_list: 04-0806"
+}

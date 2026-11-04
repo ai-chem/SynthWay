@@ -1,0 +1,60 @@
+{
+  "synthesis_id": "2039.json_CuInS2_706",
+  "composition": "CuInS2",
+  "elements": [
+    "Cu",
+    "In",
+    "S"
+  ],
+  "method": "one-step microwaveassisted hydrothermal",
+  "precursors": [
+    {
+      "name": "Cu(NO3)2",
+      "conc": 0.01
+    },
+    {
+      "name": "InCl3",
+      "conc": 0.04
+    },
+    {
+      "name": "Na2S",
+      "conc": 50.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "glutathione",
+      "conc": 100.0
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 17.0
+  },
+  "conditions": {
+    "temperature": 100.0,
+    "ph": 8.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "shape": "nanocrystals",
+    "size": {
+      "length": 2.8,
+      "width": 2.8,
+      "depth": 2.8
+    }
+  },
+  "pdfno_list": [
+    "47-1372"
+  ],
+  "source": {
+    "synthesis_id_original": "2039.json_CuInS2_706",
+    "nodes": 22,
+    "edges": 21
+  },
+  "retrieval_text": "composition: CuInS2 | method: one-step microwaveassisted hydrothermal | solvent: water | solvent.volume: 17.0 | temperature: 100.0 | pH: 8.0 | crystalsystem: tetragonal | shape: nanocrystals | size.length: 2.8 | size.width: 2.8 | size.depth: 2.8 | precursor: Cu(NO3)2 (conc 0.01) | precursor: InCl3 (conc 0.04) | precursor: Na2S (conc 50.0) | additive: glutathione (conc 100.0) | additive: sodium hydroxide (conc 1000.0) | pdfno_list: 47-1372"
+}

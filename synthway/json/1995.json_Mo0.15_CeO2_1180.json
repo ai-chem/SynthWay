@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "1995.json_Mo0.15/CeO2_1180",
+  "composition": "Mo0.15/CeO2",
+  "elements": [
+    "Mo",
+    "Ce",
+    "O"
+  ],
+  "method": "single-step microwave",
+  "precursors": [
+    {
+      "name": "Ce(NO3)3·6H2O",
+      "mass": 0.7903
+    },
+    {
+      "name": "H24Mo7N6O24·4H2O",
+      "mass": 0.5567
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 100.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 100.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 7.3,
+      "width": 7.3,
+      "depth": 7.3
+    }
+  },
+  "pdfno_list": [
+    "34-0394"
+  ],
+  "source": {
+    "synthesis_id_original": "1995.json_Mo0.15/CeO2_1180",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: Mo0.15/CeO2 | method: single-step microwave | solvent: water | solvent.volume: 20.0 | temperature: 100.0 | crystalsystem: cubic | size.length: 7.3 | size.width: 7.3 | size.depth: 7.3 | precursor: Ce(NO3)3·6H2O (mass 0.7903) | precursor: H24Mo7N6O24·4H2O (mass 0.5567) | additive: sodium hydroxide (conc 100.0) | pdfno_list: 34-0394"
+}

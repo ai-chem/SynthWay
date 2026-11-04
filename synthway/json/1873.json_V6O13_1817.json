@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1873.json_V6O13_1817",
+  "composition": "V6O13",
+  "elements": [
+    "V",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "NH4VO3",
+      "mass": 0.8
+    }
+  ],
+  "additives": [
+    {
+      "name": "oxalic acid",
+      "mass": 1.44
+    },
+    {
+      "name": "sodium nitrate",
+      "mass": 0.1
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 15.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "flower-like",
+    "size": {
+      "length": 2000.0,
+      "width": 2000.0,
+      "depth": 2000.0
+    }
+  },
+  "pdfno_list": [
+    "43-1050"
+  ],
+  "source": {
+    "synthesis_id_original": "1873.json_V6O13_1817",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: V6O13 | solvent: water | solvent.volume: 15.0 | crystalsystem: monoclinic | shape: flower-like | size.length: 2000.0 | size.width: 2000.0 | size.depth: 2000.0 | precursor: NH4VO3 (mass 0.8) | additive: oxalic acid (mass 1.44) | additive: sodium nitrate (mass 0.1) | pdfno_list: 43-1050"
+}

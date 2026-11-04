@@ -1,0 +1,28 @@
+# Credentials
+.env
+.env.*
+!.env.example
+*.env
+env.
+
+# Local environments and generated caches
+.venv/
+.rag/
+all_env/
+__pycache__/
+*.py[cod]
+.deepeval/
+.pytest_cache/
+.cache/
+
+# Editor and operating-system files
+.idea/
+.DS_Store
+~$*
+
+# New runs and verification outputs
+outputs/
+build/
+dist/
+*.egg-info/
+*.log

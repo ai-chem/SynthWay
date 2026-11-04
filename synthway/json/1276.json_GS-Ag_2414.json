@@ -1,0 +1,51 @@
+{
+  "synthesis_id": "1276.json_GS-Ag_2414",
+  "composition": "GS-Ag",
+  "elements": [
+    "G",
+    "S",
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 8.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "curcumin",
+      "conc": 20.0
+    },
+    {
+      "name": "dimethyl sulfoxide"
+    },
+    {
+      "name": "ultra-pure water"
+    },
+    {
+      "name": "potassium carbonate"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 100.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 20.0,
+      "width": 20.0,
+      "depth": 20.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1276.json_GS-Ag_2414",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: GS-Ag | method: green synthesis | solvent: water | temperature: 100.0 | shape: spherical | size.length: 20.0 | size.width: 20.0 | size.depth: 20.0 | precursor: AgNO3 (conc 8.0) | additive: curcumin (conc 20.0) | additive: dimethyl sulfoxide | additive: ultra-pure water | additive: potassium carbonate"
+}

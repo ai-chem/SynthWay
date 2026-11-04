@@ -1,0 +1,32 @@
+{
+  "synthesis_id": "106.json_SnO2_2768",
+  "composition": "SnO2",
+  "elements": [
+    "Sn",
+    "O"
+  ],
+  "method": "sol-gel",
+  "solvent": {
+    "name": "ethanol"
+  },
+  "conditions": {
+    "temperature": 450.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "size": {
+      "length": 29.3,
+      "width": 29.3,
+      "depth": 29.3
+    }
+  },
+  "pdfno_list": [
+    "41-1455"
+  ],
+  "source": {
+    "synthesis_id_original": "106.json_SnO2_2768",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: SnO2 | method: sol-gel | solvent: ethanol | temperature: 450.0 | crystalsystem: tetragonal | size.length: 29.3 | size.width: 29.3 | size.depth: 29.3 | pdfno_list: 41-1455"
+}

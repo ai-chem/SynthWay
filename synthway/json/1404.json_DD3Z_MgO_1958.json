@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "1404.json_DD3Z/MgO_1958",
+  "composition": "DD3Z/MgO",
+  "elements": [
+    "D",
+    "Z",
+    "Mg",
+    "O"
+  ],
+  "method": "autoclave",
+  "precursors": [
+    {
+      "name": "DD3 + 38 wt% ZrO2-clay (DD3Z)"
+    },
+    {
+      "name": "Mg(NO3)2*4H2O"
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 300.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "shape": "rough surface with nano-spherical geometries",
+    "size": {
+      "length": 45.0,
+      "width": 45.0,
+      "depth": 45.0
+    }
+  },
+  "pdfno_list": [
+    "45-0946 15-0776 37-1484 01-0424 06-0266"
+  ],
+  "source": {
+    "synthesis_id_original": "1404.json_DD3Z/MgO_1958",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: DD3Z/MgO | method: autoclave | solvent: distilled water | solvent.volume: 100.0 | temperature: 300.0 | crystalsystem: tetragonal | shape: rough surface with nano-spherical geometries | size.length: 45.0 | size.width: 45.0 | size.depth: 45.0 | precursor: DD3 + 38 wt% ZrO2-clay (DD3Z) | precursor: Mg(NO3)2*4H2O | additive: sodium hydroxide | pdfno_list: 45-0946 15-0776 37-1484 01-0424 06-0266"
+}

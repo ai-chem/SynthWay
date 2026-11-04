@@ -1,0 +1,37 @@
+{
+  "synthesis_id": "1513.json_MnOx_(EM)_3536",
+  "composition": "MnOx (EM)",
+  "elements": [
+    "Mn",
+    "Ox",
+    "E",
+    "M"
+  ],
+  "method": "electrophoretic deposition",
+  "precursors": [
+    {
+      "name": "MnC2O4"
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 100.0
+    }
+  ],
+  "product": {
+    "crystalsystem": "amorphous",
+    "shape": "flower-like tiny flakes",
+    "size": {
+      "length": 75.0,
+      "width": 75.0,
+      "depth": 75.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1513.json_MnOx_(EM)_3536",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: MnOx (EM) | method: electrophoretic deposition | crystalsystem: amorphous | shape: flower-like tiny flakes | size.length: 75.0 | size.width: 75.0 | size.depth: 75.0 | precursor: MnC2O4 | additive: sodium hydroxide (conc 100.0)"
+}

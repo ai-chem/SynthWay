@@ -1,0 +1,4 @@
+{
+  "retrieval_text": "composition: Ag | method: hydrothermal | solvent: deionized water | solvent.volume: 100 | temperature: 150 | ph: 8.0 | crystal_system: face-centered cubic | shape: spherical | size.length: 100 | size.width: 100 | size.depth: 100 | precursor: AgNO3 | precursor.mass: 0.5 | precursor.conc: 0.05 | additive: PVP | additive.mass: 0.2 | additive.conc: null | seed: null | seed.mass: null | seed.conc: null",
+  "raw_text": "Route 2: Hydrothermal method for Ag\n1. Dissolve AgNO3 (0.5 g, 0.05 M) and polyvinylpyrrolidone (PVP, 0.2 g) in deionized water (100 mL) to form a solution. Adjust pH to ~8.0 using NaOH.\n2. Transfer the solution to a sealed autoclave and heat at 150 °C for 4 hours.\n3. Allow the autoclave to cool, then collect the solid product by filtration. Wash and dry the obtained powder.\nFinal product: Ag with a face-centered cubic crystal structure, spherical shape, particle size ~100×100×100 nm, matching PDF reference 04-0783."
+}

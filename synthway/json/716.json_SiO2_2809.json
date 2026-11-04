@@ -1,0 +1,24 @@
+{
+  "synthesis_id": "716.json_SiO2_2809",
+  "composition": "SiO2",
+  "elements": [
+    "Si",
+    "O"
+  ],
+  "solvent": {
+    "name": "absolute ethanol"
+  },
+  "product": {
+    "size": {
+      "length": 10.6,
+      "width": 10.6,
+      "depth": 10.6
+    }
+  },
+  "source": {
+    "synthesis_id_original": "716.json_SiO2_2809",
+    "nodes": 5,
+    "edges": 4
+  },
+  "retrieval_text": "composition: SiO2 | solvent: absolute ethanol | size.length: 10.6 | size.width: 10.6 | size.depth: 10.6"
+}

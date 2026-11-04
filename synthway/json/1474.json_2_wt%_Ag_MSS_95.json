@@ -1,0 +1,36 @@
+{
+  "synthesis_id": "1474.json_2_wt%_Ag/MSS_95",
+  "composition": "2 wt% Ag/MSS",
+  "elements": [
+    "Ag",
+    "M",
+    "S"
+  ],
+  "method": "wet impregnatio",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "mass": 0.031
+    },
+    {
+      "name": "MSS",
+      "mass": 1.0
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 120.0
+  },
+  "product": {
+    "crystalsystem": "cubic"
+  },
+  "source": {
+    "synthesis_id_original": "1474.json_2_wt%_Ag/MSS_95",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: 2 wt% Ag/MSS | method: wet impregnatio | solvent: distilled water | solvent.volume: 30.0 | temperature: 120.0 | crystalsystem: cubic | precursor: AgNO3 (mass 0.031) | precursor: MSS (mass 1.0)"
+}

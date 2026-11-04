@@ -1,0 +1,27 @@
+{
+  "synthesis_id": "379.json_LiAlO2_1",
+  "composition": "LiAlO2",
+  "elements": [
+    "Li",
+    "Al",
+    "O"
+  ],
+  "method": "microemulsion",
+  "solvent": {
+    "name": "cyclohexane"
+  },
+  "conditions": {
+    "temperature": 110.0
+  },
+  "product": {
+    "size": {
+      "length": 30.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "379.json_LiAlO2_1",
+    "nodes": 5,
+    "edges": 4
+  },
+  "retrieval_text": "composition: LiAlO2 | method: microemulsion | solvent: cyclohexane | temperature: 110.0 | size.length: 30.0"
+}

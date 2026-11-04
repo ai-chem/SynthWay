@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "446.json_CuO_1806",
+  "composition": "CuO",
+  "elements": [
+    "Cu",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Cu(NO3)2",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "mint extract"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 100.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "irregular",
+    "size": {
+      "length": 23.0,
+      "width": 23.0,
+      "depth": 23.0
+    }
+  },
+  "pdfno_list": [
+    "05-661"
+  ],
+  "source": {
+    "synthesis_id_original": "446.json_CuO_1806",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: CuO | solvent: water | solvent.volume: 20.0 | temperature: 100.0 | crystalsystem: cubic | shape: irregular | size.length: 23.0 | size.width: 23.0 | size.depth: 23.0 | precursor: Cu(NO3)2 (conc 100.0) | additive: mint extract | pdfno_list: 05-661"
+}

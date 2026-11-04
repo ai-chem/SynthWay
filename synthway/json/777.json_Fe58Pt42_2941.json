@@ -1,0 +1,60 @@
+{
+  "synthesis_id": "777.json_Fe58Pt42_2941",
+  "composition": "Fe58Pt42",
+  "elements": [
+    "Fe",
+    "Pt"
+  ],
+  "method": "reduction",
+  "precursors": [
+    {
+      "name": "Pt(acac)2",
+      "mass": 0.197
+    },
+    {
+      "name": "FeCl2â4H2O",
+      "mass": 0.139
+    },
+    {
+      "name": "LiBEt3H",
+      "mass": 0.265,
+      "conc": 1000.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "1,2-hexadecanediol",
+      "mass": 0.52
+    },
+    {
+      "name": "oleic acid",
+      "mass": 0.141
+    },
+    {
+      "name": "oleylamine",
+      "mass": 0.134
+    }
+  ],
+  "solvent": {
+    "name": "phenyl ether",
+    "volume": 25.0
+  },
+  "conditions": {
+    "temperature": 263.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 4.0,
+      "width": 4.0,
+      "depth": 4.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "777.json_Fe58Pt42_2941",
+    "nodes": 23,
+    "edges": 22
+  },
+  "retrieval_text": "composition: Fe58Pt42 | method: reduction | solvent: phenyl ether | solvent.volume: 25.0 | temperature: 263.0 | crystalsystem: face-centered cubic | shape: spherical | size.length: 4.0 | size.width: 4.0 | size.depth: 4.0 | precursor: Pt(acac)2 (mass 0.197) | precursor: FeCl2â4H2O (mass 0.139) | precursor: LiBEt3H (mass 0.265; conc 1000.0) | additive: 1,2-hexadecanediol (mass 0.52) | additive: oleic acid (mass 0.141) | additive: oleylamine (mass 0.134)"
+}

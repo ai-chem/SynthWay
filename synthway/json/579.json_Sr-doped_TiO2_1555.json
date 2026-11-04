@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "579.json_Sr-doped_TiO2_1555",
+  "composition": "Sr-doped TiO2",
+  "elements": [
+    "Sr",
+    "Ti",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "Ti(OC3H7)4"
+    },
+    {
+      "name": "Sr(NO3)2*9H2O"
+    }
+  ],
+  "additives": [
+    {
+      "name": "acetic acid",
+      "mass": 2.1
+    },
+    {
+      "name": "nitric acid"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 220.0
+  },
+  "product": {
+    "size": {
+      "length": 24.19
+    }
+  },
+  "source": {
+    "synthesis_id_original": "579.json_Sr-doped_TiO2_1555",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Sr-doped TiO2 | method: hydrothermal | solvent: water | temperature: 220.0 | size.length: 24.19 | precursor: Ti(OC3H7)4 | precursor: Sr(NO3)2*9H2O | additive: acetic acid (mass 2.1) | additive: nitric acid"
+}

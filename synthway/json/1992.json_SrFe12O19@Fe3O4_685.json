@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "1992.json_SrFe12O19@Fe3O4_685",
+  "composition": "SrFe12O19@Fe3O4",
+  "elements": [
+    "Sr",
+    "Fe",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "FeCl3*6H2O",
+      "mass": 0.75
+    }
+  ],
+  "additives": [
+    {
+      "name": "urea",
+      "mass": 2.7
+    }
+  ],
+  "seeds": [
+    {
+      "name": "SrFe12O19",
+      "mass": 0.2
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 850.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 270.0,
+      "width": 270.0,
+      "depth": 270.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1992.json_SrFe12O19@Fe3O4_685",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: SrFe12O19@Fe3O4 | solvent: ethylene glycol | solvent.volume: 50.0 | temperature: 850.0 | shape: spherical | size.length: 270.0 | size.width: 270.0 | size.depth: 270.0 | precursor: FeCl3*6H2O (mass 0.75) | additive: urea (mass 2.7) | seed: SrFe12O19 (mass 0.2)"
+}

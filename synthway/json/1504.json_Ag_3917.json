@@ -1,0 +1,37 @@
+{
+  "synthesis_id": "1504.json_Ag_3917",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 2.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "crocus sativus l. wastage extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 15.0,
+      "width": 15.0,
+      "depth": 15.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1504.json_Ag_3917",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Ag | method: green synthesis | solvent: water | crystalsystem: cubic | shape: spherical | size.length: 15.0 | size.width: 15.0 | size.depth: 15.0 | precursor: AgNO3 (conc 2.0) | additive: crocus sativus l. wastage extract"
+}

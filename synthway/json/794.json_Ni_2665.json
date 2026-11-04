@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "794.json_Ni_2665",
+  "composition": "Ni",
+  "elements": [
+    "Ni"
+  ],
+  "precursors": [
+    {
+      "name": "NiCl2",
+      "conc": 5.0
+    },
+    {
+      "name": "N2H5OH",
+      "conc": 100.0
+    },
+    {
+      "name": "NaOH",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol"
+  },
+  "conditions": {
+    "ph": 10.5
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "shape": "spherical",
+    "size": {
+      "width": 9.2
+    }
+  },
+  "source": {
+    "synthesis_id_original": "794.json_Ni_2665",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Ni | solvent: ethylene glycol | pH: 10.5 | crystalsystem: face-centered cubic | shape: spherical | size.width: 9.2 | precursor: NiCl2 (conc 5.0) | precursor: N2H5OH (conc 100.0) | precursor: NaOH (conc 1000.0)"
+}

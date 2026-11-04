@@ -1,0 +1,5 @@
+metric,description,value,ci95_low,ci95_high,ci_method,ci95_low_bootstrap,ci95_high_bootstrap
+"ICC(A,1)","two-way mixed, absolute agreement, single measurement (Koo & Li)",0.5060084443000974,-2.428612866367528e-16,0.6001577287066244,bootstrap,,
+"ICC(A,4)","two-way mixed, absolute agreement, average measurement (Koo & Li)",0.8038178769508577,-9.71445146547012e-16,0.8572233173753872,bootstrap,,
+"ICC(3,1)","two-way mixed, consistency, single measurement",0.5027428202646015,0.34499722215713724,0.6599459822920458,analytic_F,-2.630997271898156e-16,0.602749907097733
+"ICC(3,4)","two-way mixed, consistency, average measurement",0.8017496462112441,0.678129995009459,0.8858817077403676,analytic_F,-1.0523989087592631e-15,0.8585417493714436

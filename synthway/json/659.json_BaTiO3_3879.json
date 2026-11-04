@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "659.json_BaTiO3_3879",
+  "composition": "BaTiO3",
+  "elements": [
+    "Ba",
+    "Ti",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "Ba(OH)2*8H2O",
+      "conc": 10.0
+    },
+    {
+      "name": "TiO2",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "nitric acid"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 400.0,
+    "ph": 4.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "shape": "nanopowders",
+    "size": {
+      "length": 89.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "659.json_BaTiO3_3879",
+    "nodes": 12,
+    "edges": 12
+  },
+  "retrieval_text": "composition: BaTiO3 | method: hydrothermal | solvent: water | temperature: 400.0 | pH: 4.0 | crystalsystem: tetragonal | shape: nanopowders | size.length: 89.0 | precursor: Ba(OH)2*8H2O (conc 10.0) | precursor: TiO2 (conc 10.0) | additive: nitric acid"
+}

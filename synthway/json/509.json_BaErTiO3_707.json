@@ -1,0 +1,29 @@
+{
+  "synthesis_id": "509.json_BaErTiO3_707",
+  "composition": "BaErTiO3",
+  "elements": [
+    "Ba",
+    "Er",
+    "Ti",
+    "O"
+  ],
+  "method": "sol-gel",
+  "solvent": {
+    "name": "acetylacetone"
+  },
+  "conditions": {
+    "temperature": 750.0
+  },
+  "product": {
+    "shape": "film",
+    "size": {
+      "length": 15.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "509.json_BaErTiO3_707",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: BaErTiO3 | method: sol-gel | solvent: acetylacetone | temperature: 750.0 | shape: film | size.length: 15.0"
+}

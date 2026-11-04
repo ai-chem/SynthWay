@@ -1,0 +1,54 @@
+{
+  "synthesis_id": "2080.json_CuCo2S4_367",
+  "composition": "CuCo2S4",
+  "elements": [
+    "Cu",
+    "Co",
+    "S"
+  ],
+  "method": "one-pot hydrothermal",
+  "precursors": [
+    {
+      "name": "CuCl2·2H2O",
+      "conc": 0.25
+    },
+    {
+      "name": "CoCl2·6H2O",
+      "conc": 0.5
+    }
+  ],
+  "additives": [
+    {
+      "name": "dextran 500 kda",
+      "mass": 0.5
+    },
+    {
+      "name": "thiourea",
+      "conc": 1.5
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 160.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 30.0,
+      "width": 30.0,
+      "depth": 30.0
+    }
+  },
+  "pdfno_list": [
+    "42-14501"
+  ],
+  "source": {
+    "synthesis_id_original": "2080.json_CuCo2S4_367",
+    "nodes": 18,
+    "edges": 17
+  },
+  "retrieval_text": "composition: CuCo2S4 | method: one-pot hydrothermal | solvent: water | solvent.volume: 30.0 | temperature: 160.0 | crystalsystem: cubic | size.length: 30.0 | size.width: 30.0 | size.depth: 30.0 | precursor: CuCl2·2H2O (conc 0.25) | precursor: CoCl2·6H2O (conc 0.5) | additive: dextran 500 kda (mass 0.5) | additive: thiourea (conc 1.5) | pdfno_list: 42-14501"
+}

@@ -1,0 +1,51 @@
+{
+  "synthesis_id": "2022.json_Pt50Ag50_39",
+  "composition": "Pt50Ag50",
+  "elements": [
+    "Pt",
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 49.2
+    },
+    {
+      "name": "H2PtCl6·6H2O",
+      "conc": 25.4
+    }
+  ],
+  "additives": [
+    {
+      "name": "formaldehyde"
+    },
+    {
+      "name": "pah",
+      "mass": 0.0025
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 4.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "shape": "octahedral",
+    "size": {
+      "length": 21.0,
+      "width": 21.0,
+      "depth": 21.0
+    }
+  },
+  "pdfno_list": [
+    "04-0802, 04-0783"
+  ],
+  "source": {
+    "synthesis_id_original": "2022.json_Pt50Ag50_39",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: Pt50Ag50 | solvent: water | solvent.volume: 4.0 | temperature: 200.0 | shape: octahedral | size.length: 21.0 | size.width: 21.0 | size.depth: 21.0 | precursor: AgNO3 (conc 49.2) | precursor: H2PtCl6·6H2O (conc 25.4) | additive: formaldehyde | additive: pah (mass 0.0025) | pdfno_list: 04-0802, 04-0783"
+}

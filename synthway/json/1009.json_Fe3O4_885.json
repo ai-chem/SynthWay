@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "1009.json_Fe3O4_885",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "coprecipitation",
+  "precursors": [
+    {
+      "name": "FeCl2·4H2O",
+      "mass": 1.5
+    },
+    {
+      "name": "FeCl3",
+      "mass": 3.0
+    },
+    {
+      "name": "NH4OH",
+      "mass": 9.0
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 100.0
+  },
+  "product": {
+    "crystalsystem": "cubic spinel",
+    "shape": "spherical",
+    "size": {
+      "width": 15.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1009.json_Fe3O4_885",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Fe3O4 | method: coprecipitation | solvent: deionized water | solvent.volume: 100.0 | crystalsystem: cubic spinel | shape: spherical | size.width: 15.0 | precursor: FeCl2·4H2O (mass 1.5) | precursor: FeCl3 (mass 3.0) | precursor: NH4OH (mass 9.0)"
+}

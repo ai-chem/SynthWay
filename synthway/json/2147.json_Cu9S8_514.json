@@ -1,0 +1,36 @@
+{
+  "synthesis_id": "2147.json_Cu9S8_514",
+  "composition": "Cu9S8",
+  "elements": [
+    "Cu",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "Na2S",
+      "conc": 20.0
+    }
+  ],
+  "seeds": [
+    {
+      "name": "CuO",
+      "mass": 0.01
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 10.0
+  },
+  "product": {
+    "shape": "flower-like"
+  },
+  "pdfno_list": [
+    "36-0379"
+  ],
+  "source": {
+    "synthesis_id_original": "2147.json_Cu9S8_514",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: Cu9S8 | solvent: water | solvent.volume: 10.0 | shape: flower-like | precursor: Na2S (conc 20.0) | seed: CuO (mass 0.01) | pdfno_list: 36-0379"
+}

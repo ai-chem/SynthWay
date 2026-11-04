@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "1445.json_Ga3_MBG_1879",
+  "composition": "Ga3 MBG",
+  "elements": [
+    "Ga",
+    "M",
+    "B",
+    "G"
+  ],
+  "method": "microemulsion assisted sol-gel",
+  "precursors": [
+    {
+      "name": "CTAB",
+      "mass": 2.8
+    },
+    {
+      "name": "Si(OC2H5)4"
+    },
+    {
+      "name": "Ga(NO3)3*6H2O"
+    }
+  ],
+  "additives": [
+    {
+      "name": "ethyl acetate"
+    },
+    {
+      "name": "ammonium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 150.0
+  },
+  "product": {
+    "crystalsystem": "amorphous",
+    "shape": "spherical",
+    "size": {
+      "length": 156.0,
+      "width": 156.0,
+      "depth": 156.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1445.json_Ga3_MBG_1879",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Ga3 MBG | method: microemulsion assisted sol-gel | solvent: deionized water | solvent.volume: 150.0 | crystalsystem: amorphous | shape: spherical | size.length: 156.0 | size.width: 156.0 | size.depth: 156.0 | precursor: CTAB (mass 2.8) | precursor: Si(OC2H5)4 | precursor: Ga(NO3)3*6H2O | additive: ethyl acetate | additive: ammonium hydroxide"
+}

@@ -1,0 +1,29 @@
+{
+  "synthesis_id": "419.json_ZnO_3778",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "electrodeposition",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 26.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "flower-like",
+    "size": {
+      "length": 7000.0,
+      "width": 70.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "419.json_ZnO_3778",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: ZnO | method: electrodeposition | solvent: water | temperature: 26.0 | crystalsystem: monoclinic | shape: flower-like | size.length: 7000.0 | size.width: 70.0"
+}

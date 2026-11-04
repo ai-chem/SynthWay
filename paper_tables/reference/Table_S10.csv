@@ -1,0 +1,9 @@
+Models,Statistic,Chemical Plausibility & Consistency,Answer Relevance,Faithfulness
+Gemini 2.0 Flash,"ICC(A,1), 95% CI","0.647, [0.521, 0.743]","0.898, [0.465, 1.000]","0.808, [0.707, 0.908]"
+Gemini 2.0 Flash,"ICC(A,3), 95% CI","0.846, [0.766, 0.897]","0.963,[0.723, 1.000]","0.927, [0.878, 0.967]"
+NVIDIA Nemotron 3 Nano 30b A3B,"ICC(A,1), 95% CI","0.404, [0.287, 0.515]",Not estimable (all scores = 1.0 across runs),"0.651, [0.527, 0.753]"
+NVIDIA Nemotron 3 Nano 30b A3B,"ICC(A,3), 95% CI","0.670, [0.547, 0.761]",Not estimable (all scores = 1.0 across runs),"0.848, [0.770, 0.902]"
+Llama 4 Maverick,"ICC(A,1), 95% CI","0.425, [0.274, 0.550]","0.480, [0.318, 0.631]","0.588, [0.440, 0.730]"
+Llama 4 Maverick,"ICC(A,3), 95% CI","0.689, [0.531, 0.786]","0.735, [0.583, 0.837]","0.811, [0.702, 0.890]"
+Claude Opus 4.5,"ICC(A,1), 95% CI","0.864, [0.767, 0.917]",Not estimable (all scores = 1.0 across runs),"0.949, [0.922, 0.969]"
+Claude Opus 4.5,"ICC(A,3), 95% CI","0.950, [0.908, 0.971]",Not estimable (all scores = 1.0 across runs),"0.983, [0.972, 0.990]"

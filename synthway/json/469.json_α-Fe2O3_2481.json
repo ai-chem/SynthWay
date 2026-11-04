@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "469.json_α-Fe2O3_2481",
+  "composition": "α-Fe2O3",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "FeCl3*6H2O",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "papaya leaves extract"
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "ph": 11.0
+  },
+  "product": {
+    "size": {
+      "length": 21.59,
+      "width": 21.59,
+      "depth": 21.59
+    }
+  },
+  "source": {
+    "synthesis_id_original": "469.json_α-Fe2O3_2481",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: α-Fe2O3 | solvent: water | pH: 11.0 | size.length: 21.59 | size.width: 21.59 | size.depth: 21.59 | precursor: FeCl3*6H2O (conc 100.0) | additive: papaya leaves extract | additive: sodium hydroxide (conc 1000.0)"
+}

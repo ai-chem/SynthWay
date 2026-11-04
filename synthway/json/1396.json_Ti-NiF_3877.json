@@ -1,0 +1,54 @@
+{
+  "synthesis_id": "1396.json_Ti-NiF_3877",
+  "composition": "Ti-NiF",
+  "elements": [
+    "Ti",
+    "Ni",
+    "F"
+  ],
+  "method": "sol-gel",
+  "precursors": [
+    {
+      "name": "Nickel nitrate [Ni(NO3)2·6H2O]",
+      "conc": 200.0
+    },
+    {
+      "name": "ferric nitrate [Fe(NO3)3·9H2O]",
+      "conc": 200.0
+    },
+    {
+      "name": "Ti(NO3)4"
+    }
+  ],
+  "additives": [
+    {
+      "name": "citric acid",
+      "conc": 400.0
+    }
+  ],
+  "solvent": {
+    "name": "distilled water"
+  },
+  "conditions": {
+    "temperature": 100.0,
+    "ph": 7.0
+  },
+  "product": {
+    "crystalsystem": "cubic spinel",
+    "shape": "octahedral",
+    "size": {
+      "length": 26.0,
+      "width": 26.0,
+      "depth": 26.0
+    }
+  },
+  "pdfno_list": [
+    "10-0325"
+  ],
+  "source": {
+    "synthesis_id_original": "1396.json_Ti-NiF_3877",
+    "nodes": 17,
+    "edges": 17
+  },
+  "retrieval_text": "composition: Ti-NiF | method: sol-gel | solvent: distilled water | temperature: 100.0 | pH: 7.0 | crystalsystem: cubic spinel | shape: octahedral | size.length: 26.0 | size.width: 26.0 | size.depth: 26.0 | precursor: Nickel nitrate [Ni(NO3)2·6H2O] (conc 200.0) | precursor: ferric nitrate [Fe(NO3)3·9H2O] (conc 200.0) | precursor: Ti(NO3)4 | additive: citric acid (conc 400.0) | pdfno_list: 10-0325"
+}

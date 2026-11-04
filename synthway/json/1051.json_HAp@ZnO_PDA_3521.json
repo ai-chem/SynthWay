@@ -1,0 +1,35 @@
+{
+  "synthesis_id": "1051.json_HAp@ZnO/PDA_3521",
+  "composition": "HAp@ZnO/PDA",
+  "elements": [
+    "H",
+    "Ap",
+    "Zn",
+    "O",
+    "P",
+    "D",
+    "A"
+  ],
+  "precursors": [
+    {
+      "name": "ZnO"
+    }
+  ],
+  "additives": [
+    {
+      "name": "dopamine solution"
+    }
+  ],
+  "solvent": {
+    "name": "aqueous tris-buffer solution"
+  },
+  "product": {
+    "shape": "roundness"
+  },
+  "source": {
+    "synthesis_id_original": "1051.json_HAp@ZnO/PDA_3521",
+    "nodes": 5,
+    "edges": 4
+  },
+  "retrieval_text": "composition: HAp@ZnO/PDA | solvent: aqueous tris-buffer solution | shape: roundness | precursor: ZnO | additive: dopamine solution"
+}

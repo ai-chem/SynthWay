@@ -1,0 +1,32 @@
+{
+  "synthesis_id": "283.json_PbS_1829",
+  "composition": "PbS",
+  "elements": [
+    "Pb",
+    "S"
+  ],
+  "method": "chemical precipitation",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 100.0,
+    "ph": 8.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "cube",
+    "size": {
+      "length": 25.6
+    }
+  },
+  "pdfno_list": [
+    "65-0132"
+  ],
+  "source": {
+    "synthesis_id_original": "283.json_PbS_1829",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: PbS | method: chemical precipitation | solvent: water | temperature: 100.0 | pH: 8.0 | crystalsystem: cubic | shape: cube | size.length: 25.6 | pdfno_list: 65-0132"
+}

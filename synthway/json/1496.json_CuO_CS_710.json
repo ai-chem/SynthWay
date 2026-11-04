@@ -1,0 +1,54 @@
+{
+  "synthesis_id": "1496.json_CuO/CS_710",
+  "composition": "CuO/CS",
+  "elements": [
+    "Cu",
+    "O",
+    "C",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "Cu(CH3COO)2",
+      "mass": 0.4
+    },
+    {
+      "name": "Chi",
+      "mass": 0.5
+    }
+  ],
+  "additives": [
+    {
+      "name": "acetic acid"
+    },
+    {
+      "name": "sodium hydroxide",
+      "mass": 0.5
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 150.0
+  },
+  "conditions": {
+    "temperature": 100.0,
+    "ph": 6.5
+  },
+  "product": {
+    "crystalsystem": "amorphous",
+    "size": {
+      "length": 24.0,
+      "width": 24.0,
+      "depth": 24.0
+    }
+  },
+  "pdfno_list": [
+    "00-018-1690"
+  ],
+  "source": {
+    "synthesis_id_original": "1496.json_CuO/CS_710",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: CuO/CS | solvent: deionized water | solvent.volume: 150.0 | temperature: 100.0 | pH: 6.5 | crystalsystem: amorphous | size.length: 24.0 | size.width: 24.0 | size.depth: 24.0 | precursor: Cu(CH3COO)2 (mass 0.4) | precursor: Chi (mass 0.5) | additive: acetic acid | additive: sodium hydroxide (mass 0.5) | pdfno_list: 00-018-1690"
+}

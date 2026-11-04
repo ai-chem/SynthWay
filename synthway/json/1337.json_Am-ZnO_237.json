@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1337.json_Am-ZnO_237",
+  "composition": "Am-ZnO",
+  "elements": [
+    "Am",
+    "Zn",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Zn(CH3CO2)2*2H2O",
+      "conc": 20.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "aegle marmelos unripe fruit extract"
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 2000.0
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 50.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "hexagonal",
+    "size": {
+      "length": 22.5,
+      "width": 22.5,
+      "depth": 22.5
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1337.json_Am-ZnO_237",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Am-ZnO | method: green synthesis | solvent: distilled water | solvent.volume: 50.0 | crystalsystem: hexagonal | shape: hexagonal | size.length: 22.5 | size.width: 22.5 | size.depth: 22.5 | precursor: Zn(CH3CO2)2*2H2O (conc 20.0) | additive: aegle marmelos unripe fruit extract | additive: sodium hydroxide (conc 2000.0)"
+}

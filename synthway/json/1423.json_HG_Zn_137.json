@@ -1,0 +1,36 @@
+{
+  "synthesis_id": "1423.json_HG_Zn_137",
+  "composition": "HG_Zn",
+  "elements": [
+    "H",
+    "G",
+    "Zn"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "Chi"
+    },
+    {
+      "name": "PVA"
+    },
+    {
+      "name": "PEG"
+    },
+    {
+      "name": "Zn2+"
+    }
+  ],
+  "solvent": {
+    "name": "acetic acid and water"
+  },
+  "product": {
+    "shape": "rough, uniform, wrinkled, and well-ordered morphology"
+  },
+  "source": {
+    "synthesis_id_original": "1423.json_HG_Zn_137",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: HG_Zn | method: hydrothermal | solvent: acetic acid and water | shape: rough, uniform, wrinkled, and well-ordered morphology | precursor: Chi | precursor: PVA | precursor: PEG | precursor: Zn2+"
+}

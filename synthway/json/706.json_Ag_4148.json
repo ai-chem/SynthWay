@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "706.json_Ag_4148",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "Ag(CH3COO)",
+      "mass": 0.17
+    },
+    {
+      "name": "C16H35N",
+      "mass": 2.41
+    }
+  ],
+  "additives": [
+    {
+      "name": "phenylhydrazine",
+      "mass": 0.11
+    }
+  ],
+  "solvent": {
+    "name": "toluene",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "width": 10.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "706.json_Ag_4148",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Ag | solvent: toluene | solvent.volume: 50.0 | temperature: 60.0 | shape: spherical | size.width: 10.0 | precursor: Ag(CH3COO) (mass 0.17) | precursor: C16H35N (mass 2.41) | additive: phenylhydrazine (mass 0.11)"
+}

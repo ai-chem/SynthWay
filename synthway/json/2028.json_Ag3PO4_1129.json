@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "2028.json_Ag3PO4_1129",
+  "composition": "Ag3PO4",
+  "elements": [
+    "Ag",
+    "P",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "NaH2PO4",
+      "conc": 20.0
+    },
+    {
+      "name": "CH3COOAg",
+      "conc": 60.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 70.0
+  },
+  "product": {
+    "crystalsystem": "bcc",
+    "size": {
+      "length": 700.0,
+      "width": 700.0,
+      "depth": 700.0
+    }
+  },
+  "pdfno_list": [
+    "06-0505"
+  ],
+  "source": {
+    "synthesis_id_original": "2028.json_Ag3PO4_1129",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Ag3PO4 | solvent: water | solvent.volume: 100.0 | temperature: 70.0 | crystalsystem: bcc | size.length: 700.0 | size.width: 700.0 | size.depth: 700.0 | precursor: NaH2PO4 (conc 20.0) | precursor: CH3COOAg (conc 60.0) | pdfno_list: 06-0505"
+}

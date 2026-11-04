@@ -1,0 +1,54 @@
+{
+  "synthesis_id": "1790.json_CuCo2O4_3531",
+  "composition": "CuCo2O4",
+  "elements": [
+    "Cu",
+    "Co",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Co(NO3)2",
+      "conc": 1.0
+    },
+    {
+      "name": "Cu(NO3)2",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 0.5
+    },
+    {
+      "name": "urea",
+      "mass": 0.6
+    }
+  ],
+  "solvent": {
+    "name": "ethanol",
+    "volume": 40.0
+  },
+  "conditions": {
+    "temperature": 130.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 4000.0,
+      "width": 4000.0,
+      "depth": 4000.0
+    }
+  },
+  "pdfno_list": [
+    "001-1155"
+  ],
+  "source": {
+    "synthesis_id_original": "1790.json_CuCo2O4_3531",
+    "nodes": 17,
+    "edges": 17
+  },
+  "retrieval_text": "composition: CuCo2O4 | solvent: ethanol | solvent.volume: 40.0 | temperature: 130.0 | crystalsystem: cubic | shape: spherical | size.length: 4000.0 | size.width: 4000.0 | size.depth: 4000.0 | precursor: Co(NO3)2 (conc 1.0) | precursor: Cu(NO3)2 (conc 1.0) | additive: polyvinylpyrrolidone (mass 0.5) | additive: urea (mass 0.6) | pdfno_list: 001-1155"
+}

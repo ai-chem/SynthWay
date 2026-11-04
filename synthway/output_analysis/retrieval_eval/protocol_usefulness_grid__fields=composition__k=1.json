@@ -1,0 +1,242 @@
+[
+  {
+    "id": "NiO",
+    "input": "composition: NiO",
+    "expected_output": "method: hydrolysis | solvent: water | temperature: 400.0 | precursor: NiCl2 (conc 1000.0) | precursor: NaOH (conc 4000.0) | additive: zinc acetate (conc 30.0) | additive: zinc nitrate (conc 20.0) | additive: hexamethylenetetramine (conc 20.0)",
+    "retrieval_context": [
+      "composition: Nio/NiO | method: green synthesis | solvent: water | temperature: 70.0 | shape: spherical | precursor: NiCl2 (conc 2000.0) | additive: lactuca serriola seeds extract | pdfno_list: 03-065-0380 00-001-1239"
+    ]
+  },
+  {
+    "id": "Fe7C3@C",
+    "input": "composition: Fe7C3@C",
+    "expected_output": "method: high pressure–high temperature synthesis | temperature: 560.0 | precursor: Fe(C5H5)2",
+    "retrieval_context": [
+      "composition: Fe7C3@C | method: high pressure–high temperature synthesis | temperature: 560.0 | crystalsystem: hexagonal | shape: spherical | size.length: 25.0 | size.width: 25.0 | size.depth: 25.0 | precursor: Fe(C5H5)2"
+    ]
+  },
+  {
+    "id": "Co80Ni20",
+    "input": "composition: Co80Ni20",
+    "expected_output": "method: polyol reduction | solvent: 1,2-butanediol | temperature: 170.0 | precursor: Co(CH3COO)2*4H2O (conc 4.8) | precursor: Ni(CH3COO)2*4H2O (conc 1.2) | additive: sodium hydroxide (conc 1.2) | additive: ruthenium trichloride hydrate (conc 0.15) | additive: oleic acid (conc 6.0) | additive: trioctylphosphine (conc 6.0)",
+    "retrieval_context": [
+      "composition: Co80Ni20 | method: polyol reduction | solvent: 1,2-butanediol | solvent.volume: 75.0 | temperature: 170.0 | crystalsystem: cubic | shape: wire | size.length: 52.5 | size.width: 6.5 | size.depth: 6.5 | precursor: Co(CH3COO)2*4H2O (conc 4.8) | precursor: Ni(CH3COO)2*4H2O (conc 1.2) | additive: sodium hydroxide (conc 1.2) | additive: ruthenium trichloride hydrate (conc 0.15) | additive: oleic acid (conc 6.0) | additive: trioctylphosphine (conc 6.0) | seed: PB (conc 25.0)"
+    ]
+  },
+  {
+    "id": "Zn0.1Ni0.9",
+    "input": "composition: Zn0.1Ni0.9",
+    "expected_output": "method: sol-gel | solvent: double distilled water | temperature: 100.0 | pH: 7.0 | precursor: nitrate hexahydrate (Ni (NO3)2·6H2O) (conc 900.0) | precursor: zinc nitrate hexahydrate (Zn (NO3)2·6H2O) (conc 100.0) | additive: citric acid | additive: ammonia",
+    "retrieval_context": [
+      "composition: Zn0.1Ni0.9 | method: sol-gel | solvent: double distilled water | temperature: 100.0 | pH: 7.0 | crystalsystem: cubic | shape: spherical | size.length: 57.0 | size.width: 57.0 | size.depth: 57.0 | precursor: nitrate hexahydrate (Ni (NO3)2·6H2O) (conc 900.0) | precursor: zinc nitrate hexahydrate (Zn (NO3)2·6H2O) (conc 100.0) | additive: citric acid | additive: ammonia | pdfno_list: 78-0429"
+    ]
+  },
+  {
+    "id": "SiO2",
+    "input": "composition: SiO2",
+    "expected_output": "method: modified stober | solvent: water | temperature: 25.0 | precursor: Si(OC2H5)4 | additive: igepal co-520 | additive: cyclohexane | additive: ammonium hydroxide",
+    "retrieval_context": [
+      "composition: SiO2 | solvent: water"
+    ]
+  },
+  {
+    "id": "Au",
+    "input": "composition: Au",
+    "expected_output": "method: the slow growth of seed nanostructures | solvent: water | temperature: 30.0 | precursor: AgNO3 (conc 10.0) | precursor: HAuCl4 (conc 10.0) | precursor: CuCl2 (conc 10.0) | precursor: NaBH4 (conc 25.0) | additive: ascorbic acid (conc 100.0) | additive: cetyltrimethylammonium chloride (conc 100.0) | additive: hydrochloric acid (conc 1000.0)",
+    "retrieval_context": [
+      "composition: Au–Ag | solvent: water | solvent.volume: 20.0 | crystalsystem: cubic | shape: nanodots | size.length: 10.0 | size.width: 10.0 | size.depth: 10.0 | precursor: HAuCl4 (conc 29.0) | precursor: AgNO3 (conc 6.0) | additive: chitosan (mass 0.1) | additive: ascorbic acid (conc 100.0) | pdfno_list: 45-1454"
+    ]
+  },
+  {
+    "id": "Pt/CdS",
+    "input": "composition: Pt/CdS",
+    "expected_output": "method: hydrothermal | solvent: ethanol | temperature: 70.0 | precursor: K2PtCl4 (mass 3.8)",
+    "retrieval_context": [
+      "composition: Pt/CdS | method: hydrothermal | solvent: ethanol | solvent.volume: 10.0 | temperature: 70.0 | crystalsystem: hexagonal | shape: wire | size.width: 45.0 | size.depth: 45.0 | precursor: K2PtCl4 (mass 3.8) | seed: CdS (mass 0.047) | pdfno_list: 41-1049"
+    ]
+  },
+  {
+    "id": "Сu",
+    "input": "composition: Сu",
+    "expected_output": "method: reduction | solvent: water | precursor: Cu(NO3)2*2.5H2O (mass 34.5; conc 43.0) | precursor: N2H4*H2O (mass 0.0392; conc 19600.0) | additive: polyacrylic acid sodium salt",
+    "retrieval_context": [
+      "composition: Сu | solvent: water | solvent.volume: 20.0 | temperature: 60.0 | crystalsystem: face-centered cubic | shape: spherical | size.length: 50.0 | size.width: 50.0 | size.depth: 50.0"
+    ]
+  },
+  {
+    "id": "PEG coated Fe3O4",
+    "input": "composition: PEG coated Fe3O4",
+    "expected_output": "method: thermal decomposition | solvent: trioctylamine | precursor: Fe(acac)3 | additive: oleic acid | additive: 11-aminoundecanoic acid tetramethylammonium salt (11-aats) | additive: polyethylene glycol",
+    "retrieval_context": [
+      "composition: PEG coated Fe3O4 | method: thermal decomposition | solvent: trioctylamine | shape: spherical | size.length: 120.0 | size.width: 120.0 | size.depth: 120.0 | precursor: Fe(acac)3 | additive: oleic acid | additive: 11-aminoundecanoic acid tetramethylammonium salt (11-aats) | additive: polyethylene glycol"
+    ]
+  },
+  {
+    "id": "HAp – Ag",
+    "input": "composition: HAp – Ag",
+    "expected_output": "method: coprecipitation | solvent: double distilled water | temperature: 150.0 | precursor: AgNO3 (conc 1.0) | additive: diammonium phosphate",
+    "retrieval_context": [
+      "composition: HAp – Ag | method: coprecipitation | solvent: double distilled water | temperature: 150.0 | shape: ellipsoidal | precursor: AgNO3 (conc 1.0) | additive: diammonium phosphate | seed: CaO"
+    ]
+  },
+  {
+    "id": "Ag",
+    "input": "composition: Ag",
+    "expected_output": "method: green synthesis | solvent: water | temperature: 40.0 | pH: 12.0 | precursor: AgNO3 (conc 1.75) | additive: artemisia herba-alba oil extract | additive: mentha oil extract | additive: rosmarinus oil extract | additive: ranunculus oil extract | additive: sodium hydroxide (conc 200.0)",
+    "retrieval_context": [
+      "composition: Ag–Au BM | solvent: water | temperature: 60.0 | crystalsystem: face-centered cubic | shape: spherical | size.length: 196.0 | size.width: 196.0 | size.depth: 196.0 | precursor: AgNO3 (conc 20.0) | precursor: HAuCl4 (conc 10.0) | additive: chrysin"
+    ]
+  },
+  {
+    "id": "dodecanethiol-coated Au",
+    "input": "composition: dodecanethiol-coated Au",
+    "expected_output": "method: twophase brust method | solvent: milliq water | precursor: HAuCl4 (mass 0.3; conc 0.88) | additive: tetraoctylammonium bromide (mass 3.9; conc 3.9) | additive: sodium borohydride (mass 0.334; conc 0.88) | additive: 1-dodecanethiol (mass 41.7; conc 8.45)",
+    "retrieval_context": [
+      "composition: dodecanethiol-coated Au | method: twophase brust method | solvent: milliq water | solvent.volume: 25.0 | shape: spherical | size.length: 4.6 | size.width: 4.6 | size.depth: 4.6 | precursor: HAuCl4 (mass 0.3; conc 0.88) | additive: tetraoctylammonium bromide (mass 3.9; conc 3.9) | additive: sodium borohydride (mass 0.334; conc 0.88) | additive: 1-dodecanethiol (mass 41.7; conc 8.45)"
+    ]
+  },
+  {
+    "id": "Ag  (0.25 wt%)",
+    "input": "composition: Ag  (0.25 wt%)",
+    "expected_output": "method: freeze-drying | solvent: water | temperature: 50.0 | precursor: AgNO3 (mass 0.025) | additive: gelatin-glycerol solution | additive: distilled water",
+    "retrieval_context": [
+      "composition: Ag  (0.25 wt%) | method: freeze-drying | solvent: water | temperature: 50.0 | precursor: AgNO3 (mass 0.025) | additive: gelatin-glycerol solution | additive: distilled water"
+    ]
+  },
+  {
+    "id": "Pd@Pt",
+    "input": "composition: Pd@Pt",
+    "expected_output": "method: facile seed-mediated growth | solvent: water | temperature: 80.0 | precursor: Na2PtCl6 (conc 50.0) | additive: polyvinylpyrrolidone | additive: ascorbic acid (conc 100.0) | additive: potassium bromide (mass 0.01875)",
+    "retrieval_context": [
+      "composition: Pd@Pt | method: facile seed-mediated growth | solvent: water | temperature: 80.0 | shape: dendrite-like | size.length: 27.0 | size.width: 27.0 | size.depth: 27.0 | precursor: Na2PtCl6 (conc 50.0) | additive: polyvinylpyrrolidone | additive: ascorbic acid (conc 100.0) | additive: potassium bromide (mass 0.01875) | seed: Pd"
+    ]
+  },
+  {
+    "id": "HA-Alg-ZnO",
+    "input": "composition: HA-Alg-ZnO",
+    "expected_output": "method: polyol | precursor: Zn(CH3COO)2 (conc 1000.0) | additive: hydroxyapatite microparticles | additive: sodium alginate | additive: calcium chloride (conc 250.0)",
+    "retrieval_context": [
+      "composition: HA-Alg-ZnO MPs | solvent: water | temperature: 80.0 | crystalsystem: hexagonal | shape: spherical | precursor: Zn(NO3)2*6H2O (conc 200.0) | additive: sodium alginate | additive: ammonium hydroxide | additive: calcium chloride (conc 250.0) | pdfno_list: 00-001-1136"
+    ]
+  },
+  {
+    "id": "Co3O4@NiO",
+    "input": "composition: Co3O4@NiO",
+    "expected_output": "method: facile deposition | solvent: water | temperature: 500.0 | precursor: Ni(NO3)2·6H2O (mass 0.0364; conc 0.125) | additive: urea (mass 0.3; conc 5.0)",
+    "retrieval_context": [
+      "composition: Co3O4@NiO | method: facile deposition | solvent: water | solvent.volume: 4.0 | temperature: 500.0 | crystalsystem: cubic | shape: nanotubes | precursor: Ni(NO3)2·6H2O (mass 0.0364; conc 0.125) | additive: urea (mass 0.3; conc 5.0) | seed: Co-C composite (mass 0.002) | pdfno_list: 42-1467, 04-0835"
+    ]
+  },
+  {
+    "id": "Cu2O",
+    "input": "composition: Cu2O",
+    "expected_output": "method: sonochemical | solvent: glycerol | temperature: 60.0 | precursor: Cu(CH3COO)2 (mass 0.5)",
+    "retrieval_context": [
+      "composition: CuO/Cu2O | method: biological | solvent: water | temperature: 25.0 | precursor: CuSO4*5H2O (conc 1000.0) | additive: fusarium oxysporum extract"
+    ]
+  },
+  {
+    "id": "Mat/PEG-CuO",
+    "input": "composition: Mat/PEG-CuO",
+    "expected_output": "method: phyto/sono-based | solvent: water | temperature: 25.0 | precursor: CuSO4·5H2O (mass 0.0424) | additive: camellia sinensis matcha extract | additive: polyethylene glycol (mass 0.1) | additive: sodium hydroxide (mass 0.2)",
+    "retrieval_context": [
+      "composition: SS316L with Mat/PEG-CuO | method: airbrush spray | solvent: water | shape: spherical | size.length: 60.0 | size.width: 60.0 | size.depth: 60.0 | precursor: Mat/PEG-CuO NPs | precursor: SS316L"
+    ]
+  },
+  {
+    "id": "SiO2–ZnO",
+    "input": "composition: SiO2–ZnO",
+    "expected_output": "method: chemical synthesis | solvent: deionized water | temperature: 60.0 | pH: 6.0 | precursor: Si(OC2H5)4 | precursor: Zn(CH3COO)2 (conc 100.0) | additive: ammonia | additive: polyethylene glycol | additive: sodium hydroxide | additive: nitric acid",
+    "retrieval_context": [
+      "composition: SiO2–ZnO | method: chemical synthesis | solvent: deionized water | solvent.volume: 50.0 | temperature: 60.0 | pH: 6.0 | shape: irregular | size.length: 95.0 | size.width: 95.0 | size.depth: 95.0 | precursor: Si(OC2H5)4 | precursor: Zn(CH3COO)2 (conc 100.0) | additive: ammonia | additive: polyethylene glycol | additive: sodium hydroxide | additive: nitric acid"
+    ]
+  },
+  {
+    "id": "Pt14Ag86",
+    "input": "composition: Pt14Ag86",
+    "expected_output": "method: heterogeneous nucleation | solvent: diphenylether | temperature: 170.0 | precursor: Pt(acac)2 (mass 0.02) | additive: oleylamine (mass 0.24)",
+    "retrieval_context": [
+      "composition: Pt14Ag86 | method: heterogeneous nucleation | solvent: diphenylether | solvent.volume: 5.0 | temperature: 170.0 | crystalsystem: face-centered cubic | size.width: 9.5 | precursor: Pt(acac)2 (mass 0.02) | additive: oleylamine (mass 0.24) | seed: Ag (mass 0.0054)"
+    ]
+  },
+  {
+    "id": "GO",
+    "input": "composition: GO",
+    "expected_output": "method: thermal treatment | temperature: 650.0 | precursor: C (mass 1.0) | additive: sulfuric acid | additive: nitric acid | additive: potassium permanganate (mass 1.0)",
+    "retrieval_context": [
+      "composition: GO+Ag | solvent: water | temperature: 25.0 | precursor: GO | precursor: AgNO3 | additive: quercetin"
+    ]
+  },
+  {
+    "id": "CD-MOF",
+    "input": "composition: CD-MOF",
+    "expected_output": "method: modified solvothermal | solvent: ultra-pure water | temperature: 90.0 | precursor: γ-CD (mass 2962.0) | additive: potassium hydroxide (mass 1024.0) | additive: methanol | additive: polyethylene glycol",
+    "retrieval_context": [
+      "composition: Au@CD-MOF | solvent: acetonitrile | solvent.volume: 5.0 | temperature: 37.0 | shape: cube | precursor: CD-MOF (mass 0.0465) | precursor: Au NPs (mass 0.01) | additive: chloroauric acid (conc 1.25) | additive: hydrochloric acid (conc 1500.0)"
+    ]
+  },
+  {
+    "id": "Se",
+    "input": "composition: Se",
+    "expected_output": "method: chemical reduction | solvent: water | precursor: Na2SeO3 (conc 510.0) | additive: chitosan (mass 0.1) | additive: acetic acid | additive: ascorbic acid (conc 230.0) | additive: distilled water",
+    "retrieval_context": [
+      "composition: Se | method: reduction | solvent: water | precursor: Na2SeO3 (conc 1.0) | precursor: C3H7NO2S (conc 5.0)"
+    ]
+  },
+  {
+    "id": "Zn1-xErxO (0, 1, 5, 10 at.%)",
+    "input": "composition: Zn1-xErxO (0, 1, 5, 10 at.%)",
+    "expected_output": "method: solution-polymerization | solvent: deionized water | temperature: 70.0 | pH: 1.0 | precursor: Zn(NO3)2·6H2O | precursor: Er(NO3)3·5H2O | additive: polyvinyl alcohol (mass 0.4) | additive: sucrose (mass 3.2) | additive: citric acid",
+    "retrieval_context": [
+      "composition: Zn1-xErxO (0, 1, 5, 10 at.%) | method: solution-polymerization | solvent: deionized water | solvent.volume: 100.0 | temperature: 70.0 | pH: 1.0 | crystalsystem: hexagonal | size.length: 25.0 | size.width: 25.0 | size.depth: 25.0 | precursor: Zn(NO3)2·6H2O | precursor: Er(NO3)3·5H2O | additive: polyvinyl alcohol (mass 0.4) | additive: sucrose (mass 3.2) | additive: citric acid | pdfno_list: 36-1451"
+    ]
+  },
+  {
+    "id": "Lf-CCAu",
+    "input": "composition: Lf-CCAu",
+    "expected_output": "method: seed mediated growth | solvent: water | temperature: 25.0 | precursor: HAuCl4·3H2O (conc 10.0) | additive: cetyltrimethylammonium chloride (conc 100.0) | additive: sodium borohydride (conc 10.0) | additive: silver nitrate (conc 10.0) | additive: hydrochloric acid (conc 1000.0) | additive: ascorbic acid (conc 100.0) | additive: lactoferrin (lf) (conc 0.001)",
+    "retrieval_context": [
+      "composition: Lf-CCAu | method: seed mediated growth | solvent: water | temperature: 25.0 | crystalsystem: face-centered cubic | shape: concave cube | size.length: 77.0 | size.depth: 71.5 | precursor: HAuCl4·3H2O (conc 10.0) | additive: cetyltrimethylammonium chloride (conc 100.0) | additive: sodium borohydride (conc 10.0) | additive: silver nitrate (conc 10.0) | additive: hydrochloric acid (conc 1000.0) | additive: ascorbic acid (conc 100.0) | additive: lactoferrin (lf) (conc 0.001)"
+    ]
+  },
+  {
+    "id": "HfO2@Au",
+    "input": "composition: HfO2@Au",
+    "expected_output": "method: high-temperature reduction method | solvent: dioctylether | temperature: 200.0 | precursor: Hf(N(CH3)2)4 | precursor: Au(CH3COO)3 (mass 0.25) | additive: oleic acid | additive: oleylamine | additive: 1,2-hexadecanediol (mass 2.5)",
+    "retrieval_context": [
+      "composition: HfO2@Au | method: high-temperature reduction method | solvent: dioctylether | solvent.volume: 45.0 | temperature: 200.0 | shape: irregular shape | size.width: 7.3 | precursor: Hf(N(CH3)2)4 | precursor: Au(CH3COO)3 (mass 0.25) | additive: oleic acid | additive: oleylamine | additive: 1,2-hexadecanediol (mass 2.5)"
+    ]
+  },
+  {
+    "id": "ZnO",
+    "input": "composition: ZnO",
+    "expected_output": "method: solvo-hydrothermal | solvent: water | temperature: 200.0 | precursor: C10H14O4Zn·xH2O (mass 0.28; conc 1.06)",
+    "retrieval_context": [
+      "composition: ZnO:V | method: sol-gel | solvent: methanol | solvent.volume: 112.0 | temperature: 700.0 | shape: hexagonal | size.length: 80.0 | pdfno_list: 37-1485"
+    ]
+  },
+  {
+    "id": "Pd",
+    "input": "composition: Pd",
+    "expected_output": "method: one-pot synthesis | solvent: water | temperature: 80.0 | precursor: Na2PdCl4 (mass 0.003) | additive: polyvinylpyrrolidone (mass 0.013) | additive: ascorbic acid (mass 0.0075) | additive: potassium bromide (mass 0.01875)",
+    "retrieval_context": [
+      "composition: Au-Pd | method: wet chemical reduction | solvent: water | temperature: 15.0 | crystalsystem: face-centered cubic | shape: hexoctahedral | size.length: 55.0"
+    ]
+  },
+  {
+    "id": "H2TCPP-Fe2O3",
+    "input": "composition: H2TCPP-Fe2O3",
+    "expected_output": "method: facile one-step | solvent: water | temperature: 100.0 | pH: 8.0 | precursor: FeSO4·7H2O (conc 200.0) | additive: tetrakis(carboxyphenyl)porphyrin (mass 5.0) | additive: sodium hydroxide (mass 0.016) | additive: sodium nitrate (mass 1.7)",
+    "retrieval_context": [
+      "composition: H2TCPP-Fe2O3 | method: facile one-step | solvent: water | solvent.volume: 19.0 | temperature: 100.0 | pH: 8.0 | shape: spherical | size.length: 100.0 | size.width: 100.0 | size.depth: 100.0 | precursor: FeSO4·7H2O (conc 200.0) | additive: tetrakis(carboxyphenyl)porphyrin (mass 5.0) | additive: sodium hydroxide (mass 0.016) | additive: sodium nitrate (mass 1.7) | pdfno_list: 25-1402"
+    ]
+  },
+  {
+    "id": "10Co3O4@CeO2",
+    "input": "composition: 10Co3O4@CeO2",
+    "expected_output": "method: impregnation | solvent: water | temperature: 90.0 | precursor: Co(NO3)2*6H2O (mass 0.06)",
+    "retrieval_context": [
+      "composition: 10Co3O4@CeO2 | method: impregnation | solvent: water | solvent.volume: 50.0 | temperature: 90.0 | shape: spherical | size.length: 500.0 | size.width: 500.0 | size.depth: 500.0 | precursor: Co(NO3)2*6H2O (mass 0.06) | seed: CeO2 (mass 0.45) | pdfno_list: 42-1467, 34-0394"
+    ]
+  }
+]

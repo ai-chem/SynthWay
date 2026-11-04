@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "2007.json_Pt100-PEI_3155",
+  "composition": "Pt100-PEI",
+  "elements": [
+    "Pt",
+    "P",
+    "E",
+    "I"
+  ],
+  "precursors": [
+    {
+      "name": "K2PtCl4",
+      "conc": 2.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyethyleneimine",
+      "mass": 0.0001
+    },
+    {
+      "name": "sodium borohydride",
+      "mass": 0.074
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 300.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 20.0,
+    "ph": 7.0
+  },
+  "product": {
+    "size": {
+      "length": 3.38,
+      "width": 3.38,
+      "depth": 3.38
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2007.json_Pt100-PEI_3155",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Pt100-PEI | solvent: water | temperature: 20.0 | pH: 7.0 | size.length: 3.38 | size.width: 3.38 | size.depth: 3.38 | precursor: K2PtCl4 (conc 2.0) | additive: polyethyleneimine (mass 0.0001) | additive: sodium borohydride (mass 0.074) | additive: sodium hydroxide (conc 300.0)"
+}

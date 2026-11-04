@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "2279.json_ZnO_659",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "precipitation",
+  "precursors": [
+    {
+      "name": "Zn(NO3)2",
+      "conc": 1000.0
+    },
+    {
+      "name": "(NH4)2CO3",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 550.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "size": {
+      "length": 27.59,
+      "width": 27.59,
+      "depth": 27.59
+    }
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "2279.json_ZnO_659",
+    "nodes": 12,
+    "edges": 12
+  },
+  "retrieval_text": "composition: ZnO | method: precipitation | solvent: water | temperature: 550.0 | crystalsystem: hexagonal | size.length: 27.59 | size.width: 27.59 | size.depth: 27.59 | precursor: Zn(NO3)2 (conc 1000.0) | precursor: (NH4)2CO3 (conc 1000.0) | pdfno_list: 36-1451"
+}

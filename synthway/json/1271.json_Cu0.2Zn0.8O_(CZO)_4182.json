@@ -1,0 +1,56 @@
+{
+  "synthesis_id": "1271.json_Cu0.2Zn0.8O_(CZO)_4182",
+  "composition": "Cu0.2Zn0.8O  (CZO)",
+  "elements": [
+    "Cu",
+    "Zn",
+    "O",
+    "C",
+    "Z"
+  ],
+  "method": "co-precipitation green synthesis",
+  "precursors": [
+    {
+      "name": "ZnNO3·6H2O",
+      "conc": 1000.0
+    },
+    {
+      "name": "Cu(NO3)2·3H2O",
+      "conc": 1000.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "aloe barbadensis miller gel extract"
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "distilled water"
+  },
+  "conditions": {
+    "temperature": 80.0,
+    "ph": 10.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal and monoclinic",
+    "shape": "spherical",
+    "size": {
+      "length": 49.49,
+      "width": 49.49,
+      "depth": 49.49
+    }
+  },
+  "pdfno_list": [
+    "36-1451 41-0254"
+  ],
+  "source": {
+    "synthesis_id_original": "1271.json_Cu0.2Zn0.8O_(CZO)_4182",
+    "nodes": 17,
+    "edges": 17
+  },
+  "retrieval_text": "composition: Cu0.2Zn0.8O  (CZO) | method: co-precipitation green synthesis | solvent: distilled water | temperature: 80.0 | pH: 10.0 | crystalsystem: hexagonal and monoclinic | shape: spherical | size.length: 49.49 | size.width: 49.49 | size.depth: 49.49 | precursor: ZnNO3·6H2O (conc 1000.0) | precursor: Cu(NO3)2·3H2O (conc 1000.0) | additive: aloe barbadensis miller gel extract | additive: sodium hydroxide (conc 1000.0) | pdfno_list: 36-1451 41-0254"
+}

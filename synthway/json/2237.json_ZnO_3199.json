@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "2237.json_ZnO_3199",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "ZnSO4",
+      "mass": 28.754,
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "mass": 4.0,
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 200.0
+  },
+  "conditions": {
+    "temperature": 100.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "flake",
+    "size": {
+      "length": 37.28,
+      "width": 37.28,
+      "depth": 37.28
+    }
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "2237.json_ZnO_3199",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: ZnO | solvent: deionized water | solvent.volume: 200.0 | temperature: 100.0 | crystalsystem: hexagonal | shape: flake | size.length: 37.28 | size.width: 37.28 | size.depth: 37.28 | precursor: ZnSO4 (mass 28.754; conc 100.0) | additive: sodium hydroxide (mass 4.0; conc 1000.0) | pdfno_list: 36-1451"
+}

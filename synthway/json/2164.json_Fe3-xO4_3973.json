@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "2164.json_Fe3-xO4_3973",
+  "composition": "Fe3-xO4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Fe(acac)3",
+      "mass": 0.353,
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "decanoic acid",
+      "mass": 1.033,
+      "conc": 6.0
+    }
+  ],
+  "solvent": {
+    "name": "dibenzyl ether",
+    "volume": 25.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "shape": "cube-octahedral",
+    "size": {
+      "length": 5.0,
+      "width": 5.0,
+      "depth": 5.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2164.json_Fe3-xO4_3973",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Fe3-xO4 | solvent: dibenzyl ether | solvent.volume: 25.0 | temperature: 200.0 | crystalsystem: face-centered cubic | shape: cube-octahedral | size.length: 5.0 | size.width: 5.0 | size.depth: 5.0 | precursor: Fe(acac)3 (mass 0.353; conc 1.0) | additive: decanoic acid (mass 1.033; conc 6.0)"
+}

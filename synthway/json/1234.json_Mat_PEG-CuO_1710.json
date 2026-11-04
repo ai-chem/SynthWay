@@ -1,0 +1,56 @@
+{
+  "synthesis_id": "1234.json_Mat/PEG-CuO_1710",
+  "composition": "Mat/PEG-CuO",
+  "elements": [
+    "Ma",
+    "P",
+    "E",
+    "G",
+    "Cu",
+    "O"
+  ],
+  "method": "phyto/sono-based",
+  "precursors": [
+    {
+      "name": "CuSO4·5H2O",
+      "mass": 0.0424
+    }
+  ],
+  "additives": [
+    {
+      "name": "camellia sinensis matcha extract"
+    },
+    {
+      "name": "polyethylene glycol",
+      "mass": 0.1
+    },
+    {
+      "name": "sodium hydroxide",
+      "mass": 0.2
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "spherical",
+    "size": {
+      "length": 33.17,
+      "width": 33.17,
+      "depth": 33.17
+    }
+  },
+  "pdfno_list": [
+    "80-1268"
+  ],
+  "source": {
+    "synthesis_id_original": "1234.json_Mat/PEG-CuO_1710",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: Mat/PEG-CuO | method: phyto/sono-based | solvent: water | temperature: 25.0 | crystalsystem: monoclinic | shape: spherical | size.length: 33.17 | size.width: 33.17 | size.depth: 33.17 | precursor: CuSO4·5H2O (mass 0.0424) | additive: camellia sinensis matcha extract | additive: polyethylene glycol (mass 0.1) | additive: sodium hydroxide (mass 0.2) | pdfno_list: 80-1268"
+}

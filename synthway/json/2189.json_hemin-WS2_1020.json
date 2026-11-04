@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "2189.json_hemin-WS2_1020",
+  "composition": "hemin-WS2",
+  "elements": [
+    "W",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "WS2",
+      "mass": 0.00052
+    }
+  ],
+  "additives": [
+    {
+      "name": "hemin",
+      "mass": 0.00052
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "shape": "sheets"
+  },
+  "pdfno_list": [
+    "8724-17"
+  ],
+  "source": {
+    "synthesis_id_original": "2189.json_hemin-WS2_1020",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: hemin-WS2 | solvent: water | temperature: 60.0 | shape: sheets | precursor: WS2 (mass 0.00052) | additive: hemin (mass 0.00052) | pdfno_list: 8724-17"
+}

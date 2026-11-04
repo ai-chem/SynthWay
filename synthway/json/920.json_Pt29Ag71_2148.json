@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "920.json_Pt29Ag71_2148",
+  "composition": "Pt29Ag71",
+  "elements": [
+    "Pt",
+    "Ag"
+  ],
+  "method": "heterogeneous nucleation",
+  "precursors": [
+    {
+      "name": "Pt(acac)2",
+      "mass": 0.02
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleylamine",
+      "mass": 0.24
+    }
+  ],
+  "seeds": [
+    {
+      "name": "Ag",
+      "mass": 0.0108
+    }
+  ],
+  "solvent": {
+    "name": "diphenylether",
+    "volume": 5.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic"
+  },
+  "source": {
+    "synthesis_id_original": "920.json_Pt29Ag71_2148",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Pt29Ag71 | method: heterogeneous nucleation | solvent: diphenylether | solvent.volume: 5.0 | temperature: 180.0 | crystalsystem: face-centered cubic | precursor: Pt(acac)2 (mass 0.02) | additive: oleylamine (mass 0.24) | seed: Ag (mass 0.0108)"
+}

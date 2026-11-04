@@ -1,0 +1,30 @@
+{
+  "synthesis_id": "688.json_Fe3O4_2101",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "solvothermal and heat-treatment method",
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 60.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "shape": "hollow nanoflowers",
+    "size": {
+      "length": 5000.0,
+      "width": 5000.0,
+      "depth": 5000.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "688.json_Fe3O4_2101",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: Fe3O4 | method: solvothermal and heat-treatment method | solvent: ethylene glycol | solvent.volume: 60.0 | temperature: 180.0 | shape: hollow nanoflowers | size.length: 5000.0 | size.width: 5000.0 | size.depth: 5000.0"
+}

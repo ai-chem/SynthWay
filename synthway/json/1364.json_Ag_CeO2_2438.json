@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1364.json_Ag/CeO2_2438",
+  "composition": "Ag/CeO2",
+  "elements": [
+    "Ag",
+    "Ce",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Ce(NO3)3·6H2O",
+      "conc": 1000.0
+    },
+    {
+      "name": "AgNO3",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "morinda tinctoria plant extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 17.5,
+      "width": 17.5,
+      "depth": 17.5
+    }
+  },
+  "pdfno_list": [
+    "43-1002"
+  ],
+  "source": {
+    "synthesis_id_original": "1364.json_Ag/CeO2_2438",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Ag/CeO2 | method: green synthesis | solvent: water | shape: spherical | size.length: 17.5 | size.width: 17.5 | size.depth: 17.5 | precursor: Ce(NO3)3·6H2O (conc 1000.0) | precursor: AgNO3 (conc 100.0) | additive: morinda tinctoria plant extract | pdfno_list: 43-1002"
+}

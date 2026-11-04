@@ -1,0 +1,36 @@
+{
+  "synthesis_id": "2333.json_Cu2O_3244",
+  "composition": "Cu2O",
+  "elements": [
+    "Cu",
+    "O"
+  ],
+  "method": "in-situ",
+  "precursors": [
+    {
+      "name": "Cu (solution)"
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinyl alcohol",
+      "mass": 5.0
+    },
+    {
+      "name": "sodium formaldehyde sulfoxylate"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 125.0
+  },
+  "product": {
+    "shape": "fluffy agglomerates"
+  },
+  "source": {
+    "synthesis_id_original": "2333.json_Cu2O_3244",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: Cu2O | method: in-situ | solvent: water | solvent.volume: 125.0 | shape: fluffy agglomerates | precursor: Cu (solution) | additive: polyvinyl alcohol (mass 5.0) | additive: sodium formaldehyde sulfoxylate"
+}

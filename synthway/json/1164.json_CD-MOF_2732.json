@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1164.json_CD-MOF_2732",
+  "composition": "CD-MOF",
+  "elements": [
+    "C",
+    "D",
+    "M",
+    "O",
+    "F"
+  ],
+  "method": "modified solvothermal",
+  "precursors": [
+    {
+      "name": "γ-CD",
+      "mass": 2962.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "potassium hydroxide",
+      "mass": 1024.0
+    },
+    {
+      "name": "methanol"
+    },
+    {
+      "name": "polyethylene glycol"
+    }
+  ],
+  "solvent": {
+    "name": "ultra-pure water",
+    "volume": 80.0
+  },
+  "conditions": {
+    "temperature": 90.0
+  },
+  "product": {
+    "shape": "cube"
+  },
+  "source": {
+    "synthesis_id_original": "1164.json_CD-MOF_2732",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: CD-MOF | method: modified solvothermal | solvent: ultra-pure water | solvent.volume: 80.0 | temperature: 90.0 | shape: cube | precursor: γ-CD (mass 2962.0) | additive: potassium hydroxide (mass 1024.0) | additive: methanol | additive: polyethylene glycol"
+}

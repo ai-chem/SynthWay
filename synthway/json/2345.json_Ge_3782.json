@@ -1,0 +1,28 @@
+{
+  "synthesis_id": "2345.json_Ge_3782",
+  "composition": "Ge",
+  "elements": [
+    "Ge"
+  ],
+  "solvent": {
+    "name": "aqueous",
+    "volume": 6.0
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 2.6,
+      "width": 2.6,
+      "depth": 2.6
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2345.json_Ge_3782",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: Ge | solvent: aqueous | solvent.volume: 6.0 | temperature: 80.0 | shape: spherical | size.length: 2.6 | size.width: 2.6 | size.depth: 2.6"
+}

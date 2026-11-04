@@ -1,0 +1,63 @@
+{
+  "synthesis_id": "2005.json_Ru_1861",
+  "composition": "Ru",
+  "elements": [
+    "Ru"
+  ],
+  "precursors": [
+    {
+      "name": "RuCl3*xH2O",
+      "mass": 4e-05,
+      "conc": 6.0
+    },
+    {
+      "name": "FeCl3",
+      "mass": 0.04
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 0.105
+    },
+    {
+      "name": "ascorbic acid",
+      "mass": 0.0666
+    },
+    {
+      "name": "potassium bromide",
+      "mass": 0.2
+    },
+    {
+      "name": "hydrochloric acid"
+    }
+  ],
+  "seeds": [
+    {
+      "name": "Pd",
+      "conc": 0.0078
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol and water",
+    "volume": 8.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "octahedral",
+    "size": {
+      "length": 6.2,
+      "width": 6.2,
+      "depth": 6.2
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2005.json_Ru_1861",
+    "nodes": 24,
+    "edges": 23
+  },
+  "retrieval_text": "composition: Ru | solvent: ethylene glycol and water | solvent.volume: 8.0 | temperature: 200.0 | crystalsystem: cubic | shape: octahedral | size.length: 6.2 | size.width: 6.2 | size.depth: 6.2 | precursor: RuCl3*xH2O (mass 4e-05; conc 6.0) | precursor: FeCl3 (mass 0.04) | additive: polyvinylpyrrolidone (mass 0.105) | additive: ascorbic acid (mass 0.0666) | additive: potassium bromide (mass 0.2) | additive: hydrochloric acid | seed: Pd (conc 0.0078)"
+}

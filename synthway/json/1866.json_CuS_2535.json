@@ -1,0 +1,57 @@
+{
+  "synthesis_id": "1866.json_CuS_2535",
+  "composition": "CuS",
+  "elements": [
+    "Cu",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "CuCl2*2H2O",
+      "mass": 0.0852
+    },
+    {
+      "name": "Na2S",
+      "conc": 1000.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 0.5
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 200.0
+    },
+    {
+      "name": "ascorbic acid",
+      "mass": 100.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 200.0
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "hollow cube-like",
+    "size": {
+      "length": 50.0,
+      "width": 50.0,
+      "depth": 50.0
+    }
+  },
+  "pdfno_list": [
+    "05-0667"
+  ],
+  "source": {
+    "synthesis_id_original": "1866.json_CuS_2535",
+    "nodes": 20,
+    "edges": 19
+  },
+  "retrieval_text": "composition: CuS | solvent: water | solvent.volume: 200.0 | temperature: 60.0 | crystalsystem: cubic | shape: hollow cube-like | size.length: 50.0 | size.width: 50.0 | size.depth: 50.0 | precursor: CuCl2*2H2O (mass 0.0852) | precursor: Na2S (conc 1000.0) | additive: polyvinylpyrrolidone (mass 0.5) | additive: sodium hydroxide (conc 200.0) | additive: ascorbic acid (mass 100.0) | pdfno_list: 05-0667"
+}

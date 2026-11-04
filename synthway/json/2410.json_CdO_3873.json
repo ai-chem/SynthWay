@@ -1,0 +1,34 @@
+{
+  "synthesis_id": "2410.json_CdO_3873",
+  "composition": "CdO",
+  "elements": [
+    "Cd",
+    "O"
+  ],
+  "method": "solvo-hydrothermal",
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 40.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "crystalsystem": "cubic phase",
+    "shape": "bamboo-like",
+    "size": {
+      "length": 28.0,
+      "width": 21.0,
+      "depth": 21.0
+    }
+  },
+  "pdfno_list": [
+    "005-0640"
+  ],
+  "source": {
+    "synthesis_id_original": "2410.json_CdO_3873",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: CdO | method: solvo-hydrothermal | solvent: ethylene glycol | solvent.volume: 40.0 | temperature: 180.0 | crystalsystem: cubic phase | shape: bamboo-like | size.length: 28.0 | size.width: 21.0 | size.depth: 21.0 | pdfno_list: 005-0640"
+}

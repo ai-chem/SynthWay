@@ -1,0 +1,37 @@
+{
+  "synthesis_id": "920.json_Ag_2146",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgTFA",
+      "mass": 0.22
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleylamine"
+    }
+  ],
+  "solvent": {
+    "name": "isoamyl ether",
+    "volume": 5.0
+  },
+  "conditions": {
+    "temperature": 160.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "size": {
+      "width": 9.5
+    }
+  },
+  "source": {
+    "synthesis_id_original": "920.json_Ag_2146",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: Ag | solvent: isoamyl ether | solvent.volume: 5.0 | temperature: 160.0 | crystalsystem: face-centered cubic | size.width: 9.5 | precursor: AgTFA (mass 0.22) | additive: oleylamine"
+}

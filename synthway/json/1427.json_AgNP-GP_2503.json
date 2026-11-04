@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "1427.json_AgNP-GP_2503",
+  "composition": "AgNP-GP",
+  "elements": [
+    "Ag",
+    "N",
+    "P",
+    "G"
+  ],
+  "method": "chemical synthesis",
+  "precursors": [
+    {
+      "name": "Ag (NPs)"
+    },
+    {
+      "name": "gutta-percha points"
+    }
+  ],
+  "additives": [
+    {
+      "name": "plasticizer"
+    }
+  ],
+  "solvent": {
+    "name": "acetic acid"
+  },
+  "conditions": {
+    "ph": 5.8
+  },
+  "product": {
+    "shape": "firmed coating"
+  },
+  "source": {
+    "synthesis_id_original": "1427.json_AgNP-GP_2503",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: AgNP-GP | method: chemical synthesis | solvent: acetic acid | pH: 5.8 | shape: firmed coating | precursor: Ag (NPs) | precursor: gutta-percha points | additive: plasticizer"
+}

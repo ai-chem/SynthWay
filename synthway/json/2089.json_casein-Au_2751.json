@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "2089.json_casein-Au_2751",
+  "composition": "casein-Au",
+  "elements": [
+    "Au"
+  ],
+  "precursors": [
+    {
+      "name": "HAuCl4",
+      "conc": 25.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "b-casein",
+      "mass": 0.01
+    },
+    {
+      "name": "sodium borohydride",
+      "conc": 10.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "size": {
+      "length": 4.2,
+      "width": 4.2,
+      "depth": 4.2
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2089.json_casein-Au_2751",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: casein-Au | solvent: water | size.length: 4.2 | size.width: 4.2 | size.depth: 4.2 | precursor: HAuCl4 (conc 25.0) | additive: b-casein (mass 0.01) | additive: sodium borohydride (conc 10.0)"
+}

@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1213.json_BFM-I_371",
+  "composition": "BFM-I",
+  "elements": [
+    "B",
+    "F",
+    "M",
+    "I"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "FeSO4",
+      "conc": 20.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "melia azedarach flowers extract (bfm extract)"
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 100.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "ph": 12.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 231.43,
+      "width": 231.43,
+      "depth": 231.43
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1213.json_BFM-I_371",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: BFM-I | method: green synthesis | solvent: water | pH: 12.0 | shape: spherical | size.length: 231.43 | size.width: 231.43 | size.depth: 231.43 | precursor: FeSO4 (conc 20.0) | additive: melia azedarach flowers extract (bfm extract) | additive: sodium hydroxide (conc 100.0)"
+}

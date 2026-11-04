@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "1834.json_Pt48Pd52-Fe3O4_931",
+  "composition": "Pt48Pd52-Fe3O4",
+  "elements": [
+    "Pt",
+    "Pd",
+    "Fe",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Fe(CO)5"
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleic acid",
+      "conc": 6.0
+    },
+    {
+      "name": "oleylamine",
+      "conc": 6.0
+    }
+  ],
+  "seeds": [
+    {
+      "name": "PtPd",
+      "mass": 0.015
+    }
+  ],
+  "solvent": {
+    "name": "octadecene",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 300.0
+  },
+  "product": {
+    "shape": "dumbbell-like",
+    "size": {
+      "length": 12.0,
+      "width": 12.0,
+      "depth": 12.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1834.json_Pt48Pd52-Fe3O4_931",
+    "nodes": 14,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Pt48Pd52-Fe3O4 | solvent: octadecene | solvent.volume: 20.0 | temperature: 300.0 | shape: dumbbell-like | size.length: 12.0 | size.width: 12.0 | size.depth: 12.0 | precursor: Fe(CO)5 | additive: oleic acid (conc 6.0) | additive: oleylamine (conc 6.0) | seed: PtPd (mass 0.015)"
+}

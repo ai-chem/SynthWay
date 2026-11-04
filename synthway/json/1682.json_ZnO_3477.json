@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1682.json_ZnO_3477",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Zn(NO3)2*6H2O",
+      "conc": 3.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "artocarpus gomezianus fruit extract"
+    }
+  ],
+  "solvent": {
+    "name": "double distilled water",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 400.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 20.0,
+      "width": 20.0,
+      "depth": 20.0
+    }
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "1682.json_ZnO_3477",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: ZnO | solvent: double distilled water | solvent.volume: 10.0 | temperature: 400.0 | crystalsystem: hexagonal | shape: spherical | size.length: 20.0 | size.width: 20.0 | size.depth: 20.0 | precursor: Zn(NO3)2*6H2O (conc 3.0) | additive: artocarpus gomezianus fruit extract | pdfno_list: 36-1451"
+}

@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "2280.json_Fe3O4_555",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "FeCl3*6H2O",
+      "conc": 5.0
+    },
+    {
+      "name": "NH4Ac",
+      "conc": 50.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "trisodium citrate",
+      "mass": 4.0
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 70.0
+  },
+  "conditions": {
+    "temperature": 260.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "size": {
+      "length": 50.0,
+      "width": 50.0,
+      "depth": 50.0
+    }
+  },
+  "pdfno_list": [
+    "01-076-1849"
+  ],
+  "source": {
+    "synthesis_id_original": "2280.json_Fe3O4_555",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Fe3O4 | solvent: ethylene glycol | solvent.volume: 70.0 | temperature: 260.0 | crystalsystem: face-centered cubic | size.length: 50.0 | size.width: 50.0 | size.depth: 50.0 | precursor: FeCl3*6H2O (conc 5.0) | precursor: NH4Ac (conc 50.0) | additive: trisodium citrate (mass 4.0) | pdfno_list: 01-076-1849"
+}

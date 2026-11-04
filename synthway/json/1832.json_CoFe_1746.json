@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "1832.json_CoFe_1746",
+  "composition": "CoFe",
+  "elements": [
+    "Co",
+    "Fe"
+  ],
+  "precursors": [
+    {
+      "name": "FeCl2·4H2O",
+      "mass": 0.135
+    },
+    {
+      "name": "Co(NO3)2·6H2O",
+      "mass": 0.173
+    }
+  ],
+  "additives": [
+    {
+      "name": "pyrrole"
+    },
+    {
+      "name": "sodium borohydride",
+      "mass": 0.65
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 20.0
+  },
+  "conditions": {
+    "ph": 11.0
+  },
+  "product": {
+    "crystalsystem": "amorphous",
+    "shape": "chains",
+    "size": {
+      "length": 2000.0,
+      "width": 250.0,
+      "depth": 250.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1832.json_CoFe_1746",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: CoFe | solvent: water | solvent.volume: 20.0 | pH: 11.0 | crystalsystem: amorphous | shape: chains | size.length: 2000.0 | size.width: 250.0 | size.depth: 250.0 | precursor: FeCl2·4H2O (mass 0.135) | precursor: Co(NO3)2·6H2O (mass 0.173) | additive: pyrrole | additive: sodium borohydride (mass 0.65)"
+}

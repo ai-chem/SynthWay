@@ -1,0 +1,29 @@
+{
+  "synthesis_id": "2321.json_CuO_1630",
+  "composition": "CuO",
+  "elements": [
+    "Cu",
+    "O"
+  ],
+  "method": "sol-gel",
+  "solvent": {
+    "name": "deionized water",
+    "volume": 140.0
+  },
+  "conditions": {
+    "temperature": 500.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "spheroid"
+  },
+  "pdfno_list": [
+    "450937"
+  ],
+  "source": {
+    "synthesis_id_original": "2321.json_CuO_1630",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: CuO | method: sol-gel | solvent: deionized water | solvent.volume: 140.0 | temperature: 500.0 | crystalsystem: monoclinic | shape: spheroid | pdfno_list: 450937"
+}

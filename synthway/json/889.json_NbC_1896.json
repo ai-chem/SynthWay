@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "889.json_NbC_1896",
+  "composition": "NbC",
+  "elements": [
+    "Nb",
+    "C"
+  ],
+  "precursors": [
+    {
+      "name": "C3H6N6",
+      "mass": 1.0
+    },
+    {
+      "name": "Nb2O5",
+      "mass": 0.532
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 1100.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 7.0,
+      "width": 7.0,
+      "depth": 7.0
+    }
+  },
+  "pdfno_list": [
+    "03-1364"
+  ],
+  "source": {
+    "synthesis_id_original": "889.json_NbC_1896",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: NbC | solvent: water | temperature: 1100.0 | crystalsystem: cubic | size.length: 7.0 | size.width: 7.0 | size.depth: 7.0 | precursor: C3H6N6 (mass 1.0) | precursor: Nb2O5 (mass 0.532) | pdfno_list: 03-1364"
+}

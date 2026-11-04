@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "588.json_SrFeO3_3474",
+  "composition": "SrFeO3",
+  "elements": [
+    "Sr",
+    "Fe",
+    "O"
+  ],
+  "method": "sol-gel",
+  "precursors": [
+    {
+      "name": "Fe(NO2)3*9H2O"
+    },
+    {
+      "name": "Sr(NO3)2"
+    }
+  ],
+  "additives": [
+    {
+      "name": "citric acid"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 250.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "spherical",
+    "size": {
+      "length": 52.28
+    }
+  },
+  "pdfno_list": [
+    "40-0905"
+  ],
+  "source": {
+    "synthesis_id_original": "588.json_SrFeO3_3474",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: SrFeO3 | method: sol-gel | solvent: water | temperature: 250.0 | crystalsystem: orthorhombic | shape: spherical | size.length: 52.28 | precursor: Fe(NO2)3*9H2O | precursor: Sr(NO3)2 | additive: citric acid | pdfno_list: 40-0905"
+}

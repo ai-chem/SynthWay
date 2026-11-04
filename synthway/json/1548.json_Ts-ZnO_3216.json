@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "1548.json_Ts-ZnO_3216",
+  "composition": "Ts-ZnO",
+  "elements": [
+    "Ts",
+    "Zn",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2*2H2O",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "thymbra spicata l. leaf extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "size": {
+      "length": 7.0,
+      "width": 7.0,
+      "depth": 7.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1548.json_Ts-ZnO_3216",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Ts-ZnO | method: green synthesis | solvent: water | temperature: 25.0 | crystalsystem: hexagonal | size.length: 7.0 | size.width: 7.0 | size.depth: 7.0 | precursor: Zn(CH3COO)2*2H2O (conc 1.0) | additive: thymbra spicata l. leaf extract"
+}

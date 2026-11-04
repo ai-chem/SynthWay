@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "1860.json_NiS_3337",
+  "composition": "NiS",
+  "elements": [
+    "Ni",
+    "S"
+  ],
+  "method": "one-pot hydrothermal",
+  "precursors": [
+    {
+      "name": "Ni(CH3COO)2*4H2O",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "methylcyclopentadienyl manganese tricarbonyl",
+      "mass": 0.3
+    },
+    {
+      "name": "thiourea",
+      "conc": 1.2
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 35.0,
+      "width": 35.0,
+      "depth": 35.0
+    }
+  },
+  "pdfno_list": [
+    "02-1280"
+  ],
+  "source": {
+    "synthesis_id_original": "1860.json_NiS_3337",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: NiS | method: one-pot hydrothermal | solvent: ethylene glycol | solvent.volume: 30.0 | temperature: 180.0 | crystalsystem: hexagonal | shape: spherical | size.length: 35.0 | size.width: 35.0 | size.depth: 35.0 | precursor: Ni(CH3COO)2*4H2O (conc 1.0) | additive: methylcyclopentadienyl manganese tricarbonyl (mass 0.3) | additive: thiourea (conc 1.2) | pdfno_list: 02-1280"
+}

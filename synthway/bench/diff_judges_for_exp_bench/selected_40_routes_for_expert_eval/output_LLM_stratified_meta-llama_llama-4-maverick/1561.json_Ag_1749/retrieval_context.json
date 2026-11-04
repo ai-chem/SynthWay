@@ -1,0 +1,11 @@
+{
+  "composition": "Ag",
+  "method": null,
+  "rag_topk": 3,
+  "query": "composition: Ag | Ag–Au | Ag–Au | Ag–Au | Ag–Pd | Ag–Pd | Ag–Pd | Ag S | Ag S | Ag S | G-Ag | G-Ag | G-Ag | composition Or-Ag | composition Or-Ag | composition Or-Ag | composition VIE-Ag | composition VIE-Ag | composition VIE-Ag | composition Ag@SEE | composition Ag@SEE | composition Ag@SEE | composition Ag–Au | composition Ag–Au | composition Ag–Au",
+  "retrieval_context": [
+    "composition: Ag–Au BM | solvent: water | temperature: 60.0 | crystalsystem: face-centered cubic | shape: spherical | size.length: 196.0 | size.width: 196.0 | size.depth: 196.0 | precursor: AgNO3 (conc 20.0) | precursor: HAuCl4 (conc 10.0) | additive: chrysin",
+    "composition: Ag@SEE | method: green synthesis | solvent: deionized water | pH: 10.5 | crystalsystem: cubic | shape: spherical | size.length: 50.0 | size.width: 50.0 | size.depth: 50.0 | precursor: AgNO3 (conc 20.0) | additive: s. ebulus extract",
+    "composition: Or-Ag | method: biosynthesis | solvent: water | temperature: 80.0 | crystalsystem: cubic | shape: spherical | size.length: 28.0 | size.width: 28.0 | size.depth: 28.0 | precursor: AgNO3 (conc 1.0) | additive: ophiorrhiza rugosa (or) plant extract | pdfno_list: 04-0783"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "synthesis_id": "1635.json_MSNs_898",
+  "composition": "MSNs",
+  "elements": [
+    "M",
+    "S",
+    "Ns"
+  ],
+  "method": "stober",
+  "precursors": [
+    {
+      "name": "Si(OC2H5)4",
+      "conc": 22.4
+    },
+    {
+      "name": "CTAB",
+      "mass": 1.0,
+      "conc": 2.74
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 2000.0
+    },
+    {
+      "name": "ammonium nitrate"
+    },
+    {
+      "name": "ethanol"
+    }
+  ],
+  "solvent": {
+    "name": "milliq water",
+    "volume": 480.0
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 155.0,
+      "width": 155.0,
+      "depth": 155.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1635.json_MSNs_898",
+    "nodes": 18,
+    "edges": 17
+  },
+  "retrieval_text": "composition: MSNs | method: stober | solvent: milliq water | solvent.volume: 480.0 | temperature: 80.0 | shape: spherical | size.length: 155.0 | size.width: 155.0 | size.depth: 155.0 | precursor: Si(OC2H5)4 (conc 22.4) | precursor: CTAB (mass 1.0; conc 2.74) | additive: sodium hydroxide (conc 2000.0) | additive: ammonium nitrate | additive: ethanol"
+}

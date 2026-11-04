@@ -1,0 +1,30 @@
+{
+  "synthesis_id": "325.json_Co1-xZnxFe2O4_2072",
+  "composition": "Co1−xZnxFe2O4",
+  "elements": [
+    "Co",
+    "Zn",
+    "Fe",
+    "O"
+  ],
+  "method": "hydrolysis",
+  "solvent": {
+    "name": "1,2-propanediol",
+    "volume": 250.0
+  },
+  "conditions": {
+    "temperature": 160.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 2.7
+    }
+  },
+  "source": {
+    "synthesis_id_original": "325.json_Co1-xZnxFe2O4_2072",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: Co1−xZnxFe2O4 | method: hydrolysis | solvent: 1,2-propanediol | solvent.volume: 250.0 | temperature: 160.0 | crystalsystem: cubic | size.length: 2.7"
+}

@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "1968.json_Au_3664",
+  "composition": "Au",
+  "elements": [
+    "Au"
+  ],
+  "precursors": [
+    {
+      "name": "HAuCl4",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyethylene glycol 6000",
+      "mass": 0.081
+    },
+    {
+      "name": "sodium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 5.9
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 8.1,
+      "width": 8.1,
+      "depth": 8.1
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1968.json_Au_3664",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Au | solvent: water | solvent.volume: 5.9 | shape: spherical | size.length: 8.1 | size.width: 8.1 | size.depth: 8.1 | precursor: HAuCl4 (conc 100.0) | additive: polyethylene glycol 6000 (mass 0.081) | additive: sodium hydroxide"
+}

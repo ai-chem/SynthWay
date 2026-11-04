@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "1358.json_Cu-NiO_3305",
+  "composition": "Cu–NiO",
+  "elements": [
+    "Cu",
+    "Ni",
+    "O"
+  ],
+  "method": "phytoextract-mediated green synthesis",
+  "precursors": [
+    {
+      "name": "copper nitrate (Cu(NO3)2·6H2O)",
+      "conc": 6.0
+    },
+    {
+      "name": "nickel nitrate (Ni(NO3)2·6H2O)",
+      "conc": 94.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "cullon tomentosum plant extract"
+    },
+    {
+      "name": "sodium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "flower-like",
+    "size": {
+      "length": 45.0,
+      "width": 45.0,
+      "depth": 45.0
+    }
+  },
+  "pdfno_list": [
+    "04-835"
+  ],
+  "source": {
+    "synthesis_id_original": "1358.json_Cu-NiO_3305",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: Cu–NiO | method: phytoextract-mediated green synthesis | solvent: water | temperature: 25.0 | crystalsystem: cubic | shape: flower-like | size.length: 45.0 | size.width: 45.0 | size.depth: 45.0 | precursor: copper nitrate (Cu(NO3)2·6H2O) (conc 6.0) | precursor: nickel nitrate (Ni(NO3)2·6H2O) (conc 94.0) | additive: cullon tomentosum plant extract | additive: sodium hydroxide | pdfno_list: 04-835"
+}

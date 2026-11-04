@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "993.json_Co_4164",
+  "composition": "Co",
+  "elements": [
+    "Co"
+  ],
+  "precursors": [
+    {
+      "name": "Co2(CO)8",
+      "mass": 0.54
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleic acid",
+      "mass": 0.1692
+    },
+    {
+      "name": "trioctylamine",
+      "mass": 0.3894
+    }
+  ],
+  "solvent": {
+    "name": "1,2-diclrorobenzene",
+    "volume": 3.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "size": {
+      "width": 5.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "993.json_Co_4164",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Co | solvent: 1,2-diclrorobenzene | solvent.volume: 3.0 | temperature: 180.0 | size.width: 5.0 | precursor: Co2(CO)8 (mass 0.54) | additive: oleic acid (mass 0.1692) | additive: trioctylamine (mass 0.3894)"
+}

@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "929.json_pure_Co_doped_CuO_794",
+  "composition": "pure Co doped CuO",
+  "elements": [
+    "Co",
+    "Cu",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Cu(NO3)2·6H2O"
+    },
+    {
+      "name": "Co(NO3)2·6H2O"
+    }
+  ],
+  "additives": [
+    {
+      "name": "a. muricata leaf extract"
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 2000.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "ph": 10.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "spherical",
+    "size": {
+      "length": 30.0,
+      "width": 30.0,
+      "depth": 30.0
+    }
+  },
+  "pdfno_list": [
+    "48-1548"
+  ],
+  "source": {
+    "synthesis_id_original": "929.json_pure_Co_doped_CuO_794",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: pure Co doped CuO | solvent: water | pH: 10.0 | crystalsystem: monoclinic | shape: spherical | size.length: 30.0 | size.width: 30.0 | size.depth: 30.0 | precursor: Cu(NO3)2·6H2O | precursor: Co(NO3)2·6H2O | additive: a. muricata leaf extract | additive: sodium hydroxide (conc 2000.0) | pdfno_list: 48-1548"
+}

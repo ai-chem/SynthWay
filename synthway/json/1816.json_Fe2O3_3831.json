@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1816.json_Fe2O3_3831",
+  "composition": "Fe2O3",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Mohr’s salt",
+      "conc": 0.5
+    }
+  ],
+  "additives": [
+    {
+      "name": "hydrazine hydrate",
+      "conc": 0.00016
+    },
+    {
+      "name": "glyoxal"
+    },
+    {
+      "name": "triethylenetetramine"
+    }
+  ],
+  "solvent": {
+    "name": "ethanol",
+    "volume": 10.0
+  },
+  "product": {
+    "size": {
+      "length": 110.0,
+      "width": 110.0,
+      "depth": 110.0
+    }
+  },
+  "pdfno_list": [
+    "04-0755"
+  ],
+  "source": {
+    "synthesis_id_original": "1816.json_Fe2O3_3831",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Fe2O3 | solvent: ethanol | solvent.volume: 10.0 | size.length: 110.0 | size.width: 110.0 | size.depth: 110.0 | precursor: Mohr’s salt (conc 0.5) | additive: hydrazine hydrate (conc 0.00016) | additive: glyoxal | additive: triethylenetetramine | pdfno_list: 04-0755"
+}

@@ -1,0 +1,54 @@
+{
+  "synthesis_id": "1793.json_RuCu_640",
+  "composition": "RuCu",
+  "elements": [
+    "Ru",
+    "Cu"
+  ],
+  "method": "solvo-hydrothermal",
+  "precursors": [
+    {
+      "name": "RuBr3",
+      "mass": 0.017
+    },
+    {
+      "name": "Cu(acac)2",
+      "mass": 0.0057
+    }
+  ],
+  "additives": [
+    {
+      "name": "phloroglucinol",
+      "mass": 0.037
+    },
+    {
+      "name": "ammonium chlorideand",
+      "mass": 0.0053
+    }
+  ],
+  "solvent": {
+    "name": "dodecylamine",
+    "volume": 5.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "sheets",
+    "size": {
+      "length": 45.0,
+      "width": 45.0,
+      "depth": 5.6
+    }
+  },
+  "pdfno_list": [
+    "06-0663"
+  ],
+  "source": {
+    "synthesis_id_original": "1793.json_RuCu_640",
+    "nodes": 19,
+    "edges": 18
+  },
+  "retrieval_text": "composition: RuCu | method: solvo-hydrothermal | solvent: dodecylamine | solvent.volume: 5.0 | temperature: 180.0 | crystalsystem: hexagonal | shape: sheets | size.length: 45.0 | size.width: 45.0 | size.depth: 5.6 | precursor: RuBr3 (mass 0.017) | precursor: Cu(acac)2 (mass 0.0057) | additive: phloroglucinol (mass 0.037) | additive: ammonium chlorideand (mass 0.0053) | pdfno_list: 06-0663"
+}

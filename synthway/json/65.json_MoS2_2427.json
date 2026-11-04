@@ -1,0 +1,32 @@
+{
+  "synthesis_id": "65.json_MoS2_2427",
+  "composition": "MoS2",
+  "elements": [
+    "Mo",
+    "S"
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "shape": "flake",
+    "size": {
+      "length": 250.0,
+      "width": 0.67,
+      "depth": 250.0
+    }
+  },
+  "pdfno_list": [
+    "73-1508"
+  ],
+  "source": {
+    "synthesis_id_original": "65.json_MoS2_2427",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: MoS2 | solvent: deionized water | solvent.volume: 20.0 | temperature: 180.0 | shape: flake | size.length: 250.0 | size.width: 0.67 | size.depth: 250.0 | pdfno_list: 73-1508"
+}

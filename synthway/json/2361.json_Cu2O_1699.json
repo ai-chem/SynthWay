@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "2361.json_Cu2O_1699",
+  "composition": "Cu2O",
+  "elements": [
+    "Cu",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "CuSO4*5H2O",
+      "mass": 0.5
+    },
+    {
+      "name": "Aloe vera extract"
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 2000.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "cubic cuprite",
+    "shape": "octahedral",
+    "size": {
+      "length": 1252.0,
+      "width": 1252.0,
+      "depth": 1252.0
+    }
+  },
+  "pdfno_list": [
+    "99-100-8925"
+  ],
+  "source": {
+    "synthesis_id_original": "2361.json_Cu2O_1699",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Cu2O | solvent: water | crystalsystem: cubic cuprite | shape: octahedral | size.length: 1252.0 | size.width: 1252.0 | size.depth: 1252.0 | precursor: CuSO4*5H2O (mass 0.5) | precursor: Aloe vera extract | additive: sodium hydroxide (conc 2000.0) | pdfno_list: 99-100-8925"
+}

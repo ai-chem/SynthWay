@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "2155.json_Cu2MoS4_2246",
+  "composition": "Cu2MoS4",
+  "elements": [
+    "Cu",
+    "Mo",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "bulk CMS",
+      "mass": 0.1
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 1.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "plate",
+    "size": {
+      "length": 28.0,
+      "width": 28.0,
+      "depth": 12.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2155.json_Cu2MoS4_2246",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Cu2MoS4 | solvent: water | shape: plate | size.length: 28.0 | size.width: 28.0 | size.depth: 12.0 | precursor: bulk CMS (mass 0.1) | additive: polyvinylpyrrolidone (mass 1.0)"
+}

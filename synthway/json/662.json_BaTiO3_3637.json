@@ -1,0 +1,54 @@
+{
+  "synthesis_id": "662.json_BaTiO3_3637",
+  "composition": "BaTiO3",
+  "elements": [
+    "Ba",
+    "Ti",
+    "O"
+  ],
+  "method": "sol-precipitation",
+  "precursors": [
+    {
+      "name": "Ba(OH)2*8H2O",
+      "conc": 30.0
+    },
+    {
+      "name": "Ti(OBu)4",
+      "conc": 25.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyethyleneglycol",
+      "mass": 0.1166
+    },
+    {
+      "name": "acetic acid",
+      "mass": 3.0
+    },
+    {
+      "name": "deionized water",
+      "mass": 45.0
+    }
+  ],
+  "solvent": {
+    "name": "ethanol",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "nanopowder",
+    "size": {
+      "length": 72.3
+    }
+  },
+  "source": {
+    "synthesis_id_original": "662.json_BaTiO3_3637",
+    "nodes": 18,
+    "edges": 17
+  },
+  "retrieval_text": "composition: BaTiO3 | method: sol-precipitation | solvent: ethanol | solvent.volume: 10.0 | temperature: 80.0 | crystalsystem: cubic | shape: nanopowder | size.length: 72.3 | precursor: Ba(OH)2*8H2O (conc 30.0) | precursor: Ti(OBu)4 (conc 25.0) | additive: polyethyleneglycol (mass 0.1166) | additive: acetic acid (mass 3.0) | additive: deionized water (mass 45.0)"
+}

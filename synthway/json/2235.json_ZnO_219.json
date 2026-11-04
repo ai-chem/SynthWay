@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "2235.json_ZnO_219",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Zn(NO3)2·6H2O",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 600.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 83.15,
+      "width": 83.15,
+      "depth": 83.15
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2235.json_ZnO_219",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: ZnO | solvent: water | temperature: 600.0 | shape: spherical | size.length: 83.15 | size.width: 83.15 | size.depth: 83.15 | precursor: Zn(NO3)2·6H2O (conc 10.0) | additive: polyvinylpyrrolidone"
+}

@@ -1,0 +1,34 @@
+{
+  "synthesis_id": "2193.json_Au_703",
+  "composition": "Au",
+  "elements": [
+    "Au"
+  ],
+  "precursors": [
+    {
+      "name": "HAuCl4"
+    }
+  ],
+  "additives": [
+    {
+      "name": "trisodium citrate"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 50.0
+  },
+  "product": {
+    "size": {
+      "length": 15.0,
+      "width": 15.0,
+      "depth": 15.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2193.json_Au_703",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: Au | solvent: water | solvent.volume: 50.0 | size.length: 15.0 | size.width: 15.0 | size.depth: 15.0 | precursor: HAuCl4 | additive: trisodium citrate"
+}

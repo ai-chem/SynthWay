@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "978.json_Fe3O4_1666",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "coprecipitation",
+  "precursors": [
+    {
+      "name": "FeCl3*6H2O",
+      "conc": 1000.0
+    },
+    {
+      "name": "FeCl2*4H2O",
+      "conc": 2000.0
+    },
+    {
+      "name": "N(CH3)4OH"
+    }
+  ],
+  "additives": [
+    {
+      "name": "hydrochloric acid",
+      "conc": 2000.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 250.0
+  },
+  "product": {
+    "size": {
+      "width": 39.0
+    }
+  },
+  "pdfno_list": [
+    "19-629"
+  ],
+  "source": {
+    "synthesis_id_original": "978.json_Fe3O4_1666",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Fe3O4 | method: coprecipitation | solvent: water | temperature: 250.0 | size.width: 39.0 | precursor: FeCl3*6H2O (conc 1000.0) | precursor: FeCl2*4H2O (conc 2000.0) | precursor: N(CH3)4OH | additive: hydrochloric acid (conc 2000.0) | pdfno_list: 19-629"
+}

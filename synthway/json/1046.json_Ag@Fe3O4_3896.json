@@ -1,0 +1,55 @@
+{
+  "synthesis_id": "1046.json_Ag@Fe3O4_3896",
+  "composition": "Ag@Fe3O4",
+  "elements": [
+    "Ag",
+    "Fe",
+    "O"
+  ],
+  "method": "thermal decomposition",
+  "precursors": [
+    {
+      "name": "Fe(acac)3",
+      "mass": 1.059
+    },
+    {
+      "name": "C16H34O2",
+      "mass": 2.58
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleic acid",
+      "mass": 1.7
+    },
+    {
+      "name": "oleylamine",
+      "mass": 1.6
+    }
+  ],
+  "seeds": [
+    {
+      "name": "Ag"
+    }
+  ],
+  "solvent": {
+    "name": "benzyl ether",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 290.0
+  },
+  "product": {
+    "shape": "parallelepiped",
+    "size": {
+      "length": 15.0,
+      "width": 13.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1046.json_Ag@Fe3O4_3896",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: Ag@Fe3O4 | method: thermal decomposition | solvent: benzyl ether | solvent.volume: 20.0 | temperature: 290.0 | shape: parallelepiped | size.length: 15.0 | size.width: 13.0 | precursor: Fe(acac)3 (mass 1.059) | precursor: C16H34O2 (mass 2.58) | additive: oleic acid (mass 1.7) | additive: oleylamine (mass 1.6) | seed: Ag"
+}

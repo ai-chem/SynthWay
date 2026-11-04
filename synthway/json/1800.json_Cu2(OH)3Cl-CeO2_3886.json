@@ -1,0 +1,57 @@
+{
+  "synthesis_id": "1800.json_Cu2(OH)3Cl-CeO2_3886",
+  "composition": "Cu2(OH)3Cl-CeO2",
+  "elements": [
+    "Cu",
+    "O",
+    "H",
+    "Cl",
+    "Ce"
+  ],
+  "method": "coprecipitation",
+  "precursors": [
+    {
+      "name": "CeCl3·7H2O",
+      "mass": 0.4672
+    },
+    {
+      "name": "CuCl2·2H2O",
+      "mass": 0.4276
+    }
+  ],
+  "additives": [
+    {
+      "name": "ionic liquids",
+      "mass": 2.3945
+    },
+    {
+      "name": "hexamethylenetetramine",
+      "conc": 90.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 200.0
+  },
+  "conditions": {
+    "temperature": 95.0,
+    "ph": 10.0
+  },
+  "product": {
+    "shape": "flower-like microspheres",
+    "size": {
+      "length": 7000.0,
+      "width": 7000.0,
+      "depth": 7000.0
+    }
+  },
+  "pdfno_list": [
+    "18-0886, 43-1002"
+  ],
+  "source": {
+    "synthesis_id_original": "1800.json_Cu2(OH)3Cl-CeO2_3886",
+    "nodes": 19,
+    "edges": 18
+  },
+  "retrieval_text": "composition: Cu2(OH)3Cl-CeO2 | method: coprecipitation | solvent: water | solvent.volume: 200.0 | temperature: 95.0 | pH: 10.0 | shape: flower-like microspheres | size.length: 7000.0 | size.width: 7000.0 | size.depth: 7000.0 | precursor: CeCl3·7H2O (mass 0.4672) | precursor: CuCl2·2H2O (mass 0.4276) | additive: ionic liquids (mass 2.3945) | additive: hexamethylenetetramine (conc 90.0) | pdfno_list: 18-0886, 43-1002"
+}

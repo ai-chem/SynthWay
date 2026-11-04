@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1915.json_Cu@Cu2O_2145",
+  "composition": "Cu@Cu2O",
+  "elements": [
+    "Cu",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "CuCl2",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 200.0
+    },
+    {
+      "name": "sodium borohydride",
+      "conc": 0.05
+    }
+  ],
+  "solvent": {
+    "name": "ethanol and water",
+    "volume": 175.15
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "work-like nanostructures",
+    "size": {
+      "length": 40.0,
+      "width": 40.0,
+      "depth": 40.0
+    }
+  },
+  "pdfno_list": [
+    "04-0836, 78-2076"
+  ],
+  "source": {
+    "synthesis_id_original": "1915.json_Cu@Cu2O_2145",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Cu@Cu2O | solvent: ethanol and water | solvent.volume: 175.15 | crystalsystem: cubic | shape: work-like nanostructures | size.length: 40.0 | size.width: 40.0 | size.depth: 40.0 | precursor: CuCl2 (conc 100.0) | additive: sodium hydroxide (conc 200.0) | additive: sodium borohydride (conc 0.05) | pdfno_list: 04-0836, 78-2076"
+}

@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1380.json_ZnO_3901",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "zinc sulfate hexahydrate (ZnSO4·6H2O)"
+    }
+  ],
+  "additives": [
+    {
+      "name": "ailanthus altissima leaf extract"
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 100.0
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 200.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 13.27,
+      "width": 13.27,
+      "depth": 13.27
+    }
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "1380.json_ZnO_3901",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: ZnO | method: green synthesis | solvent: deionized water | solvent.volume: 200.0 | crystalsystem: hexagonal | shape: spherical | size.length: 13.27 | size.width: 13.27 | size.depth: 13.27 | precursor: zinc sulfate hexahydrate (ZnSO4·6H2O) | additive: ailanthus altissima leaf extract | additive: sodium hydroxide (conc 100.0) | pdfno_list: 36-1451"
+}

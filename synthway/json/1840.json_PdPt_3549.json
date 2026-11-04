@@ -1,0 +1,54 @@
+{
+  "synthesis_id": "1840.json_PdPt_3549",
+  "composition": "PdPt",
+  "elements": [
+    "Pd",
+    "Pt"
+  ],
+  "precursors": [
+    {
+      "name": "K2PtCl4",
+      "mass": 0.0014
+    }
+  ],
+  "additives": [
+    {
+      "name": "citric acid",
+      "mass": 0.06
+    },
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 0.035
+    },
+    {
+      "name": "potassium bromide",
+      "mass": 0.45
+    }
+  ],
+  "seeds": [
+    {
+      "name": "Pd"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 95.0
+  },
+  "product": {
+    "shape": "cube",
+    "size": {
+      "length": 42.3,
+      "width": 42.3,
+      "depth": 42.3
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1840.json_PdPt_3549",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: PdPt | solvent: deionized water | solvent.volume: 10.0 | temperature: 95.0 | shape: cube | size.length: 42.3 | size.width: 42.3 | size.depth: 42.3 | precursor: K2PtCl4 (mass 0.0014) | additive: citric acid (mass 0.06) | additive: polyvinylpyrrolidone (mass 0.035) | additive: potassium bromide (mass 0.45) | seed: Pd"
+}

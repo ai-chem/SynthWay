@@ -1,0 +1,55 @@
+{
+  "synthesis_id": "1247.json_ZnO4/Ag/PDA-Mt_3756",
+  "composition": "ZnO4/Ag/PDA-Mt",
+  "elements": [
+    "Zn",
+    "O",
+    "Ag",
+    "P",
+    "D",
+    "A",
+    "Mt"
+  ],
+  "method": "one-pot synthesis",
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2·2H2O",
+      "mass": 4.0
+    },
+    {
+      "name": "Ag/PDA-Mt",
+      "mass": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "cetyltrimethylammonium bromide",
+      "mass": 5.85
+    },
+    {
+      "name": "potassium hydroxide",
+      "mass": 0.73
+    }
+  ],
+  "solvent": {
+    "name": "ethanol",
+    "volume": 150.0
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 17.0,
+      "width": 17.0,
+      "depth": 17.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1247.json_ZnO4/Ag/PDA-Mt_3756",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: ZnO4/Ag/PDA-Mt | method: one-pot synthesis | solvent: ethanol | solvent.volume: 150.0 | temperature: 80.0 | shape: spherical | size.length: 17.0 | size.width: 17.0 | size.depth: 17.0 | precursor: Zn(CH3COO)2·2H2O (mass 4.0) | precursor: Ag/PDA-Mt (mass 1.0) | additive: cetyltrimethylammonium bromide (mass 5.85) | additive: potassium hydroxide (mass 0.73)"
+}

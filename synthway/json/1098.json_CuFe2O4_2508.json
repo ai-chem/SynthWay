@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1098.json_CuFe2O4_2508",
+  "composition": "CuFe2O4",
+  "elements": [
+    "Cu",
+    "Fe",
+    "O"
+  ],
+  "method": "coprecipitation",
+  "precursors": [
+    {
+      "name": "Fe (NO3)3·9H2O",
+      "mass": 8.21
+    },
+    {
+      "name": "CuCl2",
+      "mass": 1.72
+    },
+    {
+      "name": "NaOH",
+      "conc": 3000.0
+    }
+  ],
+  "solvent": {
+    "name": "ethanol",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 700.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "size": {
+      "width": 30.0
+    }
+  },
+  "pdfno_list": [
+    "34-0425"
+  ],
+  "source": {
+    "synthesis_id_original": "1098.json_CuFe2O4_2508",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: CuFe2O4 | method: coprecipitation | solvent: ethanol | solvent.volume: 30.0 | temperature: 700.0 | crystalsystem: tetragonal | size.width: 30.0 | precursor: Fe (NO3)3·9H2O (mass 8.21) | precursor: CuCl2 (mass 1.72) | precursor: NaOH (conc 3000.0) | pdfno_list: 34-0425"
+}

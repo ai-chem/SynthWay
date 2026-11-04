@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1435.json_Fe3O4_30",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "FeSO4·.7H2O",
+      "conc": 5.0
+    },
+    {
+      "name": "FeCl3",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "mikania mikrantha leaf extract"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 100.0
+  },
+  "product": {
+    "shape": "rhomboidal",
+    "size": {
+      "length": 20.27,
+      "width": 20.27,
+      "depth": 20.27
+    }
+  },
+  "pdfno_list": [
+    "75-1610"
+  ],
+  "source": {
+    "synthesis_id_original": "1435.json_Fe3O4_30",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Fe3O4 | method: green synthesis | solvent: distilled water | solvent.volume: 100.0 | shape: rhomboidal | size.length: 20.27 | size.width: 20.27 | size.depth: 20.27 | precursor: FeSO4·.7H2O (conc 5.0) | precursor: FeCl3 (conc 10.0) | additive: mikania mikrantha leaf extract | pdfno_list: 75-1610"
+}

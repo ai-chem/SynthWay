@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "653.json_AuAg_2815",
+  "composition": "AuAg",
+  "elements": [
+    "Au",
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "HAuCl4",
+      "conc": 100.0
+    },
+    {
+      "name": "AgNO3",
+      "conc": 6.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "hq",
+      "conc": 30.0
+    },
+    {
+      "name": "polyvinylpyrrolidone",
+      "conc": 12.5
+    }
+  ],
+  "seeds": [
+    {
+      "name": "Au"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water"
+  },
+  "product": {
+    "size": {
+      "length": 78.2,
+      "width": 78.2,
+      "depth": 78.2
+    }
+  },
+  "source": {
+    "synthesis_id_original": "653.json_AuAg_2815",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: AuAg | solvent: deionized water | size.length: 78.2 | size.width: 78.2 | size.depth: 78.2 | precursor: HAuCl4 (conc 100.0) | precursor: AgNO3 (conc 6.0) | additive: hq (conc 30.0) | additive: polyvinylpyrrolidone (conc 12.5) | seed: Au"
+}

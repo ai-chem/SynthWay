@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1522.json_CdO_2699",
+  "composition": "CdO",
+  "elements": [
+    "Cd",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Cd(NO3)2",
+      "mass": 4.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "dry zea mays lea silk extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 50.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 50.0,
+      "width": 50.0,
+      "depth": 50.0
+    }
+  },
+  "pdfno_list": [
+    "00-005-0640"
+  ],
+  "source": {
+    "synthesis_id_original": "1522.json_CdO_2699",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: CdO | method: green synthesis | solvent: water | temperature: 50.0 | crystalsystem: cubic | shape: spherical | size.length: 50.0 | size.width: 50.0 | size.depth: 50.0 | precursor: Cd(NO3)2 (mass 4.0) | additive: dry zea mays lea silk extract | pdfno_list: 00-005-0640"
+}

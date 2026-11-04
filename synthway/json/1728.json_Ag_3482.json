@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1728.json_Ag_3482",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "biosynthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1000.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "mikania cordata extract"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 154.0
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 34.2,
+      "width": 34.2,
+      "depth": 34.2
+    }
+  },
+  "pdfno_list": [
+    "03-065-2871"
+  ],
+  "source": {
+    "synthesis_id_original": "1728.json_Ag_3482",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Ag | method: biosynthesis | solvent: deionized water | solvent.volume: 154.0 | temperature: 80.0 | crystalsystem: cubic | shape: spherical | size.length: 34.2 | size.width: 34.2 | size.depth: 34.2 | precursor: AgNO3 (conc 1000.0) | additive: mikania cordata extract | pdfno_list: 03-065-2871"
+}

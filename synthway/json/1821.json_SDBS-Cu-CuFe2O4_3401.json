@@ -1,0 +1,56 @@
+{
+  "synthesis_id": "1821.json_SDBS-Cu-CuFe2O4_3401",
+  "composition": "SDBS-Cu-CuFe2O4",
+  "elements": [
+    "S",
+    "D",
+    "B",
+    "Cu",
+    "Fe",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Fe(NO3)3•9H2O",
+      "conc": 6.0
+    },
+    {
+      "name": "Cu(NO3)2•3H2O",
+      "conc": 3.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "urea",
+      "conc": 9.0
+    },
+    {
+      "name": "sodium dodecylbenzene sulfonate",
+      "mass": 0.4
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 25.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 7.0,
+      "width": 7.0,
+      "depth": 7.0
+    }
+  },
+  "pdfno_list": [
+    "85-1362, 77-0010"
+  ],
+  "source": {
+    "synthesis_id_original": "1821.json_SDBS-Cu-CuFe2O4_3401",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: SDBS-Cu-CuFe2O4 | solvent: ethylene glycol | solvent.volume: 25.0 | temperature: 200.0 | crystalsystem: cubic | size.length: 7.0 | size.width: 7.0 | size.depth: 7.0 | precursor: Fe(NO3)3•9H2O (conc 6.0) | precursor: Cu(NO3)2•3H2O (conc 3.0) | additive: urea (conc 9.0) | additive: sodium dodecylbenzene sulfonate (mass 0.4) | pdfno_list: 85-1362, 77-0010"
+}

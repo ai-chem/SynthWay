@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1490.json_Ag_2062",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "one-pot microwave synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "mass": 0.033974,
+      "conc": 2.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "banana waste peduncles (bwp) juice extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 70.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 17.5,
+      "width": 17.5,
+      "depth": 17.5
+    }
+  },
+  "pdfno_list": [
+    "04-0783"
+  ],
+  "source": {
+    "synthesis_id_original": "1490.json_Ag_2062",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Ag | method: one-pot microwave synthesis | solvent: water | temperature: 70.0 | crystalsystem: cubic | shape: spherical | size.length: 17.5 | size.width: 17.5 | size.depth: 17.5 | precursor: AgNO3 (mass 0.033974; conc 2.0) | additive: banana waste peduncles (bwp) juice extract | pdfno_list: 04-0783"
+}

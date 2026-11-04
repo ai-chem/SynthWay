@@ -1,0 +1,22 @@
+{
+  "synthesis_id": "284.json_La2S3_36",
+  "composition": "La2S3",
+  "elements": [
+    "La",
+    "S"
+  ],
+  "method": "one-pot synthesis",
+  "solvent": {
+    "name": "peg-400",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "source": {
+    "synthesis_id_original": "284.json_La2S3_36",
+    "nodes": 5,
+    "edges": 4
+  },
+  "retrieval_text": "composition: La2S3 | method: one-pot synthesis | solvent: peg-400 | solvent.volume: 10.0 | temperature: 80.0"
+}

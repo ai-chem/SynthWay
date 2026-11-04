@@ -1,0 +1,32 @@
+{
+  "synthesis_id": "301.json_Ni1-xMnxFe2O4_4174",
+  "composition": "Ni1−xMnxFe2O4",
+  "elements": [
+    "Ni",
+    "Mn",
+    "Fe",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "solvent": {
+    "name": "water",
+    "volume": 40.0
+  },
+  "conditions": {
+    "temperature": 180.0,
+    "ph": 9.0
+  },
+  "product": {
+    "crystalsystem": "cubic spinel",
+    "shape": "spherical"
+  },
+  "pdfno_list": [
+    "96-591-0064"
+  ],
+  "source": {
+    "synthesis_id_original": "301.json_Ni1-xMnxFe2O4_4174",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: Ni1−xMnxFe2O4 | method: hydrothermal | solvent: water | solvent.volume: 40.0 | temperature: 180.0 | pH: 9.0 | crystalsystem: cubic spinel | shape: spherical | pdfno_list: 96-591-0064"
+}

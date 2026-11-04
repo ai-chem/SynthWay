@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "1848.json_Co3Mn3O4_1520",
+  "composition": "Co3Mn3O4",
+  "elements": [
+    "Co",
+    "Mn",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "CoCl2*6H2O",
+      "mass": 4.76
+    },
+    {
+      "name": "MnCl2*4H2O",
+      "mass": 1.98
+    }
+  ],
+  "additives": [
+    {
+      "name": "potassium hydroxide",
+      "mass": 2.24
+    }
+  ],
+  "solvent": {
+    "name": "ethanol",
+    "volume": 50.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "shape": "sheets",
+    "size": {
+      "length": 5.0,
+      "width": 5.0,
+      "depth": 5.0
+    }
+  },
+  "pdfno_list": [
+    "18-0408"
+  ],
+  "source": {
+    "synthesis_id_original": "1848.json_Co3Mn3O4_1520",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Co3Mn3O4 | solvent: ethanol | solvent.volume: 50.0 | crystalsystem: tetragonal | shape: sheets | size.length: 5.0 | size.width: 5.0 | size.depth: 5.0 | precursor: CoCl2*6H2O (mass 4.76) | precursor: MnCl2*4H2O (mass 1.98) | additive: potassium hydroxide (mass 2.24) | pdfno_list: 18-0408"
+}

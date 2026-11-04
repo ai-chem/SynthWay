@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "2007.json_Pt150-PEI_3156",
+  "composition": "Pt150-PEI",
+  "elements": [
+    "Pt",
+    "P",
+    "E",
+    "I"
+  ],
+  "precursors": [
+    {
+      "name": "K2PtCl4",
+      "conc": 2.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyethyleneimine",
+      "mass": 0.0002
+    },
+    {
+      "name": "sodium borohydride",
+      "mass": 0.005
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 300.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 20.0,
+    "ph": 7.0
+  },
+  "product": {
+    "size": {
+      "length": 3.7,
+      "width": 3.7,
+      "depth": 3.7
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2007.json_Pt150-PEI_3156",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Pt150-PEI | solvent: water | temperature: 20.0 | pH: 7.0 | size.length: 3.7 | size.width: 3.7 | size.depth: 3.7 | precursor: K2PtCl4 (conc 2.0) | additive: polyethyleneimine (mass 0.0002) | additive: sodium borohydride (mass 0.005) | additive: sodium hydroxide (conc 300.0)"
+}

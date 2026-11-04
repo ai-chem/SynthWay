@@ -1,0 +1,34 @@
+{
+  "synthesis_id": "222.json_FNO_2279",
+  "composition": "FNO",
+  "elements": [
+    "F",
+    "N",
+    "O"
+  ],
+  "method": "coprecipitation",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 950.0,
+    "ph": 10.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "size": {
+      "length": 120.0,
+      "width": 120.0,
+      "depth": 120.0
+    }
+  },
+  "pdfno_list": [
+    "016-0374"
+  ],
+  "source": {
+    "synthesis_id_original": "222.json_FNO_2279",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: FNO | method: coprecipitation | solvent: water | temperature: 950.0 | pH: 10.0 | crystalsystem: monoclinic | size.length: 120.0 | size.width: 120.0 | size.depth: 120.0 | pdfno_list: 016-0374"
+}

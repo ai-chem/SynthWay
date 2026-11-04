@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "2110.json_Cu-Pt_486",
+  "composition": "Cu-Pt",
+  "elements": [
+    "Cu",
+    "Pt"
+  ],
+  "precursors": [
+    {
+      "name": "K2PtCl4",
+      "conc": 20.0
+    },
+    {
+      "name": "CuCl2",
+      "conc": 20.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "cerium hydroxide oxide"
+    },
+    {
+      "name": "sodium borohydride",
+      "conc": 400.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "size": {
+      "length": 4.6,
+      "width": 4.6,
+      "depth": 4.6
+    }
+  },
+  "pdfno_list": [
+    "000481549"
+  ],
+  "source": {
+    "synthesis_id_original": "2110.json_Cu-Pt_486",
+    "nodes": 12,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Cu-Pt | solvent: water | size.length: 4.6 | size.width: 4.6 | size.depth: 4.6 | precursor: K2PtCl4 (conc 20.0) | precursor: CuCl2 (conc 20.0) | additive: cerium hydroxide oxide | additive: sodium borohydride (conc 400.0) | pdfno_list: 000481549"
+}

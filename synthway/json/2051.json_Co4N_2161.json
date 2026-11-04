@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "2051.json_Co4N_2161",
+  "composition": "Co4N",
+  "elements": [
+    "Co",
+    "N"
+  ],
+  "precursors": [
+    {
+      "name": "Co(NO3)2·6H2O",
+      "mass": 0.291
+    },
+    {
+      "name": "NH4F",
+      "mass": 0.093
+    }
+  ],
+  "additives": [
+    {
+      "name": "urea",
+      "mass": 0.3
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 35.0
+  },
+  "conditions": {
+    "temperature": 500.0
+  },
+  "product": {
+    "shape": "wire",
+    "size": {
+      "length": 6000.0,
+      "width": 10.0,
+      "depth": 10.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2051.json_Co4N_2161",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Co4N | solvent: water | solvent.volume: 35.0 | temperature: 500.0 | shape: wire | size.length: 6000.0 | size.width: 10.0 | size.depth: 10.0 | precursor: Co(NO3)2·6H2O (mass 0.291) | precursor: NH4F (mass 0.093) | additive: urea (mass 0.3)"
+}

@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1183.json_PC_CuO_721",
+  "composition": "PC CuO",
+  "elements": [
+    "P",
+    "C",
+    "Cu",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "CuSO4*5H2O",
+      "conc": 50.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 600.0
+    },
+    {
+      "name": "eupatorium adenophorum leaf extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 70.0
+  },
+  "product": {
+    "shape": "plate",
+    "size": {
+      "length": 44.0,
+      "width": 44.0,
+      "depth": 44.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1183.json_PC_CuO_721",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: PC CuO | solvent: water | temperature: 70.0 | shape: plate | size.length: 44.0 | size.width: 44.0 | size.depth: 44.0 | precursor: CuSO4*5H2O (conc 50.0) | additive: sodium hydroxide (conc 600.0) | additive: eupatorium adenophorum leaf extract"
+}

@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "1511.json_Cu_399",
+  "composition": "Cu",
+  "elements": [
+    "Cu"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "CuSO4",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "annona muricata leaf extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 80.0,
+    "ph": 7.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 118.63,
+      "width": 118.63,
+      "depth": 118.63
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1511.json_Cu_399",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Cu | method: green synthesis | solvent: water | temperature: 80.0 | pH: 7.0 | shape: spherical | size.length: 118.63 | size.width: 118.63 | size.depth: 118.63 | precursor: CuSO4 (conc 1.0) | additive: annona muricata leaf extract"
+}

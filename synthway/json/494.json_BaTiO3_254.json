@@ -1,0 +1,30 @@
+{
+  "synthesis_id": "494.json_BaTiO3_254",
+  "composition": "BaTiO3",
+  "elements": [
+    "Ba",
+    "Ti",
+    "O"
+  ],
+  "method": "coprecipitation",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 95.0,
+    "ph": 9.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "shape": "core-shell",
+    "size": {
+      "length": 52.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "494.json_BaTiO3_254",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: BaTiO3 | method: coprecipitation | solvent: water | temperature: 95.0 | pH: 9.0 | crystalsystem: tetragonal | shape: core-shell | size.length: 52.0"
+}

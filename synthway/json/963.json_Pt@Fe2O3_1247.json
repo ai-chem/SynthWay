@@ -1,0 +1,53 @@
+{
+  "synthesis_id": "963.json_Pt@Fe2O3_1247",
+  "composition": "Pt@Fe2O3",
+  "elements": [
+    "Pt",
+    "Fe",
+    "O"
+  ],
+  "method": "sequential synthetic method",
+  "precursors": [
+    {
+      "name": "C16H34O2",
+      "mass": 0.2
+    },
+    {
+      "name": "Pt(acac)2",
+      "mass": 0.1
+    },
+    {
+      "name": "Fe(CO)5",
+      "mass": 0.098
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleic acid",
+      "mass": 0.035
+    },
+    {
+      "name": "oleylamine",
+      "mass": 0.0334
+    }
+  ],
+  "solvent": {
+    "name": "octyl ether",
+    "volume": 1.0
+  },
+  "conditions": {
+    "temperature": 290.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "width": 10.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "963.json_Pt@Fe2O3_1247",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: Pt@Fe2O3 | method: sequential synthetic method | solvent: octyl ether | solvent.volume: 1.0 | temperature: 290.0 | crystalsystem: cubic | size.width: 10.0 | precursor: C16H34O2 (mass 0.2) | precursor: Pt(acac)2 (mass 0.1) | precursor: Fe(CO)5 (mass 0.098) | additive: oleic acid (mass 0.035) | additive: oleylamine (mass 0.0334)"
+}

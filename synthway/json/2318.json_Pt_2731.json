@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "2318.json_Pt_2731",
+  "composition": "Pt",
+  "elements": [
+    "Pt"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "PtCl4",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "pomegranate extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 20.12,
+      "width": 20.12,
+      "depth": 20.12
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2318.json_Pt_2731",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Pt | method: green synthesis | solvent: water | temperature: 25.0 | crystalsystem: cubic | shape: spherical | size.length: 20.12 | size.width: 20.12 | size.depth: 20.12 | precursor: PtCl4 (conc 10.0) | additive: pomegranate extract"
+}

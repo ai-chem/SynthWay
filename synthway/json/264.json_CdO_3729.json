@@ -1,0 +1,29 @@
+{
+  "synthesis_id": "264.json_CdO_3729",
+  "composition": "CdO",
+  "elements": [
+    "Cd",
+    "O"
+  ],
+  "method": "decomposition",
+  "solvent": {
+    "name": "water",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 250.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "shape": "nano-sized powder",
+    "size": {
+      "length": 20.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "264.json_CdO_3729",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: CdO | method: decomposition | solvent: water | solvent.volume: 30.0 | temperature: 250.0 | crystalsystem: face-centered cubic | shape: nano-sized powder | size.length: 20.0"
+}

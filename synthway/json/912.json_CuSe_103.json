@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "912.json_CuSe_103",
+  "composition": "CuSe",
+  "elements": [
+    "Cu",
+    "Se"
+  ],
+  "precursors": [
+    {
+      "name": "CuCl",
+      "mass": 0.099
+    },
+    {
+      "name": "SeO2",
+      "mass": 0.111
+    },
+    {
+      "name": "N2H4·H2O",
+      "mass": 0.111
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 160.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "plate"
+  },
+  "pdfno_list": [
+    "20-1020"
+  ],
+  "source": {
+    "synthesis_id_original": "912.json_CuSe_103",
+    "nodes": 12,
+    "edges": 12
+  },
+  "retrieval_text": "composition: CuSe | solvent: ethylene glycol | solvent.volume: 20.0 | temperature: 160.0 | crystalsystem: hexagonal | shape: plate | precursor: CuCl (mass 0.099) | precursor: SeO2 (mass 0.111) | precursor: N2H4·H2O (mass 0.111) | pdfno_list: 20-1020"
+}

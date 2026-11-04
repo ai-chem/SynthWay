@@ -1,0 +1,57 @@
+{
+  "synthesis_id": "1447.json_Ag-Au/Y2O3_3139",
+  "composition": "Ag-Au/Y2O3",
+  "elements": [
+    "Ag",
+    "Au",
+    "Y",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Yttrium nitrate hexahydrate (Y(NO3)3·6H2O)",
+      "conc": 100.0
+    },
+    {
+      "name": "AgNO3",
+      "conc": 20.0
+    },
+    {
+      "name": "Gold chloride trihydrate (HAuCl4·3H2O)",
+      "conc": 20.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "1-butyl-3-methylimidazolium hexafluorophosphate"
+    },
+    {
+      "name": "justicia adhatoda leaves extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 120.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "flake",
+    "size": {
+      "length": 30.0,
+      "width": 30.0,
+      "depth": 30.0
+    }
+  },
+  "pdfno_list": [
+    "44-0399"
+  ],
+  "source": {
+    "synthesis_id_original": "1447.json_Ag-Au/Y2O3_3139",
+    "nodes": 17,
+    "edges": 17
+  },
+  "retrieval_text": "composition: Ag-Au/Y2O3 | method: green synthesis | solvent: water | temperature: 120.0 | crystalsystem: monoclinic | shape: flake | size.length: 30.0 | size.width: 30.0 | size.depth: 30.0 | precursor: Yttrium nitrate hexahydrate (Y(NO3)3·6H2O) (conc 100.0) | precursor: AgNO3 (conc 20.0) | precursor: Gold chloride trihydrate (HAuCl4·3H2O) (conc 20.0) | additive: 1-butyl-3-methylimidazolium hexafluorophosphate | additive: justicia adhatoda leaves extract | pdfno_list: 44-0399"
+}

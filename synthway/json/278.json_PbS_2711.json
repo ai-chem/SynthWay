@@ -1,0 +1,29 @@
+{
+  "synthesis_id": "278.json_PbS_2711",
+  "composition": "PbS",
+  "elements": [
+    "Pb",
+    "S"
+  ],
+  "method": "surfactant selective shape controlled",
+  "solvent": {
+    "name": "water",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "fern-like star",
+    "size": {
+      "length": 5000.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "278.json_PbS_2711",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: PbS | method: surfactant selective shape controlled | solvent: water | solvent.volume: 30.0 | temperature: 80.0 | crystalsystem: cubic | shape: fern-like star | size.length: 5000.0"
+}

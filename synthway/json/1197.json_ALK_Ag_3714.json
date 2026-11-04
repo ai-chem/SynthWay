@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1197.json_ALK_Ag_3714",
+  "composition": "ALK_Ag",
+  "elements": [
+    "A",
+    "L",
+    "K",
+    "Ag"
+  ],
+  "method": "microwave-assisted green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "alkaline extracted crude polysaccharide of c. nutans (alk_cnp)"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 150.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 7.48,
+      "width": 7.48,
+      "depth": 7.48
+    }
+  },
+  "pdfno_list": [
+    "04-0783"
+  ],
+  "source": {
+    "synthesis_id_original": "1197.json_ALK_Ag_3714",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: ALK_Ag | method: microwave-assisted green synthesis | solvent: water | temperature: 150.0 | crystalsystem: cubic | shape: spherical | size.length: 7.48 | size.width: 7.48 | size.depth: 7.48 | precursor: AgNO3 (conc 10.0) | additive: alkaline extracted crude polysaccharide of c. nutans (alk_cnp) | pdfno_list: 04-0783"
+}

@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1535.json_MPN@PP-L_2542",
+  "composition": "MPN@PP-L",
+  "elements": [
+    "M",
+    "P",
+    "N",
+    "L"
+  ],
+  "precursors": [
+    {
+      "name": "PP-LNPs",
+      "mass": 0.01
+    },
+    {
+      "name": "FeCl3*6H2O"
+    }
+  ],
+  "additives": [
+    {
+      "name": "tannic acid"
+    }
+  ],
+  "solvent": {
+    "name": "tris buffer"
+  },
+  "conditions": {
+    "ph": 8.15
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 432.5,
+      "width": 432.5,
+      "depth": 432.5
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1535.json_MPN@PP-L_2542",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: MPN@PP-L | solvent: tris buffer | pH: 8.15 | shape: spherical | size.length: 432.5 | size.width: 432.5 | size.depth: 432.5 | precursor: PP-LNPs (mass 0.01) | precursor: FeCl3*6H2O | additive: tannic acid"
+}

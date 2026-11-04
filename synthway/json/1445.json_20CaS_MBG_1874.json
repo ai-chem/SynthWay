@@ -1,0 +1,51 @@
+{
+  "synthesis_id": "1445.json_20CaS_MBG_1874",
+  "composition": "20CaS MBG",
+  "elements": [
+    "Ca",
+    "S",
+    "M",
+    "B",
+    "G"
+  ],
+  "method": "microemulsion assisted sol-gel",
+  "precursors": [
+    {
+      "name": "CTAB",
+      "mass": 2.8
+    },
+    {
+      "name": "Si(OC2H5)4"
+    },
+    {
+      "name": "Ca(NO3)2*4H2O"
+    }
+  ],
+  "additives": [
+    {
+      "name": "ethyl acetate"
+    },
+    {
+      "name": "ammonium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 150.0
+  },
+  "product": {
+    "crystalsystem": "amorphous",
+    "shape": "spherical",
+    "size": {
+      "length": 171.0,
+      "width": 171.0,
+      "depth": 171.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1445.json_20CaS_MBG_1874",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: 20CaS MBG | method: microemulsion assisted sol-gel | solvent: deionized water | solvent.volume: 150.0 | crystalsystem: amorphous | shape: spherical | size.length: 171.0 | size.width: 171.0 | size.depth: 171.0 | precursor: CTAB (mass 2.8) | precursor: Si(OC2H5)4 | precursor: Ca(NO3)2*4H2O | additive: ethyl acetate | additive: ammonium hydroxide"
+}

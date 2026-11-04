@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "888.json_Pd_1320",
+  "composition": "Pd",
+  "elements": [
+    "Pd"
+  ],
+  "method": "polyol",
+  "precursors": [
+    {
+      "name": "Pd(acac)2",
+      "mass": 0.05
+    },
+    {
+      "name": "KI",
+      "mass": 0.1432
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 0.16
+    }
+  ],
+  "solvent": {
+    "name": "n-methylpyrrolidone",
+    "volume": 12.0
+  },
+  "conditions": {
+    "temperature": 140.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "shape": "cube",
+    "size": {
+      "length": 8.0,
+      "width": 8.0,
+      "depth": 8.0
+    }
+  },
+  "pdfno_list": [
+    "46-1043"
+  ],
+  "source": {
+    "synthesis_id_original": "888.json_Pd_1320",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: Pd | method: polyol | solvent: n-methylpyrrolidone | solvent.volume: 12.0 | temperature: 140.0 | crystalsystem: face-centered cubic | shape: cube | size.length: 8.0 | size.width: 8.0 | size.depth: 8.0 | precursor: Pd(acac)2 (mass 0.05) | precursor: KI (mass 0.1432) | additive: polyvinylpyrrolidone (mass 0.16) | pdfno_list: 46-1043"
+}

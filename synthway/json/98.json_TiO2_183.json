@@ -1,0 +1,25 @@
+{
+  "synthesis_id": "98.json_TiO2_183",
+  "composition": "TiO2",
+  "elements": [
+    "Ti",
+    "O"
+  ],
+  "method": "sol-gel",
+  "solvent": {
+    "name": "distilled water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 500.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal anatase"
+  },
+  "source": {
+    "synthesis_id_original": "98.json_TiO2_183",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: TiO2 | method: sol-gel | solvent: distilled water | solvent.volume: 50.0 | temperature: 500.0 | crystalsystem: tetragonal anatase"
+}

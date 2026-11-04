@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "833.json_ZnO_3062",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "sol-gel",
+  "precursors": [
+    {
+      "name": "Zn(CH3CO2)2*2H2O",
+      "mass": 12.6
+    }
+  ],
+  "additives": [
+    {
+      "name": "hydrogen peroxide"
+    }
+  ],
+  "solvent": {
+    "name": "double distilled water + absolute alcohol",
+    "volume": 1000.0
+  },
+  "conditions": {
+    "temperature": 50.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical",
+    "size": {
+      "width": 58.3
+    }
+  },
+  "pdfno_list": [
+    "89 1397"
+  ],
+  "source": {
+    "synthesis_id_original": "833.json_ZnO_3062",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: ZnO | method: sol-gel | solvent: double distilled water + absolute alcohol | solvent.volume: 1000.0 | temperature: 50.0 | crystalsystem: hexagonal | shape: spherical | size.width: 58.3 | precursor: Zn(CH3CO2)2*2H2O (mass 12.6) | additive: hydrogen peroxide | pdfno_list: 89 1397"
+}

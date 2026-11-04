@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "642.json_Ag_3211",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 0.01
+    }
+  ],
+  "additives": [
+    {
+      "name": "plant (capsicum annuum) extract"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water"
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 20.93,
+      "width": 20.93,
+      "depth": 20.93
+    }
+  },
+  "pdfno_list": [
+    "04-0783"
+  ],
+  "source": {
+    "synthesis_id_original": "642.json_Ag_3211",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Ag | solvent: distilled water | crystalsystem: cubic | shape: spherical | size.length: 20.93 | size.width: 20.93 | size.depth: 20.93 | precursor: AgNO3 (conc 0.01) | additive: plant (capsicum annuum) extract | pdfno_list: 04-0783"
+}

@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "938.json_HfO2@Au_1516",
+  "composition": "HfO2@Au",
+  "elements": [
+    "Hf",
+    "O",
+    "Au"
+  ],
+  "method": "high-temperature reduction method",
+  "precursors": [
+    {
+      "name": "Hf(N(CH3)2)4"
+    },
+    {
+      "name": "Au(CH3COO)3",
+      "mass": 0.25
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleic acid"
+    },
+    {
+      "name": "oleylamine"
+    },
+    {
+      "name": "1,2-hexadecanediol",
+      "mass": 2.5
+    }
+  ],
+  "solvent": {
+    "name": "dioctylether",
+    "volume": 45.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "shape": "irregular shape",
+    "size": {
+      "width": 7.3
+    }
+  },
+  "source": {
+    "synthesis_id_original": "938.json_HfO2@Au_1516",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: HfO2@Au | method: high-temperature reduction method | solvent: dioctylether | solvent.volume: 45.0 | temperature: 200.0 | shape: irregular shape | size.width: 7.3 | precursor: Hf(N(CH3)2)4 | precursor: Au(CH3COO)3 (mass 0.25) | additive: oleic acid | additive: oleylamine | additive: 1,2-hexadecanediol (mass 2.5)"
+}

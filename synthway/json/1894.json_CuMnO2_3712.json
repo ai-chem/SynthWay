@@ -1,0 +1,51 @@
+{
+  "synthesis_id": "1894.json_CuMnO2_3712",
+  "composition": "CuMnO2",
+  "elements": [
+    "Cu",
+    "Mn",
+    "O"
+  ],
+  "method": "modified hydrothermal",
+  "precursors": [
+    {
+      "name": "Cu(NO3)2∙3H2O",
+      "conc": 15.0
+    },
+    {
+      "name": "Mn(NO3)2∙4H2O",
+      "conc": 15.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "mass": 4.4
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 70.0
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "irregular-flake",
+    "size": {
+      "length": 100.0,
+      "width": 100.0,
+      "depth": 1.6
+    }
+  },
+  "pdfno_list": [
+    "79-1150"
+  ],
+  "source": {
+    "synthesis_id_original": "1894.json_CuMnO2_3712",
+    "nodes": 16,
+    "edges": 16
+  },
+  "retrieval_text": "composition: CuMnO2 | method: modified hydrothermal | solvent: water | solvent.volume: 70.0 | temperature: 80.0 | crystalsystem: cubic | shape: irregular-flake | size.length: 100.0 | size.width: 100.0 | size.depth: 1.6 | precursor: Cu(NO3)2∙3H2O (conc 15.0) | precursor: Mn(NO3)2∙4H2O (conc 15.0) | additive: sodium hydroxide (mass 4.4) | pdfno_list: 79-1150"
+}

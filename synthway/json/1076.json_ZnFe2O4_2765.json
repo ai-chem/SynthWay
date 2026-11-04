@@ -1,0 +1,54 @@
+{
+  "synthesis_id": "1076.json_ZnFe2O4_2765",
+  "composition": "ZnFe2O4",
+  "elements": [
+    "Zn",
+    "Fe",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "Fe(NO3)3⋅9H2O",
+      "mass": 270.67
+    },
+    {
+      "name": "Zn(NO3)2⋅6H2O",
+      "mass": 148.74
+    },
+    {
+      "name": "NaOH",
+      "conc": 2000.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyethylene glycol 400",
+      "mass": 5.65
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 180.0,
+    "ph": 12.0
+  },
+  "product": {
+    "crystalsystem": "inverse spinel",
+    "shape": "spherical",
+    "size": {
+      "width": 10.0
+    }
+  },
+  "pdfno_list": [
+    "22-1012"
+  ],
+  "source": {
+    "synthesis_id_original": "1076.json_ZnFe2O4_2765",
+    "nodes": 18,
+    "edges": 17
+  },
+  "retrieval_text": "composition: ZnFe2O4 | method: hydrothermal | solvent: water | solvent.volume: 30.0 | temperature: 180.0 | pH: 12.0 | crystalsystem: inverse spinel | shape: spherical | size.width: 10.0 | precursor: Fe(NO3)3⋅9H2O (mass 270.67) | precursor: Zn(NO3)2⋅6H2O (mass 148.74) | precursor: NaOH (conc 2000.0) | additive: polyethylene glycol 400 (mass 5.65) | pdfno_list: 22-1012"
+}

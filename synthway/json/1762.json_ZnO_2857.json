@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1762.json_ZnO_2857",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "chemical reduction",
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2",
+      "conc": 4.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "curcuma longa"
+    },
+    {
+      "name": "polyvinylpyrrolidone"
+    }
+  ],
+  "solvent": {
+    "name": "ethanol",
+    "volume": 25.0
+  },
+  "conditions": {
+    "temperature": 70.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 20.0,
+      "width": 20.0,
+      "depth": 20.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1762.json_ZnO_2857",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: ZnO | method: chemical reduction | solvent: ethanol | solvent.volume: 25.0 | temperature: 70.0 | crystalsystem: hexagonal | shape: spherical | size.length: 20.0 | size.width: 20.0 | size.depth: 20.0 | precursor: Zn(CH3COO)2 (conc 4.0) | additive: curcuma longa | additive: polyvinylpyrrolidone"
+}

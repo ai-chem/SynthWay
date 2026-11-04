@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1581.json_AgNP50°C-1:2_2289",
+  "composition": "AgNP50°C-1:2",
+  "elements": [
+    "Ag",
+    "N",
+    "P",
+    "C"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3"
+    }
+  ],
+  "additives": [
+    {
+      "name": "eucalyptus globulus leaves extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 50.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 73.6,
+      "width": 73.6,
+      "depth": 73.6
+    }
+  },
+  "pdfno_list": [
+    "00-001-1167 03-0921 00-006-1480 00-031-1238"
+  ],
+  "source": {
+    "synthesis_id_original": "1581.json_AgNP50°C-1:2_2289",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: AgNP50°C-1:2 | method: green synthesis | solvent: water | temperature: 50.0 | crystalsystem: cubic | shape: spherical | size.length: 73.6 | size.width: 73.6 | size.depth: 73.6 | precursor: AgNO3 | additive: eucalyptus globulus leaves extract | pdfno_list: 00-001-1167 03-0921 00-006-1480 00-031-1238"
+}

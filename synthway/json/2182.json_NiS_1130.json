@@ -1,0 +1,56 @@
+{
+  "synthesis_id": "2182.json_NiS_1130",
+  "composition": "NiS",
+  "elements": [
+    "Ni",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "Ni(NO3)2*6H2O",
+      "conc": 3.0
+    },
+    {
+      "name": "K3[Co(CN)6]",
+      "conc": 2.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium citrate dihydrate",
+      "conc": 4.5
+    },
+    {
+      "name": "thioacetamide",
+      "conc": 1.0
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 200.0
+  },
+  "conditions": {
+    "temperature": 100.0
+  },
+  "product": {
+    "shape": "porous nanocubes",
+    "size": {
+      "length": 320.0,
+      "width": 320.0,
+      "depth": 320.0
+    }
+  },
+  "pdfno_list": [
+    "77-1624"
+  ],
+  "source": {
+    "synthesis_id_original": "2182.json_NiS_1130",
+    "nodes": 19,
+    "edges": 18
+  },
+  "retrieval_text": "composition: NiS | solvent: water | solvent.volume: 200.0 | temperature: 100.0 | shape: porous nanocubes | size.length: 320.0 | size.width: 320.0 | size.depth: 320.0 | precursor: Ni(NO3)2*6H2O (conc 3.0) | precursor: K3[Co(CN)6] (conc 2.0) | additive: sodium citrate dihydrate (conc 4.5) | additive: thioacetamide (conc 1.0) | additive: sodium hydroxide (conc 1000.0) | pdfno_list: 77-1624"
+}

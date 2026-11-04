@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "2323.json_CuS_2392",
+  "composition": "CuS",
+  "elements": [
+    "Cu",
+    "S"
+  ],
+  "method": "aqueous chemical",
+  "precursors": [
+    {
+      "name": "CuCl2",
+      "conc": 1000.0
+    },
+    {
+      "name": "Na2S",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "demised water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 70.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "size": {
+      "length": 19.79,
+      "width": 19.79,
+      "depth": 19.79
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2323.json_CuS_2392",
+    "nodes": 12,
+    "edges": 12
+  },
+  "retrieval_text": "composition: CuS | method: aqueous chemical | solvent: demised water | solvent.volume: 100.0 | temperature: 70.0 | crystalsystem: hexagonal | size.length: 19.79 | size.width: 19.79 | size.depth: 19.79 | precursor: CuCl2 (conc 1000.0) | precursor: Na2S (conc 1000.0)"
+}

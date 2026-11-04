@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1997.json_TiO2_2297",
+  "composition": "TiO2",
+  "elements": [
+    "Ti",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "TiCl4 (sol.)",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "m. citrifolia leaves extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 120.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "shape": "spherical",
+    "size": {
+      "length": 10.0,
+      "width": 10.0,
+      "depth": 10.0
+    }
+  },
+  "pdfno_list": [
+    "89-4920"
+  ],
+  "source": {
+    "synthesis_id_original": "1997.json_TiO2_2297",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: TiO2 | method: green synthesis | solvent: water | temperature: 120.0 | crystalsystem: tetragonal | shape: spherical | size.length: 10.0 | size.width: 10.0 | size.depth: 10.0 | precursor: TiCl4 (sol.) (conc 100.0) | additive: m. citrifolia leaves extract | pdfno_list: 89-4920"
+}

@@ -1,0 +1,35 @@
+{
+  "synthesis_id": "502.json_Ag@CFRs_1432",
+  "composition": "Ag@CFRs",
+  "elements": [
+    "Ag",
+    "C",
+    "F",
+    "Rs"
+  ],
+  "precursors": [
+    {
+      "name": "Ag@CFR solution"
+    }
+  ],
+  "additives": [
+    {
+      "name": "oxidized hyaluronic acid (oha)"
+    },
+    {
+      "name": "polysaccharide hydrogels based on carboxymethyl chitosan (cmcs)"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "spherical"
+  },
+  "source": {
+    "synthesis_id_original": "502.json_Ag@CFRs_1432",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: Ag@CFRs | solvent: water | shape: spherical | precursor: Ag@CFR solution | additive: oxidized hyaluronic acid (oha) | additive: polysaccharide hydrogels based on carboxymethyl chitosan (cmcs)"
+}

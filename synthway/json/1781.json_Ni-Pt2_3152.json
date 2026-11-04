@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "1781.json_Ni-Pt2_3152",
+  "composition": "Ni-Pt2",
+  "elements": [
+    "Ni",
+    "Pt"
+  ],
+  "precursors": [
+    {
+      "name": "Pt(acac)2",
+      "mass": 10.0,
+      "conc": 0.025
+    },
+    {
+      "name": "Ni(ac)2ꞏ4H2O",
+      "mass": 3.5,
+      "conc": 0.013
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 80.0
+    }
+  ],
+  "solvent": {
+    "name": "tetraethylene glycol",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 280.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 12.7,
+      "width": 12.7,
+      "depth": 12.7
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1781.json_Ni-Pt2_3152",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: Ni-Pt2 | solvent: tetraethylene glycol | solvent.volume: 10.0 | temperature: 280.0 | crystalsystem: cubic | size.length: 12.7 | size.width: 12.7 | size.depth: 12.7 | precursor: Pt(acac)2 (mass 10.0; conc 0.025) | precursor: Ni(ac)2ꞏ4H2O (mass 3.5; conc 0.013) | additive: polyvinylpyrrolidone (mass 80.0)"
+}

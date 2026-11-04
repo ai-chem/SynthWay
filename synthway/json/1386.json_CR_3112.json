@@ -1,0 +1,36 @@
+{
+  "synthesis_id": "1386.json_CR_3112",
+  "composition": "CR",
+  "elements": [
+    "C",
+    "R"
+  ],
+  "method": "single-step thermolysis",
+  "precursors": [
+    {
+      "name": "Cr(NO3)3·9H2O",
+      "mass": 8.0
+    }
+  ],
+  "conditions": {
+    "temperature": 460.0
+  },
+  "product": {
+    "crystalsystem": "rhombohedral",
+    "shape": "wire",
+    "size": {
+      "length": 20.5,
+      "width": 20.5,
+      "depth": 20.5
+    }
+  },
+  "pdfno_list": [
+    "38-1479"
+  ],
+  "source": {
+    "synthesis_id_original": "1386.json_CR_3112",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: CR | method: single-step thermolysis | temperature: 460.0 | crystalsystem: rhombohedral | shape: wire | size.length: 20.5 | size.width: 20.5 | size.depth: 20.5 | precursor: Cr(NO3)3·9H2O (mass 8.0) | pdfno_list: 38-1479"
+}

@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "1286.json_Ag_642",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "bio-reduction",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 5.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "banana pulp extract (pe)"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 42.97,
+      "width": 42.97,
+      "depth": 42.97
+    }
+  },
+  "pdfno_list": [
+    "65-2871"
+  ],
+  "source": {
+    "synthesis_id_original": "1286.json_Ag_642",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Ag | method: bio-reduction | solvent: water | crystalsystem: cubic | shape: spherical | size.length: 42.97 | size.width: 42.97 | size.depth: 42.97 | precursor: AgNO3 (conc 5.0) | additive: banana pulp extract (pe) | pdfno_list: 65-2871"
+}

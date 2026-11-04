@@ -1,0 +1,51 @@
+{
+  "synthesis_id": "1766.json_Ag/WO3_818",
+  "composition": "Ag/WO3",
+  "elements": [
+    "Ag",
+    "W",
+    "O"
+  ],
+  "method": "deposition-precipitation",
+  "precursors": [
+    {
+      "name": "WO3",
+      "mass": 3.0
+    },
+    {
+      "name": "AgNO3"
+    }
+  ],
+  "additives": [
+    {
+      "name": "cetyltrimethylammonium bromide",
+      "mass": 0.01
+    },
+    {
+      "name": "ascorbic acid",
+      "conc": 50.0
+    }
+  ],
+  "solvent": {
+    "name": "ultrapure (up) water and absolute ethanol (1:1)",
+    "volume": 100.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "irregular",
+    "size": {
+      "length": 500.0,
+      "width": 500.0,
+      "depth": 500.0
+    }
+  },
+  "pdfno_list": [
+    "43-1035"
+  ],
+  "source": {
+    "synthesis_id_original": "1766.json_Ag/WO3_818",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: Ag/WO3 | method: deposition-precipitation | solvent: ultrapure (up) water and absolute ethanol (1:1) | solvent.volume: 100.0 | crystalsystem: monoclinic | shape: irregular | size.length: 500.0 | size.width: 500.0 | size.depth: 500.0 | precursor: WO3 (mass 3.0) | precursor: AgNO3 | additive: cetyltrimethylammonium bromide (mass 0.01) | additive: ascorbic acid (conc 50.0) | pdfno_list: 43-1035"
+}

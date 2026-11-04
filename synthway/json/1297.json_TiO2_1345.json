@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1297.json_TiO2_1345",
+  "composition": "TiO2",
+  "elements": [
+    "Ti",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Ti(OC3H7)4",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "hedera helix l. leaf axtract"
+    }
+  ],
+  "solvent": {
+    "name": "ethanol"
+  },
+  "conditions": {
+    "temperature": 70.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "shape": "spherical",
+    "size": {
+      "length": 20.9,
+      "width": 20.9,
+      "depth": 20.9
+    }
+  },
+  "pdfno_list": [
+    "00-901-5929"
+  ],
+  "source": {
+    "synthesis_id_original": "1297.json_TiO2_1345",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: TiO2 | method: green synthesis | solvent: ethanol | temperature: 70.0 | crystalsystem: tetragonal | shape: spherical | size.length: 20.9 | size.width: 20.9 | size.depth: 20.9 | precursor: Ti(OC3H7)4 (conc 10.0) | additive: hedera helix l. leaf axtract | pdfno_list: 00-901-5929"
+}

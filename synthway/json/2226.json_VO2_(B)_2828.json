@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "2226.json_VO2_(B)_2828",
+  "composition": "VO2 (B)",
+  "elements": [
+    "V",
+    "O",
+    "B"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "V2O5",
+      "mass": 0.6
+    }
+  ],
+  "additives": [
+    {
+      "name": "oxalic acid dihydrate",
+      "mass": 1.25
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 230.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "nanobelt"
+  },
+  "pdfno_list": [
+    "81-2392"
+  ],
+  "source": {
+    "synthesis_id_original": "2226.json_VO2_(B)_2828",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: VO2 (B) | method: hydrothermal | solvent: deionized water | solvent.volume: 20.0 | temperature: 230.0 | crystalsystem: monoclinic | shape: nanobelt | precursor: V2O5 (mass 0.6) | additive: oxalic acid dihydrate (mass 1.25) | pdfno_list: 81-2392"
+}

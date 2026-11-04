@@ -1,0 +1,28 @@
+{
+  "synthesis_id": "403.json_Mn3O4_3955",
+  "composition": "Mn3O4",
+  "elements": [
+    "Mn",
+    "O"
+  ],
+  "method": "hydrazine-assisted hydrothermal",
+  "solvent": {
+    "name": "water",
+    "volume": 65.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal"
+  },
+  "pdfno_list": [
+    "24-0734"
+  ],
+  "source": {
+    "synthesis_id_original": "403.json_Mn3O4_3955",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: Mn3O4 | method: hydrazine-assisted hydrothermal | solvent: water | solvent.volume: 65.0 | temperature: 180.0 | crystalsystem: tetragonal | pdfno_list: 24-0734"
+}

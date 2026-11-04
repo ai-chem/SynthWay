@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "2218.json_α-Fe2O3_1043",
+  "composition": "α-Fe2O3",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "Fe(NO3)3·9H2O",
+      "mass": 1.8
+    }
+  ],
+  "additives": [
+    {
+      "name": "ammonium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water"
+  },
+  "conditions": {
+    "temperature": 120.0,
+    "ph": 9.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "size": {
+      "length": 61.0,
+      "width": 61.0,
+      "depth": 61.0
+    }
+  },
+  "pdfno_list": [
+    "33-0664"
+  ],
+  "source": {
+    "synthesis_id_original": "2218.json_α-Fe2O3_1043",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: α-Fe2O3 | method: hydrothermal | solvent: distilled water | temperature: 120.0 | pH: 9.0 | crystalsystem: hexagonal | size.length: 61.0 | size.width: 61.0 | size.depth: 61.0 | precursor: Fe(NO3)3·9H2O (mass 1.8) | additive: ammonium hydroxide | pdfno_list: 33-0664"
+}

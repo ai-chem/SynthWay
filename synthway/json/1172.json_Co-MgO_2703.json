@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "1172.json_Co-MgO_2703",
+  "composition": "Co-MgO",
+  "elements": [
+    "Co",
+    "Mg",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Mg(NO3)2",
+      "conc": 45.0
+    },
+    {
+      "name": "Co(NO3)2",
+      "conc": 5.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "mentha piperita leaf extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 70.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "flower-like",
+    "size": {
+      "length": 19.0,
+      "width": 19.0,
+      "depth": 19.0
+    }
+  },
+  "pdfno_list": [
+    "01-075- 0447"
+  ],
+  "source": {
+    "synthesis_id_original": "1172.json_Co-MgO_2703",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Co-MgO | method: green synthesis | solvent: water | temperature: 70.0 | crystalsystem: cubic | shape: flower-like | size.length: 19.0 | size.width: 19.0 | size.depth: 19.0 | precursor: Mg(NO3)2 (conc 45.0) | precursor: Co(NO3)2 (conc 5.0) | additive: mentha piperita leaf extract | pdfno_list: 01-075- 0447"
+}

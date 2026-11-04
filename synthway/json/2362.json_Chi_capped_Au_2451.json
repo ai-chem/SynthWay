@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "2362.json_Chi_capped_Au_2451",
+  "composition": "Chi capped Au",
+  "elements": [
+    "Ch",
+    "Au"
+  ],
+  "precursors": [
+    {
+      "name": "Chi"
+    },
+    {
+      "name": "Au Nanostars"
+    }
+  ],
+  "additives": [
+    {
+      "name": "acetic acid",
+      "mass": 1.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "nanostars",
+    "size": {
+      "length": 123.9,
+      "width": 123.9,
+      "depth": 123.9
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2362.json_Chi_capped_Au_2451",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Chi capped Au | solvent: water | shape: nanostars | size.length: 123.9 | size.width: 123.9 | size.depth: 123.9 | precursor: Chi | precursor: Au Nanostars | additive: acetic acid (mass 1.0)"
+}

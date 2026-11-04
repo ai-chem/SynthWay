@@ -1,0 +1,29 @@
+{
+  "synthesis_id": "41.json_CuS_266",
+  "composition": "CuS",
+  "elements": [
+    "Cu",
+    "S"
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 40.0
+  },
+  "conditions": {
+    "temperature": 150.0
+  },
+  "product": {
+    "size": {
+      "width": 35.0
+    }
+  },
+  "pdfno_list": [
+    "06-0464"
+  ],
+  "source": {
+    "synthesis_id_original": "41.json_CuS_266",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: CuS | solvent: water | solvent.volume: 40.0 | temperature: 150.0 | size.width: 35.0 | pdfno_list: 06-0464"
+}

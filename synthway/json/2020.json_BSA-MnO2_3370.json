@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "2020.json_BSA-MnO2_3370",
+  "composition": "BSA-MnO2",
+  "elements": [
+    "B",
+    "S",
+    "A",
+    "Mn",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Mn(CH3COO)2",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "bovine serum albumin",
+      "mass": 0.025
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "PBS",
+    "volume": 10.0
+  },
+  "product": {
+    "size": {
+      "length": 4.5,
+      "width": 4.5,
+      "depth": 4.5
+    }
+  },
+  "pdfno_list": [
+    "42-1348"
+  ],
+  "source": {
+    "synthesis_id_original": "2020.json_BSA-MnO2_3370",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: BSA-MnO2 | solvent: PBS | solvent.volume: 10.0 | size.length: 4.5 | size.width: 4.5 | size.depth: 4.5 | precursor: Mn(CH3COO)2 (conc 100.0) | additive: bovine serum albumin (mass 0.025) | additive: sodium hydroxide (conc 1000.0) | pdfno_list: 42-1348"
+}

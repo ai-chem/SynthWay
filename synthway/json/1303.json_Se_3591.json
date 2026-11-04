@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "1303.json_Se_3591",
+  "composition": "Se",
+  "elements": [
+    "Se"
+  ],
+  "method": "chemical reduction",
+  "precursors": [
+    {
+      "name": "Na2SeO3",
+      "conc": 510.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "chitosan",
+      "mass": 0.1
+    },
+    {
+      "name": "acetic acid"
+    },
+    {
+      "name": "ascorbic acid",
+      "conc": 230.0
+    },
+    {
+      "name": "distilled water"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 181.0,
+      "width": 181.0,
+      "depth": 181.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1303.json_Se_3591",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Se | method: chemical reduction | solvent: water | shape: spherical | size.length: 181.0 | size.width: 181.0 | size.depth: 181.0 | precursor: Na2SeO3 (conc 510.0) | additive: chitosan (mass 0.1) | additive: acetic acid | additive: ascorbic acid (conc 230.0) | additive: distilled water"
+}

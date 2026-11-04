@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1163.json_ZnO_3321",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "general combustion",
+  "precursors": [
+    {
+      "name": "Zn(NO3)2·6H2O",
+      "conc": 500.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "honey"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 100.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 23.0,
+      "width": 23.0,
+      "depth": 23.0
+    }
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "1163.json_ZnO_3321",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: ZnO | method: general combustion | solvent: distilled water | solvent.volume: 50.0 | temperature: 100.0 | crystalsystem: hexagonal | shape: spherical | size.length: 23.0 | size.width: 23.0 | size.depth: 23.0 | precursor: Zn(NO3)2·6H2O (conc 500.0) | additive: honey | pdfno_list: 36-1451"
+}

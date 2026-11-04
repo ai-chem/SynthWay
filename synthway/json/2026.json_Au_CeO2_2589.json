@@ -1,0 +1,54 @@
+{
+  "synthesis_id": "2026.json_Au/CeO2_2589",
+  "composition": "Au/CeO2",
+  "elements": [
+    "Au",
+    "Ce",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Ce(NO3)3*6H2O",
+      "conc": 0.6
+    }
+  ],
+  "additives": [
+    {
+      "name": "cetyltrimethylammonium bromide",
+      "conc": 25.0
+    },
+    {
+      "name": "edta-ammonia",
+      "conc": 1000.0
+    }
+  ],
+  "seeds": [
+    {
+      "name": "Au",
+      "conc": 0.6
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 90.0
+  },
+  "product": {
+    "size": {
+      "length": 75.0,
+      "width": 75.0,
+      "depth": 75.0
+    }
+  },
+  "pdfno_list": [
+    "04-784, 04-0593"
+  ],
+  "source": {
+    "synthesis_id_original": "2026.json_Au/CeO2_2589",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: Au/CeO2 | solvent: water | solvent.volume: 10.0 | temperature: 90.0 | size.length: 75.0 | size.width: 75.0 | size.depth: 75.0 | precursor: Ce(NO3)3*6H2O (conc 0.6) | additive: cetyltrimethylammonium bromide (conc 25.0) | additive: edta-ammonia (conc 1000.0) | seed: Au (conc 0.6) | pdfno_list: 04-784, 04-0593"
+}

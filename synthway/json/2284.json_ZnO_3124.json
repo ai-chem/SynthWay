@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "2284.json_ZnO_3124",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Zn(CH3CO2)2*2H2O",
+      "conc": 200.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "extracellular fungal fraction"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 70.0
+  },
+  "conditions": {
+    "temperature": 70.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "cauliflower",
+    "size": {
+      "length": 58.0,
+      "width": 58.0,
+      "depth": 58.0
+    }
+  },
+  "pdfno_list": [
+    "01-084-6785"
+  ],
+  "source": {
+    "synthesis_id_original": "2284.json_ZnO_3124",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: ZnO | solvent: deionized water | solvent.volume: 70.0 | temperature: 70.0 | crystalsystem: hexagonal | shape: cauliflower | size.length: 58.0 | size.width: 58.0 | size.depth: 58.0 | precursor: Zn(CH3CO2)2*2H2O (conc 200.0) | additive: extracellular fungal fraction | pdfno_list: 01-084-6785"
+}

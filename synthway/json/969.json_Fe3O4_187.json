@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "969.json_Fe3O4_187",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "thermal decomposition",
+  "precursors": [
+    {
+      "name": "Fe(acac)3",
+      "mass": 0.706
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleic acid"
+    },
+    {
+      "name": "oleylamine"
+    }
+  ],
+  "solvent": {
+    "name": "oleic acid+oleylamine",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 300.0
+  },
+  "product": {
+    "size": {
+      "width": 5.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "969.json_Fe3O4_187",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Fe3O4 | method: thermal decomposition | solvent: oleic acid+oleylamine | solvent.volume: 20.0 | temperature: 300.0 | size.width: 5.0 | precursor: Fe(acac)3 (mass 0.706) | additive: oleic acid | additive: oleylamine"
+}

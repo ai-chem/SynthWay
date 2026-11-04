@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "791.json_Cr2O3_37",
+  "composition": "Cr2O3",
+  "elements": [
+    "Cr",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "CrCl3",
+      "mass": 0.3
+    },
+    {
+      "name": "NaOH",
+      "mass": 0.16
+    }
+  ],
+  "additives": [
+    {
+      "name": "tween-80"
+    }
+  ],
+  "solvent": {
+    "name": "water+soybean oil",
+    "volume": 2.5
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "width": 50.78
+    }
+  },
+  "source": {
+    "synthesis_id_original": "791.json_Cr2O3_37",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Cr2O3 | solvent: water+soybean oil | solvent.volume: 2.5 | shape: spherical | size.width: 50.78 | precursor: CrCl3 (mass 0.3) | precursor: NaOH (mass 0.16) | additive: tween-80"
+}

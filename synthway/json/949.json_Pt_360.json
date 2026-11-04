@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "949.json_Pt_360",
+  "composition": "Pt",
+  "elements": [
+    "Pt"
+  ],
+  "method": "polyol",
+  "precursors": [
+    {
+      "name": "H2PtCl6",
+      "conc": 80.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone",
+      "conc": 30.0
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol"
+  },
+  "conditions": {
+    "temperature": 160.0
+  },
+  "product": {
+    "shape": "irregular",
+    "size": {
+      "width": 4.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "949.json_Pt_360",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Pt | method: polyol | solvent: ethylene glycol | temperature: 160.0 | shape: irregular | size.width: 4.0 | precursor: H2PtCl6 (conc 80.0) | additive: polyvinylpyrrolidone (conc 30.0)"
+}

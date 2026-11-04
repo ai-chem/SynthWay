@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1770.json_Fe2O3_905",
+  "composition": "Fe2O3",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "electrospinning",
+  "precursors": [
+    {
+      "name": "Fe(acac)3",
+      "mass": 0.8
+    },
+    {
+      "name": "Mn(NO3)2⋅4H2O",
+      "mass": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 0.4
+    }
+  ],
+  "solvent": {
+    "name": "acetic acid",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 180.0,
+    "ph": 2.8
+  },
+  "product": {
+    "shape": "cube"
+  },
+  "pdfno_list": [
+    "33-0664"
+  ],
+  "source": {
+    "synthesis_id_original": "1770.json_Fe2O3_905",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Fe2O3 | method: electrospinning | solvent: acetic acid | solvent.volume: 20.0 | temperature: 180.0 | pH: 2.8 | shape: cube | precursor: Fe(acac)3 (mass 0.8) | precursor: Mn(NO3)2⋅4H2O (mass 1.0) | additive: polyvinylpyrrolidone (mass 0.4) | pdfno_list: 33-0664"
+}

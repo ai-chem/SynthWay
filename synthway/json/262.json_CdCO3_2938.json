@@ -1,0 +1,22 @@
+{
+  "synthesis_id": "262.json_CdCO3_2938",
+  "composition": "CdCO3",
+  "elements": [
+    "Cd",
+    "C",
+    "O"
+  ],
+  "method": "sonochemical",
+  "solvent": {
+    "name": "ethanol"
+  },
+  "conditions": {
+    "temperature": 400.0
+  },
+  "source": {
+    "synthesis_id_original": "262.json_CdCO3_2938",
+    "nodes": 4,
+    "edges": 3
+  },
+  "retrieval_text": "composition: CdCO3 | method: sonochemical | solvent: ethanol | temperature: 400.0"
+}

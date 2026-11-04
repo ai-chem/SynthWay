@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "117.json_NiO_3389",
+  "composition": "NiO",
+  "elements": [
+    "Ni",
+    "O"
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 400.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 3.0,
+      "width": 3.0,
+      "depth": 3.0
+    }
+  },
+  "pdfno_list": [
+    "04-0835"
+  ],
+  "source": {
+    "synthesis_id_original": "117.json_NiO_3389",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: NiO | solvent: distilled water | solvent.volume: 100.0 | temperature: 400.0 | crystalsystem: face-centered cubic | shape: spherical | size.length: 3.0 | size.width: 3.0 | size.depth: 3.0 | pdfno_list: 04-0835"
+}

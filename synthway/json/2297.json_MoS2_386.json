@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "2297.json_MoS2_386",
+  "composition": "MoS2",
+  "elements": [
+    "Mo",
+    "S"
+  ],
+  "method": "solvo/hydrothermal",
+  "precursors": [
+    {
+      "name": "Na2MoO4·2H2O",
+      "mass": 0.6
+    },
+    {
+      "name": "CH4N2S",
+      "mass": 0.75
+    }
+  ],
+  "additives": [
+    {
+      "name": "hydroxylamine hydrochloride",
+      "mass": 0.725
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "flower-like",
+    "size": {
+      "length": 1500.0,
+      "width": 1500.0,
+      "depth": 1500.0
+    }
+  },
+  "pdfno_list": [
+    "37-1492"
+  ],
+  "source": {
+    "synthesis_id_original": "2297.json_MoS2_386",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: MoS2 | method: solvo/hydrothermal | solvent: distilled water | solvent.volume: 30.0 | temperature: 200.0 | crystalsystem: hexagonal | shape: flower-like | size.length: 1500.0 | size.width: 1500.0 | size.depth: 1500.0 | precursor: Na2MoO4·2H2O (mass 0.6) | precursor: CH4N2S (mass 0.75) | additive: hydroxylamine hydrochloride (mass 0.725) | pdfno_list: 37-1492"
+}

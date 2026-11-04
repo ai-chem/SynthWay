@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "2320.json_Ni_1642",
+  "composition": "Ni",
+  "elements": [
+    "Ni"
+  ],
+  "method": "surfactant-mediated",
+  "precursors": [
+    {
+      "name": "nickel nitrate (Ni(NO3)2·6H2O)",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "pluronic f-108",
+      "mass": 1.0
+    },
+    {
+      "name": "water"
+    }
+  ],
+  "solvent": {
+    "name": "anhydrous ethanol",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 350.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic"
+  },
+  "pdfno_list": [
+    "87-0712"
+  ],
+  "source": {
+    "synthesis_id_original": "2320.json_Ni_1642",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Ni | method: surfactant-mediated | solvent: anhydrous ethanol | solvent.volume: 10.0 | temperature: 350.0 | crystalsystem: face-centered cubic | precursor: nickel nitrate (Ni(NO3)2·6H2O) (conc 10.0) | additive: pluronic f-108 (mass 1.0) | additive: water | pdfno_list: 87-0712"
+}

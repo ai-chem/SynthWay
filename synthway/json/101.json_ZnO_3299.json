@@ -1,0 +1,34 @@
+{
+  "synthesis_id": "101.json_ZnO_3299",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "supersonic",
+  "solvent": {
+    "name": "anhydrous ethanol",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "quasi-spherical microspheres",
+    "size": {
+      "length": 1750.0,
+      "width": 1750.0,
+      "depth": 1750.0
+    }
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "101.json_ZnO_3299",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: ZnO | method: supersonic | solvent: anhydrous ethanol | solvent.volume: 50.0 | temperature: 180.0 | crystalsystem: hexagonal | shape: quasi-spherical microspheres | size.length: 1750.0 | size.width: 1750.0 | size.depth: 1750.0 | pdfno_list: 36-1451"
+}

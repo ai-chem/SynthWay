@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "2132.json_Ch-Pt_3406",
+  "composition": "Ch-Pt",
+  "elements": [
+    "Ch",
+    "Pt"
+  ],
+  "precursors": [
+    {
+      "name": "H2PtCl6",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "ch"
+    },
+    {
+      "name": "sodium borohydride",
+      "conc": 200.0
+    }
+  ],
+  "solvent": {
+    "name": "acetic acid",
+    "volume": 47.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "size": {
+      "length": 2.1,
+      "width": 2.1,
+      "depth": 2.1
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2132.json_Ch-Pt_3406",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Ch-Pt | solvent: acetic acid | solvent.volume: 47.0 | crystalsystem: face-centered cubic | size.length: 2.1 | size.width: 2.1 | size.depth: 2.1 | precursor: H2PtCl6 (conc 10.0) | additive: ch | additive: sodium borohydride (conc 200.0)"
+}

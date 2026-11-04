@@ -1,0 +1,54 @@
+{
+  "synthesis_id": "2305.json_Fe3O4_3629",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "solvethermal synthetic",
+  "precursors": [
+    {
+      "name": "FeCl3*6H2O",
+      "conc": 3.0
+    },
+    {
+      "name": "NaAc·3H2O",
+      "conc": 15.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium dodecyl sulfate",
+      "conc": 4.0
+    },
+    {
+      "name": "polyethylene glycol",
+      "mass": 0.4,
+      "conc": 7.0
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 24.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 80.0,
+      "width": 80.0,
+      "depth": 80.0
+    }
+  },
+  "pdfno_list": [
+    "19-0629"
+  ],
+  "source": {
+    "synthesis_id_original": "2305.json_Fe3O4_3629",
+    "nodes": 19,
+    "edges": 18
+  },
+  "retrieval_text": "composition: Fe3O4 | method: solvethermal synthetic | solvent: ethylene glycol | solvent.volume: 24.0 | temperature: 180.0 | crystalsystem: cubic | size.length: 80.0 | size.width: 80.0 | size.depth: 80.0 | precursor: FeCl3*6H2O (conc 3.0) | precursor: NaAc·3H2O (conc 15.0) | additive: sodium dodecyl sulfate (conc 4.0) | additive: polyethylene glycol (mass 0.4; conc 7.0) | pdfno_list: 19-0629"
+}

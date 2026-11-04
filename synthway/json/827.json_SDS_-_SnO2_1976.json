@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "827.json_SDS_-_SnO2_1976",
+  "composition": "SDS - SnO2",
+  "elements": [
+    "S",
+    "D",
+    "Sn",
+    "O"
+  ],
+  "method": "precipitation",
+  "precursors": [
+    {
+      "name": "SnCl2*2H2O",
+      "mass": 0.5,
+      "conc": 50.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "ammonium hydroxide",
+      "conc": 2000.0
+    },
+    {
+      "name": "sodium dodecyl sulfate",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "1-buthanol",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 600.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal rutile",
+    "size": {
+      "length": 20.0,
+      "width": 20.0,
+      "depth": 20.0
+    }
+  },
+  "pdfno_list": [
+    "02-134"
+  ],
+  "source": {
+    "synthesis_id_original": "827.json_SDS_-_SnO2_1976",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: SDS - SnO2 | method: precipitation | solvent: 1-buthanol | solvent.volume: 30.0 | temperature: 600.0 | crystalsystem: tetragonal rutile | size.length: 20.0 | size.width: 20.0 | size.depth: 20.0 | precursor: SnCl2*2H2O (mass 0.5; conc 50.0) | additive: ammonium hydroxide (conc 2000.0) | additive: sodium dodecyl sulfate (conc 1000.0) | pdfno_list: 02-134"
+}

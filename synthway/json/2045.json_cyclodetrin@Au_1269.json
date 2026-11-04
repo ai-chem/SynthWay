@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "2045.json_cyclodetrin@Au_1269",
+  "composition": "cyclodetrin@Au",
+  "elements": [
+    "Au"
+  ],
+  "precursors": [
+    {
+      "name": "HAuCl4",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "phosphate buffer",
+      "conc": 100.0
+    },
+    {
+      "name": "β-cyclodetrin",
+      "conc": 10.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 100.0,
+    "ph": 7.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 20.0,
+      "width": 20.0,
+      "depth": 20.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2045.json_cyclodetrin@Au_1269",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: cyclodetrin@Au | solvent: water | temperature: 100.0 | pH: 7.0 | shape: spherical | size.length: 20.0 | size.width: 20.0 | size.depth: 20.0 | precursor: HAuCl4 (conc 10.0) | additive: phosphate buffer (conc 100.0) | additive: β-cyclodetrin (conc 10.0)"
+}

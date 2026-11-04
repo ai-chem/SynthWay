@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1274.json_AgNP@LZ_1604",
+  "composition": "AgNP@LZ",
+  "elements": [
+    "Ag",
+    "N",
+    "P",
+    "L",
+    "Z"
+  ],
+  "method": "photoreduction",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 0.2
+    }
+  ],
+  "additives": [
+    {
+      "name": "igarcure 2959",
+      "conc": 0.2
+    },
+    {
+      "name": "lysozyme",
+      "conc": 0.01
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "ellipsoid",
+    "size": {
+      "length": 13.5,
+      "width": 13.5,
+      "depth": 13.5
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1274.json_AgNP@LZ_1604",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: AgNP@LZ | method: photoreduction | solvent: water | shape: ellipsoid | size.length: 13.5 | size.width: 13.5 | size.depth: 13.5 | precursor: AgNO3 (conc 0.2) | additive: igarcure 2959 (conc 0.2) | additive: lysozyme (conc 0.01)"
+}

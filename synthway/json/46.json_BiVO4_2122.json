@@ -1,0 +1,32 @@
+{
+  "synthesis_id": "46.json_BiVO4_2122",
+  "composition": "BiVO4",
+  "elements": [
+    "Bi",
+    "V",
+    "O"
+  ],
+  "solvent": {
+    "name": "nitric acid",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 700.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "spindle",
+    "size": {
+      "length": 1000.0
+    }
+  },
+  "pdfno_list": [
+    "14-0688"
+  ],
+  "source": {
+    "synthesis_id_original": "46.json_BiVO4_2122",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: BiVO4 | solvent: nitric acid | solvent.volume: 10.0 | temperature: 700.0 | crystalsystem: monoclinic | shape: spindle | size.length: 1000.0 | pdfno_list: 14-0688"
+}

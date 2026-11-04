@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1312.json_FeO_2945",
+  "composition": "FeO",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "FeCl3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "avicennia marina plant extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 125.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "cube",
+    "size": {
+      "length": 9.059,
+      "width": 9.059,
+      "depth": 9.059
+    }
+  },
+  "pdfno_list": [
+    "19-0629"
+  ],
+  "source": {
+    "synthesis_id_original": "1312.json_FeO_2945",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: FeO | method: green synthesis | solvent: water | temperature: 125.0 | crystalsystem: cubic | shape: cube | size.length: 9.059 | size.width: 9.059 | size.depth: 9.059 | precursor: FeCl3 (conc 1.0) | additive: avicennia marina plant extract | pdfno_list: 19-0629"
+}

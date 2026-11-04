@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "1809.json_Au_1600",
+  "composition": "Au",
+  "elements": [
+    "Au"
+  ],
+  "method": "citrate reduction",
+  "precursors": [
+    {
+      "name": "HAuCl4",
+      "conc": 5.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "trisodium citrate",
+      "conc": 10.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 500.0
+  },
+  "product": {
+    "shape": "flower-like",
+    "size": {
+      "length": 13.0,
+      "width": 13.0,
+      "depth": 13.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1809.json_Au_1600",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Au | method: citrate reduction | solvent: water | solvent.volume: 500.0 | shape: flower-like | size.length: 13.0 | size.width: 13.0 | size.depth: 13.0 | precursor: HAuCl4 (conc 5.0) | additive: trisodium citrate (conc 10.0)"
+}

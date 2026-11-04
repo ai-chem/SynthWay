@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "631.json_Ag_1125",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "mass": 0.017,
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "s. jambolanum leaf extract"
+    }
+  ],
+  "solvent": {
+    "name": "double distilled water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 75.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 22.35,
+      "width": 22.35,
+      "depth": 22.35
+    }
+  },
+  "source": {
+    "synthesis_id_original": "631.json_Ag_1125",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Ag | method: green synthesis | solvent: double distilled water | solvent.volume: 100.0 | temperature: 75.0 | shape: spherical | size.length: 22.35 | size.width: 22.35 | size.depth: 22.35 | precursor: AgNO3 (mass 0.017; conc 1.0) | additive: s. jambolanum leaf extract"
+}

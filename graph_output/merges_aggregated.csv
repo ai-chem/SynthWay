@@ -1,0 +1,206 @@
+representative,label_representative,merged_count
+precursor:Zn(CH3COO)2*2H2O,precursor,9
+precursor:Fe(NO3)3*9H2O,precursor,8
+precursor:Zn(NO3)2*6H2O,precursor,7
+precursor:Co(CH3COO)2·4H2O,precursor,6
+precursor:Co(NO3)2*6H2O,precursor,6
+precursor:FeCl2*4H2O,precursor,6
+precursor:FeSO4*7H2O,precursor,4
+precursor:CoCl2·6H2O,precursor,4
+precursor:Cu(NO3)2·3H2O,precursor,4
+precursor:CuSO4*5H2O,precursor,4
+precursor:H2PtCl6·6H2O,precursor,4
+precursor:HAuCl4*3H2O,precursor,4
+precursor:Ni(NO3)2*6H2O,precursor,4
+precursor:Mg(NO3)2*6H2O,precursor,3
+precursor:Cu(NO3)2·6H2O,precursor,3
+precursor:Ce(NO3)3*6H2O,precursor,3
+crystalsystem:cubic zinc blend,crystalsystem,3
+solvent:ethanol and deionized water,solvent,3
+precursor:copper (II) sulphate pentahydrate (CuSO4·5H2O),precursor,3
+shape:octahedron,shape,3
+precursor:La(NO3)3*6H2O,precursor,3
+shape:irregularly shaped,shape,3
+method:sol-gel auto-combustion,method,3
+precursor:Ni(CH3COO)2*4H2O,precursor,2
+precursor:zinc nitrate hexahydrate (Zn (NO3)2·6H2O),precursor,2
+crystalsystem:monoclinic and tetragonal,crystalsystem,2
+precursor_mass:0.0366,precursor_mass,2
+precursor:AgNO3,precursor,2
+crystalsystem:monoclinic and hexagonal,crystalsystem,2
+method:seed-mediated growth,method,2
+precursor:Cu(CH3COO)2·H2O,precursor,2
+precursor:Bi(NO3)3·5H2O,precursor,2
+precursor:Cr(NO3)3·9H2O,precursor,2
+precursor_mass:0.353,precursor_mass,2
+precursor:CuCl2*2H2O,precursor,2
+precursor:FeCl3*6H2O,precursor,2
+precursor:H24Mo7N6O24·4H2O,precursor,2
+precursor:SrCl2*6H2O,precursor,2
+precursor:Mn(OAc)2·4H2O,precursor,2
+precursor:MnSO4·H2O,precursor,2
+precursor:Na2MoO4·2H2O,precursor,2
+crystalsystem:body centered cubic),crystalsystem,2
+precursor:Na2WO4·2H2O,precursor,2
+shape:films with spherical nps,shape,2
+solvent:distilled water + ethanol,solvent,2
+composition:Ag-SiO2,composition,2
+composition:Ag/TiO2,composition,2
+shape:round shape,shape,2
+shape:nano rods,shape,2
+precursor:Pr(NO3)3*6H2O,precursor,1
+shape:quantum dots,shape,1
+precursor:Zn(NO3)3*9H2O,precursor,1
+shape:nanocrystals,shape,1
+shape:nanodots,shape,1
+shape:nanopowders,shape,1
+shape:nanorods and nanospheres,shape,1
+solvent:glycerin and isopropanol,solvent,1
+solvent:ethylene glycol and water,solvent,1
+precursor:Zn(CH3COO)2,precursor,1
+shape:nanotubes,shape,1
+shape:needle-like,shape,1
+shape:oval-shaped,shape,1
+precursor:Zinc acetate dihydrate (Zn (CH3COO)2·2H2O),precursor,1
+shape:polyhedrons,shape,1
+precursor:Ti(OCH(CH3)2)4,precursor,1
+precursor:Ni(OAc)2·4H2O,precursor,1
+solvent:ethylene glycol,solvent,1
+shape:smooth surface,shape,1
+shape:sphere-shaped,shape,1
+shape:nanoclusters,shape,1
+precursor:Tetrachloroauric (III) acid trihydrate (HAuCl4·3H2O),precursor,1
+shape:spherical/rod-like,shape,1
+size_length:94.0,size_length,1
+precursor:SnCl4·5H2O,precursor,1
+solvent:absolute ethanol,solvent,1
+precursor:SnCl2·2H2O,precursor,1
+precursor:Si(OC2H5)4,precursor,1
+solvent:argon‑oxygen gas mixture,solvent,1
+precursor:RuCl3·xH2O,precursor,1
+solvent:deionized or double-distilled water,solvent,1
+precursor:RuCl3·3H2O,precursor,1
+precursor_mass:0.54,precursor_mass,1
+precursor:Zn(OAc)2·2H2O,precursor,1
+shape:nanobelts,shape,1
+precursor_mass:0.878,precursor_mass,1
+precursor_mass:0.06063,precursor_mass,1
+precursor_mass:0.06895,precursor_mass,1
+precursor_mass:0.085,precursor_mass,1
+precursor_mass:0.0851,precursor_mass,1
+precursor_mass:0.1112,precursor_mass,1
+shape:cuboid-shaped,shape,1
+precursor_mass:0.144,precursor_mass,1
+precursor_mass:0.048,precursor_mass,1
+precursor_mass:0.1459,precursor_mass,1
+precursor_mass:0.86,precursor_mass,1
+precursor_mass:0.266,precursor_mass,1
+precursor_mass:0.71,precursor_mass,1
+precursor_mass:0.69,precursor_mass,1
+precursor_mass:0.364,precursor_mass,1
+shape:ellipsoidal,shape,1
+precursor_mass:0.0394,precursor_mass,1
+precursor_mass:0.424,precursor_mass,1
+precursor:nitrate hexahydrate (Ni (NO3)2·6H2O),precursor,1
+precursor:ZnSO4·7H2O,precursor,1
+shape:microrods,shape,1
+precursor:ZrO(NO3)2·6H2O,precursor,1
+precursor:[Fe3(μ3-O)(μ2-O2CCH2Cl)6(H2O)3]NO3·H2O,precursor,1
+precursor:ferric nitrate [Fe(NO3)3·9H2O],precursor,1
+precursor:l-Cysteine,precursor,1
+shape:irregular polygonal,shape,1
+shape:flower-like microspheres,shape,1
+shape:honeycomb structure,shape,1
+precursor_conc:0.0084,precursor_conc,1
+precursor_mass:0.003,precursor_mass,1
+precursor_mass:0.019,precursor_mass,1
+precursor_mass:0.036,precursor_mass,1
+shape:hexagonal plates,shape,1
+precursor_mass:0.0481,precursor_mass,1
+additive:a. indica leaf extracts,additive,1
+precursor:Na3IrCl6·xH2O,precursor,1
+composition:CS/PVP-Fe3O4,composition,1
+additive_mass:0.055,additive_mass,1
+additive_mass:0.074,additive_mass,1
+additive_mass:0.083,additive_mass,1
+additive_mass:0.222,additive_mass,1
+composition:1%Cu-doped NiO,composition,1
+composition:Ag/ZnO,composition,1
+composition:BAg,composition,1
+composition:Bi2S3,composition,1
+composition:Cu@PDA,composition,1
+additive:trioctylphosphine oxide,additive,1
+composition:CuO- coated starched cotton,composition,1
+composition:CuO-CS,composition,1
+composition:Fe-doped SnO2,composition,1
+composition:H2TCPP–CeO2,composition,1
+composition:HA-Alg/CS-ZnO,composition,1
+composition:HAp – Ag,composition,1
+composition:UiO-66,composition,1
+composition:ZnO(A),composition,1
+additive_mass:0.008,additive_mass,1
+additive:tannic acid,additive,1
+precursor:Na2S2O3*5H2O,precursor,1
+additive:justicia adhatoda leaves extract,additive,1
+"additive:benzene-1,3,5-tricarboxylate",additive,1
+additive:c. pulcherrima flower extract,additive,1
+additive:cassia alata fresh leaves extract,additive,1
+additive:cetyltrimethylammonium bromide,additive,1
+additive:cinnamomum verum bark extract,additive,1
+additive:ethyldimethylaminopropyl carbodiimide hydrochloride,additive,1
+additive:green tea leaves extract,additive,1
+additive:hibiscus sabdariffa plant extract,additive,1
+additive:moringa oleifera leaf extract,additive,1
+additive:sodium nitrate,additive,1
+additive:orange juice extract,additive,1
+additive:piper betle leaf extract,additive,1
+additive:polyvinylpyrrolidone (mw 360000),additive,1
+additive:polyvinylpyrrolidone 27000-30000,additive,1
+additive:polyvinylpyrrolidone 40000,additive,1
+additive:punica granatum peel extract,additive,1
+additive:s. wightiana extract,additive,1
+additive:sodium dodecyl sulfate,additive,1
+composition:ZnO-B,composition,1
+composition:dextran-coated Fe3O4 M,composition,1
+composition:γ-Fe2O3,composition,1
+precursor:Fe(NO3)2*6H2O,precursor,1
+precursor:Cd(NO3)2·4H2O,precursor,1
+precursor:CeCl3·7H2O,precursor,1
+precursor:Co(C11H23COO)2,precursor,1
+precursor:Copper acetate monohydrate (Cu (CH3COO)2·H2O),precursor,1
+precursor:CrCl3·6H2O,precursor,1
+precursor:Cu(CH3COO)2,precursor,1
+precursor:Cu(NO3)2*2.5H2O,precursor,1
+precursor:CuSO4,precursor,1
+precursor:GA,precursor,1
+crystalsystem:cubic spinel,crystalsystem,1
+additive:ammonia solution,additive,1
+precursor:HAuCl4,precursor,1
+precursor:HAuCl4·4H2O,precursor,1
+precursor:InCl3·4H2O,precursor,1
+precursor:LiOH·H2O,precursor,1
+precursor:Mn(NO3)2⋅4H2O,precursor,1
+precursor:MnCl2·4H2O,precursor,1
+precursor:N2H4*H2O,precursor,1
+precursor:Cd(CH3COO)2*2H2O,precursor,1
+precursor:Ca(NO3)2*4H2O,precursor,1
+precursor:BaCl2 · 2H2O,precursor,1
+precursor:Ba(OH)2*8H2O,precursor,1
+crystalsystem:fluorite cubic,crystalsystem,1
+crystalsystem:hexagonal wurtzite,crystalsystem,1
+method:calcination,method,1
+method:electrical explosion,method,1
+method:gel combustion,method,1
+method:high temperature solid state,method,1
+method:in situ,method,1
+method:modified sol–gel method,method,1
+method:one-pot hydrothermal,method,1
+method:reverse micelle/microemulsion,method,1
+method:solvo-hydrothermal,method,1
+method:thermal decomposition,method,1
+method:turkevichs,method,1
+pdfno:05-0661,pdfno,1
+precursor:(NH2)2S,precursor,1
+precursor:(NH4)2Fe(SO4)2·6H2O,precursor,1
+precursor:Al,precursor,1
+"solvent:n,n - dimethyl formamide",solvent,1

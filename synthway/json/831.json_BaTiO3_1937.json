@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "831.json_BaTiO3_1937",
+  "composition": "BaTiO3",
+  "elements": [
+    "Ba",
+    "Ti",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Ti(C4H9O)4",
+      "mass": 17.018,
+      "conc": 500.0
+    },
+    {
+      "name": "Ba(CH3COO)2",
+      "conc": 2500.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "ammonia",
+      "conc": 150.0
+    },
+    {
+      "name": "potassium hydroxide",
+      "mass": 28.05,
+      "conc": 2500.0
+    }
+  ],
+  "solvent": {
+    "name": "ethylenediamine/ethanolamine = 1:1"
+  },
+  "product": {
+    "crystalsystem": "cubic perovskite",
+    "shape": "irregularly spherical",
+    "size": {
+      "length": 11.0,
+      "width": 11.0,
+      "depth": 11.0
+    }
+  },
+  "pdfno_list": [
+    "31-174"
+  ],
+  "source": {
+    "synthesis_id_original": "831.json_BaTiO3_1937",
+    "nodes": 18,
+    "edges": 17
+  },
+  "retrieval_text": "composition: BaTiO3 | solvent: ethylenediamine/ethanolamine = 1:1 | crystalsystem: cubic perovskite | shape: irregularly spherical | size.length: 11.0 | size.width: 11.0 | size.depth: 11.0 | precursor: Ti(C4H9O)4 (mass 17.018; conc 500.0) | precursor: Ba(CH3COO)2 (conc 2500.0) | additive: ammonia (conc 150.0) | additive: potassium hydroxide (mass 28.05; conc 2500.0) | pdfno_list: 31-174"
+}

@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "1011.json_Mn3O4_3922",
+  "composition": "Mn3O4",
+  "elements": [
+    "Mn",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Mn(OAc)2·4H2O",
+      "mass": 0.03063
+    },
+    {
+      "name": "H2O",
+      "mass": 2.5
+    }
+  ],
+  "solvent": {
+    "name": "dimethylformamide",
+    "volume": 22.5
+  },
+  "product": {
+    "shape": "wire",
+    "size": {
+      "length": 6.6,
+      "width": 17.4
+    }
+  },
+  "pdfno_list": [
+    "24-0734"
+  ],
+  "source": {
+    "synthesis_id_original": "1011.json_Mn3O4_3922",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Mn3O4 | solvent: dimethylformamide | solvent.volume: 22.5 | shape: wire | size.length: 6.6 | size.width: 17.4 | precursor: Mn(OAc)2·4H2O (mass 0.03063) | precursor: H2O (mass 2.5) | pdfno_list: 24-0734"
+}

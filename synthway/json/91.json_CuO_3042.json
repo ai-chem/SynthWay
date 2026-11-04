@@ -1,0 +1,36 @@
+{
+  "synthesis_id": "91.json_CuO_3042",
+  "composition": "CuO",
+  "elements": [
+    "Cu",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "CuSO4*5H2O",
+      "mass": 18.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "leaves extract of citrus aurantifolia"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 150.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "spherical"
+  },
+  "pdfno_list": [
+    "80-1268"
+  ],
+  "source": {
+    "synthesis_id_original": "91.json_CuO_3042",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: CuO | solvent: deionized water | solvent.volume: 150.0 | crystalsystem: monoclinic | shape: spherical | precursor: CuSO4*5H2O (mass 18.0) | additive: leaves extract of citrus aurantifolia | pdfno_list: 80-1268"
+}

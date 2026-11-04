@@ -1,0 +1,51 @@
+{
+  "synthesis_id": "1058.json_Fe2O3/rGO_1689",
+  "composition": "Fe2O3/rGO",
+  "elements": [
+    "Fe",
+    "O",
+    "G"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "FeCl2",
+      "mass": 1.0
+    },
+    {
+      "name": "NH3",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "graphene oxide",
+      "mass": 1.0
+    },
+    {
+      "name": "urea",
+      "mass": 0.24
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 150.0
+  },
+  "product": {
+    "size": {
+      "width": 22.5
+    }
+  },
+  "pdfno_list": [
+    "33-0664"
+  ],
+  "source": {
+    "synthesis_id_original": "1058.json_Fe2O3/rGO_1689",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Fe2O3/rGO | method: hydrothermal | solvent: distilled water | solvent.volume: 30.0 | temperature: 150.0 | size.width: 22.5 | precursor: FeCl2 (mass 1.0) | precursor: NH3 (conc 100.0) | additive: graphene oxide (mass 1.0) | additive: urea (mass 0.24) | pdfno_list: 33-0664"
+}

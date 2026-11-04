@@ -1,0 +1,29 @@
+{
+  "synthesis_id": "262.json_Cd(OH)2_Cd3(OH)5(NO3)_2937",
+  "composition": "Cd(OH)2, Cd3(OH)5(NO3)",
+  "elements": [
+    "Cd",
+    "O",
+    "H",
+    "N"
+  ],
+  "method": "hydrothermal",
+  "solvent": {
+    "name": "etoh+h2o"
+  },
+  "conditions": {
+    "temperature": 400.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal"
+  },
+  "pdfno_list": [
+    "31-0228"
+  ],
+  "source": {
+    "synthesis_id_original": "262.json_Cd(OH)2_Cd3(OH)5(NO3)_2937",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: Cd(OH)2, Cd3(OH)5(NO3) | method: hydrothermal | solvent: etoh+h2o | temperature: 400.0 | crystalsystem: hexagonal | pdfno_list: 31-0228"
+}

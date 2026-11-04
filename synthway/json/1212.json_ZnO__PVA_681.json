@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1212.json_ZnO_/PVA_681",
+  "composition": "ZnO /PVA",
+  "elements": [
+    "Zn",
+    "O",
+    "P",
+    "V",
+    "A"
+  ],
+  "method": "sol-gel",
+  "precursors": [
+    {
+      "name": "ZnO"
+    },
+    {
+      "name": "PVA"
+    }
+  ],
+  "additives": [
+    {
+      "name": "boric acid"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 4.0
+  },
+  "product": {
+    "shape": "plate",
+    "size": {
+      "length": 1800000.0,
+      "width": 1800000.0,
+      "depth": 1800000.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1212.json_ZnO_/PVA_681",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: ZnO /PVA | method: sol-gel | solvent: water | temperature: 4.0 | shape: plate | size.length: 1800000.0 | size.width: 1800000.0 | size.depth: 1800000.0 | precursor: ZnO | precursor: PVA | additive: boric acid"
+}

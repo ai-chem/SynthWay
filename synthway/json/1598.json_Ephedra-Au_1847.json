@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "1598.json_Ephedra-Au_1847",
+  "composition": "Ephedra-Au",
+  "elements": [
+    "Ep",
+    "Au"
+  ],
+  "method": "biosynthesis",
+  "precursors": [
+    {
+      "name": "HAuCl4*3H2O",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "ephedra-extract"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water + ethanol",
+    "volume": 4.0
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 8.5,
+      "width": 8.5,
+      "depth": 8.5
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1598.json_Ephedra-Au_1847",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Ephedra-Au | method: biosynthesis | solvent: distilled water + ethanol | solvent.volume: 4.0 | temperature: 25.0 | shape: spherical | size.length: 8.5 | size.width: 8.5 | size.depth: 8.5 | precursor: HAuCl4*3H2O (conc 1.0) | additive: ephedra-extract"
+}

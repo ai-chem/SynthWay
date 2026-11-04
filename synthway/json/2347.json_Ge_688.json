@@ -1,0 +1,27 @@
+{
+  "synthesis_id": "2347.json_Ge_688",
+  "composition": "Ge",
+  "elements": [
+    "Ge"
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 315.0
+  },
+  "product": {
+    "shape": "cube",
+    "size": {
+      "length": 73.0,
+      "width": 73.0,
+      "depth": 73.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2347.json_Ge_688",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: Ge | solvent: water | temperature: 315.0 | shape: cube | size.length: 73.0 | size.width: 73.0 | size.depth: 73.0"
+}

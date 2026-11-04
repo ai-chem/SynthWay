@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "758.json_V2O5_1344",
+  "composition": "V2O5",
+  "elements": [
+    "V",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "NH4VO3",
+      "mass": 3.4
+    }
+  ],
+  "additives": [
+    {
+      "name": "nitric acid"
+    },
+    {
+      "name": "triton x-100",
+      "conc": 0.05
+    }
+  ],
+  "solvent": {
+    "name": "distilled water + ethanol",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 600.0,
+    "ph": 2.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "sheet/rod-like",
+    "size": {
+      "width": 46.0
+    }
+  },
+  "pdfno_list": [
+    "89-2483"
+  ],
+  "source": {
+    "synthesis_id_original": "758.json_V2O5_1344",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: V2O5 | method: hydrothermal | solvent: distilled water + ethanol | solvent.volume: 100.0 | temperature: 600.0 | pH: 2.0 | crystalsystem: cubic | shape: sheet/rod-like | size.width: 46.0 | precursor: NH4VO3 (mass 3.4) | additive: nitric acid | additive: triton x-100 (conc 0.05) | pdfno_list: 89-2483"
+}

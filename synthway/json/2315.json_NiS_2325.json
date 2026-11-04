@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "2315.json_NiS_2325",
+  "composition": "NiS",
+  "elements": [
+    "Ni",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "Ni(CH3COO)2*4H2O",
+      "conc": 10.0
+    },
+    {
+      "name": "K+ salt",
+      "conc": 10.0
+    }
+  ],
+  "solvent": {
+    "name": "ethanol and water",
+    "volume": 200.0
+  },
+  "conditions": {
+    "temperature": 100.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "size": {
+      "length": 20.63,
+      "width": 20.63,
+      "depth": 20.63
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2315.json_NiS_2325",
+    "nodes": 11,
+    "edges": 11
+  },
+  "retrieval_text": "composition: NiS | solvent: ethanol and water | solvent.volume: 200.0 | temperature: 100.0 | crystalsystem: orthorhombic | size.length: 20.63 | size.width: 20.63 | size.depth: 20.63 | precursor: Ni(CH3COO)2*4H2O (conc 10.0) | precursor: K+ salt (conc 10.0)"
+}

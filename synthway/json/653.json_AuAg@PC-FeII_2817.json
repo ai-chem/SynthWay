@@ -1,0 +1,51 @@
+{
+  "synthesis_id": "653.json_AuAg@PC-FeII_2817",
+  "composition": "AuAg@PC-FeII",
+  "elements": [
+    "Au",
+    "Ag",
+    "P",
+    "C",
+    "Fe",
+    "I"
+  ],
+  "method": "coating",
+  "additives": [
+    {
+      "name": "pc",
+      "conc": 5.0
+    },
+    {
+      "name": "ferric chloride",
+      "conc": 25.0
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 5.0
+    }
+  ],
+  "seeds": [
+    {
+      "name": "Au"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "ph": 7.8
+  },
+  "product": {
+    "size": {
+      "length": 105.7,
+      "width": 105.7,
+      "depth": 105.7
+    }
+  },
+  "source": {
+    "synthesis_id_original": "653.json_AuAg@PC-FeII_2817",
+    "nodes": 13,
+    "edges": 13
+  },
+  "retrieval_text": "composition: AuAg@PC-FeII | method: coating | solvent: water | pH: 7.8 | size.length: 105.7 | size.width: 105.7 | size.depth: 105.7 | additive: pc (conc 5.0) | additive: ferric chloride (conc 25.0) | additive: sodium hydroxide (conc 5.0) | seed: Au"
+}

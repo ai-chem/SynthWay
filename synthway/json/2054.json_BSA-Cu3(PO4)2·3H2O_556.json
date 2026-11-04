@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "2054.json_BSA-Cu3(PO4)2·3H2O_556",
+  "composition": "BSA-Cu3(PO4)2·3H2O",
+  "elements": [
+    "B",
+    "S",
+    "A",
+    "Cu",
+    "P",
+    "O",
+    "H"
+  ],
+  "precursors": [
+    {
+      "name": "CuSO4",
+      "conc": 120.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "bovine serum albumin"
+    }
+  ],
+  "solvent": {
+    "name": "PBS",
+    "volume": 3.0
+  },
+  "conditions": {
+    "temperature": 25.0,
+    "ph": 7.4
+  },
+  "product": {
+    "shape": "flower-like",
+    "size": {
+      "length": 5000.0,
+      "width": 5000.0,
+      "depth": 5000.0
+    }
+  },
+  "pdfno_list": [
+    "00-022-0548"
+  ],
+  "source": {
+    "synthesis_id_original": "2054.json_BSA-Cu3(PO4)2·3H2O_556",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: BSA-Cu3(PO4)2·3H2O | solvent: PBS | solvent.volume: 3.0 | temperature: 25.0 | pH: 7.4 | shape: flower-like | size.length: 5000.0 | size.width: 5000.0 | size.depth: 5000.0 | precursor: CuSO4 (conc 120.0) | additive: bovine serum albumin | pdfno_list: 00-022-0548"
+}

@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "698.json_orthorhombic_sulfur_(-S)_670",
+  "composition": "orthorhombic sulfur  (-S)",
+  "elements": [
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "S",
+      "mass": 1.6
+    },
+    {
+      "name": "Na2S",
+      "conc": 1000.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "chitosan solution"
+    },
+    {
+      "name": "hydrochloric acid"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 100.0,
+    "ph": 7.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "wire",
+    "size": {
+      "length": 87.0,
+      "width": 22.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "698.json_orthorhombic_sulfur_(-S)_670",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: orthorhombic sulfur  (-S) | solvent: water | temperature: 100.0 | pH: 7.0 | crystalsystem: orthorhombic | shape: wire | size.length: 87.0 | size.width: 22.0 | precursor: S (mass 1.6) | precursor: Na2S (conc 1000.0) | additive: chitosan solution | additive: hydrochloric acid"
+}

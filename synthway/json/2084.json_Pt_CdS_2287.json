@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "2084.json_Pt/CdS_2287",
+  "composition": "Pt/CdS",
+  "elements": [
+    "Pt",
+    "Cd",
+    "S"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "K2PtCl4",
+      "mass": 3.8
+    }
+  ],
+  "seeds": [
+    {
+      "name": "CdS",
+      "mass": 0.047
+    }
+  ],
+  "solvent": {
+    "name": "ethanol",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 70.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "wire",
+    "size": {
+      "width": 45.0,
+      "depth": 45.0
+    }
+  },
+  "pdfno_list": [
+    "41-1049"
+  ],
+  "source": {
+    "synthesis_id_original": "2084.json_Pt/CdS_2287",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Pt/CdS | method: hydrothermal | solvent: ethanol | solvent.volume: 10.0 | temperature: 70.0 | crystalsystem: hexagonal | shape: wire | size.width: 45.0 | size.depth: 45.0 | precursor: K2PtCl4 (mass 3.8) | seed: CdS (mass 0.047) | pdfno_list: 41-1049"
+}

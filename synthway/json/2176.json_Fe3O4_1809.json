@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "2176.json_Fe3O4_1809",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "FeSO4*7H2O",
+      "mass": 0.278
+    }
+  ],
+  "additives": [
+    {
+      "name": "potassium hydroxide",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 5.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "size": {
+      "length": 160.0,
+      "width": 160.0,
+      "depth": 160.0
+    }
+  },
+  "pdfno_list": [
+    "01-086-1344"
+  ],
+  "source": {
+    "synthesis_id_original": "2176.json_Fe3O4_1809",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Fe3O4 | solvent: ethylene glycol | solvent.volume: 5.0 | temperature: 200.0 | size.length: 160.0 | size.width: 160.0 | size.depth: 160.0 | precursor: FeSO4*7H2O (mass 0.278) | additive: potassium hydroxide (conc 1000.0) | pdfno_list: 01-086-1344"
+}

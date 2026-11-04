@@ -1,0 +1,55 @@
+{
+  "synthesis_id": "1222.json_NS-IO_1674",
+  "composition": "NS-IO",
+  "elements": [
+    "N",
+    "S",
+    "I",
+    "O"
+  ],
+  "method": "coprecipitation",
+  "precursors": [
+    {
+      "name": "FeCl3*6H2O",
+      "conc": 2.0
+    },
+    {
+      "name": "FeCl2*4H2O",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "n. sativa seeds hexane extract"
+    },
+    {
+      "name": "ammonia solution"
+    },
+    {
+      "name": "citric acid"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 6.6,
+      "width": 6.6,
+      "depth": 6.6
+    }
+  },
+  "pdfno_list": [
+    "79-0419"
+  ],
+  "source": {
+    "synthesis_id_original": "1222.json_NS-IO_1674",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: NS-IO | method: coprecipitation | solvent: water | temperature: 25.0 | shape: spherical | size.length: 6.6 | size.width: 6.6 | size.depth: 6.6 | precursor: FeCl3*6H2O (conc 2.0) | precursor: FeCl2*4H2O (conc 1.0) | additive: n. sativa seeds hexane extract | additive: ammonia solution | additive: citric acid | pdfno_list: 79-0419"
+}

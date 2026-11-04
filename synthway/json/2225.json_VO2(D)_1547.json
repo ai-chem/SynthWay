@@ -1,0 +1,51 @@
+{
+  "synthesis_id": "2225.json_VO2(D)_1547",
+  "composition": "VO2(D)",
+  "elements": [
+    "V",
+    "O",
+    "D"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "V2O5",
+      "mass": 0.45,
+      "conc": 2.4
+    }
+  ],
+  "additives": [
+    {
+      "name": "sulfuric acid"
+    },
+    {
+      "name": "hydrazine hydrate"
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 240.0,
+    "ph": 6.62
+  },
+  "product": {
+    "shape": "round shape",
+    "size": {
+      "length": 40.0,
+      "width": 40.0,
+      "depth": 40.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2225.json_VO2(D)_1547",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: VO2(D) | method: hydrothermal | solvent: deionized water | solvent.volume: 10.0 | temperature: 240.0 | pH: 6.62 | shape: round shape | size.length: 40.0 | size.width: 40.0 | size.depth: 40.0 | precursor: V2O5 (mass 0.45; conc 2.4) | additive: sulfuric acid | additive: hydrazine hydrate | additive: sodium hydroxide (conc 1000.0)"
+}

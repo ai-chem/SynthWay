@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "894.json_MoC/C_151",
+  "composition": "MoC/C",
+  "elements": [
+    "Mo",
+    "C"
+  ],
+  "precursors": [
+    {
+      "name": "MoCl5",
+      "mass": 1.0,
+      "conc": 36.63
+    }
+  ],
+  "solvent": {
+    "name": "ethanol",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 850.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 500.0,
+      "width": 500.0,
+      "depth": 500.0
+    }
+  },
+  "pdfno_list": [
+    "65-280"
+  ],
+  "source": {
+    "synthesis_id_original": "894.json_MoC/C_151",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: MoC/C | solvent: ethanol | solvent.volume: 100.0 | temperature: 850.0 | crystalsystem: cubic | shape: spherical | size.length: 500.0 | size.width: 500.0 | size.depth: 500.0 | precursor: MoCl5 (mass 1.0; conc 36.63) | pdfno_list: 65-280"
+}

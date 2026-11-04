@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "1133.json_CuO_(EAB)_2773",
+  "composition": "CuO  (EAB)",
+  "elements": [
+    "Cu",
+    "O",
+    "E",
+    "A",
+    "B"
+  ],
+  "precursors": [
+    {
+      "name": "copper (II) sulphate pentahydrate (CuSO4·5H2O)",
+      "conc": 15.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "euphorbia abyssinica leaf extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 54.0,
+    "ph": 11.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 19.34,
+      "width": 19.34,
+      "depth": 19.34
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1133.json_CuO_(EAB)_2773",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: CuO  (EAB) | solvent: water | temperature: 54.0 | pH: 11.0 | shape: spherical | size.length: 19.34 | size.width: 19.34 | size.depth: 19.34 | precursor: copper (II) sulphate pentahydrate (CuSO4·5H2O) (conc 15.0) | additive: euphorbia abyssinica leaf extract"
+}

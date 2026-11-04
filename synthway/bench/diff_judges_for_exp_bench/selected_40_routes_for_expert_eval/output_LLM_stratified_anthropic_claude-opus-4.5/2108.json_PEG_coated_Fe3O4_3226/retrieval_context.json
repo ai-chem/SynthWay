@@ -1,0 +1,9 @@
+{
+  "composition": "PEG coated Fe3O4",
+  "method": null,
+  "rag_topk": 3,
+  "query": "composition: PEG coated Fe3O4 | peg | peg | peg | peg and | peg and | peg and | PEG-OH | PEG-OH | PEG-OH | GO-PEG | GO-PEG | GO-PEG | Coated | Coated | Coated | coating | coating | coating | Coated Ag | Coated Ag | Coated Ag | composition Coated | composition Coated | composition Coated | fe3o4 | fe3o4 | fe3o4 | FeO Fe3O4 | FeO Fe3O4 | FeO Fe3O4 | Fe3-xO4 | Fe3-xO4 | Fe3-xO4 | FeO/Fe3O4 | FeO/Fe3O4 | FeO/Fe3O4 | composition Ag-PEG | composition Ag-PEG | composition Ag-PEG | composition GO-PEG | composition GO-PEG | composition GO-PEG | composition PEG-CHO | composition PEG-CHO | composition PEG-CHO | composition PEG-Schiff-Van | composition PEG-Schiff-Van | composition PEG-Schiff-Van | PEG additive | PEG additive | PEG additive",
+  "retrieval_context": [
+    "composition: PEG coated Fe3O4 | method: thermal decomposition | solvent: trioctylamine | shape: spherical | size.length: 120.0 | size.width: 120.0 | size.depth: 120.0 | precursor: Fe(acac)3 | additive: oleic acid | additive: 11-aminoundecanoic acid tetramethylammonium salt (11-aats) | additive: polyethylene glycol"
+  ]
+}

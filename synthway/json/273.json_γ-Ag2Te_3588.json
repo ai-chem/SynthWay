@@ -1,0 +1,30 @@
+{
+  "synthesis_id": "273.json_γ-Ag2Te_3588",
+  "composition": "γ-Ag2Te",
+  "elements": [
+    "Ag",
+    "Te"
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 250.0
+  },
+  "conditions": {
+    "ph": 11.4
+  },
+  "product": {
+    "crystalsystem": "body-centered cubic",
+    "size": {
+      "length": 6.0
+    }
+  },
+  "pdfno_list": [
+    "15-0081"
+  ],
+  "source": {
+    "synthesis_id_original": "273.json_γ-Ag2Te_3588",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: γ-Ag2Te | solvent: water | solvent.volume: 250.0 | pH: 11.4 | crystalsystem: body-centered cubic | size.length: 6.0 | pdfno_list: 15-0081"
+}

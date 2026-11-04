@@ -1,0 +1,29 @@
+{
+  "synthesis_id": "2270.json_Bi2S3_2478",
+  "composition": "Bi2S3",
+  "elements": [
+    "Bi",
+    "S"
+  ],
+  "method": "mechanochemical",
+  "precursors": [
+    {
+      "name": "Bi (powder)"
+    },
+    {
+      "name": "S"
+    }
+  ],
+  "product": {
+    "crystalsystem": "orthorhombic"
+  },
+  "pdfno_list": [
+    "17-320"
+  ],
+  "source": {
+    "synthesis_id_original": "2270.json_Bi2S3_2478",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: Bi2S3 | method: mechanochemical | crystalsystem: orthorhombic | precursor: Bi (powder) | precursor: S | pdfno_list: 17-320"
+}

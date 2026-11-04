@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "2191.json_Fe3O4_3749",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "FeSO4·7H2O",
+      "conc": 2000.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium citrate dihydrate",
+      "conc": 1.0
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 4.0
+    },
+    {
+      "name": "sodium nitrate",
+      "conc": 200.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 19.0
+  },
+  "conditions": {
+    "temperature": 100.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 30.0,
+      "width": 30.0,
+      "depth": 30.0
+    }
+  },
+  "pdfno_list": [
+    "75-1610"
+  ],
+  "source": {
+    "synthesis_id_original": "2191.json_Fe3O4_3749",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: Fe3O4 | solvent: water | solvent.volume: 19.0 | temperature: 100.0 | crystalsystem: cubic | size.length: 30.0 | size.width: 30.0 | size.depth: 30.0 | precursor: FeSO4·7H2O (conc 2000.0) | additive: sodium citrate dihydrate (conc 1.0) | additive: sodium hydroxide (conc 4.0) | additive: sodium nitrate (conc 200.0) | pdfno_list: 75-1610"
+}

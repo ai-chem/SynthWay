@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "1095.json_Ag_2975",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "cassia auriculata (ca) bark extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "shape": "sponging",
+    "size": {
+      "length": 7.78,
+      "width": 7.78,
+      "depth": 7.78
+    }
+  },
+  "pdfno_list": [
+    "87-0720"
+  ],
+  "source": {
+    "synthesis_id_original": "1095.json_Ag_2975",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Ag | solvent: water | temperature: 25.0 | crystalsystem: face-centered cubic | shape: sponging | size.length: 7.78 | size.width: 7.78 | size.depth: 7.78 | precursor: AgNO3 (conc 1.0) | additive: cassia auriculata (ca) bark extract | pdfno_list: 87-0720"
+}

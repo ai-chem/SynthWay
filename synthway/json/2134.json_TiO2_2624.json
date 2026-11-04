@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "2134.json_TiO2_2624",
+  "composition": "TiO2",
+  "elements": [
+    "Ti",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "Ti(OBu)4",
+      "conc": 13.81
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 75.0
+  },
+  "conditions": {
+    "temperature": 159.85
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "shape": "spherical",
+    "size": {
+      "length": 4.0,
+      "width": 4.0,
+      "depth": 4.0
+    }
+  },
+  "pdfno_list": [
+    "21-1272"
+  ],
+  "source": {
+    "synthesis_id_original": "2134.json_TiO2_2624",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: TiO2 | method: hydrothermal | solvent: water | solvent.volume: 75.0 | temperature: 159.85 | crystalsystem: tetragonal | shape: spherical | size.length: 4.0 | size.width: 4.0 | size.depth: 4.0 | precursor: Ti(OBu)4 (conc 13.81) | pdfno_list: 21-1272"
+}

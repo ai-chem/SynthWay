@@ -1,0 +1,20 @@
+{
+  "synthesis_id": "407.json_LiNiPO4_1851",
+  "composition": "LiNiPO4",
+  "elements": [
+    "Li",
+    "Ni",
+    "P",
+    "O"
+  ],
+  "method": "solid-state reaction",
+  "conditions": {
+    "temperature": 800.0
+  },
+  "source": {
+    "synthesis_id_original": "407.json_LiNiPO4_1851",
+    "nodes": 3,
+    "edges": 2
+  },
+  "retrieval_text": "composition: LiNiPO4 | method: solid-state reaction | temperature: 800.0"
+}

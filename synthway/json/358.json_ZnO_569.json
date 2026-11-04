@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "358.json_ZnO_569",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Zn(NO3)2",
+      "mass": 5.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "cinnamomum tamala extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "size": {
+      "length": 19.0,
+      "width": 19.0,
+      "depth": 19.0
+    }
+  },
+  "pdfno_list": [
+    "89-0510"
+  ],
+  "source": {
+    "synthesis_id_original": "358.json_ZnO_569",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: ZnO | solvent: water | crystalsystem: hexagonal | size.length: 19.0 | size.width: 19.0 | size.depth: 19.0 | precursor: Zn(NO3)2 (mass 5.0) | additive: cinnamomum tamala extract | pdfno_list: 89-0510"
+}

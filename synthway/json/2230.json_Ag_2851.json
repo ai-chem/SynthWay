@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "2230.json_Ag_2851",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "Colletotrichum sp. ALF2-6"
+    },
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "crystalsystem": "cubic facets",
+    "shape": "spherical, near to spherical, triangular and hexagonal",
+    "size": {
+      "length": 60.0,
+      "width": 60.0,
+      "depth": 60.0
+    }
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "2230.json_Ag_2851",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Ag | solvent: water | temperature: 80.0 | crystalsystem: cubic facets | shape: spherical, near to spherical, triangular and hexagonal | size.length: 60.0 | size.width: 60.0 | size.depth: 60.0 | precursor: Colletotrichum sp. ALF2-6 | precursor: AgNO3 (conc 1.0) | pdfno_list: 36-1451"
+}

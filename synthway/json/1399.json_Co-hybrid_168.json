@@ -1,0 +1,55 @@
+{
+  "synthesis_id": "1399.json_Co-hybrid_168",
+  "composition": "Co-hybrid",
+  "elements": [
+    "Co"
+  ],
+  "method": "protein-directed",
+  "precursors": [
+    {
+      "name": "glucose oxidase (GOX)"
+    },
+    {
+      "name": "CoCl2·6 H2O",
+      "mass": 0.6
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium bicarbonate",
+      "conc": 100.0
+    },
+    {
+      "name": "sodium borohydride",
+      "mass": 0.3,
+      "conc": 1200.0
+    },
+    {
+      "name": "water",
+      "mass": 17.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "shape": "flower-like",
+    "size": {
+      "length": 72.9,
+      "width": 72.9,
+      "depth": 72.9
+    }
+  },
+  "pdfno_list": [
+    "07-0169"
+  ],
+  "source": {
+    "synthesis_id_original": "1399.json_Co-hybrid_168",
+    "nodes": 19,
+    "edges": 18
+  },
+  "retrieval_text": "composition: Co-hybrid | method: protein-directed | solvent: water | temperature: 25.0 | shape: flower-like | size.length: 72.9 | size.width: 72.9 | size.depth: 72.9 | precursor: glucose oxidase (GOX) | precursor: CoCl2·6 H2O (mass 0.6) | additive: sodium bicarbonate (conc 100.0) | additive: sodium borohydride (mass 0.3; conc 1200.0) | additive: water (mass 17.0) | pdfno_list: 07-0169"
+}

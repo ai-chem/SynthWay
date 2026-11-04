@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "1464.json_Fe3O4_1412",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "FeCl3*6H2O",
+      "conc": 100.0
+    },
+    {
+      "name": "FeCl2·4H2O",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "daphne mucronata leaf extracts"
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 70.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "shape": "spherical",
+    "size": {
+      "length": 20.0,
+      "width": 20.0,
+      "depth": 20.0
+    }
+  },
+  "pdfno_list": [
+    "01-076-1470"
+  ],
+  "source": {
+    "synthesis_id_original": "1464.json_Fe3O4_1412",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: Fe3O4 | method: green synthesis | solvent: water | temperature: 70.0 | crystalsystem: tetragonal | shape: spherical | size.length: 20.0 | size.width: 20.0 | size.depth: 20.0 | precursor: FeCl3*6H2O (conc 100.0) | precursor: FeCl2·4H2O (conc 10.0) | additive: daphne mucronata leaf extracts | additive: sodium hydroxide (conc 1000.0) | pdfno_list: 01-076-1470"
+}

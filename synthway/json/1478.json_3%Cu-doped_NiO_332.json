@@ -1,0 +1,51 @@
+{
+  "synthesis_id": "1478.json_3%Cu-doped_NiO_332",
+  "composition": "3%Cu-doped NiO",
+  "elements": [
+    "Cu",
+    "Ni",
+    "O"
+  ],
+  "method": "sol-gel green synthesis",
+  "precursors": [
+    {
+      "name": "Ni(NO3)2*6H2O",
+      "mass": 14.54,
+      "conc": 500.0
+    },
+    {
+      "name": "CuSO4",
+      "mass": 0.281
+    }
+  ],
+  "additives": [
+    {
+      "name": "okra plant extract"
+    }
+  ],
+  "solvent": {
+    "name": "double distilled water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 70.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 66.5,
+      "width": 66.5,
+      "depth": 66.5
+    }
+  },
+  "pdfno_list": [
+    "04-0835"
+  ],
+  "source": {
+    "synthesis_id_original": "1478.json_3%Cu-doped_NiO_332",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: 3%Cu-doped NiO | method: sol-gel green synthesis | solvent: double distilled water | solvent.volume: 100.0 | temperature: 70.0 | crystalsystem: cubic | shape: spherical | size.length: 66.5 | size.width: 66.5 | size.depth: 66.5 | precursor: Ni(NO3)2*6H2O (mass 14.54; conc 500.0) | precursor: CuSO4 (mass 0.281) | additive: okra plant extract | pdfno_list: 04-0835"
+}

@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "1039.json_Co3O4/RGO_2095",
+  "composition": "Co3O4/RGO",
+  "elements": [
+    "Co",
+    "O",
+    "R",
+    "G"
+  ],
+  "method": "microwave synthesis",
+  "precursors": [
+    {
+      "name": "Co(CH3COO)2",
+      "conc": 4.6
+    },
+    {
+      "name": "GO"
+    },
+    {
+      "name": "N2H4*H2O",
+      "mass": 1.032
+    }
+  ],
+  "additives": [
+    {
+      "name": "cetyltrimethylammonium bromide",
+      "mass": 0.92
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 800.0
+  },
+  "conditions": {
+    "temperature": 600.0
+  },
+  "product": {
+    "crystalsystem": "cubic normal spinel"
+  },
+  "pdfno_list": [
+    "76-1802"
+  ],
+  "source": {
+    "synthesis_id_original": "1039.json_Co3O4/RGO_2095",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Co3O4/RGO | method: microwave synthesis | solvent: distilled water | solvent.volume: 800.0 | temperature: 600.0 | crystalsystem: cubic normal spinel | precursor: Co(CH3COO)2 (conc 4.6) | precursor: GO | precursor: N2H4*H2O (mass 1.032) | additive: cetyltrimethylammonium bromide (mass 0.92) | pdfno_list: 76-1802"
+}

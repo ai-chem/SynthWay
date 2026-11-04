@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "1748.json_Ag_3971",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "biosynthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 5.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "green banana peel extract (gbpe)"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 55.12,
+      "width": 55.12,
+      "depth": 55.12
+    }
+  },
+  "pdfno_list": [
+    "65-2871"
+  ],
+  "source": {
+    "synthesis_id_original": "1748.json_Ag_3971",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Ag | method: biosynthesis | solvent: water | crystalsystem: cubic | shape: spherical | size.length: 55.12 | size.width: 55.12 | size.depth: 55.12 | precursor: AgNO3 (conc 5.0) | additive: green banana peel extract (gbpe) | pdfno_list: 65-2871"
+}

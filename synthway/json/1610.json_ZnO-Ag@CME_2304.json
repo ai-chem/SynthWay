@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "1610.json_ZnO-Ag@CME_2304",
+  "composition": "ZnO-Ag@CME",
+  "elements": [
+    "Zn",
+    "O",
+    "Ag",
+    "C",
+    "M",
+    "E"
+  ],
+  "method": "biosynthesis",
+  "precursors": [
+    {
+      "name": "ZnO",
+      "mass": 0.1
+    },
+    {
+      "name": "AgNO3",
+      "conc": 2.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "c. monogyna extract"
+    },
+    {
+      "name": "sodium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "ethanol and deionized water",
+    "volume": 30.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 49.6,
+      "width": 49.6,
+      "depth": 49.6
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1610.json_ZnO-Ag@CME_2304",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: ZnO-Ag@CME | method: biosynthesis | solvent: ethanol and deionized water | solvent.volume: 30.0 | shape: spherical | size.length: 49.6 | size.width: 49.6 | size.depth: 49.6 | precursor: ZnO (mass 0.1) | precursor: AgNO3 (conc 2.0) | additive: c. monogyna extract | additive: sodium hydroxide"
+}

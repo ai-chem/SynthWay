@@ -1,0 +1,32 @@
+{
+  "synthesis_id": "493.json_BaCeO3_1638",
+  "composition": "BaCeO3",
+  "elements": [
+    "Ba",
+    "Ce",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "cube",
+    "size": {
+      "length": 20.0
+    }
+  },
+  "pdfno_list": [
+    "22-0074"
+  ],
+  "source": {
+    "synthesis_id_original": "493.json_BaCeO3_1638",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: BaCeO3 | method: hydrothermal | solvent: water | temperature: 25.0 | crystalsystem: orthorhombic | shape: cube | size.length: 20.0 | pdfno_list: 22-0074"
+}

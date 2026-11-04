@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "1105.json_MoO3_3067",
+  "composition": "MoO3",
+  "elements": [
+    "Mo",
+    "O"
+  ],
+  "method": "precipitation",
+  "precursors": [
+    {
+      "name": "(NH4)6Mo7O24·4H2O)",
+      "conc": 100.0
+    },
+    {
+      "name": "HCl",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 400.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "plate",
+    "size": {
+      "length": 1500.0,
+      "width": 1250.0
+    }
+  },
+  "pdfno_list": [
+    "89-5108"
+  ],
+  "source": {
+    "synthesis_id_original": "1105.json_MoO3_3067",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: MoO3 | method: precipitation | solvent: distilled water | solvent.volume: 50.0 | temperature: 400.0 | crystalsystem: orthorhombic | shape: plate | size.length: 1500.0 | size.width: 1250.0 | precursor: (NH4)6Mo7O24·4H2O) (conc 100.0) | precursor: HCl (conc 1000.0) | pdfno_list: 89-5108"
+}

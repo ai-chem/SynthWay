@@ -1,0 +1,34 @@
+{
+  "synthesis_id": "163.json_Bi2O3_543",
+  "composition": "Bi2O3",
+  "elements": [
+    "Bi",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "solvent": {
+    "name": "distilled water",
+    "volume": 80.0
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "crystalsystem": "moniclinic",
+    "shape": "wire",
+    "size": {
+      "length": 90.0,
+      "width": 90.0,
+      "depth": 90.0
+    }
+  },
+  "pdfno_list": [
+    "98-008-5622"
+  ],
+  "source": {
+    "synthesis_id_original": "163.json_Bi2O3_543",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Bi2O3 | method: hydrothermal | solvent: distilled water | solvent.volume: 80.0 | temperature: 60.0 | crystalsystem: moniclinic | shape: wire | size.length: 90.0 | size.width: 90.0 | size.depth: 90.0 | pdfno_list: 98-008-5622"
+}

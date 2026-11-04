@@ -1,0 +1,15 @@
+{
+  "synthesis_id": "357.json_Fe70Zr30_3204",
+  "composition": "Fe70Zr30",
+  "elements": [
+    "Fe",
+    "Zr"
+  ],
+  "method": "ball milling",
+  "source": {
+    "synthesis_id_original": "357.json_Fe70Zr30_3204",
+    "nodes": 2,
+    "edges": 1
+  },
+  "retrieval_text": "composition: Fe70Zr30 | method: ball milling"
+}

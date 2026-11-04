@@ -1,0 +1,25 @@
+{
+  "synthesis_id": "120.json_TiO2_3853",
+  "composition": "TiO2",
+  "elements": [
+    "Ti",
+    "O"
+  ],
+  "method": "calcined",
+  "solvent": {
+    "name": "aqueous",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 500.0
+  },
+  "product": {
+    "shape": "wire"
+  },
+  "source": {
+    "synthesis_id_original": "120.json_TiO2_3853",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: TiO2 | method: calcined | solvent: aqueous | solvent.volume: 50.0 | temperature: 500.0 | shape: wire"
+}

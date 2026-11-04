@@ -1,0 +1,34 @@
+{
+  "synthesis_id": "118.json_NiO_776",
+  "composition": "NiO",
+  "elements": [
+    "Ni",
+    "O"
+  ],
+  "method": "sol-gel",
+  "solvent": {
+    "name": "polyethylene glycol",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 200.0,
+    "ph": 11.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 32.9,
+      "width": 32.9,
+      "depth": 32.9
+    }
+  },
+  "pdfno_list": [
+    "98-009-0203"
+  ],
+  "source": {
+    "synthesis_id_original": "118.json_NiO_776",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: NiO | method: sol-gel | solvent: polyethylene glycol | solvent.volume: 20.0 | temperature: 200.0 | pH: 11.0 | shape: spherical | size.length: 32.9 | size.width: 32.9 | size.depth: 32.9 | pdfno_list: 98-009-0203"
+}

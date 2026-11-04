@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1190.json_ZnO_2339",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2*2H2O",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "lychee peel extract"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water"
+  },
+  "conditions": {
+    "temperature": 70.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 2.18,
+      "width": 2.18,
+      "depth": 2.18
+    }
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "1190.json_ZnO_2339",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: ZnO | method: green synthesis | solvent: distilled water | temperature: 70.0 | crystalsystem: hexagonal | shape: spherical | size.length: 2.18 | size.width: 2.18 | size.depth: 2.18 | precursor: Zn(CH3COO)2*2H2O (conc 10.0) | additive: lychee peel extract | pdfno_list: 36-1451"
+}

@@ -1,0 +1,37 @@
+{
+  "synthesis_id": "1344.json_SPAg_2363",
+  "composition": "SPAg",
+  "elements": [
+    "S",
+    "P",
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3"
+    }
+  ],
+  "additives": [
+    {
+      "name": "salvia plebeia aqueous and ethanol extracts"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 21.7,
+      "width": 21.7,
+      "depth": 21.7
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1344.json_SPAg_2363",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: SPAg | method: green synthesis | solvent: water | shape: spherical | size.length: 21.7 | size.width: 21.7 | size.depth: 21.7 | precursor: AgNO3 | additive: salvia plebeia aqueous and ethanol extracts"
+}

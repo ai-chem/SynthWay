@@ -1,0 +1,30 @@
+{
+  "synthesis_id": "166.json_BFO_2140",
+  "composition": "BFO",
+  "elements": [
+    "B",
+    "F",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "solvent": {
+    "name": "deionized water",
+    "volume": 40.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "grain"
+  },
+  "pdfno_list": [
+    "86-1518"
+  ],
+  "source": {
+    "synthesis_id_original": "166.json_BFO_2140",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: BFO | method: hydrothermal | solvent: deionized water | solvent.volume: 40.0 | temperature: 180.0 | crystalsystem: orthorhombic | shape: grain | pdfno_list: 86-1518"
+}

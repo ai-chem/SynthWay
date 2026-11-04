@@ -1,0 +1,30 @@
+{
+  "synthesis_id": "310.json_V2O5_2484",
+  "composition": "V2O5",
+  "elements": [
+    "V",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "solvent": {
+    "name": "ethanol and water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 500.0,
+    "ph": 2.5
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "flake",
+    "size": {
+      "length": 70.34
+    }
+  },
+  "source": {
+    "synthesis_id_original": "310.json_V2O5_2484",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: V2O5 | method: hydrothermal | solvent: ethanol and water | solvent.volume: 100.0 | temperature: 500.0 | pH: 2.5 | crystalsystem: orthorhombic | shape: flake | size.length: 70.34"
+}

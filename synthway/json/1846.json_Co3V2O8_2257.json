@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1846.json_Co3V2O8_2257",
+  "composition": "Co3V2O8",
+  "elements": [
+    "Co",
+    "V",
+    "O"
+  ],
+  "method": "hydrolysis",
+  "precursors": [
+    {
+      "name": "CoCl2*6H2O",
+      "conc": 3.0
+    },
+    {
+      "name": "VCl3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "hexamethylenetetramine",
+      "mass": 0.6,
+      "conc": 4.3
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 70.0
+  },
+  "conditions": {
+    "temperature": 400.0
+  },
+  "product": {
+    "shape": "sheets"
+  },
+  "pdfno_list": [
+    "74-1486"
+  ],
+  "source": {
+    "synthesis_id_original": "1846.json_Co3V2O8_2257",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Co3V2O8 | method: hydrolysis | solvent: deionized water | solvent.volume: 70.0 | temperature: 400.0 | shape: sheets | precursor: CoCl2*6H2O (conc 3.0) | precursor: VCl3 (conc 1.0) | additive: hexamethylenetetramine (mass 0.6; conc 4.3) | pdfno_list: 74-1486"
+}

@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "1673.json_Ag_1580",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "aqueous fruit extract"
+    }
+  ],
+  "solvent": {
+    "name": "double sterilized water",
+    "volume": 250.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 78.4,
+      "width": 78.4,
+      "depth": 78.4
+    }
+  },
+  "pdfno_list": [
+    "04-0783"
+  ],
+  "source": {
+    "synthesis_id_original": "1673.json_Ag_1580",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Ag | solvent: double sterilized water | solvent.volume: 250.0 | shape: spherical | size.length: 78.4 | size.width: 78.4 | size.depth: 78.4 | precursor: AgNO3 (conc 1.0) | additive: aqueous fruit extract | pdfno_list: 04-0783"
+}

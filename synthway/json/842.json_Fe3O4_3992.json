@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "842.json_Fe3O4_3992",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "coprecipitation",
+  "precursors": [
+    {
+      "name": "FeCl2∙4H2O",
+      "mass": 1.98
+    },
+    {
+      "name": "FeCl3∙6H2O",
+      "mass": 5.4
+    },
+    {
+      "name": "NaOH",
+      "mass": 3.6
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 25.0,
+    "ph": 12.08
+  },
+  "product": {
+    "size": {
+      "length": 11.0,
+      "width": 11.0,
+      "depth": 11.0
+    }
+  },
+  "pdfno_list": [
+    "00-011-0614"
+  ],
+  "source": {
+    "synthesis_id_original": "842.json_Fe3O4_3992",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: Fe3O4 | method: coprecipitation | solvent: deionized water | solvent.volume: 100.0 | temperature: 25.0 | pH: 12.08 | size.length: 11.0 | size.width: 11.0 | size.depth: 11.0 | precursor: FeCl2∙4H2O (mass 1.98) | precursor: FeCl3∙6H2O (mass 5.4) | precursor: NaOH (mass 3.6) | pdfno_list: 00-011-0614"
+}

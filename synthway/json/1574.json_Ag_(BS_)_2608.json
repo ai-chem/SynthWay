@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "1574.json_Ag_(BS_)_2608",
+  "composition": "Ag  (BS )",
+  "elements": [
+    "Ag",
+    "B",
+    "S"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "cynodon dactylon (cd) leaf extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 15.0,
+      "width": 15.0,
+      "depth": 15.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1574.json_Ag_(BS_)_2608",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Ag  (BS ) | method: green synthesis | solvent: water | shape: spherical | size.length: 15.0 | size.width: 15.0 | size.depth: 15.0 | precursor: AgNO3 (conc 1.0) | additive: cynodon dactylon (cd) leaf extract"
+}

@@ -1,0 +1,56 @@
+{
+  "synthesis_id": "1183.json_CPC_CuO_719",
+  "composition": "CPC CuO",
+  "elements": [
+    "C",
+    "P",
+    "Cu",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "CuSO4*5H2O",
+      "conc": 50.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "chitosan",
+      "mass": 1.5
+    },
+    {
+      "name": "acetic acid"
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 600.0
+    },
+    {
+      "name": "eupatorium adenophorum leaf extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 70.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "wire",
+    "size": {
+      "length": 53.0,
+      "width": 53.0,
+      "depth": 53.0
+    }
+  },
+  "pdfno_list": [
+    "48-1548"
+  ],
+  "source": {
+    "synthesis_id_original": "1183.json_CPC_CuO_719",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: CPC CuO | solvent: water | temperature: 70.0 | crystalsystem: cubic | shape: wire | size.length: 53.0 | size.width: 53.0 | size.depth: 53.0 | precursor: CuSO4*5H2O (conc 50.0) | additive: chitosan (mass 1.5) | additive: acetic acid | additive: sodium hydroxide (conc 600.0) | additive: eupatorium adenophorum leaf extract | pdfno_list: 48-1548"
+}

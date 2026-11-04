@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1229.json_CVO_(sample_R)_478",
+  "composition": "CVO",
+  "elements": [
+    "C",
+    "V",
+    "O"
+  ],
+  "method": "standard synthesis",
+  "precursors": [
+    {
+      "name": "NH4VO3",
+      "mass": 1.192
+    },
+    {
+      "name": "CoCl2·6H2O",
+      "mass": 0.485
+    }
+  ],
+  "additives": [
+    {
+      "name": "lithium hydroxide",
+      "mass": 0.255
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 110.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic"
+  },
+  "pdfno_list": [
+    "070-1393"
+  ],
+  "source": {
+    "synthesis_id_original": "1229.json_CVO_(sample_R)_478",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: CVO | method: standard synthesis | solvent: deionized water | solvent.volume: 110.0 | temperature: 180.0 | crystalsystem: orthorhombic | precursor: NH4VO3 (mass 1.192) | precursor: CoCl2·6H2O (mass 0.485) | additive: lithium hydroxide (mass 0.255) | pdfno_list: 070-1393"
+}

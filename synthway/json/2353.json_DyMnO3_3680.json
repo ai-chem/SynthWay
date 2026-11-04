@@ -1,0 +1,34 @@
+{
+  "synthesis_id": "2353.json_DyMnO3_3680",
+  "composition": "DyMnO3",
+  "elements": [
+    "Dy",
+    "Mn",
+    "O"
+  ],
+  "solvent": {
+    "name": "nitric acid",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 750.0
+  },
+  "product": {
+    "crystalsystem": "perovskite",
+    "shape": "lump",
+    "size": {
+      "length": 90.0,
+      "width": 90.0,
+      "depth": 90.0
+    }
+  },
+  "pdfno_list": [
+    "25-0330"
+  ],
+  "source": {
+    "synthesis_id_original": "2353.json_DyMnO3_3680",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: DyMnO3 | solvent: nitric acid | solvent.volume: 20.0 | temperature: 750.0 | crystalsystem: perovskite | shape: lump | size.length: 90.0 | size.width: 90.0 | size.depth: 90.0 | pdfno_list: 25-0330"
+}

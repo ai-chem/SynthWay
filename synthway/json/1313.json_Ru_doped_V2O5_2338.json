@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "1313.json_Ru_doped_V2O5_2338",
+  "composition": "Ru doped V2O5",
+  "elements": [
+    "Ru",
+    "V",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "vanadyl sulfate (VOSO₄) hydrate",
+      "mass": 0.5
+    },
+    {
+      "name": "RuCl3*3H2O"
+    }
+  ],
+  "additives": [
+    {
+      "name": "vigna radiata extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "flaky"
+  },
+  "pdfno_list": [
+    "41-1426"
+  ],
+  "source": {
+    "synthesis_id_original": "1313.json_Ru_doped_V2O5_2338",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Ru doped V2O5 | method: green synthesis | solvent: water | temperature: 80.0 | crystalsystem: orthorhombic | shape: flaky | precursor: vanadyl sulfate (VOSO₄) hydrate (mass 0.5) | precursor: RuCl3*3H2O | additive: vigna radiata extract | pdfno_list: 41-1426"
+}

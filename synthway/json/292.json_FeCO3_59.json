@@ -1,0 +1,32 @@
+{
+  "synthesis_id": "292.json_FeCO3_59",
+  "composition": "FeCO3",
+  "elements": [
+    "Fe",
+    "C",
+    "O"
+  ],
+  "method": "solvo-hydrothermal",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 160.0
+  },
+  "product": {
+    "crystalsystem": "rhombohedral",
+    "shape": "rice",
+    "size": {
+      "length": 10.0
+    }
+  },
+  "pdfno_list": [
+    "26-0696"
+  ],
+  "source": {
+    "synthesis_id_original": "292.json_FeCO3_59",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: FeCO3 | method: solvo-hydrothermal | solvent: water | temperature: 160.0 | crystalsystem: rhombohedral | shape: rice | size.length: 10.0 | pdfno_list: 26-0696"
+}

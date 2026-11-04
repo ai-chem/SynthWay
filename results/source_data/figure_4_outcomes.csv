@@ -1,0 +1,7 @@
+route_label,solid_product,phase_XRD,morphology_SEM,size_SEM,XRD_assignment,EDS_elements,observed_outcome
+Ag NW,Match,Match,Partial match,Partial match,fcc Ag,Ag,"Nanowires + particulates. Ø ≈ 120 nm, length 1–4 µm."
+Cu2O_Precipitation,Match,Match,Partial match,Mismatch,cuprite Cu₂O,"Cu, O","Ø ≈ 220 nm, aggregated. Blue Cu-containing fraction separated."
+10Co3O4@CeO2_gemini,Match,Inconclusive,Mismatch,Mismatch,fluorite CeO₂,"Co, Ce, O",Irregular submicron particles and porous aggregates. Intermediate morphology.
+10Co3O4@CeO2_Llama 4 Maverick,Match,Inconclusive,Mismatch,Mismatch,fluorite CeO₂,"Co, Ce, O","Finest, most homogeneous morphology of the three. Irregular particles / aggregates."
+10Co3O4@CeO2_Nvidia,Match,Inconclusive,Mismatch,Mismatch,fluorite CeO₂,"Co, Ce, O",More pronounced aggregation. Broader morphological heterogeneity.
+Cu2O_Sonochemical,Mismatch,Not assessed,Not assessed,Not assessed,Not assessed,Not assessed,No precipitate. Blue-green mixture.

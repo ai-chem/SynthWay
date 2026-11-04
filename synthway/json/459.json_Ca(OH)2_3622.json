@@ -1,0 +1,29 @@
+{
+  "synthesis_id": "459.json_Ca(OH)2_3622",
+  "composition": "Ca(OH)2",
+  "elements": [
+    "Ca",
+    "O",
+    "H"
+  ],
+  "method": "carbonatation",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 90.0,
+    "ph": 12.0
+  },
+  "product": {
+    "shape": "hexagonal",
+    "size": {
+      "length": 50.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "459.json_Ca(OH)2_3622",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: Ca(OH)2 | method: carbonatation | solvent: water | temperature: 90.0 | pH: 12.0 | shape: hexagonal | size.length: 50.0"
+}

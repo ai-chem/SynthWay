@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "1646.json_ZnO-CMC_2976",
+  "composition": "ZnO-CMC",
+  "elements": [
+    "Zn",
+    "O",
+    "C",
+    "M"
+  ],
+  "precursors": [
+    {
+      "name": "CMC",
+      "mass": 0.15
+    },
+    {
+      "name": "Zn(NO3)2*6H2O",
+      "mass": 0.5
+    },
+    {
+      "name": "NaOH",
+      "mass": 0.15,
+      "conc": 200.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 90.0
+  },
+  "product": {
+    "shape": "irregular"
+  },
+  "source": {
+    "synthesis_id_original": "1646.json_ZnO-CMC_2976",
+    "nodes": 11,
+    "edges": 11
+  },
+  "retrieval_text": "composition: ZnO-CMC | solvent: water | solvent.volume: 50.0 | temperature: 90.0 | shape: irregular | precursor: CMC (mass 0.15) | precursor: Zn(NO3)2*6H2O (mass 0.5) | precursor: NaOH (mass 0.15; conc 200.0)"
+}

@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "2138.json_Eu2O2S_2360",
+  "composition": "Eu2O2S",
+  "elements": [
+    "Eu",
+    "O",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "[NHEt3]+[Eu(acda)4]-",
+      "mass": 0.4
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleylamine"
+    },
+    {
+      "name": "oleic acid"
+    },
+    {
+      "name": "octadecene"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 280.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "plate",
+    "size": {
+      "length": 10.0,
+      "width": 10.0,
+      "depth": 0.3
+    }
+  },
+  "pdfno_list": [
+    "26-1418"
+  ],
+  "source": {
+    "synthesis_id_original": "2138.json_Eu2O2S_2360",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Eu2O2S | solvent: water | temperature: 280.0 | crystalsystem: hexagonal | shape: plate | size.length: 10.0 | size.width: 10.0 | size.depth: 0.3 | precursor: [NHEt3]+[Eu(acda)4]- (mass 0.4) | additive: oleylamine | additive: oleic acid | additive: octadecene | pdfno_list: 26-1418"
+}

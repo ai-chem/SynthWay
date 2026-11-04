@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "1522.json_ZnO_2686",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Zn(NO3)2*6H2O",
+      "mass": 8.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "dry zea mays lea husk extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 50.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic and hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 30.0,
+      "width": 30.0,
+      "depth": 30.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1522.json_ZnO_2686",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: ZnO | method: green synthesis | solvent: water | temperature: 50.0 | crystalsystem: monoclinic and hexagonal | shape: spherical | size.length: 30.0 | size.width: 30.0 | size.depth: 30.0 | precursor: Zn(NO3)2*6H2O (mass 8.0) | additive: dry zea mays lea husk extract"
+}

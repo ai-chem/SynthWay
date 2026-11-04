@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "829.json_E._indica-Ag_2821",
+  "composition": "E. indica-Ag",
+  "elements": [
+    "E",
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "mass": 0.5,
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "e. indica ethanol extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "face-centered crystal structure",
+    "shape": "spherical",
+    "size": {
+      "length": 25.4,
+      "width": 25.4,
+      "depth": 25.4
+    }
+  },
+  "pdfno_list": [
+    "01 087 1473"
+  ],
+  "source": {
+    "synthesis_id_original": "829.json_E._indica-Ag_2821",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: E. indica-Ag | method: green synthesis | solvent: water | crystalsystem: face-centered crystal structure | shape: spherical | size.length: 25.4 | size.width: 25.4 | size.depth: 25.4 | precursor: AgNO3 (mass 0.5; conc 1.0) | additive: e. indica ethanol extract | pdfno_list: 01 087 1473"
+}

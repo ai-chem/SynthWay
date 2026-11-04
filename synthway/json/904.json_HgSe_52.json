@@ -1,0 +1,28 @@
+{
+  "synthesis_id": "904.json_HgSe_52",
+  "composition": "HgSe",
+  "elements": [
+    "Hg",
+    "Se"
+  ],
+  "method": "sonochemical",
+  "precursors": [
+    {
+      "name": "Hg(SeCH2CH2CH2NMe2)2",
+      "mass": 0.186
+    }
+  ],
+  "solvent": {
+    "name": "toluene",
+    "volume": 150.0
+  },
+  "pdfno_list": [
+    "08-0469"
+  ],
+  "source": {
+    "synthesis_id_original": "904.json_HgSe_52",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: HgSe | method: sonochemical | solvent: toluene | solvent.volume: 150.0 | precursor: Hg(SeCH2CH2CH2NMe2)2 (mass 0.186) | pdfno_list: 08-0469"
+}

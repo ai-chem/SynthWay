@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "2315.json_CuS_2324",
+  "composition": "CuS",
+  "elements": [
+    "Cu",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "Cu(CH3COO)2*H2O",
+      "conc": 10.0
+    },
+    {
+      "name": "K+ salt",
+      "conc": 10.0
+    }
+  ],
+  "solvent": {
+    "name": "ethanol and water",
+    "volume": 200.0
+  },
+  "conditions": {
+    "temperature": 100.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "size": {
+      "length": 18.19,
+      "width": 18.19,
+      "depth": 18.19
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2315.json_CuS_2324",
+    "nodes": 11,
+    "edges": 11
+  },
+  "retrieval_text": "composition: CuS | solvent: ethanol and water | solvent.volume: 200.0 | temperature: 100.0 | crystalsystem: hexagonal | size.length: 18.19 | size.width: 18.19 | size.depth: 18.19 | precursor: Cu(CH3COO)2*H2O (conc 10.0) | precursor: K+ salt (conc 10.0)"
+}

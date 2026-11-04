@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "1087.json_Au_774",
+  "composition": "Au",
+  "elements": [
+    "Au"
+  ],
+  "method": "chemical reduction",
+  "precursors": [
+    {
+      "name": "HAuCl4",
+      "conc": 1.25
+    },
+    {
+      "name": "NaOH",
+      "conc": 25.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone",
+      "conc": 75.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "shape": "spherical",
+    "size": {
+      "width": 6.8
+    }
+  },
+  "pdfno_list": [
+    "04-0784"
+  ],
+  "source": {
+    "synthesis_id_original": "1087.json_Au_774",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Au | method: chemical reduction | solvent: water | crystalsystem: face-centered cubic | shape: spherical | size.width: 6.8 | precursor: HAuCl4 (conc 1.25) | precursor: NaOH (conc 25.0) | additive: polyvinylpyrrolidone (conc 75.0) | pdfno_list: 04-0784"
+}

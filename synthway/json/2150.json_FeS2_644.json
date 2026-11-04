@@ -1,0 +1,53 @@
+{
+  "synthesis_id": "2150.json_FeS2_644",
+  "composition": "FeS2",
+  "elements": [
+    "Fe",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "FeCl3⋅6H2O",
+      "mass": 2.432,
+      "conc": 9.0
+    },
+    {
+      "name": "S"
+    }
+  ],
+  "additives": [
+    {
+      "name": "trisodium citrate",
+      "mass": 0.774,
+      "conc": 3.0
+    },
+    {
+      "name": "sodium acetate",
+      "mass": 3.6,
+      "conc": 43.9
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 60.0
+  },
+  "conditions": {
+    "temperature": 400.0
+  },
+  "product": {
+    "size": {
+      "length": 170.0,
+      "width": 170.0,
+      "depth": 170.0
+    }
+  },
+  "pdfno_list": [
+    "71-1680"
+  ],
+  "source": {
+    "synthesis_id_original": "2150.json_FeS2_644",
+    "nodes": 18,
+    "edges": 17
+  },
+  "retrieval_text": "composition: FeS2 | solvent: ethylene glycol | solvent.volume: 60.0 | temperature: 400.0 | size.length: 170.0 | size.width: 170.0 | size.depth: 170.0 | precursor: FeCl3⋅6H2O (mass 2.432; conc 9.0) | precursor: S | additive: trisodium citrate (mass 0.774; conc 3.0) | additive: sodium acetate (mass 3.6; conc 43.9) | pdfno_list: 71-1680"
+}

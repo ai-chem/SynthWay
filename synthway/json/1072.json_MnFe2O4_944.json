@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "1072.json_MnFe2O4_944",
+  "composition": "MnFe2O4",
+  "elements": [
+    "Mn",
+    "Fe",
+    "O"
+  ],
+  "method": "coprecipitation",
+  "precursors": [
+    {
+      "name": "MnCl2·4H2O",
+      "conc": 100.0
+    },
+    {
+      "name": "FeCl3*6H2O",
+      "conc": 100.0
+    },
+    {
+      "name": "C4H11NO2",
+      "conc": 3000.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 150.0
+  },
+  "conditions": {
+    "temperature": 100.0,
+    "ph": 11.5
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "width": 46.8
+    }
+  },
+  "pdfno_list": [
+    "10-0319"
+  ],
+  "source": {
+    "synthesis_id_original": "1072.json_MnFe2O4_944",
+    "nodes": 14,
+    "edges": 14
+  },
+  "retrieval_text": "composition: MnFe2O4 | method: coprecipitation | solvent: water | solvent.volume: 150.0 | temperature: 100.0 | pH: 11.5 | crystalsystem: cubic | size.width: 46.8 | precursor: MnCl2·4H2O (conc 100.0) | precursor: FeCl3*6H2O (conc 100.0) | precursor: C4H11NO2 (conc 3000.0) | pdfno_list: 10-0319"
+}

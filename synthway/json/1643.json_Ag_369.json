@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "1643.json_Ag_369",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "p. putida mpv2 extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 11.0,
+      "width": 11.0,
+      "depth": 11.0
+    }
+  },
+  "pdfno_list": [
+    "01-087-0717"
+  ],
+  "source": {
+    "synthesis_id_original": "1643.json_Ag_369",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Ag | solvent: water | crystalsystem: cubic | shape: spherical | size.length: 11.0 | size.width: 11.0 | size.depth: 11.0 | precursor: AgNO3 (conc 1.0) | additive: p. putida mpv2 extract | pdfno_list: 01-087-0717"
+}

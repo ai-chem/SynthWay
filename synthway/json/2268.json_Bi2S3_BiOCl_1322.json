@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "2268.json_Bi2S3/BiOCl_1322",
+  "composition": "Bi2S3/BiOCl",
+  "elements": [
+    "Bi",
+    "S",
+    "O",
+    "Cl"
+  ],
+  "method": "one-pot synthesis",
+  "precursors": [
+    {
+      "name": "Bi(NO3)3·5H2O",
+      "mass": 0.97
+    },
+    {
+      "name": "Na2S2O3·5H2O"
+    }
+  ],
+  "additives": [
+    {
+      "name": "potassium chloride"
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 25.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "shape": "flower-like",
+    "size": {
+      "depth": 12.7
+    }
+  },
+  "pdfno_list": [
+    "85-0861"
+  ],
+  "source": {
+    "synthesis_id_original": "2268.json_Bi2S3/BiOCl_1322",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Bi2S3/BiOCl | method: one-pot synthesis | solvent: ethylene glycol | solvent.volume: 25.0 | crystalsystem: tetragonal | shape: flower-like | size.depth: 12.7 | precursor: Bi(NO3)3·5H2O (mass 0.97) | precursor: Na2S2O3·5H2O | additive: potassium chloride | pdfno_list: 85-0861"
+}

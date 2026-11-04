@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1934.json_CeO2_2670",
+  "composition": "CeO2",
+  "elements": [
+    "Ce",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Ce(NO3)3·6H2O",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 100.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 140.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "cube",
+    "size": {
+      "length": 13.0,
+      "width": 13.0,
+      "depth": 13.0
+    }
+  },
+  "pdfno_list": [
+    "34-0394"
+  ],
+  "source": {
+    "synthesis_id_original": "1934.json_CeO2_2670",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: CeO2 | solvent: water | temperature: 140.0 | crystalsystem: cubic | shape: cube | size.length: 13.0 | size.width: 13.0 | size.depth: 13.0 | precursor: Ce(NO3)3·6H2O (conc 100.0) | additive: sodium hydroxide (conc 100.0) | pdfno_list: 34-0394"
+}

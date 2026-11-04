@@ -1,0 +1,11 @@
+{
+  "composition": "Сu",
+  "method": null,
+  "rag_topk": 3,
+  "query": "composition: Сu | Сu method | Сu method | Сu method | С | С | С | С method | С method | С method | composition С | composition С | composition С | composition CuS | composition CuS | composition CuS | composition Co | composition Co | composition Co | composition Ru | composition Ru | composition Ru",
+  "retrieval_context": [
+    "composition: Сu | solvent: water | solvent.volume: 20.0 | temperature: 60.0 | crystalsystem: face-centered cubic | shape: spherical | size.length: 50.0 | size.width: 50.0 | size.depth: 50.0",
+    "composition: Сu | solvent: water | solvent.volume: 20.0 | temperature: 60.0 | crystalsystem: face-centered cubic | shape: spherical | size.length: 80.0 | size.width: 80.0 | size.depth: 80.0",
+    "composition: Сu | method: reduction | solvent: water | crystalsystem: face-centered cubic | shape: spherical | size.length: 40.0 | size.width: 40.0 | size.depth: 40.0 | precursor: Cu(NO3)2*2.5H2O (mass 34.5; conc 43.0) | precursor: N2H4*H2O (mass 0.0392; conc 19600.0) | additive: polyacrylic acid sodium salt | seed: Ag (mass 0.65; conc 1.0)"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "735.json_ZnS_1194",
+  "composition": "ZnS",
+  "elements": [
+    "Zn",
+    "S"
+  ],
+  "method": "chemical synthesis",
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2",
+      "conc": 100.0
+    },
+    {
+      "name": "Na2S",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "width": 2.18
+    }
+  },
+  "pdfno_list": [
+    "05-0566"
+  ],
+  "source": {
+    "synthesis_id_original": "735.json_ZnS_1194",
+    "nodes": 10,
+    "edges": 10
+  },
+  "retrieval_text": "composition: ZnS | method: chemical synthesis | solvent: water | crystalsystem: cubic | size.width: 2.18 | precursor: Zn(CH3COO)2 (conc 100.0) | precursor: Na2S (conc 100.0) | additive: polyvinylpyrrolidone | pdfno_list: 05-0566"
+}

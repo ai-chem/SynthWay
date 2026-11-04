@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1921.json_Fe3O4_1442",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "FeCl3*6H2O",
+      "mass": 6.92
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium acetate",
+      "mass": 9.24
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 140.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 500.0,
+      "width": 500.0,
+      "depth": 500.0
+    }
+  },
+  "pdfno_list": [
+    "75 1609"
+  ],
+  "source": {
+    "synthesis_id_original": "1921.json_Fe3O4_1442",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Fe3O4 | solvent: ethylene glycol | solvent.volume: 140.0 | temperature: 200.0 | shape: spherical | size.length: 500.0 | size.width: 500.0 | size.depth: 500.0 | precursor: FeCl3*6H2O (mass 6.92) | additive: sodium acetate (mass 9.24) | pdfno_list: 75 1609"
+}

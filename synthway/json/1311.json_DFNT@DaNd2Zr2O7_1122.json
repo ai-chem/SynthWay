@@ -1,0 +1,56 @@
+{
+  "synthesis_id": "1311.json_DFNT@DaNd2Zr2O7_1122",
+  "composition": "DFNT@DaNd2Zr2O7",
+  "elements": [
+    "D",
+    "F",
+    "N",
+    "T",
+    "Da",
+    "Nd",
+    "Zr",
+    "O"
+  ],
+  "method": "microwave synthesis",
+  "precursors": [
+    {
+      "name": "DFNT",
+      "mass": 0.01
+    },
+    {
+      "name": "Nd(NO3)3⋅6H2O",
+      "conc": 40.0
+    },
+    {
+      "name": "ZrO(NO3)2·6H2O",
+      "conc": 5.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "d. alaskensis cells",
+      "conc": 2.0
+    },
+    {
+      "name": "n-pentanol"
+    },
+    {
+      "name": "cyclohexane"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "pdfno_list": [
+    "73-1764 78-1617"
+  ],
+  "source": {
+    "synthesis_id_original": "1311.json_DFNT@DaNd2Zr2O7_1122",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: DFNT@DaNd2Zr2O7 | method: microwave synthesis | solvent: water | temperature: 25.0 | precursor: DFNT (mass 0.01) | precursor: Nd(NO3)3⋅6H2O (conc 40.0) | precursor: ZrO(NO3)2·6H2O (conc 5.0) | additive: d. alaskensis cells (conc 2.0) | additive: n-pentanol | additive: cyclohexane | pdfno_list: 73-1764 78-1617"
+}

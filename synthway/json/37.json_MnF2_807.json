@@ -1,0 +1,27 @@
+{
+  "synthesis_id": "37.json_MnF2_807",
+  "composition": "MnF2",
+  "elements": [
+    "Mn",
+    "F"
+  ],
+  "solvent": {
+    "name": "anhydrous alcohol",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 500.0
+  },
+  "product": {
+    "shape": "spherical"
+  },
+  "pdfno_list": [
+    "24-0727"
+  ],
+  "source": {
+    "synthesis_id_original": "37.json_MnF2_807",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: MnF2 | solvent: anhydrous alcohol | solvent.volume: 50.0 | temperature: 500.0 | shape: spherical | pdfno_list: 24-0727"
+}

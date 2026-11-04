@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "891.json_WC_2803",
+  "composition": "WC",
+  "elements": [
+    "W",
+    "C"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "(NH4)6(H2W12O40)*nH2O",
+      "mass": 5.0
+    },
+    {
+      "name": "C27H48O20",
+      "mass": 4.6
+    }
+  ],
+  "solvent": {
+    "name": "deionized water"
+  },
+  "conditions": {
+    "temperature": 980.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 35.0,
+      "width": 35.0,
+      "depth": 35.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "891.json_WC_2803",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: WC | method: hydrothermal | solvent: deionized water | temperature: 980.0 | crystalsystem: hexagonal | shape: spherical | size.length: 35.0 | size.width: 35.0 | size.depth: 35.0 | precursor: (NH4)6(H2W12O40)*nH2O (mass 5.0) | precursor: C27H48O20 (mass 4.6)"
+}

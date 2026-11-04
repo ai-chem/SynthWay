@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "1115.json_Ni-doped_SnO2_3851",
+  "composition": "Ni-doped SnO2",
+  "elements": [
+    "Ni",
+    "Sn",
+    "O"
+  ],
+  "method": "coprecipitation",
+  "precursors": [
+    {
+      "name": "SnCl2·2H2O",
+      "conc": 3000.0
+    },
+    {
+      "name": "NiCl2·6H2O",
+      "conc": 3000.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "ammonium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "double distilled water"
+  },
+  "conditions": {
+    "temperature": 25.0,
+    "ph": 9.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "size": {
+      "length": 34.0,
+      "width": 34.0,
+      "depth": 34.0
+    }
+  },
+  "pdfno_list": [
+    "41-1445 96-152-6638"
+  ],
+  "source": {
+    "synthesis_id_original": "1115.json_Ni-doped_SnO2_3851",
+    "nodes": 14,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Ni-doped SnO2 | method: coprecipitation | solvent: double distilled water | temperature: 25.0 | pH: 9.0 | crystalsystem: tetragonal | size.length: 34.0 | size.width: 34.0 | size.depth: 34.0 | precursor: SnCl2·2H2O (conc 3000.0) | precursor: NiCl2·6H2O (conc 3000.0) | additive: ammonium hydroxide | pdfno_list: 41-1445 96-152-6638"
+}

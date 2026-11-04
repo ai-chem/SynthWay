@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "2173.json_Fe3O4_3340",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "FeCl2·4H2O",
+      "mass": 8.64,
+      "conc": 43.48
+    },
+    {
+      "name": "FeCl3*6H2O",
+      "mass": 23.5,
+      "conc": 86.96
+    }
+  ],
+  "additives": [
+    {
+      "name": "ammonium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 43.5
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "size": {
+      "length": 12.0,
+      "width": 12.0,
+      "depth": 12.0
+    }
+  },
+  "pdfno_list": [
+    "65-3107"
+  ],
+  "source": {
+    "synthesis_id_original": "2173.json_Fe3O4_3340",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Fe3O4 | solvent: water | solvent.volume: 43.5 | temperature: 60.0 | size.length: 12.0 | size.width: 12.0 | size.depth: 12.0 | precursor: FeCl2·4H2O (mass 8.64; conc 43.48) | precursor: FeCl3*6H2O (mass 23.5; conc 86.96) | additive: ammonium hydroxide | pdfno_list: 65-3107"
+}

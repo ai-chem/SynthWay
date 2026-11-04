@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1172.json_MgO_2702",
+  "composition": "MgO",
+  "elements": [
+    "Mg",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Mg(NO3)2*6H2O",
+      "conc": 50.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "mentha piperita leaf extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 70.0,
+    "ph": 11.5
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "flower-like",
+    "size": {
+      "length": 21.0,
+      "width": 21.0,
+      "depth": 21.0
+    }
+  },
+  "pdfno_list": [
+    "01-075- 0447"
+  ],
+  "source": {
+    "synthesis_id_original": "1172.json_MgO_2702",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: MgO | method: green synthesis | solvent: water | temperature: 70.0 | pH: 11.5 | crystalsystem: cubic | shape: flower-like | size.length: 21.0 | size.width: 21.0 | size.depth: 21.0 | precursor: Mg(NO3)2*6H2O (conc 50.0) | additive: mentha piperita leaf extract | pdfno_list: 01-075- 0447"
+}

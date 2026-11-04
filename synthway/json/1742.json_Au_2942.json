@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "1742.json_Au_2942",
+  "composition": "Au",
+  "elements": [
+    "Au"
+  ],
+  "precursors": [
+    {
+      "name": "HAuCl4*H2O",
+      "mass": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "teak extracts"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "ph": 4.5
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 16.0,
+      "width": 16.0,
+      "depth": 16.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1742.json_Au_2942",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Au | solvent: distilled water | solvent.volume: 50.0 | pH: 4.5 | shape: spherical | size.length: 16.0 | size.width: 16.0 | size.depth: 16.0 | precursor: HAuCl4*H2O (mass 1.0) | additive: teak extracts"
+}

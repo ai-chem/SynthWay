@@ -1,0 +1,54 @@
+{
+  "synthesis_id": "2222.json_PVP-capped_CdS_853",
+  "composition": "PVP-capped CdS",
+  "elements": [
+    "P",
+    "V",
+    "Cd",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "Cd(CH3COO)2",
+      "conc": 350.0
+    },
+    {
+      "name": "Na2S",
+      "conc": 350.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "poly-n-vinyl-2-pyrrolidone",
+      "mass": 0.5
+    },
+    {
+      "name": "ammonia solution"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 70.0,
+    "ph": 11.0
+  },
+  "product": {
+    "shape": "spherical and unagglomerated",
+    "size": {
+      "length": 2.36,
+      "width": 2.36,
+      "depth": 2.36
+    }
+  },
+  "pdfno_list": [
+    "10-454"
+  ],
+  "source": {
+    "synthesis_id_original": "2222.json_PVP-capped_CdS_853",
+    "nodes": 16,
+    "edges": 16
+  },
+  "retrieval_text": "composition: PVP-capped CdS | solvent: water | solvent.volume: 30.0 | temperature: 70.0 | pH: 11.0 | shape: spherical and unagglomerated | size.length: 2.36 | size.width: 2.36 | size.depth: 2.36 | precursor: Cd(CH3COO)2 (conc 350.0) | precursor: Na2S (conc 350.0) | additive: poly-n-vinyl-2-pyrrolidone (mass 0.5) | additive: ammonia solution | pdfno_list: 10-454"
+}

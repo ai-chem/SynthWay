@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1002.json_Cu_1218",
+  "composition": "Cu",
+  "elements": [
+    "Cu"
+  ],
+  "method": "reduction",
+  "precursors": [
+    {
+      "name": "N2H4",
+      "conc": 80.0
+    },
+    {
+      "name": "CuCl2",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "cetyltrimethylammonium bromide",
+      "conc": 10.0
+    },
+    {
+      "name": "ammonium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0,
+    "ph": 10.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "size": {
+      "width": 5.1
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1002.json_Cu_1218",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Cu | method: reduction | solvent: water | temperature: 25.0 | pH: 10.0 | crystalsystem: face-centered cubic | size.width: 5.1 | precursor: N2H4 (conc 80.0) | precursor: CuCl2 (conc 1.0) | additive: cetyltrimethylammonium bromide (conc 10.0) | additive: ammonium hydroxide"
+}

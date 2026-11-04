@@ -1,0 +1,27 @@
+{
+  "synthesis_id": "406.json_LiCoPO4_1374",
+  "composition": "LiCoPO4",
+  "elements": [
+    "Li",
+    "Co",
+    "P",
+    "O"
+  ],
+  "method": "ball milling",
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "polyhedral",
+    "size": {
+      "length": 100.0
+    }
+  },
+  "pdfno_list": [
+    "32-0552"
+  ],
+  "source": {
+    "synthesis_id_original": "406.json_LiCoPO4_1374",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: LiCoPO4 | method: ball milling | crystalsystem: orthorhombic | shape: polyhedral | size.length: 100.0 | pdfno_list: 32-0552"
+}

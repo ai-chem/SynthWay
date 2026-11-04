@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "330.json_CoFe2O4_2306",
+  "composition": "CoFe2O4",
+  "elements": [
+    "Co",
+    "Fe",
+    "O"
+  ],
+  "method": "chemical precipitation",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 80.0,
+    "ph": 10.5
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "cubically spherical",
+    "size": {
+      "length": 19.0
+    }
+  },
+  "pdfno_list": [
+    "22-1086"
+  ],
+  "source": {
+    "synthesis_id_original": "330.json_CoFe2O4_2306",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: CoFe2O4 | method: chemical precipitation | solvent: water | temperature: 80.0 | pH: 10.5 | crystalsystem: cubic | shape: cubically spherical | size.length: 19.0 | pdfno_list: 22-1086"
+}

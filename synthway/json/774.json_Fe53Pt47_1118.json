@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "774.json_Fe53Pt47_1118",
+  "composition": "Fe53Pt47",
+  "elements": [
+    "Fe",
+    "Pt"
+  ],
+  "precursors": [
+    {
+      "name": "Pt(acac)2",
+      "mass": 0.197
+    },
+    {
+      "name": "Fe(CO)5",
+      "mass": 0.196
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleylamine",
+      "mass": 1.07
+    },
+    {
+      "name": "oleic acid",
+      "mass": 1.13
+    }
+  ],
+  "solvent": {
+    "name": "benzyl ether",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 100.0
+  },
+  "product": {
+    "size": {
+      "length": 6.0,
+      "width": 6.0,
+      "depth": 6.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "774.json_Fe53Pt47_1118",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Fe53Pt47 | solvent: benzyl ether | solvent.volume: 10.0 | temperature: 100.0 | size.length: 6.0 | size.width: 6.0 | size.depth: 6.0 | precursor: Pt(acac)2 (mass 0.197) | precursor: Fe(CO)5 (mass 0.196) | additive: oleylamine (mass 1.07) | additive: oleic acid (mass 1.13)"
+}

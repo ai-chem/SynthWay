@@ -1,0 +1,35 @@
+{
+  "synthesis_id": "214.json_CNTS_2442",
+  "composition": "CNTS",
+  "elements": [
+    "C",
+    "N",
+    "T",
+    "S"
+  ],
+  "solvent": {
+    "name": "ethylene alcoho",
+    "volume": 55.0
+  },
+  "conditions": {
+    "temperature": 230.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "sheets",
+    "size": {
+      "length": 400.0,
+      "width": 400.0,
+      "depth": 400.0
+    }
+  },
+  "pdfno_list": [
+    "26-0552"
+  ],
+  "source": {
+    "synthesis_id_original": "214.json_CNTS_2442",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: CNTS | solvent: ethylene alcoho | solvent.volume: 55.0 | temperature: 230.0 | crystalsystem: cubic | shape: sheets | size.length: 400.0 | size.width: 400.0 | size.depth: 400.0 | pdfno_list: 26-0552"
+}

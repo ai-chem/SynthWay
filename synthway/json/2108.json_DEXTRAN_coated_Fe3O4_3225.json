@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "2108.json_DEXTRAN_coated_Fe3O4_3225",
+  "composition": "DEXTRAN coated Fe3O4",
+  "elements": [
+    "D",
+    "E",
+    "X",
+    "T",
+    "R",
+    "A",
+    "N",
+    "Fe",
+    "O"
+  ],
+  "method": "thermal decomposition",
+  "precursors": [
+    {
+      "name": "Fe(acac)3"
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleic acid"
+    },
+    {
+      "name": "11-aminoundecanoic acid tetramethylammonium salt (11-aats)"
+    },
+    {
+      "name": "dextran"
+    }
+  ],
+  "solvent": {
+    "name": "trioctylamine"
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 170.0,
+      "width": 170.0,
+      "depth": 170.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2108.json_DEXTRAN_coated_Fe3O4_3225",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: DEXTRAN coated Fe3O4 | method: thermal decomposition | solvent: trioctylamine | shape: spherical | size.length: 170.0 | size.width: 170.0 | size.depth: 170.0 | precursor: Fe(acac)3 | additive: oleic acid | additive: 11-aminoundecanoic acid tetramethylammonium salt (11-aats) | additive: dextran"
+}

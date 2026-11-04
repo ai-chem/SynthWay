@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "1169.json_Ag40Fe60_2321",
+  "composition": "Ag40Fe60",
+  "elements": [
+    "Ag",
+    "Fe"
+  ],
+  "method": "co-reduction",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 2.0
+    },
+    {
+      "name": "FeNO3·9H2O",
+      "conc": 2.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "clove"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "crystalsystem": "cubic"
+  },
+  "pdfno_list": [
+    "04-0783"
+  ],
+  "source": {
+    "synthesis_id_original": "1169.json_Ag40Fe60_2321",
+    "nodes": 10,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Ag40Fe60 | method: co-reduction | solvent: water | temperature: 25.0 | crystalsystem: cubic | precursor: AgNO3 (conc 2.0) | precursor: FeNO3·9H2O (conc 2.0) | additive: clove | pdfno_list: 04-0783"
+}

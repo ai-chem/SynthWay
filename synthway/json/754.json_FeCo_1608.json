@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "754.json_FeCo_1608",
+  "composition": "FeCo",
+  "elements": [
+    "Fe",
+    "Co"
+  ],
+  "method": "modified polyol synthesis",
+  "precursors": [
+    {
+      "name": "FeCl2",
+      "conc": 56.0
+    },
+    {
+      "name": "Co(CH3COO)2",
+      "conc": 28.0
+    },
+    {
+      "name": "NaOH"
+    }
+  ],
+  "additives": [
+    {
+      "name": "ethylene glycol"
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol"
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 30.0,
+      "width": 30.0,
+      "depth": 30.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "754.json_FeCo_1608",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: FeCo | method: modified polyol synthesis | solvent: ethylene glycol | temperature: 200.0 | shape: spherical | size.length: 30.0 | size.width: 30.0 | size.depth: 30.0 | precursor: FeCl2 (conc 56.0) | precursor: Co(CH3COO)2 (conc 28.0) | precursor: NaOH | additive: ethylene glycol"
+}

@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1978.json_CeO2_2290",
+  "composition": "CeO2",
+  "elements": [
+    "Ce",
+    "O"
+  ],
+  "method": "solvo-hydrothermal",
+  "precursors": [
+    {
+      "name": "Ce(NO3)3·6H2O",
+      "mass": 0.2894
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 0.2
+    }
+  ],
+  "solvent": {
+    "name": "dimethylformamide",
+    "volume": 12.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "flower-like",
+    "size": {
+      "length": 31.1,
+      "width": 31.1,
+      "depth": 31.1
+    }
+  },
+  "pdfno_list": [
+    "34-0394"
+  ],
+  "source": {
+    "synthesis_id_original": "1978.json_CeO2_2290",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: CeO2 | method: solvo-hydrothermal | solvent: dimethylformamide | solvent.volume: 12.0 | temperature: 180.0 | crystalsystem: cubic | shape: flower-like | size.length: 31.1 | size.width: 31.1 | size.depth: 31.1 | precursor: Ce(NO3)3·6H2O (mass 0.2894) | additive: polyvinylpyrrolidone (mass 0.2) | pdfno_list: 34-0394"
+}

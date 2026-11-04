@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "1436.json_SP-4_Ag_3951",
+  "composition": "SP-4 Ag",
+  "elements": [
+    "S",
+    "P",
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sarcochlamys pulcherrima leaf extract"
+    }
+  ],
+  "solvent": {
+    "name": "double distilled water",
+    "volume": 2.5
+  },
+  "conditions": {
+    "temperature": 65.0
+  },
+  "product": {
+    "crystalsystem": "cubic"
+  },
+  "pdfno_list": [
+    "07-0783"
+  ],
+  "source": {
+    "synthesis_id_original": "1436.json_SP-4_Ag_3951",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: SP-4 Ag | method: green synthesis | solvent: double distilled water | solvent.volume: 2.5 | temperature: 65.0 | crystalsystem: cubic | precursor: AgNO3 (conc 10.0) | additive: sarcochlamys pulcherrima leaf extract | pdfno_list: 07-0783"
+}

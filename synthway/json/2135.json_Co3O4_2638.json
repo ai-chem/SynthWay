@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "2135.json_Co3O4_2638",
+  "composition": "Co3O4",
+  "elements": [
+    "Co",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Co(NO3)2·6H2O",
+      "mass": 1.3
+    }
+  ],
+  "additives": [
+    {
+      "name": "hexamethylenetetramine",
+      "mass": 0.6
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 200.0,
+    "ph": 10.0
+  },
+  "product": {
+    "shape": "plate",
+    "size": {
+      "length": 100.0,
+      "width": 21.0,
+      "depth": 21.0
+    }
+  },
+  "pdfno_list": [
+    "76-1802"
+  ],
+  "source": {
+    "synthesis_id_original": "2135.json_Co3O4_2638",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: Co3O4 | solvent: water | solvent.volume: 100.0 | temperature: 200.0 | pH: 10.0 | shape: plate | size.length: 100.0 | size.width: 21.0 | size.depth: 21.0 | precursor: Co(NO3)2·6H2O (mass 1.3) | additive: hexamethylenetetramine (mass 0.6) | additive: sodium hydroxide (conc 1000.0) | pdfno_list: 76-1802"
+}

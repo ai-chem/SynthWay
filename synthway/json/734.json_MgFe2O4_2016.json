@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "734.json_MgFe2O4_2016",
+  "composition": "MgFe2O4",
+  "elements": [
+    "Mg",
+    "Fe",
+    "O"
+  ],
+  "method": "solid-state reaction",
+  "precursors": [
+    {
+      "name": "MgSO4",
+      "mass": 120.0
+    },
+    {
+      "name": "Fe(NO3)3·9H2O",
+      "mass": 808.0
+    },
+    {
+      "name": "NaOH",
+      "mass": 320.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium chloride",
+      "mass": 585.0
+    }
+  ],
+  "conditions": {
+    "temperature": 700.0
+  },
+  "product": {
+    "shape": "spheroidal with irregular polyhedron",
+    "size": {
+      "width": 22.5
+    }
+  },
+  "pdfno_list": [
+    "17-0464"
+  ],
+  "source": {
+    "synthesis_id_original": "734.json_MgFe2O4_2016",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: MgFe2O4 | method: solid-state reaction | temperature: 700.0 | shape: spheroidal with irregular polyhedron | size.width: 22.5 | precursor: MgSO4 (mass 120.0) | precursor: Fe(NO3)3·9H2O (mass 808.0) | precursor: NaOH (mass 320.0) | additive: sodium chloride (mass 585.0) | pdfno_list: 17-0464"
+}

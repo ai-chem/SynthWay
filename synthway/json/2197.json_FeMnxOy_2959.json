@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "2197.json_FeMnxOy_2959",
+  "composition": "FeMnxOy",
+  "elements": [
+    "Fe",
+    "Mn",
+    "Oy"
+  ],
+  "method": "one-pot template-free",
+  "precursors": [
+    {
+      "name": "FeSO4⋅7H2O",
+      "mass": 3.13
+    },
+    {
+      "name": "KMnO4",
+      "mass": 0.6
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 5000.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "crystalsystem": "amorphous",
+    "shape": "3d-urchin",
+    "size": {
+      "length": 500.0,
+      "width": 500.0,
+      "depth": 500.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2197.json_FeMnxOy_2959",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: FeMnxOy | method: one-pot template-free | solvent: water | solvent.volume: 50.0 | temperature: 80.0 | crystalsystem: amorphous | shape: 3d-urchin | size.length: 500.0 | size.width: 500.0 | size.depth: 500.0 | precursor: FeSO4⋅7H2O (mass 3.13) | precursor: KMnO4 (mass 0.6) | additive: sodium hydroxide (conc 5000.0)"
+}

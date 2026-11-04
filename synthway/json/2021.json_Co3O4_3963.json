@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "2021.json_Co3O4_3963",
+  "composition": "Co3O4",
+  "elements": [
+    "Co",
+    "O"
+  ],
+  "method": "two-step method",
+  "precursors": [
+    {
+      "name": "Co2CO3(OH)2",
+      "conc": 50.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium carbonate",
+      "conc": 50.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 500.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "nanoplatelets",
+    "size": {
+      "length": 100.0,
+      "width": 100.0,
+      "depth": 10.0
+    }
+  },
+  "pdfno_list": [
+    "036-1475"
+  ],
+  "source": {
+    "synthesis_id_original": "2021.json_Co3O4_3963",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Co3O4 | method: two-step method | solvent: water | solvent.volume: 100.0 | temperature: 500.0 | crystalsystem: monoclinic | shape: nanoplatelets | size.length: 100.0 | size.width: 100.0 | size.depth: 10.0 | precursor: Co2CO3(OH)2 (conc 50.0) | additive: sodium carbonate (conc 50.0) | pdfno_list: 036-1475"
+}

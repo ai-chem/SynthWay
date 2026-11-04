@@ -1,0 +1,28 @@
+{
+  "synthesis_id": "712.json_SiO2_872",
+  "composition": "SiO2",
+  "elements": [
+    "Si",
+    "O"
+  ],
+  "method": "hydrolysis",
+  "solvent": {
+    "name": "ethanol and water"
+  },
+  "conditions": {
+    "temperature": 50.0
+  },
+  "product": {
+    "size": {
+      "length": 345.0,
+      "width": 345.0,
+      "depth": 345.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "712.json_SiO2_872",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: SiO2 | method: hydrolysis | solvent: ethanol and water | temperature: 50.0 | size.length: 345.0 | size.width: 345.0 | size.depth: 345.0"
+}

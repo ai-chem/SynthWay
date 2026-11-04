@@ -1,0 +1,28 @@
+{
+  "synthesis_id": "2369.json_CdS_3825",
+  "composition": "CdS",
+  "elements": [
+    "Cd",
+    "S"
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 6.0,
+      "width": 6.0,
+      "depth": 6.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2369.json_CdS_3825",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: CdS | solvent: water | temperature: 80.0 | crystalsystem: cubic | size.length: 6.0 | size.width: 6.0 | size.depth: 6.0"
+}

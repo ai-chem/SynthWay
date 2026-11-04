@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "2245.json_FeSe2_2094",
+  "composition": "FeSe2",
+  "elements": [
+    "Fe",
+    "Se"
+  ],
+  "method": "hot-injection",
+  "precursors": [
+    {
+      "name": "Se",
+      "conc": 1.0
+    },
+    {
+      "name": "Fe(acac)3–OLA",
+      "conc": 1000.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleylamine"
+    },
+    {
+      "name": "nitrogen"
+    }
+  ],
+  "conditions": {
+    "temperature": 220.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "wire",
+    "size": {
+      "length": 80.0,
+      "width": 80.0,
+      "depth": 80.0
+    }
+  },
+  "pdfno_list": [
+    "21-0432"
+  ],
+  "source": {
+    "synthesis_id_original": "2245.json_FeSe2_2094",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: FeSe2 | method: hot-injection | temperature: 220.0 | crystalsystem: orthorhombic | shape: wire | size.length: 80.0 | size.width: 80.0 | size.depth: 80.0 | precursor: Se (conc 1.0) | precursor: Fe(acac)3–OLA (conc 1000.0) | additive: oleylamine | additive: nitrogen | pdfno_list: 21-0432"
+}

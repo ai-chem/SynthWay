@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "960.json_Fe3O4_3039",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "coprecipitation",
+  "precursors": [
+    {
+      "name": "FeCl3",
+      "conc": 2.0
+    },
+    {
+      "name": "FeCl2",
+      "conc": 1.0
+    }
+  ],
+  "solvent": {
+    "name": "alkali solution",
+    "volume": 200.0
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "width": 3.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "960.json_Fe3O4_3039",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Fe3O4 | method: coprecipitation | solvent: alkali solution | solvent.volume: 200.0 | temperature: 60.0 | crystalsystem: cubic | shape: spherical | size.width: 3.0 | precursor: FeCl3 (conc 2.0) | precursor: FeCl2 (conc 1.0)"
+}

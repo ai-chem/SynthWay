@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "844.json_Fe3O4_2707",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "coprecipitation",
+  "precursors": [
+    {
+      "name": "FeCl3",
+      "mass": 19.46,
+      "conc": 793.0
+    },
+    {
+      "name": "KI",
+      "mass": 6.584,
+      "conc": 792.0
+    },
+    {
+      "name": "NH3",
+      "mass": 6.584,
+      "conc": 792.0
+    }
+  ],
+  "solvent": {
+    "name": "distilled water"
+  },
+  "conditions": {
+    "ph": 10.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "wire",
+    "size": {
+      "length": 46.2,
+      "width": 6.3,
+      "depth": 6.3
+    }
+  },
+  "source": {
+    "synthesis_id_original": "844.json_Fe3O4_2707",
+    "nodes": 16,
+    "edges": 17
+  },
+  "retrieval_text": "composition: Fe3O4 | method: coprecipitation | solvent: distilled water | pH: 10.0 | crystalsystem: cubic | shape: wire | size.length: 46.2 | size.width: 6.3 | size.depth: 6.3 | precursor: FeCl3 (mass 19.46; conc 793.0) | precursor: KI (mass 6.584; conc 792.0) | precursor: NH3 (mass 6.584; conc 792.0)"
+}

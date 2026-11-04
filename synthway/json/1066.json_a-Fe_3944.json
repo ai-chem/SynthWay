@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "1066.json_a-Fe_3944",
+  "composition": "a-Fe",
+  "elements": [
+    "Fe"
+  ],
+  "method": "reduction",
+  "precursors": [
+    {
+      "name": "FeCl3*6H2O",
+      "mass": 4.0
+    },
+    {
+      "name": "NaOH",
+      "mass": 10.0
+    },
+    {
+      "name": "N2H4*H2O",
+      "mass": 10.3
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 110.0
+  },
+  "product": {
+    "shape": "cubic-sugar shaped",
+    "size": {
+      "width": 250.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1066.json_a-Fe_3944",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: a-Fe | method: reduction | solvent: water | solvent.volume: 20.0 | temperature: 110.0 | shape: cubic-sugar shaped | size.width: 250.0 | precursor: FeCl3*6H2O (mass 4.0) | precursor: NaOH (mass 10.0) | precursor: N2H4*H2O (mass 10.3)"
+}

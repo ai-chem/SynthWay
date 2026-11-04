@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "178.json_LiNbO3_160",
+  "composition": "LiNbO3",
+  "elements": [
+    "Li",
+    "Nb",
+    "O"
+  ],
+  "method": "electrospinning",
+  "solvent": {
+    "name": "ethanol"
+  },
+  "conditions": {
+    "temperature": 30.0
+  },
+  "product": {
+    "crystalsystem": "rhombohedral",
+    "shape": "wire",
+    "size": {
+      "width": 137.0,
+      "depth": 137.0
+    }
+  },
+  "pdfno_list": [
+    "00-020-0631"
+  ],
+  "source": {
+    "synthesis_id_original": "178.json_LiNbO3_160",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: LiNbO3 | method: electrospinning | solvent: ethanol | temperature: 30.0 | crystalsystem: rhombohedral | shape: wire | size.width: 137.0 | size.depth: 137.0 | pdfno_list: 00-020-0631"
+}

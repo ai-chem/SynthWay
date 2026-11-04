@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "2224.json_α-Fe2O3_1688",
+  "composition": "α-Fe2O3",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "FeCl3*6H2O",
+      "conc": 4.0
+    },
+    {
+      "name": "NaAc",
+      "conc": 40.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 1.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "crystalsystem": "rhombohedral",
+    "shape": "spherical",
+    "size": {
+      "length": 40.0,
+      "width": 40.0,
+      "depth": 40.0
+    }
+  },
+  "pdfno_list": [
+    "84-0307"
+  ],
+  "source": {
+    "synthesis_id_original": "2224.json_α-Fe2O3_1688",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: α-Fe2O3 | method: hydrothermal | solvent: water | solvent.volume: 30.0 | temperature: 200.0 | crystalsystem: rhombohedral | shape: spherical | size.length: 40.0 | size.width: 40.0 | size.depth: 40.0 | precursor: FeCl3*6H2O (conc 4.0) | precursor: NaAc (conc 40.0) | additive: polyvinylpyrrolidone (mass 1.0) | pdfno_list: 84-0307"
+}

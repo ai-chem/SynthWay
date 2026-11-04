@@ -1,0 +1,29 @@
+{
+  "synthesis_id": "2344.json_Fe50Pd50_3580",
+  "composition": "Fe50Pd50",
+  "elements": [
+    "Fe",
+    "Pd"
+  ],
+  "solvent": {
+    "name": "dioctyl ether",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 100.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "size": {
+      "length": 11.0,
+      "width": 11.0,
+      "depth": 11.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2344.json_Fe50Pd50_3580",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: Fe50Pd50 | solvent: dioctyl ether | solvent.volume: 20.0 | temperature: 100.0 | crystalsystem: tetragonal | size.length: 11.0 | size.width: 11.0 | size.depth: 11.0"
+}

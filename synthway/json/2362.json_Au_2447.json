@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "2362.json_Au_2447",
+  "composition": "Au",
+  "elements": [
+    "Au"
+  ],
+  "precursors": [
+    {
+      "name": "HAuCl4*3H2O",
+      "conc": 0.5
+    }
+  ],
+  "additives": [
+    {
+      "name": "green tea extract",
+      "mass": 3.0
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 1.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 28.4,
+      "width": 28.4,
+      "depth": 28.4
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2362.json_Au_2447",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Au | solvent: water | temperature: 80.0 | shape: spherical | size.length: 28.4 | size.width: 28.4 | size.depth: 28.4 | precursor: HAuCl4*3H2O (conc 0.5) | additive: green tea extract (mass 3.0) | additive: sodium hydroxide (conc 1.0)"
+}

@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "2090.json_Casein-Pt_1079",
+  "composition": "Casein-Pt",
+  "elements": [
+    "Ca",
+    "Pt"
+  ],
+  "precursors": [
+    {
+      "name": "H2PtCl6",
+      "conc": 3.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "b-casein"
+    },
+    {
+      "name": "sodium borohydride",
+      "conc": 10.0
+    }
+  ],
+  "solvent": {
+    "name": "PBS",
+    "volume": 2.96
+  },
+  "conditions": {
+    "temperature": 45.0,
+    "ph": 7.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 3.8,
+      "width": 3.8,
+      "depth": 3.8
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2090.json_Casein-Pt_1079",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Casein-Pt | solvent: PBS | solvent.volume: 2.96 | temperature: 45.0 | pH: 7.0 | crystalsystem: cubic | shape: spherical | size.length: 3.8 | size.width: 3.8 | size.depth: 3.8 | precursor: H2PtCl6 (conc 3.0) | additive: b-casein | additive: sodium borohydride (conc 10.0)"
+}

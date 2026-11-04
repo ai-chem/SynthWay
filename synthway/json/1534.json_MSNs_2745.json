@@ -1,0 +1,53 @@
+{
+  "synthesis_id": "1534.json_MSNs_2745",
+  "composition": "MSNs",
+  "elements": [
+    "M",
+    "S",
+    "Ns"
+  ],
+  "method": "sol-gel",
+  "precursors": [
+    {
+      "name": "CTAB",
+      "mass": 0.25
+    },
+    {
+      "name": "Pluronic™ F-127",
+      "mass": 0.2
+    },
+    {
+      "name": "Si(OCH3)4"
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 2000.0
+    },
+    {
+      "name": "methanol"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 120.0
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 55.3,
+      "width": 55.3,
+      "depth": 55.3
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1534.json_MSNs_2745",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: MSNs | method: sol-gel | solvent: deionized water | solvent.volume: 120.0 | temperature: 80.0 | shape: spherical | size.length: 55.3 | size.width: 55.3 | size.depth: 55.3 | precursor: CTAB (mass 0.25) | precursor: Pluronic™ F-127 (mass 0.2) | precursor: Si(OCH3)4 | additive: sodium hydroxide (conc 2000.0) | additive: methanol"
+}

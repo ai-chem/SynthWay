@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1275.json_ZnO_1653",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2",
+      "conc": 2.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "allium cepa l. peel extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0,
+    "ph": 8.0
+  },
+  "product": {
+    "shape": "round",
+    "size": {
+      "length": 76.5,
+      "width": 76.5,
+      "depth": 76.5
+    }
+  },
+  "pdfno_list": [
+    "01-079-0207"
+  ],
+  "source": {
+    "synthesis_id_original": "1275.json_ZnO_1653",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: ZnO | method: green synthesis | solvent: water | temperature: 25.0 | pH: 8.0 | shape: round | size.length: 76.5 | size.width: 76.5 | size.depth: 76.5 | precursor: Zn(CH3COO)2 (conc 2.0) | additive: allium cepa l. peel extract | pdfno_list: 01-079-0207"
+}

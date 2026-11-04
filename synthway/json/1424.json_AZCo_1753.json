@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1424.json_AZCo_1753",
+  "composition": "AZCo",
+  "elements": [
+    "A",
+    "Z",
+    "Co"
+  ],
+  "method": "sol-gel",
+  "precursors": [
+    {
+      "name": "Zr(OC3H7)4"
+    },
+    {
+      "name": "Co(acac)2",
+      "mass": 0.036
+    }
+  ],
+  "additives": [
+    {
+      "name": "water with sulfuric acid"
+    }
+  ],
+  "solvent": {
+    "name": "propanol",
+    "volume": 20.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "shape": "spherical",
+    "size": {
+      "length": 7.3,
+      "width": 7.3,
+      "depth": 7.3
+    }
+  },
+  "pdfno_list": [
+    "80-2155"
+  ],
+  "source": {
+    "synthesis_id_original": "1424.json_AZCo_1753",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: AZCo | method: sol-gel | solvent: propanol | solvent.volume: 20.0 | crystalsystem: tetragonal | shape: spherical | size.length: 7.3 | size.width: 7.3 | size.depth: 7.3 | precursor: Zr(OC3H7)4 | precursor: Co(acac)2 (mass 0.036) | additive: water with sulfuric acid | pdfno_list: 80-2155"
+}

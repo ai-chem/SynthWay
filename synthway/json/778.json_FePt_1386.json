@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "778.json_FePt_1386",
+  "composition": "FePt",
+  "elements": [
+    "Fe",
+    "Pt"
+  ],
+  "precursors": [
+    {
+      "name": "Pt(C5H7O2)2",
+      "mass": 0.18
+    },
+    {
+      "name": "Na2[Fe(CO)4]",
+      "mass": 0.0639
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleyl amine"
+    }
+  ],
+  "solvent": {
+    "name": "18-crown-6"
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 4.6,
+      "width": 4.6,
+      "depth": 4.6
+    }
+  },
+  "source": {
+    "synthesis_id_original": "778.json_FePt_1386",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: FePt | solvent: 18-crown-6 | crystalsystem: face-centered cubic | shape: spherical | size.length: 4.6 | size.width: 4.6 | size.depth: 4.6 | precursor: Pt(C5H7O2)2 (mass 0.18) | precursor: Na2[Fe(CO)4] (mass 0.0639) | additive: oleyl amine"
+}

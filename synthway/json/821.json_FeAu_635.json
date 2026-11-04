@@ -1,0 +1,51 @@
+{
+  "synthesis_id": "821.json_FeAu_635",
+  "composition": "FeAu",
+  "elements": [
+    "Fe",
+    "Au"
+  ],
+  "precursors": [
+    {
+      "name": "FeSO4*7H2O",
+      "mass": 5.56
+    },
+    {
+      "name": "NaBH4",
+      "conc": 2000.0
+    },
+    {
+      "name": "AuCl3",
+      "mass": 7.88
+    }
+  ],
+  "additives": [
+    {
+      "name": "didodecyldimethylammonium bromide",
+      "mass": 37.04
+    },
+    {
+      "name": "3-mercapto-1-propansulphonicacid sodium salt",
+      "mass": 106.926
+    }
+  ],
+  "solvent": {
+    "name": "toluene",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 84.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "width": 4.9
+    }
+  },
+  "source": {
+    "synthesis_id_original": "821.json_FeAu_635",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: FeAu | solvent: toluene | solvent.volume: 20.0 | temperature: 84.0 | shape: spherical | size.width: 4.9 | precursor: FeSO4*7H2O (mass 5.56) | precursor: NaBH4 (conc 2000.0) | precursor: AuCl3 (mass 7.88) | additive: didodecyldimethylammonium bromide (mass 37.04) | additive: 3-mercapto-1-propansulphonicacid sodium salt (mass 106.926)"
+}

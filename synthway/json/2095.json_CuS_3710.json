@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "2095.json_CuS_3710",
+  "composition": "CuS",
+  "elements": [
+    "Cu",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "Cu(CH3COO)2",
+      "mass": 1.0
+    },
+    {
+      "name": "NaHS",
+      "mass": 0.56
+    }
+  ],
+  "additives": [
+    {
+      "name": "aspartic acid",
+      "mass": 0.05
+    },
+    {
+      "name": "chitosan",
+      "mass": 6e-05
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 40.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal"
+  },
+  "pdfno_list": [
+    "99-0037"
+  ],
+  "source": {
+    "synthesis_id_original": "2095.json_CuS_3710",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: CuS | solvent: water | solvent.volume: 40.0 | crystalsystem: hexagonal | precursor: Cu(CH3COO)2 (mass 1.0) | precursor: NaHS (mass 0.56) | additive: aspartic acid (mass 0.05) | additive: chitosan (mass 6e-05) | pdfno_list: 99-0037"
+}

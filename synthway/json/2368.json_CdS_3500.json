@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "2368.json_CdS_3500",
+  "composition": "CdS",
+  "elements": [
+    "Cd",
+    "S"
+  ],
+  "solvent": {
+    "name": "water/hexane/n-pentanol",
+    "volume": 75.0
+  },
+  "conditions": {
+    "temperature": 130.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "wire",
+    "size": {
+      "length": 640.0,
+      "width": 55.0,
+      "depth": 55.0
+    }
+  },
+  "pdfno_list": [
+    "41-1049"
+  ],
+  "source": {
+    "synthesis_id_original": "2368.json_CdS_3500",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: CdS | solvent: water/hexane/n-pentanol | solvent.volume: 75.0 | temperature: 130.0 | crystalsystem: hexagonal | shape: wire | size.length: 640.0 | size.width: 55.0 | size.depth: 55.0 | pdfno_list: 41-1049"
+}

@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "1044.json_VO2_575",
+  "composition": "VO2",
+  "elements": [
+    "V",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "VOSO4",
+      "mass": 0.815
+    },
+    {
+      "name": "CO(NH2)2",
+      "mass": 0.6
+    },
+    {
+      "name": "N2H4*H2O",
+      "mass": 0.6
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "shape": "plate"
+  },
+  "source": {
+    "synthesis_id_original": "1044.json_VO2_575",
+    "nodes": 11,
+    "edges": 11
+  },
+  "retrieval_text": "composition: VO2 | method: hydrothermal | solvent: deionized water | solvent.volume: 50.0 | temperature: 180.0 | shape: plate | precursor: VOSO4 (mass 0.815) | precursor: CO(NH2)2 (mass 0.6) | precursor: N2H4*H2O (mass 0.6)"
+}

@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "2254.json_GaAs_328",
+  "composition": "GaAs",
+  "elements": [
+    "Ga",
+    "As"
+  ],
+  "precursors": [
+    {
+      "name": "GaCl3",
+      "conc": 0.0065
+    },
+    {
+      "name": "As(Si(CH3)3)3",
+      "conc": 0.0065
+    }
+  ],
+  "solvent": {
+    "name": "quinoline",
+    "volume": 25.0
+  },
+  "conditions": {
+    "temperature": 450.0
+  },
+  "product": {
+    "shape": "prolate",
+    "size": {
+      "length": 45.8,
+      "width": 35.8,
+      "depth": 35.8
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2254.json_GaAs_328",
+    "nodes": 11,
+    "edges": 11
+  },
+  "retrieval_text": "composition: GaAs | solvent: quinoline | solvent.volume: 25.0 | temperature: 450.0 | shape: prolate | size.length: 45.8 | size.width: 35.8 | size.depth: 35.8 | precursor: GaCl3 (conc 0.0065) | precursor: As(Si(CH3)3)3 (conc 0.0065)"
+}

@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "1110.json_Ag_1263",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 2.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "quercetin"
+    },
+    {
+      "name": "microcrystalline cellulose"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "ph": 7.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 27.46,
+      "width": 27.46,
+      "depth": 27.46
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1110.json_Ag_1263",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Ag | solvent: water | pH: 7.0 | shape: spherical | size.length: 27.46 | size.width: 27.46 | size.depth: 27.46 | precursor: AgNO3 (conc 2.0) | additive: quercetin | additive: microcrystalline cellulose"
+}

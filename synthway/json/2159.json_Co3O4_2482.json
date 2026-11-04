@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "2159.json_Co3O4_2482",
+  "composition": "Co3O4",
+  "elements": [
+    "Co",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "CoCl2·6H2O",
+      "conc": 3.0
+    },
+    {
+      "name": "VCl3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "urea",
+      "mass": 0.6
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 70.0
+  },
+  "conditions": {
+    "temperature": 300.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "wire"
+  },
+  "pdfno_list": [
+    "43-1003"
+  ],
+  "source": {
+    "synthesis_id_original": "2159.json_Co3O4_2482",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Co3O4 | solvent: water | solvent.volume: 70.0 | temperature: 300.0 | crystalsystem: orthorhombic | shape: wire | precursor: CoCl2·6H2O (conc 3.0) | precursor: VCl3 (conc 1.0) | additive: urea (mass 0.6) | pdfno_list: 43-1003"
+}

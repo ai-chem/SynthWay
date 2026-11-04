@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "1034.json_Fe3O4_1414",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "polyol",
+  "precursors": [
+    {
+      "name": "FeCl3",
+      "mass": 0.81
+    }
+  ],
+  "additives": [
+    {
+      "name": "succinic acid",
+      "mass": 0.118
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "size": {
+      "width": 300.0
+    }
+  },
+  "pdfno_list": [
+    "19-629"
+  ],
+  "source": {
+    "synthesis_id_original": "1034.json_Fe3O4_1414",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Fe3O4 | method: polyol | solvent: ethylene glycol | solvent.volume: 30.0 | temperature: 200.0 | size.width: 300.0 | precursor: FeCl3 (mass 0.81) | additive: succinic acid (mass 0.118) | pdfno_list: 19-629"
+}

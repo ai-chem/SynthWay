@@ -1,0 +1,37 @@
+{
+  "synthesis_id": "1461.json_AgMOF_3981",
+  "composition": "AgMOF",
+  "elements": [
+    "Ag",
+    "M",
+    "O",
+    "F"
+  ],
+  "precursors": [
+    {
+      "name": "C9H6O6",
+      "mass": 0.5
+    },
+    {
+      "name": "AgNO3",
+      "mass": 0.5
+    }
+  ],
+  "solvent": {
+    "name": "ethanol and water",
+    "volume": 40.0
+  },
+  "product": {
+    "size": {
+      "length": 20.0,
+      "width": 20.0,
+      "depth": 20.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1461.json_AgMOF_3981",
+    "nodes": 9,
+    "edges": 9
+  },
+  "retrieval_text": "composition: AgMOF | solvent: ethanol and water | solvent.volume: 40.0 | size.length: 20.0 | size.width: 20.0 | size.depth: 20.0 | precursor: C9H6O6 (mass 0.5) | precursor: AgNO3 (mass 0.5)"
+}

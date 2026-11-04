@@ -1,0 +1,29 @@
+{
+  "synthesis_id": "428.json_Zn3(VO4)_2432",
+  "composition": "Zn3(VO4)",
+  "elements": [
+    "Zn",
+    "V",
+    "O"
+  ],
+  "method": "sol-gel",
+  "solvent": {
+    "name": "methanol",
+    "volume": 112.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 24.5
+    }
+  },
+  "pdfno_list": [
+    "37-1485"
+  ],
+  "source": {
+    "synthesis_id_original": "428.json_Zn3(VO4)_2432",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: Zn3(VO4) | method: sol-gel | solvent: methanol | solvent.volume: 112.0 | shape: spherical | size.length: 24.5 | pdfno_list: 37-1485"
+}

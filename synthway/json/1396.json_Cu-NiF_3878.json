@@ -1,0 +1,54 @@
+{
+  "synthesis_id": "1396.json_Cu-NiF_3878",
+  "composition": "Cu-NiF",
+  "elements": [
+    "Cu",
+    "Ni",
+    "F"
+  ],
+  "method": "sol-gel",
+  "precursors": [
+    {
+      "name": "Nickel nitrate [Ni(NO3)2·6H2O]",
+      "conc": 200.0
+    },
+    {
+      "name": "ferric nitrate [Fe(NO3)3·9H2O]",
+      "conc": 200.0
+    },
+    {
+      "name": "Cu(NO3)2"
+    }
+  ],
+  "additives": [
+    {
+      "name": "citric acid",
+      "conc": 400.0
+    }
+  ],
+  "solvent": {
+    "name": "distilled water"
+  },
+  "conditions": {
+    "temperature": 100.0,
+    "ph": 7.0
+  },
+  "product": {
+    "crystalsystem": "cubic spinel",
+    "shape": "octahedral",
+    "size": {
+      "length": 23.0,
+      "width": 23.0,
+      "depth": 23.0
+    }
+  },
+  "pdfno_list": [
+    "10-0325"
+  ],
+  "source": {
+    "synthesis_id_original": "1396.json_Cu-NiF_3878",
+    "nodes": 17,
+    "edges": 17
+  },
+  "retrieval_text": "composition: Cu-NiF | method: sol-gel | solvent: distilled water | temperature: 100.0 | pH: 7.0 | crystalsystem: cubic spinel | shape: octahedral | size.length: 23.0 | size.width: 23.0 | size.depth: 23.0 | precursor: Nickel nitrate [Ni(NO3)2·6H2O] (conc 200.0) | precursor: ferric nitrate [Fe(NO3)3·9H2O] (conc 200.0) | precursor: Cu(NO3)2 | additive: citric acid (conc 400.0) | pdfno_list: 10-0325"
+}

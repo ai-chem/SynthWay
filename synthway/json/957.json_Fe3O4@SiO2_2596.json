@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "957.json_Fe3O4@SiO2_2596",
+  "composition": "Fe3O4@SiO2",
+  "elements": [
+    "Fe",
+    "O",
+    "Si"
+  ],
+  "method": "reverse microemulsion approach",
+  "precursors": [
+    {
+      "name": "Fe3O4"
+    },
+    {
+      "name": "NH4OH"
+    },
+    {
+      "name": "Si(OC2H5)4"
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyoxyethylene(5)nonylphenyl ether"
+    },
+    {
+      "name": "oleylamine"
+    }
+  ],
+  "solvent": {
+    "name": "cyclohexane"
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "width": 11.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "957.json_Fe3O4@SiO2_2596",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Fe3O4@SiO2 | method: reverse microemulsion approach | solvent: cyclohexane | shape: spherical | size.width: 11.0 | precursor: Fe3O4 | precursor: NH4OH | precursor: Si(OC2H5)4 | additive: polyoxyethylene(5)nonylphenyl ether | additive: oleylamine"
+}

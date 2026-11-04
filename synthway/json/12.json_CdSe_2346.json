@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "12.json_CdSe_2346",
+  "composition": "CdSe",
+  "elements": [
+    "Cd",
+    "Se"
+  ],
+  "method": "elemental direct reaction",
+  "solvent": {
+    "name": "ethylenediamine"
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "flake",
+    "size": {
+      "length": 512.5,
+      "width": 512.5,
+      "depth": 512.5
+    }
+  },
+  "pdfno_list": [
+    "00-008-0459"
+  ],
+  "source": {
+    "synthesis_id_original": "12.json_CdSe_2346",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: CdSe | method: elemental direct reaction | solvent: ethylenediamine | temperature: 180.0 | crystalsystem: hexagonal | shape: flake | size.length: 512.5 | size.width: 512.5 | size.depth: 512.5 | pdfno_list: 00-008-0459"
+}

@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1928.json_Co3O4_3740",
+  "composition": "Co3O4",
+  "elements": [
+    "Co",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Co(NO3)2·6H2O",
+      "mass": 0.44
+    }
+  ],
+  "additives": [
+    {
+      "name": "urea",
+      "mass": 0.18
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 400.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "wire",
+    "size": {
+      "length": 10000.0,
+      "width": 125.0,
+      "depth": 125.0
+    }
+  },
+  "pdfno_list": [
+    "48-0083"
+  ],
+  "source": {
+    "synthesis_id_original": "1928.json_Co3O4_3740",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Co3O4 | solvent: water | temperature: 400.0 | crystalsystem: orthorhombic | shape: wire | size.length: 10000.0 | size.width: 125.0 | size.depth: 125.0 | precursor: Co(NO3)2·6H2O (mass 0.44) | additive: urea (mass 0.18) | pdfno_list: 48-0083"
+}

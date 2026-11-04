@@ -1,0 +1,35 @@
+{
+  "synthesis_id": "137.json_CeO2_3456",
+  "composition": "CeO2",
+  "elements": [
+    "Ce",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "solvent": {
+    "name": "deionized water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 700.0,
+    "ph": 11.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 17.0,
+      "width": 17.0,
+      "depth": 17.0
+    }
+  },
+  "pdfno_list": [
+    "01-081-0792"
+  ],
+  "source": {
+    "synthesis_id_original": "137.json_CeO2_3456",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: CeO2 | method: hydrothermal | solvent: deionized water | solvent.volume: 50.0 | temperature: 700.0 | pH: 11.0 | crystalsystem: face-centered cubic | shape: spherical | size.length: 17.0 | size.width: 17.0 | size.depth: 17.0 | pdfno_list: 01-081-0792"
+}

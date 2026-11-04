@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "1473.json_Cu_1807",
+  "composition": "Cu",
+  "elements": [
+    "Cu"
+  ],
+  "precursors": [
+    {
+      "name": "CuSO4",
+      "conc": 350.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "m. oleifera seed (mos) aqueous extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "size": {
+      "length": 7.38,
+      "width": 7.38,
+      "depth": 7.38
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1473.json_Cu_1807",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Cu | solvent: water | temperature: 80.0 | crystalsystem: monoclinic | size.length: 7.38 | size.width: 7.38 | size.depth: 7.38 | precursor: CuSO4 (conc 350.0) | additive: m. oleifera seed (mos) aqueous extract"
+}

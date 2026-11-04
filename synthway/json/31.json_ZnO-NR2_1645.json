@@ -1,0 +1,35 @@
+{
+  "synthesis_id": "31.json_ZnO-NR2_1645",
+  "composition": "ZnO-NR2",
+  "elements": [
+    "Zn",
+    "O",
+    "N",
+    "R"
+  ],
+  "solvent": {
+    "name": "acetic acid",
+    "volume": 3.0
+  },
+  "conditions": {
+    "temperature": 160.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "wire",
+    "size": {
+      "length": 870.0,
+      "width": 61.0,
+      "depth": 61.0
+    }
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "31.json_ZnO-NR2_1645",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: ZnO-NR2 | solvent: acetic acid | solvent.volume: 3.0 | temperature: 160.0 | crystalsystem: hexagonal | shape: wire | size.length: 870.0 | size.width: 61.0 | size.depth: 61.0 | pdfno_list: 36-1451"
+}

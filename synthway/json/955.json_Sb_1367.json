@@ -1,0 +1,51 @@
+{
+  "synthesis_id": "955.json_Sb_1367",
+  "composition": "Sb",
+  "elements": [
+    "Sb"
+  ],
+  "method": "solution based thermolysis route",
+  "precursors": [
+    {
+      "name": "SbCl3",
+      "mass": 0.08
+    },
+    {
+      "name": "NaBH4",
+      "mass": 0.031
+    }
+  ],
+  "additives": [
+    {
+      "name": "trioctylphosphine"
+    },
+    {
+      "name": "dodecylamine",
+      "mass": 6.0
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 230.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "irregular",
+    "size": {
+      "length": 24.2,
+      "width": 18.3
+    }
+  },
+  "pdfno_list": [
+    "01-085-1322"
+  ],
+  "source": {
+    "synthesis_id_original": "955.json_Sb_1367",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: Sb | method: solution based thermolysis route | solvent: deionized water | solvent.volume: 100.0 | temperature: 230.0 | crystalsystem: orthorhombic | shape: irregular | size.length: 24.2 | size.width: 18.3 | precursor: SbCl3 (mass 0.08) | precursor: NaBH4 (mass 0.031) | additive: trioctylphosphine | additive: dodecylamine (mass 6.0) | pdfno_list: 01-085-1322"
+}

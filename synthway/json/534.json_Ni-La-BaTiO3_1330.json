@@ -1,0 +1,24 @@
+{
+  "synthesis_id": "534.json_Ni-La-BaTiO3_1330",
+  "composition": "Ni-La-BaTiO3",
+  "elements": [
+    "Ni",
+    "La",
+    "Ba",
+    "Ti",
+    "O"
+  ],
+  "method": "sol-gel",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 700.0
+  },
+  "source": {
+    "synthesis_id_original": "534.json_Ni-La-BaTiO3_1330",
+    "nodes": 4,
+    "edges": 3
+  },
+  "retrieval_text": "composition: Ni-La-BaTiO3 | method: sol-gel | solvent: water | temperature: 700.0"
+}

@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "1422.json_3D_Zn-MOF@Au_940",
+  "composition": "3D Zn-MOF@Au",
+  "elements": [
+    "D",
+    "Zn",
+    "M",
+    "O",
+    "F",
+    "Au"
+  ],
+  "method": "one-pot synthesis",
+  "precursors": [
+    {
+      "name": "3D Zn-MOF"
+    },
+    {
+      "name": "Au NPs"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "dodecahedral"
+  },
+  "source": {
+    "synthesis_id_original": "1422.json_3D_Zn-MOF@Au_940",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: 3D Zn-MOF@Au | method: one-pot synthesis | solvent: water | shape: dodecahedral | precursor: 3D Zn-MOF | precursor: Au NPs"
+}

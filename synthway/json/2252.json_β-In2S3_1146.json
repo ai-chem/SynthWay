@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "2252.json_β-In2S3_1146",
+  "composition": "β-In2S3",
+  "elements": [
+    "In",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "InCl3·4H2O",
+      "conc": 2.0
+    },
+    {
+      "name": "Na2S·9H2O",
+      "conc": 5.0
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 23.0,
+      "width": 23.0,
+      "depth": 23.0
+    }
+  },
+  "pdfno_list": [
+    "65-0459"
+  ],
+  "source": {
+    "synthesis_id_original": "2252.json_β-In2S3_1146",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: β-In2S3 | solvent: distilled water | solvent.volume: 20.0 | temperature: 180.0 | crystalsystem: cubic | size.length: 23.0 | size.width: 23.0 | size.depth: 23.0 | precursor: InCl3·4H2O (conc 2.0) | precursor: Na2S·9H2O (conc 5.0) | pdfno_list: 65-0459"
+}

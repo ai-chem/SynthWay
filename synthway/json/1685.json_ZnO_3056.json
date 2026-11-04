@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "1685.json_ZnO_3056",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "solvo-hydrothermal",
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2"
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "ethanol"
+  },
+  "conditions": {
+    "temperature": 70.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 47.44,
+      "width": 47.44,
+      "depth": 47.44
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1685.json_ZnO_3056",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: ZnO | method: solvo-hydrothermal | solvent: ethanol | temperature: 70.0 | shape: spherical | size.length: 47.44 | size.width: 47.44 | size.depth: 47.44 | precursor: Zn(CH3COO)2 | additive: sodium hydroxide"
+}

@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "814.json_Fe0.2Ni0.8_3400",
+  "composition": "Fe0.2Ni0.8",
+  "elements": [
+    "Fe",
+    "Ni"
+  ],
+  "method": "microemulsion",
+  "precursors": [
+    {
+      "name": "FeCl2",
+      "conc": 400.0
+    },
+    {
+      "name": "NiCl2",
+      "conc": 100.0
+    },
+    {
+      "name": "NaBH4",
+      "conc": 800.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "cetyltrimethylammonium bromide"
+    },
+    {
+      "name": "butanol"
+    }
+  ],
+  "solvent": {
+    "name": "isooctane"
+  },
+  "conditions": {
+    "temperature": 700.0
+  },
+  "product": {
+    "crystalsystem": "primitive cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 2.5,
+      "width": 2.5,
+      "depth": 2.5
+    }
+  },
+  "source": {
+    "synthesis_id_original": "814.json_Fe0.2Ni0.8_3400",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: Fe0.2Ni0.8 | method: microemulsion | solvent: isooctane | temperature: 700.0 | crystalsystem: primitive cubic | shape: spherical | size.length: 2.5 | size.width: 2.5 | size.depth: 2.5 | precursor: FeCl2 (conc 400.0) | precursor: NiCl2 (conc 100.0) | precursor: NaBH4 (conc 800.0) | additive: cetyltrimethylammonium bromide | additive: butanol"
+}

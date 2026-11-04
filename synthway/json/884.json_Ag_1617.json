@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "884.json_Ag_1617",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "Ag",
+      "mass": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium chloride"
+    }
+  ],
+  "solvent": {
+    "name": "nitric acid",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 90.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 3.0,
+      "width": 3.0,
+      "depth": 3.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "884.json_Ag_1617",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Ag | solvent: nitric acid | solvent.volume: 100.0 | temperature: 90.0 | shape: spherical | size.length: 3.0 | size.width: 3.0 | size.depth: 3.0 | precursor: Ag (mass 100.0) | additive: sodium chloride"
+}

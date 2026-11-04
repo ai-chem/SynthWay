@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "1973.json_Ir_4065",
+  "composition": "Ir",
+  "elements": [
+    "Ir"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "IrCl3",
+      "conc": 2.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "tannic acid",
+      "conc": 2.0
+    },
+    {
+      "name": "sodium borohydride",
+      "conc": 500.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "size": {
+      "length": 3.5,
+      "width": 3.5,
+      "depth": 3.5
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1973.json_Ir_4065",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Ir | method: hydrothermal | solvent: water | size.length: 3.5 | size.width: 3.5 | size.depth: 3.5 | precursor: IrCl3 (conc 2.0) | additive: tannic acid (conc 2.0) | additive: sodium borohydride (conc 500.0)"
+}

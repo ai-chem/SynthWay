@@ -1,0 +1,30 @@
+{
+  "synthesis_id": "486.json_Mn_2473",
+  "composition": "Mn",
+  "elements": [
+    "Mn"
+  ],
+  "method": "hydrothermal",
+  "solvent": {
+    "name": "water",
+    "volume": 500.0
+  },
+  "conditions": {
+    "temperature": 550.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "size": {
+      "length": 100.0
+    }
+  },
+  "pdfno_list": [
+    "04-0326"
+  ],
+  "source": {
+    "synthesis_id_original": "486.json_Mn_2473",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: Mn | method: hydrothermal | solvent: water | solvent.volume: 500.0 | temperature: 550.0 | crystalsystem: face-centered cubic | size.length: 100.0 | pdfno_list: 04-0326"
+}

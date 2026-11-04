@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1995.json_CeO2_1176",
+  "composition": "CeO2",
+  "elements": [
+    "Ce",
+    "O"
+  ],
+  "method": "single-step microwave",
+  "precursors": [
+    {
+      "name": "Ce(NO3)3·6H2O",
+      "mass": 0.7903
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 100.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 100.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 9.3,
+      "width": 9.3,
+      "depth": 9.3
+    }
+  },
+  "pdfno_list": [
+    "34-0394"
+  ],
+  "source": {
+    "synthesis_id_original": "1995.json_CeO2_1176",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: CeO2 | method: single-step microwave | solvent: water | solvent.volume: 20.0 | temperature: 100.0 | crystalsystem: cubic | size.length: 9.3 | size.width: 9.3 | size.depth: 9.3 | precursor: Ce(NO3)3·6H2O (mass 0.7903) | additive: sodium hydroxide (conc 100.0) | pdfno_list: 34-0394"
+}

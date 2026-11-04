@@ -1,0 +1,29 @@
+{
+  "synthesis_id": "2392.json_Au_584",
+  "composition": "Au",
+  "elements": [
+    "Au"
+  ],
+  "method": "turkevich",
+  "solvent": {
+    "name": "deionized water",
+    "volume": 94.6
+  },
+  "conditions": {
+    "temperature": 90.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "size": {
+      "length": 15.5,
+      "width": 15.5,
+      "depth": 15.5
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2392.json_Au_584",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: Au | method: turkevich | solvent: deionized water | solvent.volume: 94.6 | temperature: 90.0 | crystalsystem: face-centered cubic | size.length: 15.5 | size.width: 15.5 | size.depth: 15.5"
+}

@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "1433.json_NiO_1375",
+  "composition": "NiO",
+  "elements": [
+    "Ni",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Ni (NO3)2·6H2O",
+      "mass": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "aloe vera extract"
+    },
+    {
+      "name": "nitric acid"
+    },
+    {
+      "name": "distilled water",
+      "mass": 8.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 75.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 15.4,
+      "width": 15.4,
+      "depth": 15.4
+    }
+  },
+  "pdfno_list": [
+    "04-0835"
+  ],
+  "source": {
+    "synthesis_id_original": "1433.json_NiO_1375",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: NiO | method: green synthesis | solvent: water | temperature: 75.0 | crystalsystem: cubic | size.length: 15.4 | size.width: 15.4 | size.depth: 15.4 | precursor: Ni (NO3)2·6H2O (mass 10.0) | additive: aloe vera extract | additive: nitric acid | additive: distilled water (mass 8.0) | pdfno_list: 04-0835"
+}

@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "1036.json_CuFe2O4_2563",
+  "composition": "CuFe2O4",
+  "elements": [
+    "Cu",
+    "Fe",
+    "O"
+  ],
+  "method": "microwave-assisted hydrothermal",
+  "precursors": [
+    {
+      "name": "Cu(NO3)2∙6H2O",
+      "mass": 1.48
+    },
+    {
+      "name": "Fe(NO3)3∙9H2O",
+      "mass": 4.04
+    }
+  ],
+  "additives": [
+    {
+      "name": "potassium hydroxide",
+      "conc": 3000.0
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 40.0
+  },
+  "conditions": {
+    "temperature": 150.0,
+    "ph": 6.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "width": 2.44
+    }
+  },
+  "pdfno_list": [
+    "25-0283"
+  ],
+  "source": {
+    "synthesis_id_original": "1036.json_CuFe2O4_2563",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: CuFe2O4 | method: microwave-assisted hydrothermal | solvent: deionized water | solvent.volume: 40.0 | temperature: 150.0 | pH: 6.0 | crystalsystem: cubic | size.width: 2.44 | precursor: Cu(NO3)2∙6H2O (mass 1.48) | precursor: Fe(NO3)3∙9H2O (mass 4.04) | additive: potassium hydroxide (conc 3000.0) | pdfno_list: 25-0283"
+}

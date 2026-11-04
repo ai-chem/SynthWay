@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1576.json_AZM-Ag_1362",
+  "composition": "AZM-Ag",
+  "elements": [
+    "A",
+    "Z",
+    "M",
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AZM (ethanol solution)",
+      "mass": 0.02
+    },
+    {
+      "name": "AgNPs",
+      "mass": 0.2
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 30.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 34.7,
+      "width": 34.7,
+      "depth": 34.7
+    }
+  },
+  "pdfno_list": [
+    "00-901-3046"
+  ],
+  "source": {
+    "synthesis_id_original": "1576.json_AZM-Ag_1362",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: AZM-Ag | method: green synthesis | solvent: water | temperature: 30.0 | crystalsystem: cubic | size.length: 34.7 | size.width: 34.7 | size.depth: 34.7 | precursor: AZM (ethanol solution) (mass 0.02) | precursor: AgNPs (mass 0.2) | pdfno_list: 00-901-3046"
+}

@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1925.json_Co3O4_3310",
+  "composition": "Co3O4",
+  "elements": [
+    "Co",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "Co(NO3)2",
+      "conc": 0.1
+    }
+  ],
+  "additives": [
+    {
+      "name": "hexamethylenetetramine",
+      "conc": 0.1
+    }
+  ],
+  "solvent": {
+    "name": "dimethylformamide",
+    "volume": 16.0
+  },
+  "conditions": {
+    "temperature": 140.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "quasi-cubic",
+    "size": {
+      "length": 8.3,
+      "width": 8.3,
+      "depth": 8.3
+    }
+  },
+  "pdfno_list": [
+    "09-418"
+  ],
+  "source": {
+    "synthesis_id_original": "1925.json_Co3O4_3310",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Co3O4 | method: hydrothermal | solvent: dimethylformamide | solvent.volume: 16.0 | temperature: 140.0 | crystalsystem: cubic | shape: quasi-cubic | size.length: 8.3 | size.width: 8.3 | size.depth: 8.3 | precursor: Co(NO3)2 (conc 0.1) | additive: hexamethylenetetramine (conc 0.1) | pdfno_list: 09-418"
+}

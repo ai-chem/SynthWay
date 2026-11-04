@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "907.json_PR-CuO_3984",
+  "composition": "PR-CuO",
+  "elements": [
+    "P",
+    "R",
+    "Cu",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Cu(NO3)2",
+      "conc": 5.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "ethyl acetate extract of penicillium radiatolobatum (pr)"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 40.0
+  },
+  "product": {
+    "shape": "oval",
+    "size": {
+      "length": 129.9,
+      "width": 129.9,
+      "depth": 129.9
+    }
+  },
+  "pdfno_list": [
+    "048-1548"
+  ],
+  "source": {
+    "synthesis_id_original": "907.json_PR-CuO_3984",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: PR-CuO | solvent: water | temperature: 40.0 | shape: oval | size.length: 129.9 | size.width: 129.9 | size.depth: 129.9 | precursor: Cu(NO3)2 (conc 5.0) | additive: ethyl acetate extract of penicillium radiatolobatum (pr) | pdfno_list: 048-1548"
+}

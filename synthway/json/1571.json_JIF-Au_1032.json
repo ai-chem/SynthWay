@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "1571.json_JIF-Au_1032",
+  "composition": "JIF-Au",
+  "elements": [
+    "J",
+    "I",
+    "F",
+    "Au"
+  ],
+  "precursors": [
+    {
+      "name": "AuCl3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "jatropha integerrima aqueous extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 37.7,
+      "width": 37.7,
+      "depth": 37.7
+    }
+  },
+  "pdfno_list": [
+    "04-0783"
+  ],
+  "source": {
+    "synthesis_id_original": "1571.json_JIF-Au_1032",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: JIF-Au | solvent: water | crystalsystem: cubic | shape: spherical | size.length: 37.7 | size.width: 37.7 | size.depth: 37.7 | precursor: AuCl3 (conc 1.0) | additive: jatropha integerrima aqueous extract | pdfno_list: 04-0783"
+}

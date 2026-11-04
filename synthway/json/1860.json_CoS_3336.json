@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "1860.json_CoS_3336",
+  "composition": "CoS",
+  "elements": [
+    "Co",
+    "S"
+  ],
+  "method": "one-pot hydrothermal",
+  "precursors": [
+    {
+      "name": "Co(CH3COO)2*4H2O",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "methylcyclopentadienyl manganese tricarbonyl",
+      "mass": 0.3
+    },
+    {
+      "name": "thiourea",
+      "conc": 1.2
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 30.0,
+      "width": 30.0,
+      "depth": 30.0
+    }
+  },
+  "pdfno_list": [
+    "65-3418"
+  ],
+  "source": {
+    "synthesis_id_original": "1860.json_CoS_3336",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: CoS | method: one-pot hydrothermal | solvent: ethylene glycol | solvent.volume: 30.0 | temperature: 180.0 | crystalsystem: hexagonal | shape: spherical | size.length: 30.0 | size.width: 30.0 | size.depth: 30.0 | precursor: Co(CH3COO)2*4H2O (conc 1.0) | additive: methylcyclopentadienyl manganese tricarbonyl (mass 0.3) | additive: thiourea (conc 1.2) | pdfno_list: 65-3418"
+}

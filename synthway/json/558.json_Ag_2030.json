@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "558.json_Ag_2030",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "biosynthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "s. marcescens extract"
+    },
+    {
+      "name": "acetone"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 17.75,
+      "width": 17.75,
+      "depth": 17.75
+    }
+  },
+  "source": {
+    "synthesis_id_original": "558.json_Ag_2030",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Ag | method: biosynthesis | solvent: water | shape: spherical | size.length: 17.75 | size.width: 17.75 | size.depth: 17.75 | precursor: AgNO3 (conc 1.0) | additive: s. marcescens extract | additive: acetone"
+}

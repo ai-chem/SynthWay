@@ -1,0 +1,32 @@
+{
+  "synthesis_id": "130.json_CeO2_3068",
+  "composition": "CeO2",
+  "elements": [
+    "Ce",
+    "O"
+  ],
+  "solvent": {
+    "name": "native cassava"
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "crystalsystem": "fluorite",
+    "shape": "spherical",
+    "size": {
+      "length": 8.94,
+      "width": 8.94,
+      "depth": 8.94
+    }
+  },
+  "pdfno_list": [
+    "00-004-0593"
+  ],
+  "source": {
+    "synthesis_id_original": "130.json_CeO2_3068",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: CeO2 | solvent: native cassava | temperature: 200.0 | crystalsystem: fluorite | shape: spherical | size.length: 8.94 | size.width: 8.94 | size.depth: 8.94 | pdfno_list: 00-004-0593"
+}

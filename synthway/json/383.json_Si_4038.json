@@ -1,0 +1,26 @@
+{
+  "synthesis_id": "383.json_Si_4038",
+  "composition": "Si",
+  "elements": [
+    "Si"
+  ],
+  "method": "wet grinding mill",
+  "solvent": {
+    "name": "ethanol"
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "size": {
+      "width": 3.0
+    }
+  },
+  "pdfno_list": [
+    "27-1402"
+  ],
+  "source": {
+    "synthesis_id_original": "383.json_Si_4038",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: Si | method: wet grinding mill | solvent: ethanol | crystalsystem: face-centered cubic | size.width: 3.0 | pdfno_list: 27-1402"
+}

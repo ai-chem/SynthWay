@@ -1,0 +1,31 @@
+{
+  "synthesis_id": "250.json_Mn3O4_897",
+  "composition": "Mn3O4",
+  "elements": [
+    "Mn",
+    "O"
+  ],
+  "method": "precipitation",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "crystalsystem": "tetragonal",
+    "shape": "octahedral",
+    "size": {
+      "length": 50.0
+    }
+  },
+  "pdfno_list": [
+    "01-080-0382"
+  ],
+  "source": {
+    "synthesis_id_original": "250.json_Mn3O4_897",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: Mn3O4 | method: precipitation | solvent: water | temperature: 80.0 | crystalsystem: tetragonal | shape: octahedral | size.length: 50.0 | pdfno_list: 01-080-0382"
+}

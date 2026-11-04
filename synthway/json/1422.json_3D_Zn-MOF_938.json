@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "1422.json_3D_Zn-MOF_938",
+  "composition": "3D Zn-MOF",
+  "elements": [
+    "D",
+    "Zn",
+    "M",
+    "O",
+    "F"
+  ],
+  "precursors": [
+    {
+      "name": "C4H6N2",
+      "mass": 4.0
+    },
+    {
+      "name": "Zinc nitrate hexahydrate (Zn(NO3)2·6H2O)",
+      "mass": 1.68
+    }
+  ],
+  "solvent": {
+    "name": "methanol",
+    "volume": 80.0
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "size": {
+      "length": 275.0,
+      "width": 275.0,
+      "depth": 275.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1422.json_3D_Zn-MOF_938",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: 3D Zn-MOF | solvent: methanol | solvent.volume: 80.0 | temperature: 25.0 | size.length: 275.0 | size.width: 275.0 | size.depth: 275.0 | precursor: C4H6N2 (mass 4.0) | precursor: Zinc nitrate hexahydrate (Zn(NO3)2·6H2O) (mass 1.68)"
+}

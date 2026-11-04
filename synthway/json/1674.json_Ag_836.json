@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "1674.json_Ag_836",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 4.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "flowers and leaves of pandanus foetidus and alangium salvifolium"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 23.9,
+      "width": 23.9,
+      "depth": 23.9
+    }
+  },
+  "pdfno_list": [
+    "04-0783"
+  ],
+  "source": {
+    "synthesis_id_original": "1674.json_Ag_836",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Ag | solvent: water | shape: spherical | size.length: 23.9 | size.width: 23.9 | size.depth: 23.9 | precursor: AgNO3 (conc 4.0) | additive: flowers and leaves of pandanus foetidus and alangium salvifolium | pdfno_list: 04-0783"
+}

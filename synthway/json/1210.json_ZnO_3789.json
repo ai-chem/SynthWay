@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "1210.json_ZnO_3789",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "chemical precipitation",
+  "precursors": [
+    {
+      "name": "Zinc acetate"
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 100.0
+    }
+  ],
+  "solvent": {
+    "name": "double distilled water"
+  },
+  "product": {
+    "crystalsystem": "nano-crystallites",
+    "size": {
+      "length": 12.0,
+      "width": 12.0,
+      "depth": 12.0
+    }
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "1210.json_ZnO_3789",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: ZnO | method: chemical precipitation | solvent: double distilled water | crystalsystem: nano-crystallites | size.length: 12.0 | size.width: 12.0 | size.depth: 12.0 | precursor: Zinc acetate | additive: sodium hydroxide (conc 100.0) | pdfno_list: 36-1451"
+}

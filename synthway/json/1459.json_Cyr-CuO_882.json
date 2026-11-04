@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "1459.json_Cyr-CuO_882",
+  "composition": "Cyr-CuO",
+  "elements": [
+    "Cy",
+    "Cu",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "CuSO4"
+    }
+  ],
+  "additives": [
+    {
+      "name": "cyperus rotundus extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 4.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "spherical",
+    "size": {
+      "length": 35.0,
+      "width": 35.0,
+      "depth": 35.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1459.json_Cyr-CuO_882",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Cyr-CuO | method: green synthesis | solvent: water | temperature: 4.0 | crystalsystem: monoclinic | shape: spherical | size.length: 35.0 | size.width: 35.0 | size.depth: 35.0 | precursor: CuSO4 | additive: cyperus rotundus extract"
+}

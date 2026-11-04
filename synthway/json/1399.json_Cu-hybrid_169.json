@@ -1,0 +1,55 @@
+{
+  "synthesis_id": "1399.json_Cu-hybrid_169",
+  "composition": "Cu-hybrid",
+  "elements": [
+    "Cu"
+  ],
+  "method": "protein-directed",
+  "precursors": [
+    {
+      "name": "CAT"
+    },
+    {
+      "name": "Cu2SO4·5 H2O",
+      "mass": 0.6
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium phosphate",
+      "conc": 100.0
+    },
+    {
+      "name": "sodium borohydride",
+      "mass": 0.03,
+      "conc": 120.0
+    },
+    {
+      "name": "water",
+      "mass": 17.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "shape": "cube",
+    "size": {
+      "length": 32.0,
+      "width": 32.0,
+      "depth": 32.0
+    }
+  },
+  "pdfno_list": [
+    "00-022-0548"
+  ],
+  "source": {
+    "synthesis_id_original": "1399.json_Cu-hybrid_169",
+    "nodes": 19,
+    "edges": 18
+  },
+  "retrieval_text": "composition: Cu-hybrid | method: protein-directed | solvent: water | temperature: 25.0 | shape: cube | size.length: 32.0 | size.width: 32.0 | size.depth: 32.0 | precursor: CAT | precursor: Cu2SO4·5 H2O (mass 0.6) | additive: sodium phosphate (conc 100.0) | additive: sodium borohydride (mass 0.03; conc 120.0) | additive: water (mass 17.0) | pdfno_list: 00-022-0548"
+}

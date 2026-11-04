@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1769.json_Ce_3414",
+  "composition": "Ce",
+  "elements": [
+    "Ce"
+  ],
+  "precursors": [
+    {
+      "name": "Ce(NO3)3*5H2O",
+      "mass": 0.52
+    }
+  ],
+  "additives": [
+    {
+      "name": "citric acid",
+      "mass": 0.48
+    }
+  ],
+  "solvent": {
+    "name": "ammonia solution",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "blocky",
+    "size": {
+      "length": 4.0,
+      "width": 4.0,
+      "depth": 4.0
+    }
+  },
+  "pdfno_list": [
+    "34-0394"
+  ],
+  "source": {
+    "synthesis_id_original": "1769.json_Ce_3414",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Ce | solvent: ammonia solution | solvent.volume: 100.0 | temperature: 25.0 | crystalsystem: cubic | shape: blocky | size.length: 4.0 | size.width: 4.0 | size.depth: 4.0 | precursor: Ce(NO3)3*5H2O (mass 0.52) | additive: citric acid (mass 0.48) | pdfno_list: 34-0394"
+}

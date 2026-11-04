@@ -1,0 +1,56 @@
+{
+  "synthesis_id": "900.json_Bi2Se3_2558",
+  "composition": "Bi2Se3",
+  "elements": [
+    "Bi",
+    "Se"
+  ],
+  "precursors": [
+    {
+      "name": "SeCl4",
+      "mass": 0.13
+    },
+    {
+      "name": "KBH4",
+      "mass": 0.25
+    },
+    {
+      "name": "Bi2(Hsal)3"
+    }
+  ],
+  "additives": [
+    {
+      "name": "cetyltrimethylammonium bromide",
+      "mass": 0.036
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 40.0
+  },
+  "conditions": {
+    "ph": 12.0
+  },
+  "product": {
+    "crystalsystem": "rhombohedral",
+    "shape": "spherical",
+    "size": {
+      "length": 45.0,
+      "width": 45.0,
+      "depth": 45.0
+    }
+  },
+  "pdfno_list": [
+    "33-0214"
+  ],
+  "source": {
+    "synthesis_id_original": "900.json_Bi2Se3_2558",
+    "nodes": 19,
+    "edges": 18
+  },
+  "retrieval_text": "composition: Bi2Se3 | solvent: distilled water | solvent.volume: 40.0 | pH: 12.0 | crystalsystem: rhombohedral | shape: spherical | size.length: 45.0 | size.width: 45.0 | size.depth: 45.0 | precursor: SeCl4 (mass 0.13) | precursor: KBH4 (mass 0.25) | precursor: Bi2(Hsal)3 | additive: cetyltrimethylammonium bromide (mass 0.036) | additive: sodium hydroxide (conc 1000.0) | pdfno_list: 33-0214"
+}

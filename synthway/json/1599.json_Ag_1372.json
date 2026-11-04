@@ -1,0 +1,36 @@
+{
+  "synthesis_id": "1599.json_Ag_1372",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "biosynthesis",
+  "precursors": [
+    {
+      "name": "AgNO3"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "shape": "circular",
+    "size": {
+      "length": 21.43,
+      "width": 21.43,
+      "depth": 21.43
+    }
+  },
+  "pdfno_list": [
+    "04-0783"
+  ],
+  "source": {
+    "synthesis_id_original": "1599.json_Ag_1372",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Ag | method: biosynthesis | solvent: water | temperature: 25.0 | shape: circular | size.length: 21.43 | size.width: 21.43 | size.depth: 21.43 | precursor: AgNO3 | pdfno_list: 04-0783"
+}

@@ -1,0 +1,35 @@
+{
+  "synthesis_id": "1757.json_Ag_1151",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "c. necator supernatant"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 85.9,
+      "width": 85.9,
+      "depth": 85.9
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1757.json_Ag_1151",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: Ag | solvent: water | shape: spherical | size.length: 85.9 | size.width: 85.9 | size.depth: 85.9 | precursor: AgNO3 (conc 1.0) | additive: c. necator supernatant"
+}

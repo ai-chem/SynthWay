@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "2003.json_Cu-CuFe2O4_520",
+  "composition": "Cu-CuFe2O4",
+  "elements": [
+    "Cu",
+    "Fe",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Fe(NO3)3·9H2O",
+      "conc": 6.0
+    },
+    {
+      "name": "Cu(NO3)2·3H2O",
+      "conc": 3.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "urea",
+      "conc": 9.0
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 25.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "size": {
+      "length": 480.0,
+      "width": 41.0,
+      "depth": 41.0
+    }
+  },
+  "pdfno_list": [
+    "85-1362, 77-0010"
+  ],
+  "source": {
+    "synthesis_id_original": "2003.json_Cu-CuFe2O4_520",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Cu-CuFe2O4 | solvent: ethylene glycol | solvent.volume: 25.0 | temperature: 200.0 | size.length: 480.0 | size.width: 41.0 | size.depth: 41.0 | precursor: Fe(NO3)3·9H2O (conc 6.0) | precursor: Cu(NO3)2·3H2O (conc 3.0) | additive: urea (conc 9.0) | pdfno_list: 85-1362, 77-0010"
+}

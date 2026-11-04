@@ -1,0 +1,27 @@
+{
+  "synthesis_id": "1680.json_CDs_436",
+  "composition": "CDs",
+  "elements": [
+    "C",
+    "Ds"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "EFB",
+      "mass": 2.5
+    }
+  ],
+  "solvent": {
+    "name": "ultrapure water"
+  },
+  "conditions": {
+    "temperature": 220.0
+  },
+  "source": {
+    "synthesis_id_original": "1680.json_CDs_436",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: CDs | method: hydrothermal | solvent: ultrapure water | temperature: 220.0 | precursor: EFB (mass 2.5)"
+}

@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "1206.json_ZnO_3687",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2",
+      "conc": 0.1
+    }
+  ],
+  "additives": [
+    {
+      "name": "cananga odorata essential oil"
+    },
+    {
+      "name": "acetone"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 100.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "wire",
+    "size": {
+      "length": 350.0,
+      "width": 350.0,
+      "depth": 350.0
+    }
+  },
+  "pdfno_list": [
+    "89-1397"
+  ],
+  "source": {
+    "synthesis_id_original": "1206.json_ZnO_3687",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: ZnO | method: green synthesis | solvent: water | temperature: 100.0 | crystalsystem: hexagonal | shape: wire | size.length: 350.0 | size.width: 350.0 | size.depth: 350.0 | precursor: Zn(CH3COO)2 (conc 0.1) | additive: cananga odorata essential oil | additive: acetone | pdfno_list: 89-1397"
+}

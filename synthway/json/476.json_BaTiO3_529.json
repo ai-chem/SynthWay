@@ -1,0 +1,32 @@
+{
+  "synthesis_id": "476.json_BaTiO3_529",
+  "composition": "BaTiO3",
+  "elements": [
+    "Ba",
+    "Ti",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "solvent": {
+    "name": "methanol"
+  },
+  "conditions": {
+    "temperature": 100.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 24.0
+    }
+  },
+  "pdfno_list": [
+    "31-174"
+  ],
+  "source": {
+    "synthesis_id_original": "476.json_BaTiO3_529",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: BaTiO3 | method: hydrothermal | solvent: methanol | temperature: 100.0 | crystalsystem: cubic | shape: spherical | size.length: 24.0 | pdfno_list: 31-174"
+}

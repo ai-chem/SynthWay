@@ -1,0 +1,32 @@
+{
+  "synthesis_id": "131.json_CeO2_2180",
+  "composition": "CeO2",
+  "elements": [
+    "Ce",
+    "O"
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 400.0
+  },
+  "product": {
+    "crystalsystem": "cubic fluorite",
+    "size": {
+      "length": 16.5,
+      "width": 16.5,
+      "depth": 16.5
+    }
+  },
+  "pdfno_list": [
+    "34 0394"
+  ],
+  "source": {
+    "synthesis_id_original": "131.json_CeO2_2180",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: CeO2 | solvent: deionized water | solvent.volume: 100.0 | temperature: 400.0 | crystalsystem: cubic fluorite | size.length: 16.5 | size.width: 16.5 | size.depth: 16.5 | pdfno_list: 34 0394"
+}

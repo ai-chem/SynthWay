@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "1610.json_ZnO_2303",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "coprecipitation",
+  "precursors": [
+    {
+      "name": "Zn(NO3)2·6H2O",
+      "mass": 1.19,
+      "conc": 80.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "ammonium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 25.0,
+    "ph": 12.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 33.8,
+      "width": 33.8,
+      "depth": 33.8
+    }
+  },
+  "pdfno_list": [
+    "01-080-0075"
+  ],
+  "source": {
+    "synthesis_id_original": "1610.json_ZnO_2303",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: ZnO | method: coprecipitation | solvent: deionized water | solvent.volume: 30.0 | temperature: 25.0 | pH: 12.0 | crystalsystem: hexagonal | shape: spherical | size.length: 33.8 | size.width: 33.8 | size.depth: 33.8 | precursor: Zn(NO3)2·6H2O (mass 1.19; conc 80.0) | additive: ammonium hydroxide | pdfno_list: 01-080-0075"
+}

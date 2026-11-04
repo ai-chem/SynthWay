@@ -1,0 +1,62 @@
+{
+  "synthesis_id": "1284.json_Lf-CCAu_3822",
+  "composition": "Lf-CCAu",
+  "elements": [
+    "Lf",
+    "C",
+    "Au"
+  ],
+  "method": "seed mediated growth",
+  "precursors": [
+    {
+      "name": "HAuCl4·3H2O",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "cetyltrimethylammonium chloride",
+      "conc": 100.0
+    },
+    {
+      "name": "sodium borohydride",
+      "conc": 10.0
+    },
+    {
+      "name": "silver nitrate",
+      "conc": 10.0
+    },
+    {
+      "name": "hydrochloric acid",
+      "conc": 1000.0
+    },
+    {
+      "name": "ascorbic acid",
+      "conc": 100.0
+    },
+    {
+      "name": "lactoferrin (lf)",
+      "conc": 0.001
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "shape": "concave cube",
+    "size": {
+      "length": 77.0,
+      "depth": 71.5
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1284.json_Lf-CCAu_3822",
+    "nodes": 20,
+    "edges": 22
+  },
+  "retrieval_text": "composition: Lf-CCAu | method: seed mediated growth | solvent: water | temperature: 25.0 | crystalsystem: face-centered cubic | shape: concave cube | size.length: 77.0 | size.depth: 71.5 | precursor: HAuCl4·3H2O (conc 10.0) | additive: cetyltrimethylammonium chloride (conc 100.0) | additive: sodium borohydride (conc 10.0) | additive: silver nitrate (conc 10.0) | additive: hydrochloric acid (conc 1000.0) | additive: ascorbic acid (conc 100.0) | additive: lactoferrin (lf) (conc 0.001)"
+}

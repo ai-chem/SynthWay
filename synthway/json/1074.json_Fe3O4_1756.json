@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "1074.json_Fe3O4_1756",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "coprecipitation",
+  "precursors": [
+    {
+      "name": "FeCl3*6H2O",
+      "mass": 12.42
+    },
+    {
+      "name": "FeCl2·6H2O",
+      "mass": 5.405
+    },
+    {
+      "name": "NH4OH",
+      "mass": 18.4
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleic acid",
+      "mass": 2.68
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 150.0
+  },
+  "conditions": {
+    "temperature": 45.0,
+    "ph": 10.0
+  },
+  "product": {
+    "crystalsystem": "spinel",
+    "shape": "cube",
+    "size": {
+      "width": 9.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1074.json_Fe3O4_1756",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: Fe3O4 | method: coprecipitation | solvent: deionized water | solvent.volume: 150.0 | temperature: 45.0 | pH: 10.0 | crystalsystem: spinel | shape: cube | size.width: 9.0 | precursor: FeCl3*6H2O (mass 12.42) | precursor: FeCl2·6H2O (mass 5.405) | precursor: NH4OH (mass 18.4) | additive: oleic acid (mass 2.68)"
+}

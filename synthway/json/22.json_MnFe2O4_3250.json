@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "22.json_MnFe2O4_3250",
+  "composition": "MnFe2O4",
+  "elements": [
+    "Mn",
+    "Fe",
+    "O"
+  ],
+  "method": "low-temperature",
+  "solvent": {
+    "name": "nitrate solution",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 450.0,
+    "ph": 5.0
+  },
+  "product": {
+    "crystalsystem": "spinel",
+    "shape": "cube",
+    "size": {
+      "length": 20.0,
+      "width": 20.0,
+      "depth": 20.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "22.json_MnFe2O4_3250",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: MnFe2O4 | method: low-temperature | solvent: nitrate solution | solvent.volume: 50.0 | temperature: 450.0 | pH: 5.0 | crystalsystem: spinel | shape: cube | size.length: 20.0 | size.width: 20.0 | size.depth: 20.0"
+}

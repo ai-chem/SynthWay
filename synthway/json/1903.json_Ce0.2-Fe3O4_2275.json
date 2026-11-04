@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "1903.json_Ce0.2-Fe3O4_2275",
+  "composition": "Ce0.2-Fe3O4",
+  "elements": [
+    "Ce",
+    "Fe",
+    "O"
+  ],
+  "method": "electrochemical",
+  "precursors": [
+    {
+      "name": "FeCl2*4H2O",
+      "mass": 1.0
+    },
+    {
+      "name": "Fe(NO3)2*9H2O",
+      "mass": 2.0
+    },
+    {
+      "name": "CeCl3*7H2O",
+      "mass": 0.3
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 1000.0
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 15.0,
+      "width": 15.0,
+      "depth": 15.0
+    }
+  },
+  "pdfno_list": [
+    "22-0166"
+  ],
+  "source": {
+    "synthesis_id_original": "1903.json_Ce0.2-Fe3O4_2275",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: Ce0.2-Fe3O4 | method: electrochemical | solvent: water | solvent.volume: 1000.0 | temperature: 25.0 | shape: spherical | size.length: 15.0 | size.width: 15.0 | size.depth: 15.0 | precursor: FeCl2*4H2O (mass 1.0) | precursor: Fe(NO3)2*9H2O (mass 2.0) | precursor: CeCl3*7H2O (mass 0.3) | pdfno_list: 22-0166"
+}

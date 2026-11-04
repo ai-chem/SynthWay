@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "1423.json_HG_135",
+  "composition": "HG",
+  "elements": [
+    "H",
+    "G"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "Chi"
+    },
+    {
+      "name": "PVA"
+    },
+    {
+      "name": "PEG"
+    }
+  ],
+  "additives": [
+    {
+      "name": "water",
+      "mass": 2.0
+    }
+  ],
+  "solvent": {
+    "name": "acetic acid and water"
+  },
+  "product": {
+    "shape": "dense, rough, and wavy surface"
+  },
+  "source": {
+    "synthesis_id_original": "1423.json_HG_135",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: HG | method: hydrothermal | solvent: acetic acid and water | shape: dense, rough, and wavy surface | precursor: Chi | precursor: PVA | precursor: PEG | additive: water (mass 2.0)"
+}

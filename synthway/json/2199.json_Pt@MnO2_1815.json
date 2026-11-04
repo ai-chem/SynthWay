@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "2199.json_Pt@MnO2_1815",
+  "composition": "Pt@MnO2",
+  "elements": [
+    "Pt",
+    "Mn",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "KMnO4",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "mes",
+      "conc": 100.0
+    }
+  ],
+  "seeds": [
+    {
+      "name": "Pt",
+      "mass": 0.0003
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 4.25
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "shape": "3-dimensional scaffold",
+    "size": {
+      "length": 250.0,
+      "width": 250.0,
+      "depth": 250.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2199.json_Pt@MnO2_1815",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Pt@MnO2 | solvent: water | solvent.volume: 4.25 | crystalsystem: face-centered cubic | shape: 3-dimensional scaffold | size.length: 250.0 | size.width: 250.0 | size.depth: 250.0 | precursor: KMnO4 (conc 10.0) | additive: mes (conc 100.0) | seed: Pt (mass 0.0003)"
+}

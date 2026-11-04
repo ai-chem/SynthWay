@@ -1,0 +1,29 @@
+{
+  "synthesis_id": "2194.json_WS2_1159",
+  "composition": "WS2",
+  "elements": [
+    "W",
+    "S"
+  ],
+  "method": "ultrasonic exfoliated",
+  "precursors": [
+    {
+      "name": "WS2",
+      "mass": 0.001
+    }
+  ],
+  "product": {
+    "shape": "sheets",
+    "size": {
+      "length": 175.0,
+      "width": 175.0,
+      "depth": 8.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2194.json_WS2_1159",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: WS2 | method: ultrasonic exfoliated | shape: sheets | size.length: 175.0 | size.width: 175.0 | size.depth: 8.0 | precursor: WS2 (mass 0.001)"
+}

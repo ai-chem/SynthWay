@@ -1,0 +1,17 @@
+{
+  "synthesis_id": "715.json_SiO2_1530",
+  "composition": "SiO2",
+  "elements": [
+    "Si",
+    "O"
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "source": {
+    "synthesis_id_original": "715.json_SiO2_1530",
+    "nodes": 2,
+    "edges": 1
+  },
+  "retrieval_text": "composition: SiO2 | solvent: water"
+}

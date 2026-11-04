@@ -1,0 +1,36 @@
+{
+  "synthesis_id": "1369.json_Ag_18IS_3103",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "ion exchange",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "mass": 0.567
+    }
+  ],
+  "additives": [
+    {
+      "name": "saponite",
+      "mass": 5.0
+    }
+  ],
+  "solvent": {
+    "name": "ultrapure water",
+    "volume": 150.0
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "shape": "layered flaky platelets"
+  },
+  "source": {
+    "synthesis_id_original": "1369.json_Ag_18IS_3103",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Ag | method: ion exchange | solvent: ultrapure water | solvent.volume: 150.0 | temperature: 25.0 | shape: layered flaky platelets | precursor: AgNO3 (mass 0.567) | additive: saponite (mass 5.0)"
+}

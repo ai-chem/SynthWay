@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "59.json_SnS_3294",
+  "composition": "SnS",
+  "elements": [
+    "Sn",
+    "S"
+  ],
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 250.0
+  },
+  "product": {
+    "crystalsystem": "39-0354",
+    "shape": "wire",
+    "size": {
+      "length": 1000.0,
+      "width": 400.0,
+      "depth": 400.0
+    }
+  },
+  "pdfno_list": [
+    "39-0354"
+  ],
+  "source": {
+    "synthesis_id_original": "59.json_SnS_3294",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: SnS | solvent: ethylene glycol | solvent.volume: 20.0 | temperature: 250.0 | crystalsystem: 39-0354 | shape: wire | size.length: 1000.0 | size.width: 400.0 | size.depth: 400.0 | pdfno_list: 39-0354"
+}

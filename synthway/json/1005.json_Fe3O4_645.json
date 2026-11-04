@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "1005.json_Fe3O4_645",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "oxidative alkaline hydrolysis",
+  "precursors": [
+    {
+      "name": "FeSO4·7H2O",
+      "mass": 13.9
+    },
+    {
+      "name": "KOH",
+      "mass": 8.85
+    },
+    {
+      "name": "KNO3",
+      "mass": 0.505
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 130.0
+  },
+  "conditions": {
+    "temperature": 90.0,
+    "ph": 13.0
+  },
+  "product": {
+    "crystalsystem": "cubic spinel",
+    "shape": "spherical",
+    "size": {
+      "width": 91.0
+    }
+  },
+  "pdfno_list": [
+    "227"
+  ],
+  "source": {
+    "synthesis_id_original": "1005.json_Fe3O4_645",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: Fe3O4 | method: oxidative alkaline hydrolysis | solvent: distilled water | solvent.volume: 130.0 | temperature: 90.0 | pH: 13.0 | crystalsystem: cubic spinel | shape: spherical | size.width: 91.0 | precursor: FeSO4·7H2O (mass 13.9) | precursor: KOH (mass 8.85) | precursor: KNO3 (mass 0.505) | pdfno_list: 227"
+}

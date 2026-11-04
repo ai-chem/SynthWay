@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "803.json_Ni_4079",
+  "composition": "Ni",
+  "elements": [
+    "Ni"
+  ],
+  "precursors": [
+    {
+      "name": "Ni(acac)2",
+      "mass": 0.257
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleylamine",
+      "mass": 0.801
+    },
+    {
+      "name": "trioctylphosphine",
+      "mass": 0.27825
+    }
+  ],
+  "solvent": {
+    "name": "octadecene",
+    "volume": 7.0
+  },
+  "conditions": {
+    "temperature": 210.0
+  },
+  "product": {
+    "crystalsystem": "hcp",
+    "shape": "spherical",
+    "size": {
+      "width": 20.1
+    }
+  },
+  "source": {
+    "synthesis_id_original": "803.json_Ni_4079",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Ni | solvent: octadecene | solvent.volume: 7.0 | temperature: 210.0 | crystalsystem: hcp | shape: spherical | size.width: 20.1 | precursor: Ni(acac)2 (mass 0.257) | additive: oleylamine (mass 0.801) | additive: trioctylphosphine (mass 0.27825)"
+}

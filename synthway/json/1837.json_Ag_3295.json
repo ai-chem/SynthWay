@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "1837.json_Ag_3295",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgCF3COO",
+      "conc": 0.282
+    },
+    {
+      "name": "Pt(acac)2",
+      "conc": 0.25
+    }
+  ],
+  "additives": [
+    {
+      "name": "nash",
+      "conc": 3.0
+    },
+    {
+      "name": "hydrochloric acid",
+      "conc": 3.0
+    },
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 20.0
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 150.0
+  },
+  "product": {
+    "shape": "cube",
+    "size": {
+      "length": 33.9,
+      "width": 33.9,
+      "depth": 33.9
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1837.json_Ag_3295",
+    "nodes": 17,
+    "edges": 17
+  },
+  "retrieval_text": "composition: Ag | solvent: ethylene glycol | solvent.volume: 50.0 | temperature: 150.0 | shape: cube | size.length: 33.9 | size.width: 33.9 | size.depth: 33.9 | precursor: AgCF3COO (conc 0.282) | precursor: Pt(acac)2 (conc 0.25) | additive: nash (conc 3.0) | additive: hydrochloric acid (conc 3.0) | additive: polyvinylpyrrolidone (mass 20.0)"
+}

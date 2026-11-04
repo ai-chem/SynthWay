@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1141.json_B-BTC_organic_framework_394",
+  "composition": "B-BTC organic framework",
+  "elements": [
+    "B",
+    "T",
+    "C"
+  ],
+  "method": "solvo-hydrothermal",
+  "precursors": [
+    {
+      "name": "H3BTC",
+      "mass": 1.0
+    },
+    {
+      "name": "Bi(NO3)3*5H2O",
+      "mass": 0.4
+    }
+  ],
+  "solvent": {
+    "name": "methanol",
+    "volume": 60.0
+  },
+  "conditions": {
+    "temperature": 120.0
+  },
+  "product": {
+    "shape": "sheets",
+    "size": {
+      "length": 20.0,
+      "width": 20.0,
+      "depth": 20.0
+    }
+  },
+  "pdfno_list": [
+    "01-087-0719"
+  ],
+  "source": {
+    "synthesis_id_original": "1141.json_B-BTC_organic_framework_394",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: B-BTC organic framework | method: solvo-hydrothermal | solvent: methanol | solvent.volume: 60.0 | temperature: 120.0 | shape: sheets | size.length: 20.0 | size.width: 20.0 | size.depth: 20.0 | precursor: H3BTC (mass 1.0) | precursor: Bi(NO3)3*5H2O (mass 0.4) | pdfno_list: 01-087-0719"
+}

@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "913.json_Ni7S6_988",
+  "composition": "Ni7S6",
+  "elements": [
+    "Ni",
+    "S"
+  ],
+  "method": "reduction",
+  "precursors": [
+    {
+      "name": "Ni(NO3)2·6H2O",
+      "mass": 0.435
+    },
+    {
+      "name": "S",
+      "mass": 0.0032
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleylamine"
+    }
+  ],
+  "solvent": {
+    "name": "oleylamine",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 210.0
+  },
+  "product": {
+    "shape": "spherical and elongated spherica",
+    "size": {
+      "width": 14.0
+    }
+  },
+  "pdfno_list": [
+    "00-014-0364"
+  ],
+  "source": {
+    "synthesis_id_original": "913.json_Ni7S6_988",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Ni7S6 | method: reduction | solvent: oleylamine | solvent.volume: 20.0 | temperature: 210.0 | shape: spherical and elongated spherica | size.width: 14.0 | precursor: Ni(NO3)2·6H2O (mass 0.435) | precursor: S (mass 0.0032) | additive: oleylamine | pdfno_list: 00-014-0364"
+}

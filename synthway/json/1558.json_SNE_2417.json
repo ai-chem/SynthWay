@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "1558.json_SNE_2417",
+  "composition": "SNE",
+  "elements": [
+    "S",
+    "N",
+    "E"
+  ],
+  "method": "phase inversion temperature",
+  "precursors": [
+    {
+      "name": "spearmint oil"
+    },
+    {
+      "name": "Cremophor"
+    },
+    {
+      "name": "spearmint"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 62.0
+  },
+  "product": {
+    "shape": "spherical droplets",
+    "size": {
+      "length": 48.0,
+      "width": 48.0,
+      "depth": 48.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1558.json_SNE_2417",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: SNE | method: phase inversion temperature | solvent: water | temperature: 62.0 | shape: spherical droplets | size.length: 48.0 | size.width: 48.0 | size.depth: 48.0 | precursor: spearmint oil | precursor: Cremophor | precursor: spearmint"
+}

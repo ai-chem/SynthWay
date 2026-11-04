@@ -1,0 +1,56 @@
+{
+  "synthesis_id": "822.json_ZnO_3503",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "ZnSO4",
+      "conc": 380.0
+    },
+    {
+      "name": "NH3",
+      "conc": 710.0
+    },
+    {
+      "name": "H2NNH2",
+      "mass": 0.512,
+      "conc": 710.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium oleate",
+      "mass": 0.08
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 4000.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 80.0,
+    "ph": 8.5
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "nearly spherical or hexagonal",
+    "size": {
+      "width": 45.0
+    }
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "822.json_ZnO_3503",
+    "nodes": 18,
+    "edges": 18
+  },
+  "retrieval_text": "composition: ZnO | solvent: water | temperature: 80.0 | pH: 8.5 | crystalsystem: hexagonal | shape: nearly spherical or hexagonal | size.width: 45.0 | precursor: ZnSO4 (conc 380.0) | precursor: NH3 (conc 710.0) | precursor: H2NNH2 (mass 0.512; conc 710.0) | additive: sodium oleate (mass 0.08) | additive: sodium hydroxide (conc 4000.0) | pdfno_list: 36-1451"
+}

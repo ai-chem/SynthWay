@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "697.json_Cu_3307",
+  "composition": "Cu",
+  "elements": [
+    "Cu"
+  ],
+  "precursors": [
+    {
+      "name": "Cu-oleate",
+      "mass": 3.6
+    },
+    {
+      "name": "C18H34O2",
+      "mass": 1.14
+    }
+  ],
+  "solvent": {
+    "name": "phenyl ether",
+    "volume": 20.68
+  },
+  "conditions": {
+    "temperature": 250.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 9.0,
+      "width": 9.0,
+      "depth": 9.0
+    }
+  },
+  "pdfno_list": [
+    "04-0836"
+  ],
+  "source": {
+    "synthesis_id_original": "697.json_Cu_3307",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Cu | solvent: phenyl ether | solvent.volume: 20.68 | temperature: 250.0 | crystalsystem: face-centered cubic | shape: spherical | size.length: 9.0 | size.width: 9.0 | size.depth: 9.0 | precursor: Cu-oleate (mass 3.6) | precursor: C18H34O2 (mass 1.14) | pdfno_list: 04-0836"
+}

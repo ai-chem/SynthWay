@@ -1,0 +1,31 @@
+{
+  "synthesis_id": "204.json_FeS2_3236",
+  "composition": "FeS2",
+  "elements": [
+    "Fe",
+    "S"
+  ],
+  "method": "ultrasonic",
+  "solvent": {
+    "name": "absolute ethanol",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 70.0,
+    "ph": 5.9
+  },
+  "product": {
+    "crystalsystem": "(pyrite) and orthorhombic (marcasite)",
+    "size": {
+      "length": 28.8,
+      "width": 28.8,
+      "depth": 28.8
+    }
+  },
+  "source": {
+    "synthesis_id_original": "204.json_FeS2_3236",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: FeS2 | method: ultrasonic | solvent: absolute ethanol | solvent.volume: 100.0 | temperature: 70.0 | pH: 5.9 | crystalsystem: (pyrite) and orthorhombic (marcasite) | size.length: 28.8 | size.width: 28.8 | size.depth: 28.8"
+}

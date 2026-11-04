@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "651.json_BaTiO3_1709",
+  "composition": "BaTiO3",
+  "elements": [
+    "Ba",
+    "Ti",
+    "O"
+  ],
+  "method": "molten salt",
+  "precursors": [
+    {
+      "name": "Ba(OH)2·8H2O"
+    },
+    {
+      "name": "TiO2"
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium chloride–potassium chloride (50 mol% nacl + 50 mol% kcl)"
+    },
+    {
+      "name": "polyvinyl alcohol (8 wt.%)"
+    }
+  ],
+  "conditions": {
+    "temperature": 120.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "polyhedra",
+    "size": {
+      "length": 50.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "651.json_BaTiO3_1709",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: BaTiO3 | method: molten salt | temperature: 120.0 | crystalsystem: cubic | shape: polyhedra | size.length: 50.0 | precursor: Ba(OH)2·8H2O | precursor: TiO2 | additive: sodium chloride–potassium chloride (50 mol% nacl + 50 mol% kcl) | additive: polyvinyl alcohol (8 wt.%)"
+}

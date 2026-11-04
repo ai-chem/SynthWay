@@ -1,0 +1,54 @@
+{
+  "synthesis_id": "1787.json_Co3O4@Rh_3934",
+  "composition": "Co3O4@Rh",
+  "elements": [
+    "Co",
+    "O",
+    "Rh"
+  ],
+  "method": "one-pot surfactantaided oxido-reduction",
+  "precursors": [
+    {
+      "name": "RhCl3∙3H2O",
+      "conc": 0.2
+    },
+    {
+      "name": "Co(NO3)2∙9H2O",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "cetyltrimethylammonium bromide",
+      "conc": 55.0
+    },
+    {
+      "name": "sodium borohydride",
+      "conc": 176.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 25.0
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "shape": "plate",
+    "size": {
+      "length": 100.0,
+      "width": 20.0,
+      "depth": 20.0
+    }
+  },
+  "pdfno_list": [
+    "00-001-1152, 05-0685"
+  ],
+  "source": {
+    "synthesis_id_original": "1787.json_Co3O4@Rh_3934",
+    "nodes": 18,
+    "edges": 17
+  },
+  "retrieval_text": "composition: Co3O4@Rh | method: one-pot surfactantaided oxido-reduction | solvent: water | solvent.volume: 25.0 | temperature: 60.0 | shape: plate | size.length: 100.0 | size.width: 20.0 | size.depth: 20.0 | precursor: RhCl3∙3H2O (conc 0.2) | precursor: Co(NO3)2∙9H2O (conc 1.0) | additive: cetyltrimethylammonium bromide (conc 55.0) | additive: sodium borohydride (conc 176.0) | pdfno_list: 00-001-1152, 05-0685"
+}

@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "439.json_VO2_4144",
+  "composition": "VO2",
+  "elements": [
+    "V",
+    "O"
+  ],
+  "method": "solvo-hydrothermal",
+  "solvent": {
+    "name": "hydrogen peroxide",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 180.0,
+    "ph": 2.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "wire",
+    "size": {
+      "length": 50.0
+    }
+  },
+  "pdfno_list": [
+    "44-0253"
+  ],
+  "source": {
+    "synthesis_id_original": "439.json_VO2_4144",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: VO2 | method: solvo-hydrothermal | solvent: hydrogen peroxide | solvent.volume: 20.0 | temperature: 180.0 | pH: 2.0 | crystalsystem: monoclinic | shape: wire | size.length: 50.0 | pdfno_list: 44-0253"
+}

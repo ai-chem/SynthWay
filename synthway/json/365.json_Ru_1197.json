@@ -1,0 +1,23 @@
+{
+  "synthesis_id": "365.json_Ru_1197",
+  "composition": "Ru",
+  "elements": [
+    "Ru"
+  ],
+  "method": "solvent-free mechanical",
+  "product": {
+    "crystalsystem": "hexagonal",
+    "size": {
+      "length": 100.0
+    }
+  },
+  "pdfno_list": [
+    "06-0663"
+  ],
+  "source": {
+    "synthesis_id_original": "365.json_Ru_1197",
+    "nodes": 5,
+    "edges": 4
+  },
+  "retrieval_text": "composition: Ru | method: solvent-free mechanical | crystalsystem: hexagonal | size.length: 100.0 | pdfno_list: 06-0663"
+}

@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1388.json_rGO-Ag@MnO2_1679",
+  "composition": "rGO-Ag@MnO2",
+  "elements": [
+    "G",
+    "O",
+    "Ag",
+    "Mn"
+  ],
+  "precursors": [
+    {
+      "name": "rGO",
+      "mass": 0.05
+    },
+    {
+      "name": "Ag@MnO2",
+      "mass": 0.05
+    }
+  ],
+  "solvent": {
+    "name": "double distilled water",
+    "volume": 40.0
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "crystalsystem": "cubic and tetragonal",
+    "shape": "spherical",
+    "size": {
+      "length": 40.88,
+      "width": 40.88,
+      "depth": 40.88
+    }
+  },
+  "pdfno_list": [
+    "65-2871 24-0735"
+  ],
+  "source": {
+    "synthesis_id_original": "1388.json_rGO-Ag@MnO2_1679",
+    "nodes": 13,
+    "edges": 13
+  },
+  "retrieval_text": "composition: rGO-Ag@MnO2 | solvent: double distilled water | solvent.volume: 40.0 | temperature: 25.0 | crystalsystem: cubic and tetragonal | shape: spherical | size.length: 40.88 | size.width: 40.88 | size.depth: 40.88 | precursor: rGO (mass 0.05) | precursor: Ag@MnO2 (mass 0.05) | pdfno_list: 65-2871 24-0735"
+}

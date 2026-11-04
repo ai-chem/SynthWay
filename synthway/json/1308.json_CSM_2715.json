@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "1308.json_CSM_2715",
+  "composition": "CSM",
+  "elements": [
+    "C",
+    "S",
+    "M"
+  ],
+  "precursors": [
+    {
+      "name": "Lepidium sativum (seeds)"
+    }
+  ],
+  "additives": [
+    {
+      "name": "hydrochloric acid",
+      "conc": 100.0
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 100.0
+    }
+  ],
+  "solvent": {
+    "name": "distilled water"
+  },
+  "conditions": {
+    "ph": 10.0
+  },
+  "product": {
+    "crystalsystem": "amorphous"
+  },
+  "source": {
+    "synthesis_id_original": "1308.json_CSM_2715",
+    "nodes": 8,
+    "edges": 8
+  },
+  "retrieval_text": "composition: CSM | solvent: distilled water | pH: 10.0 | crystalsystem: amorphous | precursor: Lepidium sativum (seeds) | additive: hydrochloric acid (conc 100.0) | additive: sodium hydroxide (conc 100.0)"
+}

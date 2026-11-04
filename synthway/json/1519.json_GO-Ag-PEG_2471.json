@@ -1,0 +1,59 @@
+{
+  "synthesis_id": "1519.json_GO-Ag-PEG_2471",
+  "composition": "GO-Ag-PEG",
+  "elements": [
+    "G",
+    "O",
+    "Ag",
+    "P",
+    "E"
+  ],
+  "precursors": [
+    {
+      "name": "GO-PEG",
+      "mass": 0.0126
+    },
+    {
+      "name": "AgNO3"
+    }
+  ],
+  "additives": [
+    {
+      "name": "galangin"
+    },
+    {
+      "name": "deionized water",
+      "mass": 5.0
+    },
+    {
+      "name": "sodium hydroxide",
+      "mass": 5.0,
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 45.0,
+    "ph": 9.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 12.84,
+      "width": 12.84,
+      "depth": 12.84
+    }
+  },
+  "pdfno_list": [
+    "00-087-0719"
+  ],
+  "source": {
+    "synthesis_id_original": "1519.json_GO-Ag-PEG_2471",
+    "nodes": 18,
+    "edges": 18
+  },
+  "retrieval_text": "composition: GO-Ag-PEG | solvent: water | temperature: 45.0 | pH: 9.0 | crystalsystem: cubic | shape: spherical | size.length: 12.84 | size.width: 12.84 | size.depth: 12.84 | precursor: GO-PEG (mass 0.0126) | precursor: AgNO3 | additive: galangin | additive: deionized water (mass 5.0) | additive: sodium hydroxide (mass 5.0; conc 1000.0) | pdfno_list: 00-087-0719"
+}

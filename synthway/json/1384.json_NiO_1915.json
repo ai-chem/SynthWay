@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "1384.json_NiO_1915",
+  "composition": "NiO",
+  "elements": [
+    "Ni",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "C4H6NiO4",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "flower extract of clitoria ternatea"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "hexagonal",
+    "size": {
+      "length": 13.0,
+      "width": 13.0,
+      "depth": 13.0
+    }
+  },
+  "pdfno_list": [
+    "47-1049"
+  ],
+  "source": {
+    "synthesis_id_original": "1384.json_NiO_1915",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: NiO | solvent: water | temperature: 60.0 | crystalsystem: cubic | shape: hexagonal | size.length: 13.0 | size.width: 13.0 | size.depth: 13.0 | precursor: C4H6NiO4 (conc 100.0) | additive: flower extract of clitoria ternatea | pdfno_list: 47-1049"
+}

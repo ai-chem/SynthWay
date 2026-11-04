@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1255.json_Fe3O4_2078",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "FeCl3*6H2O",
+      "mass": 4.05
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium acetate",
+      "mass": 10.8
+    },
+    {
+      "name": "polyethylene glycol",
+      "mass": 3.0
+    },
+    {
+      "name": "cetyltrimethylammonium bromide",
+      "mass": 0.1
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 120.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "crystalsystem": "spinel"
+  },
+  "source": {
+    "synthesis_id_original": "1255.json_Fe3O4_2078",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Fe3O4 | solvent: ethylene glycol | solvent.volume: 120.0 | temperature: 200.0 | crystalsystem: spinel | precursor: FeCl3*6H2O (mass 4.05) | additive: sodium acetate (mass 10.8) | additive: polyethylene glycol (mass 3.0) | additive: cetyltrimethylammonium bromide (mass 0.1)"
+}

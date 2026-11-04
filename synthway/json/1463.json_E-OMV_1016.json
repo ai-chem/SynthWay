@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "1463.json_E-OMV_1016",
+  "composition": "E-OMV",
+  "elements": [
+    "E",
+    "O",
+    "M",
+    "V"
+  ],
+  "precursors": [
+    {
+      "name": "OMV"
+    }
+  ],
+  "additives": [
+    {
+      "name": "tannic acid (ta)"
+    },
+    {
+      "name": "sodium chloride"
+    },
+    {
+      "name": "ferric chloride"
+    },
+    {
+      "name": "3-(n-morpholino) propanesulfonic acid (mops)"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "ph": 7.0
+  },
+  "product": {
+    "shape": "core-shell-like",
+    "size": {
+      "length": 99.0,
+      "width": 99.0,
+      "depth": 99.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1463.json_E-OMV_1016",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: E-OMV | solvent: water | pH: 7.0 | shape: core-shell-like | size.length: 99.0 | size.width: 99.0 | size.depth: 99.0 | precursor: OMV | additive: tannic acid (ta) | additive: sodium chloride | additive: ferric chloride | additive: 3-(n-morpholino) propanesulfonic acid (mops)"
+}

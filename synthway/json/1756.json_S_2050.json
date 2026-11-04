@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "1756.json_S_2050",
+  "composition": "S",
+  "elements": [
+    "S"
+  ],
+  "method": "bio-reduction",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "mass": 0.042,
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "nigella sativa extract"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 250.0
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 55.0,
+      "width": 55.0,
+      "depth": 55.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1756.json_S_2050",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: S | method: bio-reduction | solvent: distilled water | solvent.volume: 250.0 | temperature: 25.0 | shape: spherical | size.length: 55.0 | size.width: 55.0 | size.depth: 55.0 | precursor: AgNO3 (mass 0.042; conc 100.0) | additive: nigella sativa extract"
+}

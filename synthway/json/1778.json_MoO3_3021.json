@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "1778.json_MoO3_3021",
+  "composition": "MoO3",
+  "elements": [
+    "Mo",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "Na2MoO4·2H2O",
+      "conc": 15.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium chloride",
+      "conc": 0.03
+    },
+    {
+      "name": "hydrochloric acid",
+      "conc": 3000.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 120.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "nanobelts",
+    "size": {
+      "length": 7500.0,
+      "width": 200.0,
+      "depth": 200.0
+    }
+  },
+  "pdfno_list": [
+    "05-0508"
+  ],
+  "source": {
+    "synthesis_id_original": "1778.json_MoO3_3021",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: MoO3 | method: hydrothermal | solvent: water | solvent.volume: 120.0 | temperature: 180.0 | crystalsystem: orthorhombic | shape: nanobelts | size.length: 7500.0 | size.width: 200.0 | size.depth: 200.0 | precursor: Na2MoO4·2H2O (conc 15.0) | additive: sodium chloride (conc 0.03) | additive: hydrochloric acid (conc 3000.0) | pdfno_list: 05-0508"
+}

@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "1844.json_Au/Co3O4-CeO2_1228",
+  "composition": "Au/Co3O4-CeO2",
+  "elements": [
+    "Au",
+    "Co",
+    "O",
+    "Ce"
+  ],
+  "precursors": [
+    {
+      "name": "HAuCl4·4H2O",
+      "mass": 0.2
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium carbonate",
+      "conc": 500.0
+    }
+  ],
+  "seeds": [
+    {
+      "name": "Co3O4-CeO2",
+      "mass": 0.4
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 80.0,
+    "ph": 8.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 17.0,
+      "width": 17.0,
+      "depth": 17.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1844.json_Au/Co3O4-CeO2_1228",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Au/Co3O4-CeO2 | solvent: deionized water | solvent.volume: 50.0 | temperature: 80.0 | pH: 8.0 | crystalsystem: cubic | size.length: 17.0 | size.width: 17.0 | size.depth: 17.0 | precursor: HAuCl4·4H2O (mass 0.2) | additive: sodium carbonate (conc 500.0) | seed: Co3O4-CeO2 (mass 0.4)"
+}

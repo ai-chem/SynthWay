@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "913.json_Ni3S4_987",
+  "composition": "Ni3S4",
+  "elements": [
+    "Ni",
+    "S"
+  ],
+  "method": "reduction",
+  "precursors": [
+    {
+      "name": "Ni(NO3)2·6H2O",
+      "mass": 0.435
+    },
+    {
+      "name": "S",
+      "mass": 0.0064
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleylamine"
+    }
+  ],
+  "solvent": {
+    "name": "oleylamine",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 210.0
+  },
+  "product": {
+    "shape": "bulging spherical morphology"
+  },
+  "pdfno_list": [
+    "00-047-1739"
+  ],
+  "source": {
+    "synthesis_id_original": "913.json_Ni3S4_987",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Ni3S4 | method: reduction | solvent: oleylamine | solvent.volume: 20.0 | temperature: 210.0 | shape: bulging spherical morphology | precursor: Ni(NO3)2·6H2O (mass 0.435) | precursor: S (mass 0.0064) | additive: oleylamine | pdfno_list: 00-047-1739"
+}

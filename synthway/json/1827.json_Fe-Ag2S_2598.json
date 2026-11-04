@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1827.json_Fe-Ag2S_2598",
+  "composition": "Fe-Ag2S",
+  "elements": [
+    "Fe",
+    "Ag",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 0.00039
+    },
+    {
+      "name": "FeSO4*7H2O"
+    }
+  ],
+  "additives": [
+    {
+      "name": "thiourea",
+      "conc": 0.00026
+    },
+    {
+      "name": "sodium borohydride"
+    }
+  ],
+  "solvent": {
+    "name": "sodium hydroxide",
+    "volume": 1.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic"
+  },
+  "pdfno_list": [
+    "14-0072"
+  ],
+  "source": {
+    "synthesis_id_original": "1827.json_Fe-Ag2S_2598",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Fe-Ag2S | solvent: sodium hydroxide | solvent.volume: 1.0 | temperature: 200.0 | crystalsystem: monoclinic | precursor: AgNO3 (conc 0.00039) | precursor: FeSO4*7H2O | additive: thiourea (conc 0.00026) | additive: sodium borohydride | pdfno_list: 14-0072"
+}

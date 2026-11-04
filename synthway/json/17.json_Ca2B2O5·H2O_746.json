@@ -1,0 +1,36 @@
+{
+  "synthesis_id": "17.json_Ca2B2O5·H2O_746",
+  "composition": "Ca2B2O5·H2O",
+  "elements": [
+    "Ca",
+    "B",
+    "O",
+    "H"
+  ],
+  "method": "hydrothermal",
+  "solvent": {
+    "name": "deionized water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "wire",
+    "size": {
+      "length": 65000.0,
+      "width": 1250.0,
+      "depth": 1250.0
+    }
+  },
+  "pdfno_list": [
+    "00-022-0145"
+  ],
+  "source": {
+    "synthesis_id_original": "17.json_Ca2B2O5·H2O_746",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Ca2B2O5·H2O | method: hydrothermal | solvent: deionized water | solvent.volume: 50.0 | temperature: 180.0 | crystalsystem: monoclinic | shape: wire | size.length: 65000.0 | size.width: 1250.0 | size.depth: 1250.0 | pdfno_list: 00-022-0145"
+}

@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "1726.json_Ag_178",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "biosynthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1000.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "aqueous extract of a. nilotica"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "irregular",
+    "size": {
+      "length": 25.0,
+      "width": 25.0,
+      "depth": 25.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1726.json_Ag_178",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Ag | method: biosynthesis | solvent: water | temperature: 60.0 | crystalsystem: cubic | shape: irregular | size.length: 25.0 | size.width: 25.0 | size.depth: 25.0 | precursor: AgNO3 (conc 1000.0) | additive: aqueous extract of a. nilotica"
+}

@@ -1,0 +1,30 @@
+{
+  "synthesis_id": "135.json_Cd_doped_CeO2_459",
+  "composition": "Cd doped CeO2",
+  "elements": [
+    "Cd",
+    "Ce",
+    "O"
+  ],
+  "solvent": {
+    "name": "methanol",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 400.0
+  },
+  "product": {
+    "shape": "spherical/elliptical",
+    "size": {
+      "length": 7.1,
+      "width": 7.1,
+      "depth": 7.1
+    }
+  },
+  "source": {
+    "synthesis_id_original": "135.json_Cd_doped_CeO2_459",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: Cd doped CeO2 | solvent: methanol | solvent.volume: 100.0 | temperature: 400.0 | shape: spherical/elliptical | size.length: 7.1 | size.width: 7.1 | size.depth: 7.1"
+}

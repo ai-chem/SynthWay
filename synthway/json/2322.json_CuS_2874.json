@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "2322.json_CuS_2874",
+  "composition": "CuS",
+  "elements": [
+    "Cu",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "copper sulfate (CuSO4∙5H2O)",
+      "conc": 50.0
+    },
+    {
+      "name": "(NH4)2S"
+    }
+  ],
+  "additives": [
+    {
+      "name": "radix puerariae"
+    },
+    {
+      "name": "sodium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 60.0,
+    "ph": 9.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "plate",
+    "size": {
+      "length": 250.0,
+      "width": 250.0,
+      "depth": 250.0
+    }
+  },
+  "pdfno_list": [
+    "06-0464"
+  ],
+  "source": {
+    "synthesis_id_original": "2322.json_CuS_2874",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: CuS | solvent: water | temperature: 60.0 | pH: 9.0 | crystalsystem: hexagonal | shape: plate | size.length: 250.0 | size.width: 250.0 | size.depth: 250.0 | precursor: copper sulfate (CuSO4∙5H2O) (conc 50.0) | precursor: (NH4)2S | additive: radix puerariae | additive: sodium hydroxide | pdfno_list: 06-0464"
+}

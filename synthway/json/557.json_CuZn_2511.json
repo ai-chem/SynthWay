@@ -1,0 +1,51 @@
+{
+  "synthesis_id": "557.json_CuZn_2511",
+  "composition": "CuZn",
+  "elements": [
+    "Cu",
+    "Zn"
+  ],
+  "method": "microwave synthesis",
+  "precursors": [
+    {
+      "name": "Zn(NO3)2·4H2O",
+      "conc": 2.0
+    },
+    {
+      "name": "Cu(NO3)2·3H2O",
+      "conc": 2.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "hydrazine hydrate",
+      "mass": 0.103,
+      "conc": 2.0
+    }
+  ],
+  "solvent": {
+    "name": "triethylene glycol",
+    "volume": 40.0
+  },
+  "conditions": {
+    "temperature": 265.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 21.0,
+      "width": 21.0,
+      "depth": 21.0
+    }
+  },
+  "pdfno_list": [
+    "65-6567"
+  ],
+  "source": {
+    "synthesis_id_original": "557.json_CuZn_2511",
+    "nodes": 17,
+    "edges": 17
+  },
+  "retrieval_text": "composition: CuZn | method: microwave synthesis | solvent: triethylene glycol | solvent.volume: 40.0 | temperature: 265.0 | crystalsystem: cubic | shape: spherical | size.length: 21.0 | size.width: 21.0 | size.depth: 21.0 | precursor: Zn(NO3)2·4H2O (conc 2.0) | precursor: Cu(NO3)2·3H2O (conc 2.0) | additive: hydrazine hydrate (mass 0.103; conc 2.0) | pdfno_list: 65-6567"
+}

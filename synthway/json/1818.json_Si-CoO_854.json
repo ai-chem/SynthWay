@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "1818.json_Si-CoO_854",
+  "composition": "Si-CoO",
+  "elements": [
+    "Si",
+    "Co",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Co(NO3)2",
+      "mass": 0.6926
+    }
+  ],
+  "additives": [
+    {
+      "name": "urea",
+      "mass": 0.6
+    },
+    {
+      "name": "tetraethylorthosilicate"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 100.0
+  },
+  "product": {
+    "shape": "wire",
+    "size": {
+      "length": 75.0,
+      "width": 15.0,
+      "depth": 15.0
+    }
+  },
+  "pdfno_list": [
+    "43 1004"
+  ],
+  "source": {
+    "synthesis_id_original": "1818.json_Si-CoO_854",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Si-CoO | solvent: water | solvent.volume: 50.0 | temperature: 100.0 | shape: wire | size.length: 75.0 | size.width: 15.0 | size.depth: 15.0 | precursor: Co(NO3)2 (mass 0.6926) | additive: urea (mass 0.6) | additive: tetraethylorthosilicate | pdfno_list: 43 1004"
+}

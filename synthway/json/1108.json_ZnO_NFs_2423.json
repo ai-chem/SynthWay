@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1108.json_ZnO_NFs_2423",
+  "composition": "ZnO NFs",
+  "elements": [
+    "Zn",
+    "O",
+    "N",
+    "Fs"
+  ],
+  "precursors": [
+    {
+      "name": "Aluminum foil mixtures"
+    }
+  ],
+  "additives": [
+    {
+      "name": "vegetable peel extracts"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "flower-like",
+    "size": {
+      "length": 46.0,
+      "width": 46.0,
+      "depth": 46.0
+    }
+  },
+  "pdfno_list": [
+    "01-079-0207"
+  ],
+  "source": {
+    "synthesis_id_original": "1108.json_ZnO_NFs_2423",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: ZnO NFs | solvent: water | temperature: 60.0 | crystalsystem: hexagonal | shape: flower-like | size.length: 46.0 | size.width: 46.0 | size.depth: 46.0 | precursor: Aluminum foil mixtures | additive: vegetable peel extracts | pdfno_list: 01-079-0207"
+}

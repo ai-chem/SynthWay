@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "1739.json_Ag_3086",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "nishamalaki churna extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 69.0,
+      "width": 69.0,
+      "depth": 69.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1739.json_Ag_3086",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Ag | solvent: water | temperature: 80.0 | crystalsystem: cubic | shape: spherical | size.length: 69.0 | size.width: 69.0 | size.depth: 69.0 | precursor: AgNO3 (conc 1.0) | additive: nishamalaki churna extract"
+}

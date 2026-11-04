@@ -1,0 +1,57 @@
+{
+  "synthesis_id": "908.json_CdSe@TOPO_300",
+  "composition": "CdSe@TOPO",
+  "elements": [
+    "Cd",
+    "Se",
+    "T",
+    "O",
+    "P"
+  ],
+  "precursors": [
+    {
+      "name": "Se",
+      "mass": 0.05,
+      "conc": 15.75
+    },
+    {
+      "name": "NaBH4",
+      "mass": 0.06
+    },
+    {
+      "name": "CdCl2",
+      "mass": 0.115,
+      "conc": 15.75
+    }
+  ],
+  "additives": [
+    {
+      "name": "trioctylphosphine oxide"
+    },
+    {
+      "name": "hexadecylamine"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 80.0
+  },
+  "conditions": {
+    "temperature": 250.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal+cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 3.8,
+      "width": 3.8,
+      "depth": 3.8
+    }
+  },
+  "source": {
+    "synthesis_id_original": "908.json_CdSe@TOPO_300",
+    "nodes": 18,
+    "edges": 18
+  },
+  "retrieval_text": "composition: CdSe@TOPO | solvent: deionized water | solvent.volume: 80.0 | temperature: 250.0 | crystalsystem: hexagonal+cubic | shape: spherical | size.length: 3.8 | size.width: 3.8 | size.depth: 3.8 | precursor: Se (mass 0.05; conc 15.75) | precursor: NaBH4 (mass 0.06) | precursor: CdCl2 (mass 0.115; conc 15.75) | additive: trioctylphosphine oxide | additive: hexadecylamine"
+}

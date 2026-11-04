@@ -1,0 +1,32 @@
+{
+  "synthesis_id": "243.json_Mn3O4_MnO_2415",
+  "composition": "Mn3O4, MnO",
+  "elements": [
+    "Mn",
+    "O"
+  ],
+  "method": "nonaqueous",
+  "solvent": {
+    "name": "benzyl alcohol",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "shape": "plate",
+    "size": {
+      "length": 37.0
+    }
+  },
+  "pdfno_list": [
+    "07-230, 24-734"
+  ],
+  "source": {
+    "synthesis_id_original": "243.json_Mn3O4_MnO_2415",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: Mn3O4, MnO | method: nonaqueous | solvent: benzyl alcohol | solvent.volume: 20.0 | temperature: 200.0 | crystalsystem: face-centered cubic | shape: plate | size.length: 37.0 | pdfno_list: 07-230, 24-734"
+}

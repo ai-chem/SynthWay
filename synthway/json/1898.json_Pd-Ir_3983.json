@@ -1,0 +1,53 @@
+{
+  "synthesis_id": "1898.json_Pd-Ir_3983",
+  "composition": "Pd-Ir",
+  "elements": [
+    "Pd",
+    "Ir"
+  ],
+  "method": "seed-mediated growth",
+  "precursors": [
+    {
+      "name": "Na3IrCl6",
+      "mass": 16.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 100.0
+    },
+    {
+      "name": "ascorbic acid",
+      "mass": 50.0
+    }
+  ],
+  "seeds": [
+    {
+      "name": "Pd",
+      "mass": 5.0
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 14.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "truncated octahedral",
+    "size": {
+      "length": 5.9,
+      "width": 5.9,
+      "depth": 5.9
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1898.json_Pd-Ir_3983",
+    "nodes": 18,
+    "edges": 17
+  },
+  "retrieval_text": "composition: Pd-Ir | method: seed-mediated growth | solvent: ethylene glycol | solvent.volume: 14.0 | temperature: 200.0 | crystalsystem: cubic | shape: truncated octahedral | size.length: 5.9 | size.width: 5.9 | size.depth: 5.9 | precursor: Na3IrCl6 (mass 16.0) | additive: polyvinylpyrrolidone (mass 100.0) | additive: ascorbic acid (mass 50.0) | seed: Pd (mass 5.0)"
+}

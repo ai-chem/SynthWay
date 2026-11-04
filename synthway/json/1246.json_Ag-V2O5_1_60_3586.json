@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "1246.json_Ag-V2O5_1:60_3586",
+  "composition": "Ag-V2O5 1:60",
+  "elements": [
+    "Ag",
+    "V",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "Ag(acac)"
+    },
+    {
+      "name": "V2O5"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 120.0
+  },
+  "product": {
+    "shape": "sheets",
+    "size": {
+      "length": 14.61,
+      "width": 14.61,
+      "depth": 14.61
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1246.json_Ag-V2O5_1:60_3586",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Ag-V2O5 1:60 | method: hydrothermal | solvent: water | temperature: 120.0 | shape: sheets | size.length: 14.61 | size.width: 14.61 | size.depth: 14.61 | precursor: Ag(acac) | precursor: V2O5"
+}

@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "58.json_S-167.8_4069",
+  "composition": "S-167.8",
+  "elements": [
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "Si(OC2H5)4"
+    }
+  ],
+  "additives": [
+    {
+      "name": "cetyltrimethylammonium chloride",
+      "mass": 0.26
+    },
+    {
+      "name": "ethanol",
+      "mass": 1.65
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "size": {
+      "length": 167.8,
+      "width": 167.8,
+      "depth": 167.8
+    }
+  },
+  "source": {
+    "synthesis_id_original": "58.json_S-167.8_4069",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: S-167.8 | solvent: water | size.length: 167.8 | size.width: 167.8 | size.depth: 167.8 | precursor: Si(OC2H5)4 | additive: cetyltrimethylammonium chloride (mass 0.26) | additive: ethanol (mass 1.65)"
+}

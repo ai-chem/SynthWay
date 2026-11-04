@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "813.json_Co3O4_2650",
+  "composition": "Co3O4",
+  "elements": [
+    "Co",
+    "O"
+  ],
+  "method": "thermal decomposition",
+  "precursors": [
+    {
+      "name": "Co(NO3)2*6H2O",
+      "mass": 2.9
+    },
+    {
+      "name": "C7H8N2O2",
+      "mass": 3.08
+    }
+  ],
+  "conditions": {
+    "temperature": 100.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "size": {
+      "length": 20.0,
+      "width": 20.0,
+      "depth": 20.0
+    }
+  },
+  "pdfno_list": [
+    "42-1467"
+  ],
+  "source": {
+    "synthesis_id_original": "813.json_Co3O4_2650",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Co3O4 | method: thermal decomposition | temperature: 100.0 | crystalsystem: face-centered cubic | size.length: 20.0 | size.width: 20.0 | size.depth: 20.0 | precursor: Co(NO3)2*6H2O (mass 2.9) | precursor: C7H8N2O2 (mass 3.08) | pdfno_list: 42-1467"
+}

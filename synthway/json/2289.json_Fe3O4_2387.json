@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "2289.json_Fe3O4_2387",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "C18H34O2",
+      "conc": 1.9
+    },
+    {
+      "name": "Fe3(CO)12",
+      "conc": 5.0
+    }
+  ],
+  "solvent": {
+    "name": "diethylene glycol diethyl ether",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 300.0
+  },
+  "product": {
+    "crystalsystem": "spinel",
+    "shape": "spherical",
+    "size": {
+      "length": 7.38,
+      "width": 7.38,
+      "depth": 7.38
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2289.json_Fe3O4_2387",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Fe3O4 | solvent: diethylene glycol diethyl ether | solvent.volume: 50.0 | temperature: 300.0 | crystalsystem: spinel | shape: spherical | size.length: 7.38 | size.width: 7.38 | size.depth: 7.38 | precursor: C18H34O2 (conc 1.9) | precursor: Fe3(CO)12 (conc 5.0)"
+}

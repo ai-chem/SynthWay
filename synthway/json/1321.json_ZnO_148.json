@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1321.json_ZnO_148",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "chemical precipitation",
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 60.0
+  },
+  "conditions": {
+    "ph": 8.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spindle",
+    "size": {
+      "length": 225.0,
+      "width": 225.0,
+      "depth": 225.0
+    }
+  },
+  "pdfno_list": [
+    "99-0111"
+  ],
+  "source": {
+    "synthesis_id_original": "1321.json_ZnO_148",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: ZnO | method: chemical precipitation | solvent: distilled water | solvent.volume: 60.0 | pH: 8.0 | crystalsystem: hexagonal | shape: spindle | size.length: 225.0 | size.width: 225.0 | size.depth: 225.0 | precursor: Zn(CH3COO)2 (conc 100.0) | additive: sodium hydroxide (conc 1000.0) | pdfno_list: 99-0111"
+}

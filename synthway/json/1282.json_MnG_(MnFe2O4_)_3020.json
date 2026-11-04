@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "1282.json_MnG_(MnFe2O4_)_3020",
+  "composition": "MnG (MnFe2O4 )",
+  "elements": [
+    "Mn",
+    "G",
+    "Fe",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Mn(NO3)2"
+    },
+    {
+      "name": "Fe(NO3)3"
+    }
+  ],
+  "additives": [
+    {
+      "name": "cardamom seeds/ginger root extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 80.0,
+    "ph": 4.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 43.5,
+      "width": 43.5,
+      "depth": 43.5
+    }
+  },
+  "pdfno_list": [
+    "74-2403 85-0599"
+  ],
+  "source": {
+    "synthesis_id_original": "1282.json_MnG_(MnFe2O4_)_3020",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: MnG (MnFe2O4 ) | method: green synthesis | solvent: water | temperature: 80.0 | pH: 4.0 | crystalsystem: cubic | size.length: 43.5 | size.width: 43.5 | size.depth: 43.5 | precursor: Mn(NO3)2 | precursor: Fe(NO3)3 | additive: cardamom seeds/ginger root extract | pdfno_list: 74-2403 85-0599"
+}

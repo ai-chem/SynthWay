@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "1780.json_HIF-Pt_2135",
+  "composition": "HIF-Pt",
+  "elements": [
+    "H",
+    "I",
+    "F",
+    "Pt"
+  ],
+  "method": "one-pot synthesis",
+  "precursors": [
+    {
+      "name": "H2PtCl6",
+      "mass": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 400.0
+    },
+    {
+      "name": "glycine",
+      "mass": 75.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 6.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "shape": "cube",
+    "size": {
+      "length": 43.9,
+      "width": 43.9,
+      "depth": 43.9
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1780.json_HIF-Pt_2135",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: HIF-Pt | method: one-pot synthesis | solvent: water | solvent.volume: 6.0 | temperature: 200.0 | shape: cube | size.length: 43.9 | size.width: 43.9 | size.depth: 43.9 | precursor: H2PtCl6 (mass 1.0) | additive: polyvinylpyrrolidone (mass 400.0) | additive: glycine (mass 75.0)"
+}

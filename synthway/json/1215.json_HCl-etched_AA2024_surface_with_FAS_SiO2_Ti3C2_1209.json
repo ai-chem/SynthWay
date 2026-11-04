@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "1215.json_HCl-etched_AA2024_surface_with_FAS/SiO2/Ti3C2_1209",
+  "composition": "HCl-etched AA2024 surface with FAS/SiO2/Ti3C2",
+  "elements": [
+    "H",
+    "Cl",
+    "A",
+    "F",
+    "S",
+    "Si",
+    "O",
+    "Ti",
+    "C"
+  ],
+  "precursors": [
+    {
+      "name": "Al2024"
+    },
+    {
+      "name": "SiO2"
+    },
+    {
+      "name": "FAS/Ti3C2"
+    }
+  ],
+  "solvent": {
+    "name": "hydrochloric acid"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "source": {
+    "synthesis_id_original": "1215.json_HCl-etched_AA2024_surface_with_FAS/SiO2/Ti3C2_1209",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: HCl-etched AA2024 surface with FAS/SiO2/Ti3C2 | solvent: hydrochloric acid | temperature: 25.0 | precursor: Al2024 | precursor: SiO2 | precursor: FAS/Ti3C2"
+}

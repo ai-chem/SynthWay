@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "2376.json_3R-MoS2_1595",
+  "composition": "3R-MoS2",
+  "elements": [
+    "R",
+    "Mo",
+    "S"
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 220.0
+  },
+  "product": {
+    "shape": "wire",
+    "size": {
+      "length": 450.0,
+      "width": 35.0,
+      "depth": 35.0
+    }
+  },
+  "pdfno_list": [
+    "17-0744"
+  ],
+  "source": {
+    "synthesis_id_original": "2376.json_3R-MoS2_1595",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: 3R-MoS2 | solvent: distilled water | solvent.volume: 50.0 | temperature: 220.0 | shape: wire | size.length: 450.0 | size.width: 35.0 | size.depth: 35.0 | pdfno_list: 17-0744"
+}

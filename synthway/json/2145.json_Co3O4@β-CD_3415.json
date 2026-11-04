@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "2145.json_Co3O4@β-CD_3415",
+  "composition": "Co3O4@β-CD",
+  "elements": [
+    "Co",
+    "O",
+    "C",
+    "D"
+  ],
+  "precursors": [
+    {
+      "name": "Co(NO3)2•6H2O",
+      "mass": 2.5
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 3500.0
+    },
+    {
+      "name": "β-cd",
+      "mass": 2.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 200.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "size": {
+      "length": 10.0,
+      "width": 10.0,
+      "depth": 10.0
+    }
+  },
+  "pdfno_list": [
+    "042-1467"
+  ],
+  "source": {
+    "synthesis_id_original": "2145.json_Co3O4@β-CD_3415",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Co3O4@β-CD | solvent: water | solvent.volume: 200.0 | temperature: 200.0 | size.length: 10.0 | size.width: 10.0 | size.depth: 10.0 | precursor: Co(NO3)2•6H2O (mass 2.5) | additive: sodium hydroxide (conc 3500.0) | additive: β-cd (mass 2.0) | pdfno_list: 042-1467"
+}

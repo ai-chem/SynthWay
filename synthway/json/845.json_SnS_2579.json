@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "845.json_SnS_2579",
+  "composition": "SnS",
+  "elements": [
+    "Sn",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "SnCI2*2H2O",
+      "mass": 4.46,
+      "conc": 200.0
+    },
+    {
+      "name": "C2H5NS",
+      "mass": 0.3,
+      "conc": 200.0
+    },
+    {
+      "name": "NH3 (aq.)",
+      "mass": 0.3,
+      "conc": 200.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "hydrochloric acid"
+    },
+    {
+      "name": "triethanolamine",
+      "conc": 3700.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 300.0
+  },
+  "product": {
+    "crystalsystem": "cubic"
+  },
+  "source": {
+    "synthesis_id_original": "845.json_SnS_2579",
+    "nodes": 13,
+    "edges": 15
+  },
+  "retrieval_text": "composition: SnS | solvent: water | temperature: 300.0 | crystalsystem: cubic | precursor: SnCI2*2H2O (mass 4.46; conc 200.0) | precursor: C2H5NS (mass 0.3; conc 200.0) | precursor: NH3 (aq.) (mass 0.3; conc 200.0) | additive: hydrochloric acid | additive: triethanolamine (conc 3700.0)"
+}

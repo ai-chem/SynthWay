@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "733.json_CeO2_362",
+  "composition": "CeO2",
+  "elements": [
+    "Ce",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "NaOH:KOH",
+      "mass": 20.0
+    },
+    {
+      "name": "Ce(NO3)3",
+      "mass": 0.1
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 220.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "width": 7.0
+    }
+  },
+  "pdfno_list": [
+    "34-0394"
+  ],
+  "source": {
+    "synthesis_id_original": "733.json_CeO2_362",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: CeO2 | solvent: water | temperature: 220.0 | crystalsystem: cubic | shape: spherical | size.width: 7.0 | precursor: NaOH:KOH (mass 20.0) | precursor: Ce(NO3)3 (mass 0.1) | pdfno_list: 34-0394"
+}

@@ -1,0 +1,13 @@
+Model,Criterion,Spearman’s ρ,"ICC(A,1), 95% CI",Accuracy,Cohen’s κ,MAE,RMSE,Bias (LLM - experts)
+Claude Opus 4.5,Chemical Plausibility & Consistency,0.273,"0.155  [-0.489, 0.439]",0.600,0.091,0.211,0.255,0.104
+Gemini 2.0 Flash,Chemical Plausibility & Consistency,0.337,"0.010  [-0.028, 0.167]",0.800,0.000,0.194,0.287,0.194
+Llama 4 Maverick,Chemical Plausibility & Consistency,-0.459,"-0.177  [-0.397, 0.234]",0.600,0.000,0.162,0.225,0.132
+NVIDIA Nemotron 3 Nano 30B A3B,Chemical Plausibility & Consistency,0.656,"0.478 [0.058, 0.708]",0.500,0.194,0.239,0.267,0.204
+Claude Opus 4.5,Faithfulness,-0.008,"0.031  [-0.065, 0.416]",0.600,0.200,0.272,0.412,0.259
+Gemini 2.0 Flash,Faithfulness,-0.240,"-0.017  [-0.105, 0.069]",0.300,0.054,0.479,0.546,0.479
+Llama 4 Maverick,Faithfulness,0.778,"0.276  [0.026, 0.442]",0.500,0.138,0.292,0.394,0.292
+NVIDIA Nemotron 3 Nano 30B A3B,Faithfulness,0.228,"0.018  [-0.109, 0.135]",0.200,0.024,0.464,0.534,0.464
+Claude Opus 4.5,Answer Relevancy,—,"0.000  [0.000, 0.000]",1.000,1.000,0.019,0.034,0.019
+Gemini 2.0 Flash,Answer Relevancy,—,"0.000  [0.000, 0.000]",1.000,1.000,0.006,0.020,0.006
+Llama 4 Maverick,Answer Relevancy,—,"0.000  [0.000, 0.000]",0.600,0.000,0.160,0.261,-0.160
+NVIDIA Nemotron 3 Nano 30B A3B,Answer Relevancy,—,"0.000  [0.000, 0.000]",0.900,0.000,0.056,0.159,0.056

@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "1266.json_ZnOnano-com-[Chi-SiG]_3276",
+  "composition": "ZnOnano-com-[Chi-SiG]",
+  "elements": [
+    "Zn",
+    "On",
+    "Ch",
+    "Si",
+    "G"
+  ],
+  "precursors": [
+    {
+      "name": "ZnO Nanocomposite",
+      "mass": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "chi-sig",
+      "mass": 1.125
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 40.0
+  },
+  "product": {
+    "crystalsystem": "wurtzite",
+    "shape": "sheets",
+    "size": {
+      "length": 30.83,
+      "width": 30.83,
+      "depth": 30.83
+    }
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "1266.json_ZnOnano-com-[Chi-SiG]_3276",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: ZnOnano-com-[Chi-SiG] | solvent: water | temperature: 40.0 | crystalsystem: wurtzite | shape: sheets | size.length: 30.83 | size.width: 30.83 | size.depth: 30.83 | precursor: ZnO Nanocomposite (mass 1.0) | additive: chi-sig (mass 1.125) | pdfno_list: 36-1451"
+}

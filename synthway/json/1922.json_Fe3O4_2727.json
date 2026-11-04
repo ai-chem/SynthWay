@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "1922.json_Fe3O4_2727",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "FeCl2",
+      "conc": 200.0
+    },
+    {
+      "name": "FeCl3",
+      "mass": 1.8,
+      "conc": 100.0
+    }
+  ],
+  "solvent": {
+    "name": "aqueous ammonia",
+    "volume": 15.0
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "size": {
+      "length": 30.0,
+      "width": 30.0,
+      "depth": 30.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1922.json_Fe3O4_2727",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Fe3O4 | solvent: aqueous ammonia | solvent.volume: 15.0 | temperature: 80.0 | size.length: 30.0 | size.width: 30.0 | size.depth: 30.0 | precursor: FeCl2 (conc 200.0) | precursor: FeCl3 (mass 1.8; conc 100.0)"
+}

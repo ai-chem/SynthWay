@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "2362.json_Au_2449",
+  "composition": "Au",
+  "elements": [
+    "Au"
+  ],
+  "precursors": [
+    {
+      "name": "HAuCl4*3H2O",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "cetyltrimethylammonium bromide",
+      "conc": 100.0
+    },
+    {
+      "name": "ascorbic acid",
+      "conc": 100.0
+    },
+    {
+      "name": "silver nitrate",
+      "conc": 10.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "wire"
+  },
+  "source": {
+    "synthesis_id_original": "2362.json_Au_2449",
+    "nodes": 10,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Au | solvent: water | shape: wire | precursor: HAuCl4*3H2O (conc 10.0) | additive: cetyltrimethylammonium bromide (conc 100.0) | additive: ascorbic acid (conc 100.0) | additive: silver nitrate (conc 10.0)"
+}

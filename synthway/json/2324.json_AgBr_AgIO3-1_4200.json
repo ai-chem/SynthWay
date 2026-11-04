@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "2324.json_AgBr/AgIO3-1_4200",
+  "composition": "AgBr/AgIO3-1",
+  "elements": [
+    "Ag",
+    "Br",
+    "I",
+    "O"
+  ],
+  "method": "one-pot precipitation",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "mass": 3.39,
+      "conc": 20.0
+    },
+    {
+      "name": "KIO3",
+      "mass": 3.21,
+      "conc": 15.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "cetyltrimethylammonium bromide",
+      "mass": 1.82,
+      "conc": 5.0
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 40.0
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "shape": "block-like"
+  },
+  "source": {
+    "synthesis_id_original": "2324.json_AgBr/AgIO3-1_4200",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: AgBr/AgIO3-1 | method: one-pot precipitation | solvent: deionized water | solvent.volume: 40.0 | temperature: 60.0 | shape: block-like | precursor: AgNO3 (mass 3.39; conc 20.0) | precursor: KIO3 (mass 3.21; conc 15.0) | additive: cetyltrimethylammonium bromide (mass 1.82; conc 5.0)"
+}

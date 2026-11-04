@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "1874.json_Au_45",
+  "composition": "Au",
+  "elements": [
+    "Au"
+  ],
+  "method": "thermal reduction",
+  "precursors": [
+    {
+      "name": "HAuCl4·3H2O",
+      "conc": 2.947
+    }
+  ],
+  "additives": [
+    {
+      "name": "trisodium citrate",
+      "conc": 38.8
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 90.0
+  },
+  "conditions": {
+    "temperature": 100.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 16.5,
+      "width": 16.5,
+      "depth": 16.5
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1874.json_Au_45",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Au | method: thermal reduction | solvent: water | solvent.volume: 90.0 | temperature: 100.0 | shape: spherical | size.length: 16.5 | size.width: 16.5 | size.depth: 16.5 | precursor: HAuCl4·3H2O (conc 2.947) | additive: trisodium citrate (conc 38.8)"
+}

@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1173.json_FZO_2574",
+  "composition": "FZO",
+  "elements": [
+    "F",
+    "Z",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2",
+      "mass": 0.367
+    },
+    {
+      "name": "Fe(acac)3"
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "mass": 0.128
+    },
+    {
+      "name": "ethyl acetate"
+    },
+    {
+      "name": "ethanol"
+    }
+  ],
+  "solvent": {
+    "name": "triethylene glycol",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "crystalsystem": "jcpds 01–075–6445"
+  },
+  "source": {
+    "synthesis_id_original": "1173.json_FZO_2574",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: FZO | solvent: triethylene glycol | solvent.volume: 30.0 | temperature: 25.0 | crystalsystem: jcpds 01–075–6445 | precursor: Zn(CH3COO)2 (mass 0.367) | precursor: Fe(acac)3 | additive: sodium hydroxide (mass 0.128) | additive: ethyl acetate | additive: ethanol"
+}

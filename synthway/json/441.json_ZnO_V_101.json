@@ -1,0 +1,32 @@
+{
+  "synthesis_id": "441.json_ZnO:V_101",
+  "composition": "ZnO:V",
+  "elements": [
+    "Zn",
+    "O",
+    "V"
+  ],
+  "method": "sol-gel",
+  "solvent": {
+    "name": "methanol",
+    "volume": 112.0
+  },
+  "conditions": {
+    "temperature": 700.0
+  },
+  "product": {
+    "shape": "hexagonal",
+    "size": {
+      "length": 80.0
+    }
+  },
+  "pdfno_list": [
+    "37-1485"
+  ],
+  "source": {
+    "synthesis_id_original": "441.json_ZnO:V_101",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: ZnO:V | method: sol-gel | solvent: methanol | solvent.volume: 112.0 | temperature: 700.0 | shape: hexagonal | size.length: 80.0 | pdfno_list: 37-1485"
+}

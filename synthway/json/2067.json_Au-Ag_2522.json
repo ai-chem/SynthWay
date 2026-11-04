@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "2067.json_Au-Ag_2522",
+  "composition": "Au–Ag",
+  "elements": [
+    "Au",
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "HAuCl4",
+      "conc": 29.0
+    },
+    {
+      "name": "AgNO3",
+      "conc": 6.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "chitosan",
+      "mass": 0.1
+    },
+    {
+      "name": "ascorbic acid",
+      "conc": 100.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 20.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "nanodots",
+    "size": {
+      "length": 10.0,
+      "width": 10.0,
+      "depth": 10.0
+    }
+  },
+  "pdfno_list": [
+    "45-1454"
+  ],
+  "source": {
+    "synthesis_id_original": "2067.json_Au-Ag_2522",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: Au–Ag | solvent: water | solvent.volume: 20.0 | crystalsystem: cubic | shape: nanodots | size.length: 10.0 | size.width: 10.0 | size.depth: 10.0 | precursor: HAuCl4 (conc 29.0) | precursor: AgNO3 (conc 6.0) | additive: chitosan (mass 0.1) | additive: ascorbic acid (conc 100.0) | pdfno_list: 45-1454"
+}

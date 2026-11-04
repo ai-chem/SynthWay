@@ -1,0 +1,30 @@
+{
+  "synthesis_id": "674.json_Au_3558",
+  "composition": "Au",
+  "elements": [
+    "Au"
+  ],
+  "method": "chemical reduction",
+  "solvent": {
+    "name": "oleic acid + oleylamine + hexane",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "shape": "wire",
+    "size": {
+      "length": 1000.0,
+      "width": 9.0,
+      "depth": 9.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "674.json_Au_3558",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Au | method: chemical reduction | solvent: oleic acid + oleylamine + hexane | solvent.volume: 20.0 | temperature: 80.0 | crystalsystem: face-centered cubic | shape: wire | size.length: 1000.0 | size.width: 9.0 | size.depth: 9.0"
+}

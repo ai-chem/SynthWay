@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1782.json_Pd_1338",
+  "composition": "Pd",
+  "elements": [
+    "Pd"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "K2PdCl4",
+      "mass": 0.065
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 0.105
+    },
+    {
+      "name": "ascorbic acid",
+      "mass": 0.06
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 3.0
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "shape": "octahedrons,",
+    "size": {
+      "length": 10.0,
+      "width": 10.0,
+      "depth": 10.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1782.json_Pd_1338",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Pd | method: hydrothermal | solvent: water | solvent.volume: 3.0 | temperature: 80.0 | shape: octahedrons, | size.length: 10.0 | size.width: 10.0 | size.depth: 10.0 | precursor: K2PdCl4 (mass 0.065) | additive: polyvinylpyrrolidone (mass 0.105) | additive: ascorbic acid (mass 0.06)"
+}

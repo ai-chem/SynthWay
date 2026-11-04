@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "1376.json_CeO2-SATF_180",
+  "composition": "CeO2-SATF",
+  "elements": [
+    "Ce",
+    "O",
+    "S",
+    "A",
+    "T",
+    "F"
+  ],
+  "precursors": [
+    {
+      "name": "Gs-CeO2 (NPs)",
+      "mass": 0.3
+    },
+    {
+      "name": "C6H7NaO6",
+      "mass": 0.3
+    }
+  ],
+  "additives": [
+    {
+      "name": "acetic acid",
+      "conc": 0.1
+    }
+  ],
+  "solvent": {
+    "name": "sterile distilled water",
+    "volume": 20.0
+  },
+  "product": {
+    "shape": "crack-like structure"
+  },
+  "source": {
+    "synthesis_id_original": "1376.json_CeO2-SATF_180",
+    "nodes": 9,
+    "edges": 9
+  },
+  "retrieval_text": "composition: CeO2-SATF | solvent: sterile distilled water | solvent.volume: 20.0 | shape: crack-like structure | precursor: Gs-CeO2 (NPs) (mass 0.3) | precursor: C6H7NaO6 (mass 0.3) | additive: acetic acid (conc 0.1)"
+}

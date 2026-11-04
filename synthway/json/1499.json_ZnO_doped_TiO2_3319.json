@@ -1,0 +1,34 @@
+{
+  "synthesis_id": "1499.json_ZnO_doped_TiO2_3319",
+  "composition": "ZnO doped TiO2",
+  "elements": [
+    "Zn",
+    "O",
+    "Ti"
+  ],
+  "method": "high temperature solid state",
+  "precursors": [
+    {
+      "name": "ZnO"
+    },
+    {
+      "name": "TiO2"
+    }
+  ],
+  "product": {
+    "size": {
+      "length": 160.0,
+      "width": 160.0,
+      "depth": 160.0
+    }
+  },
+  "pdfno_list": [
+    "00-021-1272"
+  ],
+  "source": {
+    "synthesis_id_original": "1499.json_ZnO_doped_TiO2_3319",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: ZnO doped TiO2 | method: high temperature solid state | size.length: 160.0 | size.width: 160.0 | size.depth: 160.0 | precursor: ZnO | precursor: TiO2 | pdfno_list: 00-021-1272"
+}

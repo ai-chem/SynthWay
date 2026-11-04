@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1278.json_Ag_1339",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1000.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "amoora rohituka leaf extract"
+    },
+    {
+      "name": "distilled water"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "ph": 6.6
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 14.6,
+      "width": 14.6,
+      "depth": 14.6
+    }
+  },
+  "pdfno_list": [
+    "04-0783"
+  ],
+  "source": {
+    "synthesis_id_original": "1278.json_Ag_1339",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Ag | method: green synthesis | solvent: water | pH: 6.6 | crystalsystem: face-centered cubic | shape: spherical | size.length: 14.6 | size.width: 14.6 | size.depth: 14.6 | precursor: AgNO3 (conc 1000.0) | additive: amoora rohituka leaf extract | additive: distilled water | pdfno_list: 04-0783"
+}

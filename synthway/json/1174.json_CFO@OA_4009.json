@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "1174.json_CFO@OA_4009",
+  "composition": "CFO@OA",
+  "elements": [
+    "C",
+    "F",
+    "O",
+    "A"
+  ],
+  "precursors": [
+    {
+      "name": "Co(NO3)2*6H2O",
+      "mass": 1.48
+    },
+    {
+      "name": "Fe(NO3)3*9H2O",
+      "mass": 4.11
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleic acid"
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "double distilled water",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "size": {
+      "length": 19.0,
+      "width": 19.0,
+      "depth": 19.0
+    }
+  },
+  "pdfno_list": [
+    "22-1086"
+  ],
+  "source": {
+    "synthesis_id_original": "1174.json_CFO@OA_4009",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: CFO@OA | solvent: double distilled water | solvent.volume: 20.0 | temperature: 80.0 | size.length: 19.0 | size.width: 19.0 | size.depth: 19.0 | precursor: Co(NO3)2*6H2O (mass 1.48) | precursor: Fe(NO3)3*9H2O (mass 4.11) | additive: oleic acid | additive: sodium hydroxide (conc 1000.0) | pdfno_list: 22-1086"
+}

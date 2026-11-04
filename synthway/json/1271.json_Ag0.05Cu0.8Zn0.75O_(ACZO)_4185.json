@@ -1,0 +1,62 @@
+{
+  "synthesis_id": "1271.json_Ag0.05Cu0.8Zn0.75O_(ACZO)_4185",
+  "composition": "Ag0.05Cu0.8Zn0.75O  (ACZO)",
+  "elements": [
+    "Ag",
+    "Cu",
+    "Zn",
+    "O",
+    "A",
+    "C",
+    "Z"
+  ],
+  "method": "co-precipitation green synthesis",
+  "precursors": [
+    {
+      "name": "ZnNO3·6H2O",
+      "conc": 1000.0
+    },
+    {
+      "name": "AgNO3",
+      "conc": 1000.0
+    },
+    {
+      "name": "Cu(NO3)2·3H2O",
+      "conc": 1000.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "aloe barbadensis miller gel extract"
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "distilled water"
+  },
+  "conditions": {
+    "temperature": 80.0,
+    "ph": 10.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal, cubic and monoclinic",
+    "shape": "spherical",
+    "size": {
+      "length": 45.64,
+      "width": 45.64,
+      "depth": 45.64
+    }
+  },
+  "pdfno_list": [
+    "36-1451 1-087-0597 41-0254"
+  ],
+  "source": {
+    "synthesis_id_original": "1271.json_Ag0.05Cu0.8Zn0.75O_(ACZO)_4185",
+    "nodes": 18,
+    "edges": 19
+  },
+  "retrieval_text": "composition: Ag0.05Cu0.8Zn0.75O  (ACZO) | method: co-precipitation green synthesis | solvent: distilled water | temperature: 80.0 | pH: 10.0 | crystalsystem: hexagonal, cubic and monoclinic | shape: spherical | size.length: 45.64 | size.width: 45.64 | size.depth: 45.64 | precursor: ZnNO3·6H2O (conc 1000.0) | precursor: AgNO3 (conc 1000.0) | precursor: Cu(NO3)2·3H2O (conc 1000.0) | additive: aloe barbadensis miller gel extract | additive: sodium hydroxide (conc 1000.0) | pdfno_list: 36-1451 1-087-0597 41-0254"
+}

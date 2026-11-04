@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "860.json_ZrO2_546",
+  "composition": "ZrO2",
+  "elements": [
+    "Zr",
+    "O"
+  ],
+  "method": "ball mill-aided precipitation rout",
+  "precursors": [
+    {
+      "name": "ZrO(NO3)2"
+    },
+    {
+      "name": "NaOH",
+      "conc": 4000.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 500.0,
+    "ph": 7.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "spherical",
+    "size": {
+      "length": 22.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "860.json_ZrO2_546",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: ZrO2 | method: ball mill-aided precipitation rout | solvent: water | temperature: 500.0 | pH: 7.0 | crystalsystem: monoclinic | shape: spherical | size.length: 22.0 | precursor: ZrO(NO3)2 | precursor: NaOH (conc 4000.0)"
+}

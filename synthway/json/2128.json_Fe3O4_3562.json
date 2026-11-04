@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "2128.json_Fe3O4_3562",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "FeCl3*6H2O",
+      "conc": 20.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyacrylic acid",
+      "conc": 100.0
+    },
+    {
+      "name": "sodium acetate",
+      "conc": 100.0
+    },
+    {
+      "name": "water",
+      "conc": 100.0
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 40.0
+  },
+  "conditions": {
+    "temperature": 600.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical"
+  },
+  "pdfno_list": [
+    "65-3107"
+  ],
+  "source": {
+    "synthesis_id_original": "2128.json_Fe3O4_3562",
+    "nodes": 13,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Fe3O4 | solvent: ethylene glycol | solvent.volume: 40.0 | temperature: 600.0 | crystalsystem: cubic | shape: spherical | precursor: FeCl3*6H2O (conc 20.0) | additive: polyacrylic acid (conc 100.0) | additive: sodium acetate (conc 100.0) | additive: water (conc 100.0) | pdfno_list: 65-3107"
+}

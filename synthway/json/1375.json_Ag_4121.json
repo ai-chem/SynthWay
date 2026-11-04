@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "1375.json_Ag_4121",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "mass": 0.0169,
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium borohydride",
+      "conc": 2.0
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 100.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 15.0,
+      "width": 15.0,
+      "depth": 15.0
+    }
+  },
+  "pdfno_list": [
+    "04-0783"
+  ],
+  "source": {
+    "synthesis_id_original": "1375.json_Ag_4121",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Ag | solvent: deionized water | solvent.volume: 100.0 | shape: spherical | size.length: 15.0 | size.width: 15.0 | size.depth: 15.0 | precursor: AgNO3 (mass 0.0169; conc 1.0) | additive: sodium borohydride (conc 2.0) | pdfno_list: 04-0783"
+}

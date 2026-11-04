@@ -1,0 +1,37 @@
+{
+  "synthesis_id": "988.json_NiO_3498",
+  "composition": "NiO",
+  "elements": [
+    "Ni",
+    "O"
+  ],
+  "method": "solvo-hydrothermal",
+  "precursors": [
+    {
+      "name": "Ni(acac)2",
+      "conc": 100.0
+    }
+  ],
+  "solvent": {
+    "name": "2-butanone",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "crystalsystem": "spherical",
+    "size": {
+      "width": 6.1
+    }
+  },
+  "pdfno_list": [
+    "47-1049"
+  ],
+  "source": {
+    "synthesis_id_original": "988.json_NiO_3498",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: NiO | method: solvo-hydrothermal | solvent: 2-butanone | solvent.volume: 20.0 | temperature: 200.0 | crystalsystem: spherical | size.width: 6.1 | precursor: Ni(acac)2 (conc 100.0) | pdfno_list: 47-1049"
+}

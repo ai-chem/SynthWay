@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "1482.json_Co3O4_3718",
+  "composition": "Co3O4",
+  "elements": [
+    "Co",
+    "O"
+  ],
+  "method": "deflagration",
+  "precursors": [
+    {
+      "name": "Co(NO3)2*6H2O",
+      "conc": 500.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "honey"
+    }
+  ],
+  "solvent": {
+    "name": "double distilled water",
+    "volume": 50.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "mushroom-like",
+    "size": {
+      "length": 31.205,
+      "width": 31.205,
+      "depth": 31.205
+    }
+  },
+  "pdfno_list": [
+    "43-1003"
+  ],
+  "source": {
+    "synthesis_id_original": "1482.json_Co3O4_3718",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Co3O4 | method: deflagration | solvent: double distilled water | solvent.volume: 50.0 | crystalsystem: cubic | shape: mushroom-like | size.length: 31.205 | size.width: 31.205 | size.depth: 31.205 | precursor: Co(NO3)2*6H2O (conc 500.0) | additive: honey | pdfno_list: 43-1003"
+}

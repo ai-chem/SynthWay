@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1758.json_MCSNs_2713",
+  "composition": "MCSNs",
+  "elements": [
+    "M",
+    "C",
+    "S",
+    "Ns"
+  ],
+  "precursors": [
+    {
+      "name": "Si(OC2H5)4"
+    }
+  ],
+  "additives": [
+    {
+      "name": "cetyltrimethylammonium bromide",
+      "mass": 6.6
+    },
+    {
+      "name": "ammonium hydroxide"
+    },
+    {
+      "name": "calcium nitrate tetrahydrate",
+      "mass": 31.2
+    }
+  ],
+  "solvent": {
+    "name": "deionized or double-distilled water",
+    "volume": 600.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 152.3,
+      "width": 152.3,
+      "depth": 152.3
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1758.json_MCSNs_2713",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: MCSNs | solvent: deionized or double-distilled water | solvent.volume: 600.0 | shape: spherical | size.length: 152.3 | size.width: 152.3 | size.depth: 152.3 | precursor: Si(OC2H5)4 | additive: cetyltrimethylammonium bromide (mass 6.6) | additive: ammonium hydroxide | additive: calcium nitrate tetrahydrate (mass 31.2)"
+}

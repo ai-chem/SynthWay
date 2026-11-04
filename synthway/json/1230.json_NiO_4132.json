@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1230.json_NiO_4132",
+  "composition": "NiO",
+  "elements": [
+    "Ni",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Ni(NO3)2*6H2O",
+      "mass": 2.1809,
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "red rice grains extract"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 75.0
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "rectangular",
+    "size": {
+      "length": 36.0,
+      "width": 36.0,
+      "depth": 36.0
+    }
+  },
+  "pdfno_list": [
+    "89-7131"
+  ],
+  "source": {
+    "synthesis_id_original": "1230.json_NiO_4132",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: NiO | solvent: deionized water | solvent.volume: 75.0 | temperature: 80.0 | crystalsystem: monoclinic | shape: rectangular | size.length: 36.0 | size.width: 36.0 | size.depth: 36.0 | precursor: Ni(NO3)2*6H2O (mass 2.1809; conc 100.0) | additive: red rice grains extract | pdfno_list: 89-7131"
+}

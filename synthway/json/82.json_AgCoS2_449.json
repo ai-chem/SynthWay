@@ -1,0 +1,29 @@
+{
+  "synthesis_id": "82.json_AgCoS2_449",
+  "composition": "AgCoS2",
+  "elements": [
+    "Ag",
+    "Co",
+    "S"
+  ],
+  "method": "hydrothermal",
+  "solvent": {
+    "name": "deionized water",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 140.0
+  },
+  "product": {
+    "shape": "sponge"
+  },
+  "pdfno_list": [
+    "98-062-4831"
+  ],
+  "source": {
+    "synthesis_id_original": "82.json_AgCoS2_449",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: AgCoS2 | method: hydrothermal | solvent: deionized water | solvent.volume: 10.0 | temperature: 140.0 | shape: sponge | pdfno_list: 98-062-4831"
+}

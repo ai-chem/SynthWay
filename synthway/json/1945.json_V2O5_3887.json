@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "1945.json_V2O5_3887",
+  "composition": "V2O5",
+  "elements": [
+    "V",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "VOSO4*nH2O",
+      "conc": 8.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "potassium bromate",
+      "conc": 5.0
+    },
+    {
+      "name": "nitric acid"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 180.0,
+    "ph": 2.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "wire",
+    "size": {
+      "length": 2000.0,
+      "width": 100.0,
+      "depth": 100.0
+    }
+  },
+  "pdfno_list": [
+    "003-0207"
+  ],
+  "source": {
+    "synthesis_id_original": "1945.json_V2O5_3887",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: V2O5 | solvent: water | solvent.volume: 30.0 | temperature: 180.0 | pH: 2.0 | crystalsystem: orthorhombic | shape: wire | size.length: 2000.0 | size.width: 100.0 | size.depth: 100.0 | precursor: VOSO4*nH2O (conc 8.0) | additive: potassium bromate (conc 5.0) | additive: nitric acid | pdfno_list: 003-0207"
+}

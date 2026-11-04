@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "1164.json_Au@CD-MOF_2733",
+  "composition": "Au@CD-MOF",
+  "elements": [
+    "Au",
+    "C",
+    "D",
+    "M",
+    "O",
+    "F"
+  ],
+  "precursors": [
+    {
+      "name": "CD-MOF",
+      "mass": 0.0465
+    },
+    {
+      "name": "Au NPs",
+      "mass": 0.01
+    }
+  ],
+  "additives": [
+    {
+      "name": "chloroauric acid",
+      "conc": 1.25
+    },
+    {
+      "name": "hydrochloric acid",
+      "conc": 1500.0
+    }
+  ],
+  "solvent": {
+    "name": "acetonitrile",
+    "volume": 5.0
+  },
+  "conditions": {
+    "temperature": 37.0
+  },
+  "product": {
+    "shape": "cube"
+  },
+  "source": {
+    "synthesis_id_original": "1164.json_Au@CD-MOF_2733",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Au@CD-MOF | solvent: acetonitrile | solvent.volume: 5.0 | temperature: 37.0 | shape: cube | precursor: CD-MOF (mass 0.0465) | precursor: Au NPs (mass 0.01) | additive: chloroauric acid (conc 1.25) | additive: hydrochloric acid (conc 1500.0)"
+}

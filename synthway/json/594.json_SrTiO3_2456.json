@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "594.json_SrTiO3_2456",
+  "composition": "SrTiO3",
+  "elements": [
+    "Sr",
+    "Ti",
+    "O"
+  ],
+  "method": "sol-gel",
+  "precursors": [
+    {
+      "name": "SrCl2",
+      "conc": 1000.0
+    },
+    {
+      "name": "TiCl4",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "isopropanol"
+  },
+  "conditions": {
+    "temperature": 1300.0,
+    "ph": 8.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 10.0
+    }
+  },
+  "pdfno_list": [
+    "01-089-4934"
+  ],
+  "source": {
+    "synthesis_id_original": "594.json_SrTiO3_2456",
+    "nodes": 11,
+    "edges": 11
+  },
+  "retrieval_text": "composition: SrTiO3 | method: sol-gel | solvent: isopropanol | temperature: 1300.0 | pH: 8.0 | shape: spherical | size.length: 10.0 | precursor: SrCl2 (conc 1000.0) | precursor: TiCl4 (conc 1000.0) | pdfno_list: 01-089-4934"
+}

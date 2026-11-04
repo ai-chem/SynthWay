@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "1369.json_Ag_4C_3093",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "chemical reduction",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "ascorbic acid",
+      "conc": 0.6
+    },
+    {
+      "name": "trisodium citrate",
+      "conc": 3.0
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 100.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0,
+    "ph": 9.0
+  },
+  "product": {
+    "size": {
+      "length": 28.0,
+      "width": 28.0,
+      "depth": 28.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1369.json_Ag_4C_3093",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: Ag | method: chemical reduction | solvent: water | temperature: 25.0 | pH: 9.0 | size.length: 28.0 | size.width: 28.0 | size.depth: 28.0 | precursor: AgNO3 (conc 100.0) | additive: ascorbic acid (conc 0.6) | additive: trisodium citrate (conc 3.0) | additive: sodium hydroxide (conc 100.0)"
+}

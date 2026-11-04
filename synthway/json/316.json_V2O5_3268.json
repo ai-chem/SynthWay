@@ -1,0 +1,30 @@
+{
+  "synthesis_id": "316.json_V2O5_3268",
+  "composition": "V2O5",
+  "elements": [
+    "V",
+    "O"
+  ],
+  "method": "sol-gel hydrothermal",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 850.0
+  },
+  "product": {
+    "shape": "wire",
+    "size": {
+      "length": 41.0
+    }
+  },
+  "pdfno_list": [
+    "76-0676, 73-0514, 76-0676"
+  ],
+  "source": {
+    "synthesis_id_original": "316.json_V2O5_3268",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: V2O5 | method: sol-gel hydrothermal | solvent: water | temperature: 850.0 | shape: wire | size.length: 41.0 | pdfno_list: 76-0676, 73-0514, 76-0676"
+}

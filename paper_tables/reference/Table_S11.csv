@@ -1,0 +1,13 @@
+Metric,Gemini 2.0 Flash,Claude Opus 4.5,Llama 4 Maverick,NVIDIA Nemotron 3 Nano 30b A3B
+Mean Faithfulness (Before),0.941,0.923,0.852,0.897
+Mean Faithfulness (After),0.92,0.918,0.864,0.885
+Mean Δ Faithfulness,-0.021,-0.005,0.012,-0.011
+Median Δ Faithfulness,0.000,0.000,0.000,0.000
+SD of Δ Faithfulness,0.098,0.083,0.131,0.228
+Pass Rate (Before),0.881,0.833,0.738,0.810
+Pass Rate (After),0.833,0.810,0.667,0.881
+"Routes with increased faithfulness score, n",3,7,14,13
+"Routes with decreased faithfulness score, n",7,10,13,13
+"Routes shifted from pass to fail, n",3,3,6,5
+"Routes shifted from fail to pass, n",1,2,3,8
+"ICC(A,1), 95% CI","0.669, [0.250, 0.888]","0.805, [0.486, 0.965]","0.602, [0.244, 0.822]","-0.083, [-0.319, 0.172]"

@@ -1,0 +1,30 @@
+{
+  "synthesis_id": "1463.json_OMV_1015",
+  "composition": "OMV",
+  "elements": [
+    "O",
+    "M",
+    "V"
+  ],
+  "precursors": [
+    {
+      "name": "E. coli (BL21) Supernatant"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "size": {
+      "length": 65.0,
+      "width": 65.0,
+      "depth": 65.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1463.json_OMV_1015",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: OMV | solvent: water | size.length: 65.0 | size.width: 65.0 | size.depth: 65.0 | precursor: E. coli (BL21) Supernatant"
+}

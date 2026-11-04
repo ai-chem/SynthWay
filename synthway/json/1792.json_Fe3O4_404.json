@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1792.json_Fe3O4_404",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "one-pot surfactantaided oxido-reduction",
+  "precursors": [
+    {
+      "name": "FeCl2·4H2O",
+      "mass": 0.203
+    },
+    {
+      "name": "FeCl3*6H2O",
+      "mass": 0.488
+    }
+  ],
+  "additives": [
+    {
+      "name": "dextran",
+      "mass": 5.0
+    },
+    {
+      "name": "hydrochloric acid"
+    }
+  ],
+  "solvent": {
+    "name": "ammonium hydroxide and water",
+    "volume": 15.0
+  },
+  "product": {
+    "shape": "wire",
+    "size": {
+      "length": 310.0,
+      "width": 135.0,
+      "depth": 135.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1792.json_Fe3O4_404",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Fe3O4 | method: one-pot surfactantaided oxido-reduction | solvent: ammonium hydroxide and water | solvent.volume: 15.0 | shape: wire | size.length: 310.0 | size.width: 135.0 | size.depth: 135.0 | precursor: FeCl2·4H2O (mass 0.203) | precursor: FeCl3*6H2O (mass 0.488) | additive: dextran (mass 5.0) | additive: hydrochloric acid"
+}

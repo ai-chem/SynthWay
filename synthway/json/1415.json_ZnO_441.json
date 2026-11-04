@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1415.json_ZnO_441",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2•2H2O",
+      "mass": 2.5
+    }
+  ],
+  "additives": [
+    {
+      "name": "annona glabra leaf extract"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 80.0,
+    "ph": 7.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 18.32,
+      "width": 18.32,
+      "depth": 18.32
+    }
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "1415.json_ZnO_441",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: ZnO | method: green synthesis | solvent: deionized water | solvent.volume: 10.0 | temperature: 80.0 | pH: 7.0 | crystalsystem: hexagonal | shape: spherical | size.length: 18.32 | size.width: 18.32 | size.depth: 18.32 | precursor: Zn(CH3COO)2•2H2O (mass 2.5) | additive: annona glabra leaf extract | pdfno_list: 36-1451"
+}

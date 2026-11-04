@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "1466.json_α-Fe2O3_2559",
+  "composition": "α-Fe2O3",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "wet chemical",
+  "precursors": [
+    {
+      "name": "FeCl3*6H2O",
+      "mass": 2.35
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "mass": 1.04
+    }
+  ],
+  "solvent": {
+    "name": "ethanol",
+    "volume": 40.0
+  },
+  "product": {
+    "crystalsystem": "rhombohedral",
+    "shape": "rectangular rod",
+    "size": {
+      "length": 73.52,
+      "width": 73.52,
+      "depth": 73.52
+    }
+  },
+  "pdfno_list": [
+    "033-0664"
+  ],
+  "source": {
+    "synthesis_id_original": "1466.json_α-Fe2O3_2559",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: α-Fe2O3 | method: wet chemical | solvent: ethanol | solvent.volume: 40.0 | crystalsystem: rhombohedral | shape: rectangular rod | size.length: 73.52 | size.width: 73.52 | size.depth: 73.52 | precursor: FeCl3*6H2O (mass 2.35) | additive: sodium hydroxide (mass 1.04) | pdfno_list: 033-0664"
+}

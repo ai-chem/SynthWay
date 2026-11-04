@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1017.json_Fe3O4_3145",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Fe(acac)3",
+      "mass": 0.706
+    },
+    {
+      "name": "C16H34O2",
+      "mass": 2.58
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleic acid",
+      "mass": 1.692
+    },
+    {
+      "name": "oleyl amine",
+      "mass": 1.602
+    }
+  ],
+  "solvent": {
+    "name": "benzyl ether",
+    "volume": 15.0
+  },
+  "conditions": {
+    "temperature": 300.0
+  },
+  "product": {
+    "size": {
+      "width": 15.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1017.json_Fe3O4_3145",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Fe3O4 | solvent: benzyl ether | solvent.volume: 15.0 | temperature: 300.0 | size.width: 15.0 | precursor: Fe(acac)3 (mass 0.706) | precursor: C16H34O2 (mass 2.58) | additive: oleic acid (mass 1.692) | additive: oleyl amine (mass 1.602)"
+}

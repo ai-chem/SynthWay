@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "1644.json_Ag_2021",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "mass": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "trisodium citrate"
+    },
+    {
+      "name": "sodium borohydride"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 100.0
+  },
+  "product": {
+    "size": {
+      "length": 15.0,
+      "width": 15.0,
+      "depth": 15.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1644.json_Ag_2021",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Ag | solvent: water | solvent.volume: 100.0 | size.length: 15.0 | size.width: 15.0 | size.depth: 15.0 | precursor: AgNO3 (mass 10.0) | additive: trisodium citrate | additive: sodium borohydride"
+}

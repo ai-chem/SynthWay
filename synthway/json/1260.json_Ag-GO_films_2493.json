@@ -1,0 +1,54 @@
+{
+  "synthesis_id": "1260.json_Ag-GO_films_2493",
+  "composition": "Ag-GO films",
+  "elements": [
+    "Ag",
+    "G",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "AgNPs-GO",
+      "mass": 0.02
+    }
+  ],
+  "additives": [
+    {
+      "name": "acrylic resin",
+      "mass": 90.0
+    },
+    {
+      "name": "castor oil",
+      "mass": 22.5
+    },
+    {
+      "name": "tocopheryl acetate",
+      "mass": 1.0
+    },
+    {
+      "name": "lemon oil",
+      "mass": 10.0
+    },
+    {
+      "name": "ethyl acetate",
+      "mass": 476.6
+    },
+    {
+      "name": "enhydrous ethanol",
+      "mass": 389.9
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 20.0
+  },
+  "product": {
+    "shape": "uniform crack structure"
+  },
+  "source": {
+    "synthesis_id_original": "1260.json_Ag-GO_films_2493",
+    "nodes": 18,
+    "edges": 17
+  },
+  "retrieval_text": "composition: Ag-GO films | solvent: deionized water | solvent.volume: 20.0 | shape: uniform crack structure | precursor: AgNPs-GO (mass 0.02) | additive: acrylic resin (mass 90.0) | additive: castor oil (mass 22.5) | additive: tocopheryl acetate (mass 1.0) | additive: lemon oil (mass 10.0) | additive: ethyl acetate (mass 476.6) | additive: enhydrous ethanol (mass 389.9)"
+}

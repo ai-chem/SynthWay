@@ -1,0 +1,37 @@
+{
+  "synthesis_id": "786.json_ZnO_996",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "precipitation",
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2*2H2O",
+      "mass": 1.1
+    },
+    {
+      "name": "LiOH*H2O",
+      "mass": 0.29
+    }
+  ],
+  "solvent": {
+    "name": "ethanol",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 0.0
+  },
+  "product": {
+    "size": {
+      "width": 7.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "786.json_ZnO_996",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: ZnO | method: precipitation | solvent: ethanol | solvent.volume: 50.0 | temperature: 0.0 | size.width: 7.0 | precursor: Zn(CH3COO)2*2H2O (mass 1.1) | precursor: LiOH*H2O (mass 0.29)"
+}

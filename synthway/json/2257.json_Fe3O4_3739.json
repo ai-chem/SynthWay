@@ -1,0 +1,53 @@
+{
+  "synthesis_id": "2257.json_Fe3O4_3739",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "coprecipitation",
+  "precursors": [
+    {
+      "name": "FeCl3",
+      "mass": 16.25
+    },
+    {
+      "name": "FeCl2",
+      "mass": 6.35
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 2000.0
+    },
+    {
+      "name": "nitrogen"
+    }
+  ],
+  "solvent": {
+    "name": "deoxygenated distilled water",
+    "volume": 200.0
+  },
+  "conditions": {
+    "temperature": 70.0,
+    "ph": 12.0
+  },
+  "product": {
+    "crystalsystem": "spinal",
+    "size": {
+      "length": 20.0,
+      "width": 20.0,
+      "depth": 20.0
+    }
+  },
+  "pdfno_list": [
+    "65-3107"
+  ],
+  "source": {
+    "synthesis_id_original": "2257.json_Fe3O4_3739",
+    "nodes": 18,
+    "edges": 17
+  },
+  "retrieval_text": "composition: Fe3O4 | method: coprecipitation | solvent: deoxygenated distilled water | solvent.volume: 200.0 | temperature: 70.0 | pH: 12.0 | crystalsystem: spinal | size.length: 20.0 | size.width: 20.0 | size.depth: 20.0 | precursor: FeCl3 (mass 16.25) | precursor: FeCl2 (mass 6.35) | additive: sodium hydroxide (conc 2000.0) | additive: nitrogen | pdfno_list: 65-3107"
+}

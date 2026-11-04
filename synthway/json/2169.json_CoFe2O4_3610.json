@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "2169.json_CoFe2O4_3610",
+  "composition": "CoFe2O4",
+  "elements": [
+    "Co",
+    "Fe",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "CoCl2·6H2O",
+      "mass": 1.19,
+      "conc": 5.0
+    },
+    {
+      "name": "FeCl3*6H2O",
+      "mass": 2.7,
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 6000.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 100.0,
+    "ph": 11.5
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 15.0,
+      "width": 15.0,
+      "depth": 15.0
+    }
+  },
+  "pdfno_list": [
+    "22-1086"
+  ],
+  "source": {
+    "synthesis_id_original": "2169.json_CoFe2O4_3610",
+    "nodes": 18,
+    "edges": 17
+  },
+  "retrieval_text": "composition: CoFe2O4 | solvent: water | solvent.volume: 30.0 | temperature: 100.0 | pH: 11.5 | crystalsystem: cubic | size.length: 15.0 | size.width: 15.0 | size.depth: 15.0 | precursor: CoCl2·6H2O (mass 1.19; conc 5.0) | precursor: FeCl3*6H2O (mass 2.7; conc 10.0) | additive: sodium hydroxide (conc 6000.0) | pdfno_list: 22-1086"
+}

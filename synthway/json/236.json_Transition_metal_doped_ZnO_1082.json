@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "236.json_Transition_metal_doped_ZnO_1082",
+  "composition": "Transition metal doped ZnO",
+  "elements": [
+    "Tr",
+    "Zn",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2·2H2O",
+      "mass": 1.317,
+      "conc": 1000.0
+    },
+    {
+      "name": "Co(CH3COO)2·7H2O"
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "mass": 0.59
+    }
+  ],
+  "solvent": {
+    "name": "distilled water and ethanol (1:1)",
+    "volume": 20.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal"
+  },
+  "pdfno_list": [
+    "36-1451"
+  ],
+  "source": {
+    "synthesis_id_original": "236.json_Transition_metal_doped_ZnO_1082",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Transition metal doped ZnO | solvent: distilled water and ethanol (1:1) | solvent.volume: 20.0 | crystalsystem: hexagonal | precursor: Zn(CH3COO)2·2H2O (mass 1.317; conc 1000.0) | precursor: Co(CH3COO)2·7H2O | additive: sodium hydroxide (mass 0.59) | pdfno_list: 36-1451"
+}

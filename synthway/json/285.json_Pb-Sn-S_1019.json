@@ -1,0 +1,28 @@
+{
+  "synthesis_id": "285.json_Pb-Sn-S_1019",
+  "composition": "Pb-Sn-S",
+  "elements": [
+    "Pb",
+    "Sn",
+    "S"
+  ],
+  "method": "silar",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 190.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 11.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "285.json_Pb-Sn-S_1019",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: Pb-Sn-S | method: silar | solvent: water | temperature: 190.0 | crystalsystem: cubic | size.length: 11.0"
+}

@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "1534.json_Ag_2742",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "mass": 0.34,
+      "conc": 4.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "pomegranate plant flower petals extract"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water"
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 15.0,
+      "width": 15.0,
+      "depth": 15.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1534.json_Ag_2742",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Ag | method: green synthesis | solvent: distilled water | temperature: 80.0 | crystalsystem: cubic | shape: spherical | size.length: 15.0 | size.width: 15.0 | size.depth: 15.0 | precursor: AgNO3 (mass 0.34; conc 4.0) | additive: pomegranate plant flower petals extract"
+}

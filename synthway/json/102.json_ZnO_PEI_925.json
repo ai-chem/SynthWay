@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "102.json_ZnO/PEI_925",
+  "composition": "ZnO/PEI",
+  "elements": [
+    "Zn",
+    "O",
+    "P",
+    "E",
+    "I"
+  ],
+  "precursors": [
+    {
+      "name": "ZnCl2",
+      "mass": 2.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyethyleneimine",
+      "mass": 0.1
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 2000.0
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 100.0
+  },
+  "product": {
+    "shape": "wire",
+    "size": {
+      "length": 100.0,
+      "width": 40.0,
+      "depth": 40.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "102.json_ZnO/PEI_925",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: ZnO/PEI | solvent: distilled water | solvent.volume: 100.0 | shape: wire | size.length: 100.0 | size.width: 40.0 | size.depth: 40.0 | precursor: ZnCl2 (mass 2.0) | additive: polyethyleneimine (mass 0.1) | additive: sodium hydroxide (conc 2000.0)"
+}

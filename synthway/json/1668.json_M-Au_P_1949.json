@@ -1,0 +1,35 @@
+{
+  "synthesis_id": "1668.json_M-Au/P_1949",
+  "composition": "M-Au/P",
+  "elements": [
+    "M",
+    "Au",
+    "P"
+  ],
+  "precursors": [
+    {
+      "name": "C6H9N3O3"
+    },
+    {
+      "name": "Au NPs"
+    },
+    {
+      "name": "C8H11NO2*HCl"
+    }
+  ],
+  "additives": [
+    {
+      "name": "tris-hydrochloric acid",
+      "conc": 10.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "source": {
+    "synthesis_id_original": "1668.json_M-Au/P_1949",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: M-Au/P | solvent: water | precursor: C6H9N3O3 | precursor: Au NPs | precursor: C8H11NO2*HCl | additive: tris-hydrochloric acid (conc 10.0)"
+}

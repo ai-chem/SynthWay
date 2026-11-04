@@ -1,0 +1,26 @@
+{
+  "synthesis_id": "684.json_Fe3O4_1855",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "modified polyol process",
+  "conditions": {
+    "temperature": 290.0
+  },
+  "product": {
+    "shape": "cube",
+    "size": {
+      "length": 15.0,
+      "width": 15.0,
+      "depth": 15.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "684.json_Fe3O4_1855",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: Fe3O4 | method: modified polyol process | temperature: 290.0 | shape: cube | size.length: 15.0 | size.width: 15.0 | size.depth: 15.0"
+}

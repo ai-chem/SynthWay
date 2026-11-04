@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1540.json_CuO_1257",
+  "composition": "CuO",
+  "elements": [
+    "Cu",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "Cu(NO3)2*3H2O",
+      "mass": 6.04
+    }
+  ],
+  "additives": [
+    {
+      "name": "abelmoschus esculentus fruit extract"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 70.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "spherical",
+    "size": {
+      "length": 20.7,
+      "width": 20.7,
+      "depth": 20.7
+    }
+  },
+  "pdfno_list": [
+    "89-5899"
+  ],
+  "source": {
+    "synthesis_id_original": "1540.json_CuO_1257",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: CuO | method: green synthesis | solvent: distilled water | solvent.volume: 50.0 | temperature: 70.0 | crystalsystem: monoclinic | shape: spherical | size.length: 20.7 | size.width: 20.7 | size.depth: 20.7 | precursor: Cu(NO3)2*3H2O (mass 6.04) | additive: abelmoschus esculentus fruit extract | pdfno_list: 89-5899"
+}

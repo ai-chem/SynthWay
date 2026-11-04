@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1085.json_ZnO_3686",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "solid-state reaction",
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2*2H2O",
+      "mass": 0.439
+    },
+    {
+      "name": "NaOH",
+      "mass": 0.24
+    }
+  ],
+  "additives": [
+    {
+      "name": "1-butyl-3-methylimidazolium chloride",
+      "mass": 0.35
+    }
+  ],
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal wurtzite",
+    "shape": "spherical",
+    "size": {
+      "width": 17.5
+    }
+  },
+  "pdfno_list": [
+    "790206"
+  ],
+  "source": {
+    "synthesis_id_original": "1085.json_ZnO_3686",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: ZnO | method: solid-state reaction | temperature: 60.0 | crystalsystem: hexagonal wurtzite | shape: spherical | size.width: 17.5 | precursor: Zn(CH3COO)2*2H2O (mass 0.439) | precursor: NaOH (mass 0.24) | additive: 1-butyl-3-methylimidazolium chloride (mass 0.35) | pdfno_list: 790206"
+}

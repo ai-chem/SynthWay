@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1436.json_SP-1_Ag_3948",
+  "composition": "SP-1 Ag",
+  "elements": [
+    "S",
+    "P",
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sarcochlamys pulcherrima leaf extract"
+    }
+  ],
+  "solvent": {
+    "name": "double distilled water",
+    "volume": 2.65
+  },
+  "conditions": {
+    "temperature": 65.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "triangular",
+    "size": {
+      "length": 14.0,
+      "width": 14.0,
+      "depth": 14.0
+    }
+  },
+  "pdfno_list": [
+    "07-0783"
+  ],
+  "source": {
+    "synthesis_id_original": "1436.json_SP-1_Ag_3948",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: SP-1 Ag | method: green synthesis | solvent: double distilled water | solvent.volume: 2.65 | temperature: 65.0 | crystalsystem: cubic | shape: triangular | size.length: 14.0 | size.width: 14.0 | size.depth: 14.0 | precursor: AgNO3 (conc 10.0) | additive: sarcochlamys pulcherrima leaf extract | pdfno_list: 07-0783"
+}

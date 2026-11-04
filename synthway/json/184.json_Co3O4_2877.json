@@ -1,0 +1,30 @@
+{
+  "synthesis_id": "184.json_Co3O4_2877",
+  "composition": "Co3O4",
+  "elements": [
+    "Co",
+    "O"
+  ],
+  "method": "thermal decomposition",
+  "conditions": {
+    "temperature": 400.0
+  },
+  "product": {
+    "crystalsystem": "centered cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 50.5,
+      "width": 50.5,
+      "depth": 50.5
+    }
+  },
+  "pdfno_list": [
+    "01-074-1656"
+  ],
+  "source": {
+    "synthesis_id_original": "184.json_Co3O4_2877",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: Co3O4 | method: thermal decomposition | temperature: 400.0 | crystalsystem: centered cubic | shape: spherical | size.length: 50.5 | size.width: 50.5 | size.depth: 50.5 | pdfno_list: 01-074-1656"
+}

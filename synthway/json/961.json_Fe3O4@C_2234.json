@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "961.json_Fe3O4@C_2234",
+  "composition": "Fe3O4@C",
+  "elements": [
+    "Fe",
+    "O",
+    "C"
+  ],
+  "method": "solvo-hydrothermal",
+  "precursors": [
+    {
+      "name": "FeCl3*6H2O",
+      "mass": 0.675
+    },
+    {
+      "name": "CO(NH2)2",
+      "mass": 1.5175
+    }
+  ],
+  "additives": [
+    {
+      "name": "glucose",
+      "mass": 0.045
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "shape": "nearly spherical",
+    "size": {
+      "width": 200.0
+    }
+  },
+  "pdfno_list": [
+    "75-1609"
+  ],
+  "source": {
+    "synthesis_id_original": "961.json_Fe3O4@C_2234",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Fe3O4@C | method: solvo-hydrothermal | solvent: ethylene glycol | solvent.volume: 30.0 | temperature: 200.0 | shape: nearly spherical | size.width: 200.0 | precursor: FeCl3*6H2O (mass 0.675) | precursor: CO(NH2)2 (mass 1.5175) | additive: glucose (mass 0.045) | pdfno_list: 75-1609"
+}

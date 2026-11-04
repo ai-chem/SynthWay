@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "2141.json_ZnO_1347",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "sol-gel",
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2*2H2O",
+      "mass": 1.1
+    }
+  ],
+  "additives": [
+    {
+      "name": "albumin",
+      "mass": 2.0
+    }
+  ],
+  "solvent": {
+    "name": "milliq water",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 300.0
+  },
+  "product": {
+    "crystalsystem": "hexagon",
+    "shape": "wire",
+    "size": {
+      "length": 285.0,
+      "width": 84.0,
+      "depth": 84.0
+    }
+  },
+  "pdfno_list": [
+    "89-0510"
+  ],
+  "source": {
+    "synthesis_id_original": "2141.json_ZnO_1347",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: ZnO | method: sol-gel | solvent: milliq water | solvent.volume: 10.0 | temperature: 300.0 | crystalsystem: hexagon | shape: wire | size.length: 285.0 | size.width: 84.0 | size.depth: 84.0 | precursor: Zn(CH3COO)2*2H2O (mass 1.1) | additive: albumin (mass 2.0) | pdfno_list: 89-0510"
+}

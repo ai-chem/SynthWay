@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "6.json_Fe3O4_450",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "solvent": {
+    "name": "distilled water",
+    "volume": 40.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "nanobelts",
+    "size": {
+      "length": 950.0,
+      "width": 100.0
+    }
+  },
+  "pdfno_list": [
+    "85-1436"
+  ],
+  "source": {
+    "synthesis_id_original": "6.json_Fe3O4_450",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Fe3O4 | method: hydrothermal | solvent: distilled water | solvent.volume: 40.0 | temperature: 180.0 | crystalsystem: cubic | shape: nanobelts | size.length: 950.0 | size.width: 100.0 | pdfno_list: 85-1436"
+}

@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "731.json_Ag_(Sa-Ag)_3568",
+  "composition": "Ag  (Sa-Ag)",
+  "elements": [
+    "Ag",
+    "Sa"
+  ],
+  "method": "biosynthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "clove"
+    }
+  ],
+  "solvent": {
+    "name": "ethanol",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 11.0,
+      "width": 11.0,
+      "depth": 11.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "731.json_Ag_(Sa-Ag)_3568",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Ag  (Sa-Ag) | method: biosynthesis | solvent: ethanol | solvent.volume: 100.0 | temperature: 25.0 | shape: spherical | size.length: 11.0 | size.width: 11.0 | size.depth: 11.0 | precursor: AgNO3 (conc 1.0) | additive: clove"
+}

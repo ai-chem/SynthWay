@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "2027.json_Co3O4/WO3_2667",
+  "composition": "Co3O4/WO3",
+  "elements": [
+    "Co",
+    "O",
+    "W"
+  ],
+  "precursors": [
+    {
+      "name": "Na2WO4·2H2O",
+      "mass": 0.6
+    }
+  ],
+  "seeds": [
+    {
+      "name": "ZIF-67",
+      "mass": 0.1
+    }
+  ],
+  "solvent": {
+    "name": "ethanol",
+    "volume": 40.0
+  },
+  "conditions": {
+    "temperature": 450.0
+  },
+  "product": {
+    "shape": "hierarchical hollow",
+    "size": {
+      "length": 830.0,
+      "width": 830.0,
+      "depth": 830.0
+    }
+  },
+  "pdfno_list": [
+    "43-1003, 83-0950"
+  ],
+  "source": {
+    "synthesis_id_original": "2027.json_Co3O4/WO3_2667",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Co3O4/WO3 | solvent: ethanol | solvent.volume: 40.0 | temperature: 450.0 | shape: hierarchical hollow | size.length: 830.0 | size.width: 830.0 | size.depth: 830.0 | precursor: Na2WO4·2H2O (mass 0.6) | seed: ZIF-67 (mass 0.1) | pdfno_list: 43-1003, 83-0950"
+}

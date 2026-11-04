@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1558.json_SNE@Au@PCL_2422",
+  "composition": "SNE@Au@PCL",
+  "elements": [
+    "S",
+    "N",
+    "E",
+    "Au",
+    "P",
+    "C",
+    "L"
+  ],
+  "method": "electrospinning",
+  "precursors": [
+    {
+      "name": "PCL",
+      "mass": 8.0
+    },
+    {
+      "name": "SNE"
+    }
+  ],
+  "solvent": {
+    "name": "chloroform and methanol",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "shape": "rough large fibers",
+    "size": {
+      "length": 320.0,
+      "width": 320.0,
+      "depth": 320.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1558.json_SNE@Au@PCL_2422",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: SNE@Au@PCL | method: electrospinning | solvent: chloroform and methanol | solvent.volume: 100.0 | temperature: 25.0 | shape: rough large fibers | size.length: 320.0 | size.width: 320.0 | size.depth: 320.0 | precursor: PCL (mass 8.0) | precursor: SNE"
+}

@@ -1,0 +1,26 @@
+{
+  "synthesis_id": "455.json_Ca(OH)2_3342",
+  "composition": "Ca(OH)2",
+  "elements": [
+    "Ca",
+    "O",
+    "H"
+  ],
+  "method": "dispersion",
+  "solvent": {
+    "name": "ethanol"
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "plate",
+    "size": {
+      "length": 92.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "455.json_Ca(OH)2_3342",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: Ca(OH)2 | method: dispersion | solvent: ethanol | crystalsystem: hexagonal | shape: plate | size.length: 92.0"
+}

@@ -1,0 +1,57 @@
+{
+  "synthesis_id": "890.json_Fe3C_2479",
+  "composition": "Fe3C",
+  "elements": [
+    "Fe",
+    "C"
+  ],
+  "precursors": [
+    {
+      "name": "NH4OH"
+    },
+    {
+      "name": "Fe(CH3COO)2",
+      "mass": 6.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "gelatin",
+      "mass": 2.0
+    },
+    {
+      "name": "chitosan",
+      "mass": 2.0
+    },
+    {
+      "name": "alginic acid",
+      "mass": 2.0
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 650.0,
+    "ph": 6.5
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "spherical",
+    "size": {
+      "length": 20.0,
+      "width": 20.0,
+      "depth": 20.0
+    }
+  },
+  "pdfno_list": [
+    "00-035-0772"
+  ],
+  "source": {
+    "synthesis_id_original": "890.json_Fe3C_2479",
+    "nodes": 18,
+    "edges": 19
+  },
+  "retrieval_text": "composition: Fe3C | solvent: deionized water | solvent.volume: 100.0 | temperature: 650.0 | pH: 6.5 | crystalsystem: orthorhombic | shape: spherical | size.length: 20.0 | size.width: 20.0 | size.depth: 20.0 | precursor: NH4OH | precursor: Fe(CH3COO)2 (mass 6.0) | additive: gelatin (mass 2.0) | additive: chitosan (mass 2.0) | additive: alginic acid (mass 2.0) | pdfno_list: 00-035-0772"
+}

@@ -1,0 +1,51 @@
+{
+  "synthesis_id": "1972.json_CuFe2O4_3290",
+  "composition": "CuFe2O4",
+  "elements": [
+    "Cu",
+    "Fe",
+    "O"
+  ],
+  "method": "coprecipitation",
+  "precursors": [
+    {
+      "name": "FeCl3*6H2O",
+      "conc": 0.1
+    },
+    {
+      "name": "CuCl2*xH2O",
+      "conc": 0.05
+    }
+  ],
+  "additives": [
+    {
+      "name": "dopamine hydrochloride",
+      "conc": 0.1
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 0.4
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 2.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 2.3,
+      "width": 2.3,
+      "depth": 2.3
+    }
+  },
+  "pdfno_list": [
+    "01-075-0449"
+  ],
+  "source": {
+    "synthesis_id_original": "1972.json_CuFe2O4_3290",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: CuFe2O4 | method: coprecipitation | solvent: water | solvent.volume: 2.0 | crystalsystem: cubic | size.length: 2.3 | size.width: 2.3 | size.depth: 2.3 | precursor: FeCl3*6H2O (conc 0.1) | precursor: CuCl2*xH2O (conc 0.05) | additive: dopamine hydrochloride (conc 0.1) | additive: sodium hydroxide (conc 0.4) | pdfno_list: 01-075-0449"
+}

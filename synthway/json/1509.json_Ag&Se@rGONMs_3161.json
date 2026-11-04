@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "1509.json_Ag&Se@rGONMs_3161",
+  "composition": "Ag&Se@rGONMs",
+  "elements": [
+    "Ag",
+    "Se",
+    "G",
+    "O",
+    "N",
+    "Ms"
+  ],
+  "precursors": [
+    {
+      "name": "GO"
+    },
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    },
+    {
+      "name": "Na2SeO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "rosmarinus officinalis linn. leaves extract (roe)"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "size": {
+      "length": 1149.6,
+      "width": 1149.6,
+      "depth": 1149.6
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1509.json_Ag&Se@rGONMs_3161",
+    "nodes": 10,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Ag&Se@rGONMs | solvent: water | size.length: 1149.6 | size.width: 1149.6 | size.depth: 1149.6 | precursor: GO | precursor: AgNO3 (conc 1.0) | precursor: Na2SeO3 (conc 1.0) | additive: rosmarinus officinalis linn. leaves extract (roe)"
+}

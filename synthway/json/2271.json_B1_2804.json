@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "2271.json_B1_2804",
+  "composition": "B1",
+  "elements": [
+    "B"
+  ],
+  "precursors": [
+    {
+      "name": "BiCl3",
+      "mass": 1.261
+    },
+    {
+      "name": "TAA",
+      "mass": 0.601
+    }
+  ],
+  "additives": [
+    {
+      "name": "thioglycollic acid"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 100.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "flower-like",
+    "size": {
+      "length": 100.0,
+      "width": 10.0,
+      "depth": 10.0
+    }
+  },
+  "pdfno_list": [
+    "17-0320"
+  ],
+  "source": {
+    "synthesis_id_original": "2271.json_B1_2804",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: B1 | solvent: water | solvent.volume: 100.0 | temperature: 100.0 | crystalsystem: orthorhombic | shape: flower-like | size.length: 100.0 | size.width: 10.0 | size.depth: 10.0 | precursor: BiCl3 (mass 1.261) | precursor: TAA (mass 0.601) | additive: thioglycollic acid | pdfno_list: 17-0320"
+}

@@ -1,0 +1,32 @@
+{
+  "synthesis_id": "270.json_CdS_698",
+  "composition": "CdS",
+  "elements": [
+    "Cd",
+    "S"
+  ],
+  "method": "chemical synthesis",
+  "solvent": {
+    "name": "water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 70.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "round",
+    "size": {
+      "length": 10.0
+    }
+  },
+  "pdfno_list": [
+    "75-1546"
+  ],
+  "source": {
+    "synthesis_id_original": "270.json_CdS_698",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: CdS | method: chemical synthesis | solvent: water | solvent.volume: 100.0 | temperature: 70.0 | crystalsystem: cubic | shape: round | size.length: 10.0 | pdfno_list: 75-1546"
+}

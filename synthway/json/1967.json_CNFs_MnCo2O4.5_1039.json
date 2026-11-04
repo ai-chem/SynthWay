@@ -1,0 +1,55 @@
+{
+  "synthesis_id": "1967.json_CNFs/MnCo2O4.5_1039",
+  "composition": "CNFs/MnCo2O4.5",
+  "elements": [
+    "C",
+    "N",
+    "Fs",
+    "Mn",
+    "Co",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "MnSO4•H2O",
+      "mass": 0.067
+    },
+    {
+      "name": "Co(NO3)2•6H2O",
+      "mass": 0.2328
+    }
+  ],
+  "additives": [
+    {
+      "name": "potassium chloride",
+      "mass": 0.0596
+    },
+    {
+      "name": "cnfs"
+    }
+  ],
+  "solvent": {
+    "name": "water+acetonitrile",
+    "volume": 25.0
+  },
+  "conditions": {
+    "temperature": 300.0
+  },
+  "product": {
+    "shape": "nanofibers",
+    "size": {
+      "length": 645.0,
+      "width": 645.0,
+      "depth": 645.0
+    }
+  },
+  "pdfno_list": [
+    "32-0297"
+  ],
+  "source": {
+    "synthesis_id_original": "1967.json_CNFs/MnCo2O4.5_1039",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: CNFs/MnCo2O4.5 | solvent: water+acetonitrile | solvent.volume: 25.0 | temperature: 300.0 | shape: nanofibers | size.length: 645.0 | size.width: 645.0 | size.depth: 645.0 | precursor: MnSO4•H2O (mass 0.067) | precursor: Co(NO3)2•6H2O (mass 0.2328) | additive: potassium chloride (mass 0.0596) | additive: cnfs | pdfno_list: 32-0297"
+}

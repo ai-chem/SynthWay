@@ -1,0 +1,34 @@
+{
+  "synthesis_id": "218.json_NiO_2168",
+  "composition": "NiO",
+  "elements": [
+    "Ni",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "solvent": {
+    "name": "water",
+    "volume": 40.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "shape": "flaked rice-like",
+    "size": {
+      "length": 15.0,
+      "width": 15.0,
+      "depth": 15.0
+    }
+  },
+  "pdfno_list": [
+    "78-0643"
+  ],
+  "source": {
+    "synthesis_id_original": "218.json_NiO_2168",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: NiO | method: hydrothermal | solvent: water | solvent.volume: 40.0 | temperature: 200.0 | crystalsystem: face-centered cubic | shape: flaked rice-like | size.length: 15.0 | size.width: 15.0 | size.depth: 15.0 | pdfno_list: 78-0643"
+}

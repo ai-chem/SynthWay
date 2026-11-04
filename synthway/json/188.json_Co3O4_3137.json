@@ -1,0 +1,28 @@
+{
+  "synthesis_id": "188.json_Co3O4_3137",
+  "composition": "Co3O4",
+  "elements": [
+    "Co",
+    "O"
+  ],
+  "method": "sol-gel",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 700.0
+  },
+  "product": {
+    "size": {
+      "length": 52.611,
+      "width": 52.611,
+      "depth": 52.611
+    }
+  },
+  "source": {
+    "synthesis_id_original": "188.json_Co3O4_3137",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: Co3O4 | method: sol-gel | solvent: water | temperature: 700.0 | size.length: 52.611 | size.width: 52.611 | size.depth: 52.611"
+}

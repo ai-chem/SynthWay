@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "2364.json_NiS_3218",
+  "composition": "NiS",
+  "elements": [
+    "Ni",
+    "S"
+  ],
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 40.0
+  },
+  "conditions": {
+    "temperature": 158.0
+  },
+  "product": {
+    "crystalsystem": "rhomb-centered",
+    "shape": "chain-like",
+    "size": {
+      "length": 750.0,
+      "width": 20.0,
+      "depth": 20.0
+    }
+  },
+  "pdfno_list": [
+    "75-0612"
+  ],
+  "source": {
+    "synthesis_id_original": "2364.json_NiS_3218",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: NiS | solvent: ethylene glycol | solvent.volume: 40.0 | temperature: 158.0 | crystalsystem: rhomb-centered | shape: chain-like | size.length: 750.0 | size.width: 20.0 | size.depth: 20.0 | pdfno_list: 75-0612"
+}

@@ -1,0 +1,30 @@
+{
+  "synthesis_id": "154.json_SiNP600_79",
+  "composition": "SiNP600",
+  "elements": [
+    "Si",
+    "N",
+    "P"
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 800.0
+  },
+  "conditions": {
+    "temperature": 550.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 600.0,
+      "width": 600.0,
+      "depth": 600.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "154.json_SiNP600_79",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: SiNP600 | solvent: water | solvent.volume: 800.0 | temperature: 550.0 | shape: spherical | size.length: 600.0 | size.width: 600.0 | size.depth: 600.0"
+}

@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "1518.json_Fe3O4_2794",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "coprecipitation",
+  "precursors": [
+    {
+      "name": "FeCl3*6H2O",
+      "conc": 46.0
+    },
+    {
+      "name": "FeSO4·7H2O",
+      "conc": 23.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "ammonium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "double distilled water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 80.0,
+    "ph": 11.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "cube",
+    "size": {
+      "length": 112.0,
+      "width": 112.0,
+      "depth": 112.0
+    }
+  },
+  "pdfno_list": [
+    "89-3854"
+  ],
+  "source": {
+    "synthesis_id_original": "1518.json_Fe3O4_2794",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: Fe3O4 | method: coprecipitation | solvent: double distilled water | solvent.volume: 100.0 | temperature: 80.0 | pH: 11.0 | crystalsystem: cubic | shape: cube | size.length: 112.0 | size.width: 112.0 | size.depth: 112.0 | precursor: FeCl3*6H2O (conc 46.0) | precursor: FeSO4·7H2O (conc 23.0) | additive: ammonium hydroxide | pdfno_list: 89-3854"
+}

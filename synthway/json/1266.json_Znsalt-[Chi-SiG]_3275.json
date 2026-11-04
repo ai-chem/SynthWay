@@ -1,0 +1,32 @@
+{
+  "synthesis_id": "1266.json_Znsalt-[Chi-SiG]_3275",
+  "composition": "Znsalt-[Chi-SiG]",
+  "elements": [
+    "Zn",
+    "Ch",
+    "Si",
+    "G"
+  ],
+  "precursors": [
+    {
+      "name": "Zn(NO3)2"
+    }
+  ],
+  "additives": [
+    {
+      "name": "chi-sig"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 40.0
+  },
+  "source": {
+    "synthesis_id_original": "1266.json_Znsalt-[Chi-SiG]_3275",
+    "nodes": 5,
+    "edges": 4
+  },
+  "retrieval_text": "composition: Znsalt-[Chi-SiG] | solvent: water | temperature: 40.0 | precursor: Zn(NO3)2 | additive: chi-sig"
+}

@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "698.json_S_671",
+  "composition": "S",
+  "elements": [
+    "S"
+  ],
+  "method": "acidification",
+  "precursors": [
+    {
+      "name": "Na2S2O3*5H2O",
+      "mass": 2.482
+    }
+  ],
+  "additives": [
+    {
+      "name": "hydrochloric acid",
+      "conc": 200.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 900.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "spherical",
+    "size": {
+      "length": 17.0,
+      "width": 17.0,
+      "depth": 17.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "698.json_S_671",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: S | method: acidification | solvent: water | solvent.volume: 900.0 | crystalsystem: orthorhombic | shape: spherical | size.length: 17.0 | size.width: 17.0 | size.depth: 17.0 | precursor: Na2S2O3*5H2O (mass 2.482) | additive: hydrochloric acid (conc 200.0)"
+}

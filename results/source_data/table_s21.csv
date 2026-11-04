@@ -1,0 +1,14 @@
+model,model_id,model_class,first_use,last_use
+GPT-5.2,openai/gpt-5.2,Proprietary large language models,2026-02-25,2026-03-04
+Gemini 3.1 Pro Preview,google/gemini-3.1-pro-preview,Proprietary large language models,2026-03-26,2026-03-26
+Claude Opus 4.5,anthropic/claude-opus-4.5,Proprietary large language models,2026-02-25,2026-11-02
+Gemini 3 Flash Preview,google/gemini-3-flash-preview,Proprietary large language models,2026-02-24,2026-03-04
+Gemini 2.5 Flash,google/gemini-2.5-flash,Proprietary large language models,2026-02-19,2026-03-05
+Gemini 2.0 Flash,google/gemini-2.0-flash-001,Proprietary large language models,2026-01-22,2026-04-05
+Llama 4 Maverick,meta-llama/llama-4-maverick,Open-weight large language models,2026-02-19,2026-08-30
+DeepSeek V3.2,deepseek/deepseek-v3.2,Open-weight large language models,2026-02-24,2026-03-04
+Qwen3-30B-A3B-Instruct-2507,qwen/qwen3-30b-a3b-instruct-2507,Open-weight large language models,2026-02-23,2026-03-04
+Xiaomi MiMo-V2-Flash,xiaomi/mimo-v2-flash,Open-weight large language models,2026-02-18,2026-02-19
+NVIDIA Nemotron 3 Nano 30B-A3B*,nvidia/nemotron-3-nano-30b-a3b:free,Open-weight large language models,2026-02-19,2026-03-09
+NVIDIA Nemotron 3 Nano 30B-A3B*,nvidia/nemotron-3-nano-30b-a3b,Open-weight large language models,2026-08-28,2026-09-01
+DeepSeek-TNG R1T2 Chimera,tngtech/deepseek-r1t2-chimera,Open-weight large language models,2026-02-24,2026-03-04

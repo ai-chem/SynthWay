@@ -1,0 +1,32 @@
+{
+  "synthesis_id": "1369.json_Ag_14S_15S_16S_3101",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "impregnation",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "saponite",
+      "mass": 5.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "layered flaky platelets"
+  },
+  "source": {
+    "synthesis_id_original": "1369.json_Ag_14S_15S_16S_3101",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: Ag | method: impregnation | solvent: water | shape: layered flaky platelets | precursor: AgNO3 (conc 100.0) | additive: saponite (mass 5.0)"
+}

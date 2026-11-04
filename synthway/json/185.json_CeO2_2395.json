@@ -1,0 +1,31 @@
+{
+  "synthesis_id": "185.json_CeO2_2395",
+  "composition": "CeO2",
+  "elements": [
+    "Ce",
+    "O"
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 500.0
+  },
+  "conditions": {
+    "temperature": 600.0,
+    "ph": 6.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 20.0,
+      "width": 20.0,
+      "depth": 20.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "185.json_CeO2_2395",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: CeO2 | solvent: distilled water | solvent.volume: 500.0 | temperature: 600.0 | pH: 6.0 | crystalsystem: cubic | shape: spherical | size.length: 20.0 | size.width: 20.0 | size.depth: 20.0"
+}

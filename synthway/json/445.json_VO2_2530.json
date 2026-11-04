@@ -1,0 +1,32 @@
+{
+  "synthesis_id": "445.json_VO2_2530",
+  "composition": "VO2",
+  "elements": [
+    "V",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "solvent": {
+    "name": "water",
+    "volume": 95.0
+  },
+  "conditions": {
+    "temperature": 280.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "nanocrystal",
+    "size": {
+      "length": 30.0
+    }
+  },
+  "pdfno_list": [
+    "044-0252"
+  ],
+  "source": {
+    "synthesis_id_original": "445.json_VO2_2530",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: VO2 | method: hydrothermal | solvent: water | solvent.volume: 95.0 | temperature: 280.0 | crystalsystem: monoclinic | shape: nanocrystal | size.length: 30.0 | pdfno_list: 044-0252"
+}

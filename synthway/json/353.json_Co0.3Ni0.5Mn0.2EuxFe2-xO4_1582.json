@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "353.json_Co0.3Ni0.5Mn0.2EuxFe2-xO4_1582",
+  "composition": "Co0.3Ni0.5Mn0.2EuxFe2−xO4",
+  "elements": [
+    "Co",
+    "Ni",
+    "Mn",
+    "Eu",
+    "Fe",
+    "O"
+  ],
+  "method": "sonochemical",
+  "solvent": {
+    "name": "water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 90.0,
+    "ph": 11.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 20.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "353.json_Co0.3Ni0.5Mn0.2EuxFe2-xO4_1582",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: Co0.3Ni0.5Mn0.2EuxFe2−xO4 | method: sonochemical | solvent: water | solvent.volume: 50.0 | temperature: 90.0 | pH: 11.0 | shape: spherical | size.length: 20.0"
+}

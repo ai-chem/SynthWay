@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "2135.json_Co3O4_2639",
+  "composition": "Co3O4",
+  "elements": [
+    "Co",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Co(CH3COO)2·4H2O",
+      "mass": 1.66
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium carbonate",
+      "conc": 200.0
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 450.0
+  },
+  "product": {
+    "shape": "wire",
+    "size": {
+      "length": 60.0,
+      "width": 10.0,
+      "depth": 10.0
+    }
+  },
+  "pdfno_list": [
+    "76-1802"
+  ],
+  "source": {
+    "synthesis_id_original": "2135.json_Co3O4_2639",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Co3O4 | solvent: ethylene glycol | solvent.volume: 20.0 | temperature: 450.0 | shape: wire | size.length: 60.0 | size.width: 10.0 | size.depth: 10.0 | precursor: Co(CH3COO)2·4H2O (mass 1.66) | additive: sodium carbonate (conc 200.0) | pdfno_list: 76-1802"
+}

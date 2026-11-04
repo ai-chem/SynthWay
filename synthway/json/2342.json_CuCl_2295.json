@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "2342.json_CuCl_2295",
+  "composition": "CuCl",
+  "elements": [
+    "Cu",
+    "Cl"
+  ],
+  "precursors": [
+    {
+      "name": "CuCl2*2H2O",
+      "mass": 2.2232
+    },
+    {
+      "name": "HCl",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "ascorbic acid",
+      "mass": 1.3754
+    },
+    {
+      "name": "polyvinylpyrrolidone"
+    }
+  ],
+  "solvent": {
+    "name": "des",
+    "volume": 13.0
+  },
+  "conditions": {
+    "temperature": 74.0
+  },
+  "product": {
+    "shape": "spherical"
+  },
+  "source": {
+    "synthesis_id_original": "2342.json_CuCl_2295",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: CuCl | solvent: des | solvent.volume: 13.0 | temperature: 74.0 | shape: spherical | precursor: CuCl2*2H2O (mass 2.2232) | precursor: HCl (conc 100.0) | additive: ascorbic acid (mass 1.3754) | additive: polyvinylpyrrolidone"
+}

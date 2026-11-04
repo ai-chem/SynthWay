@@ -1,0 +1,35 @@
+{
+  "synthesis_id": "1616.json_Ag_3589",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNo3",
+      "conc": 3.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "aqueous extract of berberis vulgaris"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 50.0,
+      "width": 50.0,
+      "depth": 50.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1616.json_Ag_3589",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: Ag | solvent: water | shape: spherical | size.length: 50.0 | size.width: 50.0 | size.depth: 50.0 | precursor: AgNo3 (conc 3.0) | additive: aqueous extract of berberis vulgaris"
+}

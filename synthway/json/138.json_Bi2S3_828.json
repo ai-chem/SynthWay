@@ -1,0 +1,35 @@
+{
+  "synthesis_id": "138.json_Bi2S3_828",
+  "composition": "Bi2S3",
+  "elements": [
+    "Bi",
+    "S"
+  ],
+  "method": "hydrothermal",
+  "solvent": {
+    "name": "distilled water",
+    "volume": 18.0
+  },
+  "conditions": {
+    "temperature": 180.0,
+    "ph": 2.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "wire",
+    "size": {
+      "length": 3500.0,
+      "width": 20.0,
+      "depth": 20.0
+    }
+  },
+  "pdfno_list": [
+    "17-320"
+  ],
+  "source": {
+    "synthesis_id_original": "138.json_Bi2S3_828",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Bi2S3 | method: hydrothermal | solvent: distilled water | solvent.volume: 18.0 | temperature: 180.0 | pH: 2.0 | crystalsystem: orthorhombic | shape: wire | size.length: 3500.0 | size.width: 20.0 | size.depth: 20.0 | pdfno_list: 17-320"
+}

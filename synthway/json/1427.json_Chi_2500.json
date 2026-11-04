@@ -1,0 +1,37 @@
+{
+  "synthesis_id": "1427.json_Chi_2500",
+  "composition": "Chi",
+  "elements": [
+    "Ch"
+  ],
+  "method": "chemical synthesis",
+  "precursors": [
+    {
+      "name": "Chi"
+    }
+  ],
+  "additives": [
+    {
+      "name": "plasticizer"
+    }
+  ],
+  "solvent": {
+    "name": "acetic acid"
+  },
+  "conditions": {
+    "ph": 5.8
+  },
+  "product": {
+    "size": {
+      "length": 35.0,
+      "width": 35.0,
+      "depth": 35.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1427.json_Chi_2500",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: Chi | method: chemical synthesis | solvent: acetic acid | pH: 5.8 | size.length: 35.0 | size.width: 35.0 | size.depth: 35.0 | precursor: Chi | additive: plasticizer"
+}

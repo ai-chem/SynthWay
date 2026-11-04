@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "1679.json_Mg_doped_ZnO_477",
+  "composition": "Mg doped ZnO",
+  "elements": [
+    "Mg",
+    "Zn",
+    "O"
+  ],
+  "method": "laser ablation",
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2",
+      "mass": 2.195
+    }
+  ],
+  "additives": [
+    {
+      "name": "hexamethylenetetramine",
+      "mass": 1.402
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 65.0
+  },
+  "product": {
+    "shape": "hexagonal"
+  },
+  "source": {
+    "synthesis_id_original": "1679.json_Mg_doped_ZnO_477",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Mg doped ZnO | method: laser ablation | solvent: deionized water | solvent.volume: 50.0 | temperature: 65.0 | shape: hexagonal | precursor: Zn(CH3COO)2 (mass 2.195) | additive: hexamethylenetetramine (mass 1.402)"
+}

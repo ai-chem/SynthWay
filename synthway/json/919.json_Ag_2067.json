@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "919.json_Ag_2067",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "chemical reduction",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 10.0
+    },
+    {
+      "name": "NaOH",
+      "conc": 100.0
+    },
+    {
+      "name": "NaBH4",
+      "conc": 10.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "ph": 12.0
+  },
+  "product": {
+    "shape": "hollow spherical",
+    "size": {
+      "length": 27.0,
+      "width": 27.0,
+      "depth": 27.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "919.json_Ag_2067",
+    "nodes": 13,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Ag | method: chemical reduction | solvent: water | pH: 12.0 | shape: hollow spherical | size.length: 27.0 | size.width: 27.0 | size.depth: 27.0 | precursor: AgNO3 (conc 10.0) | precursor: NaOH (conc 100.0) | precursor: NaBH4 (conc 10.0)"
+}

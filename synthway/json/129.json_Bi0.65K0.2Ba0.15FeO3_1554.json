@@ -1,0 +1,26 @@
+{
+  "synthesis_id": "129.json_Bi0.65K0.2Ba0.15FeO3_1554",
+  "composition": "Bi0.65K0.2Ba0.15FeO3",
+  "elements": [
+    "Bi",
+    "K",
+    "Ba",
+    "Fe",
+    "O"
+  ],
+  "method": "sol-gel",
+  "solvent": {
+    "name": "distilled water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 800.0,
+    "ph": 8.0
+  },
+  "source": {
+    "synthesis_id_original": "129.json_Bi0.65K0.2Ba0.15FeO3_1554",
+    "nodes": 6,
+    "edges": 5
+  },
+  "retrieval_text": "composition: Bi0.65K0.2Ba0.15FeO3 | method: sol-gel | solvent: distilled water | solvent.volume: 100.0 | temperature: 800.0 | pH: 8.0"
+}

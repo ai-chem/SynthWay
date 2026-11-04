@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "546.json_GA-Ag_3959",
+  "composition": "GA-Ag",
+  "elements": [
+    "G",
+    "A",
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "glycolic acid",
+      "conc": 1.0
+    },
+    {
+      "name": "potassium carbonate",
+      "conc": 1.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 18.0,
+      "width": 18.0,
+      "depth": 18.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "546.json_GA-Ag_3959",
+    "nodes": 11,
+    "edges": 11
+  },
+  "retrieval_text": "composition: GA-Ag | solvent: water | shape: spherical | size.length: 18.0 | size.width: 18.0 | size.depth: 18.0 | precursor: AgNO3 (conc 1.0) | additive: glycolic acid (conc 1.0) | additive: potassium carbonate (conc 1.0)"
+}

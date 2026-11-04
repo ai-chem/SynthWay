@@ -1,0 +1,31 @@
+{
+  "synthesis_id": "1662.json_Ag_867",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3"
+    }
+  ],
+  "additives": [
+    {
+      "name": "clove",
+      "mass": 2.0
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "source": {
+    "synthesis_id_original": "1662.json_Ag_867",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: Ag | solvent: distilled water | solvent.volume: 20.0 | temperature: 80.0 | precursor: AgNO3 | additive: clove (mass 2.0)"
+}

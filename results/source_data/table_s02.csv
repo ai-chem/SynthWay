@@ -1,0 +1,22 @@
+column,sid_base_sanitized_unique,filled_sids_by_sid,missing_sids_by_sid,coverage_pct_by_sid,valid_count_by_sid,distinct_valid_by_sid,top_value_by_sid,top_value_by_sid_count,local_param_occurrences,local_param_count,top_value_local
+additive,4208,2682,1526,63.7357,4122,998,sodium hydroxide,482,4122,975,additive:sodium hydroxide
+additive_conc,4208,901,3307,21.4116,1117,161,100.0,132,1117,161,additive_conc:100.0
+additive_mass,4208,804,3404,19.1065,1096,336,1.0,55,1096,331,additive_mass:1.0
+composition,4208,4208,0,100.0,4208,1574,Ag,303,4208,1553,composition:Ag
+crystalsystem,4208,2332,1876,55.4183,2332,117,cubic,803,2332,105,crystalsystem:cubic
+method,4208,2590,1618,61.5494,2590,359,green synthesis,481,2590,343,method:green synthesis
+pdfno_list,4208,2212,1996,52.5665,2212,840,36-1451,161,2212,839,pdfno:36-1451
+ph,4208,808,3400,19.2015,808,90,7.0,122,808,90,ph:7.0
+precursor,4208,3357,851,79.7766,5533,1144,AgNO3,583,5533,986,precursor:AgNO3
+precursor_conc,4208,1897,2311,45.0808,2465,244,1.0,365,2465,243,precursor_conc:1.0
+precursor_mass,4208,1489,2719,35.385,2262,702,1.0,102,2262,677,precursor_mass:1.0
+seed_conc,4208,30,4178,0.7129,30,21,0.005,5,30,21,seed_conc:0.005
+seed_mass,4208,50,4158,1.1882,50,31,0.1,8,50,31,seed_mass:0.1
+seeds,4208,130,4078,3.0894,130,43,Au,28,130,43,seeds:Au
+shape,4208,3093,1115,73.5029,3093,500,spherical,1414,3093,466,shape:spherical
+size_depth,4208,2787,1421,66.231,2787,910,20.0,81,2787,910,size_depth:20.0
+size_length,4208,3197,1011,75.9743,3197,990,20.0,84,3197,989,size_length:20.0
+size_width,4208,3248,960,77.1863,3248,980,20.0,92,3248,980,size_width:20.0
+solvent,4208,4125,83,98.0276,4125,304,water,1942,4125,292,solvent:water
+solvent_v,4208,2289,1919,54.3964,2289,167,100.0,312,2289,167,solvent_v:100.0
+temperature,4208,3216,992,76.4259,3216,145,25.0,335,3216,145,temperature:25.0

@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "1583.json_MSE-Ag_1184",
+  "composition": "MSE-Ag",
+  "elements": [
+    "M",
+    "S",
+    "E",
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "mass": 0.016
+    }
+  ],
+  "additives": [
+    {
+      "name": "medicago sativa extract",
+      "mass": 0.01
+    },
+    {
+      "name": "sodium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "distilled deionized water",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 25.0,
+    "ph": 12.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 25.0,
+      "width": 25.0,
+      "depth": 25.0
+    }
+  },
+  "pdfno_list": [
+    "01-087-0717"
+  ],
+  "source": {
+    "synthesis_id_original": "1583.json_MSE-Ag_1184",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: MSE-Ag | method: green synthesis | solvent: distilled deionized water | solvent.volume: 10.0 | temperature: 25.0 | pH: 12.0 | crystalsystem: cubic | shape: spherical | size.length: 25.0 | size.width: 25.0 | size.depth: 25.0 | precursor: AgNO3 (mass 0.016) | additive: medicago sativa extract (mass 0.01) | additive: sodium hydroxide | pdfno_list: 01-087-0717"
+}

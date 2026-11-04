@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "1008.json_Ag_156",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "reduction",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "mass": 0.3
+    },
+    {
+      "name": "C18H32ONa",
+      "mass": 1.0
+    },
+    {
+      "name": "C18H32O2",
+      "mass": 0.902
+    }
+  ],
+  "solvent": {
+    "name": "ethanol",
+    "volume": 5.0
+  },
+  "conditions": {
+    "temperature": 70.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "width": 18.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1008.json_Ag_156",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Ag | method: reduction | solvent: ethanol | solvent.volume: 5.0 | temperature: 70.0 | shape: spherical | size.width: 18.0 | precursor: AgNO3 (mass 0.3) | precursor: C18H32ONa (mass 1.0) | precursor: C18H32O2 (mass 0.902)"
+}

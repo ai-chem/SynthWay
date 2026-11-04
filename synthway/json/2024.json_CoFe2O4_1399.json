@@ -1,0 +1,55 @@
+{
+  "synthesis_id": "2024.json_CoFe2O4_1399",
+  "composition": "CoFe2O4",
+  "elements": [
+    "Co",
+    "Fe",
+    "O"
+  ],
+  "method": "solvo-hydrothermal",
+  "precursors": [
+    {
+      "name": "FeCl3*6H2O",
+      "mass": 0.36
+    },
+    {
+      "name": "CoCl2·6H2O",
+      "mass": 0.19
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium acetate",
+      "mass": 0.9
+    },
+    {
+      "name": "amino-polyethylene glycol (mw 3400) carboxylate",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 200.0,
+    "ph": 12.0
+  },
+  "product": {
+    "shape": "flower-like",
+    "size": {
+      "length": 164.8,
+      "width": 164.8,
+      "depth": 164.8
+    }
+  },
+  "pdfno_list": [
+    "15-0806"
+  ],
+  "source": {
+    "synthesis_id_original": "2024.json_CoFe2O4_1399",
+    "nodes": 19,
+    "edges": 18
+  },
+  "retrieval_text": "composition: CoFe2O4 | method: solvo-hydrothermal | solvent: ethylene glycol | solvent.volume: 20.0 | temperature: 200.0 | pH: 12.0 | shape: flower-like | size.length: 164.8 | size.width: 164.8 | size.depth: 164.8 | precursor: FeCl3*6H2O (mass 0.36) | precursor: CoCl2·6H2O (mass 0.19) | additive: sodium acetate (mass 0.9) | additive: amino-polyethylene glycol (mw 3400) carboxylate (conc 1000.0) | pdfno_list: 15-0806"
+}

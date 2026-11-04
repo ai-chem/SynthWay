@@ -1,0 +1,34 @@
+{
+  "synthesis_id": "201.json_FeS_1712",
+  "composition": "FeS",
+  "elements": [
+    "Fe",
+    "S"
+  ],
+  "method": "reduction",
+  "solvent": {
+    "name": "double distilled water",
+    "volume": 100.0
+  },
+  "conditions": {
+    "temperature": 50.0,
+    "ph": 2.5
+  },
+  "product": {
+    "crystalsystem": "mackinawite",
+    "size": {
+      "length": 46.75,
+      "width": 46.75,
+      "depth": 46.75
+    }
+  },
+  "pdfno_list": [
+    "86-0389"
+  ],
+  "source": {
+    "synthesis_id_original": "201.json_FeS_1712",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: FeS | method: reduction | solvent: double distilled water | solvent.volume: 100.0 | temperature: 50.0 | pH: 2.5 | crystalsystem: mackinawite | size.length: 46.75 | size.width: 46.75 | size.depth: 46.75 | pdfno_list: 86-0389"
+}

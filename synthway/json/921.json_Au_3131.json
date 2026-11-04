@@ -1,0 +1,46 @@
+{
+  "synthesis_id": "921.json_Au_3131",
+  "composition": "Au",
+  "elements": [
+    "Au"
+  ],
+  "method": "seed mediated growth",
+  "precursors": [
+    {
+      "name": "HAuCl4",
+      "conc": 0.25
+    },
+    {
+      "name": "C6H8O6",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "cetyltrimethylammonium bromide",
+      "conc": 100.0
+    }
+  ],
+  "seeds": [
+    {
+      "name": "Ag",
+      "conc": 1.715e-09
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "wire",
+    "size": {
+      "length": 126.0,
+      "width": 13.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "921.json_Au_3131",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Au | method: seed mediated growth | solvent: water | shape: wire | size.length: 126.0 | size.width: 13.0 | precursor: HAuCl4 (conc 0.25) | precursor: C6H8O6 (conc 100.0) | additive: cetyltrimethylammonium bromide (conc 100.0) | seed: Ag (conc 1.715e-09)"
+}

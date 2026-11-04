@@ -1,0 +1,33 @@
+{
+  "synthesis_id": "1223.json_SnO2_1565",
+  "composition": "SnO2",
+  "elements": [
+    "Sn",
+    "O"
+  ],
+  "method": "pulse laser deposition",
+  "precursors": [
+    {
+      "name": "Sn"
+    }
+  ],
+  "additives": [
+    {
+      "name": "chitosan"
+    }
+  ],
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 20.13,
+      "width": 20.13,
+      "depth": 20.13
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1223.json_SnO2_1565",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: SnO2 | method: pulse laser deposition | shape: spherical | size.length: 20.13 | size.width: 20.13 | size.depth: 20.13 | precursor: Sn | additive: chitosan"
+}

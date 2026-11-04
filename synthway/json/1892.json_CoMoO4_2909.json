@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "1892.json_CoMoO4_2909",
+  "composition": "CoMoO4",
+  "elements": [
+    "Co",
+    "Mo",
+    "O"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "CoCl2·6H2O",
+      "conc": 1.0
+    },
+    {
+      "name": "(NH4)6Mo7O4·4H2O",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "urea",
+      "mass": 0.3,
+      "conc": 250.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 160.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "belt-like",
+    "size": {
+      "length": 5000.0,
+      "width": 300.0,
+      "depth": 300.0
+    }
+  },
+  "pdfno_list": [
+    "21-0868"
+  ],
+  "source": {
+    "synthesis_id_original": "1892.json_CoMoO4_2909",
+    "nodes": 17,
+    "edges": 17
+  },
+  "retrieval_text": "composition: CoMoO4 | method: hydrothermal | solvent: water | solvent.volume: 30.0 | temperature: 160.0 | crystalsystem: monoclinic | shape: belt-like | size.length: 5000.0 | size.width: 300.0 | size.depth: 300.0 | precursor: CoCl2·6H2O (conc 1.0) | precursor: (NH4)6Mo7O4·4H2O (conc 1.0) | additive: urea (mass 0.3; conc 250.0) | pdfno_list: 21-0868"
+}

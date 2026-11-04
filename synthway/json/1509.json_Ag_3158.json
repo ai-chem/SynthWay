@@ -1,0 +1,39 @@
+{
+  "synthesis_id": "1509.json_Ag_3158",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "rosmarinus officinalis linn. leaves extract (roe)"
+    }
+  ],
+  "solvent": {
+    "name": "double distilled water",
+    "volume": 175.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 10.0,
+      "width": 10.0,
+      "depth": 10.0
+    }
+  },
+  "pdfno_list": [
+    "04-0783"
+  ],
+  "source": {
+    "synthesis_id_original": "1509.json_Ag_3158",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: Ag | solvent: double distilled water | solvent.volume: 175.0 | shape: spherical | size.length: 10.0 | size.width: 10.0 | size.depth: 10.0 | precursor: AgNO3 (conc 1.0) | additive: rosmarinus officinalis linn. leaves extract (roe) | pdfno_list: 04-0783"
+}

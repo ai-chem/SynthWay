@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1720.json_ZnO-CNDs_1533",
+  "composition": "ZnO–CNDs",
+  "elements": [
+    "Zn",
+    "O",
+    "C",
+    "N",
+    "Ds"
+  ],
+  "method": "sol-gel",
+  "precursors": [
+    {
+      "name": "ZnO",
+      "mass": 0.07,
+      "conc": 0.885
+    },
+    {
+      "name": "CNDs",
+      "mass": 0.09
+    }
+  ],
+  "solvent": {
+    "name": "isopropanol",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "size": {
+      "length": 105.0,
+      "width": 105.0,
+      "depth": 105.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1720.json_ZnO-CNDs_1533",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: ZnO–CNDs | method: sol-gel | solvent: isopropanol | solvent.volume: 10.0 | temperature: 80.0 | crystalsystem: hexagonal | size.length: 105.0 | size.width: 105.0 | size.depth: 105.0 | precursor: ZnO (mass 0.07; conc 0.885) | precursor: CNDs (mass 0.09)"
+}

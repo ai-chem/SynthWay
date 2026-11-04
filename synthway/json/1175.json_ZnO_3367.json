@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1175.json_ZnO_3367",
+  "composition": "ZnO",
+  "elements": [
+    "Zn",
+    "O"
+  ],
+  "method": "mycosynthesis",
+  "precursors": [
+    {
+      "name": "Zn(NO3)2*6H2O",
+      "conc": 20.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "aspergillus sojae mcff"
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 5.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "ph": 9.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 276.7,
+      "width": 276.7,
+      "depth": 276.7
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1175.json_ZnO_3367",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: ZnO | method: mycosynthesis | solvent: water | pH: 9.0 | shape: spherical | size.length: 276.7 | size.width: 276.7 | size.depth: 276.7 | precursor: Zn(NO3)2*6H2O (conc 20.0) | additive: aspergillus sojae mcff | additive: sodium hydroxide (conc 5.0)"
+}

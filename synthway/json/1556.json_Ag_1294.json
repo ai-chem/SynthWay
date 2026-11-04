@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "1556.json_Ag_1294",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "areca catechu nut extract"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "ph": 12.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 16.51,
+      "width": 16.51,
+      "depth": 16.51
+    }
+  },
+  "pdfno_list": [
+    "087-0720"
+  ],
+  "source": {
+    "synthesis_id_original": "1556.json_Ag_1294",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Ag | method: green synthesis | solvent: water | pH: 12.0 | crystalsystem: cubic | shape: spherical | size.length: 16.51 | size.width: 16.51 | size.depth: 16.51 | precursor: AgNO3 (conc 1.0) | additive: areca catechu nut extract | pdfno_list: 087-0720"
+}

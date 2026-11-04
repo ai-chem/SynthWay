@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "2313.json_Ag_3597",
+  "composition": "Ag",
+  "elements": [
+    "Ag"
+  ],
+  "precursors": [
+    {
+      "name": "AgNO3",
+      "conc": 10.0
+    },
+    {
+      "name": "C6H5NH2",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "cetyltrimethylammonium bromide",
+      "conc": 10.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "ph": 10.2
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 30.0,
+      "width": 30.0,
+      "depth": 30.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2313.json_Ag_3597",
+    "nodes": 12,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Ag | solvent: water | pH: 10.2 | shape: spherical | size.length: 30.0 | size.width: 30.0 | size.depth: 30.0 | precursor: AgNO3 (conc 10.0) | precursor: C6H5NH2 (conc 10.0) | additive: cetyltrimethylammonium bromide (conc 10.0)"
+}

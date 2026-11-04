@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "1355.json_Ag2O_3796",
+  "composition": "Ag2O",
+  "elements": [
+    "Ag",
+    "O"
+  ],
+  "method": "green synthesis",
+  "precursors": [
+    {
+      "name": "AgNO3"
+    }
+  ],
+  "additives": [
+    {
+      "name": "ovalbumin"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 25.0,
+      "width": 25.0,
+      "depth": 25.0
+    }
+  },
+  "pdfno_list": [
+    "04-0783"
+  ],
+  "source": {
+    "synthesis_id_original": "1355.json_Ag2O_3796",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: Ag2O | method: green synthesis | solvent: water | temperature: 25.0 | crystalsystem: cubic | shape: spherical | size.length: 25.0 | size.width: 25.0 | size.depth: 25.0 | precursor: AgNO3 | additive: ovalbumin | pdfno_list: 04-0783"
+}

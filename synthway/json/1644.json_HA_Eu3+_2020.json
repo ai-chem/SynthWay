@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1644.json_HA:Eu3+_2020",
+  "composition": "HA:Eu3+",
+  "elements": [
+    "H",
+    "A",
+    "Eu"
+  ],
+  "method": "coprecipitation",
+  "precursors": [
+    {
+      "name": "Ca(NO3)2",
+      "conc": 1.67
+    },
+    {
+      "name": "H3PO4",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "europium chloride",
+      "conc": 200.0
+    }
+  ],
+  "solvent": {
+    "name": "ethanol",
+    "volume": 45.0
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "shape": "irregular"
+  },
+  "pdfno_list": [
+    "09-0432"
+  ],
+  "source": {
+    "synthesis_id_original": "1644.json_HA:Eu3+_2020",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: HA:Eu3+ | method: coprecipitation | solvent: ethanol | solvent.volume: 45.0 | temperature: 25.0 | shape: irregular | precursor: Ca(NO3)2 (conc 1.67) | precursor: H3PO4 (conc 1.0) | additive: europium chloride (conc 200.0) | pdfno_list: 09-0432"
+}

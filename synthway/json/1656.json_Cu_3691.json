@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "1656.json_Cu_3691",
+  "composition": "Cu",
+  "elements": [
+    "Cu"
+  ],
+  "precursors": [
+    {
+      "name": "CuSO4",
+      "mass": 0.25
+    }
+  ],
+  "additives": [
+    {
+      "name": "c. guianensis extract"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 60.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 95.0,
+      "width": 95.0,
+      "depth": 95.0
+    }
+  },
+  "pdfno_list": [
+    "89-2838"
+  ],
+  "source": {
+    "synthesis_id_original": "1656.json_Cu_3691",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Cu | solvent: distilled water | solvent.volume: 50.0 | temperature: 60.0 | crystalsystem: cubic | shape: spherical | size.length: 95.0 | size.width: 95.0 | size.depth: 95.0 | precursor: CuSO4 (mass 0.25) | additive: c. guianensis extract | pdfno_list: 89-2838"
+}

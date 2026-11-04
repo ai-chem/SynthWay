@@ -1,0 +1,52 @@
+{
+  "synthesis_id": "1855.json_MnCo2O4_545",
+  "composition": "MnCo2O4",
+  "elements": [
+    "Mn",
+    "Co",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Co(CH3COO)2*4H2O",
+      "conc": 2.0
+    },
+    {
+      "name": "Mn(CH3COO)2*4H2O",
+      "conc": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium borohydride",
+      "mass": 0.005
+    }
+  ],
+  "seeds": [
+    {
+      "name": "PAN",
+      "mass": 0.05
+    }
+  ],
+  "solvent": {
+    "name": "ethanol",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 400.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "nanotubes",
+    "size": {
+      "width": 700.0,
+      "depth": 700.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1855.json_MnCo2O4_545",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: MnCo2O4 | solvent: ethanol | solvent.volume: 50.0 | temperature: 400.0 | crystalsystem: cubic | shape: nanotubes | size.width: 700.0 | size.depth: 700.0 | precursor: Co(CH3COO)2*4H2O (conc 2.0) | precursor: Mn(CH3COO)2*4H2O (conc 1.0) | additive: sodium borohydride (mass 0.005) | seed: PAN (mass 0.05)"
+}

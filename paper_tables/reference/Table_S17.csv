@@ -1,0 +1,7 @@
+Criterion,Subgroup,LLM,Expert,Bias  (LLM- experts),Spearman’s ρ,"ICC(A,1),  95% CI",Accuracy,Cohen’s κ,MAE,RMSE
+Chemical Plausibility & Consistency,composition_top,0.901,0.731,0.171,0.273,"0.230, [-0.082, 0.575]",0.667,0.135,0.196,0.264
+Chemical Plausibility & Consistency,composition_rare,0.867,0.726,0.140,0.265,"0.357,  [-0.191, 0.603]",0.562,0.125,0.209,0.252
+Faithfulness,composition_top,0.960,0.456,0.504,0.308,"0.058,  [0.000, 0.127]",0.250,0.036,0.504,0.572
+Faithfulness,composition_rare,0.927,0.750,0.177,0.592,"0.231,  [0.051, 0.551]",0.625,0.250,0.184,0.277
+Answer Relevancy,composition_top,0.953,0.990,-0.036,-0.169,"-0.052,  [-0.125, 0.000]",0.875,0.000,0.057,0.143
+Answer Relevancy,composition_rare,0.970,0.965,0.006,-0.142,"-0.084, [-0.191, 0.000]",0.875,-0.067,0.065,0.169

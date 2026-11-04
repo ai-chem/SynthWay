@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "180.json_rGO-SnO2-NiO-CuO_(GO-SNC)_792",
+  "composition": "rGO-SnO2-NiO-CuO (GO-SNC)",
+  "elements": [
+    "G",
+    "O",
+    "Sn",
+    "Ni",
+    "Cu",
+    "S",
+    "N",
+    "C"
+  ],
+  "precursors": [
+    {
+      "name": "GO",
+      "mass": 1.0
+    },
+    {
+      "name": "SnO2-NiO-CuO (SNC)"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water"
+  },
+  "product": {
+    "shape": "semi porous sheet",
+    "size": {
+      "length": 57.45,
+      "width": 57.45,
+      "depth": 57.45
+    }
+  },
+  "source": {
+    "synthesis_id_original": "180.json_rGO-SnO2-NiO-CuO_(GO-SNC)_792",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: rGO-SnO2-NiO-CuO (GO-SNC) | solvent: deionized water | shape: semi porous sheet | size.length: 57.45 | size.width: 57.45 | size.depth: 57.45 | precursor: GO (mass 1.0) | precursor: SnO2-NiO-CuO (SNC)"
+}

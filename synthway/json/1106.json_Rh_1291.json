@@ -1,0 +1,41 @@
+{
+  "synthesis_id": "1106.json_Rh_1291",
+  "composition": "Rh",
+  "elements": [
+    "Rh"
+  ],
+  "precursors": [
+    {
+      "name": "RhCl3·3H2O",
+      "conc": 0.25
+    },
+    {
+      "name": "BH4-",
+      "conc": 2.5
+    }
+  ],
+  "additives": [
+    {
+      "name": "trisodium citrate",
+      "conc": 0.25
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 6.5,
+      "width": 6.5,
+      "depth": 6.5
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1106.json_Rh_1291",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Rh | solvent: water | crystalsystem: cubic | shape: spherical | size.length: 6.5 | size.width: 6.5 | size.depth: 6.5 | precursor: RhCl3·3H2O (conc 0.25) | precursor: BH4- (conc 2.5) | additive: trisodium citrate (conc 0.25)"
+}

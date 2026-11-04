@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "903.json_ZnSe_1827",
+  "composition": "ZnSe",
+  "elements": [
+    "Zn",
+    "Se"
+  ],
+  "method": "reduction",
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2",
+      "mass": 0.18,
+      "conc": 9.81
+    },
+    {
+      "name": "C2H4O2S",
+      "conc": 1.0
+    },
+    {
+      "name": "NaBH4",
+      "mass": 0.08
+    },
+    {
+      "name": "Se",
+      "mass": 0.08
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 120.0
+  },
+  "conditions": {
+    "ph": 10.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 6.6,
+      "width": 6.6,
+      "depth": 6.6
+    }
+  },
+  "source": {
+    "synthesis_id_original": "903.json_ZnSe_1827",
+    "nodes": 17,
+    "edges": 17
+  },
+  "retrieval_text": "composition: ZnSe | method: reduction | solvent: deionized water | solvent.volume: 120.0 | pH: 10.0 | shape: spherical | size.length: 6.6 | size.width: 6.6 | size.depth: 6.6 | precursor: Zn(CH3COO)2 (mass 0.18; conc 9.81) | precursor: C2H4O2S (conc 1.0) | precursor: NaBH4 (mass 0.08) | precursor: Se (mass 0.08)"
+}

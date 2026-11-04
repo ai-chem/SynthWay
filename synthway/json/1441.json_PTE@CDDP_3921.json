@@ -1,0 +1,37 @@
+{
+  "synthesis_id": "1441.json_PTE@CDDP_3921",
+  "composition": "PTE@CDDP",
+  "elements": [
+    "P",
+    "T",
+    "E",
+    "C",
+    "D"
+  ],
+  "method": "dialysis",
+  "precursors": [
+    {
+      "name": "Cis-Pt(CDDP)"
+    },
+    {
+      "name": "PTe"
+    }
+  ],
+  "solvent": {
+    "name": "dimethylformamide"
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 105.0,
+      "width": 105.0,
+      "depth": 105.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1441.json_PTE@CDDP_3921",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: PTE@CDDP | method: dialysis | solvent: dimethylformamide | shape: spherical | size.length: 105.0 | size.width: 105.0 | size.depth: 105.0 | precursor: Cis-Pt(CDDP) | precursor: PTe"
+}

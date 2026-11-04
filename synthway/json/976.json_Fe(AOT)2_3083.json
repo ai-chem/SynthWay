@@ -1,0 +1,30 @@
+{
+  "synthesis_id": "976.json_Fe(AOT)2_3083",
+  "composition": "Fe(AOT)2",
+  "elements": [
+    "Fe",
+    "A",
+    "O",
+    "T"
+  ],
+  "precursors": [
+    {
+      "name": "FeCl2",
+      "mass": 1.28
+    },
+    {
+      "name": "NaAOT",
+      "mass": 8.88
+    }
+  ],
+  "solvent": {
+    "name": "ethanol+ether",
+    "volume": 400.0
+  },
+  "source": {
+    "synthesis_id_original": "976.json_Fe(AOT)2_3083",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: Fe(AOT)2 | solvent: ethanol+ether | solvent.volume: 400.0 | precursor: FeCl2 (mass 1.28) | precursor: NaAOT (mass 8.88)"
+}

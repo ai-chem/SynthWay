@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "886.json_La1.09Fe0.91O3_2397",
+  "composition": "La1.09Fe0.91O3",
+  "elements": [
+    "La",
+    "Fe",
+    "O"
+  ],
+  "method": "sol-gel pechini method",
+  "precursors": [
+    {
+      "name": "Fe(NO3)3*19H2O",
+      "mass": 4.0
+    },
+    {
+      "name": "La(NO3)3*6H2O",
+      "mass": 4.33
+    },
+    {
+      "name": "C6H8O7",
+      "mass": 4.33,
+      "conc": 260.0
+    },
+    {
+      "name": "C2H6O2",
+      "mass": 4.33,
+      "conc": 260.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 600.0
+  },
+  "product": {
+    "shape": "rounded shape",
+    "size": {
+      "length": 27.0,
+      "width": 27.0,
+      "depth": 27.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "886.json_La1.09Fe0.91O3_2397",
+    "nodes": 15,
+    "edges": 17
+  },
+  "retrieval_text": "composition: La1.09Fe0.91O3 | method: sol-gel pechini method | solvent: water | temperature: 600.0 | shape: rounded shape | size.length: 27.0 | size.width: 27.0 | size.depth: 27.0 | precursor: Fe(NO3)3*19H2O (mass 4.0) | precursor: La(NO3)3*6H2O (mass 4.33) | precursor: C6H8O7 (mass 4.33; conc 260.0) | precursor: C2H6O2 (mass 4.33; conc 260.0)"
+}

@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "2015.json_Pt_637",
+  "composition": "Pt",
+  "elements": [
+    "Pt"
+  ],
+  "precursors": [
+    {
+      "name": "K2PtCl4",
+      "conc": 24.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "apoft",
+      "conc": 0.001
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 200.0
+    },
+    {
+      "name": "sodium borohydride",
+      "conc": 200.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 50.0,
+    "ph": 8.5
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 1.87,
+      "width": 1.87,
+      "depth": 1.87
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2015.json_Pt_637",
+    "nodes": 16,
+    "edges": 16
+  },
+  "retrieval_text": "composition: Pt | solvent: water | temperature: 50.0 | pH: 8.5 | crystalsystem: face-centered cubic | shape: spherical | size.length: 1.87 | size.width: 1.87 | size.depth: 1.87 | precursor: K2PtCl4 (conc 24.0) | additive: apoft (conc 0.001) | additive: sodium hydroxide (conc 200.0) | additive: sodium borohydride (conc 200.0)"
+}

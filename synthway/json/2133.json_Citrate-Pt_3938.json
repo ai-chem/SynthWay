@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "2133.json_Citrate-Pt_3938",
+  "composition": "Citrate-Pt",
+  "elements": [
+    "Ci",
+    "Pt"
+  ],
+  "precursors": [
+    {
+      "name": "H2PtCl6",
+      "mass": 0.072
+    }
+  ],
+  "additives": [
+    {
+      "name": "trisodium citrate",
+      "mass": 0.055
+    },
+    {
+      "name": "citric acid",
+      "mass": 0.00275
+    },
+    {
+      "name": "sodium borohydride",
+      "mass": 0.0044
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 11.0
+  },
+  "conditions": {
+    "temperature": 200.0
+  },
+  "product": {
+    "size": {
+      "length": 6.0,
+      "width": 6.0,
+      "depth": 6.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2133.json_Citrate-Pt_3938",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Citrate-Pt | solvent: water | solvent.volume: 11.0 | temperature: 200.0 | size.length: 6.0 | size.width: 6.0 | size.depth: 6.0 | precursor: H2PtCl6 (mass 0.072) | additive: trisodium citrate (mass 0.055) | additive: citric acid (mass 0.00275) | additive: sodium borohydride (mass 0.0044)"
+}

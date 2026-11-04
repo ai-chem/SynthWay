@@ -1,0 +1,65 @@
+{
+  "synthesis_id": "1996.json_CuO/Pt_2973",
+  "composition": "CuO/Pt",
+  "elements": [
+    "Cu",
+    "O",
+    "Pt"
+  ],
+  "precursors": [
+    {
+      "name": "Cu(NO3)2·3H2O",
+      "mass": 0.94,
+      "conc": 160.0
+    },
+    {
+      "name": "H2PtCl6",
+      "conc": 40.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyvinylpyrrolidone",
+      "mass": 0.26
+    },
+    {
+      "name": "ammonium hydroxide"
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 1000.0
+    },
+    {
+      "name": "bovine serum albumin",
+      "mass": 0.0025
+    },
+    {
+      "name": "ascorbic acid",
+      "conc": 100.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 120.0
+  },
+  "product": {
+    "shape": "flower-like",
+    "size": {
+      "length": 325.0,
+      "width": 325.0,
+      "depth": 325.0
+    }
+  },
+  "pdfno_list": [
+    "01-089-5897"
+  ],
+  "source": {
+    "synthesis_id_original": "1996.json_CuO/Pt_2973",
+    "nodes": 23,
+    "edges": 22
+  },
+  "retrieval_text": "composition: CuO/Pt | solvent: water | solvent.volume: 20.0 | temperature: 120.0 | shape: flower-like | size.length: 325.0 | size.width: 325.0 | size.depth: 325.0 | precursor: Cu(NO3)2·3H2O (mass 0.94; conc 160.0) | precursor: H2PtCl6 (conc 40.0) | additive: polyvinylpyrrolidone (mass 0.26) | additive: ammonium hydroxide | additive: sodium hydroxide (conc 1000.0) | additive: bovine serum albumin (mass 0.0025) | additive: ascorbic acid (conc 100.0) | pdfno_list: 01-089-5897"
+}

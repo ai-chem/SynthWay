@@ -1,0 +1,54 @@
+{
+  "synthesis_id": "2139.json_P-RuSe2_2895",
+  "composition": "P‑RuSe2",
+  "elements": [
+    "P",
+    "Ru",
+    "Se"
+  ],
+  "precursors": [
+    {
+      "name": "RuCl3·xH2O",
+      "mass": 1.0
+    },
+    {
+      "name": "Se",
+      "mass": 0.5
+    }
+  ],
+  "additives": [
+    {
+      "name": "kit-6",
+      "mass": 1.0
+    },
+    {
+      "name": "hydrofluoric acid",
+      "conc": 1000.0
+    }
+  ],
+  "solvent": {
+    "name": "ethanol",
+    "volume": 10.0
+  },
+  "conditions": {
+    "temperature": 550.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "spherical",
+    "size": {
+      "length": 5.0,
+      "width": 5.0,
+      "depth": 5.0
+    }
+  },
+  "pdfno_list": [
+    "80-0670"
+  ],
+  "source": {
+    "synthesis_id_original": "2139.json_P-RuSe2_2895",
+    "nodes": 18,
+    "edges": 17
+  },
+  "retrieval_text": "composition: P‑RuSe2 | solvent: ethanol | solvent.volume: 10.0 | temperature: 550.0 | crystalsystem: hexagonal | shape: spherical | size.length: 5.0 | size.width: 5.0 | size.depth: 5.0 | precursor: RuCl3·xH2O (mass 1.0) | precursor: Se (mass 0.5) | additive: kit-6 (mass 1.0) | additive: hydrofluoric acid (conc 1000.0) | pdfno_list: 80-0670"
+}

@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1423.json_HG_Ag_134",
+  "composition": "HG_Ag",
+  "elements": [
+    "H",
+    "G",
+    "Ag"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "Chi"
+    },
+    {
+      "name": "PVA"
+    },
+    {
+      "name": "PEG"
+    },
+    {
+      "name": "Ag+"
+    }
+  ],
+  "solvent": {
+    "name": "acetic acid and water"
+  },
+  "product": {
+    "crystalsystem": "spherical",
+    "shape": "rough, uniform, wrinkled, and well-ordered morphology",
+    "size": {
+      "length": 10.0,
+      "width": 10.0,
+      "depth": 10.0
+    }
+  },
+  "pdfno_list": [
+    "65-2871"
+  ],
+  "source": {
+    "synthesis_id_original": "1423.json_HG_Ag_134",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: HG_Ag | method: hydrothermal | solvent: acetic acid and water | crystalsystem: spherical | shape: rough, uniform, wrinkled, and well-ordered morphology | size.length: 10.0 | size.width: 10.0 | size.depth: 10.0 | precursor: Chi | precursor: PVA | precursor: PEG | precursor: Ag+ | pdfno_list: 65-2871"
+}

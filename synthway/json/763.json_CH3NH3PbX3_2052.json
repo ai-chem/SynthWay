@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "763.json_CH3NH3PbX3_2052",
+  "composition": "CH3NH3PbX3",
+  "elements": [
+    "C",
+    "H",
+    "N",
+    "Pb",
+    "X"
+  ],
+  "precursors": [
+    {
+      "name": "PbBr2",
+      "mass": 0.0367
+    },
+    {
+      "name": "C18H40BrN",
+      "mass": 0.021
+    },
+    {
+      "name": "CH3NH3Br",
+      "mass": 0.0044
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleic acid",
+      "mass": 0.085
+    }
+  ],
+  "solvent": {
+    "name": "octadecene",
+    "volume": 2.0
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "size": {
+      "width": 6.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "763.json_CH3NH3PbX3_2052",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: CH3NH3PbX3 | solvent: octadecene | solvent.volume: 2.0 | temperature: 80.0 | size.width: 6.0 | precursor: PbBr2 (mass 0.0367) | precursor: C18H40BrN (mass 0.021) | precursor: CH3NH3Br (mass 0.0044) | additive: oleic acid (mass 0.085)"
+}

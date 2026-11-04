@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1479.json_PPO_722",
+  "composition": "PPO",
+  "elements": [
+    "P",
+    "O"
+  ],
+  "method": "polyol",
+  "precursors": [
+    {
+      "name": "Pr(NO3)3*6H2O",
+      "conc": 40.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 70.0
+  },
+  "conditions": {
+    "temperature": 180.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "elliptically",
+    "size": {
+      "length": 48.5,
+      "width": 48.5,
+      "depth": 48.5
+    }
+  },
+  "pdfno_list": [
+    "42-1121"
+  ],
+  "source": {
+    "synthesis_id_original": "1479.json_PPO_722",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: PPO | method: polyol | solvent: ethylene glycol | solvent.volume: 70.0 | temperature: 180.0 | crystalsystem: cubic | shape: elliptically | size.length: 48.5 | size.width: 48.5 | size.depth: 48.5 | precursor: Pr(NO3)3*6H2O (conc 40.0) | additive: sodium hydroxide | pdfno_list: 42-1121"
+}

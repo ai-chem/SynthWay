@@ -1,0 +1,35 @@
+{
+  "synthesis_id": "897.json_ZrCx_4108",
+  "composition": "ZrCx",
+  "elements": [
+    "Zr",
+    "Cx"
+  ],
+  "method": "ball milling of zr powder with toluene",
+  "precursors": [
+    {
+      "name": "Zr"
+    },
+    {
+      "name": "C7H8"
+    }
+  ],
+  "product": {
+    "crystalsystem": "hcp",
+    "shape": "spherical",
+    "size": {
+      "length": 10.0,
+      "width": 10.0,
+      "depth": 10.0
+    }
+  },
+  "pdfno_list": [
+    "74-122"
+  ],
+  "source": {
+    "synthesis_id_original": "897.json_ZrCx_4108",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: ZrCx | method: ball milling of zr powder with toluene | crystalsystem: hcp | shape: spherical | size.length: 10.0 | size.width: 10.0 | size.depth: 10.0 | precursor: Zr | precursor: C7H8 | pdfno_list: 74-122"
+}

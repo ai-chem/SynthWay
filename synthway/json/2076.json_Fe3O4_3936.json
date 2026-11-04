@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "2076.json_Fe3O4_3936",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Fe(acac)3",
+      "conc": 16.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "gpt-4v",
+      "conc": 40.0
+    }
+  ],
+  "solvent": {
+    "name": "benzyl ether",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 280.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "erythrocyte-like",
+    "size": {
+      "length": 53.0,
+      "width": 53.0,
+      "depth": 53.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2076.json_Fe3O4_3936",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Fe3O4 | solvent: benzyl ether | solvent.volume: 50.0 | temperature: 280.0 | crystalsystem: cubic | shape: erythrocyte-like | size.length: 53.0 | size.width: 53.0 | size.depth: 53.0 | precursor: Fe(acac)3 (conc 16.0) | additive: gpt-4v (conc 40.0)"
+}

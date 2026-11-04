@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "1358.json_NiO_3304",
+  "composition": "NiO",
+  "elements": [
+    "Ni",
+    "O"
+  ],
+  "method": "phytoextract-mediated green synthesis",
+  "precursors": [
+    {
+      "name": "nickel nitrate (Ni(NO3)2·6H2O)",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "cullon tomentosum plant extract"
+    },
+    {
+      "name": "sodium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "deionized water"
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "river stone-like",
+    "size": {
+      "length": 80.0,
+      "width": 80.0,
+      "depth": 80.0
+    }
+  },
+  "pdfno_list": [
+    "04-835"
+  ],
+  "source": {
+    "synthesis_id_original": "1358.json_NiO_3304",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: NiO | method: phytoextract-mediated green synthesis | solvent: deionized water | temperature: 80.0 | crystalsystem: cubic | shape: river stone-like | size.length: 80.0 | size.width: 80.0 | size.depth: 80.0 | precursor: nickel nitrate (Ni(NO3)2·6H2O) (conc 100.0) | additive: cullon tomentosum plant extract | additive: sodium hydroxide | pdfno_list: 04-835"
+}

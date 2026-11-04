@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "1080.json_CdO_1065",
+  "composition": "CdO",
+  "elements": [
+    "Cd",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "C14H12N2",
+      "mass": 0.05,
+      "conc": 48.0
+    },
+    {
+      "name": "CdI2",
+      "mass": 0.0654,
+      "conc": 24.0
+    }
+  ],
+  "solvent": {
+    "name": "dichloromethane/methanol",
+    "volume": 15.0
+  },
+  "conditions": {
+    "temperature": 800.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "width": 50.0
+    }
+  },
+  "pdfno_list": [
+    "05-0640"
+  ],
+  "source": {
+    "synthesis_id_original": "1080.json_CdO_1065",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: CdO | solvent: dichloromethane/methanol | solvent.volume: 15.0 | temperature: 800.0 | shape: spherical | size.width: 50.0 | precursor: C14H12N2 (mass 0.05; conc 48.0) | precursor: CdI2 (mass 0.0654; conc 24.0) | pdfno_list: 05-0640"
+}

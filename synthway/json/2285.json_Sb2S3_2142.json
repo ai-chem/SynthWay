@@ -1,0 +1,51 @@
+{
+  "synthesis_id": "2285.json_Sb2S3_2142",
+  "composition": "Sb2S3",
+  "elements": [
+    "Sb",
+    "S"
+  ],
+  "precursors": [
+    {
+      "name": "SbCl3",
+      "mass": 0.23
+    },
+    {
+      "name": "CH4N2S",
+      "mass": 0.63
+    }
+  ],
+  "additives": [
+    {
+      "name": "ethanol"
+    },
+    {
+      "name": "polyethylene glycol 400"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 85.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "shape": "flower-like",
+    "size": {
+      "length": 3000.0,
+      "width": 2200.0,
+      "depth": 200.0
+    }
+  },
+  "pdfno_list": [
+    "42-1393"
+  ],
+  "source": {
+    "synthesis_id_original": "2285.json_Sb2S3_2142",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: Sb2S3 | solvent: water | solvent.volume: 20.0 | temperature: 85.0 | crystalsystem: orthorhombic | shape: flower-like | size.length: 3000.0 | size.width: 2200.0 | size.depth: 200.0 | precursor: SbCl3 (mass 0.23) | precursor: CH4N2S (mass 0.63) | additive: ethanol | additive: polyethylene glycol 400 | pdfno_list: 42-1393"
+}

@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1712.json_GO_3645",
+  "composition": "GO",
+  "elements": [
+    "G",
+    "O"
+  ],
+  "method": "thermal treatment",
+  "precursors": [
+    {
+      "name": "C",
+      "mass": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sulfuric acid"
+    },
+    {
+      "name": "nitric acid"
+    },
+    {
+      "name": "potassium permanganate",
+      "mass": 1.0
+    }
+  ],
+  "conditions": {
+    "temperature": 850.0
+  },
+  "product": {
+    "shape": "sheets",
+    "size": {
+      "length": 118.2,
+      "width": 118.2,
+      "depth": 118.2
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1712.json_GO_3645",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: GO | method: thermal treatment | temperature: 850.0 | shape: sheets | size.length: 118.2 | size.width: 118.2 | size.depth: 118.2 | precursor: C (mass 1.0) | additive: sulfuric acid | additive: nitric acid | additive: potassium permanganate (mass 1.0)"
+}

@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "2202.json_Cu-BDC-NH2_694",
+  "composition": "Cu-BDC-NH2",
+  "elements": [
+    "Cu",
+    "B",
+    "D",
+    "C",
+    "N",
+    "H"
+  ],
+  "precursors": [
+    {
+      "name": "Cu(NO3)2*3H2O",
+      "mass": 1.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "2-aminoterephthalic acid",
+      "mass": 0.4
+    }
+  ],
+  "solvent": {
+    "name": "water+dmf+ethanol",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 85.0
+  },
+  "product": {
+    "shape": "cuboid-like"
+  },
+  "source": {
+    "synthesis_id_original": "2202.json_Cu-BDC-NH2_694",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: Cu-BDC-NH2 | solvent: water+dmf+ethanol | solvent.volume: 30.0 | temperature: 85.0 | shape: cuboid-like | precursor: Cu(NO3)2*3H2O (mass 1.0) | additive: 2-aminoterephthalic acid (mass 0.4)"
+}

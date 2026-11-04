@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "2306.json_S_743",
+  "composition": "SiO2",
+  "elements": [
+    "Si",
+    "O"
+  ],
+  "method": "modified stober",
+  "precursors": [
+    {
+      "name": "Si(OC2H5)4"
+    }
+  ],
+  "additives": [
+    {
+      "name": "igepal co-520"
+    },
+    {
+      "name": "cyclohexane"
+    },
+    {
+      "name": "ammonium hydroxide"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 40.26,
+      "width": 40.26,
+      "depth": 40.26
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2306.json_S_743",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: SiO2 | method: modified stober | solvent: water | temperature: 25.0 | shape: spherical | size.length: 40.26 | size.width: 40.26 | size.depth: 40.26 | precursor: Si(OC2H5)4 | additive: igepal co-520 | additive: cyclohexane | additive: ammonium hydroxide"
+}

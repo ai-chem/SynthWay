@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "1839.json_Au@Pt_353",
+  "composition": "Au@Pt",
+  "elements": [
+    "Au",
+    "Pt"
+  ],
+  "precursors": [
+    {
+      "name": "H2PtCl6*6H2O",
+      "conc": 20.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "ascorbic acid",
+      "conc": 100.0
+    }
+  ],
+  "seeds": [
+    {
+      "name": "PtPd",
+      "mass": 0.000442
+    }
+  ],
+  "solvent": {
+    "name": "deionized water",
+    "volume": 8.0
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "crystalsystem": "face-centered cubic",
+    "size": {
+      "length": 25.0,
+      "width": 25.0,
+      "depth": 25.0
+    }
+  },
+  "pdfno_list": [
+    "04-0802, 04-0784"
+  ],
+  "source": {
+    "synthesis_id_original": "1839.json_Au@Pt_353",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: Au@Pt | solvent: deionized water | solvent.volume: 8.0 | temperature: 80.0 | crystalsystem: face-centered cubic | size.length: 25.0 | size.width: 25.0 | size.depth: 25.0 | precursor: H2PtCl6*6H2O (conc 20.0) | additive: ascorbic acid (conc 100.0) | seed: PtPd (mass 0.000442) | pdfno_list: 04-0802, 04-0784"
+}

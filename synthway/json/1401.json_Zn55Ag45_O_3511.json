@@ -1,0 +1,38 @@
+{
+  "synthesis_id": "1401.json_Zn55Ag45/O_3511",
+  "composition": "Zn55Ag45/O",
+  "elements": [
+    "Zn",
+    "Ag",
+    "O"
+  ],
+  "method": "electrical explosion",
+  "precursors": [
+    {
+      "name": "Zn"
+    },
+    {
+      "name": "Ag"
+    }
+  ],
+  "solvent": {
+    "name": "argon‑oxygen gas mixture"
+  },
+  "product": {
+    "shape": "irregular-shaped",
+    "size": {
+      "length": 35.0,
+      "width": 35.0,
+      "depth": 35.0
+    }
+  },
+  "pdfno_list": [
+    "01-075-0576 01-071-3762"
+  ],
+  "source": {
+    "synthesis_id_original": "1401.json_Zn55Ag45/O_3511",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: Zn55Ag45/O | method: electrical explosion | solvent: argon‑oxygen gas mixture | shape: irregular-shaped | size.length: 35.0 | size.width: 35.0 | size.depth: 35.0 | precursor: Zn | precursor: Ag | pdfno_list: 01-075-0576 01-071-3762"
+}

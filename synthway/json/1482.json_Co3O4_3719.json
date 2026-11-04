@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "1482.json_Co3O4_3719",
+  "composition": "Co3O4",
+  "elements": [
+    "Co",
+    "O"
+  ],
+  "method": "deflagration",
+  "precursors": [
+    {
+      "name": "Co(NO3)2*6H2O",
+      "conc": 500.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "cow urine"
+    }
+  ],
+  "solvent": {
+    "name": "double distilled water",
+    "volume": 50.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "cluster pore-like",
+    "size": {
+      "length": 23.48,
+      "width": 23.48,
+      "depth": 23.48
+    }
+  },
+  "pdfno_list": [
+    "43-1003"
+  ],
+  "source": {
+    "synthesis_id_original": "1482.json_Co3O4_3719",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Co3O4 | method: deflagration | solvent: double distilled water | solvent.volume: 50.0 | crystalsystem: cubic | shape: cluster pore-like | size.length: 23.48 | size.width: 23.48 | size.depth: 23.48 | precursor: Co(NO3)2*6H2O (conc 500.0) | additive: cow urine | pdfno_list: 43-1003"
+}

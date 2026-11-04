@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "1534.json_MSNs-Ag_2747",
+  "composition": "MSNs-Ag",
+  "elements": [
+    "M",
+    "S",
+    "Ns",
+    "Ag"
+  ],
+  "method": "one-pot green synthesis",
+  "precursors": [
+    {
+      "name": "APTES-MSNs",
+      "mass": 0.1
+    },
+    {
+      "name": "AgNO3",
+      "mass": 0.1
+    }
+  ],
+  "additives": [
+    {
+      "name": "pomegranate plant calyx extract"
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 200.0
+  },
+  "conditions": {
+    "temperature": 80.0
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 88.68,
+      "width": 88.68,
+      "depth": 88.68
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1534.json_MSNs-Ag_2747",
+    "nodes": 13,
+    "edges": 13
+  },
+  "retrieval_text": "composition: MSNs-Ag | method: one-pot green synthesis | solvent: distilled water | solvent.volume: 200.0 | temperature: 80.0 | shape: spherical | size.length: 88.68 | size.width: 88.68 | size.depth: 88.68 | precursor: APTES-MSNs (mass 0.1) | precursor: AgNO3 (mass 0.1) | additive: pomegranate plant calyx extract"
+}

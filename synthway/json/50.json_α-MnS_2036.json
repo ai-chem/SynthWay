@@ -1,0 +1,32 @@
+{
+  "synthesis_id": "50.json_α-MnS_2036",
+  "composition": "α-MnS",
+  "elements": [
+    "Mn",
+    "S"
+  ],
+  "solvent": {
+    "name": "ethylenediamine",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 120.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 1600.0,
+      "width": 1600.0,
+      "depth": 1600.0
+    }
+  },
+  "pdfno_list": [
+    "06-0518"
+  ],
+  "source": {
+    "synthesis_id_original": "50.json_α-MnS_2036",
+    "nodes": 9,
+    "edges": 8
+  },
+  "retrieval_text": "composition: α-MnS | solvent: ethylenediamine | solvent.volume: 30.0 | temperature: 120.0 | crystalsystem: cubic | size.length: 1600.0 | size.width: 1600.0 | size.depth: 1600.0 | pdfno_list: 06-0518"
+}

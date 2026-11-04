@@ -1,0 +1,54 @@
+{
+  "synthesis_id": "1999.json_Cu(OH)2_1468",
+  "composition": "Cu(OH)2",
+  "elements": [
+    "Cu",
+    "O",
+    "H"
+  ],
+  "precursors": [
+    {
+      "name": "CuCl2",
+      "mass": 0.01275
+    },
+    {
+      "name": "Cu(Ac)2",
+      "mass": 0.005
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium chloride",
+      "mass": 0.00585
+    },
+    {
+      "name": "polyvinylpyrrolidone 55000",
+      "mass": 0.0655
+    },
+    {
+      "name": "sodium borohydride",
+      "mass": 0.0083
+    }
+  ],
+  "solvent": {
+    "name": "ethanol",
+    "volume": 40.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "size": {
+      "length": 350.0,
+      "width": 350.0,
+      "depth": 350.0
+    }
+  },
+  "pdfno_list": [
+    "35-0505"
+  ],
+  "source": {
+    "synthesis_id_original": "1999.json_Cu(OH)2_1468",
+    "nodes": 18,
+    "edges": 17
+  },
+  "retrieval_text": "composition: Cu(OH)2 | solvent: ethanol | solvent.volume: 40.0 | crystalsystem: orthorhombic | size.length: 350.0 | size.width: 350.0 | size.depth: 350.0 | precursor: CuCl2 (mass 0.01275) | precursor: Cu(Ac)2 (mass 0.005) | additive: sodium chloride (mass 0.00585) | additive: polyvinylpyrrolidone 55000 (mass 0.0655) | additive: sodium borohydride (mass 0.0083) | pdfno_list: 35-0505"
+}

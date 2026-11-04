@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "1388.json_GO_1676",
+  "composition": "GO",
+  "elements": [
+    "G",
+    "O"
+  ],
+  "method": "hummers method",
+  "precursors": [
+    {
+      "name": "C (graphite flakes)"
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium nitrate"
+    },
+    {
+      "name": "hydrogen peroxide"
+    },
+    {
+      "name": "potassium permanganate"
+    },
+    {
+      "name": "sulfuric acid"
+    },
+    {
+      "name": "hydrochloric acid"
+    }
+  ],
+  "conditions": {
+    "ph": 7.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "crumpled sheet like ultrathin structure"
+  },
+  "source": {
+    "synthesis_id_original": "1388.json_GO_1676",
+    "nodes": 11,
+    "edges": 10
+  },
+  "retrieval_text": "composition: GO | method: hummers method | pH: 7.0 | crystalsystem: hexagonal | shape: crumpled sheet like ultrathin structure | precursor: C (graphite flakes) | additive: sodium nitrate | additive: hydrogen peroxide | additive: potassium permanganate | additive: sulfuric acid | additive: hydrochloric acid"
+}

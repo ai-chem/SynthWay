@@ -1,0 +1,28 @@
+{
+  "synthesis_id": "784.json_Pt3Fe3(CO)15_4012",
+  "composition": "Pt3Fe3(CO)15",
+  "elements": [
+    "Pt",
+    "Fe",
+    "C",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Pt(C7H10)3",
+      "mass": 0.5
+    },
+    {
+      "name": "Fe(CO)5"
+    }
+  ],
+  "solvent": {
+    "name": "hexane"
+  },
+  "source": {
+    "synthesis_id_original": "784.json_Pt3Fe3(CO)15_4012",
+    "nodes": 5,
+    "edges": 4
+  },
+  "retrieval_text": "composition: Pt3Fe3(CO)15 | solvent: hexane | precursor: Pt(C7H10)3 (mass 0.5) | precursor: Fe(CO)5"
+}

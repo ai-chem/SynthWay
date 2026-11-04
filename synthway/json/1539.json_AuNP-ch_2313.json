@@ -1,0 +1,42 @@
+{
+  "synthesis_id": "1539.json_AuNP-ch_2313",
+  "composition": "AuNP-ch",
+  "elements": [
+    "Au",
+    "N",
+    "P"
+  ],
+  "precursors": [
+    {
+      "name": "HAuCl4",
+      "conc": 5.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium borohydride",
+      "conc": 20.0
+    },
+    {
+      "name": "chitosan",
+      "mass": 0.075
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "product": {
+    "shape": "spherical",
+    "size": {
+      "length": 3.97,
+      "width": 3.97,
+      "depth": 3.97
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1539.json_AuNP-ch_2313",
+    "nodes": 12,
+    "edges": 11
+  },
+  "retrieval_text": "composition: AuNP-ch | solvent: water | shape: spherical | size.length: 3.97 | size.width: 3.97 | size.depth: 3.97 | precursor: HAuCl4 (conc 5.0) | additive: sodium borohydride (conc 20.0) | additive: chitosan (mass 0.075)"
+}

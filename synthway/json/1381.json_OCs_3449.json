@@ -1,0 +1,31 @@
+{
+  "synthesis_id": "1381.json_OCs_3449",
+  "composition": "OCs",
+  "elements": [
+    "O",
+    "Cs"
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "conc": 1.0
+    }
+  ],
+  "solvent": {
+    "name": "ethanolic hcl",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "product": {
+    "crystalsystem": "amorphous",
+    "shape": "porous structure"
+  },
+  "source": {
+    "synthesis_id_original": "1381.json_OCs_3449",
+    "nodes": 8,
+    "edges": 7
+  },
+  "retrieval_text": "composition: OCs | solvent: ethanolic hcl | solvent.volume: 30.0 | temperature: 25.0 | crystalsystem: amorphous | shape: porous structure | additive: sodium hydroxide (conc 1.0)"
+}

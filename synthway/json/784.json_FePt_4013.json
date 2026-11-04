@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "784.json_FePt_4013",
+  "composition": "FePt",
+  "elements": [
+    "Fe",
+    "Pt"
+  ],
+  "precursors": [
+    {
+      "name": "Pt3Fe3(CO)15",
+      "mass": 0.06
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleic acid"
+    },
+    {
+      "name": "oleylamine"
+    }
+  ],
+  "solvent": {
+    "name": "toluene",
+    "volume": 2.0
+  },
+  "conditions": {
+    "temperature": 775.0
+  },
+  "product": {
+    "crystalsystem": "fct",
+    "shape": "spherical",
+    "size": {
+      "length": 29.0,
+      "width": 29.0,
+      "depth": 29.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "784.json_FePt_4013",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: FePt | solvent: toluene | solvent.volume: 2.0 | temperature: 775.0 | crystalsystem: fct | shape: spherical | size.length: 29.0 | size.width: 29.0 | size.depth: 29.0 | precursor: Pt3Fe3(CO)15 (mass 0.06) | additive: oleic acid | additive: oleylamine"
+}

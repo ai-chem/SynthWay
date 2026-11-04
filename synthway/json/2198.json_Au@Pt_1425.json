@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "2198.json_Au@Pt_1425",
+  "composition": "Au@Pt",
+  "elements": [
+    "Au",
+    "Pt"
+  ],
+  "precursors": [
+    {
+      "name": "HAuCl4",
+      "conc": 50.0
+    },
+    {
+      "name": "H2PtCl6",
+      "conc": 50.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "pluronic f-127",
+      "mass": 0.06
+    },
+    {
+      "name": "ascorbic acid",
+      "conc": 250.0
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 2.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 48.1,
+      "width": 48.1,
+      "depth": 48.1
+    }
+  },
+  "pdfno_list": [
+    "01-071-4614, 01-080-3827"
+  ],
+  "source": {
+    "synthesis_id_original": "2198.json_Au@Pt_1425",
+    "nodes": 16,
+    "edges": 16
+  },
+  "retrieval_text": "composition: Au@Pt | solvent: water | solvent.volume: 2.0 | crystalsystem: cubic | shape: spherical | size.length: 48.1 | size.width: 48.1 | size.depth: 48.1 | precursor: HAuCl4 (conc 50.0) | precursor: H2PtCl6 (conc 50.0) | additive: pluronic f-127 (mass 0.06) | additive: ascorbic acid (conc 250.0) | pdfno_list: 01-071-4614, 01-080-3827"
+}

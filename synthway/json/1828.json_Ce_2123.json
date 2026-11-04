@@ -1,0 +1,43 @@
+{
+  "synthesis_id": "1828.json_Ce_2123",
+  "composition": "Ce",
+  "elements": [
+    "Ce"
+  ],
+  "precursors": [
+    {
+      "name": "Ce(CH3COO)3*xH2O",
+      "mass": 0.43
+    }
+  ],
+  "additives": [
+    {
+      "name": "oleylamine",
+      "mass": 3.25
+    }
+  ],
+  "solvent": {
+    "name": "xylene",
+    "volume": 15.0
+  },
+  "conditions": {
+    "temperature": 90.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "size": {
+      "length": 3.0,
+      "width": 3.0,
+      "depth": 3.0
+    }
+  },
+  "pdfno_list": [
+    "34-0394"
+  ],
+  "source": {
+    "synthesis_id_original": "1828.json_Ce_2123",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Ce | solvent: xylene | solvent.volume: 15.0 | temperature: 90.0 | crystalsystem: cubic | size.length: 3.0 | size.width: 3.0 | size.depth: 3.0 | precursor: Ce(CH3COO)3*xH2O (mass 0.43) | additive: oleylamine (mass 3.25) | pdfno_list: 34-0394"
+}

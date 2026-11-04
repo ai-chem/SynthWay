@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "1929.json_Co3O4_3596",
+  "composition": "Co3O4",
+  "elements": [
+    "Co",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "Co(NO3)2·6H2O",
+      "mass": 0.25
+    }
+  ],
+  "additives": [
+    {
+      "name": "pluronic f-127",
+      "mass": 1.0
+    },
+    {
+      "name": "ammonia"
+    }
+  ],
+  "solvent": {
+    "name": "water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 450.0
+  },
+  "product": {
+    "shape": "plate",
+    "size": {
+      "length": 400.0,
+      "width": 400.0,
+      "depth": 10.0
+    }
+  },
+  "pdfno_list": [
+    "43-1003"
+  ],
+  "source": {
+    "synthesis_id_original": "1929.json_Co3O4_3596",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: Co3O4 | solvent: water | solvent.volume: 50.0 | temperature: 450.0 | shape: plate | size.length: 400.0 | size.width: 400.0 | size.depth: 10.0 | precursor: Co(NO3)2·6H2O (mass 0.25) | additive: pluronic f-127 (mass 1.0) | additive: ammonia | pdfno_list: 43-1003"
+}

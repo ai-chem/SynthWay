@@ -1,0 +1,47 @@
+{
+  "synthesis_id": "2066.json_BSA-Pt_2750",
+  "composition": "BSA–Pt",
+  "elements": [
+    "B",
+    "S",
+    "A",
+    "Pt"
+  ],
+  "precursors": [
+    {
+      "name": "K2PtCl4",
+      "conc": 0.3
+    },
+    {
+      "name": "DMAB",
+      "conc": 1.5
+    }
+  ],
+  "additives": [
+    {
+      "name": "bovine serum albumin",
+      "conc": 0.01
+    }
+  ],
+  "solvent": {
+    "name": "PBS"
+  },
+  "conditions": {
+    "temperature": 25.0,
+    "ph": 4.0
+  },
+  "product": {
+    "shape": "elongated",
+    "size": {
+      "length": 12.9,
+      "width": 4.0,
+      "depth": 4.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2066.json_BSA-Pt_2750",
+    "nodes": 14,
+    "edges": 13
+  },
+  "retrieval_text": "composition: BSA–Pt | solvent: PBS | temperature: 25.0 | pH: 4.0 | shape: elongated | size.length: 12.9 | size.width: 4.0 | size.depth: 4.0 | precursor: K2PtCl4 (conc 0.3) | precursor: DMAB (conc 1.5) | additive: bovine serum albumin (conc 0.01)"
+}

@@ -1,0 +1,45 @@
+{
+  "synthesis_id": "1423.json_HG_Au_133",
+  "composition": "HG_Au",
+  "elements": [
+    "H",
+    "G",
+    "Au"
+  ],
+  "method": "hydrothermal",
+  "precursors": [
+    {
+      "name": "Chi"
+    },
+    {
+      "name": "PVA"
+    },
+    {
+      "name": "PEG"
+    },
+    {
+      "name": "Au3+"
+    }
+  ],
+  "solvent": {
+    "name": "acetic acid and water"
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "rough, uniform, wrinkled, and well-ordered morphology",
+    "size": {
+      "length": 16.4,
+      "width": 16.4,
+      "depth": 16.4
+    }
+  },
+  "pdfno_list": [
+    "04-0783"
+  ],
+  "source": {
+    "synthesis_id_original": "1423.json_HG_Au_133",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: HG_Au | method: hydrothermal | solvent: acetic acid and water | crystalsystem: cubic | shape: rough, uniform, wrinkled, and well-ordered morphology | size.length: 16.4 | size.width: 16.4 | size.depth: 16.4 | precursor: Chi | precursor: PVA | precursor: PEG | precursor: Au3+ | pdfno_list: 04-0783"
+}

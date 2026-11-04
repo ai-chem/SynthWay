@@ -1,0 +1,48 @@
+{
+  "synthesis_id": "1390.json_HA/ZnO_3057",
+  "composition": "HA/ZnO",
+  "elements": [
+    "H",
+    "A",
+    "Zn",
+    "O"
+  ],
+  "method": "bottom-up",
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2",
+      "mass": 2.64
+    },
+    {
+      "name": "HA_LEON",
+      "mass": 0.021
+    }
+  ],
+  "additives": [
+    {
+      "name": "water"
+    }
+  ],
+  "solvent": {
+    "name": "ethanol and triethylamine",
+    "volume": 73.68
+  },
+  "conditions": {
+    "temperature": 120.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal",
+    "shape": "irregular",
+    "size": {
+      "length": 175.0,
+      "width": 175.0,
+      "depth": 175.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "1390.json_HA/ZnO_3057",
+    "nodes": 15,
+    "edges": 14
+  },
+  "retrieval_text": "composition: HA/ZnO | method: bottom-up | solvent: ethanol and triethylamine | solvent.volume: 73.68 | temperature: 120.0 | crystalsystem: hexagonal | shape: irregular | size.length: 175.0 | size.width: 175.0 | size.depth: 175.0 | precursor: Zn(CH3COO)2 (mass 2.64) | precursor: HA_LEON (mass 0.021) | additive: water"
+}

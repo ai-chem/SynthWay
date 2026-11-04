@@ -1,0 +1,53 @@
+{
+  "synthesis_id": "1111.json_Li/MgO-Urea_1987",
+  "composition": "Li/MgO-Urea",
+  "elements": [
+    "Li",
+    "Mg",
+    "O",
+    "Ur"
+  ],
+  "precursors": [
+    {
+      "name": "Mg(NO3)2·6H2O",
+      "mass": 4.864,
+      "conc": 19.8
+    },
+    {
+      "name": "LiNO3",
+      "mass": 0.06895,
+      "conc": 0.2
+    }
+  ],
+  "additives": [
+    {
+      "name": "urea",
+      "mass": 2.112,
+      "conc": 11.0
+    }
+  ],
+  "solvent": {
+    "name": "deionized water"
+  },
+  "conditions": {
+    "temperature": 50.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "sheets",
+    "size": {
+      "length": 61.4,
+      "width": 61.4,
+      "depth": 61.4
+    }
+  },
+  "pdfno_list": [
+    "45-0946"
+  ],
+  "source": {
+    "synthesis_id_original": "1111.json_Li/MgO-Urea_1987",
+    "nodes": 18,
+    "edges": 17
+  },
+  "retrieval_text": "composition: Li/MgO-Urea | solvent: deionized water | temperature: 50.0 | crystalsystem: cubic | shape: sheets | size.length: 61.4 | size.width: 61.4 | size.depth: 61.4 | precursor: Mg(NO3)2·6H2O (mass 4.864; conc 19.8) | precursor: LiNO3 (mass 0.06895; conc 0.2) | additive: urea (mass 2.112; conc 11.0) | pdfno_list: 45-0946"
+}

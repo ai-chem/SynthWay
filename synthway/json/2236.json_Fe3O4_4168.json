@@ -1,0 +1,44 @@
+{
+  "synthesis_id": "2236.json_Fe3O4_4168",
+  "composition": "Fe3O4",
+  "elements": [
+    "Fe",
+    "O"
+  ],
+  "method": "controlled precipitation",
+  "precursors": [
+    {
+      "name": "FeSO4*7H2O",
+      "conc": 100.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium hydroxide",
+      "mass": 450.0
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 50.0,
+    "ph": 12.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "spherical",
+    "size": {
+      "length": 44.58
+    }
+  },
+  "pdfno_list": [
+    "089-0691"
+  ],
+  "source": {
+    "synthesis_id_original": "2236.json_Fe3O4_4168",
+    "nodes": 13,
+    "edges": 12
+  },
+  "retrieval_text": "composition: Fe3O4 | method: controlled precipitation | solvent: water | temperature: 50.0 | pH: 12.0 | crystalsystem: cubic | shape: spherical | size.length: 44.58 | precursor: FeSO4*7H2O (conc 100.0) | additive: sodium hydroxide (mass 450.0) | pdfno_list: 089-0691"
+}

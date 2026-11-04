@@ -1,0 +1,53 @@
+{
+  "synthesis_id": "1056.json_MnFe2O4_3048",
+  "composition": "MnFe2O4",
+  "elements": [
+    "Mn",
+    "Fe",
+    "O"
+  ],
+  "method": "thermal decomposition",
+  "precursors": [
+    {
+      "name": "MnCl2",
+      "mass": 0.576
+    },
+    {
+      "name": "FeCl3",
+      "mass": 0.683
+    }
+  ],
+  "additives": [
+    {
+      "name": "sodium acetate",
+      "mass": 0.5
+    },
+    {
+      "name": "ethanolamine",
+      "mass": 15.8
+    }
+  ],
+  "solvent": {
+    "name": "ethylene glycol",
+    "volume": 30.0
+  },
+  "conditions": {
+    "temperature": 150.0
+  },
+  "product": {
+    "crystalsystem": "cubic spinel",
+    "shape": "spherical",
+    "size": {
+      "width": 38.0
+    }
+  },
+  "pdfno_list": [
+    "10-0319"
+  ],
+  "source": {
+    "synthesis_id_original": "1056.json_MnFe2O4_3048",
+    "nodes": 17,
+    "edges": 16
+  },
+  "retrieval_text": "composition: MnFe2O4 | method: thermal decomposition | solvent: ethylene glycol | solvent.volume: 30.0 | temperature: 150.0 | crystalsystem: cubic spinel | shape: spherical | size.width: 38.0 | precursor: MnCl2 (mass 0.576) | precursor: FeCl3 (mass 0.683) | additive: sodium acetate (mass 0.5) | additive: ethanolamine (mass 15.8) | pdfno_list: 10-0319"
+}

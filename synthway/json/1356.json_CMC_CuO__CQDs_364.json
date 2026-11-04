@@ -1,0 +1,49 @@
+{
+  "synthesis_id": "1356.json_CMC/CuO_/CQDs_364",
+  "composition": "CMC/CuO /CQDs",
+  "elements": [
+    "C",
+    "M",
+    "Cu",
+    "O",
+    "Q",
+    "Ds"
+  ],
+  "method": "sol-gel dip-coating",
+  "precursors": [
+    {
+      "name": "CMC",
+      "mass": 0.06
+    },
+    {
+      "name": "CuO",
+      "mass": 0.4
+    },
+    {
+      "name": "QCD",
+      "mass": 0.1
+    }
+  ],
+  "solvent": {
+    "name": "distilled water",
+    "volume": 100.0
+  },
+  "product": {
+    "crystalsystem": "monoclinic",
+    "shape": "polymer layers",
+    "size": {
+      "length": 100.0,
+      "width": 100.0,
+      "depth": 100.0
+    }
+  },
+  "pdfno_list": [
+    "1268-80"
+  ],
+  "source": {
+    "synthesis_id_original": "1356.json_CMC/CuO_/CQDs_364",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: CMC/CuO /CQDs | method: sol-gel dip-coating | solvent: distilled water | solvent.volume: 100.0 | crystalsystem: monoclinic | shape: polymer layers | size.length: 100.0 | size.width: 100.0 | size.depth: 100.0 | precursor: CMC (mass 0.06) | precursor: CuO (mass 0.4) | precursor: QCD (mass 0.1) | pdfno_list: 1268-80"
+}

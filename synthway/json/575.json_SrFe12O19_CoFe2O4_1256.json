@@ -1,0 +1,34 @@
+{
+  "synthesis_id": "575.json_SrFe12O19/CoFe2O4_1256",
+  "composition": "SrFe12O19/CoFe2O4",
+  "elements": [
+    "Sr",
+    "Fe",
+    "O",
+    "Co"
+  ],
+  "method": "sol-gel hydrothermal",
+  "precursors": [
+    {
+      "name": "Strontium Ferrite"
+    },
+    {
+      "name": "CoFe2O4"
+    }
+  ],
+  "solvent": {
+    "name": "ethanol"
+  },
+  "product": {
+    "shape": "core/shell",
+    "size": {
+      "length": 354.22
+    }
+  },
+  "source": {
+    "synthesis_id_original": "575.json_SrFe12O19/CoFe2O4_1256",
+    "nodes": 7,
+    "edges": 6
+  },
+  "retrieval_text": "composition: SrFe12O19/CoFe2O4 | method: sol-gel hydrothermal | solvent: ethanol | shape: core/shell | size.length: 354.22 | precursor: Strontium Ferrite | precursor: CoFe2O4"
+}

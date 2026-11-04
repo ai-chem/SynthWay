@@ -1,0 +1,50 @@
+{
+  "synthesis_id": "2255.json_GaAs_718",
+  "composition": "GaAs",
+  "elements": [
+    "Ga",
+    "As"
+  ],
+  "precursors": [
+    {
+      "name": "GaCl3",
+      "mass": 2.5,
+      "conc": 14.2
+    },
+    {
+      "name": "(CH3)2N)3As",
+      "mass": 3.0,
+      "conc": 14.2
+    }
+  ],
+  "additives": [
+    {
+      "name": "nitrogen"
+    },
+    {
+      "name": "petroleum spirit"
+    }
+  ],
+  "solvent": {
+    "name": "dry 4-ethylpyridine",
+    "volume": 20.0
+  },
+  "conditions": {
+    "temperature": 167.0
+  },
+  "product": {
+    "crystalsystem": "cubic",
+    "shape": "amorphous",
+    "size": {
+      "length": 3.8,
+      "width": 3.8,
+      "depth": 3.8
+    }
+  },
+  "source": {
+    "synthesis_id_original": "2255.json_GaAs_718",
+    "nodes": 16,
+    "edges": 16
+  },
+  "retrieval_text": "composition: GaAs | solvent: dry 4-ethylpyridine | solvent.volume: 20.0 | temperature: 167.0 | crystalsystem: cubic | shape: amorphous | size.length: 3.8 | size.width: 3.8 | size.depth: 3.8 | precursor: GaCl3 (mass 2.5; conc 14.2) | precursor: (CH3)2N)3As (mass 3.0; conc 14.2) | additive: nitrogen | additive: petroleum spirit"
+}

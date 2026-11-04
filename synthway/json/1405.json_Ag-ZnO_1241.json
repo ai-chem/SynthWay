@@ -1,0 +1,54 @@
+{
+  "synthesis_id": "1405.json_Ag-ZnO_1241",
+  "composition": "Ag-ZnO",
+  "elements": [
+    "Ag",
+    "Zn",
+    "O"
+  ],
+  "method": "sol-gel precipitation",
+  "precursors": [
+    {
+      "name": "Zn(CH3COO)2*2H2O",
+      "conc": 100.0
+    },
+    {
+      "name": "AgNO3",
+      "conc": 10.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyethylene glycol"
+    },
+    {
+      "name": "sodium hydroxide",
+      "conc": 2000.0
+    }
+  ],
+  "solvent": {
+    "name": "deionized water"
+  },
+  "conditions": {
+    "temperature": 50.0,
+    "ph": 12.0
+  },
+  "product": {
+    "crystalsystem": "hexagonal+cubic",
+    "shape": "cube",
+    "size": {
+      "length": 73.64,
+      "width": 73.64,
+      "depth": 73.64
+    }
+  },
+  "pdfno_list": [
+    "040783"
+  ],
+  "source": {
+    "synthesis_id_original": "1405.json_Ag-ZnO_1241",
+    "nodes": 18,
+    "edges": 17
+  },
+  "retrieval_text": "composition: Ag-ZnO | method: sol-gel precipitation | solvent: deionized water | temperature: 50.0 | pH: 12.0 | crystalsystem: hexagonal+cubic | shape: cube | size.length: 73.64 | size.width: 73.64 | size.depth: 73.64 | precursor: Zn(CH3COO)2*2H2O (conc 100.0) | precursor: AgNO3 (conc 10.0) | additive: polyethylene glycol | additive: sodium hydroxide (conc 2000.0) | pdfno_list: 040783"
+}

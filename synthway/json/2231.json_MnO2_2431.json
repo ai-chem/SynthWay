@@ -1,0 +1,51 @@
+{
+  "synthesis_id": "2231.json_MnO2_2431",
+  "composition": "MnO2",
+  "elements": [
+    "Mn",
+    "O"
+  ],
+  "method": "solvo-hydrothermal",
+  "precursors": [
+    {
+      "name": "KMnO4",
+      "conc": 500.0
+    },
+    {
+      "name": "MnCl2",
+      "conc": 2000.0
+    }
+  ],
+  "additives": [
+    {
+      "name": "polyacrylamide"
+    },
+    {
+      "name": "polyethylene glycol"
+    }
+  ],
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 65.0,
+    "ph": 8.0
+  },
+  "product": {
+    "shape": "rod type",
+    "size": {
+      "length": 350.0,
+      "width": 25.0,
+      "depth": 25.0
+    }
+  },
+  "pdfno_list": [
+    "14-0644"
+  ],
+  "source": {
+    "synthesis_id_original": "2231.json_MnO2_2431",
+    "nodes": 16,
+    "edges": 15
+  },
+  "retrieval_text": "composition: MnO2 | method: solvo-hydrothermal | solvent: water | temperature: 65.0 | pH: 8.0 | shape: rod type | size.length: 350.0 | size.width: 25.0 | size.depth: 25.0 | precursor: KMnO4 (conc 500.0) | precursor: MnCl2 (conc 2000.0) | additive: polyacrylamide | additive: polyethylene glycol | pdfno_list: 14-0644"
+}

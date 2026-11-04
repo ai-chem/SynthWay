@@ -1,0 +1,40 @@
+{
+  "synthesis_id": "824.json_InVO4_2223",
+  "composition": "InVO4",
+  "elements": [
+    "In",
+    "V",
+    "O"
+  ],
+  "precursors": [
+    {
+      "name": "DTPA",
+      "mass": 13.61
+    },
+    {
+      "name": "V2O5"
+    },
+    {
+      "name": "In(OH)3"
+    }
+  ],
+  "solvent": {
+    "name": "distilled hot water",
+    "volume": 50.0
+  },
+  "conditions": {
+    "temperature": 650.0
+  },
+  "product": {
+    "crystalsystem": "orthorhombic",
+    "size": {
+      "width": 100.0
+    }
+  },
+  "source": {
+    "synthesis_id_original": "824.json_InVO4_2223",
+    "nodes": 10,
+    "edges": 9
+  },
+  "retrieval_text": "composition: InVO4 | solvent: distilled hot water | solvent.volume: 50.0 | temperature: 650.0 | crystalsystem: orthorhombic | size.width: 100.0 | precursor: DTPA (mass 13.61) | precursor: V2O5 | precursor: In(OH)3"
+}

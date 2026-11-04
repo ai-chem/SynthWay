@@ -1,0 +1,22 @@
+{
+  "synthesis_id": "368.json_ZnSO4_1770",
+  "composition": "ZnSO4",
+  "elements": [
+    "Zn",
+    "S",
+    "O"
+  ],
+  "method": "solution-based synthesis",
+  "solvent": {
+    "name": "water"
+  },
+  "conditions": {
+    "temperature": 25.0
+  },
+  "source": {
+    "synthesis_id_original": "368.json_ZnSO4_1770",
+    "nodes": 4,
+    "edges": 3
+  },
+  "retrieval_text": "composition: ZnSO4 | method: solution-based synthesis | solvent: water | temperature: 25.0"
+}
