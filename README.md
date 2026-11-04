@@ -3,8 +3,6 @@
 
 We present SynthWay, a framework integrating composition-aware inorganic synthesis design with reliable evaluation of LLM-generated routes, built on 4,208 literature procedures. SynthWay combines retrieval, modular prompting, LLM generation and automatic evaluation, with optional feedback-driven regeneration.
 
-This repository provides the source code, curated synthesis data, recorded model outputs, expert assessments, laboratory validation records, and analysis scripts supporting the SynthWay study.
-
 [Overview](#overview), [Installation and usage](#installation-and-usage), [Reproduce the tables](#reproduce-the-tables), [Data availability](#data-availability), [Code availability](#code-availability)
 
 ## Overview
