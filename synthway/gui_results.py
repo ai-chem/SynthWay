@@ -1,19 +1,31 @@
 """Pure result validation and reporting, without GUI or provider dependencies."""
+
 import math
+
 from ss_faithfulness import SS_FAITHFULNESS_ID, validate_ss_record
 
 
 def metrics_for(record):
     for metric in METRICS:
-        if metric[1] == "faithfulness_score" and record.get("faithfulness_metric") == SS_FAITHFULNESS_ID:
+        if (
+            metric[1] == "faithfulness_score"
+            and record.get("faithfulness_metric") == SS_FAITHFULNESS_ID
+        ):
             yield ("SS-Faithfulness", *metric[1:])
         else:
             yield metric
 
+
 METRICS = (
     ("Chemical Plausibility & Consistency", "score", "threshold", "passed", "reason"),
     ("Answer Relevancy", "answer_score", "answer_threshold", "answer_passed", "answer_reason"),
-    ("Original Faithfulness", "faithfulness_score", "faithfulness_threshold", "faithfulness_passed", "faithfulness_reason"),
+    (
+        "Original Faithfulness",
+        "faithfulness_score",
+        "faithfulness_threshold",
+        "faithfulness_passed",
+        "faithfulness_reason",
+    ),
 )
 
 
@@ -53,7 +65,11 @@ def metric_line(record):
         numeric = valid_score(record.get(score)) and valid_score(record.get(threshold))
         flag = record.get(passed)
         consistent = numeric and type(flag) is bool and flag == (record[score] >= record[threshold])
-        status = ("PASS" if flag else "FAIL") if consistent and not record.get("error") else "INVALID / MISSING"
+        status = (
+            ("PASS" if flag else "FAIL")
+            if consistent and not record.get("error")
+            else "INVALID / MISSING"
+        )
         entries.append(f"{label}: {score_text(record.get(score))} ({status})")
     return " | ".join(entries)
 
@@ -61,20 +77,38 @@ def metric_line(record):
 def build_run_summary(*, out_dir, results, requested_num_routes):
     if not out_dir or not results:
         return "(no results yet)"
-    lines = ["SynthWay — run report", f"Output: {out_dir}",
-             f"Routes requested: {requested_num_routes}", f"Routes evaluated: {len(results)}",
-             "Scores are model judgements, not experimental or safety validation.", ""]
+    lines = [
+        "SynthWay — run report",
+        f"Output: {out_dir}",
+        f"Routes requested: {requested_num_routes}",
+        f"Routes evaluated: {len(results)}",
+        "Scores are model judgements, not experimental or safety validation.",
+        "",
+    ]
     for index, record in enumerate(results, start=1):
         _, label = route_overall_status(record)
-        lines.extend(["─" * 56, f"Route #{index}: {label}",
-                      f"File: {record.get('path') or record.get('file') or 'not recorded'}",
-                      f"composition={record.get('composition')} | method={record.get('method')}",
-                      f"Generator: {record.get('generator_model') or 'not recorded'}; judge: {record.get('judge_model') or 'not recorded'}",
-                      f"Attempt: {record.get('attempt', 1)}/{record.get('max_attempts', 1)}",
-                      metric_line(record), "", "SYNTHESIS ROUTE:", record.get("raw_text") or "(not recorded)"])
+        lines.extend(
+            [
+                "─" * 56,
+                f"Route #{index}: {label}",
+                f"File: {record.get('path') or record.get('file') or 'not recorded'}",
+                f"composition={record.get('composition')} | method={record.get('method')}",
+                f"Generator: {record.get('generator_model') or 'not recorded'}; judge: {record.get('judge_model') or 'not recorded'}",
+                f"Attempt: {record.get('attempt', 1)}/{record.get('max_attempts', 1)}",
+                metric_line(record),
+                "",
+                "SYNTHESIS ROUTE:",
+                record.get("raw_text") or "(not recorded)",
+            ]
+        )
         for title, score, threshold, _, reason in metrics_for(record):
-            lines.extend(["", f"{title}: {score_text(record.get(score))}; threshold={score_text(record.get(threshold))}",
-                          str(record.get(reason) or "(no explanation recorded)")])
+            lines.extend(
+                [
+                    "",
+                    f"{title}: {score_text(record.get(score))}; threshold={score_text(record.get(threshold))}",
+                    str(record.get(reason) or "(no explanation recorded)"),
+                ]
+            )
         if not record.get("retrieval_context_found", True):
             lines.append("WARNING: retrieval evidence was not found.")
         if record.get("error"):

@@ -1,9 +1,10 @@
 """Validate editable desktop controls before any provider requests."""
+
 import math
-from pathlib import Path
 import re
 import tempfile
 import time
+from pathlib import Path
 
 
 def new_run_directory(base, composition):

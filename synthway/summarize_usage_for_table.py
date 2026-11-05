@@ -1,47 +1,27 @@
-"""
-summarize_usage_for_table.py
+r"""Summarize generation and judge usage by model or route.
 
-Two modes:
+--table-mode models writes one row per model; routes writes one row per route.
+Usage fields are input/output tokens, seconds and USD cost.
+Generation usage is averaged per case (n_cases). Judge scores, pass rates and
+usage are averaged per route over evaluations with a score and no error.
+Derived judge usage per case equals per_route * routes_per_case, where
+routes_per_case = n_routes / n_cases. Judge totals are reported at both levels.
 
-1) --table-mode models  (PAPER TABLE)
-   One row per model.
+--routes-root accepts a run directory or its parent and discovers cases recursively.
+--chem and --answer-faith accept files or directories. A --chem directory supplies
+all *.json; an --answer-faith directory supplies generation_evaluate_faithfullness_*.json.
+In routes mode, --target accepts a route file, llm_usage.json or a case directory.
 
-   Denominators:
-   - Generation usage: per CASE (number of prompts/materials), n_cases (e.g., 30).
-     Columns: input tokens, output tokens, time_s, cost_usd.
+Examples from the repository root:
+    python synthway/summarize_usage_for_table.py --table-mode models \
+        --routes-root synthway/generation_routes \
+        --answer-faith path/to/faithfulness.json --chem path/to/chemical.json \
+        --csv-out outputs/usage_models.csv
 
-   - Judges (Chemical, Answer Relevancy, Faithfulness): base metrics are per ROUTE, n_routes (e.g., 90).
-     For each judge:
-       * pass_rate and score: mean over valid ROUTES only (no error or missing score)
-       * usage: input tokens, output tokens, time_s, cost_usd — mean over valid ROUTES only (no error or missing score)
-     Also calculate derived per-CASE usage columns as:
-       per_case = per_route * routes_per_case, where routes_per_case = n_routes / n_cases.
-     Calculate totals across judges both per ROUTE and as derived per-CASE values.
-
-   Path support:
-   - --routes-root accepts one run directory (output_LLM_...) or its parent (generation_routes); case discovery is recursive.
-   - --chem and --answer-faith accept a file or directory.
-     * --answer-faith directory: read generation_evaluate_faithfullness_*.json
-     * --chem directory: read *.json
-
-2) --table-mode routes
-   Detailed mode: one row per route_*.json, as before.
-
-Example (models):
-  python summarize_usage_for_table.py \
-    --table-mode models \
-    --routes-root "/path/to/generation_routes" \
-    --answer-faith "/path/to/check_metrics/evaluate_faithfullness" \
-    --chem "/path/to/check_metrics/generation_rag_eval_correct" \
-    --csv-out "/path/to/paper_table.csv"
-
-Example (routes):
-  python summarize_usage_for_table.py \
-    --table-mode routes \
-    --target "/path/to/.../case/route_1.json" \
-    --answer-faith "/path/to/generation_evaluate_faithfullness_....json" \
-    --chem "/path/to/generation_rag_eval_....json" \
-    --csv-out "/path/to/usage_table_routes.csv"
+    python synthway/summarize_usage_for_table.py --table-mode routes \
+        --target path/to/case/route_1.json \
+        --answer-faith path/to/faithfulness.json --chem path/to/chemical.json \
+        --csv-out outputs/usage_routes.csv
 """
 
 from __future__ import annotations
@@ -50,24 +30,23 @@ import argparse
 import csv
 import json
 import math
-from dataclasses import dataclass, asdict
+from dataclasses import asdict, dataclass
 from pathlib import Path
-from typing import Any, Dict, Iterable, List, Optional, Tuple
+from typing import Any, Iterable
 
-
-# -------------------------
 # Utilities
-# -------------------------
+
 
 def _read_json(path: Path) -> Any:
     with path.open("r", encoding="utf-8") as f:
         return json.load(f)
 
+
 def _first_not_none(*values: Any) -> Any:
     return next((value for value in values if value is not None), None)
 
 
-def _safe_float(x: Any) -> Optional[float]:
+def _safe_float(x: Any) -> float | None:
     try:
         if x is None:
             return None
@@ -76,7 +55,8 @@ def _safe_float(x: Any) -> Optional[float]:
     except Exception:
         return None
 
-def _safe_int(x: Any) -> Optional[int]:
+
+def _safe_int(x: Any) -> int | None:
     try:
         if x is None:
             return None
@@ -84,21 +64,26 @@ def _safe_int(x: Any) -> Optional[int]:
     except Exception:
         return None
 
-def _sum_optional(*vals: Optional[float]) -> Optional[float]:
+
+def _sum_optional(*vals: float | None) -> float | None:
     nums = [v for v in vals if isinstance(v, (int, float))]
     return float(sum(nums)) if nums else None
 
-def _sum_optional_int(*vals: Optional[int]) -> Optional[int]:
+
+def _sum_optional_int(*vals: int | None) -> int | None:
     nums = [v for v in vals if isinstance(v, int)]
     return int(sum(nums)) if nums else None
 
-def _mean_optional(vals: List[Optional[float]]) -> Optional[float]:
+
+def _mean_optional(vals: list[float | None]) -> float | None:
     nums = [v for v in vals if isinstance(v, (int, float))]
     return float(sum(nums)) / len(nums) if nums else None
 
-def _mean_optional_int(vals: List[Optional[int]]) -> Optional[float]:
+
+def _mean_optional_int(vals: list[int | None]) -> float | None:
     nums = [v for v in vals if isinstance(v, int)]
     return float(sum(nums)) / len(nums) if nums else None
+
 
 def _norm_tail_key(p: str, keep: int = 2) -> str:
     """Normalize paths for fuzzy matching across machines."""
@@ -108,7 +93,7 @@ def _norm_tail_key(p: str, keep: int = 2) -> str:
     return "/".join(parts)
 
 
-def _first_existing(paths: Iterable[Path]) -> Optional[Path]:
+def _first_existing(paths: Iterable[Path]) -> Path | None:
     for p in paths:
         if p.exists():
             return p
@@ -126,11 +111,7 @@ def _round_for_table(x: Any, ndigits: int = 3) -> Any:
     return x
 
 
-# -------------------------
-# Helper: Load eval records from file or directory
-# -------------------------
-
-def load_eval_records(path: Path, pattern: str) -> List[Dict[str, Any]]:
+def load_eval_records(path: Path, pattern: str) -> list[dict[str, Any]]:
     """Load eval records from a JSON list file OR from a directory of JSON list files."""
     path = path.expanduser().resolve()
 
@@ -141,7 +122,7 @@ def load_eval_records(path: Path, pattern: str) -> List[Dict[str, Any]]:
         return recs
 
     if path.is_dir():
-        all_recs: List[Dict[str, Any]] = []
+        all_recs: list[dict[str, Any]] = []
         for p in sorted(path.glob(pattern)):
             if not p.is_file() or p.suffix.lower() != ".json":
                 continue
@@ -154,58 +135,57 @@ def load_eval_records(path: Path, pattern: str) -> List[Dict[str, Any]]:
     raise SystemExit(f"Not found: {path}")
 
 
-# -------------------------
 # Data model
-# -------------------------
+
 
 @dataclass
 class Row:
     # Identity
     route_file: str
     route_dir: str
-    composition: Optional[str]
-    model: Optional[str]
+    composition: str | None
+    model: str | None
 
     # Generation timing (from timing.json if present)
-    gen_llm_call_time_s: Optional[float]   # pure LLM call time
-    gen_case_total_time_s: Optional[float] # end-to-end case time (includes parsing, retries, etc.)
-    gen_parsed_routes: Optional[int]
+    gen_llm_call_time_s: float | None  # pure LLM call time
+    gen_case_total_time_s: float | None  # end-to-end case time (includes parsing, retries, etc.)
+    gen_parsed_routes: int | None
 
     # Generation (main LLM)
-    gen_prompt_tokens: Optional[int]
-    gen_completion_tokens: Optional[int]
-    gen_total_tokens: Optional[int]
-    gen_cost_usd: Optional[float]
+    gen_prompt_tokens: int | None
+    gen_completion_tokens: int | None
+    gen_total_tokens: int | None
+    gen_cost_usd: float | None
 
     # AnswerRelevancy judge
-    ans_judge_prompt_tokens: Optional[int]
-    ans_judge_completion_tokens: Optional[int]
-    ans_judge_total_tokens: Optional[int]
-    ans_judge_cost_usd: Optional[float]
-    ans_llm_time_s: Optional[float]
+    ans_judge_prompt_tokens: int | None
+    ans_judge_completion_tokens: int | None
+    ans_judge_total_tokens: int | None
+    ans_judge_cost_usd: float | None
+    ans_llm_time_s: float | None
 
     # Faithfulness judge
-    faith_judge_prompt_tokens: Optional[int]
-    faith_judge_completion_tokens: Optional[int]
-    faith_judge_total_tokens: Optional[int]
-    faith_judge_cost_usd: Optional[float]
-    faith_llm_time_s: Optional[float]
+    faith_judge_prompt_tokens: int | None
+    faith_judge_completion_tokens: int | None
+    faith_judge_total_tokens: int | None
+    faith_judge_cost_usd: float | None
+    faith_llm_time_s: float | None
 
     # Chemical / RAG judge
-    chem_judge_prompt_tokens: Optional[int]
-    chem_judge_completion_tokens: Optional[int]
-    chem_judge_total_tokens: Optional[int]
-    chem_judge_cost_usd: Optional[float]
-    chem_judge_llm_time_s: Optional[float]
+    chem_judge_prompt_tokens: int | None
+    chem_judge_completion_tokens: int | None
+    chem_judge_total_tokens: int | None
+    chem_judge_cost_usd: float | None
+    chem_judge_llm_time_s: float | None
 
     # Times
-    eval_total_time_s: Optional[float]   # judge eval time (as logged)
-    gen_time_s: Optional[float]          # generation time (timing.json preferred)
-    total_time_s: Optional[float]
+    eval_total_time_s: float | None  # judge eval time (as logged)
+    gen_time_s: float | None  # generation time (timing.json preferred)
+    total_time_s: float | None
 
     # Totals
-    total_tokens_all: Optional[int]
-    total_cost_usd: Optional[float]
+    total_tokens_all: int | None
+    total_cost_usd: float | None
 
     # Diagnostics
     has_error_answer_faith: bool
@@ -219,73 +199,69 @@ class ModelAggregateRow:
     # Counts
     n_cases: int
     n_routes: int
-    routes_per_case: Optional[float]
+    routes_per_case: float | None
 
     # Generation (per CASE)
-    gen_input_tokens_avg: Optional[float]
-    gen_output_tokens_avg: Optional[float]
-    gen_time_s_avg: Optional[float]
-    gen_llm_call_time_s_avg: Optional[float]
-    gen_cost_usd_avg: Optional[float]
+    gen_input_tokens_avg: float | None
+    gen_output_tokens_avg: float | None
+    gen_time_s_avg: float | None
+    gen_llm_call_time_s_avg: float | None
+    gen_cost_usd_avg: float | None
 
     # Chemical plausibility (per ROUTE)
-    chem_input_tokens_avg: Optional[float]
-    chem_output_tokens_avg: Optional[float]
-    chem_time_s_avg: Optional[float]
-    chem_cost_usd_avg: Optional[float]
+    chem_input_tokens_avg: float | None
+    chem_output_tokens_avg: float | None
+    chem_time_s_avg: float | None
+    chem_cost_usd_avg: float | None
 
     # Answer relevancy (per ROUTE)
-    ans_input_tokens_avg: Optional[float]
-    ans_output_tokens_avg: Optional[float]
-    ans_time_s_avg: Optional[float]
-    ans_cost_usd_avg: Optional[float]
+    ans_input_tokens_avg: float | None
+    ans_output_tokens_avg: float | None
+    ans_time_s_avg: float | None
+    ans_cost_usd_avg: float | None
 
     # Faithfulness (per ROUTE)
-    faith_input_tokens_avg: Optional[float]
-    faith_output_tokens_avg: Optional[float]
-    faith_time_s_avg: Optional[float]
-    faith_cost_usd_avg: Optional[float]
+    faith_input_tokens_avg: float | None
+    faith_output_tokens_avg: float | None
+    faith_time_s_avg: float | None
+    faith_cost_usd_avg: float | None
 
     # Judges (per CASE, rescaled from per-ROUTE using routes_per_case)
-    chem_input_tokens_per_case: Optional[float]
-    chem_output_tokens_per_case: Optional[float]
-    chem_time_s_per_case: Optional[float]
-    chem_cost_usd_per_case: Optional[float]
+    chem_input_tokens_per_case: float | None
+    chem_output_tokens_per_case: float | None
+    chem_time_s_per_case: float | None
+    chem_cost_usd_per_case: float | None
 
-    ans_input_tokens_per_case: Optional[float]
-    ans_output_tokens_per_case: Optional[float]
-    ans_time_s_per_case: Optional[float]
-    ans_cost_usd_per_case: Optional[float]
+    ans_input_tokens_per_case: float | None
+    ans_output_tokens_per_case: float | None
+    ans_time_s_per_case: float | None
+    ans_cost_usd_per_case: float | None
 
-    faith_input_tokens_per_case: Optional[float]
-    faith_output_tokens_per_case: Optional[float]
-    faith_time_s_per_case: Optional[float]
-    faith_cost_usd_per_case: Optional[float]
+    faith_input_tokens_per_case: float | None
+    faith_output_tokens_per_case: float | None
+    faith_time_s_per_case: float | None
+    faith_cost_usd_per_case: float | None
 
     # Totals per CASE (generation + all judges)
-    judge_cost_usd_per_case: Optional[float]
-    judge_time_s_per_case: Optional[float]
-    total_cost_usd_per_case: Optional[float]
-    total_time_s_per_case: Optional[float]
+    judge_cost_usd_per_case: float | None
+    judge_time_s_per_case: float | None
+    total_cost_usd_per_case: float | None
+    total_time_s_per_case: float | None
 
     # Totals (sanity-check)
-    total_cost_usd_sum: Optional[float]
-    total_time_s_sum: Optional[float]
+    total_cost_usd_sum: float | None
+    total_time_s_sum: float | None
 
 
-# -------------------------
-# Index builders for evaluation files
-# -------------------------
-
-def build_eval_index(records: List[Dict[str, Any]]) -> Dict[str, Dict[str, Any]]:
+def build_eval_index(records: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
     """
     Build an index to locate records by:
     - full path
     - tail key ".../<folder>/<file>"
     """
-    idx: Dict[str, Dict[str, Any]] = {}
+    idx: dict[str, dict[str, Any]] = {}
     canonical = set()
-    short_aliases: Dict[str, Optional[Dict[str, Any]]] = {}
+    short_aliases: dict[str, dict[str, Any] | None] = {}
     for r in records:
         p = r.get("path")
         if not isinstance(p, str):
@@ -306,11 +282,10 @@ def build_eval_index(records: List[Dict[str, Any]]) -> Dict[str, Dict[str, Any]]
     return idx
 
 
-# -------------------------
 # Route discovery
-# -------------------------
 
-def resolve_route_context(target: Path) -> Tuple[Path, Optional[Path], Optional[Path], List[Path]]:
+
+def resolve_route_context(target: Path) -> tuple[Path, Path | None, Path | None, list[Path]]:
     """
     Returns:
       route_dir, llm_usage.json if found, timing.json if found, and list of route_*.json files
@@ -345,17 +320,20 @@ def iter_case_dirs(routes_root: Path) -> Iterable[Path]:
     for p in routes_root.rglob("*"):
         if not p.is_dir():
             continue
-        if (p / "llm_usage.json").exists() or (p / "timing.json").exists() or any(p.glob("route_*.json")):
+        if (
+            (p / "llm_usage.json").exists()
+            or (p / "timing.json").exists()
+            or any(p.glob("route_*.json"))
+        ):
             if p not in seen:
                 seen.add(p)
                 yield p
 
 
-# -------------------------
 # Extraction logic
-# -------------------------
 
-def extract_generation(llm_usage_path: Optional[Path]) -> Dict[str, Any]:
+
+def extract_generation(llm_usage_path: Path | None) -> dict[str, Any]:
     if not llm_usage_path or not llm_usage_path.exists():
         return {
             "model": None,
@@ -374,7 +352,9 @@ def extract_generation(llm_usage_path: Optional[Path]) -> Dict[str, Any]:
     gen_total_tokens = _safe_int(u.get("total_tokens"))
     gen_cost_usd = _safe_float(u.get("cost_usd"))
 
-    gen_time_s = _safe_float(_first_not_none(u.get("time_s"), u.get("total_time_s"), u.get("elapsed_s")))
+    gen_time_s = _safe_float(
+        _first_not_none(u.get("time_s"), u.get("total_time_s"), u.get("elapsed_s"))
+    )
 
     return {
         "model": model,
@@ -386,7 +366,7 @@ def extract_generation(llm_usage_path: Optional[Path]) -> Dict[str, Any]:
     }
 
 
-def extract_timing(timing_path: Optional[Path]) -> Dict[str, Any]:
+def extract_timing(timing_path: Path | None) -> dict[str, Any]:
     if not timing_path or not timing_path.exists():
         return {
             "gen_llm_call_time_s": None,
@@ -402,7 +382,9 @@ def extract_timing(timing_path: Optional[Path]) -> Dict[str, Any]:
     }
 
 
-def pick_eval_record(eval_idx: Dict[str, Dict[str, Any]], route_file: Path) -> Optional[Dict[str, Any]]:
+def pick_eval_record(
+    eval_idx: dict[str, dict[str, Any]], route_file: Path
+) -> dict[str, Any] | None:
     candidates = [
         str(route_file),
         _norm_tail_key(str(route_file), keep=2),
@@ -415,7 +397,7 @@ def pick_eval_record(eval_idx: Dict[str, Dict[str, Any]], route_file: Path) -> O
     return None
 
 
-def extract_answer_faith(rec: Optional[Dict[str, Any]]) -> Dict[str, Any]:
+def extract_answer_faith(rec: dict[str, Any] | None) -> dict[str, Any]:
     if not rec:
         return {
             "composition": None,
@@ -440,41 +422,69 @@ def extract_answer_faith(rec: Optional[Dict[str, Any]]) -> Dict[str, Any]:
     has_error = bool(rec.get("error"))
     composition = rec.get("composition")
 
-    # In your files, pass/score keys are:
-    #  - answer_score, answer_passed
-    #  - faithfulness_score, faithfulness_passed
     ans_score = _safe_float(rec.get("answer_score"))
     ans_passed = rec.get("answer_passed") if isinstance(rec.get("answer_passed"), bool) else None
 
     faith_score = _safe_float(rec.get("faithfulness_score"))
-    faith_passed = rec.get("faithfulness_passed") if isinstance(rec.get("faithfulness_passed"), bool) else None
+    faith_passed = (
+        rec.get("faithfulness_passed") if isinstance(rec.get("faithfulness_passed"), bool) else None
+    )
 
     return {
         "composition": composition,
         "has_error_answer_faith": has_error,
-
-        # prefer *_total fields (as in your JSON), then fallback
-        "ans_judge_prompt_tokens": _safe_int(_first_not_none(rec.get("answer_judge_prompt_tokens_total"), rec.get("answer_judge_prompt_tokens"))),
-        "ans_judge_completion_tokens": _safe_int(_first_not_none(rec.get("answer_judge_completion_tokens_total"), rec.get("answer_judge_completion_tokens"))),
-        "ans_judge_total_tokens": _safe_int(_first_not_none(rec.get("answer_judge_total_tokens_total"), rec.get("answer_judge_total_tokens"))),
-        "ans_judge_cost_usd": _safe_float(_first_not_none(rec.get("answer_judge_cost_usd_total"), rec.get("answer_judge_cost_usd"))),
+        # Prefer totals across judge calls; fall back to per-attempt fields.
+        "ans_judge_prompt_tokens": _safe_int(
+            _first_not_none(
+                rec.get("answer_judge_prompt_tokens_total"), rec.get("answer_judge_prompt_tokens")
+            )
+        ),
+        "ans_judge_completion_tokens": _safe_int(
+            _first_not_none(
+                rec.get("answer_judge_completion_tokens_total"),
+                rec.get("answer_judge_completion_tokens"),
+            )
+        ),
+        "ans_judge_total_tokens": _safe_int(
+            _first_not_none(
+                rec.get("answer_judge_total_tokens_total"), rec.get("answer_judge_total_tokens")
+            )
+        ),
+        "ans_judge_cost_usd": _safe_float(
+            _first_not_none(
+                rec.get("answer_judge_cost_usd_total"), rec.get("answer_judge_cost_usd")
+            )
+        ),
         "ans_llm_time_s": _safe_float(rec.get("answer_llm_time_s")),
         "ans_score": ans_score,
         "ans_passed": ans_passed,
-
-        "faith_judge_prompt_tokens": _safe_int(_first_not_none(rec.get("faith_judge_prompt_tokens_total"), rec.get("faith_judge_prompt_tokens"))),
-        "faith_judge_completion_tokens": _safe_int(_first_not_none(rec.get("faith_judge_completion_tokens_total"), rec.get("faith_judge_completion_tokens"))),
-        "faith_judge_total_tokens": _safe_int(_first_not_none(rec.get("faith_judge_total_tokens_total"), rec.get("faith_judge_total_tokens"))),
-        "faith_judge_cost_usd": _safe_float(_first_not_none(rec.get("faith_judge_cost_usd_total"), rec.get("faith_judge_cost_usd"))),
+        "faith_judge_prompt_tokens": _safe_int(
+            _first_not_none(
+                rec.get("faith_judge_prompt_tokens_total"), rec.get("faith_judge_prompt_tokens")
+            )
+        ),
+        "faith_judge_completion_tokens": _safe_int(
+            _first_not_none(
+                rec.get("faith_judge_completion_tokens_total"),
+                rec.get("faith_judge_completion_tokens"),
+            )
+        ),
+        "faith_judge_total_tokens": _safe_int(
+            _first_not_none(
+                rec.get("faith_judge_total_tokens_total"), rec.get("faith_judge_total_tokens")
+            )
+        ),
+        "faith_judge_cost_usd": _safe_float(
+            _first_not_none(rec.get("faith_judge_cost_usd_total"), rec.get("faith_judge_cost_usd"))
+        ),
         "faith_llm_time_s": _safe_float(rec.get("faith_llm_time_s")),
         "faith_score": faith_score,
         "faith_passed": faith_passed,
-
         "eval_total_time_s": _safe_float(rec.get("route_total_time_s")),
     }
 
 
-def extract_chem(rec: Optional[Dict[str, Any]]) -> Dict[str, Any]:
+def extract_chem(rec: dict[str, Any] | None) -> dict[str, Any]:
     if not rec:
         return {
             "has_error_chem": False,
@@ -495,10 +505,20 @@ def extract_chem(rec: Optional[Dict[str, Any]]) -> Dict[str, Any]:
 
     return {
         "has_error_chem": has_error,
-        "chem_judge_prompt_tokens": _safe_int(_first_not_none(rec.get("judge_prompt_tokens_total"), rec.get("judge_prompt_tokens"))),
-        "chem_judge_completion_tokens": _safe_int(_first_not_none(rec.get("judge_completion_tokens_total"), rec.get("judge_completion_tokens"))),
-        "chem_judge_total_tokens": _safe_int(_first_not_none(rec.get("judge_total_tokens_total"), rec.get("judge_total_tokens"))),
-        "chem_judge_cost_usd": _safe_float(_first_not_none(rec.get("judge_cost_usd_total"), rec.get("judge_cost_usd"))),
+        "chem_judge_prompt_tokens": _safe_int(
+            _first_not_none(rec.get("judge_prompt_tokens_total"), rec.get("judge_prompt_tokens"))
+        ),
+        "chem_judge_completion_tokens": _safe_int(
+            _first_not_none(
+                rec.get("judge_completion_tokens_total"), rec.get("judge_completion_tokens")
+            )
+        ),
+        "chem_judge_total_tokens": _safe_int(
+            _first_not_none(rec.get("judge_total_tokens_total"), rec.get("judge_total_tokens"))
+        ),
+        "chem_judge_cost_usd": _safe_float(
+            _first_not_none(rec.get("judge_cost_usd_total"), rec.get("judge_cost_usd"))
+        ),
         "chem_judge_llm_time_s": _safe_float(rec.get("judge_llm_time_s")),
         "chem_eval_time_s": _safe_float(rec.get("route_total_time_s")),
         "chem_score": chem_score,
@@ -508,11 +528,11 @@ def extract_chem(rec: Optional[Dict[str, Any]]) -> Dict[str, Any]:
 
 def build_row_for_route(
     route_file: Path,
-    llm_usage_path: Optional[Path],
-    timing_path: Optional[Path],
-    ans_faith_idx: Optional[Dict[str, Dict[str, Any]]],
-    chem_idx: Optional[Dict[str, Dict[str, Any]]],
-    gen_time_override: Optional[float] = None,
+    llm_usage_path: Path | None,
+    timing_path: Path | None,
+    ans_faith_idx: dict[str, dict[str, Any]] | None,
+    chem_idx: dict[str, dict[str, Any]] | None,
+    gen_time_override: float | None = None,
 ) -> Row:
     gen = extract_generation(llm_usage_path)
     t = extract_timing(timing_path)
@@ -529,9 +549,7 @@ def build_row_for_route(
         gen_time_s = gen_time_override
     else:
         gen_time_s = _first_not_none(
-            t.get("gen_case_total_time_s"),
-            t.get("gen_llm_call_time_s"),
-            gen.get("gen_time_s")
+            t.get("gen_case_total_time_s"), t.get("gen_llm_call_time_s"), gen.get("gen_time_s")
         )
 
     total_time_s = _sum_optional(gen_time_s, eval_total_time_s)
@@ -554,67 +572,56 @@ def build_row_for_route(
         route_dir=str(route_file.parent),
         composition=af.get("composition"),
         model=gen.get("model"),
-
         gen_llm_call_time_s=t.get("gen_llm_call_time_s"),
         gen_case_total_time_s=t.get("gen_case_total_time_s"),
         gen_parsed_routes=t.get("gen_parsed_routes"),
-
         gen_prompt_tokens=gen.get("gen_prompt_tokens"),
         gen_completion_tokens=gen.get("gen_completion_tokens"),
         gen_total_tokens=gen.get("gen_total_tokens"),
         gen_cost_usd=gen.get("gen_cost_usd"),
-
         ans_judge_prompt_tokens=af.get("ans_judge_prompt_tokens"),
         ans_judge_completion_tokens=af.get("ans_judge_completion_tokens"),
         ans_judge_total_tokens=af.get("ans_judge_total_tokens"),
         ans_judge_cost_usd=af.get("ans_judge_cost_usd"),
         ans_llm_time_s=af.get("ans_llm_time_s"),
-
         faith_judge_prompt_tokens=af.get("faith_judge_prompt_tokens"),
         faith_judge_completion_tokens=af.get("faith_judge_completion_tokens"),
         faith_judge_total_tokens=af.get("faith_judge_total_tokens"),
         faith_judge_cost_usd=af.get("faith_judge_cost_usd"),
         faith_llm_time_s=af.get("faith_llm_time_s"),
-
         chem_judge_prompt_tokens=ch.get("chem_judge_prompt_tokens"),
         chem_judge_completion_tokens=ch.get("chem_judge_completion_tokens"),
         chem_judge_total_tokens=ch.get("chem_judge_total_tokens"),
         chem_judge_cost_usd=ch.get("chem_judge_cost_usd"),
         chem_judge_llm_time_s=ch.get("chem_judge_llm_time_s"),
-
         eval_total_time_s=eval_total_time_s,
         gen_time_s=gen_time_s,
         total_time_s=total_time_s,
-
         total_tokens_all=total_tokens_all,
         total_cost_usd=total_cost_usd,
-
         has_error_answer_faith=bool(af.get("has_error_answer_faith")),
         has_error_chem=bool(ch.get("has_error_chem")),
     )
 
 
-# -------------------------
-# Aggregation for paper table (models mode)
-# -------------------------
-
 def aggregate_models_paper(
     routes_root: Path,
-    ans_faith_idx: Optional[Dict[str, Dict[str, Any]]],
-    chem_idx: Optional[Dict[str, Dict[str, Any]]],
-) -> List[Dict[str, Any]]:
+    ans_faith_idx: dict[str, dict[str, Any]] | None,
+    chem_idx: dict[str, dict[str, Any]] | None,
+) -> list[dict[str, Any]]:
     """Return paper-table rows as dicts (only required columns)."""
-    def _is_valid_chem_record(ch: Dict[str, Any]) -> bool:
+
+    def _is_valid_chem_record(ch: dict[str, Any]) -> bool:
         return (not bool(ch.get("has_error_chem"))) and (ch.get("chem_score") is not None)
 
-    def _is_valid_answer_record(af: Dict[str, Any]) -> bool:
+    def _is_valid_answer_record(af: dict[str, Any]) -> bool:
         return (not bool(af.get("has_error_answer_faith"))) and (af.get("ans_score") is not None)
 
-    def _is_valid_faith_record(af: Dict[str, Any]) -> bool:
+    def _is_valid_faith_record(af: dict[str, Any]) -> bool:
         return (not bool(af.get("has_error_answer_faith"))) and (af.get("faith_score") is not None)
 
-    def _mean_numeric(vals: List[Any]) -> Optional[float]:
-        nums: List[float] = []
+    def _mean_numeric(vals: list[Any]) -> float | None:
+        nums: list[float] = []
         for v in vals:
             vv = _safe_float(v)
             if isinstance(vv, (int, float)):
@@ -623,30 +630,38 @@ def aggregate_models_paper(
             return None
         return float(sum(nums)) / float(len(nums))
 
-    buf: Dict[str, Dict[str, Any]] = {}
+    buf: dict[str, dict[str, Any]] = {}
 
-    def _bucket(model_name: str) -> Dict[str, Any]:
+    def _bucket(model_name: str) -> dict[str, Any]:
         if model_name not in buf:
             buf[model_name] = {
                 "n_cases": 0,
                 "n_routes": 0,
-
                 # Generation per CASE
                 "gen_prompt": [],
                 "gen_comp": [],
                 "gen_time": [],
                 "gen_cost": [],
-
                 # Judges per ROUTE (usage)
-                "chem_prompt": [], "chem_comp": [], "chem_time": [], "chem_cost": [],
-                "ans_prompt": [], "ans_comp": [], "ans_time": [], "ans_cost": [],
-                "faith_prompt": [], "faith_comp": [], "faith_time": [], "faith_cost": [],
-
+                "chem_prompt": [],
+                "chem_comp": [],
+                "chem_time": [],
+                "chem_cost": [],
+                "ans_prompt": [],
+                "ans_comp": [],
+                "ans_time": [],
+                "ans_cost": [],
+                "faith_prompt": [],
+                "faith_comp": [],
+                "faith_time": [],
+                "faith_cost": [],
                 # Judges per ROUTE (pass/score)
-                "chem_pass": [], "chem_score": [],
-                "ans_pass": [], "ans_score": [],
-                "faith_pass": [], "faith_score": [],
-
+                "chem_pass": [],
+                "chem_score": [],
+                "ans_pass": [],
+                "ans_score": [],
+                "faith_pass": [],
+                "faith_score": [],
                 # Valid judge counts (after filtering out errored / score-missing evaluations)
                 "chem_valid_routes": 0,
                 "ans_valid_routes": 0,
@@ -658,7 +673,7 @@ def aggregate_models_paper(
     for case_dir in iter_case_dirs(routes_root):
         _, llm_usage_path, timing_path, route_files = resolve_route_context(case_dir)
         if not route_files:
-            # no routes -> skip (not a real case for our paper table)
+            # Skip directories without route files.
             continue
 
         gen = extract_generation(llm_usage_path)
@@ -673,7 +688,9 @@ def aggregate_models_paper(
         b["gen_comp"].append(gen.get("gen_completion_tokens"))
         b["gen_cost"].append(gen.get("gen_cost_usd"))
 
-        gen_time_s = _first_not_none(t.get("gen_case_total_time_s"), t.get("gen_llm_call_time_s"), gen.get("gen_time_s"))
+        gen_time_s = _first_not_none(
+            t.get("gen_case_total_time_s"), t.get("gen_llm_call_time_s"), gen.get("gen_time_s")
+        )
         b["gen_time"].append(gen_time_s)
 
         # Judges per ROUTE
@@ -727,7 +744,7 @@ def aggregate_models_paper(
                     b["faith_score"].append(float(af.get("faith_score")))
 
     # Build output rows
-    rows: List[Dict[str, Any]] = []
+    rows: list[dict[str, Any]] = []
 
     for model_name, b in sorted(buf.items(), key=lambda kv: kv[0]):
         n_cases = int(b["n_cases"])
@@ -763,106 +780,163 @@ def aggregate_models_paper(
         faith_output_tokens_route = _mean_optional_int(b["faith_comp"])
         faith_time_s_route = _mean_numeric(b["faith_time"])
         faith_cost_usd_route = _mean_numeric(b["faith_cost"])
-        judges_cost_usd_route_total = _sum_optional(chem_cost_usd_route, ans_cost_usd_route, faith_cost_usd_route)
-        judges_time_s_route_total = _sum_optional(chem_time_s_route, ans_time_s_route, faith_time_s_route)
+        judges_cost_usd_route_total = _sum_optional(
+            chem_cost_usd_route, ans_cost_usd_route, faith_cost_usd_route
+        )
+        judges_time_s_route_total = _sum_optional(
+            chem_time_s_route, ans_time_s_route, faith_time_s_route
+        )
 
         # Derived judges per CASE usage/time/cost from per-ROUTE means
-        chem_input_tokens_case = (chem_input_tokens_route * routes_per_case) if (chem_input_tokens_route is not None and routes_per_case is not None) else None
-        chem_output_tokens_case = (chem_output_tokens_route * routes_per_case) if (chem_output_tokens_route is not None and routes_per_case is not None) else None
-        chem_time_s_case = (chem_time_s_route * routes_per_case) if (chem_time_s_route is not None and routes_per_case is not None) else None
-        chem_cost_usd_case = (chem_cost_usd_route * routes_per_case) if (chem_cost_usd_route is not None and routes_per_case is not None) else None
+        chem_input_tokens_case = (
+            (chem_input_tokens_route * routes_per_case)
+            if (chem_input_tokens_route is not None and routes_per_case is not None)
+            else None
+        )
+        chem_output_tokens_case = (
+            (chem_output_tokens_route * routes_per_case)
+            if (chem_output_tokens_route is not None and routes_per_case is not None)
+            else None
+        )
+        chem_time_s_case = (
+            (chem_time_s_route * routes_per_case)
+            if (chem_time_s_route is not None and routes_per_case is not None)
+            else None
+        )
+        chem_cost_usd_case = (
+            (chem_cost_usd_route * routes_per_case)
+            if (chem_cost_usd_route is not None and routes_per_case is not None)
+            else None
+        )
 
-        ans_input_tokens_case = (ans_input_tokens_route * routes_per_case) if (ans_input_tokens_route is not None and routes_per_case is not None) else None
-        ans_output_tokens_case = (ans_output_tokens_route * routes_per_case) if (ans_output_tokens_route is not None and routes_per_case is not None) else None
-        ans_time_s_case = (ans_time_s_route * routes_per_case) if (ans_time_s_route is not None and routes_per_case is not None) else None
-        ans_cost_usd_case = (ans_cost_usd_route * routes_per_case) if (ans_cost_usd_route is not None and routes_per_case is not None) else None
+        ans_input_tokens_case = (
+            (ans_input_tokens_route * routes_per_case)
+            if (ans_input_tokens_route is not None and routes_per_case is not None)
+            else None
+        )
+        ans_output_tokens_case = (
+            (ans_output_tokens_route * routes_per_case)
+            if (ans_output_tokens_route is not None and routes_per_case is not None)
+            else None
+        )
+        ans_time_s_case = (
+            (ans_time_s_route * routes_per_case)
+            if (ans_time_s_route is not None and routes_per_case is not None)
+            else None
+        )
+        ans_cost_usd_case = (
+            (ans_cost_usd_route * routes_per_case)
+            if (ans_cost_usd_route is not None and routes_per_case is not None)
+            else None
+        )
 
-        faith_input_tokens_case = (faith_input_tokens_route * routes_per_case) if (faith_input_tokens_route is not None and routes_per_case is not None) else None
-        faith_output_tokens_case = (faith_output_tokens_route * routes_per_case) if (faith_output_tokens_route is not None and routes_per_case is not None) else None
-        faith_time_s_case = (faith_time_s_route * routes_per_case) if (faith_time_s_route is not None and routes_per_case is not None) else None
-        faith_cost_usd_case = (faith_cost_usd_route * routes_per_case) if (faith_cost_usd_route is not None and routes_per_case is not None) else None
+        faith_input_tokens_case = (
+            (faith_input_tokens_route * routes_per_case)
+            if (faith_input_tokens_route is not None and routes_per_case is not None)
+            else None
+        )
+        faith_output_tokens_case = (
+            (faith_output_tokens_route * routes_per_case)
+            if (faith_output_tokens_route is not None and routes_per_case is not None)
+            else None
+        )
+        faith_time_s_case = (
+            (faith_time_s_route * routes_per_case)
+            if (faith_time_s_route is not None and routes_per_case is not None)
+            else None
+        )
+        faith_cost_usd_case = (
+            (faith_cost_usd_route * routes_per_case)
+            if (faith_cost_usd_route is not None and routes_per_case is not None)
+            else None
+        )
 
-        judges_cost_usd_case_total = (judges_cost_usd_route_total * routes_per_case) if (judges_cost_usd_route_total is not None and routes_per_case is not None) else None
-        judges_time_s_case_total = (judges_time_s_route_total * routes_per_case) if (judges_time_s_route_total is not None and routes_per_case is not None) else None
+        judges_cost_usd_case_total = (
+            (judges_cost_usd_route_total * routes_per_case)
+            if (judges_cost_usd_route_total is not None and routes_per_case is not None)
+            else None
+        )
+        judges_time_s_case_total = (
+            (judges_time_s_route_total * routes_per_case)
+            if (judges_time_s_route_total is not None and routes_per_case is not None)
+            else None
+        )
 
-        rows.append({
-            "model": model_name,
-            "n_cases": n_cases,
-            "n_routes": n_routes,
-            "routes_per_case": routes_per_case,
-
-            "chem_valid_routes": int(b["chem_valid_routes"]),
-            "ans_valid_routes": int(b["ans_valid_routes"]),
-            "faith_valid_routes": int(b["faith_valid_routes"]),
-            "chem_valid_route_share": (float(b["chem_valid_routes"]) / float(n_routes)) if n_routes else None,
-            "ans_valid_route_share": (float(b["ans_valid_routes"]) / float(n_routes)) if n_routes else None,
-            "faith_valid_route_share": (float(b["faith_valid_routes"]) / float(n_routes)) if n_routes else None,
-
-            # Generation (per CASE)
-            "gen_input_tokens_case": gen_input_tokens_case,
-            "gen_output_tokens_case": gen_output_tokens_case,
-            "gen_time_s_case": gen_time_s_case,
-            "gen_cost_usd_case": gen_cost_usd_case,
-
-            # Chemical (per ROUTE)
-            "chem_pass_rate_route": chem_pass_rate_route,
-            "chem_score_route": chem_score_route,
-            "chem_input_tokens_route": chem_input_tokens_route,
-            "chem_output_tokens_route": chem_output_tokens_route,
-            "chem_time_s_route": chem_time_s_route,
-            "chem_cost_usd_route": chem_cost_usd_route,
-
-            # Chemical (derived per CASE)
-            "chem_input_tokens_case": chem_input_tokens_case,
-            "chem_output_tokens_case": chem_output_tokens_case,
-            "chem_time_s_case": chem_time_s_case,
-            "chem_cost_usd_case": chem_cost_usd_case,
-
-            # Answer relevancy (per ROUTE)
-            "ans_pass_rate_route": ans_pass_rate_route,
-            "ans_score_route": ans_score_route,
-            "ans_input_tokens_route": ans_input_tokens_route,
-            "ans_output_tokens_route": ans_output_tokens_route,
-            "ans_time_s_route": ans_time_s_route,
-            "ans_cost_usd_route": ans_cost_usd_route,
-
-            # Answer relevancy (derived per CASE)
-            "ans_input_tokens_case": ans_input_tokens_case,
-            "ans_output_tokens_case": ans_output_tokens_case,
-            "ans_time_s_case": ans_time_s_case,
-            "ans_cost_usd_case": ans_cost_usd_case,
-
-            # Faithfulness (per ROUTE)
-            "faith_pass_rate_route": faith_pass_rate_route,
-            "faith_score_route": faith_score_route,
-            "faith_input_tokens_route": faith_input_tokens_route,
-            "faith_output_tokens_route": faith_output_tokens_route,
-            "faith_time_s_route": faith_time_s_route,
-            "faith_cost_usd_route": faith_cost_usd_route,
-
-            # Faithfulness (derived per CASE)
-            "faith_input_tokens_case": faith_input_tokens_case,
-            "faith_output_tokens_case": faith_output_tokens_case,
-            "faith_time_s_case": faith_time_s_case,
-            "faith_cost_usd_case": faith_cost_usd_case,
-
-            # Totals across judges (per ROUTE)
-            "judges_cost_usd_route_total": judges_cost_usd_route_total,
-            "judges_time_s_route_total": judges_time_s_route_total,
-
-            # Totals across judges (derived per CASE)
-            "judges_cost_usd_case_total": judges_cost_usd_case_total,
-            "judges_time_s_case_total": judges_time_s_case_total,
-        })
+        rows.append(
+            {
+                "model": model_name,
+                "n_cases": n_cases,
+                "n_routes": n_routes,
+                "routes_per_case": routes_per_case,
+                "chem_valid_routes": int(b["chem_valid_routes"]),
+                "ans_valid_routes": int(b["ans_valid_routes"]),
+                "faith_valid_routes": int(b["faith_valid_routes"]),
+                "chem_valid_route_share": (float(b["chem_valid_routes"]) / float(n_routes))
+                if n_routes
+                else None,
+                "ans_valid_route_share": (float(b["ans_valid_routes"]) / float(n_routes))
+                if n_routes
+                else None,
+                "faith_valid_route_share": (float(b["faith_valid_routes"]) / float(n_routes))
+                if n_routes
+                else None,
+                # Generation (per CASE)
+                "gen_input_tokens_case": gen_input_tokens_case,
+                "gen_output_tokens_case": gen_output_tokens_case,
+                "gen_time_s_case": gen_time_s_case,
+                "gen_cost_usd_case": gen_cost_usd_case,
+                # Chemical (per ROUTE)
+                "chem_pass_rate_route": chem_pass_rate_route,
+                "chem_score_route": chem_score_route,
+                "chem_input_tokens_route": chem_input_tokens_route,
+                "chem_output_tokens_route": chem_output_tokens_route,
+                "chem_time_s_route": chem_time_s_route,
+                "chem_cost_usd_route": chem_cost_usd_route,
+                # Chemical (derived per CASE)
+                "chem_input_tokens_case": chem_input_tokens_case,
+                "chem_output_tokens_case": chem_output_tokens_case,
+                "chem_time_s_case": chem_time_s_case,
+                "chem_cost_usd_case": chem_cost_usd_case,
+                # Answer relevancy (per ROUTE)
+                "ans_pass_rate_route": ans_pass_rate_route,
+                "ans_score_route": ans_score_route,
+                "ans_input_tokens_route": ans_input_tokens_route,
+                "ans_output_tokens_route": ans_output_tokens_route,
+                "ans_time_s_route": ans_time_s_route,
+                "ans_cost_usd_route": ans_cost_usd_route,
+                # Answer relevancy (derived per CASE)
+                "ans_input_tokens_case": ans_input_tokens_case,
+                "ans_output_tokens_case": ans_output_tokens_case,
+                "ans_time_s_case": ans_time_s_case,
+                "ans_cost_usd_case": ans_cost_usd_case,
+                # Faithfulness (per ROUTE)
+                "faith_pass_rate_route": faith_pass_rate_route,
+                "faith_score_route": faith_score_route,
+                "faith_input_tokens_route": faith_input_tokens_route,
+                "faith_output_tokens_route": faith_output_tokens_route,
+                "faith_time_s_route": faith_time_s_route,
+                "faith_cost_usd_route": faith_cost_usd_route,
+                # Faithfulness (derived per CASE)
+                "faith_input_tokens_case": faith_input_tokens_case,
+                "faith_output_tokens_case": faith_output_tokens_case,
+                "faith_time_s_case": faith_time_s_case,
+                "faith_cost_usd_case": faith_cost_usd_case,
+                # Totals across judges (per ROUTE)
+                "judges_cost_usd_route_total": judges_cost_usd_route_total,
+                "judges_time_s_route_total": judges_time_s_route_total,
+                # Totals across judges (derived per CASE)
+                "judges_cost_usd_case_total": judges_cost_usd_case_total,
+                "judges_time_s_case_total": judges_time_s_case_total,
+            }
+        )
 
     return rows
 
 
-# -------------------------
 # CSV writers
-# -------------------------
 
-def write_csv_dataclasses(rows: List[Any], out_path: Path) -> None:
+
+def write_csv_dataclasses(rows: list[Any], out_path: Path) -> None:
     if not rows:
         return
     out_path.parent.mkdir(parents=True, exist_ok=True)
@@ -874,7 +948,7 @@ def write_csv_dataclasses(rows: List[Any], out_path: Path) -> None:
             w.writerow({k: _round_for_table(v) for k, v in asdict(r).items()})
 
 
-def write_csv_dicts(rows: List[Dict[str, Any]], out_path: Path) -> None:
+def write_csv_dicts(rows: list[dict[str, Any]], out_path: Path) -> None:
     if not rows:
         return
     out_path.parent.mkdir(parents=True, exist_ok=True)
@@ -885,10 +959,6 @@ def write_csv_dicts(rows: List[Dict[str, Any]], out_path: Path) -> None:
         for r in rows:
             w.writerow({k: _round_for_table(v) for k, v in r.items()})
 
-
-# -------------------------
-# CLI
-# -------------------------
 
 def main() -> None:
     ap = argparse.ArgumentParser()
@@ -943,7 +1013,9 @@ def main() -> None:
     # Build indexes
     ans_faith_idx = None
     if args.answer_faith:
-        af_records = load_eval_records(Path(args.answer_faith), "generation_evaluate_faithfullness_*.json")
+        af_records = load_eval_records(
+            Path(args.answer_faith), "generation_evaluate_faithfullness_*.json"
+        )
         ans_faith_idx = build_eval_index(af_records)
 
     chem_idx = None
@@ -951,7 +1023,7 @@ def main() -> None:
         ch_records = load_eval_records(Path(args.chem), "*.json")
         chem_idx = build_eval_index(ch_records)
 
-    # ---- MODELS (paper table) ----
+    # MODELS (paper table)
     if args.table_mode == "models":
         routes_root = Path(args.routes_root).expanduser().resolve()
         if not routes_root.exists():
@@ -965,12 +1037,14 @@ def main() -> None:
             write_csv_dicts(paper_rows, Path(args.csv_out))
             print(f"[OK] CSV written: {args.csv_out}")
 
-        rounded_paper_rows = [{k: _round_for_table(v) for k, v in row.items()} for row in paper_rows]
+        rounded_paper_rows = [
+            {k: _round_for_table(v) for k, v in row.items()} for row in paper_rows
+        ]
         print(json.dumps(rounded_paper_rows, ensure_ascii=False, indent=2))
         return
 
-    # ---- ROUTES (detailed) ----
-    rows: List[Row] = []
+    # ROUTES (detailed)
+    rows: list[Row] = []
 
     if args.target:
         target = Path(args.target).expanduser().resolve()

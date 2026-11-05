@@ -1,22 +1,25 @@
 """
 local_graph_without_synthesisID.py builds local graphs corresponding to synthesis routes.
 """
-import pandas as pd
-import networkx as nx
+
+import ast
 import os
 import re
-import ast
+
+import networkx as nx
+import pandas as pd
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_DIR = os.path.dirname(BASE_DIR)
-GRAPH_DIR = os.environ.get('SYNTHWAY_GRAPH_OUTPUT', os.path.join(REPO_DIR, 'outputs', 'graph'))
-INPUT_FILE = os.path.join(REPO_DIR, 'data', 'merged_all.xlsx')
-OUTPUT_DIR = os.path.join(GRAPH_DIR, 'local_graphs_without_synthesis')
+GRAPH_DIR = os.environ.get("SYNTHWAY_GRAPH_OUTPUT", os.path.join(REPO_DIR, "outputs", "graph"))
+INPUT_FILE = os.path.join(REPO_DIR, "data", "merged_all.xlsx")
+OUTPUT_DIR = os.path.join(GRAPH_DIR, "local_graphs_without_synthesis")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 
 def sanitize_filename(s):
-    return re.sub(r'[^a-zA-Z0-9_.-]', '_', s)
+    return re.sub(r"[^a-zA-Z0-9_.-]", "_", s)
+
 
 def convert_attrs_to_strings(G):
     for _, data in G.nodes(data=True):
@@ -28,6 +31,7 @@ def convert_attrs_to_strings(G):
             if isinstance(v, (list, set)):
                 data[k] = ", ".join(map(str, v))
 
+
 # Set 'name' to the value part of 'label:value'
 def _extract_value_from_node_id(node_id: str) -> str:
     try:
@@ -37,14 +41,18 @@ def _extract_value_from_node_id(node_id: str) -> str:
     except Exception:
         return str(node_id)
 
+
 def _attach_name_attr(GX: nx.Graph):
     """
     Set each node's 'name' attribute to the value part of 'label:value'.
     """
     try:
-        nx.set_node_attributes(GX, {n: _extract_value_from_node_id(n) for n in GX.nodes()}, name="name")
+        nx.set_node_attributes(
+            GX, {n: _extract_value_from_node_id(n) for n in GX.nodes()}, name="name"
+        )
     except Exception as e:
         print(f"[WARN] _attach_name_attr failed: {e}")
+
 
 # Step 1. Load the table
 df = pd.read_excel(INPUT_FILE)
@@ -61,7 +69,7 @@ for synthesis_id, group in grouped:
     for _, row in group.iterrows():
         # Get composition directly as field:value
         comp_val = row.get("composition")
-        if not isinstance(comp_val, str) or comp_val.strip().lower() == 'unknown':
+        if not isinstance(comp_val, str) or comp_val.strip().lower() == "unknown":
             continue  # Skip if composition is missing
 
         comp_clean = comp_val.strip()
@@ -78,7 +86,7 @@ for synthesis_id, group in grouped:
 
         for field, param_keys in FIELD_PARAMS.items():
             val = row.get(field)
-            if isinstance(val, str) and val.strip().lower() != 'unknown':
+            if isinstance(val, str) and val.strip().lower() != "unknown":
                 val_clean = val.strip()
                 node_id = f"{field}:{val_clean}"
                 nodes[node_id] = {"label": field}
@@ -102,7 +110,7 @@ for synthesis_id, group in grouped:
         # composition -> properties
         for field in ["shape", "crystalsystem"]:
             val = row.get(field)
-            if isinstance(val, str) and val.strip().lower() != 'unknown':
+            if isinstance(val, str) and val.strip().lower() != "unknown":
                 val_clean = val.strip()
                 node_id = f"{field}:{val_clean}"
                 nodes[node_id] = {"label": field}

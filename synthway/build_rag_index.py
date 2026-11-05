@@ -8,7 +8,7 @@ Features:
   --json_dir synthway/json \
   --out_idx  synthway/index \
 
-  2) search          — TF-IDF search with automatic semantic token expansion (BGE→TF-IDF);
+  2) search          — TF-IDF search with automatic semantic token expansion (BGE->TF-IDF);
   python synthway/build_rag_index.py \
   search \
   --idx synthway/index \
@@ -39,20 +39,25 @@ Search approach:
     append them to the query string, then compute TF-IDF scores.
 """
 
-
 from pathlib import Path as _Path
+
 _REPO_ROOT = _Path(__file__).resolve().parents[1]
-import os, json, argparse, re
-from typing import List, Dict, Any, Optional, Tuple
+import argparse
+import json
+import os
+import re
 from dataclasses import dataclass
+from typing import Any
+
 import numpy as np
-from sentence_transformers import SentenceTransformer
 from rich import print as rprint
-from rich.table import Table
 from rich.panel import Panel
+from rich.table import Table
+from sentence_transformers import SentenceTransformer
 
 try:
     import faiss
+
     _FAISS_OK = True
 except Exception:
     _FAISS_OK = False
@@ -60,15 +65,14 @@ except Exception:
 
 # Optional sparse support for lexical TF-IDF search
 try:
-    from sklearn.feature_extraction.text import TfidfVectorizer
     import scipy.sparse as sp  # type: ignore
+    from sklearn.feature_extraction.text import TfidfVectorizer
+
     _SPARSE_OK = True
 except Exception:
     _SPARSE_OK = False
 
 import pickle
-
-
 
 DEFAULT_MODEL = "BAAI/bge-large-en-v1.5"
 DEFAULT_TOPK = 5
@@ -77,32 +81,34 @@ BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 DEFAULT_JSON_DIR = os.path.join(BASE_DIR, "json")
 DEFAULT_INDEX_DIR = os.path.join(BASE_DIR, "index")
 
+
 @dataclass
 class Hit:
-    sid: Optional[str]
+    sid: str | None
     score: float
-    composition: Optional[str]
-    method: Optional[str]
-    retrieval_text: Optional[str]
-    path: Optional[str]
+    composition: str | None
+    method: str | None
+    retrieval_text: str | None
+    path: str | None
     # Extended slots for runtime access (populated from meta)
-    solvent: Optional[str] = None
-    temperature: Optional[float] = None
-    pH: Optional[float] = None
-    time: Optional[float] = None
-    shape: Optional[str] = None
-    crystal_system: Optional[str] = None
-    size_length: Optional[float] = None
-    size_width: Optional[float] = None
-    size_depth: Optional[float] = None
-    elements: Optional[List[str]] = None
-    precursors: Optional[List[str]] = None
-    additives: Optional[List[str]] = None
-    seeds: Optional[List[str]] = None
-    pdfno_list: Optional[List[str]] = None
+    solvent: str | None = None
+    temperature: float | None = None
+    pH: float | None = None
+    time: float | None = None
+    shape: str | None = None
+    crystal_system: str | None = None
+    size_length: float | None = None
+    size_width: float | None = None
+    size_depth: float | None = None
+    elements: list[str] | None = None
+    precursors: list[str] | None = None
+    additives: list[str] | None = None
+    seeds: list[str] | None = None
+    pdfno_list: list[str] | None = None
+
 
 # Utilities
-def _coalesce_str(x: Any) -> Optional[str]:
+def _coalesce_str(x: Any) -> str | None:
     if x is None:
         return None
     s = str(x).strip()
@@ -112,7 +118,8 @@ def _coalesce_str(x: Any) -> Optional[str]:
         return None
     return s
 
-def _to_float(x: Any) -> Optional[float]:
+
+def _to_float(x: Any) -> float | None:
     try:
         if x is None:
             return None
@@ -127,9 +134,11 @@ def _to_float(x: Any) -> Optional[float]:
     except Exception:
         return None
 
-def build_retrieval_text_fallback(doc: Dict[str, Any]) -> str:
+
+def build_retrieval_text_fallback(doc: dict[str, Any]) -> str:
     """If retrieval_text is missing from JSON, build a flat record summary on the fly."""
-    parts: List[str] = []
+    parts: list[str] = []
+
     def add(label: str, val: Any):
         if val is None:
             return
@@ -171,36 +180,37 @@ def build_retrieval_text_fallback(doc: Dict[str, Any]) -> str:
     for k in ("length", "width", "depth"):
         add(f"size.{k}", _to_float(size.get(k)))
 
-    for p in (doc.get("precursors") or []):
+    for p in doc.get("precursors") or []:
         add("precursor", p)
-    for a in (doc.get("additives") or []):
+    for a in doc.get("additives") or []:
         add("additive", a)
-    for s in (doc.get("seeds") or []):
+    for s in doc.get("seeds") or []:
         add("seed", s)
 
     if doc.get("pdfno_list"):
         add("pdfno_list", doc.get("pdfno_list"))
     return " | ".join(parts)
 
+
 def format_query(
-    composition: Optional[str] = None,
-    method: Optional[str] = None,
-    shape: Optional[str] = None,
-    temperature: Optional[float] = None,
-    solvent: Optional[str] = None,
-    additives: Optional[List[str]] = None,
-    precursors: Optional[List[str]] = None,
-    seeds: Optional[List[str]] = None,
-    time: Optional[float] = None,
-    pH: Optional[float] = None,
-    crystalsystem: Optional[str] = None,
-    size_length: Optional[float] = None,
-    size_width: Optional[float] = None,
-    size_depth: Optional[float] = None,
-    pdfno_list: Optional[List[str]] = None,
+    composition: str | None = None,
+    method: str | None = None,
+    shape: str | None = None,
+    temperature: float | None = None,
+    solvent: str | None = None,
+    additives: list[str] | None = None,
+    precursors: list[str] | None = None,
+    seeds: list[str] | None = None,
+    time: float | None = None,
+    pH: float | None = None,
+    crystalsystem: str | None = None,
+    size_length: float | None = None,
+    size_width: float | None = None,
+    size_depth: float | None = None,
+    pdfno_list: list[str] | None = None,
 ) -> str:
-    """Build a query matching retrieval_text style. In 'concat' mode, use one string containing key tokens."""
-    parts: List[str] = []
+    """Build a retrieval_text-style query from the supplied fields."""
+    parts: list[str] = []
 
     # Basic slots
     if composition:
@@ -251,7 +261,7 @@ class RagIndex:
         self.model_name = model_name
         # The model is needed only for semantic vocabulary/token expansion
         self.model = SentenceTransformer(model_name)
-        self.meta: List[Dict[str, Any]] = []
+        self.meta: list[dict[str, Any]] = []
         # TF-IDF (lexical)
         self.tfidf = None
         self.spmat = None
@@ -259,15 +269,15 @@ class RagIndex:
         self._lexical_ok = False
         # vocabulary expansion (dense over TF-IDF vocab)
         self.vocab_terms = None
-        self.vocab_index = None   # faiss.IndexFlatIP or np.ndarray
+        self.vocab_index = None  # faiss.IndexFlatIP or np.ndarray
         self._vocab_fallback = True
 
-    def _encode(self, texts: List[str]) -> np.ndarray:
+    def _encode(self, texts: list[str]) -> np.ndarray:
         emb = self.model.encode(texts, normalize_embeddings=True, batch_size=128)
         return emb.astype("float32")
 
     def build(self, json_dir: str) -> tuple[int, dict]:
-        """Collect text and metadata ONLY from the JSON directory,
+        """Collect text and metadata only from the JSON directory,
         deduplicate by synthesis_id and identical retrieval_text, and return counts."""
         texts, meta = [], []
         seen_sid = set()
@@ -279,7 +289,7 @@ class RagIndex:
             "skipped_dup_text": 0,
         }
 
-        def _push_doc(d: Dict[str, Any], path: Optional[str]=None):
+        def _push_doc(d: dict[str, Any], path: str | None = None):
             rt = d.get("retrieval_text")
             if not rt or not str(rt).strip():
                 rt = build_retrieval_text_fallback(d)
@@ -298,7 +308,7 @@ class RagIndex:
                 return
             seen_rt.add(rt)
 
-            # --- Begin slot normalization for meta ---
+            # Begin slot normalization for meta
             # solvent
             solv = d.get("solvent")
             if isinstance(solv, dict):
@@ -325,6 +335,7 @@ class RagIndex:
                 s = _coalesce_str(e)
                 if s:
                     elements.append(s)
+
             # precursor/additive/seed names
             def _collect_names(lst):
                 out = []
@@ -338,6 +349,7 @@ class RagIndex:
                         if s:
                             out.append(s)
                 return out
+
             prec_names = _collect_names(d.get("precursors"))
             add_names = _collect_names(d.get("additives"))
             seed_names = _collect_names(d.get("seeds"))
@@ -349,29 +361,31 @@ class RagIndex:
                 pdf_list = [str(pdf_raw).strip()]
             else:
                 pdf_list = []
-            # --- End slot normalization ---
+            # End slot normalization
 
-            meta.append({
-                "synthesis_id": sid,
-                "composition": d.get("composition"),
-                "method": d.get("method"),
-                "retrieval_text": rt,
-                "path": path,
-                "solvent": solvent_name,
-                "temperature": temperature,
-                "pH": pH,
-                "time": time_val,
-                "shape": shape,
-                "crystal_system": crystal_system,
-                "size_length": size_length,
-                "size_width": size_width,
-                "size_depth": size_depth,
-                "elements": elements,
-                "precursor_names": prec_names,
-                "additive_names": add_names,
-                "seed_names": seed_names,
-                "pdfno_list": pdf_list,
-            })
+            meta.append(
+                {
+                    "synthesis_id": sid,
+                    "composition": d.get("composition"),
+                    "method": d.get("method"),
+                    "retrieval_text": rt,
+                    "path": path,
+                    "solvent": solvent_name,
+                    "temperature": temperature,
+                    "pH": pH,
+                    "time": time_val,
+                    "shape": shape,
+                    "crystal_system": crystal_system,
+                    "size_length": size_length,
+                    "size_width": size_width,
+                    "size_depth": size_depth,
+                    "elements": elements,
+                    "precursor_names": prec_names,
+                    "additive_names": add_names,
+                    "seed_names": seed_names,
+                    "pdfno_list": pdf_list,
+                }
+            )
             texts.append(rt)
 
         if not (json_dir and os.path.isdir(json_dir)):
@@ -400,9 +414,7 @@ class RagIndex:
             # lowercase=False preserves token forms from retrieval_text
             # token_pattern excludes standalone '|' and ':' tokens
             self.tfidf = TfidfVectorizer(
-                ngram_range=(1, 2),
-                lowercase=False,
-                token_pattern=r"(?u)\b[^|:\s]+\b"
+                ngram_range=(1, 2), lowercase=False, token_pattern=r"(?u)\b[^|:\s]+\b"
             )
             self.spmat = self.tfidf.fit_transform(texts).tocsr().astype(np.float32)
             # Row norms for cosine similarity
@@ -414,20 +426,39 @@ class RagIndex:
             self._lex_row_norms = None
             self._lexical_ok = False
 
-        # --- Semantic query expansion: build a dense index over the TF-IDF vocabulary ---
+        # Semantic query expansion: build a dense index over the TF-IDF vocabulary
         try:
             # require TF-IDF and dense model
             if self._lexical_ok and isinstance(self.tfidf, TfidfVectorizer):
                 # list of terms in TF-IDF vocabulary, in index order
                 feature_names = list(self.tfidf.get_feature_names_out())
                 # filter out service labels and numeric-only tokens
-                _stop = {"composition","method","solvent","temperature","time","pH","precursor","additive","seed","size","crystalsystem","solvent.volume","product","shape"}
+                _stop = {
+                    "composition",
+                    "method",
+                    "solvent",
+                    "temperature",
+                    "time",
+                    "pH",
+                    "precursor",
+                    "additive",
+                    "seed",
+                    "size",
+                    "crystalsystem",
+                    "solvent.volume",
+                    "product",
+                    "shape",
+                }
+
                 def _is_number(tok: str) -> bool:
                     return bool(re.fullmatch(r"-?\d+(?:\.\d+)?", tok))
+
                 terms_filtered = [t for t in feature_names if t not in _stop and not _is_number(t)]
                 # encode terms with dense model (if available)
                 try:
-                    embs = self.model.encode(terms_filtered, normalize_embeddings=True, batch_size=256).astype("float32")
+                    embs = self.model.encode(
+                        terms_filtered, normalize_embeddings=True, batch_size=256
+                    ).astype("float32")
                 except Exception:
                     embs = None
                 if embs is not None and embs.shape[0] >= 1:
@@ -436,7 +467,7 @@ class RagIndex:
                         self.vocab_index.add(embs)
                         self._vocab_fallback = False
                     else:
-                        self.vocab_index = embs    # (V, D)
+                        self.vocab_index = embs  # (V, D)
                         self._vocab_fallback = True
                     self.vocab_terms = terms_filtered
         except Exception:
@@ -444,7 +475,6 @@ class RagIndex:
             self.vocab_terms = None
             self.vocab_index = None
             self._vocab_fallback = True
-
 
         return len(self.meta), stats
 
@@ -511,7 +541,9 @@ class RagIndex:
             try:
                 self._lex_row_norms = np.load(os.path.join(in_dir, "tfidf_row_norms.npy"))
             except Exception:
-                self._lex_row_norms = np.sqrt(self.spmat.multiply(self.spmat).sum(axis=1)).A1 + 1e-12
+                self._lex_row_norms = (
+                    np.sqrt(self.spmat.multiply(self.spmat).sum(axis=1)).A1 + 1e-12
+                )
             self._lexical_ok = True
         except Exception:
             self._lexical_ok = False
@@ -532,25 +564,51 @@ class RagIndex:
         except Exception:
             self.vocab_terms, self.vocab_index = None, None
             self._vocab_fallback = True
-    def _analyze(self, text: str) -> List[str]:
+
+    def _analyze(self, text: str) -> list[str]:
         """Tokenize text with the same analyzer as the TF-IDF vectorizer."""
         if not self._lexical_ok or self.tfidf is None:
             return []
         analyzer = self.tfidf.build_analyzer()
         return analyzer(text)
 
-    def expand_query_with_denselex(self, q_str: str, topk: int = 5, mincos: float = 0.35, max_new: int = 50) -> str:
+    def expand_query_with_denselex(
+        self, q_str: str, topk: int = 5, mincos: float = 0.35, max_new: int = 50
+    ) -> str:
         """
         Semantic query expansion: for each token in q_str, find the nearest tokens
         in the TF-IDF vocabulary by cosine similarity of BGE embeddings and append them to the query.
         """
-        if self.vocab_terms is None or self.vocab_index is None or not self._lexical_ok or self.tfidf is None or self.model is None:
+        if (
+            self.vocab_terms is None
+            or self.vocab_index is None
+            or not self._lexical_ok
+            or self.tfidf is None
+            or self.model is None
+        ):
             return q_str
         toks = self._analyze(q_str)
         exist = set(toks)
-        stop = {"composition","method","solvent","temperature","time","pH","precursor","additive","seed","size","crystalsystem","solvent.volume","product","shape"}
+        stop = {
+            "composition",
+            "method",
+            "solvent",
+            "temperature",
+            "time",
+            "pH",
+            "precursor",
+            "additive",
+            "seed",
+            "size",
+            "crystalsystem",
+            "solvent.volume",
+            "product",
+            "shape",
+        }
+
         def _is_number(tok: str) -> bool:
             return bool(re.fullmatch(r"-?\d+(?:\.\d+)?", tok))
+
         # IDF mapping
         try:
             fn = list(self.tfidf.get_feature_names_out())
@@ -558,12 +616,14 @@ class RagIndex:
             idf = {t: float(v) for t, v in zip(fn, idf_vals)}
         except Exception:
             idf = {}
-        extra_terms: List[str] = []
+        extra_terms: list[str] = []
         for t in toks:
             if t in stop or _is_number(t):
                 continue
             try:
-                qv = self.model.encode([t], normalize_embeddings=True, batch_size=1).astype("float32")[0]
+                qv = self.model.encode([t], normalize_embeddings=True, batch_size=1).astype(
+                    "float32"
+                )[0]
             except Exception:
                 continue
             if self._vocab_fallback or not _FAISS_OK or not hasattr(self.vocab_index, "search"):
@@ -594,20 +654,29 @@ class RagIndex:
             return q_str
         return q_str + " | " + " | ".join(extra_terms)
 
-    def _lex_scores(self, query: str) -> Optional[np.ndarray]:
+    def _lex_scores(self, query: str) -> np.ndarray | None:
         """Return TF-IDF cosine similarities for all documents, or None if sparse support is unavailable."""
-        if not self._lexical_ok or self.tfidf is None or self.spmat is None or self.spmat.shape[0] == 0:
+        if (
+            not self._lexical_ok
+            or self.tfidf is None
+            or self.spmat is None
+            or self.spmat.shape[0] == 0
+        ):
             return None
         try:
             q = self.tfidf.transform([query]).tocsr().astype(np.float32)
             q_norm = float(np.sqrt(q.multiply(q).sum()) + 1e-12)
             sims = (q @ self.spmat.T).toarray()[0]
-            sims = sims / (q_norm * (self._lex_row_norms if self._lex_row_norms is not None else 1.0))
+            sims = sims / (
+                q_norm * (self._lex_row_norms if self._lex_row_norms is not None else 1.0)
+            )
             return sims.astype("float32")
         except Exception:
             return None
 
-    def retrieve_lexical(self, query: str, k: int = DEFAULT_TOPK, min_score: Optional[float] = None) -> List[Hit]:
+    def retrieve_lexical(
+        self, query: str, k: int = DEFAULT_TOPK, min_score: float | None = None
+    ) -> list[Hit]:
         sims = self._lex_scores(query)
         if sims is None:
             return []
@@ -622,38 +691,40 @@ class RagIndex:
         else:
             idxs = np.argsort(-sims)[:k]
         scores = sims[idxs]
-        hits: List[Hit] = []
+        hits: list[Hit] = []
         for score, idx in zip(scores, idxs):
             if idx is None or idx < 0 or idx >= len(self.meta):
                 continue
             m = self.meta[idx]
-            hits.append(Hit(
-                sid=m.get("synthesis_id"),
-                score=float(score),
-                composition=m.get("composition"),
-                method=m.get("method"),
-                retrieval_text=m.get("retrieval_text"),
-                path=m.get("path"),
-                solvent=m.get("solvent"),
-                temperature=m.get("temperature"),
-                pH=m.get("pH"),
-                time=m.get("time"),
-                shape=m.get("shape"),
-                crystal_system=m.get("crystal_system"),
-                size_length=m.get("size_length"),
-                size_width=m.get("size_width"),
-                size_depth=m.get("size_depth"),
-                elements=m.get("elements"),
-                precursors=m.get("precursor_names"),
-                additives=m.get("additive_names"),
-                seeds=m.get("seed_names"),
-                pdfno_list=m.get("pdfno_list"),
-            ))
+            hits.append(
+                Hit(
+                    sid=m.get("synthesis_id"),
+                    score=float(score),
+                    composition=m.get("composition"),
+                    method=m.get("method"),
+                    retrieval_text=m.get("retrieval_text"),
+                    path=m.get("path"),
+                    solvent=m.get("solvent"),
+                    temperature=m.get("temperature"),
+                    pH=m.get("pH"),
+                    time=m.get("time"),
+                    shape=m.get("shape"),
+                    crystal_system=m.get("crystal_system"),
+                    size_length=m.get("size_length"),
+                    size_width=m.get("size_width"),
+                    size_depth=m.get("size_depth"),
+                    elements=m.get("elements"),
+                    precursors=m.get("precursor_names"),
+                    additives=m.get("additive_names"),
+                    seeds=m.get("seed_names"),
+                    pdfno_list=m.get("pdfno_list"),
+                )
+            )
         return hits
 
 
-# ===== CLI =====
-def show_hits(hits: List[Hit], query: str):
+# CLI
+def show_hits(hits: list[Hit], query: str):
     rprint(Panel.fit(f"[bold]Query[/]: {query}"))
     tbl = Table(title="Top-k retrieved")
     tbl.add_column("score", justify="right")
@@ -664,7 +735,8 @@ def show_hits(hits: List[Hit], query: str):
         tbl.add_row(f"{h.score:.3f}", str(h.sid), str(h.composition), str(h.method))
     rprint(tbl)
 
-def _load_json(path: Optional[str]) -> Dict[str, Any]:
+
+def _load_json(path: str | None) -> dict[str, Any]:
     if not path or not os.path.exists(path):
         return {}
     try:
@@ -673,20 +745,25 @@ def _load_json(path: Optional[str]) -> Dict[str, Any]:
     except Exception:
         return {}
 
-def apply_post_filters(ri: RagIndex, hits: List[Hit], k: int,
-                       filter_method: Optional[str]=None,
-                       elements: Optional[List[str]]=None,
-                       req_precursors: Optional[List[str]]=None,
-                       req_additives: Optional[List[str]]=None,
-                       req_seeds: Optional[List[str]]=None,
-                       composition_filter: Optional[str]=None) -> List[Hit]:
-    out: List[Hit] = []
+
+def apply_post_filters(
+    ri: RagIndex,
+    hits: list[Hit],
+    k: int,
+    filter_method: str | None = None,
+    elements: list[str] | None = None,
+    req_precursors: list[str] | None = None,
+    req_additives: list[str] | None = None,
+    req_seeds: list[str] | None = None,
+    composition_filter: str | None = None,
+) -> list[Hit]:
+    out: list[Hit] = []
     f_method = (filter_method or "").lower().strip()
     want_elems = [e for e in (elements or []) if e]
     req_prec = [s for s in (req_precursors or []) if s]
     req_add = [s for s in (req_additives or []) if s]
-    req_sd  = [s for s in (req_seeds or []) if s]
-    comp_f  = (composition_filter or "").lower().strip()
+    req_sd = [s for s in (req_seeds or []) if s]
+    comp_f = (composition_filter or "").lower().strip()
 
     def contains_ci(hay: str, needle: str) -> bool:
         return needle.lower() in hay.lower()
@@ -733,14 +810,17 @@ def apply_post_filters(ri: RagIndex, hits: List[Hit], k: int,
             break
     return out
 
-# --- Slot coverage helpers ---
-from typing import Any, Optional, Tuple
 
-def _norm_str(x: Any) -> Optional[str]:
+# Slot coverage helpers
+from typing import Any
+
+
+def _norm_str(x: Any) -> str | None:
     s = _coalesce_str(x)
     return s.lower() if s is not None else None
 
-def _compute_slot_coverage(h: Hit, args) -> Tuple[int, int]:
+
+def _compute_slot_coverage(h: Hit, args) -> tuple[int, int]:
     """
     Computes (matched, total) user-specified slot coverage for a hit.
     All data is taken from Hit fields, not from JSON.
@@ -748,7 +828,7 @@ def _compute_slot_coverage(h: Hit, args) -> Tuple[int, int]:
     matched = 0
     total = 0
 
-    # -- Single-valued string slots (with weights) --
+    # Single-valued string slots (with weights)
     # composition is more important than method and other descriptive slots
     single_slots = [
         ("composition", getattr(args, "composition", None), h.composition, 2),
@@ -765,7 +845,7 @@ def _compute_slot_coverage(h: Hit, args) -> Tuple[int, int]:
             if docval_norm and qval_norm in docval_norm:
                 matched += w
 
-    # -- Numeric slots --
+    # Numeric slots
     # (slotname, h.<field>, argval, tolerance)
     numeric_slots = [
         ("temperature", h.temperature, getattr(args, "temperature", None), 10.0),
@@ -798,7 +878,7 @@ def _compute_slot_coverage(h: Hit, args) -> Tuple[int, int]:
                     if abs(docval - qvalf) <= tol:
                         matched += 1
 
-    # -- List-like slots --
+    # List-like slots
     # Each: if user specified, total +=1; matched if all requested values are found (case-insensitive substring) among doc names
     def _doc_names(lst):
         # For list of strings, get lowercased names/strings
@@ -806,6 +886,7 @@ def _compute_slot_coverage(h: Hit, args) -> Tuple[int, int]:
         for c in lst or []:
             out.append(str(c).lower())
         return out
+
     list_slots = [
         ("precursors", getattr(args, "precursor", None), h.precursors),
         ("additives", getattr(args, "additive", None), h.additives),
@@ -826,7 +907,7 @@ def _compute_slot_coverage(h: Hit, args) -> Tuple[int, int]:
             if ok:
                 matched += 1
 
-    # -- pdfno_list --
+    # pdfno_list
     pdfnos = getattr(args, "pdfno", None)
     pdfnos_list = [x for x in (pdfnos or []) if x]
     if pdfnos_list:
@@ -843,7 +924,8 @@ def _compute_slot_coverage(h: Hit, args) -> Tuple[int, int]:
 
     return (matched, total)
 
-def rerank_by_slot_coverage(hits: List[Hit], args) -> List[Hit]:
+
+def rerank_by_slot_coverage(hits: list[Hit], args) -> list[Hit]:
     if not hits:
         return hits
     coverage = {}
@@ -863,16 +945,30 @@ def rerank_by_slot_coverage(hits: List[Hit], args) -> List[Hit]:
     )
     return hits_sorted
 
+
 def main():
-    ap = argparse.ArgumentParser(description="Synthesis indexer and retriever (TF-IDF + automatic semantic expansion)")
+    ap = argparse.ArgumentParser(
+        description="Synthesis indexer and retriever (TF-IDF + automatic semantic expansion)"
+    )
     sub = ap.add_subparsers(dest="cmd", required=True)
 
-    sp = sub.add_parser("build", help="Build an index from /json (TF-IDF and vocabulary index for expansion)")
-    sp.add_argument("--json_dir", default=DEFAULT_JSON_DIR, help="Dir with per-route JSON files (default: ./json)")
-    sp.add_argument("--out_idx", default=DEFAULT_INDEX_DIR, help="Output dir for index (default: ./index)")
+    sp = sub.add_parser(
+        "build", help="Build an index from /json (TF-IDF and vocabulary index for expansion)"
+    )
+    sp.add_argument(
+        "--json_dir",
+        default=DEFAULT_JSON_DIR,
+        help="Dir with per-route JSON files (default: ./json)",
+    )
+    sp.add_argument(
+        "--out_idx", default=DEFAULT_INDEX_DIR, help="Output dir for index (default: ./index)"
+    )
     sp.add_argument("--model", default=DEFAULT_MODEL)
 
-    sp = sub.add_parser("search", help="Top-k TF-IDF search with automatic semantic expansion (query in retrieval_text style)")
+    sp = sub.add_parser(
+        "search",
+        help="Top-k TF-IDF search with automatic semantic expansion (query in retrieval_text style)",
+    )
     sp.add_argument("--idx", default=DEFAULT_INDEX_DIR, help="Index dir (default: ./index)")
     sp.add_argument("--composition")
     sp.add_argument("--method")
@@ -886,25 +982,33 @@ def main():
     sp.add_argument("--seed", action="append")
     sp.add_argument("--time", type=float)
     sp.add_argument("--pH", type=float)
-    # Expose new slots on CLI
+    # Additional query fields.
     sp.add_argument("--crystalsystem")
     sp.add_argument("--size-length", type=float)
     sp.add_argument("--size-width", type=float)
     sp.add_argument("--size-depth", type=float)
     sp.add_argument("--pdfno", action="append")
 
-    # weighted / concat modes
-    # --mode, --w-*, --retriever, --alpha removed
-    sp.add_argument("--min-lex-score", type=float, default=None, help="Minimum lexical cosine similarity (0..1)")
+    sp.add_argument(
+        "--min-lex-score", type=float, default=None, help="Minimum lexical cosine similarity (0..1)"
+    )
     # post-filters
     sp.add_argument("--filter-method")
     sp.add_argument("--element", action="append")
     sp.add_argument("--require-precursor", action="append")
     sp.add_argument("--require-additive", action="append")
     sp.add_argument("--require-seed", action="append")
-    sp.add_argument("--preselect", type=int, default=10, help="Candidate multiplier before post-filtering (k*preselect)")
+    sp.add_argument(
+        "--preselect",
+        type=int,
+        default=10,
+        help="Candidate multiplier before post-filtering (k*preselect)",
+    )
 
-    sp = sub.add_parser("export-context", help="Export top-k context strings (TF-IDF + automatic semantic expansion)")
+    sp = sub.add_parser(
+        "export-context",
+        help="Export top-k context strings (TF-IDF + automatic semantic expansion)",
+    )
     sp.add_argument("--idx", default=DEFAULT_INDEX_DIR)
     sp.add_argument("--composition")
     sp.add_argument("--method")
@@ -917,7 +1021,7 @@ def main():
     sp.add_argument("--precursor", action="append")
     sp.add_argument("--seed", action="append")
     sp.add_argument("--pH", type=float)
-    # Expose new slots on CLI for export-context
+    # Additional export-context query fields.
     sp.add_argument("--time", type=float)
     sp.add_argument("--crystalsystem")
     sp.add_argument("--size-length", type=float)
@@ -925,9 +1029,9 @@ def main():
     sp.add_argument("--size-depth", type=float)
     sp.add_argument("--pdfno", action="append")
 
-    # weighted / concat modes
-    # --mode, --w-*, --retriever, --alpha removed
-    sp.add_argument("--min-lex-score", type=float, default=None, help="Minimum lexical cosine similarity (0..1)")
+    sp.add_argument(
+        "--min-lex-score", type=float, default=None, help="Minimum lexical cosine similarity (0..1)"
+    )
 
     # post-filters
     sp.add_argument("--filter-method")
@@ -935,7 +1039,12 @@ def main():
     sp.add_argument("--require-precursor", action="append")
     sp.add_argument("--require-additive", action="append")
     sp.add_argument("--require-seed", action="append")
-    sp.add_argument("--preselect", type=int, default=10, help="Candidate multiplier before post-filtering (k*preselect)")
+    sp.add_argument(
+        "--preselect",
+        type=int,
+        default=10,
+        help="Candidate multiplier before post-filtering (k*preselect)",
+    )
 
     sp.add_argument("--out", required=True)
 
@@ -956,7 +1065,7 @@ def main():
     if args.cmd == "search":
         ri = RagIndex()
         ri.load(args.idx)
-        n_pre = max(args.k * (args.preselect if hasattr(args, 'preselect') else 10), args.k)
+        n_pre = max(args.k * (args.preselect if hasattr(args, "preselect") else 10), args.k)
 
         q_str = format_query(
             composition=args.composition,
@@ -980,13 +1089,15 @@ def main():
 
         raw = ri.retrieve_lexical(q_str, k=n_pre, min_score=getattr(args, "min_lex_score"))
         hits = apply_post_filters(
-            ri, raw, args.k,
-            filter_method=getattr(args, 'filter_method'),
-            elements=getattr(args, 'element'),
-            req_precursors=getattr(args, 'require_precursor'),
-            req_additives=getattr(args, 'require_additive'),
-            req_seeds=getattr(args, 'require_seed'),
-            composition_filter=getattr(args, 'composition', None),
+            ri,
+            raw,
+            args.k,
+            filter_method=getattr(args, "filter_method"),
+            elements=getattr(args, "element"),
+            req_precursors=getattr(args, "require_precursor"),
+            req_additives=getattr(args, "require_additive"),
+            req_seeds=getattr(args, "require_seed"),
+            composition_filter=getattr(args, "composition", None),
         )
         hits = rerank_by_slot_coverage(hits, args)
         show_hits(hits, q_str)
@@ -995,7 +1106,7 @@ def main():
     if args.cmd == "export-context":
         ri = RagIndex()
         ri.load(args.idx)
-        n_pre = max(args.k * (args.preselect if hasattr(args, 'preselect') else 10), args.k)
+        n_pre = max(args.k * (args.preselect if hasattr(args, "preselect") else 10), args.k)
 
         q_str = format_query(
             composition=args.composition,
@@ -1020,19 +1131,21 @@ def main():
         raw = ri.retrieve_lexical(q_str, k=n_pre, min_score=getattr(args, "min_lex_score"))
 
         hits = apply_post_filters(
-            ri, raw, args.k,
-            filter_method=getattr(args, 'filter_method'),
-            elements=getattr(args, 'element'),
-            req_precursors=getattr(args, 'require_precursor'),
-            req_additives=getattr(args, 'require_additive'),
-            req_seeds=getattr(args, 'require_seed'),
-            composition_filter=getattr(args, 'composition', None),
+            ri,
+            raw,
+            args.k,
+            filter_method=getattr(args, "filter_method"),
+            elements=getattr(args, "element"),
+            req_precursors=getattr(args, "require_precursor"),
+            req_additives=getattr(args, "require_additive"),
+            req_seeds=getattr(args, "require_seed"),
+            composition_filter=getattr(args, "composition", None),
         )
         hits = rerank_by_slot_coverage(hits, args)
-        lines: List[str] = [h.retrieval_text for h in hits if h.retrieval_text]
+        lines: list[str] = [h.retrieval_text for h in hits if h.retrieval_text]
         # de-dup while preserving order
         seen = set()
-        out_lines: List[str] = []
+        out_lines: list[str] = []
         for line in lines:
             if line and line not in seen:
                 seen.add(line)
@@ -1042,6 +1155,7 @@ def main():
                 f.write(f"- {line}\n")
         rprint(Panel.fit(f"[green]Saved context[/]\n{args.out} ({len(out_lines)} lines)"))
         return
+
 
 if __name__ == "__main__":
     main()

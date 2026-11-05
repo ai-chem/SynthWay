@@ -10,42 +10,39 @@ Workflow:
 """
 
 from pathlib import Path as _Path
+
 _REPO_ROOT = _Path(__file__).resolve().parents[1]
 import argparse
+import json
 import logging
 import os
 import sys
-import json
-import time
 import threading
-from pathlib import Path
+import time
 from types import SimpleNamespace
-from credentials import load_credentials
-from google import genai
-import requests
 
+import requests
 import utils
-from utils import parse_model_routes_output, save_routes_to_directory
 
 # RAG and Prompt Imports
-from build_rag_index import RagIndex, format_query, apply_post_filters, rerank_by_slot_coverage
+from build_rag_index import RagIndex, apply_post_filters, format_query, rerank_by_slot_coverage
+from credentials import load_credentials
+from google import genai
 from prompt import (
-    role_information_component,
-    task_description_component,
-    rag_integration_component,
-    planning_requirement_component,
-    explanation_requirement_component,
-    structured_output_format_component,
     detailed_requirements_component,
+    explanation_requirement_component,
+    planning_requirement_component,
+    rag_integration_component,
+    role_information_component,
+    structured_output_format_component,
+    task_description_component,
 )
+from utils import parse_model_routes_output, save_routes_to_directory
 
-
-# --- Setup ---
+# Setup
 # Shared with both evaluators and the demo; independent of the launch directory.
 load_credentials()
-logging.basicConfig(
-    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
-)
+logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
 # Read keys (do NOT hard-fail globally — only fail when a provider is actually used)
 GEMINI_KEY = (os.getenv("GEMINI_API_KEY") or "").strip() or None
@@ -56,7 +53,9 @@ OPENROUTER_APP_URL = (os.getenv("OPENROUTER_APP_URL") or "http://localhost").str
 OPENROUTER_APP_NAME = (os.getenv("OPENROUTER_APP_NAME") or "SynthWay").strip()
 
 # ITMO Ollama endpoint (no API key required)
-OLLAMA_ENDPOINT = (os.getenv("OLLAMA_ENDPOINT") or "https://aicltr.itmo.ru/ollama/api/generate").strip()
+OLLAMA_ENDPOINT = (
+    os.getenv("OLLAMA_ENDPOINT") or "https://aicltr.itmo.ru/ollama/api/generate"
+).strip()
 OLLAMA_DEFAULT_MODEL = (os.getenv("OLLAMA_MODEL") or "deepseek-v2:16b").strip()
 
 # Google (Gemini) client
@@ -81,20 +80,22 @@ openrouter_client = (
     else None
 )
 
-# --- OpenRouter usage accounting (tokens + cost) ---
+# OpenRouter usage accounting (tokens + cost)
 # OpenRouter adds usage fields (prompt/completion/total tokens) and often includes `cost`.
-# We store the last response usage in-process so callers can persist/log it.
+# Cache the last response usage for callers to persist or log.
 _OPENROUTER_LAST_USAGE: dict | None = None
 
 # Per-call usage log (one record per OpenRouter API call in this process)
 _OPENROUTER_USAGE_LOG: list[dict] = []
 
-# --- OpenRouter last call timing accounting ---
+# OpenRouter last call timing accounting
 _OPENROUTER_LAST_CALL_TIME_S: float | None = None
+
 
 def _set_openrouter_last_call_time_s(dt_s: float | None) -> None:
     global _OPENROUTER_LAST_CALL_TIME_S
     _OPENROUTER_LAST_CALL_TIME_S = dt_s
+
 
 def get_openrouter_last_call_time_s() -> float | None:
     """Return duration (seconds) of the last OpenRouter chat completion call in this process."""
@@ -105,7 +106,6 @@ def _usage_to_dict(usage_obj) -> dict | None:
     """Convert OpenAI/OpenRouter usage object into a plain dict (best-effort)."""
     if usage_obj is None:
         return None
-
 
     # If it already looks like a dict
     if isinstance(usage_obj, dict):
@@ -138,7 +138,7 @@ def _usage_to_dict(usage_obj) -> dict | None:
         if v is not None:
             out[k] = v
 
-    # If we got nothing, try a last-resort dict() cast
+    # Fall back to dict(usage_obj) when no usage fields were extracted.
     if not out:
         try:
             return dict(usage_obj)
@@ -176,6 +176,7 @@ def get_openrouter_last_usage() -> dict | None:
     """Return the last OpenRouter usage dict captured in this process."""
     return _OPENROUTER_LAST_USAGE
 
+
 def _append_openrouter_usage_log(rec: dict) -> None:
     """Append one OpenRouter call accounting record to the in-process log."""
     global _OPENROUTER_USAGE_LOG
@@ -196,6 +197,7 @@ def reset_openrouter_usage_log() -> None:
     global _OPENROUTER_USAGE_LOG
     _OPENROUTER_USAGE_LOG = []
 
+
 def list_available_models() -> None:
     """Print available models and whether they are callable in the current environment."""
     print("Available models:")
@@ -213,7 +215,6 @@ AVAILABLE_MODELS = {
     "gemini-2.0-flash-001": {"provider": "google", "client": google_client},
     "gemini-3-flash-preview": {"provider": "google", "client": google_client},
     "gemini-3-pro-preview": {"provider": "google", "client": google_client},
-
     # OpenRouter models (OpenAI-compatible endpoint)
     "tngtech/deepseek-r1t2-chimera": {"provider": "openrouter", "client": openrouter_client},
     "qwen/qwen3-4b:free": {"provider": "openrouter", "client": openrouter_client},
@@ -230,10 +231,11 @@ AVAILABLE_MODELS = {
     "deepseek/deepseek-v3.2": {"provider": "openrouter", "client": openrouter_client},
     "google/gemini-3-pro-preview": {"provider": "openrouter", "client": openrouter_client},
     "google/gemini-3-flash-preview": {"provider": "openrouter", "client": openrouter_client},
-    "nvidia/nemotron-3-super-120b-a12b:free": {"provider": "openrouter", "client": openrouter_client},
+    "nvidia/nemotron-3-super-120b-a12b:free": {
+        "provider": "openrouter",
+        "client": openrouter_client,
+    },
     "google/gemini-3.1-pro-preview": {"provider": "openrouter", "client": openrouter_client},
-
-
     # ITMO Ollama proxy (no key)
     "qwen3:8b": {"provider": "ollama", "client": OLLAMA_ENDPOINT},
     "mistral-small3.1:24b": {"provider": "ollama", "client": OLLAMA_ENDPOINT},
@@ -252,7 +254,6 @@ AVAILABLE_MODELS = {
     "qwen2.5vl:72b": {"provider": "ollama", "client": OLLAMA_ENDPOINT},
     "mistral-small3.1:latest": {"provider": "ollama", "client": OLLAMA_ENDPOINT},
     "llama4:latest": {"provider": "ollama", "client": OLLAMA_ENDPOINT},
-
     # # OpenRouter models (examples)
     # "deepseek/deepseek-chat-v3-0324": {"provider": "openrouter", "client": openrouter_client},
     # "deepseek/deepseek-r1": {"provider": "openrouter", "client": openrouter_client},
@@ -275,15 +276,12 @@ AVAILABLE_MODELS = {
 DEFAULT_RAG_INDEX_DIR = f"{_REPO_ROOT}/synthway/index"
 DEFAULT_LLM_OUTPUT_DIR = f"{_REPO_ROOT}/outputs/generation"
 
-# --- RAG index cache (avoid re-loading SentenceTransformer & index per case) ---
+# RAG index cache (avoid re-loading SentenceTransformer & index per case)
 _RAG_INDEX_CACHE: dict[str, "RagIndex"] = {}
 
-def get_cached_rag_index(rag_idx_dir: str) -> "RagIndex":
-    """Load RagIndex once per process and reuse it across cases.
 
-    This avoids repeatedly loading heavy components (e.g., SentenceTransformer)
-    inside RagIndex on every case in batch mode.
-    """
+def get_cached_rag_index(rag_idx_dir: str) -> "RagIndex":
+    """Load and cache RagIndex by directory for reuse across cases."""
     if rag_idx_dir in _RAG_INDEX_CACHE:
         return _RAG_INDEX_CACHE[rag_idx_dir]
 
@@ -292,7 +290,6 @@ def get_cached_rag_index(rag_idx_dir: str) -> "RagIndex":
     logging.info("RAG index loaded from %s (cached)", rag_idx_dir)
     _RAG_INDEX_CACHE[rag_idx_dir] = ri
     return ri
-
 
 
 class _SafeDict(dict):
@@ -351,7 +348,9 @@ def _call_openrouter(client, model: str, prompt: str) -> str:
             pt,
             ct,
             tt,
-            f"{cost:.6f}" if isinstance(cost, (int, float)) else (str(cost) if cost is not None else "n/a"),
+            f"{cost:.6f}"
+            if isinstance(cost, (int, float))
+            else (str(cost) if cost is not None else "n/a"),
             float(_dt) if isinstance(_dt, (int, float)) else -1.0,
         )
 
@@ -364,7 +363,7 @@ def _call_openrouter(client, model: str, prompt: str) -> str:
     return content
 
 
-# --- Ollama rate limiting (per-process) ---
+# Ollama rate limiting (per-process)
 _OLLAMA_MIN_INTERVAL_SEC = float(
     (os.getenv("OLLAMA_MIN_INTERVAL_SEC") or os.getenv("LLM_MIN_INTERVAL_SEC") or "0").strip()
 )
@@ -372,7 +371,7 @@ _OLLAMA_RATE_LOCK = threading.Lock()
 _OLLAMA_LAST_CALL_TS = 0.0
 
 
-# --- Gemini rate limiting (per-process) ---
+# Gemini rate limiting (per-process)
 # Set GEMINI_MIN_INTERVAL_SEC (or LLM_MIN_INTERVAL_SEC) to enforce a minimum delay
 # between consecutive Gemini requests within this process.
 # Example: RPM=5 -> interval=12.0 sec.
@@ -444,6 +443,7 @@ def call_llm(provider: str, client, model: str, prompt: str) -> str:
         return _call_ollama(client, model, prompt)
     raise ValueError(f"Unknown provider: {provider}")
 
+
 def _get_provider_client_for_model(model_name: str):
     """Resolve provider+client for a model name with the same readiness checks as generation."""
     chosen_model = (model_name or "").strip()
@@ -492,12 +492,10 @@ def regenerate_single_route_with_feedback(
     reviewer_feedback: str,
     attempt_no: int,
 ) -> tuple[dict | None, str]:
-    """Regenerate ONE route using reviewer feedback injected into the prompt.
+    """Regenerate one route using reviewer feedback.
 
-    Returns: (route_dict_or_None, raw_model_output_text)
-
-    Notes:
-    - We DO NOT re-run retrieval here. Caller is expected to pass the same contexts.
+    Reuse the supplied contexts without repeating retrieval.
+    Return (route_dict_or_None, raw_model_output_text).
     """
 
     comp = (composition or "").strip() or "UNKNOWN"
@@ -545,7 +543,9 @@ def regenerate_single_route_with_feedback(
             pt,
             ct,
             tt,
-            f"{cost:.6f}" if isinstance(cost, (int, float)) else (str(cost) if cost is not None else "n/a"),
+            f"{cost:.6f}"
+            if isinstance(cost, (int, float))
+            else (str(cost) if cost is not None else "n/a"),
             float(_dt) if isinstance(_dt, (int, float)) else -1.0,
         )
 
@@ -555,8 +555,11 @@ def regenerate_single_route_with_feedback(
 
     return routes[0], (predicted_text or "")
 
+
 # synthway helper functions
-def assemble_composite_prompt(composition: str, num_routes: int, contexts, method: str | None = None) -> str:
+def assemble_composite_prompt(
+    composition: str, num_routes: int, contexts, method: str | None = None
+) -> str:
     """
     Assemble a seven-part composite prompt with the top-k RAG contexts.
     """
@@ -569,12 +572,16 @@ def assemble_composite_prompt(composition: str, num_routes: int, contexts, metho
         method_hint = f"\n\n[Note] When possible, prefer the **{method}** method.\n"
 
     fmt_block = structured_output_format_component
-    fmt_block = fmt_block.replace("{composition}", composition).replace("{num_routes}", str(num_routes))
+    fmt_block = fmt_block.replace("{composition}", composition).replace(
+        "{num_routes}", str(num_routes)
+    )
 
     prompt = (
         role_information_component
         + task_description_component.format(num_routes=num_routes, composition=composition)
-        + rag_integration_component.format(composition=composition, rag_evidence_block=rag_block, num_routes=num_routes)
+        + rag_integration_component.format(
+            composition=composition, rag_evidence_block=rag_block, num_routes=num_routes
+        )
         + planning_requirement_component.format(composition=composition)
         + explanation_requirement_component
         + fmt_block
@@ -582,6 +589,7 @@ def assemble_composite_prompt(composition: str, num_routes: int, contexts, metho
         + method_hint
     )
     return prompt
+
 
 def parse_arguments():
     """Parse command line arguments."""
@@ -592,14 +600,22 @@ def parse_arguments():
     parser.add_argument(
         "--model", dest="models", action="append", help="Specific model(s) to test."
     )
-    parser.add_argument(
-        "--list-models", action="store_true", help="List all available models."
-    )
+    parser.add_argument("--list-models", action="store_true", help="List all available models.")
     # Direct synthway generation mode
-    parser.add_argument("--composition", type=str, help="Target composition formula for direct generation (enables synthway mode).")
+    parser.add_argument(
+        "--composition",
+        type=str,
+        help="Target composition formula for direct generation (enables synthway mode).",
+    )
     parser.add_argument("--method", type=str, help="Desired synthesis method (optional).")
-    parser.add_argument("--num-routes", type=int, default=3, help="Number of routes to generate in direct mode.")
-    parser.add_argument("--llm-output-dir", default=DEFAULT_LLM_OUTPUT_DIR, help="Where to save per-route JSONs in direct mode.")
+    parser.add_argument(
+        "--num-routes", type=int, default=3, help="Number of routes to generate in direct mode."
+    )
+    parser.add_argument(
+        "--llm-output-dir",
+        default=DEFAULT_LLM_OUTPUT_DIR,
+        help="Where to save per-route JSONs in direct mode.",
+    )
 
     # Batch mode via stratified dataset (JSONL with fields id, composition, method, retrieval_text)
     parser.add_argument(
@@ -613,52 +629,98 @@ def parse_arguments():
     )
 
     # RAG knobs (query, filters, index paths)
-    parser.add_argument("--rag-idx", default=DEFAULT_RAG_INDEX_DIR, help="Path to RAG index directory.")
-    parser.add_argument("--rag-topk", type=int, default=5, help="How many contexts to inject into the prompt.")
-    parser.add_argument("--rag-min-lex-score", type=float, default=None, help="Min cosine threshold for TF-IDF retrieval (0..1).")
-    parser.add_argument("--rag-filter-method", type=str, help="Post-filter by method (case-insensitive contains).")
-    parser.add_argument("--rag-element", action="append", help="Require element(s) to be present in the hit (repeatable).")
-    parser.add_argument("--rag-require-precursor", action="append", help="Require precursor name(s) to occur (repeatable).")
-    parser.add_argument("--rag-require-additive", action="append", help="Require additive name(s) to occur (repeatable).")
-    parser.add_argument("--rag-require-seed", action="append", help="Require seed name(s) to occur (repeatable).")
-    parser.add_argument("--rag-preselect", type=int, default=30, help="Preselect multiplier before post-filtering (k*preselect).")
+    parser.add_argument(
+        "--rag-idx", default=DEFAULT_RAG_INDEX_DIR, help="Path to RAG index directory."
+    )
+    parser.add_argument(
+        "--rag-topk", type=int, default=5, help="How many contexts to inject into the prompt."
+    )
+    parser.add_argument(
+        "--rag-min-lex-score",
+        type=float,
+        default=None,
+        help="Min cosine threshold for TF-IDF retrieval (0..1).",
+    )
+    parser.add_argument(
+        "--rag-filter-method", type=str, help="Post-filter by method (case-insensitive contains)."
+    )
+    parser.add_argument(
+        "--rag-element",
+        action="append",
+        help="Require element(s) to be present in the hit (repeatable).",
+    )
+    parser.add_argument(
+        "--rag-require-precursor",
+        action="append",
+        help="Require precursor name(s) to occur (repeatable).",
+    )
+    parser.add_argument(
+        "--rag-require-additive",
+        action="append",
+        help="Require additive name(s) to occur (repeatable).",
+    )
+    parser.add_argument(
+        "--rag-require-seed", action="append", help="Require seed name(s) to occur (repeatable)."
+    )
+    parser.add_argument(
+        "--rag-preselect",
+        type=int,
+        default=30,
+        help="Preselect multiplier before post-filtering (k*preselect).",
+    )
 
     # RAG query fields (used to build the query string; optional)
-    parser.add_argument("--rag-shape", type=str, help="Optional shape hint for query (e.g., spherical).")
+    parser.add_argument(
+        "--rag-shape", type=str, help="Optional shape hint for query (e.g., spherical)."
+    )
     parser.add_argument("--rag-solvent", type=str, help="Optional solvent name for query.")
     parser.add_argument("--rag-temperature", type=float, help="Optional temperature for query.")
     parser.add_argument("--rag-time", type=float, help="Optional time (hours) for query.")
     parser.add_argument("--rag-pH", type=float, help="Optional pH for query.")
-    parser.add_argument("--rag-precursor", action="append", help="Optional precursor(s) to include in the query (repeatable).")
-    parser.add_argument("--rag-additive", action="append", help="Optional additive(s) to include in the query (repeatable).")
-    parser.add_argument("--rag-seed", action="append", help="Optional seed(s) to include in the query (repeatable).")
+    parser.add_argument(
+        "--rag-precursor",
+        action="append",
+        help="Optional precursor(s) to include in the query (repeatable).",
+    )
+    parser.add_argument(
+        "--rag-additive",
+        action="append",
+        help="Optional additive(s) to include in the query (repeatable).",
+    )
+    parser.add_argument(
+        "--rag-seed", action="append", help="Optional seed(s) to include in the query (repeatable)."
+    )
 
     args = parser.parse_args()
     return args
-def generate_synthesis_routes(composition: str,
-                              method: str | None,
-                              num_routes: int,
-                              output_dir: str,
-                              rag_idx_dir: str,
-                              rag_topk: int,
-                              rag_min_lex_score: float | None,
-                              rag_filter_method: str | None,
-                              rag_elements: list[str] | None,
-                              rag_req_precursors: list[str] | None,
-                              rag_req_additives: list[str] | None,
-                              rag_req_seeds: list[str] | None,
-                              rag_preselect: int,
-                              model_name: str | None,
-                              rag_shape: str | None = None,
-                              rag_solvent: str | None = None,
-                              rag_temperature: float | None = None,
-                              rag_time: float | None = None,
-                              rag_pH: float | None = None,
-                              rag_precursors: list[str] | None = None,
-                              rag_additives: list[str] | None = None,
-                              rag_seeds: list[str] | None = None):
+
+
+def generate_synthesis_routes(
+    composition: str,
+    method: str | None,
+    num_routes: int,
+    output_dir: str,
+    rag_idx_dir: str,
+    rag_topk: int,
+    rag_min_lex_score: float | None,
+    rag_filter_method: str | None,
+    rag_elements: list[str] | None,
+    rag_req_precursors: list[str] | None,
+    rag_req_additives: list[str] | None,
+    rag_req_seeds: list[str] | None,
+    rag_preselect: int,
+    model_name: str | None,
+    rag_shape: str | None = None,
+    rag_solvent: str | None = None,
+    rag_temperature: float | None = None,
+    rag_time: float | None = None,
+    rag_pH: float | None = None,
+    rag_precursors: list[str] | None = None,
+    rag_additives: list[str] | None = None,
+    rag_seeds: list[str] | None = None,
+):
     """
-    Full workflow: load index, retrieve top-k examples, assemble the seven-part prompt, call Gemini, parse JSON, and save separate files.
+    Retrieve contexts, assemble the prompt, call the selected model, and save parsed routes.
     """
     case_t0 = time.perf_counter()
     # 1) RAG: load the index (cached per process)
@@ -675,7 +737,7 @@ def generate_synthesis_routes(composition: str,
         precursors=rag_precursors,
         seeds=rag_seeds,
         time=rag_time,
-        pH=rag_pH
+        pH=rag_pH,
     )
     # Semantic query expansion without an additional composition boost
     q_str = ri.expand_query_with_denselex(q_str)
@@ -684,7 +746,9 @@ def generate_synthesis_routes(composition: str,
     n_pre = max(rag_topk * (rag_preselect if rag_preselect else 10), rag_topk)
     raw_hits = ri.retrieve_lexical(q_str, k=n_pre, min_score=rag_min_lex_score)
     hits = apply_post_filters(
-        ri, raw_hits, rag_topk,
+        ri,
+        raw_hits,
+        rag_topk,
         filter_method=rag_filter_method,
         elements=rag_elements,
         req_precursors=rag_req_precursors,
@@ -715,7 +779,7 @@ def generate_synthesis_routes(composition: str,
     contexts = [h.retrieval_text for h in hits if h.retrieval_text][:rag_topk]
     logging.info("RAG retrieved %d/%d contexts.", len(contexts), rag_topk)
 
-    # --- Save retrieval context to JSON ---
+    # Save retrieval context to JSON
     try:
         os.makedirs(output_dir, exist_ok=True)
         rc_path = os.path.join(output_dir, "retrieval_context.json")
@@ -760,9 +824,7 @@ def generate_synthesis_routes(composition: str,
 
     if provider == "openrouter" and not client:
         if OpenAI is None:
-            raise RuntimeError(
-                "OpenRouter requires 'openai'. Install it: pip install openai"
-            )
+            raise RuntimeError("OpenRouter requires 'openai'. Install it: pip install openai")
         raise RuntimeError(
             "An OpenRouter model was selected, but OPENROUTER_API_KEY was not found. "
             "Set the key in .env or as an environment variable."
@@ -775,14 +837,14 @@ def generate_synthesis_routes(composition: str,
         )
 
     # 6) Call the model
-    # Reset per-call OpenRouter accounting for this case so we can attribute calls to the case.
+    # Reset OpenRouter usage accounting for this case.
     if provider == "openrouter":
         reset_openrouter_usage_log()
     llm_t0 = time.perf_counter()
     predicted_text = call_llm(provider, client, chosen_model, prompt)
     llm_call_time_s = time.perf_counter() - llm_t0
 
-    # --- OpenRouter: persist accounting (input+output tokens and $ cost) ---
+    # OpenRouter: persist accounting (input+output tokens and $ cost)
     if provider == "openrouter":
         usage = get_openrouter_last_usage() or {}
         try:
@@ -816,15 +878,19 @@ def generate_synthesis_routes(composition: str,
                 "total_tokens": usage.get("total_tokens"),
                 "cost_usd": usage.get("cost"),
                 "usage_raw": usage,
-                # New: per-case totals across all calls
+                # Per-case totals across all calls.
                 "openrouter_calls_total": int(len(log_entries)),
                 "openrouter_prompt_tokens_total": int(totals.get("prompt_tokens", 0)),
                 "openrouter_completion_tokens_total": int(totals.get("completion_tokens", 0)),
                 "openrouter_total_tokens_total": int(totals.get("total_tokens", 0)),
                 "openrouter_cost_usd_total": float(totals.get("cost", 0.0)),
-                # New: OpenRouter pure LLM time (sum across all API calls)
+                # Total API-call time, excluding local waits.
                 "openrouter_llm_time_s_total": round(float(openrouter_llm_time_s_total), 6),
-                "openrouter_llm_time_s_last": (round(float(openrouter_llm_time_s_last), 6) if isinstance(openrouter_llm_time_s_last, (int, float)) else None),
+                "openrouter_llm_time_s_last": (
+                    round(float(openrouter_llm_time_s_last), 6)
+                    if isinstance(openrouter_llm_time_s_last, (int, float))
+                    else None
+                ),
             }
             with open(usage_path, "w", encoding="utf-8") as f:
                 json.dump(payload, f, ensure_ascii=False, indent=2)
@@ -838,12 +904,18 @@ def generate_synthesis_routes(composition: str,
             except Exception as e:
                 logging.error("Failed to persist OpenRouter per-call usage log: %s", e)
 
-            # Extra friendly log line (input+output combined)
+            # Log total tokens and cost.
             if payload.get("total_tokens") is not None:
                 logging.info(
                     "[OpenRouter cost] input+output=%s tokens | cost=$%s",
                     payload.get("total_tokens"),
-                    f"{payload['cost_usd']:.6f}" if isinstance(payload.get("cost_usd"), (int, float)) else (str(payload.get("cost_usd")) if payload.get("cost_usd") is not None else "n/a"),
+                    f"{payload['cost_usd']:.6f}"
+                    if isinstance(payload.get("cost_usd"), (int, float))
+                    else (
+                        str(payload.get("cost_usd"))
+                        if payload.get("cost_usd") is not None
+                        else "n/a"
+                    ),
                 )
         except Exception as e:
             logging.error("Failed to persist OpenRouter usage accounting: %s", e)
@@ -856,7 +928,7 @@ def generate_synthesis_routes(composition: str,
         raw_fp = os.path.join(output_dir, "route_raw.txt")
         with open(raw_fp, "w", encoding="utf-8") as f:
             f.write(predicted_text or "")
-        # --- Persist timing even on parse failure ---
+        # Persist timing even on parse failure
         try:
             case_total_time_s = time.perf_counter() - case_t0
             timing_path = os.path.join(output_dir, "timing.json")
@@ -875,13 +947,21 @@ def generate_synthesis_routes(composition: str,
                         with open(usage_path, "r", encoding="utf-8") as uf:
                             up = json.load(uf) or {}
                         if "openrouter_llm_time_s_total" in up:
-                            timing_payload["openrouter_llm_time_s_total"] = up.get("openrouter_llm_time_s_total")
+                            timing_payload["openrouter_llm_time_s_total"] = up.get(
+                                "openrouter_llm_time_s_total"
+                            )
                         if "openrouter_calls_total" in up:
-                            timing_payload["openrouter_calls_total"] = up.get("openrouter_calls_total")
+                            timing_payload["openrouter_calls_total"] = up.get(
+                                "openrouter_calls_total"
+                            )
                         if "openrouter_total_tokens_total" in up:
-                            timing_payload["openrouter_total_tokens_total"] = up.get("openrouter_total_tokens_total")
+                            timing_payload["openrouter_total_tokens_total"] = up.get(
+                                "openrouter_total_tokens_total"
+                            )
                         if "openrouter_cost_usd_total" in up:
-                            timing_payload["openrouter_cost_usd_total"] = up.get("openrouter_cost_usd_total")
+                            timing_payload["openrouter_cost_usd_total"] = up.get(
+                                "openrouter_cost_usd_total"
+                            )
                 except Exception:
                     pass
             with open(timing_path, "w", encoding="utf-8") as tf:
@@ -899,7 +979,7 @@ def generate_synthesis_routes(composition: str,
             logging.error("Failed to persist timing on parse failure: %s", e)
         return
     save_routes_to_directory(routes, output_dir)
-    # --- Persist timing on success ---
+    # Persist timing on success
     try:
         case_total_time_s = time.perf_counter() - case_t0
 
@@ -928,13 +1008,19 @@ def generate_synthesis_routes(composition: str,
                     with open(usage_path, "r", encoding="utf-8") as uf:
                         up = json.load(uf) or {}
                     if "openrouter_llm_time_s_total" in up:
-                        timing_payload["openrouter_llm_time_s_total"] = up.get("openrouter_llm_time_s_total")
+                        timing_payload["openrouter_llm_time_s_total"] = up.get(
+                            "openrouter_llm_time_s_total"
+                        )
                     if "openrouter_calls_total" in up:
                         timing_payload["openrouter_calls_total"] = up.get("openrouter_calls_total")
                     if "openrouter_total_tokens_total" in up:
-                        timing_payload["openrouter_total_tokens_total"] = up.get("openrouter_total_tokens_total")
+                        timing_payload["openrouter_total_tokens_total"] = up.get(
+                            "openrouter_total_tokens_total"
+                        )
                     if "openrouter_cost_usd_total" in up:
-                        timing_payload["openrouter_cost_usd_total"] = up.get("openrouter_cost_usd_total")
+                        timing_payload["openrouter_cost_usd_total"] = up.get(
+                            "openrouter_cost_usd_total"
+                        )
             except Exception:
                 pass
         with open(timing_path, "w", encoding="utf-8") as tf:
@@ -944,7 +1030,6 @@ def generate_synthesis_routes(composition: str,
         logging.error("Failed to persist timing: %s", e)
 
 
-# --- Batch mode: run synthway for all (composition, method) pairs in stratified dataset ---
 def run_batch_from_stratified_dataset(args) -> None:
     """Run synthway route generation for each row in the stratified JSONL.
 
@@ -1014,10 +1099,7 @@ def run_batch_from_stratified_dataset(args) -> None:
                     has_routes = any(
                         name.startswith("route_") and name.endswith(".json")
                         for name in existing_files
-                    ) or any(
-                        name == "route_raw.txt"
-                        for name in existing_files
-                    )
+                    ) or any(name == "route_raw.txt" for name in existing_files)
                     if has_routes:
                         logging.info(
                             "[BATCH] Case %s already has generated routes, skipping.",

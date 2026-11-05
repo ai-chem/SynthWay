@@ -4,7 +4,6 @@ from __future__ import annotations
 import argparse
 import hashlib
 import importlib.util
-import json
 import os
 import shutil
 import sys
@@ -14,7 +13,6 @@ from dataclasses import asdict
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Iterable, Sequence
-
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 RUNS_DIR = SCRIPT_DIR.parent
@@ -28,13 +26,10 @@ PROJECT_ROOT = RAG_LLM_DIR.parent
 if str(RAG_LLM_DIR) not in sys.path:
     sys.path.insert(0, str(RAG_LLM_DIR))
 
-import regenerate_cross_judge_expert_faithfulness as experiment  # noqa: E402
 import _regeneration as base_regen  # noqa: E402
+import regenerate_cross_judge_expert_faithfulness as experiment  # noqa: E402
 
-
-DEFAULT_OUT_ROOT = (
-    RUNS_DIR / "repeat_2"
-)
+DEFAULT_OUT_ROOT = RUNS_DIR / "repeat_2"
 DEFAULT_ARM_KEY = "gen_nemotron_3_nano__judge_claude_opus_4_5"
 DEFAULT_CASE_ID = "2108.json_PEG_coated_Fe3O4_3226"
 DEFAULT_ROUTE_NAME = "route_1.json"
@@ -90,7 +85,9 @@ def utc_now() -> str:
 
 
 def safe_slug(value: str) -> str:
-    return "".join(character if character.isalnum() or character in "-_." else "_" for character in value)
+    return "".join(
+        character if character.isalnum() or character in "-_." else "_" for character in value
+    )
 
 
 def sha256(path: Path) -> str | None:
@@ -154,21 +151,15 @@ def replace_target_rows(
     route_name: str,
 ) -> list[dict[str, Any]]:
     target_indices = [
-        index
-        for index, row in enumerate(existing)
-        if target_matches(row, case_id, route_name)
+        index for index, row in enumerate(existing) if target_matches(row, case_id, route_name)
     ]
     if not target_indices:
         raise ValueError(f"Target {case_id}/{route_name} is absent from the existing JSONL file.")
     first_target = min(target_indices)
     insert_at = sum(
-        1
-        for row in existing[:first_target]
-        if not target_matches(row, case_id, route_name)
+        1 for row in existing[:first_target] if not target_matches(row, case_id, route_name)
     )
-    retained = [
-        row for row in existing if not target_matches(row, case_id, route_name)
-    ]
+    retained = [row for row in existing if not target_matches(row, case_id, route_name)]
     return retained[:insert_at] + list(replacement) + retained[insert_at:]
 
 
@@ -218,12 +209,8 @@ def validate_target(
 
     attempts = experiment.read_jsonl(attempts_path)
     summaries = experiment.read_jsonl(summaries_path)
-    old_attempts = [
-        row for row in attempts if target_matches(row, case_id, route_name)
-    ]
-    old_summaries = [
-        row for row in summaries if target_matches(row, case_id, route_name)
-    ]
+    old_attempts = [row for row in attempts if target_matches(row, case_id, route_name)]
+    old_summaries = [row for row in summaries if target_matches(row, case_id, route_name)]
     if not old_attempts:
         raise ValueError(f"No attempts found for {case_id}/{route_name}.")
     if len(old_summaries) != 1:
@@ -236,9 +223,7 @@ def validate_target(
     judge = experiment.JudgeSpec(**arm_config["judge"])
     expected_arm_key = experiment._arm_key(generator, judge)
     if expected_arm_key != arm_key:
-        raise ValueError(
-            f"Generator/judge config resolves to {expected_arm_key}, not {arm_key}."
-        )
+        raise ValueError(f"Generator/judge config resolves to {expected_arm_key}, not {arm_key}.")
 
     return {
         "manifest": manifest,
@@ -390,8 +375,7 @@ def create_backup(
         "old_attempt_count": len(target["old_attempts"]),
         "old_summary": target["old_summary"],
         "checksums": {
-            str(relative_path): sha256(out_root / relative_path)
-            for relative_path in relative_files
+            str(relative_path): sha256(out_root / relative_path) for relative_path in relative_files
         },
     }
     experiment.write_json(backup_root / "backup_manifest.json", backup_manifest)
@@ -444,13 +428,9 @@ def experiment_arms_from_manifest(
     manifest: dict[str, Any],
 ) -> list[tuple[experiment.GeneratorSpec, experiment.JudgeSpec]]:
     generators = {
-        item["key"]: experiment.GeneratorSpec(**item)
-        for item in manifest.get("generators", [])
+        item["key"]: experiment.GeneratorSpec(**item) for item in manifest.get("generators", [])
     }
-    judges = {
-        item["key"]: experiment.JudgeSpec(**item)
-        for item in manifest.get("judges", [])
-    }
+    judges = {item["key"]: experiment.JudgeSpec(**item) for item in manifest.get("judges", [])}
     arms: list[tuple[experiment.GeneratorSpec, experiment.JudgeSpec]] = []
     for arm in manifest.get("arms", []):
         generator_key = arm.get("generator_key")
@@ -598,11 +578,7 @@ def main() -> None:
     rpm_limit = (
         float(args.rpm_limit)
         if args.rpm_limit is not None
-        else (
-            float(arm_config["rpm_limit"])
-            if arm_config.get("rpm_limit") is not None
-            else None
-        )
+        else (float(arm_config["rpm_limit"]) if arm_config.get("rpm_limit") is not None else None)
     )
 
     print("Validated targeted recovery:")

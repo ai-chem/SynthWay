@@ -1,10 +1,10 @@
 """Verify the Claude–Llama example against the released ratings and regeneration records."""
 
-from collections import Counter
-from pathlib import Path
 import csv
 import json
 import math
+from collections import Counter
+from pathlib import Path
 
 from openpyxl import load_workbook
 
@@ -18,7 +18,9 @@ def route_key(path):
 
 def recompute_score(item):
     categories = {row["claim_index"]: row["category"] for row in item["expert_claim_categories"]}
-    counts = Counter((categories[row["claim_index"]], row["verdict"]) for row in item["expert_verdicts"])
+    counts = Counter(
+        (categories[row["claim_index"]], row["verdict"]) for row in item["expert_verdicts"]
+    )
     parts = []
     for number in range(1, 5):
         name = f"q{number}"
@@ -45,7 +47,8 @@ def verify(bundle):
     book.close()
     expected = {
         ("1", row["ID"], row["run"]): row["faithfulness_score"]
-        for row in ratings if row["generator"] == bundle["generator"] and row["judge"] == bundle["judge"]
+        for row in ratings
+        if row["generator"] == bundle["generator"] and row["judge"] == bundle["judge"]
     }
     with (ROOT / "data/cross_judge_ratings.csv").open(encoding="utf-8", newline="") as stream:
         for row in csv.DictReader(stream):
@@ -62,9 +65,11 @@ def verify(bundle):
             if identity in seen or identity not in expected:
                 raise ValueError(f"Repeated or unexpected evaluation: {identity}")
             seen.add(identity)
-            value = recompute_score(item) if run["table"] == "1" else item[
-                "score" if run["table"] == "S18" else "faithfulness_score"
-            ]
+            value = (
+                recompute_score(item)
+                if run["table"] == "1"
+                else item["score" if run["table"] == "S18" else "faithfulness_score"]
+            )
             if not math.isclose(value, expected[identity], abs_tol=1e-12):
                 raise ValueError(f"Evaluation differs from the table input: {identity}")
             groups[run["table"], run["run"]] += 1
@@ -74,11 +79,17 @@ def verify(bundle):
         raise ValueError("The example does not cover the complete pair.")
 
     for run in bundle["regeneration_runs"]:
-        source = PROJECT / f"synthway/regenerate_runs/repeat_{run['repeat']}/tables/attempt_trajectories_long.csv"
+        source = (
+            PROJECT
+            / f"synthway/regenerate_runs/repeat_{run['repeat']}/tables/attempt_trajectories_long.csv"
+        )
         with source.open(encoding="utf-8", newline="") as stream:
             expected_attempts = {
-                (row["case_id"], row["route_name"], int(row["attempt_no"]), row["metric"]): float(row["score"])
-                for row in csv.DictReader(stream) if row["arm_key"] == run["arm_key"]
+                (row["case_id"], row["route_name"], int(row["attempt_no"]), row["metric"]): float(
+                    row["score"]
+                )
+                for row in csv.DictReader(stream)
+                if row["arm_key"] == run["arm_key"]
             }
         observed_attempts = {}
         for item in run["records"]:
@@ -93,16 +104,23 @@ def verify(bundle):
             if not math.isclose(score, expected_attempts[key], abs_tol=1e-12):
                 raise ValueError(f"Regeneration score differs: {key}")
     print(f"Verified {len(seen)} evaluations across Table 1, S18 and S19.")
-    print(f"Verified {sum(len(run['records']) for run in bundle['regeneration_runs'])} regeneration attempts.")
+    print(
+        f"Verified {sum(len(run['records']) for run in bundle['regeneration_runs'])} regeneration attempts."
+    )
 
     example = bundle["worked_example"]
     for run in bundle["evaluation_runs"]:
         if run["table"] != "1":
             continue
-        item = next(row for row in run["records"]
-                    if route_key(row["path"]) == route_key(example["route_source"]))
-        print(f"{bundle['judge']} judging {bundle['generator']} / Ag / route_3 / "
-              f"{run['run']}: {item['faithfulness_score']:.5f}")
+        item = next(
+            row
+            for row in run["records"]
+            if route_key(row["path"]) == route_key(example["route_source"])
+        )
+        print(
+            f"{bundle['judge']} judging {bundle['generator']} / Ag / route_3 / "
+            f"{run['run']}: {item['faithfulness_score']:.5f}"
+        )
 
 
 if __name__ == "__main__":

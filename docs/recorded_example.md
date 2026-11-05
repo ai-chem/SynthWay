@@ -1,6 +1,6 @@
 # View a recorded Ag synthesis example
 
-This optional example displays a previously generated Ag synthesis route, its recorded evaluations, and the associated laboratory outcome. It uses saved study data and requires no API key; it does not generate or evaluate new routes.
+This example displays a saved Ag synthesis route, its recorded evaluations, and the laboratory outcome.
 
 ## Run the example
 
@@ -10,7 +10,7 @@ With Python 3.12 installed, open a terminal in the repository root (the director
 python3.12 scripts/recorded_example.py
 ```
 
-The [script](../scripts/recorded_example.py) uses only the Python standard library. No package installation or model calls are needed. For a new generation and evaluation run, follow [Installation and usage](../README.md#installation-and-usage).
+The [script](../scripts/recorded_example.py) uses the Python standard library and runs offline. For new generation and evaluation, see [Installation and usage](../README.md#installation-and-usage).
 
 ## What it shows
 

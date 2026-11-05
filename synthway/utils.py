@@ -9,21 +9,20 @@ Module responsibilities:
   • find each route's `retrieval_text: ...` index line, strip outer quotes if present, and preserve its contents;
   • return dictionaries of the form {"raw_text": "...without index line...", "retrieval_text": "...without outer quotes..."}.
 
-Other modules handle:
-- RAG indexing and composite prompts (`rag_index.py`/`build_rag_index.py` and `prompt.py`).
+RAG indexing and prompt assembly are implemented in build_rag_index.py and prompt.py.
 """
+
 import json
 import logging
 import os
 import re
 import time
 from datetime import datetime
+
 from google.genai import types
 
 
-# ------------------------------
 # FS / Logging
-# ------------------------------
 def sanitize_filename(filename: str) -> str:
     """Sanitize a filename for cross-platform writing.
     Replace characters invalid on Windows (`<>:"/\\|?*`) with underscores.
@@ -33,10 +32,12 @@ def sanitize_filename(filename: str) -> str:
     return re.sub(invalid_chars, "_", filename)
 
 
-def setup_logging(log_filename: str | None = None,
-                  model_name: str | None = None,
-                  start_index: int = 0,
-                  end_index: int | None = None) -> str:
+def setup_logging(
+    log_filename: str | None = None,
+    model_name: str | None = None,
+    start_index: int = 0,
+    end_index: int | None = None,
+) -> str:
     """Initialize file logging in `./logs`.
     Automatically append a timestamp and batch suffix (`_start{n}[_end{m}]`).
     Return the created log file path.
@@ -49,9 +50,11 @@ def setup_logging(log_filename: str | None = None,
     timestamp = None
     if log_filename is None:
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        log_filename = (f"logs/retrosynthesis_{model_name}_{timestamp}.log"
-                        if model_name else
-                        f"logs/retrosynthesis_test_{timestamp}.log")
+        log_filename = (
+            f"logs/retrosynthesis_{model_name}_{timestamp}.log"
+            if model_name
+            else f"logs/retrosynthesis_test_{timestamp}.log"
+        )
     else:
         if not log_filename.startswith("logs/"):
             log_filename = os.path.join("logs", log_filename)
@@ -73,16 +76,11 @@ def setup_logging(log_filename: str | None = None,
         level=logging.INFO,
         format="%(asctime)s - %(levelname)s - %(message)s",
     )
-    logging.info(
-        "Logging initialized. Start Index: %s, End Index: %s",
-        start_index, end_index
-    )
+    logging.info("Logging initialized. Start Index: %s, End Index: %s", start_index, end_index)
     return log_filename
 
 
-# ------------------------------
 # LLM call (Gemini)
-# ------------------------------
 def get_precursors(client, model_name: str, prompt: str, delay: float = 2) -> str | None:
     """Unified LLM call (Google Gemini through the `google-genai` SDK).
     Respect rate limits; return response text, or `None` on failure.
@@ -107,8 +105,12 @@ def get_precursors(client, model_name: str, prompt: str, delay: float = 2) -> st
             for model_family, rpm in gemini_rate_limits.items():
                 if model_name.startswith(model_family):
                     model_delay = 60.0 / rpm
-                    logging.info("Using rate limit for %s: %s RPM (%.2f s delay)",
-                                 model_family, rpm, model_delay)
+                    logging.info(
+                        "Using rate limit for %s: %s RPM (%.2f s delay)",
+                        model_family,
+                        rpm,
+                        model_delay,
+                    )
                     break
             logging.info("Applying delay of %.2f seconds for %s", model_delay, model_name)
             time.sleep(model_delay)
@@ -138,7 +140,9 @@ def get_precursors(client, model_name: str, prompt: str, delay: float = 2) -> st
                 out_text = str(response)
             return out_text.strip()
 
-        logging.error("Unsupported model provider: %s. Only Google Gemini models are allowed.", model_name)
+        logging.error(
+            "Unsupported model provider: %s. Only Google Gemini models are allowed.", model_name
+        )
         return None
 
     except Exception as e:
@@ -147,11 +151,10 @@ def get_precursors(client, model_name: str, prompt: str, delay: float = 2) -> st
         return None
 
 
-# ------------------------------
 # synthway: multi-text routes parsing & saving
-# ------------------------------
-def parse_model_routes_output(response_text: str,
-                              expected_num_routes: int | None = None) -> list[dict]:
+def parse_model_routes_output(
+    response_text: str, expected_num_routes: int | None = None
+) -> list[dict]:
     """Parse narrative routes from a model response.
     Require a `retrieval_text:` line in every block.
     """
@@ -172,7 +175,9 @@ def parse_model_routes_output(response_text: str,
     return routes
 
 
-def save_routes_to_directory(routes: list[dict], output_dir: str, prefix: str = "route_") -> list[str]:
+def save_routes_to_directory(
+    routes: list[dict], output_dir: str, prefix: str = "route_"
+) -> list[str]:
     """Save each route to `{output_dir}/{prefix}{i}.json` (UTF-8, indent=2)."""
     os.makedirs(output_dir, exist_ok=True)
     saved_paths: list[str] = []
@@ -188,17 +193,13 @@ def save_routes_to_directory(routes: list[dict], output_dir: str, prefix: str = 
     return saved_paths
 
 
-# ------------------------------
 # Text parsing helpers
-# ------------------------------
 # Supports:
 # - "Route N: ..." blocks split by headings,
 # - a "retrieval_text: ..." index line whose value may be quoted,
 # - removal of only the retrieval_text line from raw_text, preserving everything else.
 
-_ROUTE_HDR_RE = re.compile(
-    r"(?im)^\s*(?:[#]{1,6}\s*)?(?:[-*]\s*)?Route\s+\d+\s*(?::|-)?\s*.*$"
-)
+_ROUTE_HDR_RE = re.compile(r"(?im)^\s*(?:[#]{1,6}\s*)?(?:[-*]\s*)?Route\s+\d+\s*(?::|-)?\s*.*$")
 _RT_LINE_RE = re.compile(r"(?im)^\s*retrieval_text\s*:\s*(.+)$")
 
 
@@ -220,7 +221,7 @@ def _split_routes_by_headers(text: str) -> list[str]:
 
 
 def _unwrap_outer_quotes(s: str) -> str:
-    """Strip EXACTLY one pair of outer quotes if they enclose the entire string.
+    """Strip exactly one pair of outer quotes if they enclose the entire string.
     Supported pairs: " … ", ' … ', “ … ”, « … ».
     Preserve the inner contents.
     """
@@ -228,7 +229,7 @@ def _unwrap_outer_quotes(s: str) -> str:
     pairs = [('"', '"'), ("'", "'"), ("“", "”"), ("«", "»")]
     for lq, rq in pairs:
         if s.startswith(lq) and s.endswith(rq):
-            return s[len(lq):-len(rq)].strip()
+            return s[len(lq) : -len(rq)].strip()
     return s
 
 
@@ -247,7 +248,7 @@ def _cleanup_retrieval_text(rt: str) -> str:
 
 def _extract_text_routes(response_text: str) -> list[dict]:
     """Extract routes from a text response. Return a list of dictionaries:
-       {"retrieval_text": <string without outer quotes>, "raw_text": <procedure without index line>}.
+    {"retrieval_text": <string without outer quotes>, "raw_text": <procedure without index line>}.
     """
     if not isinstance(response_text, str):
         return []
@@ -272,8 +273,5 @@ def _extract_text_routes(response_text: str) -> list[dict]:
         # Remove all retrieval_text lines from the raw route text
         raw_no_rt = re.sub(_RT_LINE_RE, "", blk).strip()
 
-        routes.append({
-            "retrieval_text": rt_clean,
-            "raw_text": raw_no_rt
-        })
+        routes.append({"retrieval_text": rt_clean, "raw_text": raw_no_rt})
     return routes

@@ -103,5 +103,3 @@ Additional requirements:
 • Not Applicable Scenario: if proposing a retrosynthesis for this material is clearly impossible within known methods, return “False” instead of providing any route description.
 • Index line: each route MUST end with exactly one pipe-separated line starting with “retrieval_text: …” as specified in Block #6; use “null” for unknown values.
 """
-
-

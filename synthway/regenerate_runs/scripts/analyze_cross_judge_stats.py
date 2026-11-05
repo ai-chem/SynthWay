@@ -17,15 +17,13 @@ DEFAULT_RUN_DIRS = [
     RUNS_DIR / "repeat_2",
     RUNS_DIR / "repeat_3",
 ]
-DEFAULT_OUT_DIR = (
-    RUNS_DIR / "cross_judge_expert_faithfulness_three_run_stats"
-)
+DEFAULT_OUT_DIR = RUNS_DIR / "cross_judge_expert_faithfulness_three_run_stats"
 
 METRICS = ["chemical_geval", "answer_relevancy", "faithfulness"]
 METRIC_LABELS = {
     "chemical_geval": "Chemical plausibility",
     "answer_relevancy": "Answer relevancy",
-    "faithfulness": "New Faithfulness",
+    "faithfulness": "Synthesis-specific Faithfulness",
 }
 ROUTE_KEY = ["arm_key", "case_id", "route_name"]
 N_BOOT = 20000
@@ -70,14 +68,11 @@ def cluster_bootstrap(
     n_boot: int = N_BOOT,
     seed: int = SEED,
 ) -> dict[str, float]:
-    """Percentile bootstrap for a mean, resampling whole clusters.
+    """Estimate a mean and percentile interval by resampling whole clusters
+    with replacement.
 
-    ``values`` are route-level statistics (already averaged over repeats) and
-    ``clusters`` is the cluster label of each value.  Whole clusters are drawn
-    with replacement, so both between-cluster and within-cluster correlation
-    are preserved.  Percentile intervals are used because the estimand is a
-    proportion that can sit close to 0 or 1, where a Wald interval leaves the
-    unit interval.
+    values contains route-level statistics averaged over repeats; clusters
+    identifies their cases.
     """
     frame = pd.DataFrame({"value": values.to_numpy(float), "cluster": clusters.to_numpy()})
     frame = frame.dropna()
@@ -104,7 +99,7 @@ def cluster_bootstrap(
 
 
 def route_level(frame: pd.DataFrame, value: str) -> pd.DataFrame:
-    """Average repeats within a route (Miller rec. 3) and keep the cluster id."""
+    """Average repeats within each route and retain grouping keys."""
     return (
         frame.groupby(ROUTE_KEY + ["generator_key", "judge_key"], as_index=False)
         .agg(value=(value, "mean"), n_runs=("run", "nunique"))
@@ -118,7 +113,7 @@ def summarize(frame: pd.DataFrame, value: str, label: str, cluster: str = "case_
     return out
 
 
-# ---------------------------------------------------------------- null model
+# null model
 
 
 def beta_binomial_null(k: np.ndarray, n: np.ndarray, n_draws: int) -> dict[str, float]:
@@ -153,7 +148,9 @@ def beta_binomial_null(k: np.ndarray, n: np.ndarray, n_draws: int) -> dict[str, 
 # analyses
 
 
-def analyse_pass(attempts: pd.DataFrame, routes: pd.DataFrame, max_regens: int) -> tuple[pd.DataFrame, pd.DataFrame]:
+def analyse_pass(
+    attempts: pd.DataFrame, routes: pd.DataFrame, max_regens: int
+) -> tuple[pd.DataFrame, pd.DataFrame]:
     """Cumulative pass by attempt, with cluster-bootstrap intervals."""
     attempt_id = ["run"] + ROUTE_KEY + ["attempt_no"]
     status = attempts.groupby(attempt_id, as_index=False).agg(passed=("passed_all", "first"))
@@ -225,7 +222,7 @@ def analyse_paired(traj: pd.DataFrame, max_regens: int) -> pd.DataFrame:
             "p_exact_sign": float(p_exact),
         }
     )
-    # case level: fully independent units
+    # Aggregate gains by case_id.
     cl = gain.groupby("case_id", as_index=False).agg(gain=("gain", "mean"))
     pos, neg = int((cl.gain > 0).sum()), int((cl.gain < 0).sum())
     p_exact = stats.binomtest(pos, pos + neg, 0.5).pvalue if pos + neg else np.nan
@@ -248,22 +245,16 @@ def analyse_paired(traj: pd.DataFrame, max_regens: int) -> pd.DataFrame:
 
 
 def analyse_selection_bias(attempts: pd.DataFrame, routes: pd.DataFrame) -> pd.DataFrame:
-    """Compare the selected 'best' delta against deltas that are not selected.
-
-    Three estimands, all relative to attempt 1:
-      selected   : best-of-k, argmax over the reported judge scores.
-      one_regen  : attempt 2, restricted to routes whose attempt 1 failed.  The
-                   restriction defines the population the pipeline acts on and
-                   attempt 2 is never chosen on its outcome, so this is clean.
-      exhausted  : attempt 4, restricted to routes that used all four attempts
-                   (i.e. never passed).  No stopping-rule selection applies.
+    """Compare score changes relative to attempt 1:
+    - selected: the reported best attempt;
+    - one_regen: attempt 2 among routes whose initial attempt failed;
+    - exhausted: attempt 4 among routes with attempts_used == 4.
     """
     wide = attempts.pivot_table(
         index=["run"] + ROUTE_KEY + ["metric"], columns="attempt_no", values="score"
     )
-    status = (
-        attempts.groupby(["run"] + ROUTE_KEY + ["attempt_no"], as_index=False)
-        .agg(passed=("passed_all", "first"))
+    status = attempts.groupby(["run"] + ROUTE_KEY + ["attempt_no"], as_index=False).agg(
+        passed=("passed_all", "first")
     )
     init_fail = (
         status[status.attempt_no == 1].set_index(["run"] + ROUTE_KEY)["passed"].pipe(lambda s: ~s)
@@ -314,9 +305,8 @@ def analyse_judge_reliability(attempts: pd.DataFrame) -> tuple[pd.DataFrame, dic
         )
     reliability = pd.DataFrame(rows)
 
-    passed = (
-        a1.drop_duplicates(["run"] + ROUTE_KEY)
-        .pivot_table(index=ROUTE_KEY, columns="run", values="passed_all")
+    passed = a1.drop_duplicates(["run"] + ROUTE_KEY).pivot_table(
+        index=ROUTE_KEY, columns="run", values="passed_all"
     )
     k = passed.sum(axis=1).to_numpy(float)
     n = np.full_like(k, passed.shape[1])
@@ -348,8 +338,8 @@ def write_report(path: Path, blocks: dict) -> None:
     ]
     for _, r in overall.sort_values("step").iterrows():
         lines.append(
-            f"| {int(r.step)} | {100*r['mean']:.1f}% | "
-            f"[{100*r.lo:.1f}, {100*r.hi:.1f}] | {100*r.se:.1f} pp |"
+            f"| {int(r.step)} | {100 * r['mean']:.1f}% | "
+            f"[{100 * r.lo:.1f}, {100 * r.hi:.1f}] | {100 * r.se:.1f} pp |"
         )
     lines += [
         "",
@@ -360,11 +350,11 @@ def write_report(path: Path, blocks: dict) -> None:
         "",
         "| quantity | value |",
         "| --- | --- |",
-        f"| single-evaluation pass rate | {100*null['single_eval_pass']:.1f}% |",
-        f"| expected pass from 4 independent evaluations of the *unchanged* route | {100*null['null_pass_at_k']:.1f}% |",
-        f"| observed pass after 3 regenerations | {100*overall['mean'].iloc[-1]:.1f}% |",
-        f"| naive gain over initial | {100*(overall['mean'].iloc[-1]-null['single_eval_pass']):+.1f} pp |",
-        f"| gain over the judge-noise null | {100*(overall['mean'].iloc[-1]-null['null_pass_at_k']):+.1f} pp |",
+        f"| single-evaluation pass rate | {100 * null['single_eval_pass']:.1f}% |",
+        f"| expected pass from 4 independent evaluations of the *unchanged* route | {100 * null['null_pass_at_k']:.1f}% |",
+        f"| observed pass after 3 regenerations | {100 * overall['mean'].iloc[-1]:.1f}% |",
+        f"| naive gain over initial | {100 * (overall['mean'].iloc[-1] - null['single_eval_pass']):+.1f} pp |",
+        f"| gain over the judge-noise null | {100 * (overall['mean'].iloc[-1] - null['null_pass_at_k']):+.1f} pp |",
         "",
         "## 3. Judge test-retest reliability (identical input, temperature 0)",
         "",

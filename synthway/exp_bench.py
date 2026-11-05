@@ -26,19 +26,16 @@ The same route is matched across files by normalized route path.
 from __future__ import annotations
 
 from pathlib import Path as _Path
+
 _REPO_ROOT = _Path(__file__).resolve().parents[1]
 import json
-import math
 import re
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any
 
+# Configuration
 
-# =============================================================================
-# CONFIG
-# =============================================================================
-
-SLOT_ASSIGNMENTS: Dict[str, List[str]] = {
+SLOT_ASSIGNMENTS: dict[str, list[str]] = {
     "composition_top": [
         f"{_REPO_ROOT}/synthway/json/2288.json_NiO_2872.json",
         f"{_REPO_ROOT}/synthway/json/1561.json_Ag_1749.json",
@@ -91,22 +88,22 @@ SLOT_ASSIGNMENTS: Dict[str, List[str]] = {
     ],
 }
 
-MODEL_FILES: Dict[str, Dict[str, str]] = {
+MODEL_FILES: dict[str, dict[str, str]] = {
     "google_gemini-2.0-flash-001": {
         "faith": f"{_REPO_ROOT}/synthway/check_metrics/evaluate_faithfullness/generation_evaluate_faithfullness_google_gemini-2.0-flash-001.json",
-        "chem":  f"{_REPO_ROOT}/synthway/check_metrics/generation_rag_eval_correct/google_gemini-2.0-flash-001.json",
+        "chem": f"{_REPO_ROOT}/synthway/check_metrics/generation_rag_eval_correct/google_gemini-2.0-flash-001.json",
     },
     "claude-opus-4.5": {
         "faith": f"{_REPO_ROOT}/synthway/check_metrics/evaluate_faithfullness/generation_evaluate_faithfullness_anthropic_claude-opus-4.5.json",
-        "chem":  f"{_REPO_ROOT}/synthway/check_metrics/generation_rag_eval_correct/anthropic_claude-opus-4.5.json",
+        "chem": f"{_REPO_ROOT}/synthway/check_metrics/generation_rag_eval_correct/anthropic_claude-opus-4.5.json",
     },
     "meta-llama_llama-4-maverick": {
         "faith": f"{_REPO_ROOT}/synthway/check_metrics/evaluate_faithfullness/generation_evaluate_faithfullness_meta-llama_llama-4-maverick.json",
-        "chem":  f"{_REPO_ROOT}/synthway/check_metrics/generation_rag_eval_correct/llama-4-maverick.json",
+        "chem": f"{_REPO_ROOT}/synthway/check_metrics/generation_rag_eval_correct/llama-4-maverick.json",
     },
     "nvidia_nemotron-3-nano-30b-a3b_free": {
         "faith": f"{_REPO_ROOT}/synthway/check_metrics/evaluate_faithfullness/generation_evaluate_faithfullness_nvidia_nemotron-3-nano-30b-a3b_free.json",
-        "chem":  f"{_REPO_ROOT}/synthway/check_metrics/generation_rag_eval_correct/nvidia_nemotron-3-nano-30b-a3b_free.json",
+        "chem": f"{_REPO_ROOT}/synthway/check_metrics/generation_rag_eval_correct/nvidia_nemotron-3-nano-30b-a3b_free.json",
     },
 }
 
@@ -117,9 +114,8 @@ OUT_DIR.mkdir(parents=True, exist_ok=True)
 STRICT_MODE = True
 
 
-# =============================================================================
-# HELPERS
-# =============================================================================
+# Helpers
+
 
 def load_json_file(path: str) -> Any:
     p = Path(path)
@@ -178,11 +174,10 @@ def is_close(a: float, b: float, tol: float = 1e-12) -> bool:
     return abs(a - b) <= tol
 
 
-# =============================================================================
-# DATA PREP
-# =============================================================================
+# Data preparation
 
-def build_slot_lookup(slot_assignments: Dict[str, List[str]]) -> Dict[str, Dict[str, Any]]:
+
+def build_slot_lookup(slot_assignments: dict[str, list[str]]) -> dict[str, dict[str, Any]]:
     """
     Returns:
         {
@@ -195,10 +190,12 @@ def build_slot_lookup(slot_assignments: Dict[str, List[str]]) -> Dict[str, Dict[
           ...
         }
     """
-    lookup: Dict[str, Dict[str, Any]] = {}
+    lookup: dict[str, dict[str, Any]] = {}
     for slot_name, proposals in slot_assignments.items():
         if len(proposals) != 3:
-            raise ValueError(f"Slot {slot_name} must contain exactly 3 proposals, got {len(proposals)}")
+            raise ValueError(
+                f"Slot {slot_name} must contain exactly 3 proposals, got {len(proposals)}"
+            )
         for idx, proposal_path in enumerate(proposals, start=1):
             proposal_name = Path(proposal_path).name
             if proposal_name in lookup:
@@ -212,8 +209,8 @@ def build_slot_lookup(slot_assignments: Dict[str, List[str]]) -> Dict[str, Dict[
     return lookup
 
 
-def index_faith_file(faith_data: List[Dict[str, Any]]) -> Dict[str, Dict[str, Any]]:
-    indexed: Dict[str, Dict[str, Any]] = {}
+def index_faith_file(faith_data: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
+    indexed: dict[str, dict[str, Any]] = {}
     for row in faith_data:
         path = row.get("path")
         if not path:
@@ -222,8 +219,8 @@ def index_faith_file(faith_data: List[Dict[str, Any]]) -> Dict[str, Dict[str, An
     return indexed
 
 
-def index_chem_file(chem_data: List[Dict[str, Any]]) -> Dict[str, Dict[str, Any]]:
-    indexed: Dict[str, Dict[str, Any]] = {}
+def index_chem_file(chem_data: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
+    indexed: dict[str, dict[str, Any]] = {}
     for row in chem_data:
         path = row.get("path")
         if not path:
@@ -236,8 +233,8 @@ def merge_model_records(
     model_name: str,
     faith_path: str,
     chem_path: str,
-    slot_lookup: Dict[str, Dict[str, Any]],
-) -> List[Dict[str, Any]]:
+    slot_lookup: dict[str, dict[str, Any]],
+) -> list[dict[str, Any]]:
     faith_data = load_json_file(faith_path)
     chem_data = load_json_file(chem_path)
 
@@ -250,8 +247,8 @@ def merge_model_records(
     chem_idx = index_chem_file(chem_data)
 
     all_paths = sorted(set(faith_idx) | set(chem_idx))
-    records: List[Dict[str, Any]] = []
-    missing_pairs: List[str] = []
+    records: list[dict[str, Any]] = []
+    missing_pairs: list[str] = []
 
     for route_path in all_paths:
         faith_row = faith_idx.get(route_path)
@@ -310,13 +307,12 @@ def merge_model_records(
     return records
 
 
-# =============================================================================
-# SELECTION LOGIC
-# =============================================================================
+# Selection logic
+
 
 def choose_best_route_per_model_and_proposal(
-    merged_records: List[Dict[str, Any]]
-) -> Dict[Tuple[str, str, int], Dict[str, Any]]:
+    merged_records: list[dict[str, Any]],
+) -> dict[tuple[str, str, int], dict[str, Any]]:
     """
     Key:
       (model, slot, proposal_index)
@@ -324,13 +320,13 @@ def choose_best_route_per_model_and_proposal(
     Value:
       best route record among 3 routes of this proposal for this model.
     """
-    grouped: Dict[Tuple[str, str, int], List[Dict[str, Any]]] = {}
+    grouped: dict[tuple[str, str, int], list[dict[str, Any]]] = {}
 
     for rec in merged_records:
         key = (rec["model"], rec["slot"], rec["proposal_index"])
         grouped.setdefault(key, []).append(rec)
 
-    best: Dict[Tuple[str, str, int], Dict[str, Any]] = {}
+    best: dict[tuple[str, str, int], dict[str, Any]] = {}
 
     for key, items in grouped.items():
         # tie-breakers:
@@ -355,10 +351,10 @@ def choose_best_route_per_model_and_proposal(
 
 
 def choose_common_proposal_per_slot(
-    best_routes: Dict[Tuple[str, str, int], Dict[str, Any]],
-    model_names: List[str],
-    slot_assignments: Dict[str, List[str]],
-) -> Tuple[Dict[str, Dict[str, Any]], List[Dict[str, Any]]]:
+    best_routes: dict[tuple[str, str, int], dict[str, Any]],
+    model_names: list[str],
+    slot_assignments: dict[str, list[str]],
+) -> tuple[dict[str, dict[str, Any]], list[dict[str, Any]]]:
     """
     Returns:
       slot_winners:
@@ -376,15 +372,15 @@ def choose_common_proposal_per_slot(
       proposal_summary_rows:
         one row per slot x proposal, useful for csv/json export.
     """
-    slot_winners: Dict[str, Dict[str, Any]] = {}
-    proposal_summary_rows: List[Dict[str, Any]] = []
+    slot_winners: dict[str, dict[str, Any]] = {}
+    proposal_summary_rows: list[dict[str, Any]] = []
 
     for slot_name, proposals in slot_assignments.items():
-        candidate_rows: List[Dict[str, Any]] = []
+        candidate_rows: list[dict[str, Any]] = []
 
         for proposal_index, proposal_path in enumerate(proposals, start=1):
-            per_model_best: Dict[str, Dict[str, Any]] = {}
-            missing_models: List[str] = []
+            per_model_best: dict[str, dict[str, Any]] = {}
+            missing_models: list[str] = []
 
             for model_name in model_names:
                 key = (model_name, slot_name, proposal_index)
@@ -446,13 +442,13 @@ def choose_common_proposal_per_slot(
 
 
 def build_final_rows(
-    slot_winners: Dict[str, Dict[str, Any]],
-    model_names: List[str],
-) -> List[Dict[str, Any]]:
+    slot_winners: dict[str, dict[str, Any]],
+    model_names: list[str],
+) -> list[dict[str, Any]]:
     """
     Final output: 10 slots x 4 models = 40 rows
     """
-    rows: List[Dict[str, Any]] = []
+    rows: list[dict[str, Any]] = []
 
     for slot_name, info in slot_winners.items():
         for model_name in model_names:
@@ -478,27 +474,26 @@ def build_final_rows(
     return rows
 
 
-# =============================================================================
-# EXPORT
-# =============================================================================
+# Export
+
 
 def write_json(path: Path, obj: Any) -> None:
     with path.open("w", encoding="utf-8") as f:
         json.dump(obj, f, ensure_ascii=False, indent=2)
 
 
-def write_csv(path: Path, rows: List[Dict[str, Any]]) -> None:
+def write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
     if not rows:
         raise ValueError(f"No rows to write into {path}")
 
     import csv
 
     # flatten nested dicts if needed
-    flat_rows: List[Dict[str, Any]] = []
+    flat_rows: list[dict[str, Any]] = []
     all_keys = set()
 
     for row in rows:
-        flat: Dict[str, Any] = {}
+        flat: dict[str, Any] = {}
         for k, v in row.items():
             if isinstance(v, dict):
                 for subk, subv in v.items():
@@ -516,15 +511,11 @@ def write_csv(path: Path, rows: List[Dict[str, Any]]) -> None:
         writer.writerows(flat_rows)
 
 
-# =============================================================================
-# MAIN
-# =============================================================================
-
 def main() -> None:
     slot_lookup = build_slot_lookup(SLOT_ASSIGNMENTS)
     model_names = list(MODEL_FILES.keys())
 
-    all_records: List[Dict[str, Any]] = []
+    all_records: list[dict[str, Any]] = []
 
     for model_name, paths in MODEL_FILES.items():
         merged = merge_model_records(
@@ -592,10 +583,13 @@ def main() -> None:
     write_json(OUT_DIR / "all_merged_route_records.json", all_records)
     write_csv(OUT_DIR / "all_merged_route_records.csv", all_records)
 
-    write_json(OUT_DIR / "best_route_per_model_per_proposal.json", {
-        f"{model}__{slot}__proposal_{proposal_idx}": rec
-        for (model, slot, proposal_idx), rec in best_routes.items()
-    })
+    write_json(
+        OUT_DIR / "best_route_per_model_per_proposal.json",
+        {
+            f"{model}__{slot}__proposal_{proposal_idx}": rec
+            for (model, slot, proposal_idx), rec in best_routes.items()
+        },
+    )
 
     proposal_rows_export = []
     for row in proposal_summary_rows:

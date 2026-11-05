@@ -1,34 +1,21 @@
-"""
-evaluate_generation_deepeval.py
+r"""Evaluate generated routes with Chemical Plausibility & Consistency G-Eval.
 
-Evaluate generated synthesis routes (predictions.py outputs)
-using DeepEval / G-Eval.
+Read route_*.json recursively under --routes-dir. Each route contains retrieval_text
+and raw_text. Target composition and method come from the sibling retrieval_context.json,
+with retrieval_text as a fallback when metadata is missing.
+The judge receives the target request and both route representations.
 
-A case is:
-  - One JSON file from the LLM output directory:
-      {
-        "retrieval_text": "...",
-        "raw_text":      "..."
-      }
+The metric checks chemical plausibility, consistency between retrieval_text and raw_text,
+and completeness of the main synthesis stages.
 
-Approach:
-  - INPUT: target composition, target method, and brief task description.
-  - OUTPUT: retrieval_text combined with raw_text.
-  - Metric: custom GEval ("Chemical Plausibility & Consistency"):
-      * chemical plausibility (reagents, conditions),
-      * internal consistency between retrieval_text and raw_text,
-      * protocol completeness (main synthesis stages present).
-
-Example:
-  python synthway/evaluate_generation_deepeval.py \
-    --routes-dir "synthway/output_LLM" \
-    --eval-model "gemini-2.0-flash-001" \
-    --threshold 0.5 \
-    --out-json "synthway/output_analysis/generation_eval_Ag.json"
-
+Example after generation, from the repository root:
+    python synthway/evaluate_generation_deepeval.py --routes-dir outputs/generation \
+        --eval-model gemini-2.0-flash-001 --threshold 0.8 \
+        --out-json outputs/generation_eval_Ag.json
 """
 
 from pathlib import Path as _Path
+
 _REPO_ROOT = _Path(__file__).resolve().parents[1]
 import argparse
 import glob
@@ -37,14 +24,14 @@ import os
 import re
 import time
 import traceback
-from typing import Any, Dict, List, Optional
+
+# OpenRouter usage/cost accounting helper
+from typing import Any
 
 from openai import OpenAI
 
-# --- OpenRouter usage/cost accounting helper ---
-from typing import Any, Dict, Optional
 
-def _usage_to_dict(usage_obj) -> Optional[Dict[str, Any]]:
+def _usage_to_dict(usage_obj) -> dict[str, Any] | None:
     """Convert OpenAI/OpenRouter usage object into a plain dict (best-effort)."""
     if usage_obj is None:
         return None
@@ -60,7 +47,7 @@ def _usage_to_dict(usage_obj) -> Optional[Dict[str, Any]]:
     except Exception:
         pass
 
-    out: Dict[str, Any] = {}
+    out: dict[str, Any] = {}
     for k in (
         "prompt_tokens",
         "completion_tokens",
@@ -86,8 +73,11 @@ def _usage_to_dict(usage_obj) -> Optional[Dict[str, Any]]:
 
     return out
 
+
 from deepeval.metrics import GEval
-from deepeval.models import GPTModel, DeepEvalBaseLLM
+from deepeval.models import DeepEvalBaseLLM
+
+
 class OpenRouterChatModel(DeepEvalBaseLLM):
     """Universal DeepEval LLM wrapper for any OpenRouter chat model.
 
@@ -100,19 +90,19 @@ class OpenRouterChatModel(DeepEvalBaseLLM):
         model: str,
         api_key: str,
         base_url: str = "https://openrouter.ai/api/v1",
-        http_referer: Optional[str] = None,
-        x_title: Optional[str] = None,
+        http_referer: str | None = None,
+        x_title: str | None = None,
         temperature: float = 0.0,
     ) -> None:
         self.model = model
         self.api_key = api_key
         self.base_url = base_url
         self.temperature = temperature
-        self.last_response_text: Optional[str] = None
-        self.last_usage: Optional[Dict[str, Any]] = None
-        self.last_cost_usd: Optional[float] = None
+        self.last_response_text: str | None = None
+        self.last_usage: dict[str, Any] | None = None
+        self.last_cost_usd: float | None = None
         # Per-call accounting history (covers cases where a metric performs multiple LLM calls).
-        self.usage_log: List[Dict[str, Any]] = []
+        self.usage_log: list[dict[str, Any]] = []
 
         # OpenRouter recommends HTTP-Referer and X-Title headers to identify the client
         referer = http_referer or os.getenv("OPENROUTER_HTTP_REFERER") or "https://localhost"
@@ -139,7 +129,7 @@ class OpenRouterChatModel(DeepEvalBaseLLM):
             messages=[{"role": "user", "content": prompt}],
             temperature=self.temperature,
         )
-        # --- OpenRouter usage accounting (judge) ---
+        # OpenRouter usage accounting (judge)
         usage_dict = _usage_to_dict(getattr(response, "usage", None)) or {}
         if "cost" not in usage_dict:
             try:
@@ -178,12 +168,15 @@ class OpenRouterChatModel(DeepEvalBaseLLM):
 
     def get_model_name(self) -> str:
         return f"openrouter:{self.model}"
-from deepeval.test_case import LLMTestCase, LLMTestCaseParams
+
 
 from credentials import load_credentials
+from deepeval.test_case import LLMTestCase, LLMTestCaseParams
+
 load_credentials()
 
 # Parse arguments
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
@@ -214,8 +207,7 @@ def parse_args() -> argparse.Namespace:
         "--out-json",
         default=None,
         help=(
-            "Path to the JSON file for per-route results. "
-            "If omitted, print results to stdout only."
+            "Path to the JSON file for per-route results. If omitted, print results to stdout only."
         ),
     )
     parser.add_argument(
@@ -246,7 +238,8 @@ def parse_args() -> argparse.Namespace:
 
 # Helper functions
 
-def parse_composition_from_retrieval(retrieval_text: str) -> Optional[str]:
+
+def parse_composition_from_retrieval(retrieval_text: str) -> str | None:
     """
     Extract composition from retrieval_text of the form:
       'composition: Ag | method: ... | solvent: ... | ...'
@@ -263,7 +256,7 @@ def parse_composition_from_retrieval(retrieval_text: str) -> Optional[str]:
     return comp or None
 
 
-def parse_method_from_retrieval(retrieval_text: str) -> Optional[str]:
+def parse_method_from_retrieval(retrieval_text: str) -> str | None:
     if not retrieval_text:
         return None
     m = re.search(r"method:\s*([^|]+)", retrieval_text)
@@ -274,7 +267,7 @@ def parse_method_from_retrieval(retrieval_text: str) -> Optional[str]:
     return method or None
 
 
-def load_retrieval_context_for_route(route_path: str) -> Dict[str, Any]:
+def load_retrieval_context_for_route(route_path: str) -> dict[str, Any]:
     """
     Load retrieval_context.json from the same directory as route_*.json.
     Return the context dictionary, or an empty dictionary if the file is missing/unreadable.
@@ -293,7 +286,7 @@ def load_retrieval_context_for_route(route_path: str) -> Dict[str, Any]:
         return {}
 
 
-def load_routes_from_directory(routes_dir: str) -> List[Dict[str, Any]]:
+def load_routes_from_directory(routes_dir: str) -> list[dict[str, Any]]:
     """
     Recursively load all *.json files from a directory and its subdirectories; return a list of dictionaries:
       {
@@ -312,7 +305,7 @@ def load_routes_from_directory(routes_dir: str) -> List[Dict[str, Any]]:
     if not paths:
         raise RuntimeError(f"No route_*.json files found in {routes_dir!r}.")
 
-    routes: List[Dict[str, Any]] = []
+    routes: list[dict[str, Any]] = []
     for path in paths:
         with open(path, "r", encoding="utf-8") as f:
             data = json.load(f)
@@ -341,14 +334,16 @@ def load_routes_from_directory(routes_dir: str) -> List[Dict[str, Any]]:
                 "raw_text": raw_text,
                 "composition": comp,
                 "method": method,
-                "retrieval_context_path": os.path.join(os.path.dirname(path), "retrieval_context.json"),
+                "retrieval_context_path": os.path.join(
+                    os.path.dirname(path), "retrieval_context.json"
+                ),
             }
         )
 
     return routes
 
 
-def build_judge_model(eval_model: Optional[str]) -> Optional[Any]:
+def build_judge_model(eval_model: str | None) -> Any | None:
     """
     Prepare the judge model for G-Eval.
     """
@@ -456,7 +451,7 @@ def build_judge_model(eval_model: Optional[str]) -> Optional[Any]:
             "google/",
         ):
             if model_name.lower().startswith(prefix):
-                model_name = model_name[len(prefix):]
+                model_name = model_name[len(prefix) :]
                 break
 
         print(
@@ -473,7 +468,7 @@ def build_judge_model(eval_model: Optional[str]) -> Optional[Any]:
 
 def make_chemical_geval_metric(
     threshold: float,
-    judge_model: Optional[Any] = None,
+    judge_model: Any | None = None,
 ) -> GEval:
     """
     Build the G-Eval metric for this task:
@@ -511,7 +506,7 @@ def make_chemical_geval_metric(
         "Return ONLY the final numeric score between 0.0 and 1.0."
     )
 
-    metric_kwargs: Dict[str, Any] = dict(
+    metric_kwargs: dict[str, Any] = dict(
         name="Chemical Plausibility & Consistency",
         criteria=criteria,
         evaluation_params=[
@@ -521,14 +516,13 @@ def make_chemical_geval_metric(
         threshold=threshold,
     )
 
-
     if judge_model is not None:
         metric_kwargs["model"] = judge_model
 
     return GEval(**metric_kwargs)
 
 
-def build_test_case(route: Dict[str, Any]) -> LLMTestCase:
+def build_test_case(route: dict[str, Any]) -> LLMTestCase:
     """
     Build an LLMTestCase from a route dictionary.
     INPUT: target composition and method from retrieval_context.json
@@ -548,12 +542,7 @@ def build_test_case(route: Dict[str, Any]) -> LLMTestCase:
         "'raw_text' (step-by-step description)."
     )
 
-    actual_output = (
-        "retrieval_text:\n"
-        f"{retrieval_text}\n\n"
-        "raw_text:\n"
-        f"{raw_text}"
-    )
+    actual_output = f"retrieval_text:\n{retrieval_text}\n\nraw_text:\n{raw_text}"
 
     return LLMTestCase(
         input=input_text,
@@ -561,15 +550,15 @@ def build_test_case(route: Dict[str, Any]) -> LLMTestCase:
     )
 
 
-
 # Main logic
+
 
 def main() -> None:
     args = parse_args()
     run_t0 = time.perf_counter()
 
     # Resume mode: load previous results if available
-    existing_results: List[Dict[str, Any]] = []
+    existing_results: list[dict[str, Any]] = []
     processed_paths = set()
 
     if args.out_json and args.resume and os.path.exists(args.out_json):
@@ -584,15 +573,9 @@ def main() -> None:
                 if path and isinstance(score, (int, float)):
                     processed_paths.add(path)
 
-            print(
-                f"Resume mode: previously successful routes found: "
-                f"{len(processed_paths)}"
-            )
+            print(f"Resume mode: previously successful routes found: {len(processed_paths)}")
         except Exception as e:
-            print(
-                f"[WARN] Failed to load the existing results file "
-                f"{args.out_json!r}: {e}"
-            )
+            print(f"[WARN] Failed to load the existing results file {args.out_json!r}: {e}")
             existing_results = []
             processed_paths = set()
 
@@ -609,27 +592,32 @@ def main() -> None:
         )
 
     if args.max_cases is not None:
-        routes = routes[:args.max_cases]
+        routes = routes[: args.max_cases]
         print(f"Limiting routes to {len(routes)} using --max-cases.")
 
     # Resolve the judge model (string / GeminiModel / None)
     judge_model = build_judge_model(args.eval_model)
 
-    # --- run-level judge usage/cost accumulators (OpenRouter only; best-effort) ---
-    run_judge_usage_sum = {"prompt_tokens": 0, "completion_tokens": 0, "total_tokens": 0, "cost": 0.0}
+    # run-level judge usage/cost accumulators (OpenRouter only; best-effort)
+    run_judge_usage_sum = {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "cost": 0.0,
+    }
     run_judge_calls_total = 0
 
     # RPM limiter state
     rpm_limit: int = getattr(args, "rpm_limit", 15)
-    request_timestamps: List[float] = []
+    request_timestamps: list[float] = []
 
     # Build test cases only for routes to be evaluated now
-    test_cases: List[LLMTestCase] = [build_test_case(r) for r in routes]
+    test_cases: list[LLMTestCase] = [build_test_case(r) for r in routes]
 
     # Combine existing and new results
-    results: List[Dict[str, Any]] = list(existing_results)
+    results: list[dict[str, Any]] = list(existing_results)
 
-    # --- run health counters (errors / retries) ---
+    # run health counters (errors / retries)
     n_to_process = len(routes)
     n_success = 0
     n_errors = 0
@@ -646,7 +634,7 @@ def main() -> None:
     n_retries_transient = 0
 
     # Error type histogram
-    error_type_counts: Dict[str, int] = {}
+    error_type_counts: dict[str, int] = {}
 
     print(
         "Running the G-Eval metric "
@@ -681,7 +669,12 @@ def main() -> None:
             if nested is None:
                 continue
             nmsg = str(nested).lower()
-            if "429" in nmsg or "rate limit" in nmsg or "ratelimit" in nmsg or "too many requests" in nmsg:
+            if (
+                "429" in nmsg
+                or "rate limit" in nmsg
+                or "ratelimit" in nmsg
+                or "too many requests" in nmsg
+            ):
                 return True
             nstatus = getattr(nested, "status_code", None)
             if nstatus == 429:
@@ -725,19 +718,21 @@ def main() -> None:
                 return True
         try:
             import aiohttp  # type: ignore
+
             if isinstance(exc, aiohttp.ClientError):
                 return True
         except Exception:
             pass
         try:
             import grpc  # type: ignore
+
             if isinstance(exc, grpc.RpcError):
                 return True
         except Exception:
             pass
         return False
 
-    def _accumulate_usage(target: Dict[str, Any], usage: Optional[Dict[str, Any]]) -> None:
+    def _accumulate_usage(target: dict[str, Any], usage: dict[str, Any] | None) -> None:
         """Accumulate OpenRouter usage dict into target (best-effort)."""
         if not usage or not isinstance(usage, dict):
             return
@@ -755,7 +750,7 @@ def main() -> None:
                     target["cost"] = float(target.get("cost", 0.0)) + float(ac)
                     break
 
-    def _accumulate_usage_from_log(target: Dict[str, Any], entries: List[Dict[str, Any]]) -> None:
+    def _accumulate_usage_from_log(target: dict[str, Any], entries: list[dict[str, Any]]) -> None:
         """Accumulate usage across multiple judge calls (best-effort)."""
         if not entries:
             return
@@ -795,12 +790,17 @@ def main() -> None:
         route_t0 = time.perf_counter()
         route_total_time_s = None
 
-        # LLM-call time excludes our fixed sleeps / local rpm waits.
+        # LLM-call time excludes fixed pauses and local RPM waits.
         judge_llm_time_s = 0.0
         # Per-route judge accounting (OpenRouter only; best-effort)
         judge_attempts = 0
         judge_calls_total = 0
-        judge_usage_sum = {"prompt_tokens": 0, "completion_tokens": 0, "total_tokens": 0, "cost": 0.0}
+        judge_usage_sum = {
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "total_tokens": 0,
+            "cost": 0.0,
+        }
 
         try:
             metric = make_chemical_geval_metric(
@@ -818,7 +818,7 @@ def main() -> None:
                     )
                     _t_call = time.perf_counter()
                     metric.measure(tc)
-                    judge_llm_time_s += (time.perf_counter() - _t_call)
+                    judge_llm_time_s += time.perf_counter() - _t_call
 
                     # Count attempt and accumulate all judge calls that happened inside measure().
                     judge_attempts += 1
@@ -843,7 +843,7 @@ def main() -> None:
                 except Exception as e:
                     # Count time spent in the judge call for failed attempts as well
                     try:
-                        judge_llm_time_s += (time.perf_counter() - _t_call)
+                        judge_llm_time_s += time.perf_counter() - _t_call
                     except Exception:
                         pass
                     attempt += 1
@@ -874,7 +874,9 @@ def main() -> None:
                         )
                         time.sleep(2)
                         continue
-                    if attempt <= (max_json_retries + max_transient_retries) and _is_transient_exc(e):
+                    if attempt <= (max_json_retries + max_transient_retries) and _is_transient_exc(
+                        e
+                    ):
                         n_retries_total += 1
                         n_retries_transient += 1
                         route_retries_transient += 1
@@ -905,7 +907,9 @@ def main() -> None:
                 "judge_completion_tokens_total": int(judge_usage_sum.get("completion_tokens", 0)),
                 "judge_total_tokens_total": int(judge_usage_sum.get("total_tokens", 0)),
                 "judge_cost_usd_total": float(judge_usage_sum.get("cost", 0.0)),
-                "route_total_time_s": round(float(route_total_time_s), 6) if route_total_time_s is not None else None,
+                "route_total_time_s": round(float(route_total_time_s), 6)
+                if route_total_time_s is not None
+                else None,
                 "judge_llm_time_s": round(float(judge_llm_time_s), 6),
             }
             results.append(result)
@@ -936,14 +940,15 @@ def main() -> None:
             if is_transient:
                 n_transient_errors += 1
 
-            print(
-                f"\n[ERROR] Evaluation of {route['file']} failed with {err_type}: {e}"
-            )
+            print(f"\n[ERROR] Evaluation of {route['file']} failed with {err_type}: {e}")
 
             # Try extracting the root cause, including ClientError inside RetryError
             underlying = None
             try:
-                from tenacity import RetryError as TenacityRetryError  # Used by deepeval for retries
+                from tenacity import (
+                    RetryError as TenacityRetryError,
+                )  # Used by deepeval for retries
+
                 if isinstance(e, TenacityRetryError):
                     try:
                         underlying = e.last_attempt.exception()
@@ -960,16 +965,10 @@ def main() -> None:
                 )
 
             if getattr(e, "__cause__", None):
-                print(
-                    "[DEBUG] __cause__: "
-                    f"{type(e.__cause__).__name__}: {repr(e.__cause__)}"
-                )
+                print(f"[DEBUG] __cause__: {type(e.__cause__).__name__}: {repr(e.__cause__)}")
 
             if getattr(e, "__context__", None):
-                print(
-                    "[DEBUG] __context__: "
-                    f"{type(e.__context__).__name__}: {repr(e.__context__)}"
-                )
+                print(f"[DEBUG] __context__: {type(e.__context__).__name__}: {repr(e.__context__)}")
 
             # Full traceback to inspect the deepeval / aiohttp stack
             traceback.print_exc()
@@ -985,9 +984,7 @@ def main() -> None:
 
             reason_msg = f"ERROR during evaluation: {err_type}: {e}"
             if underlying is not None:
-                reason_msg += (
-                    f" | inner: {type(underlying).__name__}: {underlying}"
-                )
+                reason_msg += f" | inner: {type(underlying).__name__}: {underlying}"
             if judge_preview:
                 reason_msg += f" | judge_preview: {judge_preview}"
 
@@ -1045,7 +1042,9 @@ def main() -> None:
     print("\n=== RUN HEALTH (errors/retries) ===")
     print(f"Routes to process in this run: {n_to_process}")
     print(f"Successfully evaluated: {n_success}")
-    print(f"Errors: {n_errors} (network/transient: {n_transient_errors}, rate limit: {n_rate_limit})")
+    print(
+        f"Errors: {n_errors} (network/transient: {n_transient_errors}, rate limit: {n_rate_limit})"
+    )
     print(
         f"Total retries: {n_retries_total} "
         f"(invalid JSON: {n_retries_invalid_json}, transient: {n_retries_transient})"
@@ -1067,14 +1066,20 @@ def main() -> None:
         top_str = ", ".join([f"{k}={v}" for k, v in top])
         print(f"Most frequent error types: {top_str}")
 
-    # --- timing summary ---
+    # timing summary
     run_total_time_s = time.perf_counter() - run_t0
     print(f"Run total time (s): {run_total_time_s:.1f}")
 
-    timing_items = [r for r in results if isinstance(r, dict) and isinstance(r.get("route_total_time_s"), (int, float))]
+    timing_items = [
+        r
+        for r in results
+        if isinstance(r, dict) and isinstance(r.get("route_total_time_s"), (int, float))
+    ]
     if timing_items:
         avg_route = sum(float(r["route_total_time_s"]) for r in timing_items) / len(timing_items)
-        avg_judge_llm = sum(float(r.get("judge_llm_time_s", 0.0)) for r in timing_items) / len(timing_items)
+        avg_judge_llm = sum(float(r.get("judge_llm_time_s", 0.0)) for r in timing_items) / len(
+            timing_items
+        )
         print(f"Avg route time (s): {avg_route:.1f}")
         print(f"Avg CPC judge LLM time (s): {avg_judge_llm:.2f}")
 
@@ -1088,10 +1093,7 @@ def main() -> None:
         print("\n" + "=" * 72)
         print("[SUMMARY] Route sample results")
         print(f"Mean score: {avg_score:.3f}")
-        print(
-            f"PASSED share: {pass_rate * 100:.1f}% "
-            f"({sum(1 for p in passes if p)}/{len(passes)})"
-        )
+        print(f"PASSED share: {pass_rate * 100:.1f}% ({sum(1 for p in passes if p)}/{len(passes)})")
         print("=" * 72)
 
     # Save the JSON report (update/create the combined results file)

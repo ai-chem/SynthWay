@@ -2,20 +2,24 @@
 count_local_graphs.py counts node and edge frequencies in several representations (by node ID, by (name,label), by field:value, and by label->label roles) and saves JSON reports for building the global graph.
 - Main artifacts for the global graph: node_counts.json and edge_counts.json (ID-based representations)
 """
-import os
+
 import glob
 import json
+import os
+
 import networkx as nx
 
 
 def _node_key_str(name, label):
     return f"{name}|||{label}"
 
+
 def _edge_key_str(s_name, s_label, t_name, t_label):
     return f"{s_name}|||{s_label}>>> {t_name}|||{t_label}"
 
+
 def _split_field_value(name: str, label: str):
-    name  = (str(name)  if name  is not None else "").strip()
+    name = (str(name) if name is not None else "").strip()
     label = (str(label) if label is not None else "").strip()
 
     if label:
@@ -24,7 +28,6 @@ def _split_field_value(name: str, label: str):
         f, v = name.split(":", 1)
         return f.strip(), v.strip()
     return "", name
-
 
 
 # Frequency aggregators
@@ -51,10 +54,10 @@ edge_counts_by_node = {}
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_DIR = os.path.dirname(BASE_DIR)
-GRAPH_DIR = os.environ.get('SYNTHWAY_GRAPH_OUTPUT', os.path.join(REPO_DIR, 'outputs', 'graph'))
-LOCAL_DIR = os.path.join(GRAPH_DIR, 'local_graphs_without_synthesis')
+GRAPH_DIR = os.environ.get("SYNTHWAY_GRAPH_OUTPUT", os.path.join(REPO_DIR, "outputs", "graph"))
+LOCAL_DIR = os.path.join(GRAPH_DIR, "local_graphs_without_synthesis")
 PATTERN = os.path.join(LOCAL_DIR, "*.graphml")
-OUTPUT_DIR = os.path.join(GRAPH_DIR, 'analytics', 'local_counts')
+OUTPUT_DIR = os.path.join(GRAPH_DIR, "analytics", "local_counts")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 
@@ -134,8 +137,9 @@ with open(os.path.join(OUTPUT_DIR, "node_counts_by_field.json"), "w", encoding="
     json.dump(node_counts_by_field_clean, f, indent=2, ensure_ascii=False)
 
 _edge_counts_by_label_clean = {
-    k: v for k, v in edge_counts_by_label.items()
-    if '>>>' in k and k.split('>>>')[0].strip() and k.split('>>>')[1].strip()
+    k: v
+    for k, v in edge_counts_by_label.items()
+    if ">>>" in k and k.split(">>>")[0].strip() and k.split(">>>")[1].strip()
 }
 
 with open(os.path.join(OUTPUT_DIR, "edge_counts_by_label.json"), "w", encoding="utf-8") as f:
@@ -159,9 +163,10 @@ print(f"Unique edges (by node-id): {len(edge_counts_by_node)}")
 
 # Integrity check: both endpoints of every edge must exist in node_ids
 dangling = [
-    e for e in edge_counts_by_node
-    if e.split('>>>', 1)[0].strip() not in node_counts_by_id
-    or e.split('>>>', 1)[1].strip() not in node_counts_by_id
+    e
+    for e in edge_counts_by_node
+    if e.split(">>>", 1)[0].strip() not in node_counts_by_id
+    or e.split(">>>", 1)[1].strip() not in node_counts_by_id
 ]
 print(f"Dangling edges: {len(dangling)}")
 print(f"Saved analytics to: {OUTPUT_DIR}")

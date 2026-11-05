@@ -8,7 +8,7 @@ import os
 import shutil
 from pathlib import Path
 from random import Random
-from typing import Any, Dict, List, Tuple
+from typing import Any
 
 
 def stable_int_from_str(s: str) -> int:
@@ -17,9 +17,9 @@ def stable_int_from_str(s: str) -> int:
     return int(h[:8], 16)
 
 
-def permute_list(items: List[Any], strategy: str, rnd: Random) -> Tuple[List[Any], Dict[str, Any]]:
+def permute_list(items: list[Any], strategy: str, rnd: Random) -> tuple[list[Any], dict[str, Any]]:
     n = len(items)
-    meta: Dict[str, Any] = {"strategy": strategy, "n": n}
+    meta: dict[str, Any] = {"strategy": strategy, "n": n}
 
     if n <= 1:
         meta["note"] = "n<=1, unchanged"
@@ -51,7 +51,9 @@ def permute_list(items: List[Any], strategy: str, rnd: Random) -> Tuple[List[Any
     raise ValueError(f"Unknown strategy: {strategy}")
 
 
-def process_retrieval_context_file(src_path: Path, dst_path: Path, seed: int, strategy: str) -> Dict[str, Any]:
+def process_retrieval_context_file(
+    src_path: Path, dst_path: Path, seed: int, strategy: str
+) -> dict[str, Any]:
     data = json.loads(src_path.read_text(encoding="utf-8"))
 
     if not isinstance(data, dict):
@@ -74,20 +76,24 @@ def process_retrieval_context_file(src_path: Path, dst_path: Path, seed: int, st
     dst_path.parent.mkdir(parents=True, exist_ok=True)
     dst_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    meta.update({
-        "src": str(src_path),
-        "dst": str(dst_path),
-        "seed": seed,
-        "file_seed": file_seed,
-    })
+    meta.update(
+        {
+            "src": str(src_path),
+            "dst": str(dst_path),
+            "seed": seed,
+            "file_seed": file_seed,
+        }
+    )
     return meta
 
 
-def copy_tree_with_context_permutation(in_dir: Path, out_dir: Path, seed: int, strategy: str) -> List[Dict[str, Any]]:
-    manifests: List[Dict[str, Any]] = []
+def copy_tree_with_context_permutation(
+    in_dir: Path, out_dir: Path, seed: int, strategy: str
+) -> list[dict[str, Any]]:
+    manifests: list[dict[str, Any]] = []
 
     if out_dir.exists():
-        # We deliberately do NOT delete it automatically to avoid accidental data loss.
+        # Require a new output directory.
         raise FileExistsError(
             f"Output directory already exists: {out_dir}\n"
             f"Choose another --out-dir or delete it manually."
@@ -118,16 +124,24 @@ def main():
     ap = argparse.ArgumentParser(
         description="Clone routes-dir into out-dir, permuting retrieval_context order in each retrieval_context.json"
     )
-    ap.add_argument("--routes-dir", required=True, help="Input dataset root (output_LLM_stratified)")
-    ap.add_argument("--out-dir", required=True, help="Output dataset root (e.g., check_metrics/...)")
+    ap.add_argument(
+        "--routes-dir", required=True, help="Input dataset root (output_LLM_stratified)"
+    )
+    ap.add_argument(
+        "--out-dir", required=True, help="Output dataset root (e.g., check_metrics/...)"
+    )
     ap.add_argument("--seed", type=int, default=42, help="Base seed for deterministic shuffling")
     ap.add_argument(
         "--strategy",
         choices=["shuffle", "reverse", "rotate1", "swap_ends"],
         default="shuffle",
-        help="Permutation strategy for retrieval_context"
+        help="Permutation strategy for retrieval_context",
     )
-    ap.add_argument("--manifest-name", default="permutation_manifest.jsonl", help="Manifest file name in out-dir")
+    ap.add_argument(
+        "--manifest-name",
+        default="permutation_manifest.jsonl",
+        help="Manifest file name in out-dir",
+    )
     args = ap.parse_args()
 
     in_dir = Path(args.routes_dir).expanduser().resolve()
@@ -136,7 +150,9 @@ def main():
     if not in_dir.exists():
         raise FileNotFoundError(f"routes-dir not found: {in_dir}")
 
-    manifests = copy_tree_with_context_permutation(in_dir, out_dir, seed=args.seed, strategy=args.strategy)
+    manifests = copy_tree_with_context_permutation(
+        in_dir, out_dir, seed=args.seed, strategy=args.strategy
+    )
 
     manifest_path = out_dir / args.manifest_name
     with manifest_path.open("w", encoding="utf-8") as f:

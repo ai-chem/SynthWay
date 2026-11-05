@@ -1,7 +1,8 @@
 """Read a local graph collection, resolving unchanged files from the original collection."""
-from pathlib import Path
+
 import csv
 import hashlib
+from pathlib import Path
 
 
 def graph_paths(directory):

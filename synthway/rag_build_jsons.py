@@ -2,37 +2,38 @@
 # Build a RAG JSON corpus from local .graphml files only (one graph per synthesis), adding retrieval_text.
 
 from pathlib import Path as _Path
+
 _REPO_ROOT = _Path(__file__).resolve().parents[1]
 import argparse
 import sys
+
 sys.path.insert(0, str(_REPO_ROOT / "graph_reasoning"))
-from local_graph_files import graph_paths
 import json
 import os
 import re
-import pandas as pd
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any
+
 import networkx as nx
+import pandas as pd
+from local_graph_files import graph_paths
 from tqdm import tqdm
-
-
 
 # Directories
 PROJECT_ROOT = f"{_REPO_ROOT}"
 DATA_DIR = os.environ.get("SYNTHWAY_GRAPH_OUTPUT", os.path.join(PROJECT_ROOT, "outputs", "graph"))
-LOCAL_GRAPHS_DIR  = os.path.join(DATA_DIR, "local_graphs_renamed")
-OUTPUT_DIR        = os.path.join(PROJECT_ROOT, "synthway")
+LOCAL_GRAPHS_DIR = os.path.join(DATA_DIR, "local_graphs_renamed")
+OUTPUT_DIR = os.path.join(PROJECT_ROOT, "synthway")
 
 
 # Utilities
-def safe_filename(name: Optional[str], fallback: str = "doc") -> str:
+def safe_filename(name: str | None, fallback: str = "doc") -> str:
     s = (name or fallback).strip()
     s = re.sub(r'[\\/:*?"<>|]+', "_", s)
     s = re.sub(r"\s+", "_", s)
-    return (s[:120] or fallback)
+    return s[:120] or fallback
 
 
-def coalesce_str(x) -> Optional[str]:
+def coalesce_str(x) -> str | None:
     if x is None:
         return None
     try:
@@ -49,7 +50,7 @@ def coalesce_str(x) -> Optional[str]:
     return s
 
 
-def to_float(x) -> Optional[float]:
+def to_float(x) -> float | None:
     try:
         if x is None:
             return None
@@ -73,7 +74,7 @@ def to_float(x) -> Optional[float]:
         return None
 
 
-def parse_elements(formula: Optional[str]) -> Optional[List[str]]:
+def parse_elements(formula: str | None) -> list[str] | None:
     """Extract elements from formulas using a simple parser."""
     if not formula:
         return None
@@ -88,8 +89,6 @@ def parse_elements(formula: Optional[str]) -> Optional[List[str]]:
             out.append(t)
             seen.add(t)
     return out
-
-
 
 
 def prune_nones(obj: Any) -> Any:
@@ -107,15 +106,19 @@ def prune_nones(obj: Any) -> Any:
         return out
     elif isinstance(obj, list):
         out_list = [prune_nones(v) for v in obj]
-        out_list = [v for v in out_list if v is not None and not (isinstance(v, (list, dict)) and len(v) == 0)]
+        out_list = [
+            v
+            for v in out_list
+            if v is not None and not (isinstance(v, (list, dict)) and len(v) == 0)
+        ]
         return out_list
     else:
         return obj
 
 
-def build_retrieval_text(doc: Dict[str, Any]) -> str:
+def build_retrieval_text(doc: dict[str, Any]) -> str:
     """Flat document summary for embedding/search."""
-    parts: List[str] = []
+    parts: list[str] = []
 
     def add(label: str, val: Any):
         if val is None:
@@ -155,7 +158,7 @@ def build_retrieval_text(doc: Dict[str, Any]) -> str:
         for k, v in size.items():
             add(f"size.{k}", v)
 
-    def _fmt_reagent(entry: Dict[str, Any]) -> Optional[str]:
+    def _fmt_reagent(entry: dict[str, Any]) -> str | None:
         if not isinstance(entry, dict):
             return None
         nm = entry.get("name")
@@ -170,15 +173,15 @@ def build_retrieval_text(doc: Dict[str, Any]) -> str:
             details.append(f"conc {c}")
         return f"{nm} ({'; '.join(details)})" if details else nm
 
-    for p in (doc.get("precursors") or []):
+    for p in doc.get("precursors") or []:
         s = _fmt_reagent(p)
         if s:
             add("precursor", s)
-    for a in (doc.get("additives") or []):
+    for a in doc.get("additives") or []:
         s = _fmt_reagent(a)
         if s:
             add("additive", s)
-    for s in (doc.get("seeds") or []):
+    for s in doc.get("seeds") or []:
         s2 = _fmt_reagent(s)
         if s2:
             add("seed", s2)
@@ -187,10 +190,8 @@ def build_retrieval_text(doc: Dict[str, Any]) -> str:
     return " | ".join(parts)
 
 
-
-
 # GraphML parsing
-def _label_value_from_node(n: Any, data: Dict[str, Any]) -> Tuple[Optional[str], Optional[str]]:
+def _label_value_from_node(n: Any, data: dict[str, Any]) -> tuple[str | None, str | None]:
     label = data.get("label")
     value = data.get("name")
     nid = str(n)
@@ -201,10 +202,10 @@ def _label_value_from_node(n: Any, data: Dict[str, Any]) -> Tuple[Optional[str],
     return label, value
 
 
-def graph_to_doc(G: nx.DiGraph, synthesis_id_hint: Optional[str] = None) -> Optional[Dict[str, Any]]:
+def graph_to_doc(G: nx.DiGraph, synthesis_id_hint: str | None = None) -> dict[str, Any] | None:
     """Extract a document from one local graph (one graph per synthesis)."""
     # 1) composition
-    comp_vals: List[str] = []
+    comp_vals: list[str] = []
     for n, data in G.nodes(data=True):
         lab, val = _label_value_from_node(n, data)
         if lab == "composition" and val:
@@ -220,9 +221,7 @@ def graph_to_doc(G: nx.DiGraph, synthesis_id_hint: Optional[str] = None) -> Opti
         if s:
             synth_candidates.add(s)
     synthesis_id = (
-        next(iter(synth_candidates))
-        if synth_candidates
-        else coalesce_str(synthesis_id_hint)
+        next(iter(synth_candidates)) if synth_candidates else coalesce_str(synthesis_id_hint)
     )
 
     # 2) Simple fields
@@ -234,15 +233,15 @@ def graph_to_doc(G: nx.DiGraph, synthesis_id_hint: Optional[str] = None) -> Opti
     size_length = None
     size_width = None
     size_depth = None
-    pdfno_list: List[str] = []
+    pdfno_list: list[str] = []
 
-    precursors: List[Dict[str, Any]] = []
-    additives: List[Dict[str, Any]] = []
-    seeds: List[Dict[str, Any]] = []
+    precursors: list[dict[str, Any]] = []
+    additives: list[dict[str, Any]] = []
+    seeds: list[dict[str, Any]] = []
     solvent_name = None
     solvent_vol = None
 
-    out_map: Dict[Any, List[Any]] = {}
+    out_map: dict[Any, list[Any]] = {}
     for u, v in G.edges():
         out_map.setdefault(u, []).append(v)
 
@@ -298,22 +297,31 @@ def graph_to_doc(G: nx.DiGraph, synthesis_id_hint: Optional[str] = None) -> Opti
                 solvent_vol = solvent_vol or pvol
 
     # Assemble product/conditions/solvent
-    conditions = prune_nones({
-        "temperature": temperature,
-        "ph": ph,
-    })
+    conditions = prune_nones(
+        {
+            "temperature": temperature,
+            "ph": ph,
+        }
+    )
 
-    size = prune_nones({
-        "length": size_length,
-        "width": size_width,
-        "depth": size_depth,
-    }) or None
+    size = (
+        prune_nones(
+            {
+                "length": size_length,
+                "width": size_width,
+                "depth": size_depth,
+            }
+        )
+        or None
+    )
 
-    product = prune_nones({
-        "crystalsystem": crystalsystem,
-        "shape": shape,
-        "size": size,
-    })
+    product = prune_nones(
+        {
+            "crystalsystem": crystalsystem,
+            "shape": shape,
+            "size": size,
+        }
+    )
 
     solvent = None
     if solvent_name or solvent_vol is not None:
@@ -324,7 +332,7 @@ def graph_to_doc(G: nx.DiGraph, synthesis_id_hint: Optional[str] = None) -> Opti
     # method stays as-is
 
     # Document
-    doc: Dict[str, Any] = {
+    doc: dict[str, Any] = {
         "synthesis_id": synthesis_id,
         "composition": composition,
         "elements": parse_elements(composition),
@@ -336,11 +344,13 @@ def graph_to_doc(G: nx.DiGraph, synthesis_id_hint: Optional[str] = None) -> Opti
         "conditions": conditions if conditions else None,
         "product": product if product else None,
         "pdfno_list": pdfno_list or None,
-        "source": prune_nones({
-            "synthesis_id_original": synthesis_id,
-            "nodes": G.number_of_nodes(),
-            "edges": G.number_of_edges(),
-        }),
+        "source": prune_nones(
+            {
+                "synthesis_id_original": synthesis_id,
+                "nodes": G.number_of_nodes(),
+                "edges": G.number_of_edges(),
+            }
+        ),
     }
 
     doc = prune_nones(doc)
@@ -348,13 +358,13 @@ def graph_to_doc(G: nx.DiGraph, synthesis_id_hint: Optional[str] = None) -> Opti
     return doc
 
 
-def build_docs_from_graphs(graphs_dir: str, out_dir: str) -> Dict[str, Any]:
+def build_docs_from_graphs(graphs_dir: str, out_dir: str) -> dict[str, Any]:
     os.makedirs(out_dir, exist_ok=True)
     json_dir = os.path.join(out_dir, "json")
     os.makedirs(json_dir, exist_ok=True)
 
     files = graph_paths(graphs_dir)
-    docs: List[Dict[str, Any]] = []
+    docs: list[dict[str, Any]] = []
     skipped = 0
 
     for p in tqdm(files, desc="Building docs from graphs"):
@@ -394,15 +404,20 @@ def build_docs_from_graphs(graphs_dir: str, out_dir: str) -> Dict[str, Any]:
     }
 
 
-
 def main():
-    ap = argparse.ArgumentParser(description="Build RAG-ready JSON corpus from local GraphML graphs (1 file = 1 synthesis).")
-    ap.add_argument("--graphs", dest="graphs", default=LOCAL_GRAPHS_DIR, help="Directory with *.graphml local graphs (1 file = 1 synthesis)")
+    ap = argparse.ArgumentParser(
+        description="Build RAG-ready JSON corpus from local GraphML graphs (1 file = 1 synthesis)."
+    )
+    ap.add_argument(
+        "--graphs",
+        dest="graphs",
+        default=LOCAL_GRAPHS_DIR,
+        help="Directory with *.graphml local graphs (1 file = 1 synthesis)",
+    )
     ap.add_argument("--out", dest="out", default=OUTPUT_DIR, help="Output dir for corpus")
     args = ap.parse_args()
 
     report = build_docs_from_graphs(args.graphs, args.out)
-
 
     print(f"Documents: {report['count']}")
     print(f"JSON dir: {report['json_dir']}")

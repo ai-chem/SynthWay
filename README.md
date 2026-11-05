@@ -54,7 +54,7 @@ With the environment active and the API key configured, run:
 python synthway/synthpath_gui.py
 ```
 
-Enter a target composition such as `Ag`, select the generator and judge, and click **Run**. The application uses the supplied retrieval index. An [annotated interface](results/figures/figure_s3.png) is included with the manuscript figures.
+Enter a target composition such as `Ag`, select the generator and judge, and click **Run**. The application uses the supplied retrieval index. ([annotated interface](results/figures/figure_s3.png))
 
 ### SS-Faithfulness and regeneration
 
@@ -123,7 +123,6 @@ Ready-to-view images for **Figures 1–5 and S1–S6** are in [results/figures/]
 | S1–S3 | [Figure S1](results/figures/figure_s1.png), [Figure S2](results/figures/figure_s2.png), [Figure S3](results/figures/figure_s3.png) | [Node counts by parameter](results/source_data/figure_s2.csv); S3 shows the annotated application interface |
 | S7–S14 | Source code provided                                                                                                               | [Generation prompt components (S7–S13)](synthway/prompt.py) and [chemical plausibility rubric (S14)](synthway/evaluate_generation_deepeval.py) |
 
-XRD, SEM and EDS data are available as manuscript panels only.
 
 ## Code availability
 

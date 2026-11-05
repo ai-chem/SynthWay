@@ -1,6 +1,8 @@
 """Repeated-rating reliability calculations and route-level bootstrap intervals."""
-from pathlib import Path
+
 import json
+from pathlib import Path
+
 import numpy as np
 import pandas as pd
 
@@ -8,6 +10,7 @@ BOOTSTRAP_CI_ALPHA = 0.05
 BOOTSTRAP_N_RESAMPLES = 5000
 BOOTSTRAP_RANDOM_SEED = 42
 ROUTE_ID_FIELD = "path"
+
 
 def normalize_route_id(path_str):
     """
@@ -20,6 +23,7 @@ def normalize_route_id(path_str):
     if len(p.parts) < 2:
         return str(p)
     return "/".join(p.parts[-2:])
+
 
 def load_scores(files, score_field, route_id_field=ROUTE_ID_FIELD):
     """
@@ -115,6 +119,7 @@ def load_scores(files, score_field, route_id_field=ROUTE_ID_FIELD):
 
     return df, wide
 
+
 def anova_components(ratings_matrix):
     """
     Return ANOVA components for a matrix where
@@ -164,6 +169,7 @@ def anova_components(ratings_matrix):
         "MS_error": ms_error,
     }
 
+
 def icc_3_1(stats):
     """ICC(3,1): two-way mixed, consistency, single measurement."""
     msr = stats["MS_rows"]
@@ -171,11 +177,13 @@ def icc_3_1(stats):
     k = stats["k_repeats"]
     return (msr - mse) / (msr + (k - 1) * mse)
 
+
 def icc_3_k(stats):
     """ICC(3,k): two-way mixed, consistency, average measurement."""
     msr = stats["MS_rows"]
     mse = stats["MS_error"]
     return (msr - mse) / msr
+
 
 def icc_a_1(stats):
     """ICC(A,1): two-way mixed, absolute agreement, single measurement."""
@@ -186,6 +194,7 @@ def icc_a_1(stats):
     k = stats["k_repeats"]
     return (msr - mse) / (msr + (k - 1) * mse + (k * (msc - mse) / n))
 
+
 def icc_a_k(stats):
     """ICC(A,k): two-way mixed, absolute agreement, average measurement."""
     msr = stats["MS_rows"]
@@ -194,7 +203,13 @@ def icc_a_k(stats):
     n = stats["n_targets"]
     return (msr - mse) / (msr + (msc - mse) / n)
 
-def bootstrap_icc_cis(ratings_matrix, alpha=BOOTSTRAP_CI_ALPHA, n_resamples=BOOTSTRAP_N_RESAMPLES, random_seed=BOOTSTRAP_RANDOM_SEED):
+
+def bootstrap_icc_cis(
+    ratings_matrix,
+    alpha=BOOTSTRAP_CI_ALPHA,
+    n_resamples=BOOTSTRAP_N_RESAMPLES,
+    random_seed=BOOTSTRAP_RANDOM_SEED,
+):
     """
     Percentile bootstrap 95% CI for all ICC variants by resampling targets (rows).
     This is used to report CI not only for ICC(3,1)/(3,k), but also for ICC(A,1)/(A,k).

@@ -1,33 +1,52 @@
 from pathlib import Path as _Path
+
 _REPO_ROOT = _Path(__file__).resolve().parents[1]
 import json
-import pandas as pd
 from pathlib import Path
 
+import pandas as pd
 
 model_files = [
     {
         "model_label": "anthropic_claude-opus-4.5",
-        "faith_path": Path(f"{_REPO_ROOT}/synthway/check_metrics/evaluate_faithfullness/generation_evaluate_faithfullness_anthropic_claude-opus-4.5.json"),
-        "chem_path": Path(f"{_REPO_ROOT}/synthway/check_metrics/generation_rag_eval_correct/anthropic_claude-opus-4.5.json"),
+        "faith_path": Path(
+            f"{_REPO_ROOT}/synthway/check_metrics/evaluate_faithfullness/generation_evaluate_faithfullness_anthropic_claude-opus-4.5.json"
+        ),
+        "chem_path": Path(
+            f"{_REPO_ROOT}/synthway/check_metrics/generation_rag_eval_correct/anthropic_claude-opus-4.5.json"
+        ),
     },
     {
         "model_label": "google_gemini-2.0-flash-001",
-        "faith_path": Path(f"{_REPO_ROOT}/synthway/check_metrics/evaluate_faithfullness/generation_evaluate_faithfullness_google_gemini-2.0-flash-001.json"),
-        "chem_path": Path(f"{_REPO_ROOT}/synthway/check_metrics/generation_rag_eval_correct/google_gemini-2.0-flash-001.json"),
+        "faith_path": Path(
+            f"{_REPO_ROOT}/synthway/check_metrics/evaluate_faithfullness/generation_evaluate_faithfullness_google_gemini-2.0-flash-001.json"
+        ),
+        "chem_path": Path(
+            f"{_REPO_ROOT}/synthway/check_metrics/generation_rag_eval_correct/google_gemini-2.0-flash-001.json"
+        ),
     },
     {
         "model_label": "meta-llama_llama-4-maverick",
-        "faith_path": Path(f"{_REPO_ROOT}/synthway/check_metrics/evaluate_faithfullness/generation_evaluate_faithfullness_meta-llama_llama-4-maverick.json"),
-        "chem_path": Path(f"{_REPO_ROOT}/synthway/check_metrics/generation_rag_eval_correct/llama-4-maverick.json"),
+        "faith_path": Path(
+            f"{_REPO_ROOT}/synthway/check_metrics/evaluate_faithfullness/generation_evaluate_faithfullness_meta-llama_llama-4-maverick.json"
+        ),
+        "chem_path": Path(
+            f"{_REPO_ROOT}/synthway/check_metrics/generation_rag_eval_correct/llama-4-maverick.json"
+        ),
     },
     {
         "model_label": "nvidia_nemotron-3-nano-30b-a3b_free",
-        "faith_path": Path(f"{_REPO_ROOT}/synthway/check_metrics/evaluate_faithfullness/generation_evaluate_faithfullness_nvidia_nemotron-3-nano-30b-a3b_free.json"),
-        "chem_path": Path(f"{_REPO_ROOT}/synthway/check_metrics/generation_rag_eval_correct/nvidia_nemotron-3-nano-30b-a3b_free.json"),
+        "faith_path": Path(
+            f"{_REPO_ROOT}/synthway/check_metrics/evaluate_faithfullness/generation_evaluate_faithfullness_nvidia_nemotron-3-nano-30b-a3b_free.json"
+        ),
+        "chem_path": Path(
+            f"{_REPO_ROOT}/synthway/check_metrics/generation_rag_eval_correct/nvidia_nemotron-3-nano-30b-a3b_free.json"
+        ),
     },
 ]
-selected_routes_path = Path(f"{_REPO_ROOT}/synthway/check_metrics/final_slot_selection/final_selected_40_routes.csv")
+selected_routes_path = Path(
+    f"{_REPO_ROOT}/synthway/check_metrics/final_slot_selection/final_selected_40_routes.csv"
+)
 
 
 def load_json(path: Path):
@@ -87,10 +106,7 @@ def deduplicate_faith_records(records: list[dict]) -> pd.DataFrame:
 
     selected = []
     for route_path, recs in grouped.items():
-        scored = [
-            r for r in recs
-            if ("answer_score" in r) or ("faithfulness_score" in r)
-        ]
+        scored = [r for r in recs if ("answer_score" in r) or ("faithfulness_score" in r)]
         chosen = scored[-1] if scored else recs[0]
         selected.append(chosen)
 
@@ -103,22 +119,26 @@ def prepare_chem_df(records: list[dict], selected_paths: set[str] | None = None)
     if selected_paths is not None:
         df = df[df["path"].astype(str).isin(selected_paths)].copy()
 
-    df = df.rename(columns={
-        "score": "chemistry_score",
-        "threshold": "chemistry_threshold",
-        "passed": "chemistry_passed",
-        "reason": "chemistry_reason",
-    })
+    df = df.rename(
+        columns={
+            "score": "chemistry_score",
+            "threshold": "chemistry_threshold",
+            "passed": "chemistry_passed",
+            "reason": "chemistry_reason",
+        }
+    )
 
-    return df[[
-        "path",
-        "composition",
-        "method",
-        "chemistry_score",
-        "chemistry_threshold",
-        "chemistry_passed",
-        "chemistry_reason",
-    ]]
+    return df[
+        [
+            "path",
+            "composition",
+            "method",
+            "chemistry_score",
+            "chemistry_threshold",
+            "chemistry_passed",
+            "chemistry_reason",
+        ]
+    ]
 
 
 def prepare_faith_df(records: list[dict], selected_paths: set[str] | None = None) -> pd.DataFrame:
@@ -127,7 +147,7 @@ def prepare_faith_df(records: list[dict], selected_paths: set[str] | None = None
     if selected_paths is not None:
         df = df[df["path"].astype(str).isin(selected_paths)].copy()
 
-    # Handle missing composition gracefully
+    # Select only columns present in the records.
     keep_cols = [
         "path",
         "composition",
@@ -157,15 +177,12 @@ def build_model_table(
     faith_df = prepare_faith_df(faith_records, selected_paths=selected_paths)
     chem_df = prepare_chem_df(chem_records, selected_paths=selected_paths)
 
-    result = chem_df.merge(
-        faith_df,
-        on="path",
-        how="outer",
-        suffixes=("_chem", "_faith")
-    )
+    result = chem_df.merge(faith_df, on="path", how="outer", suffixes=("_chem", "_faith"))
 
     if "composition_chem" in result.columns or "composition_faith" in result.columns:
-        result["composition"] = result.get("composition_chem").combine_first(result.get("composition_faith"))
+        result["composition"] = result.get("composition_chem").combine_first(
+            result.get("composition_faith")
+        )
 
     result["model"] = model_label
     result["model_from_path"] = result["path"].apply(extract_model_from_path)
@@ -193,10 +210,10 @@ def build_model_table(
     return result[final_cols].sort_values(["model", "composition", "path"]).reset_index(drop=True)
 
 
-# --- load selected routes ---
+# load selected routes
 selected_paths = load_selected_routes(selected_routes_path)
 
-# --- build tables for all models ---
+# build tables for all models
 all_tables = []
 for cfg in model_files:
     model_df = build_model_table(
@@ -224,7 +241,7 @@ print()
 print("Row count by model:")
 print(final_df.groupby("model").size())
 
-# --- save ---
+# save
 out_csv = Path(f"{_REPO_ROOT}/synthway/check_metrics/all_models_merged_metrics_selected_40.csv")
 out_xlsx = Path(f"{_REPO_ROOT}/synthway/check_metrics/all_models_merged_metrics_selected_40.xlsx")
 

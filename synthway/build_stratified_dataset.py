@@ -1,83 +1,86 @@
-"""
-build_stratified_dataset.py prepares a stratified sample with N cases per checklist slot (default: one), controlled by --per-slot.
+r"""Select unique synthesis records, targeting --per-slot cases per checklist slot.
 
-Workflow:
-1) Load all JSON files from input_dir.
-2) Count composition and method frequencies for top/rare tags.
-3) Tag each synthesis along the checklist axes (see TAGS_NEEDED).
-4) Select EXACTLY N unique cases for EACH tag/slot where possible (N = --per-slot, default 1):
-   - Pass 1: singleton-first; prioritize slots with exactly one corpus candidate (fill 1 of N positions).
-   - Pass 2: round-robin across slots until N/slot, preferring new composition/method values for diversity.
-   - Within each slot, rank by gain in new tags and then total tag count.
-   - Break ties randomly, controlled by --random-seed.
-5) Save:
-   - stratified_dataset.jsonl: selected records with tags (one case per line);
-   - final_stratified_dataset.jsonl: sample for RAG evaluation and generation (one retrieval_text per line);
-   - coverage_summary.json: coverage status, slots without candidates, underfilled slots, and slot → files mapping;
-   - coverage_report.md: human-readable report.
+The default is one case per slot. Tags cover composition frequency, formula type,
+method and recipe complexity; top/rare sets depend on corpus frequencies and CLI settings.
+Fill singleton slots first, then visit ORDERED_SLOTS in round-robin order.
+Prefer new compositions, then new methods, then gain in uncovered tags and total
+tag count. Resolve equal scores using --random-seed.
 
-Run (using the configured default paths):
-    python synthway/build_stratified_dataset.py \
-      --input-dir "synthway/json" \
-      --output-dir "synthway/output_analysis/stratified_dataset" \
-      --per-slot 3 \
-      --random-seed 42
+Outputs:
+- stratified_dataset.jsonl: selected records with tags;
+- final_stratified_dataset.jsonl: id, composition, method and retrieval_text;
+- coverage_summary.json and coverage_report.md: coverage and slot-to-file assignments.
+The summary lists absent slots in not_present_in_corpus_slots and reports underfilled slots.
 
-Notes:
-- Tags/slots absent from the data are listed in "not_present_in_corpus_slots".
-- Top composition/method sets are determined dynamically from K and the unique-value count (see flags).
-- Edit slot traversal order in ORDERED_SLOTS.
+Example from the repository root:
+    python synthway/build_stratified_dataset.py --input-dir synthway/json \
+        --output-dir synthway/output_analysis/stratified_dataset \
+        --per-slot 3 --random-seed 42
 """
 
 from pathlib import Path as _Path
+
 _REPO_ROOT = _Path(__file__).resolve().parents[1]
 import argparse
 import json
 import os
-import re
 import random
-from glob import glob
+import re
 from collections import Counter, defaultdict
-from typing import Any, Dict, List, Optional, Set, Tuple
+from glob import glob
+from typing import Any
 
-# --------- Default constants (overridable by flags) ---------
+# Default constants (overridable by flags)
 
 DEFAULT_INPUT_DIR = f"{_REPO_ROOT}/synthway/json"
 DEFAULT_OUTPUT_DIR = str(_REPO_ROOT / "outputs" / "benchmark")
 DEFAULT_TOP_COMPOSITIONS_K = 10  # Minimum number of top compositions
-DEFAULT_TOP_METHODS_K = 8        # Minimum number of frequent methods
+DEFAULT_TOP_METHODS_K = 8  # Minimum number of frequent methods
 
 # Target tags, if present in the data
 TAGS_NEEDED = {
     # 1) Composition frequency
-    "composition_top", "composition_rare",
+    "composition_top",
+    "composition_rare",
     # 2) Formula type
-    "formula_simple", "formula_complex",
+    "formula_simple",
+    "formula_complex",
     # 3) Synthesis method
-    "method_frequent", "method_rare",
+    "method_frequent",
+    "method_rare",
     # 4) Recipe complexity
-    "recipe_minimal", "recipe_normal", "recipe_hardcore", "recipe_seed_mediated",
+    "recipe_minimal",
+    "recipe_normal",
+    "recipe_hardcore",
+    "recipe_seed_mediated",
 }
 
 # Checklist slot traversal order (one case per slot in the default mode)
 ORDERED_SLOTS = [
     # 1) Composition frequency
-    "composition_top", "composition_rare",
+    "composition_top",
+    "composition_rare",
     # 2) Formula type
-    "formula_simple", "formula_complex",
+    "formula_simple",
+    "formula_complex",
     # 3) Synthesis method
-    "method_frequent", "method_rare",
+    "method_frequent",
+    "method_rare",
     # 4) Recipe complexity
-    "recipe_minimal", "recipe_normal", "recipe_hardcore", "recipe_seed_mediated",
+    "recipe_minimal",
+    "recipe_normal",
+    "recipe_hardcore",
+    "recipe_seed_mediated",
 ]
 
 # Tagging reference sets
 WATER_ALIASES = {"water", "deionized water", "distilled water", "h2o", "aqueous"}
 UNKNOWN_TOKENS = {"unknown", "none", "null", ""}
 
-# --------- Utilities ---------
+# Utilities
 
-def safe_get(d: Dict[str, Any], path: List[str], default=None):
+
+def safe_get(d: dict[str, Any], path: list[str], default=None):
     cur = d
     for k in path:
         if cur is None:
@@ -87,21 +90,25 @@ def safe_get(d: Dict[str, Any], path: List[str], default=None):
         cur = cur.get(k, None)
     return default if cur is None else cur
 
-def normalize_str(x: Optional[str]) -> str:
+
+def normalize_str(x: str | None) -> str:
     if x is None:
         return ""
     return str(x).strip().lower()
 
-def composition_elements(comp: str) -> List[str]:
+
+def composition_elements(comp: str) -> list[str]:
     """Extract elements from a formula using a simple parser."""
     if not comp:
         return []
     tokens = re.findall(r"[A-Z][a-z]?", comp)
     return tokens
 
+
 def is_core_shell_or_composite(comp: str) -> bool:
     s = comp.replace(" ", "")
     return ("@" in s) or ("-" in s and not s.startswith("-")) or ("+" in s)
+
 
 def is_complex_formula(comp: str) -> bool:
     if not comp:
@@ -115,6 +122,7 @@ def is_complex_formula(comp: str) -> bool:
         return True
     return False
 
+
 def is_simple_formula(comp: str) -> bool:
     if not comp:
         return False
@@ -123,9 +131,11 @@ def is_simple_formula(comp: str) -> bool:
     elems = composition_elements(comp)
     return len(set(elems)) <= 2  # Metals and binary compounds
 
-# --------- Main logic ---------
 
-def load_records(input_dir: str) -> List[Dict[str, Any]]:
+# Main logic
+
+
+def load_records(input_dir: str) -> list[dict[str, Any]]:
     files = sorted(glob(os.path.join(input_dir, "*.json")))
     records = []
     for fp in files:
@@ -138,7 +148,8 @@ def load_records(input_dir: str) -> List[Dict[str, Any]]:
             print(f"[WARN] Failed to read {fp}: {e}")
     return records
 
-def compute_frequencies(records: List[Dict[str, Any]]) -> Tuple[Counter, Counter]:
+
+def compute_frequencies(records: list[dict[str, Any]]) -> tuple[Counter, Counter]:
     comp_counter = Counter()
     method_counter = Counter()
     for r in records:
@@ -150,7 +161,8 @@ def compute_frequencies(records: List[Dict[str, Any]]) -> Tuple[Counter, Counter
             method_counter[method] += 1
     return comp_counter, method_counter
 
-def determine_top_sets(counter: Counter, top_k_min: int) -> Set[str]:
+
+def determine_top_sets(counter: Counter, top_k_min: int) -> set[str]:
     if not counter:
         return set()
     items = counter.most_common()
@@ -158,11 +170,14 @@ def determine_top_sets(counter: Counter, top_k_min: int) -> Set[str]:
     top_k = max(top_k_min, max(3, unique // 10))  # At least 3 or floor(10% of unique values)
     return {name for name, _ in items[:top_k]}
 
-def tag_record(rec: Dict[str, Any],
-               comp_counter: Counter,
-               top_comps: Set[str],
-               method_counter: Counter,
-               top_methods: Set[str]) -> Set[str]:
+
+def tag_record(
+    rec: dict[str, Any],
+    comp_counter: Counter,
+    top_comps: set[str],
+    method_counter: Counter,
+    top_methods: set[str],
+) -> set[str]:
     tags = set()
 
     # 1) Composition frequency
@@ -206,10 +221,11 @@ def tag_record(rec: Dict[str, Any],
     if n_seed >= 1:
         tags.add("recipe_seed_mediated")
 
-
     return tags
 
-# --------- Selection helpers ---------
+
+# Selection helpers
+
 
 def _pick_max_with_random_tiebreak(pool, score_fn):
     """
@@ -227,14 +243,15 @@ def _pick_max_with_random_tiebreak(pool, score_fn):
             best_items.append(it)
     return random.choice(best_items) if len(best_items) > 1 else best_items[0]
 
-def select_k_per_slot(items: List[Dict[str, Any]],
-                      slots: List[str],
-                      k_per_slot: int) -> Tuple[List[Dict[str, Any]], Set[str], List[str], Dict[str, List[str]]]:
+
+def select_k_per_slot(
+    items: list[dict[str, Any]], slots: list[str], k_per_slot: int
+) -> tuple[list[dict[str, Any]], set[str], list[str], dict[str, list[str]]]:
     """
     N-per-slot mode with the following priorities:
       1) Singleton-first: assign slots with exactly one corpus candidate (1 of N if capacity remains).
       2) Round-robin: cycle through slots until k_per_slot, diversifying composition/method values.
-      3) Coverage: gain in new tags → total tag count; break ties randomly.
+      3) Coverage: gain in new tags -> total tag count; break ties randomly.
 
     Returns:
       selected — list of selected cases,
@@ -242,20 +259,19 @@ def select_k_per_slot(items: List[Dict[str, Any]],
       missing  — slots absent from the corpus or underfilled,
       slot_map — mapping from slot to selected file paths.
     """
-    selected: List[Dict[str, Any]] = []
-    covered: Set[str] = set()
-    used_files: Set[str] = set()
-    used_comps: Set[str] = set()
-    used_methods: Set[str] = set()
-    slot_map: Dict[str, List[str]] = {s: [] for s in slots}
+    selected: list[dict[str, Any]] = []
+    covered: set[str] = set()
+    used_files: set[str] = set()
+    used_comps: set[str] = set()
+    used_methods: set[str] = set()
+    slot_map: dict[str, list[str]] = {s: [] for s in slots}
 
     # Tags present anywhere in the corpus
     available_tags = set().union(*[it["tags"] for it in items]) if items else set()
 
     # Candidate pool per slot
-    slot_to_all_cands: Dict[str, List[Dict[str, Any]]] = {
-        slot: [it for it in items if slot in it["tags"]]
-        for slot in slots
+    slot_to_all_cands: dict[str, list[dict[str, Any]]] = {
+        slot: [it for it in items if slot in it["tags"]] for slot in slots
     }
 
     # Slots entirely absent from the corpus
@@ -293,18 +309,22 @@ def select_k_per_slot(items: List[Dict[str, Any]],
             if len(slot_map[slot]) >= k_per_slot:
                 continue
 
-            cands = [it for it in slot_to_all_cands.get(slot, []) if it["file_path"] not in used_files]
+            cands = [
+                it for it in slot_to_all_cands.get(slot, []) if it["file_path"] not in used_files
+            ]
             if not cands:
                 continue
 
             # Diversification: new composition first, then new method
-            new_comp_pool = [it for it in cands if (it.get("composition") or "").strip() not in used_comps]
+            new_comp_pool = [
+                it for it in cands if (it.get("composition") or "").strip() not in used_comps
+            ]
             pool = new_comp_pool if new_comp_pool else cands
 
             new_meth_pool = [it for it in pool if mnorm(it) and mnorm(it) not in used_methods]
             pool = new_meth_pool if new_meth_pool else pool
 
-            # Coverage: gain in new tags → total tag count; break ties randomly
+            # Coverage: gain in new tags -> total tag count; break ties randomly
             def score(it):
                 gain = len(it["tags"] - covered)
                 return (gain, len(it["tags"]))
@@ -324,23 +344,33 @@ def select_k_per_slot(items: List[Dict[str, Any]],
             progressed = True
 
     # Underfilled: present in the corpus but selected < k_per_slot
-    underfilled = [slot for slot in slots if (slot not in not_present) and (len(slot_map[slot]) < k_per_slot)]
+    underfilled = [
+        slot for slot in slots if (slot not in not_present) and (len(slot_map[slot]) < k_per_slot)
+    ]
 
     # missing = absent + underfilled slots
     missing = list(dict.fromkeys(not_present + underfilled))
 
     return selected, covered, missing, slot_map
 
+
 def main():
-    parser = argparse.ArgumentParser(description="Build stratified dataset per-slot (N) from JSON corpus.")
+    parser = argparse.ArgumentParser(
+        description="Build stratified dataset per-slot (N) from JSON corpus."
+    )
     parser.add_argument("--input-dir", type=str, default=DEFAULT_INPUT_DIR)
     parser.add_argument("--output-dir", type=str, default=DEFAULT_OUTPUT_DIR)
     parser.add_argument("--top-compositions-k", type=int, default=DEFAULT_TOP_COMPOSITIONS_K)
     parser.add_argument("--top-methods-k", type=int, default=DEFAULT_TOP_METHODS_K)
-    parser.add_argument("--random-seed", type=int, default=None,
-                        help="Seed for random tie-breaking during candidate selection (does not affect singleton-first).")
-    parser.add_argument("--per-slot", type=int, default=1,
-                        help="Cases to select per slot (default: 1)")
+    parser.add_argument(
+        "--random-seed",
+        type=int,
+        default=None,
+        help="Seed for random tie-breaking during candidate selection (does not affect singleton-first).",
+    )
+    parser.add_argument(
+        "--per-slot", type=int, default=1, help="Cases to select per slot (default: 1)"
+    )
     args = parser.parse_args()
 
     # Seed random tie-breaking for reproducibility
@@ -348,6 +378,7 @@ def main():
         random.seed(args.random_seed)
         try:
             import numpy as np  # noqa
+
             np.random.seed(args.random_seed)
         except Exception:
             pass
@@ -380,7 +411,9 @@ def main():
         tagged_items.append(info)
 
     # Select cases per slot
-    selected, covered, missing_slots, slot_map = select_k_per_slot(tagged_items, ORDERED_SLOTS, args.per_slot)
+    selected, covered, missing_slots, slot_map = select_k_per_slot(
+        tagged_items, ORDERED_SLOTS, args.per_slot
+    )
     # Save the sample
     out_jsonl = os.path.join(args.output_dir, "stratified_dataset.jsonl")
     with open(out_jsonl, "w", encoding="utf-8") as f:
@@ -391,9 +424,7 @@ def main():
 
     # Additional dataset for RAG evaluation/generation (one retrieval_text per line)
     path_to_record = {
-        r["_file_path"]: r
-        for r in records
-        if isinstance(r, dict) and r.get("_file_path")
+        r["_file_path"]: r for r in records if isinstance(r, dict) and r.get("_file_path")
     }
 
     out_final_jsonl = os.path.join(args.output_dir, "final_stratified_dataset.jsonl")
@@ -416,7 +447,9 @@ def main():
     goals = ordered_slots_set & available
     not_present = ordered_slots_set - available
     # Recompute statuses for multiple cases per slot
-    underfilled = [s for s in ORDERED_SLOTS if (s in goals) and (len(slot_map.get(s, [])) < args.per_slot)]
+    underfilled = [
+        s for s in ORDERED_SLOTS if (s in goals) and (len(slot_map.get(s, [])) < args.per_slot)
+    ]
     not_assigned = sorted(underfilled)
 
     coverage = {
@@ -429,11 +462,14 @@ def main():
         "selected_count": len(selected),
         "covered_slots_count": len(covered & ordered_slots_set),
         "present_slots_count": len(goals),
-        "slots_fully_assigned_count": sum(1 for s in goals if len(slot_map.get(s, [])) >= args.per_slot),
+        "slots_fully_assigned_count": sum(
+            1 for s in goals if len(slot_map.get(s, [])) >= args.per_slot
+        ),
         "not_present_in_corpus_slots": sorted(list(not_present)),
         "not_assigned_slots": not_assigned,
-        "underfilled_slots_detail": {s: {"assigned": len(slot_map.get(s, [])), "target": args.per_slot} for s in
-                                     underfilled},
+        "underfilled_slots_detail": {
+            s: {"assigned": len(slot_map.get(s, [])), "target": args.per_slot} for s in underfilled
+        },
         "top_compositions_cutoff": sorted(list(top_comps)),
         "top_methods_cutoff": sorted(list(top_methods)),
     }
@@ -450,11 +486,11 @@ def main():
             {
                 "coverage": coverage,
                 "slot_assignments": slot_map,
-                "top_candidates_by_tag": top_candidates
+                "top_candidates_by_tag": top_candidates,
             },
             f,
             ensure_ascii=False,
-            indent=2
+            indent=2,
         )
 
     # Markdown report
@@ -471,14 +507,16 @@ def main():
     if not_present:
         md_lines.append(f"- Slots not present in corpus: {', '.join(sorted(not_present))}")
     if not_assigned:
-        md_lines.append(f"- Slots present but not assigned (unique-candidate conflict): {', '.join(sorted(not_assigned))}")
-    md_lines.append("\n## Slot → Selected files\n")
+        md_lines.append(
+            f"- Slots present but not assigned (unique-candidate conflict): {', '.join(sorted(not_assigned))}"
+        )
+    md_lines.append("\n## Slot -> Selected files\n")
     for slot in ORDERED_SLOTS:
         fps = slot_map.get(slot, [])
         if fps:
-            md_lines.append(f"- **{slot}** → " + ", ".join('`' + p + '`' for p in fps))
+            md_lines.append(f"- **{slot}** -> " + ", ".join("`" + p + "`" for p in fps))
         else:
-            md_lines.append(f"- **{slot}** → _no candidate_")
+            md_lines.append(f"- **{slot}** -> _no candidate_")
     md_lines.append("\n## Selected items\n")
     for i, it in enumerate(selected, 1):
         md_lines.append(
@@ -493,6 +531,7 @@ def main():
     print(f"[OK] RAG dataset: {out_final_jsonl}")
     print(f"[OK] Report: {os.path.join(args.output_dir, 'coverage_report.md')}")
     print(f"[OK] Coverage JSON: {os.path.join(args.output_dir, 'coverage_summary.json')}")
+
 
 if __name__ == "__main__":
     main()

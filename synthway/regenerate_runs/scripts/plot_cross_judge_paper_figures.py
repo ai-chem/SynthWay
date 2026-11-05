@@ -13,7 +13,6 @@ import pandas as pd
 from matplotlib.lines import Line2D
 from matplotlib.patches import Patch, Rectangle
 
-
 COLORS = {
     "ink": "#2C234F",
     "purple": "#674095",
@@ -40,7 +39,7 @@ METRIC_ORDER = ["chemical_geval", "answer_relevancy", "faithfulness"]
 METRIC_PLOT_LABELS = {
     "chemical_geval": "Chemical plausibility\nand consistency",
     "answer_relevancy": "Answer relevancy",
-    "faithfulness": "New Faithfulness",
+    "faithfulness": "Synthesis-specific\nFaithfulness",
 }
 # spelled-out form used on the bar panel, matching manuscript Fig. 5a
 STEP_LABELS_LONG = [
@@ -56,7 +55,7 @@ SEED = 20260904
 
 UNCERTAINTY = "repeats"
 
-# Set to False (--no-titles) to strip every on-figure title for that house style.
+# --no-titles disables plot titles.
 SHOW_TITLES = True
 
 
@@ -164,19 +163,13 @@ def asym_err(stats: Sequence[dict], scale: float = 1.0) -> np.ndarray:
 
 
 def route_average(frame: pd.DataFrame, value: str, extra: Sequence[str] = ()) -> pd.DataFrame:
-    """Average the repeats within a route: the repeats are measurement noise."""
+    """Average metric values across repeats within each route."""
     keys = ROUTE_KEY + list(extra)
     return frame.groupby(keys, as_index=False).agg(**{value: (value, "mean")})
 
 
 def repeat_sd(frame: pd.DataFrame, value: str) -> dict[str, float]:
-    """Mean and sample SD across the independent repeats.
-
-    This is the reproducibility of the pipeline on a fixed route set: how much
-    the number moves when the whole experiment is run again on the same routes.
-    It is deliberately *not* a confidence interval for the pass rate, because it
-    holds the route sample fixed.
-    """
+    """Return the mean and one sample SD of run-level means for a fixed set of routes."""
     per_run = frame.groupby("run")[value].mean()
     mean = float(per_run.mean())
     sd = float(per_run.std(ddof=1)) if len(per_run) > 1 else 0.0
@@ -201,10 +194,11 @@ def summarise(frame: pd.DataFrame, value: str) -> dict[str, float]:
 # derived
 
 
-def build_trajectories(attempts: pd.DataFrame, routes: pd.DataFrame, max_regens: int) -> pd.DataFrame:
-    status = (
-        attempts.groupby(["run"] + ROUTE_KEY + ["attempt_no"], as_index=False)
-        .agg(passed=("passed_all", "first"))
+def build_trajectories(
+    attempts: pd.DataFrame, routes: pd.DataFrame, max_regens: int
+) -> pd.DataFrame:
+    status = attempts.groupby(["run"] + ROUTE_KEY + ["attempt_no"], as_index=False).agg(
+        passed=("passed_all", "first")
     )
     hits = {
         key: set(g.loc[g["passed"], "attempt_no"].astype(int))
@@ -231,12 +225,7 @@ def build_trajectories(attempts: pd.DataFrame, routes: pd.DataFrame, max_regens:
 
 
 def paired_delta(routes: pd.DataFrame, metric: str) -> dict[str, float]:
-    """Paired best-minus-initial change, the quantity the Delta label reports.
-
-    The comparison is within route, so route difficulty cancels.  A confidence
-    interval built from the two level estimates would be much wider and would
-    invite the "overlapping error bars mean no difference" misreading.
-    """
+    """Summarize within-route differences between selected-best and initial scores."""
     rl = routes.rename(columns={f"initial_{metric}": "i", f"final_{metric}": "f"}).copy()
     rl["d"] = rl["f"] - rl["i"]
     return summarise(rl, "d")
@@ -247,9 +236,8 @@ def unselected_delta(attempts: pd.DataFrame, metric: str) -> dict[str, float]:
     wide = attempts.pivot_table(
         index=["run"] + ROUTE_KEY + ["metric"], columns="attempt_no", values="score"
     )
-    status = (
-        attempts.groupby(["run"] + ROUTE_KEY + ["attempt_no"], as_index=False)
-        .agg(passed=("passed_all", "first"))
+    status = attempts.groupby(["run"] + ROUTE_KEY + ["attempt_no"], as_index=False).agg(
+        passed=("passed_all", "first")
     )
     failed_first = set(
         status[(status.attempt_no == 1) & (~status.passed)].set_index(["run"] + ROUTE_KEY).index
@@ -337,9 +325,7 @@ def draw_pass_panel(axis: plt.Axes, traj: pd.DataFrame, max_regens: int) -> list
     return records
 
 
-def draw_metric_panel(
-    axis: plt.Axes, routes: pd.DataFrame, attempts: pd.DataFrame
-) -> list[dict]:
+def draw_metric_panel(axis: plt.Axes, routes: pd.DataFrame, attempts: pd.DataFrame) -> list[dict]:
     """Initial vs selected best attempt per metric, drawn onto a given axes."""
     x = np.arange(len(METRIC_ORDER), dtype=float)
     width = 0.32
@@ -418,7 +404,14 @@ def metric_panel_handles() -> list[object]:
     return [
         Patch(facecolor=COLORS["lilac"], label="Initial attempt"),
         Patch(facecolor=COLORS["teal"], label="Selected best attempt"),
-        Line2D([0], [0], color=COLORS["muted_teal"], linestyle="--", linewidth=1.2, label="Threshold = 0.8"),
+        Line2D(
+            [0],
+            [0],
+            color=COLORS["muted_teal"],
+            linestyle="--",
+            linewidth=1.2,
+            label="Threshold = 0.8",
+        ),
     ]
 
 
@@ -430,8 +423,7 @@ def figure_main_ab(
     draw_pass_panel(axes[0], traj, max_regens)
     draw_metric_panel(axes[1], routes, attempts)
 
-    # the metric panel needs its own key; keep it inside the axes so the two
-    # panels stay self-contained, the way the manuscript figure has them
+    # Keep the metric legend inside its panel.
     axes[1].set_ylim(0, 1.28)
     axes[1].legend(
         handles=metric_panel_handles(),
@@ -455,8 +447,7 @@ def figure_main_ab(
             color=COLORS["ink"],
         )
     fig.tight_layout(rect=(0.025, 0.045, 0.985, 0.955), w_pad=4.0)
-    # one frame per panel: it separates a from b and boxes the pair,
-    # matching how the manuscript figure is laid out
+    # Draw a frame around each panel.
     for x0, x1 in ((0.008, 0.497), (0.503, 0.992)):
         fig.patches.append(
             Rectangle(
@@ -478,18 +469,13 @@ def figure_main_ab(
 
 
 def figure_si6_pair_metrics(routes: pd.DataFrame) -> tuple[plt.Figure, pd.DataFrame]:
-    """Initial vs selected best attempt, resolved per generator-judge pair.
+    """Plot initial and selected-best scores by generator–judge pair.
 
-    The per-pair version of the main metric panel.  Each panel rests on only 10
-    routes, so panel-level differences are far less certain than the pooled
-    figure; the caption says so rather than leaving the reader to infer it.
+    The default study cohort contains 10 routes per pair.
     """
-    # one row per generator, one column per judge it was paired with: the grid
-    # then mirrors the design instead of running the pairs out in a flat list
+    # Arrange generators by row and their judges by column.
     generators = [g for g in MODEL_ORDER if g in set(routes.generator_key)]
-    fig, axes = plt.subplots(
-        len(generators), 2, figsize=(11.6, 11.0), sharey=True, sharex=True
-    )
+    fig, axes = plt.subplots(len(generators), 2, figsize=(11.6, 11.0), sharey=True, sharex=True)
     x = np.arange(len(METRIC_ORDER), dtype=float)
     width = 0.32
     offsets = {"initial": -width / 2, "best": width / 2}
@@ -501,18 +487,14 @@ def figure_si6_pair_metrics(routes: pd.DataFrame) -> tuple[plt.Figure, pd.DataFr
             j
             for j in MODEL_ORDER
             if j != generator
-            and not routes[
-                (routes.generator_key == generator) & (routes.judge_key == j)
-            ].empty
+            and not routes[(routes.generator_key == generator) & (routes.judge_key == j)].empty
         ]
         for col, axis in enumerate(np.atleast_1d(axes[row])):
             if col >= len(judges):
                 axis.axis("off")
                 continue
             judge = judges[col]
-            subset = routes[
-                (routes.generator_key == generator) & (routes.judge_key == judge)
-            ]
+            subset = routes[(routes.generator_key == generator) & (routes.judge_key == judge)]
             stats_by = {"initial": [], "best": []}
             for metric in METRIC_ORDER:
                 for stage, column in (
@@ -604,8 +586,15 @@ def figure_si6_pair_metrics(routes: pd.DataFrame) -> tuple[plt.Figure, pd.DataFr
         handles=[
             Patch(facecolor=COLORS["lilac"], label="Initial attempt"),
             Patch(facecolor=COLORS["teal"], label="Selected best attempt"),
-            Line2D([0], [0], color=COLORS["muted_teal"], linestyle="--", linewidth=1.2, label="Threshold = 0.8"),
-            ],
+            Line2D(
+                [0],
+                [0],
+                color=COLORS["muted_teal"],
+                linestyle="--",
+                linewidth=1.2,
+                label="Threshold = 0.8",
+            ),
+        ],
         loc="lower center",
         bbox_to_anchor=(0.5, 0.005),
         ncol=3,
@@ -624,5 +613,3 @@ def save(fig: plt.Figure, out_dir: Path, name: str, dpi: int) -> str:
     fig.savefig(path, dpi=dpi)
     plt.close(fig)
     return str(path)
-
-

@@ -1,8 +1,7 @@
-"""Recalculate SynthWay Table 1 from the judge ratings and the existing expert workbook.
+"""Recalculate Table 1 from judge ratings and expert scores.
 
-Requires numpy, pandas, scipy, scikit-learn and openpyxl. The default inputs are in ../data, or you can supply paths with --judges and --experts.
-From the repository root, the existing expert workbook is found automatically.
-Run: python calculate_table_1.py
+Inputs default to paper_tables/data/; --judges and --experts override their paths.
+Run from the repository root: python paper_tables/analysis/calculate_table_1.py
 """
 
 import argparse
@@ -13,7 +12,6 @@ import pandas as pd
 from scipy.stats import spearmanr
 from sklearn.metrics import cohen_kappa_score
 
-
 MODELS = {
     "anthropic_claude-opus-4.5": "Claude Opus 4.5",
     "google_gemini-2.0-flash-001": "Gemini 2.0 Flash",
@@ -23,10 +21,46 @@ MODELS = {
 EXPERT_FILE = "experts_mean_median_scores_detailed_thr_08.xlsx"
 # Fixed route IDs keep bootstrap resampling independent of composition labels.
 BOOTSTRAP_ROUTE_ORDER = (
-    5, 4, 10, 1, 9, 8, 6, 2, 7, 3,
-    15, 14, 20, 11, 18, 16, 12, 17, 13, 19,
-    25, 24, 30, 21, 28, 26, 22, 27, 23, 29,
-    35, 34, 40, 31, 38, 36, 32, 37, 33, 39,
+    5,
+    4,
+    10,
+    1,
+    9,
+    8,
+    6,
+    2,
+    7,
+    3,
+    15,
+    14,
+    20,
+    11,
+    18,
+    16,
+    12,
+    17,
+    13,
+    19,
+    25,
+    24,
+    30,
+    21,
+    28,
+    26,
+    22,
+    27,
+    23,
+    29,
+    35,
+    34,
+    40,
+    31,
+    38,
+    36,
+    32,
+    37,
+    33,
+    39,
 )
 
 
@@ -39,9 +73,7 @@ def paired_scores(judge_path, expert_path):
     header_rows = first_column.index[first_column.eq("ID")]
     if len(header_rows) != 1:
         raise ValueError("Expected the judge sheet to start with an ID column.")
-    scores = pd.read_excel(
-        judge_path, sheet_name="Judge ratings", header=int(header_rows[0])
-    )
+    scores = pd.read_excel(judge_path, sheet_name="Judge ratings", header=int(header_rows[0]))
     experts = pd.read_excel(expert_path, sheet_name="route_mean_median_scores")
     route = ["ID", "generator", "composition", "route"]
     key = ["judge", *route]
@@ -50,13 +82,8 @@ def paired_scores(judge_path, expert_path):
     if scores.duplicated(["ID", "judge", "run"]).any():
         raise ValueError("More than one row for a judge, expert ID and run.")
     if scores[route].drop_duplicates()["ID"].duplicated().any():
-        raise ValueError(
-            "A route ID must identify exactly one generator, composition and route."
-        )
-    if (
-        set(scores["run"]) != {"v1", "v2", "v3"}
-        or not scores.groupby(key).size().eq(3).all()
-    ):
+        raise ValueError("A route ID must identify exactly one generator, composition and route.")
+    if set(scores["run"]) != {"v1", "v2", "v3"} or not scores.groupby(key).size().eq(3).all():
         raise ValueError(
             "Expected one row per planned run (v1, v2 and v3), including missing scores."
         )
@@ -65,9 +92,7 @@ def paired_scores(judge_path, expert_path):
     # Route means are pandas group means stored at 16 significant digits, as in
     # the reported analysis. Preserve this step and its ties.
     routes = scores.groupby(key, as_index=False)["faithfulness_score"].mean()
-    routes["judge_score"] = routes.pop("faithfulness_score").map(
-        lambda x: float(f"{x:.16g}")
-    )
+    routes["judge_score"] = routes.pop("faithfulness_score").map(lambda x: float(f"{x:.16g}"))
     paired = routes.merge(
         experts[["ID", "model", "composition", "mean_faithfulness_score"]],
         on="ID",
@@ -80,17 +105,10 @@ def paired_scores(judge_path, expert_path):
     if not paired["expert_score"].between(0, 1).all():
         raise ValueError("Expert scores must be in [0, 1].")
     same_composition = paired["composition"] == paired["composition_expert"]
-    if (
-        not (paired["generator"] == paired["model"].map(MODELS)).all()
-        or not same_composition.all()
-    ):
-        raise ValueError(
-            "The judge and expert records disagree on the generator or composition."
-        )
+    if not (paired["generator"] == paired["model"].map(MODELS)).all() or not same_composition.all():
+        raise ValueError("The judge and expert records disagree on the generator or composition.")
     counts = paired.groupby(["judge", "generator"]).size()
-    external_pairs = {
-        (j, g) for j in MODELS.values() for g in MODELS.values() if j != g
-    }
+    external_pairs = {(j, g) for j in MODELS.values() for g in MODELS.values() if j != g}
     if set(counts.index) != external_pairs or not counts.eq(10).all():
         raise ValueError("Expected all 12 external pairs, with ten routes per pair.")
     order = {route_id: i for i, route_id in enumerate(BOOTSTRAP_ROUTE_ORDER)}
@@ -157,9 +175,7 @@ def main():
         Path("synthway") / "bench" / EXPERT_FILE,
     ]
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument(
-        "--judges", type=Path, default=data / "Table_1_Judge_Ratings.xlsx"
-    )
+    parser.add_argument("--judges", type=Path, default=data / "Table_1_Judge_Ratings.xlsx")
     parser.add_argument(
         "--experts",
         type=Path,
@@ -180,9 +196,7 @@ def main():
         "Llama 4 Maverick",
         "Nemotron 3 Nano 30B A3B",
     ]
-    table["generator_model"] = pd.Categorical(
-        table["generator_model"], display_order, ordered=True
-    )
+    table["generator_model"] = pd.Categorical(table["generator_model"], display_order, ordered=True)
     table = table.sort_values(["judge_model", "generator_model"])
     table.to_csv(args.out, index=False, float_format="%.3f")
     print(f"Wrote {len(table)} judge–generator comparisons to {args.out}")

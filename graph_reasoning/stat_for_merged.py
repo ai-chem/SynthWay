@@ -3,44 +3,48 @@ Profile merged_all.xlsx:
 - summary.csv: per-column summary (NaN, '', unknown, -999, distinct values, etc.)
 - distribution.csv: complete per-column value distributions (excluding NaN/''/unknown/-999)
 - index.html: interactive report (DataTables)
-- NEW: deduplicate by synthesis_id; count each value at most once per synthesis; add *_by_sid and count_by_sid/pct_by_sid.
-- NEW: local graphs; add two summary columns: local_param_count (total nodes of this type across local graphs) and local_param_unique (unique node values of this type).
-- NEW: top_value_local; most frequent value among nodes of the corresponding type in local graphs.
+- deduplicate by synthesis_id; count each value at most once per synthesis; add *_by_sid and count_by_sid/pct_by_sid.
+- local graphs; add two summary columns: local_param_count (total nodes of this type across local graphs) and local_param_unique (unique node values of this type).
+- top_value_local; most frequent value among nodes of the corresponding type in local graphs.
 """
 
-import os
 import argparse
-from pathlib import Path
+import os
 import sys
+from pathlib import Path
+
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "graph_reasoning"))
-from local_graph_files import graph_paths
 import ast
+import math
 import re
 from datetime import datetime
+
+import matplotlib.pyplot as plt
+import networkx as nx
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-import math
+from local_graph_files import graph_paths
 
-
-import networkx as nx
-
-# --- Path defaults (portable) ---
+# Path defaults (portable)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_DIR = os.path.dirname(BASE_DIR)
-GRAPH_DIR = os.environ.get('SYNTHWAY_GRAPH_OUTPUT', os.path.join(REPO_DIR, 'outputs', 'graph'))
+GRAPH_DIR = os.environ.get("SYNTHWAY_GRAPH_OUTPUT", os.path.join(REPO_DIR, "outputs", "graph"))
 
 DEFAULT_INPUT_XLSX = os.path.join(REPO_DIR, "data", "merged_all.xlsx")
 DEFAULT_GRAPH_DIR = GRAPH_DIR
 
+
 def _default_input_xlsx() -> str:
     return DEFAULT_INPUT_XLSX
+
 
 def _default_graph_dir() -> str:
     return DEFAULT_GRAPH_DIR
 
+
 def _default_local_graphs_dir() -> str:
     return os.path.join(_default_graph_dir(), "local_graphs_renamed")
+
 
 def _default_global_graph_path() -> str:
     return os.path.join(_default_graph_dir(), "graph.graphml")
@@ -48,16 +52,20 @@ def _default_global_graph_path() -> str:
 
 UNKNOWN_TOKENS_DEFAULT = ["unknown"]  # Case-insensitive matching; ignore surrounding whitespace
 
+
 # Sanitize synthesis_id to the same "file key" used in local graph filenames
 def _sanitize_sid_for_filekey(s: str) -> str:
-    return re.sub(r'[^a-zA-Z0-9_.-]', '_', str(s))
+    return re.sub(r"[^a-zA-Z0-9_.-]", "_", str(s))
+
 
 def _safe_name(s: str) -> str:
     import re
+
     s = str(s).strip().lower()
     s = re.sub(r"\s+", "_", s)
     s = re.sub(r"[^a-z0-9._-]+", "_", s)
     return s[:80]
+
 
 def _is_valid_value(val, unknown_tokens):
     if pd.isna(val):
@@ -115,7 +123,7 @@ def _scan_local_graphs(local_dir: str, allowed_filekeys: set[str] | None = None)
             if base.endswith(".graphml"):
                 base = base[:-8]
             if base.startswith("synthesis_"):
-                base = base[len("synthesis_"):]
+                base = base[len("synthesis_") :]
             if base in allowed_filekeys:
                 filtered.append(gm)
         files = filtered
@@ -156,6 +164,7 @@ def _scan_local_graphs(local_dir: str, allowed_filekeys: set[str] | None = None)
     # Also return values_by_label and counts_by_label
     return total_by_label, unique_by_label, top_value_by_label, values_by_label, counts_by_label
 
+
 # Scan the global graph (one .graphml file)
 def _scan_global_graph(graph_path: str):
     """
@@ -181,7 +190,9 @@ def _scan_global_graph(graph_path: str):
         return total_by_label, {k: 0 for k in total_by_label}, {}, {}
 
     try:
-        print(f"[INFO] Global graph: nodes={G.number_of_nodes()}, edges={G.number_of_edges()} • {graph_path}")
+        print(
+            f"[INFO] Global graph: nodes={G.number_of_nodes()}, edges={G.number_of_edges()} • {graph_path}"
+        )
     except Exception:
         pass
 
@@ -232,6 +243,7 @@ def _scan_table_as_global_nodes(df: pd.DataFrame, unknown_tokens):
       - top_value_by_label
     """
     import ast
+
     total_by_label: dict[str, int] = {}
     values_by_label: dict[str, set] = {}
     counts_by_label: dict[str, dict] = {}
@@ -329,7 +341,15 @@ def _scan_table_as_global_nodes(df: pd.DataFrame, unknown_tokens):
             top_value_by_label[lbl] = top_name
     return total_by_label, unique_by_label, top_value_by_label
 
-def analyze_column(ser: pd.Series, unknown_tokens, sid: pd.Series | None = None, sid_key: pd.Series | None = None, sid_in_scope_mask: pd.Series | None = None, sid_base_keys: set[str] | None = None):
+
+def analyze_column(
+    ser: pd.Series,
+    unknown_tokens,
+    sid: pd.Series | None = None,
+    sid_key: pd.Series | None = None,
+    sid_in_scope_mask: pd.Series | None = None,
+    sid_base_keys: set[str] | None = None,
+):
     total = len(ser)
     is_nan = ser.isna()
 
@@ -338,21 +358,21 @@ def analyze_column(ser: pd.Series, unknown_tokens, sid: pd.Series | None = None,
     ser_str = ser_str.where(~is_nan, other="")  # Prevent the literal string 'nan' from appearing
 
     s_trim = ser_str.str.strip()
-    s_low  = s_trim.str.lower()
+    s_low = s_trim.str.lower()
 
     # masks
-    is_empty   = (~is_nan) & (s_trim == "")
+    is_empty = (~is_nan) & (s_trim == "")
     is_unknown = (~is_nan) & (s_low.isin([u.lower() for u in unknown_tokens]))
-    is_minus999 = (~is_nan) & ( (ser == -999) | (s_trim == "-999") )
+    is_minus999 = (~is_nan) & ((ser == -999) | (s_trim == "-999"))
 
     valid_mask = (~is_nan) & (~is_empty) & (~is_unknown) & (~is_minus999)
 
     # counts
-    nan_count      = int(is_nan.sum())
-    empty_count    = int(is_empty.sum())
-    unknown_count  = int(is_unknown.sum())
+    nan_count = int(is_nan.sum())
+    empty_count = int(is_empty.sum())
+    unknown_count = int(is_unknown.sum())
     minus999_count = int(is_minus999.sum())
-    valid_count    = int(valid_mask.sum())
+    valid_count = int(valid_mask.sum())
 
     # Distinct valid values after trimming whitespace
     distinct_valid = int(s_trim[valid_mask].nunique(dropna=True))
@@ -362,7 +382,7 @@ def analyze_column(ser: pd.Series, unknown_tokens, sid: pd.Series | None = None,
     if not vc.empty:
         top_value = str(vc.index[0])
         top_count = int(vc.iloc[0])
-        top_pct   = float(100.0 * top_count / total) if total else 0.0
+        top_pct = float(100.0 * top_count / total) if total else 0.0
     else:
         top_value, top_count, top_pct = "", 0, 0.0
 
@@ -384,15 +404,20 @@ def analyze_column(ser: pd.Series, unknown_tokens, sid: pd.Series | None = None,
     # Explicitly name the value column 'value' to ensure a stable merge
     dist = (
         vc.rename("count")
-          .rename_axis("value")
-          .reset_index()
-          .assign(pct=lambda d: d["count"] / total * 100.0 if total else 0.0)
+        .rename_axis("value")
+        .reset_index()
+        .assign(pct=lambda d: d["count"] / total * 100.0 if total else 0.0)
     )
 
-    # --- Deduplicate by synthesis_id using uniq(sanitize(synthesis_id)): count at most once per filekey ---
-    if sid is not None and len(sid) == len(ser) and sid_key is not None and len(sid_key) == len(ser):
+    # Deduplicate by synthesis_id using uniq(sanitize(synthesis_id)): count at most once per filekey
+    if (
+        sid is not None
+        and len(sid) == len(ser)
+        and sid_key is not None
+        and len(sid_key) == len(ser)
+    ):
         sid_series = pd.Series(sid_key).reset_index(drop=True)  # Use sanitized filekeys
-        # Base scope: exactly the set of unique sanitized SIDs (≈4248)
+        # Base scope: unique sanitized synthesis IDs.
         if sid_base_keys is not None:
             base_keys = set(sid_base_keys)
             base_mask = sid_series.isin(list(base_keys))
@@ -410,44 +435,46 @@ def analyze_column(ser: pd.Series, unknown_tokens, sid: pd.Series | None = None,
         mask = valid_mask & in_scope & base_mask
         df_pairs = (
             pd.DataFrame({"sid": sid_series, "value": s_trim})
-              .loc[mask, ["sid", "value"]]
-              .drop_duplicates()
+            .loc[mask, ["sid", "value"]]
+            .drop_duplicates()
         )
         # Number of syntheses with AT LEAST ONE valid value for this parameter
         filled_sids = int(df_pairs["sid"].nunique()) if not df_pairs.empty else 0
         missing_sids = int(max(0, sid_total - filled_sids))
         coverage_pct_by_sid = round((filled_sids / sid_total * 100.0) if sid_total else 0.0, 4)
         vc_sid = df_pairs["value"].value_counts(dropna=False)
-        # Summary over the base of 4248 keys
+        # Summarize values within the synthesis-ID scope.
         if not vc_sid.empty:
             top_value_by_sid = str(vc_sid.index[0])
             top_count_by_sid = int(vc_sid.iloc[0])
         else:
             top_value_by_sid, top_count_by_sid = "", 0
-        summary.update({
-            # Unique (sid_filekey, value) pairs among valid values
-            "valid_count_by_sid": int(len(df_pairs)),
-            # Number of syntheses in uniq(sanitize(synthesis_id)) with at least one valid value
-            "filled_sids_by_sid": filled_sids,
-            "missing_sids_by_sid": missing_sids,
-            "coverage_pct_by_sid": coverage_pct_by_sid,
-            # Number of distinct values present in at least one synthesis
-            "distinct_valid_by_sid": int(vc_sid.index.size),
-            # Most frequent value by synthesis (number of syntheses containing the value)
-            "top_value_by_sid": top_value_by_sid,
-            "top_value_by_sid_count": top_count_by_sid,
-            "top_value_by_sid_pct": round((top_count_by_sid / sid_total * 100.0) if sid_total else 0.0, 4),
-        })
+        summary.update(
+            {
+                # Unique (sid_filekey, value) pairs among valid values
+                "valid_count_by_sid": int(len(df_pairs)),
+                # Number of syntheses in uniq(sanitize(synthesis_id)) with at least one valid value
+                "filled_sids_by_sid": filled_sids,
+                "missing_sids_by_sid": missing_sids,
+                "coverage_pct_by_sid": coverage_pct_by_sid,
+                # Number of distinct values present in at least one synthesis
+                "distinct_valid_by_sid": int(vc_sid.index.size),
+                # Most frequent value by synthesis (number of syntheses containing the value)
+                "top_value_by_sid": top_value_by_sid,
+                "top_value_by_sid_count": top_count_by_sid,
+                "top_value_by_sid_pct": round(
+                    (top_count_by_sid / sid_total * 100.0) if sid_total else 0.0, 4
+                ),
+            }
+        )
         # Distribution: add count_by_sid / pct_by_sid columns
         if not dist.empty:
-            sid_counts_df = (
-                vc_sid.rename("count_by_sid")
-                      .rename_axis("value")
-                      .reset_index()
-            )
+            sid_counts_df = vc_sid.rename("count_by_sid").rename_axis("value").reset_index()
             dist = dist.merge(sid_counts_df, on="value", how="left")
             dist["count_by_sid"] = dist["count_by_sid"].fillna(0).astype(int)
-            dist["pct_by_sid"] = (dist["count_by_sid"].astype(float) / sid_total * 100.0) if sid_total else 0.0
+            dist["pct_by_sid"] = (
+                (dist["count_by_sid"].astype(float) / sid_total * 100.0) if sid_total else 0.0
+            )
 
     return summary, dist
 
@@ -465,22 +492,24 @@ def build_report(input_xlsx, sheet=None, out_dir=None, unknown_tokens=None):
     # Read Excel
     # Use the first sheet by default (sheet_name=0), or the specified name/index.
     sheet_to_use = 0 if sheet is None else sheet
-    df = pd.read_excel(input_xlsx, sheet_name=sheet_to_use)  # Preserve native NaN handling; do not force dtype=str
+    df = pd.read_excel(
+        input_xlsx, sheet_name=sheet_to_use
+    )  # Preserve native NaN handling; do not force dtype=str
     # If a dict of multiple sheets is returned, use the first sheet
     if isinstance(df, dict):
         first_key = next(iter(df))
         print(f"[WARN] Multiple sheets returned; using first: {first_key}")
         df = df[first_key]
     print(f"[INFO] Using input: {input_xlsx}")
-    if 'args' in globals():
+    if "args" in globals():
         print(f"[INFO] Using local_graphs_dir: {args.local_graphs_dir}")
-        if hasattr(args, 'global_graph_path'):
+        if hasattr(args, "global_graph_path"):
             print(f"[INFO] Using global_graph_path: {args.global_graph_path}")
 
     # Use synthesis_id, if available, to deduplicate by synthesis
     sid_series = df["synthesis_id"] if "synthesis_id" in df.columns else None
 
-    # ---- Source size summary: number of syntheses and local graphs ----
+    # Source size summary: number of syntheses and local graphs
     if sid_series is not None:
         try:
             sid_unique = int(pd.Series(sid_series).nunique(dropna=True))
@@ -490,7 +519,7 @@ def build_report(input_xlsx, sheet=None, out_dir=None, unknown_tokens=None):
     else:
         print("[INFO] Table has no 'synthesis_id' column; skipping synthesis count.")
 
-    local_dir = args.local_graphs_dir if 'args' in globals() else None
+    local_dir = args.local_graphs_dir if "args" in globals() else None
     if local_dir and os.path.isdir(local_dir):
         local_graphs_count = len(graph_paths(local_dir))
         print(f"[INFO] Local graphs: found {local_graphs_count} *.graphml files in: {local_dir}")
@@ -502,10 +531,10 @@ def build_report(input_xlsx, sheet=None, out_dir=None, unknown_tokens=None):
     if local_dir and os.path.isdir(local_dir):
         for p in graph_paths(local_dir):
             base = os.path.basename(p)
-            if base.endswith('.graphml'):
+            if base.endswith(".graphml"):
                 base = base[:-8]
-            if base.startswith('synthesis_'):
-                base = base[len('synthesis_'):]
+            if base.startswith("synthesis_"):
+                base = base[len("synthesis_") :]
             local_filekeys.add(base)
         print(f"[INFO] Filekeys found in local graphs (for reference): {len(local_filekeys)}")
 
@@ -517,32 +546,56 @@ def build_report(input_xlsx, sheet=None, out_dir=None, unknown_tokens=None):
         sid_raw = pd.Series(sid_series)
         sid_str = sid_raw.astype(str)
         sid_trim = sid_str.str.strip()
-        sid_low  = sid_trim.str.lower()
+        sid_low = sid_trim.str.lower()
         bad_tokens = {"", "unknown", "-999", "nan", "none", "na", "null"}
         bad_mask = sid_raw.isna() | sid_low.isin(bad_tokens)
         sid_key_series = sid_trim.map(_sanitize_sid_for_filekey)
-        sid_in_scope_mask = ~bad_mask  # Count all valid sanitized SIDs (base ≈ 4248)
+        sid_in_scope_mask = ~bad_mask  # Valid sanitized synthesis IDs.
         # Base-scope diagnostics
         raw_unique = int(sid_raw.nunique(dropna=True))
         sanitized_unique = int(sid_key_series[sid_in_scope_mask].nunique())
-        print(f"[INFO] synthesis_id: raw_unique={raw_unique}; sanitized_unique(base)={sanitized_unique} • scope=uniq(sanitize(synthesis_id))")
-        sanitized_filekeys = set(sid_key_series[sid_in_scope_mask].unique()) if (sid_key_series is not None and sid_in_scope_mask is not None) else set()
+        print(
+            f"[INFO] synthesis_id: raw_unique={raw_unique}; sanitized_unique(base)={sanitized_unique} • scope=uniq(sanitize(synthesis_id))"
+        )
+        sanitized_filekeys = (
+            set(sid_key_series[sid_in_scope_mask].unique())
+            if (sid_key_series is not None and sid_in_scope_mask is not None)
+            else set()
+        )
 
     # Load local graph statistics (nodes by label)
-    total_by_label_local, unique_by_label_local, top_value_by_label_local, values_by_label_local, counts_by_label_local = _scan_local_graphs(
-        args.local_graphs_dir if 'args' in globals() else None,
-        allowed_filekeys=sanitized_filekeys
+    (
+        total_by_label_local,
+        unique_by_label_local,
+        top_value_by_label_local,
+        values_by_label_local,
+        counts_by_label_local,
+    ) = _scan_local_graphs(
+        args.local_graphs_dir if "args" in globals() else None, allowed_filekeys=sanitized_filekeys
     )
 
     # Global graph statistics
-    global_graph_path = args.global_graph_path if 'args' in globals() and hasattr(args, 'global_graph_path') else _default_global_graph_path()
-    total_by_label_global, unique_by_label_global, top_value_by_label_global, values_by_label_global = _scan_global_graph(global_graph_path)
+    global_graph_path = (
+        args.global_graph_path
+        if "args" in globals() and hasattr(args, "global_graph_path")
+        else _default_global_graph_path()
+    )
+    (
+        total_by_label_global,
+        unique_by_label_global,
+        top_value_by_label_global,
+        values_by_label_global,
+    ) = _scan_global_graph(global_graph_path)
 
     # Table parameters as used to build the global graph
-    table_total_by_label, table_unique_by_label, table_top_value_by_label = _scan_table_as_global_nodes(df, unknown_tokens)
-    print(f"[INFO] Table (using global-graph rules): total nodes={sum(table_total_by_label.values())}, label types={len(table_total_by_label)}")
+    table_total_by_label, table_unique_by_label, table_top_value_by_label = (
+        _scan_table_as_global_nodes(df, unknown_tokens)
+    )
+    print(
+        f"[INFO] Table (using global-graph rules): total nodes={sum(table_total_by_label.values())}, label types={len(table_total_by_label)}"
+    )
 
-    # === Nodes present in local graphs but absent from the global graph ===
+    # Nodes present in local graphs but absent from the global graph
     try:
         missing_rows = []
         for lbl, local_names in (values_by_label_local or {}).items():
@@ -554,16 +607,20 @@ def build_report(input_xlsx, sheet=None, out_dir=None, unknown_tokens=None):
                 occ = 0
                 if counts_by_label_local and lbl in counts_by_label_local:
                     occ = int(counts_by_label_local[lbl].get(name, 0))
-                missing_rows.append({
-                    "label": lbl,
-                    "node_name": str(name),
-                    "local_occurrences": occ,
-                })
+                missing_rows.append(
+                    {
+                        "label": lbl,
+                        "node_name": str(name),
+                        "local_occurrences": occ,
+                    }
+                )
         if missing_rows:
             df_missing = pd.DataFrame(missing_rows)
             out_missing = os.path.join(out_dir, "local_nodes_NOT_in_global.csv")
             df_missing.to_csv(out_missing, index=False)
-            print(f"[OK] Missing nodes (local → not in global): {out_missing} • rows={len(df_missing)}")
+            print(
+                f"[OK] Missing nodes (local -> not in global): {out_missing} • rows={len(df_missing)}"
+            )
         else:
             print("[OK] Missing nodes: none (all local nodes are present in the global graph)")
     except Exception as e:
@@ -592,15 +649,25 @@ def build_report(input_xlsx, sheet=None, out_dir=None, unknown_tokens=None):
             summ_row["sid_scope_note"] = ""
         g_label = _col_to_graph_label(col)
         if g_label:
-            # IMPORTANT: count local nodes by UNIQUE names for a valid comparison with the global graph
+            # Count unique local-node names for comparison with the global graph.
             # After renaming, local nodes should form a subset of the global node set.
-            summ_row["local_param_count"] = int(unique_by_label_local.get(g_label, 0))          # unique local nodes
-            summ_row["local_param_occurrences"] = int(total_by_label_local.get(g_label, 0))      # total occurrences across locals
-            summ_row["local_param_unique"] = int(unique_by_label_local.get(g_label, 0))          # kept for backward compatibility
+            summ_row["local_param_count"] = int(
+                unique_by_label_local.get(g_label, 0)
+            )  # unique local nodes
+            summ_row["local_param_occurrences"] = int(
+                total_by_label_local.get(g_label, 0)
+            )  # total occurrences across locals
+            summ_row["local_param_unique"] = int(
+                unique_by_label_local.get(g_label, 0)
+            )  # kept for backward compatibility
             summ_row["top_value_local"] = str(top_value_by_label_local.get(g_label, ""))
             # Each node occurs once in the global graph, so total == unique.
-            summ_row["global_param_count"] = int(unique_by_label_global.get(g_label, 0))         # unique global nodes
-            summ_row["global_param_occurrences"] = int(total_by_label_global.get(g_label, 0))    # Equals count; retained for symmetry
+            summ_row["global_param_count"] = int(
+                unique_by_label_global.get(g_label, 0)
+            )  # unique global nodes
+            summ_row["global_param_occurrences"] = int(
+                total_by_label_global.get(g_label, 0)
+            )  # Equals count; retained for symmetry
             summ_row["global_param_unique"] = int(unique_by_label_global.get(g_label, 0))
             summ_row["top_value_global"] = str(top_value_by_label_global.get(g_label, ""))
             # Table using global-graph rules
@@ -627,7 +694,7 @@ def build_report(input_xlsx, sheet=None, out_dir=None, unknown_tokens=None):
             dist = dist.sort_values(["column", "count"], ascending=[True, False])
             all_dists.append(dist)
 
-            # === Plot Top-15 for this column ===
+            # Plot Top-15 for this column
             try:
                 metric = "count_by_sid" if "count_by_sid" in dist.columns else "count"
                 top = dist.nlargest(15, metric)
@@ -652,7 +719,7 @@ def build_report(input_xlsx, sheet=None, out_dir=None, unknown_tokens=None):
     df_summary_full = pd.DataFrame(all_summ_rows).sort_values("column")
     df_summary_full.to_csv(os.path.join(out_dir, "summary_full.csv"), index=False)
 
-    # === Compact manuscript table (essential columns only) ===
+    # Compact manuscript table (essential columns only)
     # Include:
     # - Synthesis base (number of syntheses in scope=uniq(sanitize(synthesis_id)))
     # - Parameter completeness by synthesis: filled/missing/coverage
@@ -662,11 +729,17 @@ def build_report(input_xlsx, sheet=None, out_dir=None, unknown_tokens=None):
         "column",
         "sid_base_sanitized_unique",
         # By synthesis
-        "filled_sids_by_sid", "missing_sids_by_sid", "coverage_pct_by_sid",
+        "filled_sids_by_sid",
+        "missing_sids_by_sid",
+        "coverage_pct_by_sid",
         "valid_count_by_sid",
-        "distinct_valid_by_sid", "top_value_by_sid", "top_value_by_sid_count",
+        "distinct_valid_by_sid",
+        "top_value_by_sid",
+        "top_value_by_sid_count",
         # Local graphs
-        "local_param_occurrences", "local_param_count", "top_value_local",
+        "local_param_occurrences",
+        "local_param_count",
+        "top_value_local",
     ]
     existing_paper_cols = [c for c in paper_cols if c in df_summary_full.columns]
     df_paper = df_summary_full[existing_paper_cols].copy()
@@ -689,15 +762,27 @@ def build_report(input_xlsx, sheet=None, out_dir=None, unknown_tokens=None):
     else:
         df_dist = pd.DataFrame(columns=["column", "value", "count", "pct"])
 
-    # === Top-3 charts for key parameters ===
+    # Top-3 charts for key parameters
     key_cols = [
         "composition",
-        "precursor", "precursor_mass", "precursor_conc",
-        "additive", "additive_mass", "additive_conc",
-        "seeds", "seed_mass", "seed_conc",
-        "solvent", "temperature", "ph", "method",
-        "shape", "crystalsystem",
-        "size_length", "size_width", "size_depth",
+        "precursor",
+        "precursor_mass",
+        "precursor_conc",
+        "additive",
+        "additive_mass",
+        "additive_conc",
+        "seeds",
+        "seed_mass",
+        "seed_conc",
+        "solvent",
+        "temperature",
+        "ph",
+        "method",
+        "shape",
+        "crystalsystem",
+        "size_length",
+        "size_width",
+        "size_depth",
         "pdfno_list",
     ]
     key_img_files = []
@@ -709,7 +794,11 @@ def build_report(input_xlsx, sheet=None, out_dir=None, unknown_tokens=None):
         sub = df_dist[df_dist["column"] == col_name]
         if sub.empty:
             return
-        metric = "count_by_sid" if "count_by_sid" in sub.columns and sub["count_by_sid"].notna().any() else "count"
+        metric = (
+            "count_by_sid"
+            if "count_by_sid" in sub.columns and sub["count_by_sid"].notna().any()
+            else "count"
+        )
         top = sub.nlargest(topk, metric)
         if top.empty:
             return
@@ -735,8 +824,14 @@ def build_report(input_xlsx, sheet=None, out_dir=None, unknown_tokens=None):
     # 2) Handle pdfno_list separately: expand lists and count by sid, if available, within the filekey scope
     if "pdfno_list" in df.columns:
         try:
-            sid_series_local = sid_key_series if sid_key_series is not None else pd.Series(range(len(df)))
-            scope_mask_local = sid_in_scope_mask if (sid_key_series is not None and sid_in_scope_mask is not None) else pd.Series([True] * len(df))
+            sid_series_local = (
+                sid_key_series if sid_key_series is not None else pd.Series(range(len(df)))
+            )
+            scope_mask_local = (
+                sid_in_scope_mask
+                if (sid_key_series is not None and sid_in_scope_mask is not None)
+                else pd.Series([True] * len(df))
+            )
             rows = []
             for idx, (sid_val, cell) in enumerate(zip(sid_series_local, df["pdfno_list"])):
                 if not bool(scope_mask_local.iloc[idx]):
@@ -796,8 +891,14 @@ def build_report(input_xlsx, sheet=None, out_dir=None, unknown_tokens=None):
             if kc == "pdfno_list":
                 # Recalculate the top 3 pdf values as above, returning a DataFrame for plotting
                 try:
-                    sid_series_local = sid_key_series if sid_key_series is not None else pd.Series(range(len(df)))
-                    scope_mask_local = sid_in_scope_mask if (sid_key_series is not None and sid_in_scope_mask is not None) else pd.Series([True] * len(df))
+                    sid_series_local = (
+                        sid_key_series if sid_key_series is not None else pd.Series(range(len(df)))
+                    )
+                    scope_mask_local = (
+                        sid_in_scope_mask
+                        if (sid_key_series is not None and sid_in_scope_mask is not None)
+                        else pd.Series([True] * len(df))
+                    )
                     rows = []
                     for idx, (sid_val, cell) in enumerate(zip(sid_series_local, df["pdfno_list"])):
                         if not bool(scope_mask_local.iloc[idx]):
@@ -827,7 +928,9 @@ def build_report(input_xlsx, sheet=None, out_dir=None, unknown_tokens=None):
                         vc_pdf = pdf_df["value"].value_counts()
                         top_pdf = vc_pdf.nlargest(3)
                         if not top_pdf.empty:
-                            tdf = pd.DataFrame({"value": top_pdf.index.astype(str), metric: top_pdf.values})
+                            tdf = pd.DataFrame(
+                                {"value": top_pdf.index.astype(str), metric: top_pdf.values}
+                            )
                             tops.append((kc, tdf.reset_index(drop=True), metric))
                 except Exception as e:
                     print(f"[WARN] Combined grid pdf parse failed: {e}")
@@ -835,7 +938,11 @@ def build_report(input_xlsx, sheet=None, out_dir=None, unknown_tokens=None):
                 if kc in df.columns and df_dist is not None and not df_dist.empty:
                     sub = df_dist[df_dist["column"] == kc]
                     if not sub.empty:
-                        metric = "count_by_sid" if ("count_by_sid" in sub.columns and sub["count_by_sid"].notna().any()) else "count"
+                        metric = (
+                            "count_by_sid"
+                            if ("count_by_sid" in sub.columns and sub["count_by_sid"].notna().any())
+                            else "count"
+                        )
                         top = sub.nlargest(3, metric)[["value", metric]]
                         if not top.empty:
                             tops.append((kc, top.reset_index(drop=True), metric))
@@ -883,53 +990,75 @@ def build_report(input_xlsx, sheet=None, out_dir=None, unknown_tokens=None):
  table.dataTable thead th {white-space: nowrap;}
 </style></head><body>
 """)
-    html.append(f"<h1>Data Quality Report</h1><div class='muted'>File: {os.path.basename(input_xlsx)} • Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}</div>")
+    html.append(
+        f"<h1>Data Quality Report</h1><div class='muted'>File: {os.path.basename(input_xlsx)} • Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}</div>"
+    )
 
     # Summary
     html.append("<h2>Summary table (for the manuscript)</h2>")
-    html.append(f"<div class='muted'>Base for by_sid: <code>uniq(sanitize(synthesis_id))</code> = {int(sanitized_unique) if sid_series is not None else 0}</div><div class='wrap'>")
+    html.append(
+        f"<div class='muted'>Base for by_sid: <code>uniq(sanitize(synthesis_id))</code> = {int(sanitized_unique) if sid_series is not None else 0}</div><div class='wrap'>"
+    )
     html.append(pd.DataFrame(df_summary).to_html(index=False, classes="dt", table_id="tbl_summary"))
     html.append("</div>")
 
     # Compact manuscript table
     try:
         html.append("<h2>Manuscript table (CSV copy)</h2>")
-        html.append("<div class='muted'>Completeness is calculated by synthesis: a synthesis is filled if it has at least one valid parameter value. The <code>filled_sids_by_sid</code>/<code>missing_sids_by_sid</code> metrics use <code>uniq(sanitize(synthesis_id))</code> as the base. Local graph statistics include total nodes (occurrences), distinct values (unique), and the most frequent value.</div><div class='wrap'>")
+        html.append(
+            "<div class='muted'>Completeness is calculated by synthesis: a synthesis is filled if it has at least one valid parameter value. The <code>filled_sids_by_sid</code>/<code>missing_sids_by_sid</code> metrics use <code>uniq(sanitize(synthesis_id))</code> as the base. Local graph statistics include total nodes (occurrences), distinct values (unique), and the most frequent value.</div><div class='wrap'>"
+        )
         html.append(pd.DataFrame(df_paper).to_html(index=False, classes="dt", table_id="tbl_paper"))
         html.append("</div>")
     except Exception as e:
         html.append(f"<div class='muted'>[WARN] Failed to build the manuscript table: {e}</div>")
 
     # Distributions
-    html.append("<h2>Valid value distributions</h2><div class='muted'>NaN, empty strings, 'unknown', and '-999' are excluded. <code>count_by_sid</code>/<code>pct_by_sid</code> are also shown: each value is counted at most once per <code>sanitize(synthesis_id)</code>; the base contains ≈ 4248 syntheses.</div><div class='wrap'>")
-    html.append(pd.DataFrame(df_dist.head(100000)).to_html(index=False, classes="dt", table_id="tbl_dist"))
+    html.append(
+        "<h2>Valid value distributions</h2><div class='muted'>NaN, empty strings, 'unknown', and '-999' are excluded. <code>count_by_sid</code>/<code>pct_by_sid</code> are also shown: each value is counted at most once per <code>sanitize(synthesis_id)</code>; the base contains ≈ 4248 syntheses.</div><div class='wrap'>"
+    )
+    html.append(
+        pd.DataFrame(df_dist.head(100000)).to_html(index=False, classes="dt", table_id="tbl_dist")
+    )
     html.append("</div>")
 
     # Top-15 plots for each column
     if top_img_files:
         html.append("<h2>Top 15 values per column</h2>")
-        html.append("<div class='muted'>Metric: <code>count_by_sid</code> if available, otherwise <code>count</code>. NaN/empty/'unknown'/'-999' values are excluded.</div>")
+        html.append(
+            "<div class='muted'>Metric: <code>count_by_sid</code> if available, otherwise <code>count</code>. NaN/empty/'unknown'/'-999' values are excluded.</div>"
+        )
         # Local grid styling
-        html.append("""<style>.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px} figure{margin:0} figure img{width:100%;height:auto;border:1px solid #e5e7eb;border-radius:6px;background:#fff}</style>""")
+        html.append(
+            """<style>.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px} figure{margin:0} figure img{width:100%;height:auto;border:1px solid #e5e7eb;border-radius:6px;background:#fff}</style>"""
+        )
         html.append("<div class='grid'>")
         for fname in top_img_files:
-            html.append(f"<figure><img src='{fname}' loading='lazy'/><figcaption class='muted'>{fname}</figcaption></figure>")
+            html.append(
+                f"<figure><img src='{fname}' loading='lazy'/><figcaption class='muted'>{fname}</figcaption></figure>"
+            )
         html.append("</div>")
 
     # Top 3 values for key parameters (summary block)
     if key_img_files:
         html.append("<h2>Top 3 values for key parameters</h2>")
-        html.append("<div class='muted'>Each column uses <code>count_by_sid</code> if available, otherwise <code>count</code>. For <code>pdfno_list</code>, values are extracted from lists.</div>")
+        html.append(
+            "<div class='muted'>Each column uses <code>count_by_sid</code> if available, otherwise <code>count</code>. For <code>pdfno_list</code>, values are extracted from lists.</div>"
+        )
         html.append("<div class='grid'>")
         for fname in key_img_files:
-            html.append(f"<figure><img src='{fname}' loading='lazy'/><figcaption class='muted'>{fname}</figcaption></figure>")
+            html.append(
+                f"<figure><img src='{fname}' loading='lazy'/><figcaption class='muted'>{fname}</figcaption></figure>"
+            )
         html.append("</div>")
 
     # Combined summary plot (one image)
     if combined_img:
         html.append("<h2>Summary plot: top 3 values for key parameters (one image)</h2>")
         html.append("<div class='wrap'>")
-        html.append(f"<img src='{combined_img}' loading='lazy' style='max-width:100%;height:auto;border:1px solid #e5e7eb;border-radius:6px;background:#fff'/>")
+        html.append(
+            f"<img src='{combined_img}' loading='lazy' style='max-width:100%;height:auto;border:1px solid #e5e7eb;border-radius:6px;background:#fff'/>"
+        )
         html.append("</div>")
 
     html.append("""
@@ -947,27 +1076,44 @@ def build_report(input_xlsx, sheet=None, out_dir=None, unknown_tokens=None):
 
     print(f"[OK] Summary:       {os.path.join(out_dir, 'summary.csv')}")
     print(f"[OK] Summary(full):  {os.path.join(out_dir, 'summary_full.csv')}")
-    print(f"[OK] Distribution:  {os.path.join(out_dir, 'distribution.csv') if not df_dist.empty else '(no valid values)'}")
+    print(
+        f"[OK] Distribution:  {os.path.join(out_dir, 'distribution.csv') if not df_dist.empty else '(no valid values)'}"
+    )
     print(f"[OK] HTML report:   {index_html}")
     return out_dir
 
 
 def parse_args():
-    ap = argparse.ArgumentParser(description="Profile merged_all.xlsx: missing values and per-column distributions")
+    ap = argparse.ArgumentParser(
+        description="Profile merged_all.xlsx: missing values and per-column distributions"
+    )
     ap.add_argument(
-        "--input", "-i", default=_default_input_xlsx(),
+        "--input",
+        "-i",
+        default=_default_input_xlsx(),
         help="Path to the Excel file. Default: <script_dir>/merged_all.xlsx",
     )
     ap.add_argument("--sheet", "-s", default=None, help="Sheet name (first sheet by default)")
-    ap.add_argument("--out-dir", "-o", default=None, help="Report directory (default: dq_report_YYYYmmdd_HHMMSS beside the input file)")
-    ap.add_argument("--unknown", nargs="*", default=UNKNOWN_TOKENS_DEFAULT,
-                    help="Case-insensitive tokens treated as 'unknown'. Default: %(default)s")
     ap.add_argument(
-        "--local-graphs-dir", default=_default_local_graphs_dir(),
+        "--out-dir",
+        "-o",
+        default=None,
+        help="Report directory (default: dq_report_YYYYmmdd_HHMMSS beside the input file)",
+    )
+    ap.add_argument(
+        "--unknown",
+        nargs="*",
+        default=UNKNOWN_TOKENS_DEFAULT,
+        help="Case-insensitive tokens treated as 'unknown'. Default: %(default)s",
+    )
+    ap.add_argument(
+        "--local-graphs-dir",
+        default=_default_local_graphs_dir(),
         help="Directory containing local graphs (*.graphml). Default: outputs/graph/local_graphs_renamed",
     )
     ap.add_argument(
-        "--global-graph-path", default=_default_global_graph_path(),
+        "--global-graph-path",
+        default=_default_global_graph_path(),
         help="Path to the global graph (graph.graphml). Default: outputs/graph/graph.graphml",
     )
     return ap.parse_args()

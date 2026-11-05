@@ -1,14 +1,14 @@
-"""Rebuild the requested SynthWay tables from portable measurements. No API calls."""
+"""Recalculate Table 1 and Tables S8–S11 and S13–S19 from the supplied study data."""
 
-from pathlib import Path
 import argparse
 import csv
 import warnings
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
+from calculate_table_1 import MODELS, absolute_agreement_icc, agreement, paired_scores
 from scipy.stats import ConstantInputWarning
-from calculate_table_1 import MODELS, agreement, paired_scores, absolute_agreement_icc
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
@@ -56,19 +56,13 @@ def describe(group):
 
 
 def repeatability_tables():
-    runs = read("pipeline_ratings.csv").replace(
-        {"model": {"Nemotron 3 Nano": MODELS_DISPLAY[3]}}
-    )
+    runs = read("pipeline_ratings.csv").replace({"model": {"Nemotron 3 Nano": MODELS_DISPLAY[3]}})
     key = ["model", "run", "metric", "route_id"]
     if runs.duplicated(key).any() or len(runs) != 3240 or runs.score.isna().any():
-        raise ValueError(
-            "Expected 3,240 unique scored route/run/criterion observations."
-        )
+        raise ValueError("Expected 3,240 unique scored route/run/criterion observations.")
     counts = runs.groupby(key[:-1]).score.count()
     if len(counts) != 36 or not counts.eq(90).all() or not runs.threshold.eq(0.8).all():
-        raise ValueError(
-            "Pipeline score coverage or pass threshold differs from the study design."
-        )
+        raise ValueError("Pipeline score coverage or pass threshold differs from the study design.")
     runs["pass_fraction"] = runs.score.ge(runs.threshold)
     per_run = runs.groupby(["model", "metric", "run"]).agg(
         run_mean=("score", "mean"),
@@ -250,9 +244,7 @@ def self_evaluation_tables():
         raise ValueError(
             "The matched expert and self-judge observations differ from the declared 40 routes."
         )
-    data = data.rename(columns={"judge_mean": "judge_score"}).sort_values(
-        "analysis_order"
-    )
+    data = data.rename(columns={"judge_mean": "judge_score"}).sort_values("analysis_order")
     s13 = [
         ["Model", *[m for m in CRITERIA for _ in range(2)]],
         ["Mean score", *(["Mean score"] * 6)],
@@ -279,7 +271,7 @@ def self_evaluation_tables():
             passes = group.pivot(index="ID", columns="criterion", values=col).ge(0.8)
             passes["All three"] = passes.all(axis=1)
             for m, n in passes.sum().items():
-                rates[m, col] = f"{n}/{len(passes)} ({100*n/len(passes):.1f}%)"
+                rates[m, col] = f"{n}/{len(passes)} ({100 * n / len(passes):.1f}%)"
         s14.append(
             [
                 model,
@@ -374,17 +366,13 @@ def cross_evaluation_tables():
         or not pairs["count"].eq(3).all()
         or not np.allclose(pairs.judge_mean, pairs["mean"], rtol=0, atol=1e-12)
     ):
-        raise ValueError(
-            "Cross-judge observations do not match the linked route means."
-        )
+        raise ValueError("Cross-judge observations do not match the linked route means.")
     pairs["criterion"] = pairs.table.map({"S18": "CPC", "S19": "Faithfulness"})
-    pairs = pairs.merge(
-        experts(), on=["ID", "criterion"], validate="many_to_one"
-    ).rename(columns={"judge_mean": "judge_score"})
+    pairs = pairs.merge(experts(), on=["ID", "criterion"], validate="many_to_one").rename(
+        columns={"judge_mean": "judge_score"}
+    )
     for n in [18, 19]:
-        out[n] = comparison_rows(
-            pairs[pairs.table == f"S{n}"].sort_values("analysis_order")
-        )
+        out[n] = comparison_rows(pairs[pairs.table == f"S{n}"].sort_values("analysis_order"))
     return out
 
 
@@ -410,9 +398,7 @@ def main():
                             (
                                 "—"
                                 if not np.isfinite(v)
-                                else (
-                                    f"{v:.12g}" if n == 11 else f"{np.round(v,3):.3f}"
-                                )
+                                else (f"{v:.12g}" if n == 11 else f"{np.round(v, 3):.3f}")
                             )
                             if isinstance(v, (float, np.floating))
                             else v

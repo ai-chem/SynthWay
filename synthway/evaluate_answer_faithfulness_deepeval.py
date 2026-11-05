@@ -1,51 +1,17 @@
-"""
-evaluate_rag_answer_faithfulness.py
+"""Evaluate Answer Relevancy and Faithfulness for generated synthesis routes.
 
-Evaluate generated routes (predictions.py outputs)
-using DeepEval RAG metrics:
-  * AnswerRelevancyMetric  — relevance of the answer to the original request;
-  * FaithfulnessMetric     — grounding in the retrieved context and consistency with it.
+Original Faithfulness is the default; --faithfulness-mode ss selects SS-Faithfulness.
+Read route_*.json recursively under --routes-dir, with retrieval_context.json
+beside each route:
+    route_*.json: {"raw_text": "...", "retrieval_text": "..."}
+    retrieval_context.json: {"composition": "Ag", "method": null,
+                             "retrieval_context": ["source text"]}
+Context metadata may also contain rag_topk and query.
 
-Expected data layout:
-
-For each task (case_id) under --routes-dir:
-  case_dir/
-    retrieval_context.json        # Saved by predictions.py
-    route_1.json                  # One JSON file per route
-    route_2.json
-    ...
-
-retrieval_context.json format:
-  {
-    "composition": "Ag80Fe20",
-    "method": "polyol reduction" | null,
-    "rag_topk": 3,
-    "query": "...",
-    "retrieval_context": [
-        "original RAG hit 1 ...",
-        "original RAG hit 2 ...",
-        ...
-    ]
-  }
-
-route_*.json format (saved by utils.save_routes_to_directory):
-  {
-    "raw_text": "human-readable, step-by-step protocol...",
-    "retrieval_text": "slot-based summary: composition=..., method=..., solvent=..., ..."
-  }
-
-Workflow:
-  - Recursively traverse all route_*.json files under --routes-dir.
-  - Find retrieval_context.json beside each route.
-  - Build an LLMTestCase with:
-        input             ~ target composition (from retrieval_context.json) + brief task description;
-        actual_output     ~ raw_text if available, otherwise retrieval_text;
-        retrieval_context ~ list of texts from retrieval_context.json.
-  - Compute two DeepEval metrics separately for each route.
-  - Write a summary JSON containing results for all routes.
-
-  Supports resuming: --out-json saves results incrementally during evaluation,
-  and --resume skips processed routes to continue after a failure or interruption.
+The judge receives composition as input, raw_text (or retrieval_text if empty)
+as actual_output, and the retrieved texts as context.
+Save results incrementally with --out-json. With --resume, skip routes that have
+numeric scores for both metrics and no error.
 """
 
 import argparse
@@ -54,9 +20,10 @@ import os
 import re
 import time
 from dataclasses import dataclass
+from typing import Any
 
-from typing import Any, Dict, List, Optional
-def _usage_to_dict(usage_obj) -> Optional[Dict[str, Any]]:
+
+def _usage_to_dict(usage_obj) -> dict[str, Any] | None:
     """Convert OpenAI/OpenRouter usage object into a plain dict (best-effort)."""
     if usage_obj is None:
         return None
@@ -72,7 +39,7 @@ def _usage_to_dict(usage_obj) -> Optional[Dict[str, Any]]:
     except Exception:
         pass
 
-    out: Dict[str, Any] = {}
+    out: dict[str, Any] = {}
     for k in (
         "prompt_tokens",
         "completion_tokens",
@@ -98,21 +65,25 @@ def _usage_to_dict(usage_obj) -> Optional[Dict[str, Any]]:
 
     return out
 
+
 from credentials import load_credentials
 
 # DeepEval imports
 from deepeval.metrics import AnswerRelevancyMetric, FaithfulnessMetric
-from ss_faithfulness import (
-    SSFaithfulnessMetric, SS_FAITHFULNESS_ID, ORIGINAL_FAITHFULNESS_ID,
-    build_ss_judge_model, validate_resume_metric,
-)
-from deepeval.test_case import LLMTestCase
 from deepeval.models import DeepEvalBaseLLM
+from deepeval.test_case import LLMTestCase
+from ss_faithfulness import (
+    ORIGINAL_FAITHFULNESS_ID,
+    SS_FAITHFULNESS_ID,
+    SSFaithfulnessMetric,
+    build_ss_judge_model,
+    validate_resume_metric,
+)
 
 load_credentials()
 
 
-def load_retrieval_context_json(case_dir: str) -> tuple[List[str], Optional[str], Optional[str]]:
+def load_retrieval_context_json(case_dir: str) -> tuple[list[str], str | None, str | None]:
     """Load retrieval_context.json from a case directory.
 
     Returns:
@@ -143,10 +114,10 @@ def load_retrieval_context_json(case_dir: str) -> tuple[List[str], Optional[str]
 
 def build_test_case_from_parts(
     composition: str,
-    method: Optional[str],
+    method: str | None,
     raw_text: str,
     retrieval_text: str,
-    retrieval_context: List[str],
+    retrieval_context: list[str],
 ) -> LLMTestCase:
     """Builds an LLMTestCase for RAG metrics from primitive fields."""
     comp = (composition or "UNKNOWN").strip() or "UNKNOWN"
@@ -163,10 +134,10 @@ def build_test_case_from_parts(
 
 def make_answer_relevancy_metric(
     threshold: float,
-    judge_model: Optional[Any] = None,
+    judge_model: Any | None = None,
 ) -> AnswerRelevancyMetric:
-    """Factory analogous to make_chemical_geval_metric but for AnswerRelevancyMetric."""
-    kwargs: Dict[str, Any] = {
+    """Build AnswerRelevancyMetric with the threshold and optional judge model."""
+    kwargs: dict[str, Any] = {
         "threshold": threshold,
         "include_reason": True,
     }
@@ -177,15 +148,17 @@ def make_answer_relevancy_metric(
 
 def make_faithfulness_metric(
     threshold: float,
-    judge_model: Optional[Any] = None,
-    *, mode: str = "original", before_call=None,
+    judge_model: Any | None = None,
+    *,
+    mode: str = "original",
+    before_call=None,
 ):
     """Select SS-Faithfulness explicitly; preserve original evaluations by default."""
     if mode == "ss":
         return SSFaithfulnessMetric(threshold, judge_model, before_call=before_call)
     if mode != "original":
         raise ValueError(f"Unknown Faithfulness mode: {mode}")
-    kwargs: Dict[str, Any] = {
+    kwargs: dict[str, Any] = {
         "threshold": threshold,
         "include_reason": True,
     }
@@ -198,10 +171,10 @@ def make_faithfulness_metric(
 class RouteRecord:
     file: str
     path: str
-    composition: Optional[str]
+    composition: str | None
     raw_text: str
     retrieval_text: str
-    retrieval_context: List[str]
+    retrieval_context: list[str]
 
 
 def parse_args() -> argparse.Namespace:
@@ -252,10 +225,7 @@ def parse_args() -> argparse.Namespace:
         "--rpm-limit",
         type=int,
         default=15,
-        help=(
-            "Limit metric calls per minute (requests per minute). "
-            "No limit is applied if <= 0."
-        ),
+        help=("Limit metric calls per minute (requests per minute). No limit is applied if <= 0."),
     )
     parser.add_argument(
         "--resume",
@@ -269,8 +239,7 @@ def parse_args() -> argparse.Namespace:
         "--out-json",
         default=None,
         help=(
-            "Path to the JSON file for per-route results. "
-            "If omitted, print results to stdout only."
+            "Path to the JSON file for per-route results. If omitted, print results to stdout only."
         ),
     )
     parser.add_argument(
@@ -283,15 +252,15 @@ def parse_args() -> argparse.Namespace:
         ),
     )
     parser.add_argument(
-        "--faithfulness-mode", choices=("original", "ss"), default="original",
+        "--faithfulness-mode",
+        choices=("original", "ss"),
+        default="original",
         help="original: DeepEval Faithfulness metric used in the initial screening; ss: synthesis-specific expert formula. The GUI and live demo use ss.",
     )
     return parser.parse_args()
 
 
-
-
-def parse_composition_from_retrieval(retrieval_text: str) -> Optional[str]:
+def parse_composition_from_retrieval(retrieval_text: str) -> str | None:
     if not retrieval_text:
         return None
     m = re.search(r"composition\s*[:=]\s*([^\|,\n]+)", retrieval_text, flags=re.IGNORECASE)
@@ -302,15 +271,13 @@ def parse_composition_from_retrieval(retrieval_text: str) -> Optional[str]:
     return comp or None
 
 
-
-
 # Load routes and retrieval_context
 
 
-import glob  # Import after function definitions to keep the file header concise
+import glob
 
 
-def load_route_records(routes_dir: str) -> List[RouteRecord]:
+def load_route_records(routes_dir: str) -> list[RouteRecord]:
     """
     Recursively find all route_*.json files in routes_dir and load
     retrieval_context.json from the same directory for each route.
@@ -321,7 +288,7 @@ def load_route_records(routes_dir: str) -> List[RouteRecord]:
     if not paths:
         raise RuntimeError(f"No route_*.json files found in {routes_dir!r}.")
 
-    records: List[RouteRecord] = []
+    records: list[RouteRecord] = []
 
     for path in paths:
         with open(path, "r", encoding="utf-8") as f:
@@ -332,8 +299,8 @@ def load_route_records(routes_dir: str) -> List[RouteRecord]:
 
         case_dir = os.path.dirname(path)
         rc_path = os.path.join(case_dir, "retrieval_context.json")
-        retrieval_context: List[str] = []
-        composition: Optional[str] = None
+        retrieval_context: list[str] = []
+        composition: str | None = None
         # First try obtaining composition from retrieval_context.json
         if os.path.isfile(rc_path):
             try:
@@ -377,10 +344,8 @@ def load_route_records(routes_dir: str) -> List[RouteRecord]:
 class OpenRouterChatModel(DeepEvalBaseLLM):
     """Minimal OpenAI-compatible chat model wrapper for DeepEval.
 
-    DeepEval's metrics accept a custom model object as long as it can be called to
-    produce a completion. We implement both sync and async interfaces.
-
-    Uses the official `openai` python client but points it to OpenRouter via base_url.
+    Implements sync and async interfaces using the `openai` client
+    with OpenRouter as base_url.
     """
 
     def __init__(
@@ -388,8 +353,8 @@ class OpenRouterChatModel(DeepEvalBaseLLM):
         model: str,
         api_key: str,
         base_url: str = "https://openrouter.ai/api/v1",
-        http_referer: Optional[str] = None,
-        app_title: Optional[str] = None,
+        http_referer: str | None = None,
+        app_title: str | None = None,
         temperature: float = 0.0,
         force_json: bool = True,
     ) -> None:
@@ -398,10 +363,10 @@ class OpenRouterChatModel(DeepEvalBaseLLM):
         self.base_url = base_url
         self.temperature = temperature
         self.force_json = force_json
-        self.last_usage: Optional[Dict[str, Any]] = None
-        self.last_cost_usd: Optional[float] = None
+        self.last_usage: dict[str, Any] | None = None
+        self.last_cost_usd: float | None = None
         # Per-call accounting history (covers cases where a metric performs multiple LLM calls).
-        self.usage_log: List[Dict[str, Any]] = []
+        self.usage_log: list[dict[str, Any]] = []
 
         try:
             from openai import OpenAI
@@ -410,7 +375,7 @@ class OpenRouterChatModel(DeepEvalBaseLLM):
                 "Failed to import 'openai'. Install/update it: pip install -U openai"
             ) from e
 
-        headers: Dict[str, str] = {}
+        headers: dict[str, str] = {}
         if http_referer:
             headers["HTTP-Referer"] = http_referer
         if app_title:
@@ -444,7 +409,7 @@ class OpenRouterChatModel(DeepEvalBaseLLM):
 
         # Prefer JSON mode when supported (OpenRouter supports response_format for many models).
         # If the backend/model rejects it, fall back to a normal call.
-        kwargs: Dict[str, Any] = {
+        kwargs: dict[str, Any] = {
             "model": self.model,
             "messages": messages,
             "temperature": self.temperature,
@@ -459,7 +424,7 @@ class OpenRouterChatModel(DeepEvalBaseLLM):
             kwargs.pop("response_format", None)
             resp = client.chat.completions.create(**kwargs)
 
-        # --- OpenRouter usage accounting (judge) ---
+        # OpenRouter usage accounting (judge)
         usage_dict = _usage_to_dict(getattr(resp, "usage", None)) or {}
         if "cost" not in usage_dict:
             try:
@@ -494,7 +459,7 @@ class OpenRouterChatModel(DeepEvalBaseLLM):
         return await loop.run_in_executor(None, self.generate, prompt, **kwargs)
 
 
-def build_judge_model(eval_model: Optional[str]) -> Optional[Any]:
+def build_judge_model(eval_model: str | None) -> Any | None:
     """
     Prepare the judge model for DeepEval RAG metrics.
 
@@ -625,7 +590,7 @@ def build_judge_model(eval_model: Optional[str]) -> Optional[Any]:
             "google/",
         ):
             if model_name.lower().startswith(prefix):
-                model_name = model_name[len(prefix):]
+                model_name = model_name[len(prefix) :]
                 break
 
         print(
@@ -644,24 +609,16 @@ def build_judge_model(eval_model: Optional[str]) -> Optional[Any]:
     return eval_model_str
 
 
+# LLMTestCase from RouteRecord
 
-# --- LLMTestCase from RouteRecord ---
-
-# NOTE: DeepEval's judge LLM is expected to output valid JSON.
-# Some route texts include LaTeX fragments like "\\text{...}" or "\\cdot" or file paths
-# that can sometimes leak into judge outputs and break JSON parsing (Invalid \\escape).
-# We keep the original generation output intact, but feed a slightly sanitized version
-# to the judge to reduce flaky JSONDecodeError.
+# Sanitize judge input without rewriting the saved route.
 
 _LATEX_MATH_RE = re.compile(r"\$[^$]*\$")
 
+
 def sanitize_for_judge(text: str) -> str:
-    r"""Lightweight sanitization for judge-facing text.
-
-    - Removes inline LaTeX math blocks `$...$` (common source of backslashes like \text, \cdot).
-    - Escapes backslashes so that if the judge copies snippets into its JSON, it stays parseable.
-
-    This is intentionally minimal to avoid changing the semantics of the protocol.
+    """Remove inline $...$ blocks, escape backslashes, and normalize blank lines
+    for judge input.
     """
     if not text:
         return text
@@ -688,7 +645,6 @@ def build_test_case(route: RouteRecord) -> LLMTestCase:
     """
     composition = route.composition or "UNKNOWN"
 
-    # Keep this close to the actual user input
     input_text = composition
 
     actual_output = route.raw_text or route.retrieval_text
@@ -699,9 +655,6 @@ def build_test_case(route: RouteRecord) -> LLMTestCase:
         actual_output=actual_output,
         retrieval_context=route.retrieval_context,
     )
-
-
-# --- Main workflow ---
 
 
 def main() -> None:
@@ -718,6 +671,7 @@ def main() -> None:
         # DeepEval caches settings at import time; reset so runtime env overrides take effect
         try:
             from deepeval.config.settings import reset_settings
+
             reset_settings(reload_dotenv=True)
         except Exception:
             pass
@@ -732,8 +686,11 @@ def main() -> None:
             records = records[: args.max_cases]
             print(f"Limiting routes to {len(records)} using --max-cases.")
 
-        judge_model = (build_ss_judge_model(args.eval_model) if args.faithfulness_mode == "ss"
-                       else build_judge_model(args.eval_model))
+        judge_model = (
+            build_ss_judge_model(args.eval_model)
+            if args.faithfulness_mode == "ss"
+            else build_judge_model(args.eval_model)
+        )
 
         answer_metric = make_answer_relevancy_metric(
             threshold=args.answer_threshold,
@@ -747,7 +704,7 @@ def main() -> None:
         )
         print(f"Faithfulness metric: {metric_id}")
 
-        existing_results: List[Dict[str, Any]] = []
+        existing_results: list[dict[str, Any]] = []
         processed_paths: set[str] = set()
         if args.out_json and args.resume and os.path.isfile(args.out_json):
             try:
@@ -760,8 +717,12 @@ def main() -> None:
                         and isinstance(r.get("answer_score"), (int, float))
                         and isinstance(r.get("faithfulness_score"), (int, float))
                     ):
-                        r["answer_passed"] = float(r["answer_score"]) >= float(args.answer_threshold)
-                        r["faithfulness_passed"] = float(r["faithfulness_score"]) >= float(args.faithfulness_threshold)
+                        r["answer_passed"] = float(r["answer_score"]) >= float(
+                            args.answer_threshold
+                        )
+                        r["faithfulness_passed"] = float(r["faithfulness_score"]) >= float(
+                            args.faithfulness_threshold
+                        )
 
                 # In resume mode, skip ONLY successfully evaluated routes (not errors).
                 processed_paths = {
@@ -777,10 +738,7 @@ def main() -> None:
                 }
                 print(f"Resume mode: previously successful routes found: {len(processed_paths)}")
             except Exception as e:
-                print(
-                    f"[WARN] Failed to load the existing results file "
-                    f"{args.out_json!r}: {e}"
-                )
+                print(f"[WARN] Failed to load the existing results file {args.out_json!r}: {e}")
                 existing_results = []
                 processed_paths = set()
 
@@ -792,11 +750,11 @@ def main() -> None:
             )
 
         rpm_limit: int = getattr(args, "rpm_limit", 15)
-        request_timestamps: List[float] = []
+        request_timestamps: list[float] = []
 
-        results: List[Dict[str, Any]] = list(existing_results)
+        results: list[dict[str, Any]] = list(existing_results)
 
-        # --- run health counters (errors / retries) ---
+        # run health counters (errors / retries)
         n_to_process = len(records)
         n_success = 0
         n_errors = 0
@@ -813,7 +771,7 @@ def main() -> None:
         n_retries_transient = 0
 
         # Error type histogram
-        error_type_counts: Dict[str, int] = {}
+        error_type_counts: dict[str, int] = {}
 
         def _flush_results() -> None:
             if not args.out_json:
@@ -858,7 +816,7 @@ def main() -> None:
             faith_total_time_s = None
             route_total_time_s = None
 
-            # LLM-call time excludes our fixed sleeps / local rpm waits.
+            # LLM-call time excludes fixed pauses and local RPM waits.
             answer_llm_time_s = 0.0
             faith_llm_time_s = 0.0
 
@@ -866,7 +824,7 @@ def main() -> None:
             route_retries_invalid_json = 0
             route_retries_transient = 0
 
-            # --- per-route judge usage accumulation (tokens/cost across ALL judge calls, incl. retries) ---
+            # per-route judge usage accumulation (tokens/cost across ALL judge calls, incl. retries)
             answer_attempts = 0
             faith_attempts = 0
             answer_judge_calls_total = 0
@@ -885,7 +843,7 @@ def main() -> None:
                 "cost": 0.0,
             }
 
-            def _accumulate_usage(target: Dict[str, Any], usage: Optional[Dict[str, Any]]) -> None:
+            def _accumulate_usage(target: dict[str, Any], usage: dict[str, Any] | None) -> None:
                 """Accumulate OpenRouter usage dict into target (best-effort)."""
                 if not usage or not isinstance(usage, dict):
                     return
@@ -899,14 +857,16 @@ def main() -> None:
                 if isinstance(c, (int, float)):
                     target["cost"] = float(target.get("cost", 0.0)) + float(c)
                 else:
-                    # Some OpenRouter responses may expose cost under alternate keys; be defensive.
+                    # Fall back to cost_usd, total_cost, or price when cost is not numeric.
                     for alt in ("cost_usd", "total_cost", "price"):
                         ac = usage.get(alt)
                         if isinstance(ac, (int, float)):
                             target["cost"] = float(target.get("cost", 0.0)) + float(ac)
                             break
 
-            def _accumulate_usage_from_log(target: Dict[str, Any], entries: List[Dict[str, Any]]) -> None:
+            def _accumulate_usage_from_log(
+                target: dict[str, Any], entries: list[dict[str, Any]]
+            ) -> None:
                 """Accumulate usage across multiple judge calls (best-effort)."""
                 if not entries:
                     return
@@ -915,12 +875,15 @@ def main() -> None:
                         _accumulate_usage(target, ent)
 
             try:
+
                 def _is_invalid_json_exc(exc: Exception) -> bool:
                     msg = str(exc).lower()
                     if "invalid json" in msg or "jsondecodeerror" in msg:
                         return True
                     ctx = getattr(exc, "__context__", None)
-                    if ctx is not None and ("json" in str(ctx).lower() or "jsondecodeerror" in str(ctx).lower()):
+                    if ctx is not None and (
+                        "json" in str(ctx).lower() or "jsondecodeerror" in str(ctx).lower()
+                    ):
                         return True
                     return False
 
@@ -928,7 +891,12 @@ def main() -> None:
                     """Best-effort detection of HTTP 429 / rate limit errors from various SDKs."""
                     # Direct message match
                     msg = str(exc).lower()
-                    if "429" in msg or "rate limit" in msg or "ratelimit" in msg or "too many requests" in msg:
+                    if (
+                        "429" in msg
+                        or "rate limit" in msg
+                        or "ratelimit" in msg
+                        or "too many requests" in msg
+                    ):
                         return True
 
                     # Some SDKs expose a status_code attribute
@@ -937,11 +905,19 @@ def main() -> None:
                         return True
 
                     # Walk cause/context chain
-                    for nested in (getattr(exc, "__cause__", None), getattr(exc, "__context__", None)):
+                    for nested in (
+                        getattr(exc, "__cause__", None),
+                        getattr(exc, "__context__", None),
+                    ):
                         if nested is None:
                             continue
                         nmsg = str(nested).lower()
-                        if "429" in nmsg or "rate limit" in nmsg or "ratelimit" in nmsg or "too many requests" in nmsg:
+                        if (
+                            "429" in nmsg
+                            or "rate limit" in nmsg
+                            or "ratelimit" in nmsg
+                            or "too many requests" in nmsg
+                        ):
                             return True
                         nstatus = getattr(nested, "status_code", None)
                         if nstatus == 429:
@@ -980,20 +956,32 @@ def main() -> None:
                     if any(m in msg for m in transient_markers):
                         return True
 
-                    if isinstance(exc, AttributeError) and "statements" in msg and "nonetype" in msg:
+                    if (
+                        isinstance(exc, AttributeError)
+                        and "statements" in msg
+                        and "nonetype" in msg
+                    ):
                         return True
 
-                    for nested in (getattr(exc, "__cause__", None), getattr(exc, "__context__", None)):
+                    for nested in (
+                        getattr(exc, "__cause__", None),
+                        getattr(exc, "__context__", None),
+                    ):
                         if nested is None:
                             continue
                         nmsg = str(nested).lower()
                         if any(m in nmsg for m in transient_markers):
                             return True
-                        if isinstance(nested, AttributeError) and "statements" in nmsg and "nonetype" in nmsg:
+                        if (
+                            isinstance(nested, AttributeError)
+                            and "statements" in nmsg
+                            and "nonetype" in nmsg
+                        ):
                             return True
 
                     try:
                         import aiohttp  # type: ignore
+
                         if isinstance(exc, aiohttp.ClientError):
                             return True
                     except Exception:
@@ -1001,6 +989,7 @@ def main() -> None:
 
                     try:
                         import grpc  # type: ignore
+
                         if isinstance(exc, grpc.RpcError):
                             return True
                     except Exception:
@@ -1023,7 +1012,7 @@ def main() -> None:
                         _wait_if_needed()
                         _t_call = time.perf_counter()
                         answer_metric.measure(tc)
-                        answer_llm_time_s += (time.perf_counter() - _t_call)
+                        answer_llm_time_s += time.perf_counter() - _t_call
 
                         # Count attempt and accumulate usage for this attempt.
                         # Use per-call usage_log to capture *all* judge calls that may happen inside measure().
@@ -1053,7 +1042,7 @@ def main() -> None:
                     except Exception as e:
                         # Count time spent in the judge call for failed attempts as well
                         try:
-                            answer_llm_time_s += (time.perf_counter() - _t_call)
+                            answer_llm_time_s += time.perf_counter() - _t_call
                         except Exception:
                             pass
                         attempt += 1
@@ -1078,10 +1067,14 @@ def main() -> None:
                             n_retries_total += 1
                             n_retries_invalid_json += 1
                             route_retries_invalid_json += 1
-                            print(f"[WARN] AnswerRelevancy judge returned invalid JSON; retry {attempt}/{max_json_retries}...")
+                            print(
+                                f"[WARN] AnswerRelevancy judge returned invalid JSON; retry {attempt}/{max_json_retries}..."
+                            )
                             time.sleep(2)
                             continue
-                        if attempt <= (max_json_retries + max_transient_retries) and _is_transient_exc(e):
+                        if attempt <= (
+                            max_json_retries + max_transient_retries
+                        ) and _is_transient_exc(e):
                             n_retries_total += 1
                             n_retries_transient += 1
                             route_retries_transient += 1
@@ -1107,7 +1100,7 @@ def main() -> None:
                             _wait_if_needed()
                         _t_call = time.perf_counter()
                         faithfulness_metric.measure(tc)
-                        faith_llm_time_s += (time.perf_counter() - _t_call)
+                        faith_llm_time_s += time.perf_counter() - _t_call
 
                         # Count attempt and accumulate usage for this attempt.
                         # Use per-call usage_log to capture *all* judge calls that may happen inside measure().
@@ -1137,7 +1130,7 @@ def main() -> None:
                     except Exception as e:
                         # Count time spent in the judge call for failed attempts as well
                         try:
-                            faith_llm_time_s += (time.perf_counter() - _t_call)
+                            faith_llm_time_s += time.perf_counter() - _t_call
                         except Exception:
                             pass
                         attempt += 1
@@ -1162,10 +1155,14 @@ def main() -> None:
                             n_retries_total += 1
                             n_retries_invalid_json += 1
                             route_retries_invalid_json += 1
-                            print(f"[WARN] Faithfulness judge returned invalid JSON; retry {attempt}/{max_json_retries}...")
+                            print(
+                                f"[WARN] Faithfulness judge returned invalid JSON; retry {attempt}/{max_json_retries}..."
+                            )
                             time.sleep(2)
                             continue
-                        if attempt <= (max_json_retries + max_transient_retries) and _is_transient_exc(e):
+                        if attempt <= (
+                            max_json_retries + max_transient_retries
+                        ) and _is_transient_exc(e):
                             n_retries_total += 1
                             n_retries_transient += 1
                             route_retries_transient += 1
@@ -1186,26 +1183,37 @@ def main() -> None:
                     "used_retrieval_text_fallback": used_fallback,
                     "answer_score": answer_metric.score,
                     "answer_threshold": answer_metric.threshold,
-                    "answer_passed": (answer_metric.score is not None) and (float(answer_metric.score) >= float(args.answer_threshold)),
+                    "answer_passed": (answer_metric.score is not None)
+                    and (float(answer_metric.score) >= float(args.answer_threshold)),
                     "answer_reason": answer_metric.reason,
                     "faithfulness_score": faithfulness_metric.score,
                     "faithfulness_threshold": faithfulness_metric.threshold,
-                    "faithfulness_passed": (faithfulness_metric.score is not None) and (float(faithfulness_metric.score) >= float(args.faithfulness_threshold)),
+                    "faithfulness_passed": (faithfulness_metric.score is not None)
+                    and (float(faithfulness_metric.score) >= float(args.faithfulness_threshold)),
                     "faithfulness_reason": faithfulness_metric.reason,
-                    **(faithfulness_metric.result_fields() if args.faithfulness_mode == "ss"
-                       else {"faithfulness_metric": ORIGINAL_FAITHFULNESS_ID}),
+                    **(
+                        faithfulness_metric.result_fields()
+                        if args.faithfulness_mode == "ss"
+                        else {"faithfulness_metric": ORIGINAL_FAITHFULNESS_ID}
+                    ),
                     "route_retries_invalid_json": route_retries_invalid_json,
                     "route_retries_transient": route_retries_transient,
                     "answer_attempts": answer_attempts,
                     "faith_attempts": faith_attempts,
                     "answer_judge_calls_total": int(answer_judge_calls_total),
                     "faith_judge_calls_total": int(faith_judge_calls_total),
-                    "answer_judge_prompt_tokens_total": int(answer_usage_sum.get("prompt_tokens", 0)),
-                    "answer_judge_completion_tokens_total": int(answer_usage_sum.get("completion_tokens", 0)),
+                    "answer_judge_prompt_tokens_total": int(
+                        answer_usage_sum.get("prompt_tokens", 0)
+                    ),
+                    "answer_judge_completion_tokens_total": int(
+                        answer_usage_sum.get("completion_tokens", 0)
+                    ),
                     "answer_judge_total_tokens_total": int(answer_usage_sum.get("total_tokens", 0)),
                     "answer_judge_cost_usd_total": float(answer_usage_sum.get("cost", 0.0)),
                     "faith_judge_prompt_tokens_total": int(faith_usage_sum.get("prompt_tokens", 0)),
-                    "faith_judge_completion_tokens_total": int(faith_usage_sum.get("completion_tokens", 0)),
+                    "faith_judge_completion_tokens_total": int(
+                        faith_usage_sum.get("completion_tokens", 0)
+                    ),
                     "faith_judge_total_tokens_total": int(faith_usage_sum.get("total_tokens", 0)),
                     "faith_judge_cost_usd_total": float(faith_usage_sum.get("cost", 0.0)),
                     "answer_total_time_s": answer_total_time_s,
@@ -1251,14 +1259,14 @@ def main() -> None:
             except Exception as e:
                 err_type = type(e).__name__
                 base_msg = f"{err_type}: {e}"
-                print(
-                    f"\n[ERROR] Evaluation of {route.file} failed: {base_msg}"
-                )
+                print(f"\n[ERROR] Evaluation of {route.file} failed: {base_msg}")
 
                 # classify error
                 is_rate_limited = _is_rate_limit_exc(e)
                 is_transient = _is_transient_exc(e)
-                category = "rate_limit" if is_rate_limited else ("network" if is_transient else "other")
+                category = (
+                    "rate_limit" if is_rate_limited else ("network" if is_transient else "other")
+                )
 
                 n_errors += 1
                 error_type_counts[err_type] = error_type_counts.get(err_type, 0) + 1
@@ -1269,7 +1277,7 @@ def main() -> None:
                 # Try extracting a more specific root cause (e.g., ClientError inside RetryError)
                 cause = getattr(e, "__cause__", None)
                 context_exc = getattr(e, "__context__", None)
-                error_details: Dict[str, Any] = {"base": base_msg}
+                error_details: dict[str, Any] = {"base": base_msg}
 
                 if cause is not None:
                     cause_type = type(cause).__name__
@@ -1300,13 +1308,25 @@ def main() -> None:
                         "faith_attempts": faith_attempts,
                         "answer_judge_calls_total": int(answer_judge_calls_total),
                         "faith_judge_calls_total": int(faith_judge_calls_total),
-                        "answer_judge_prompt_tokens_total": int(answer_usage_sum.get("prompt_tokens", 0)),
-                        "answer_judge_completion_tokens_total": int(answer_usage_sum.get("completion_tokens", 0)),
-                        "answer_judge_total_tokens_total": int(answer_usage_sum.get("total_tokens", 0)),
+                        "answer_judge_prompt_tokens_total": int(
+                            answer_usage_sum.get("prompt_tokens", 0)
+                        ),
+                        "answer_judge_completion_tokens_total": int(
+                            answer_usage_sum.get("completion_tokens", 0)
+                        ),
+                        "answer_judge_total_tokens_total": int(
+                            answer_usage_sum.get("total_tokens", 0)
+                        ),
                         "answer_judge_cost_usd_total": float(answer_usage_sum.get("cost", 0.0)),
-                        "faith_judge_prompt_tokens_total": int(faith_usage_sum.get("prompt_tokens", 0)),
-                        "faith_judge_completion_tokens_total": int(faith_usage_sum.get("completion_tokens", 0)),
-                        "faith_judge_total_tokens_total": int(faith_usage_sum.get("total_tokens", 0)),
+                        "faith_judge_prompt_tokens_total": int(
+                            faith_usage_sum.get("prompt_tokens", 0)
+                        ),
+                        "faith_judge_completion_tokens_total": int(
+                            faith_usage_sum.get("completion_tokens", 0)
+                        ),
+                        "faith_judge_total_tokens_total": int(
+                            faith_usage_sum.get("total_tokens", 0)
+                        ),
                         "faith_judge_cost_usd_total": float(faith_usage_sum.get("cost", 0.0)),
                         "route_total_time_s": round(float(time.perf_counter() - route_t0), 6),
                         "answer_llm_time_s": round(float(answer_llm_time_s), 6),
@@ -1317,8 +1337,7 @@ def main() -> None:
 
                 _flush_results()
 
-                # If we're rate-limited (HTTP 429), stop the run early.
-                # No point in burning CPU on the remaining routes when the provider is throttling.
+                # Stop the run on a provider rate-limit response.
                 if is_rate_limited:
                     n_rate_limit += 1
                     print(
@@ -1342,9 +1361,10 @@ def main() -> None:
                 )
                 continue
 
-        # --- Aggregated metric summary ---
+        # Aggregated metric summary
         eval_items = [
-            r for r in results
+            r
+            for r in results
             if (
                 isinstance(r, dict)
                 and isinstance(r.get("answer_score"), (int, float))
@@ -1355,7 +1375,9 @@ def main() -> None:
         print("\n=== RUN HEALTH (errors/retries) ===")
         print(f"Routes to process in this run: {n_to_process}")
         print(f"Successfully evaluated: {n_success}")
-        print(f"Errors: {n_errors} (network/transient: {n_transient_errors}, rate limit: {n_rate_limit})")
+        print(
+            f"Errors: {n_errors} (network/transient: {n_transient_errors}, rate limit: {n_rate_limit})"
+        )
         print(
             f"Total retries: {n_retries_total} "
             f"(invalid JSON: {n_retries_invalid_json}, transient: {n_retries_transient})"
@@ -1368,14 +1390,16 @@ def main() -> None:
             if not isinstance(r, dict):
                 continue
 
-            # New aggregated fields (preferred)
+            # Usage totals across judge calls.
             for k in ("answer_judge_cost_usd_total", "faith_judge_cost_usd_total"):
                 v = r.get(k)
                 if isinstance(v, (int, float)):
                     judge_costs.append(float(v))
 
             # Backward-compatible fallback (last-attempt only)
-            if not any(k in r for k in ("answer_judge_cost_usd_total", "faith_judge_cost_usd_total")):
+            if not any(
+                k in r for k in ("answer_judge_cost_usd_total", "faith_judge_cost_usd_total")
+            ):
                 for k in ("answer_judge_cost_usd", "faith_judge_cost_usd"):
                     v = r.get(k)
                     if isinstance(v, (int, float)):
@@ -1388,15 +1412,25 @@ def main() -> None:
             top_str = ", ".join([f"{k}={v}" for k, v in top])
             print(f"Most frequent error types: {top_str}")
 
-        # --- timing summary ---
+        # timing summary
         run_total_time_s = time.perf_counter() - run_t0
         print(f"Run total time (s): {run_total_time_s:.1f}")
 
-        timing_items = [r for r in results if isinstance(r, dict) and isinstance(r.get("route_total_time_s"), (int, float))]
+        timing_items = [
+            r
+            for r in results
+            if isinstance(r, dict) and isinstance(r.get("route_total_time_s"), (int, float))
+        ]
         if timing_items:
-            avg_route = sum(float(r["route_total_time_s"]) for r in timing_items) / len(timing_items)
-            avg_answer_llm = sum(float(r.get("answer_llm_time_s", 0.0)) for r in timing_items) / len(timing_items)
-            avg_faith_llm = sum(float(r.get("faith_llm_time_s", 0.0)) for r in timing_items) / len(timing_items)
+            avg_route = sum(float(r["route_total_time_s"]) for r in timing_items) / len(
+                timing_items
+            )
+            avg_answer_llm = sum(
+                float(r.get("answer_llm_time_s", 0.0)) for r in timing_items
+            ) / len(timing_items)
+            avg_faith_llm = sum(float(r.get("faith_llm_time_s", 0.0)) for r in timing_items) / len(
+                timing_items
+            )
             print(f"Avg route time (s): {avg_route:.1f}")
             print(f"Avg AnswerRelevancy LLM time (s): {avg_answer_llm:.2f}")
             print(f"Avg Faithfulness LLM time (s): {avg_faith_llm:.2f}")
@@ -1405,15 +1439,27 @@ def main() -> None:
             n_eval = len(eval_items)
             avg_answer = sum(r["answer_score"] for r in eval_items) / n_eval
             avg_faith = sum(r["faithfulness_score"] for r in eval_items) / n_eval
-            pass_answer = sum(1 for r in eval_items if float(r["answer_score"]) >= float(args.answer_threshold)) / n_eval
-            pass_faith = sum(1 for r in eval_items if float(r["faithfulness_score"]) >= float(args.faithfulness_threshold)) / n_eval
+            pass_answer = (
+                sum(
+                    1
+                    for r in eval_items
+                    if float(r["answer_score"]) >= float(args.answer_threshold)
+                )
+                / n_eval
+            )
+            pass_faith = (
+                sum(
+                    1
+                    for r in eval_items
+                    if float(r["faithfulness_score"]) >= float(args.faithfulness_threshold)
+                )
+                / n_eval
+            )
 
             print("\n=== SUMMARY (successfully evaluated routes) ===")
             print(f"Routes evaluated: {n_eval}")
-            print(f"Avg AnswerRelevancy:  {avg_answer:.3f} "
-                  f"(pass rate {pass_answer * 100:.1f}%)")
-            print(f"Avg Faithfulness:     {avg_faith:.3f} "
-                  f"(pass rate {pass_faith * 100:.1f}%)")
+            print(f"Avg AnswerRelevancy:  {avg_answer:.3f} (pass rate {pass_answer * 100:.1f}%)")
+            print(f"Avg Faithfulness:     {avg_faith:.3f} (pass rate {pass_faith * 100:.1f}%)")
 
         if args.out_json:
             _flush_results()
@@ -1428,6 +1474,7 @@ def main() -> None:
             aclose_fn = getattr(judge_model, "aclose", None)
             if callable(aclose_fn):
                 import asyncio
+
                 try:
                     asyncio.run(aclose_fn())
                 except RuntimeError:

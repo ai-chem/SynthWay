@@ -1,61 +1,40 @@
-"""
-Build a procedure-level parameter coverage table and a horizontal stacked bar chart.
+"""Summarize parameter coverage by synthesis_id from IN_XLSX.
 
-What the script does:
-- Reads one Excel file from the hardcoded path below.
-- Treats each `synthesis_id` as one procedure.
-- For each parameter column (all columns except `synthesis_id`), determines whether the
-  parameter is present in each procedure: at least one known value within that procedure.
-- Computes, per parameter:
-    * Present procedures (count)
-    * Missing procedures (count)
-    * Present (%)
-    * Missing (%)
-- Sorts parameters by Present (%) descending.
-- Writes an Excel file with one sheet: `procedure_parameter_coverage`.
-- Saves a horizontal stacked bar chart (Present vs Missing) as PNG.
+A parameter is present when a procedure has at least one known value.
+Treat NaN, "unknown", -999 and "-999" as missing; trim string values.
 
-Unknown markers:
-- NaN
-- exactly 'unknown'
-- exactly -999 (number)
-- exactly '-999' (string)
-
-Notes:
-- No heavy text normalization is applied.
-- For string comparisons we trim leading/trailing spaces.
+Write present/missing counts and percentages to the
+procedure_parameter_coverage Excel sheet and save a stacked PNG chart,
+ordered by decreasing coverage.
 """
 
 import os
 from pathlib import Path
 
-import pandas as pd
 import matplotlib.pyplot as plt
-
+import pandas as pd
 
 _REPO_ROOT = Path(__file__).resolve().parents[2]
 
-# ---- Hardcoded inputs/columns ----
+# Hardcoded inputs/columns
 IN_XLSX = f"{_REPO_ROOT}/data/merged_all.xlsx"
 SID_COL = "synthesis_id"
-# If you want to limit columns, set a list here; otherwise None means all except SID.
-# `synthesis_id_original` is excluded from the chart/output because it is a technical metadata field.
+# None selects all parameter columns except synthesis_id and EXCLUDE_COLS.
+# synthesis_id_original is metadata, not a synthesis parameter.
 VALUE_COLS = None
 EXCLUDE_COLS = {"synthesis_id_original"}
 RENAME_COLS = {"pdfno_list": "pdfno"}
 
-# ---- Output paths ----
+# Output paths
 OUT_XLSX = os.path.splitext(IN_XLSX)[0] + "_procedure_coverage.xlsx"
 OUT_PNG = os.path.splitext(IN_XLSX)[0] + "_procedure_coverage.png"
 
-# ---- Plot colors ----
+# Plot colors
 COLOR_MAIN = "#04C9AD"
 COLOR_ALT = "#5C4A9C"
 
 
-# -------------------------
 # Unknown handling
-# -------------------------
 UNKNOWN_STR = "unknown"
 UNKNOWN_NUM = -999
 
@@ -73,10 +52,6 @@ def _to_known_or_none(x):
         return None
     return x
 
-
-# -------------------------
-# Core: procedure-level coverage
-# -------------------------
 
 def build_procedure_coverage(df: pd.DataFrame, sid_col: str, value_cols: list[str]) -> pd.DataFrame:
     """
@@ -109,13 +84,11 @@ def build_procedure_coverage(df: pd.DataFrame, sid_col: str, value_cols: list[st
         )
 
     out = pd.DataFrame(rows)
-    out = out.sort_values(by=["Present (%)", "Parameter"], ascending=[False, True]).reset_index(drop=True)
+    out = out.sort_values(by=["Present (%)", "Parameter"], ascending=[False, True]).reset_index(
+        drop=True
+    )
     return out
 
-
-# -------------------------
-# Plot
-# -------------------------
 
 def plot_procedure_coverage(coverage_df: pd.DataFrame, out_png: str) -> None:
     """Save a horizontal stacked bar chart (Present vs Missing) sorted by Present (%)."""
@@ -138,15 +111,28 @@ def plot_procedure_coverage(coverage_df: pd.DataFrame, out_png: str) -> None:
     present = plot_df["Present (%)"]
     missing = plot_df["Missing (%)"]
 
-    ax.barh(y, present, label="Present", color=COLOR_MAIN, height=0.82, edgecolor="white", linewidth=1.2)
-    ax.barh(y, missing, left=present, label="Missing", color=COLOR_ALT, height=0.82, edgecolor="white", linewidth=1.2)
+    ax.barh(
+        y, present, label="Present", color=COLOR_MAIN, height=0.82, edgecolor="white", linewidth=1.2
+    )
+    ax.barh(
+        y,
+        missing,
+        left=present,
+        label="Missing",
+        color=COLOR_ALT,
+        height=0.82,
+        edgecolor="white",
+        linewidth=1.2,
+    )
 
     ax.set_yticks(list(y))
     ax.set_yticklabels(plot_df["Parameter"])
     ax.set_xlim(0, 100)
     ax.set_xlabel("Parameter coverage across procedures (%)", fontsize=axis_label_fontsize)
     ax.set_ylabel("Parameter", fontsize=axis_label_fontsize)
-    ax.set_title("Procedure-level coverage of synthesis parameters", fontsize=title_fontsize, pad=12)
+    ax.set_title(
+        "Procedure-level coverage of synthesis parameters", fontsize=title_fontsize, pad=12
+    )
     ax.tick_params(axis="both", labelsize=tick_fontsize)
     ax.legend(loc="lower right", fontsize=legend_fontsize, frameon=True)
     ax.grid(axis="x", linestyle="--", alpha=0.4)
@@ -155,18 +141,18 @@ def plot_procedure_coverage(coverage_df: pd.DataFrame, out_png: str) -> None:
     # Add present % labels at the end of the present segment when there is enough space
     for i, val in enumerate(present):
         if val >= 5:
-            ax.text(val - 1.0, i, f"{val:.1f}%", va="center", ha="right", fontsize=value_label_fontsize)
+            ax.text(
+                val - 1.0, i, f"{val:.1f}%", va="center", ha="right", fontsize=value_label_fontsize
+            )
         else:
-            ax.text(val + 1.0, i, f"{val:.1f}%", va="center", ha="left", fontsize=value_label_fontsize)
+            ax.text(
+                val + 1.0, i, f"{val:.1f}%", va="center", ha="left", fontsize=value_label_fontsize
+            )
 
     plt.tight_layout()
     plt.savefig(out_png, dpi=400, bbox_inches="tight")
     plt.close(fig)
 
-
-# -------------------------
-# Main
-# -------------------------
 
 def main():
     if not os.path.exists(IN_XLSX):

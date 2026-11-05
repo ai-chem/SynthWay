@@ -25,8 +25,7 @@ import uuid
 from dataclasses import asdict, dataclass
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Callable, Dict, Iterable, List, Optional, Sequence, Tuple
-
+from typing import Any, Iterable, Sequence
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 RUNS_DIR = SCRIPT_DIR.parent
@@ -42,14 +41,9 @@ for _local_path in (SCRIPT_DIR, RAG_LLM_DIR, BENCH_DIR):
 
 import _regeneration as base_regen  # noqa: E402
 
-
-DEFAULT_CONFIG_PATH = (
-    RAG_LLM_DIR.parent / "config" / "regeneration.json"
-)
+DEFAULT_CONFIG_PATH = RAG_LLM_DIR.parent / "config" / "regeneration.json"
 DEFAULT_SELECTED_ROUTES_ROOT = (
-    BENCH_DIR
-    / "diff_judges_for_exp_bench"
-    / "selected_40_routes_for_expert_eval"
+    BENCH_DIR / "diff_judges_for_exp_bench" / "selected_40_routes_for_expert_eval"
 )
 DEFAULT_OUT_DIR = RAG_LLM_DIR.parent / "outputs" / "regeneration"
 METRICS = ("chemical_geval", "answer_relevancy", "faithfulness")
@@ -75,12 +69,14 @@ class JudgeSpec:
 class DetailedMetricResult(base_regen.MetricResult):
     """Metric result with auditable expert-style Faithfulness internals."""
 
-    details: Optional[Dict[str, Any]] = None
+    details: dict[str, Any] | None = None
 
 
+from ss_faithfulness import (
+    RateLimitedJudgeProxy as _RateLimitedJudgeProxy,
+)
 from ss_faithfulness import (  # shared with the desktop application and live demo
     SSFaithfulnessMetric as ExpertFaithfulnessMetricAdapter,
-    RateLimitedJudgeProxy as _RateLimitedJudgeProxy,
 )
 
 
@@ -89,13 +85,14 @@ class CrossJudgeEvaluator(base_regen.Evaluator):
 
     def init_models(self) -> None:
         if self._judge_model is None:
-            # Use the builder from the requested expert-faithfulness script so
-            # the JSON-capable judge behaviour is identical to that script.
+            # Reuse the SS-Faithfulness judge builder.
             from bench.new_faith_same_as_expert_logic import build_judge_model
 
             self._judge_model = build_judge_model(self.judge_model_id)
             if self._judge_model is None:
-                raise RuntimeError("An explicit judge model is required for expert-style Faithfulness.")
+                raise RuntimeError(
+                    "An explicit judge model is required for expert-style Faithfulness."
+                )
 
     def _measure_metric(
         self,
@@ -106,7 +103,7 @@ class CrossJudgeEvaluator(base_regen.Evaluator):
         external_rate_limit: bool = True,
     ) -> base_regen.MetricResult:
         max_attempts = 3
-        last_error: Optional[Exception] = None
+        last_error: Exception | None = None
         for attempt in range(1, max_attempts + 1):
             try:
                 if external_rate_limit:
@@ -126,7 +123,9 @@ class CrossJudgeEvaluator(base_regen.Evaluator):
             except Exception as exc:  # Retry failed metric calls up to three times.
                 last_error = exc
                 message = str(exc).lower()
-                is_rate_limit = any(x in message for x in ("429", "rate limit", "too many requests"))
+                is_rate_limit = any(
+                    x in message for x in ("429", "rate limit", "too many requests")
+                )
                 if is_rate_limit and self.stop_on_rate_limit:
                     raise
                 time.sleep(min(8.0, 2.0 * attempt))
@@ -144,22 +143,24 @@ class CrossJudgeEvaluator(base_regen.Evaluator):
         self,
         *,
         composition: str,
-        method: Optional[str],
-        retrieval_context: List[str],
+        method: str | None,
+        retrieval_context: list[str],
         retrieval_text: str,
         raw_text: str,
-    ) -> Tuple[base_regen.MetricResult, base_regen.MetricResult, base_regen.MetricResult, bool]:
+    ) -> tuple[base_regen.MetricResult, base_regen.MetricResult, base_regen.MetricResult, bool]:
         self.init_models()
         judge = self._judge_model
 
-        from evaluate_generation_deepeval import build_test_case, make_chemical_geval_metric
-        from evaluate_answer_faithfulness_deepeval import (
-            build_test_case_from_parts as build_answer_test_case,
-            make_answer_relevancy_metric,
-        )
         from bench.new_faith_same_as_expert_logic import (
             build_test_case_from_parts as build_expert_faithfulness_test_case,
         )
+        from evaluate_answer_faithfulness_deepeval import (
+            build_test_case_from_parts as build_answer_test_case,
+        )
+        from evaluate_answer_faithfulness_deepeval import (
+            make_answer_relevancy_metric,
+        )
+        from evaluate_generation_deepeval import build_test_case, make_chemical_geval_metric
 
         route_obj = {
             "composition": composition,
@@ -220,7 +221,7 @@ def utc_now_iso() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
 
 
-def read_json(path: Path) -> Dict[str, Any]:
+def read_json(path: Path) -> dict[str, Any]:
     with path.open("r", encoding="utf-8") as handle:
         value = json.load(handle)
     if not isinstance(value, dict):
@@ -234,17 +235,17 @@ def write_json(path: Path, value: Any) -> None:
         json.dump(value, handle, ensure_ascii=False, indent=2)
 
 
-def write_jsonl(path: Path, rows: Iterable[Dict[str, Any]]) -> None:
+def write_jsonl(path: Path, rows: Iterable[dict[str, Any]]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8") as handle:
         for row in rows:
             handle.write(json.dumps(row, ensure_ascii=False) + "\n")
 
 
-def read_jsonl(path: Path) -> List[Dict[str, Any]]:
+def read_jsonl(path: Path) -> list[dict[str, Any]]:
     if not path.exists():
         return []
-    rows: List[Dict[str, Any]] = []
+    rows: list[dict[str, Any]] = []
     with path.open("r", encoding="utf-8") as handle:
         for line_no, line in enumerate(handle, start=1):
             if not line.strip():
@@ -258,7 +259,7 @@ def read_jsonl(path: Path) -> List[Dict[str, Any]]:
     return rows
 
 
-def write_csv(path: Path, rows: Sequence[Dict[str, Any]], fieldnames: Sequence[str]) -> None:
+def write_csv(path: Path, rows: Sequence[dict[str, Any]], fieldnames: Sequence[str]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=list(fieldnames), extrasaction="ignore")
@@ -266,7 +267,7 @@ def write_csv(path: Path, rows: Sequence[Dict[str, Any]], fieldnames: Sequence[s
         writer.writerows(rows)
 
 
-def load_config(path: Path) -> Dict[str, Any]:
+def load_config(path: Path) -> dict[str, Any]:
     config = read_json(path)
     if not isinstance(config.get("generators"), list) or not config["generators"]:
         raise ValueError("Config must contain a non-empty 'generators' list.")
@@ -275,7 +276,7 @@ def load_config(path: Path) -> Dict[str, Any]:
     return config
 
 
-def parse_specs(config: Dict[str, Any]) -> Tuple[List[GeneratorSpec], List[JudgeSpec]]:
+def parse_specs(config: dict[str, Any]) -> tuple[list[GeneratorSpec], list[JudgeSpec]]:
     generators = [GeneratorSpec(**item) for item in config["generators"]]
     judges = [JudgeSpec(**item) for item in config["judges"]]
     _require_unique_keys([x.key for x in generators], "generator")
@@ -289,7 +290,7 @@ def _require_unique_keys(keys: Sequence[str], role: str) -> None:
         raise ValueError(f"Duplicate {role} keys: {duplicates}")
 
 
-def select_specs(items: Sequence[Any], selected_keys: Sequence[str], role: str) -> List[Any]:
+def select_specs(items: Sequence[Any], selected_keys: Sequence[str], role: str) -> list[Any]:
     if not selected_keys:
         return list(items)
     wanted = set(selected_keys)
@@ -305,7 +306,7 @@ def build_arms(
     judges: Sequence[JudgeSpec],
     *,
     include_self_judge: bool,
-) -> List[Tuple[GeneratorSpec, JudgeSpec]]:
+) -> list[tuple[GeneratorSpec, JudgeSpec]]:
     return [
         (generator, judge)
         for generator in generators
@@ -314,10 +315,10 @@ def build_arms(
     ]
 
 
-def discover_source_routes(routes_dir: Path) -> List[Tuple[Path, Path]]:
+def discover_source_routes(routes_dir: Path) -> list[tuple[Path, Path]]:
     if not routes_dir.is_dir():
         raise FileNotFoundError(f"Generator routes directory not found: {routes_dir}")
-    pairs: List[Tuple[Path, Path]] = []
+    pairs: list[tuple[Path, Path]] = []
     for case_dir in base_regen.list_case_dirs(str(routes_dir)):
         for route_path in base_regen.list_route_files(case_dir):
             pairs.append((case_dir, route_path))
@@ -329,8 +330,8 @@ def prepare_input_snapshot(
     source_routes_dir: Path,
     snapshot_root: Path,
     expected_routes: int,
-    max_routes: Optional[int],
-) -> List[Dict[str, Any]]:
+    max_routes: int | None,
+) -> list[dict[str, Any]]:
     """Copy inputs exactly; validate them without changing experimental fields."""
 
     source_pairs = discover_source_routes(source_routes_dir)
@@ -344,7 +345,7 @@ def prepare_input_snapshot(
             raise ValueError("--max-routes-per-arm must be >= 1")
         source_pairs = source_pairs[:max_routes]
 
-    manifest: List[Dict[str, Any]] = []
+    manifest: list[dict[str, Any]] = []
     for source_case_dir, source_route_path in source_pairs:
         route = read_json(source_route_path)
         retrieval_text = str(route.get("retrieval_text") or "")
@@ -402,7 +403,7 @@ def _close_judge(evaluator: CrossJudgeEvaluator) -> None:
             pass
 
 
-def _route_summary_objects(path: Path) -> List[base_regen.RouteSummary]:
+def _route_summary_objects(path: Path) -> list[base_regen.RouteSummary]:
     return [base_regen.RouteSummary(**row) for row in read_jsonl(path)]
 
 
@@ -413,13 +414,13 @@ def run_arm(
     judge: JudgeSpec,
     selected_root: Path,
     out_root: Path,
-    thresholds: Dict[str, float],
+    thresholds: dict[str, float],
     max_regens: int,
-    rpm_limit: Optional[float],
+    rpm_limit: float | None,
     stop_on_rate_limit: bool,
     resume: bool,
-    max_routes: Optional[int],
-) -> Dict[str, Any]:
+    max_routes: int | None,
+) -> dict[str, Any]:
     arm_key = _arm_key(generator, judge)
     arm_dir = out_root / "arms" / arm_key
     attempts_path = arm_dir / "attempts.jsonl"
@@ -465,7 +466,7 @@ def run_arm(
             raise ValueError(f"Cannot resume {arm_key}; configuration changed: {mismatches}")
     write_json(existing_arm_config, arm_config)
 
-    done: set[Tuple[str, str]] = set()
+    done: set[tuple[str, str]] = set()
     if resume:
         for row in read_jsonl(route_summaries_path):
             done.add((str(row.get("case_id")), str(row.get("route_name"))))
@@ -518,23 +519,23 @@ def run_arm(
     return summary
 
 
-def _score(row: Dict[str, Any], stage: str, metric: str) -> Optional[float]:
+def _score(row: dict[str, Any], stage: str, metric: str) -> float | None:
     scores = row.get(stage) or {}
     value = scores.get(metric)
     return float(value) if isinstance(value, (int, float)) else None
 
 
-def _mean(values: Iterable[Optional[float]]) -> Optional[float]:
+def _mean(values: Iterable[float | None]) -> float | None:
     clean = [float(value) for value in values if value is not None and math.isfinite(float(value))]
     return statistics.fmean(clean) if clean else None
 
 
-def _rate(flags: Iterable[bool]) -> Optional[float]:
+def _rate(flags: Iterable[bool]) -> float | None:
     values = list(flags)
     return sum(bool(value) for value in values) / len(values) if values else None
 
 
-def _all_metrics_pass(row: Dict[str, Any], stage: str, thresholds: Dict[str, float]) -> bool:
+def _all_metrics_pass(row: dict[str, Any], stage: str, thresholds: dict[str, float]) -> bool:
     return all(
         (_score(row, stage, metric) is not None)
         and float(_score(row, stage, metric)) >= float(thresholds[metric])
@@ -542,25 +543,25 @@ def _all_metrics_pass(row: Dict[str, Any], stage: str, thresholds: Dict[str, flo
     )
 
 
-def _metric_pass(score: Optional[float], threshold: float) -> bool:
+def _metric_pass(score: float | None, threshold: float) -> bool:
     return score is not None and float(score) >= float(threshold)
 
 
 def collect_combined_results(
     *,
     out_root: Path,
-    arms: Sequence[Tuple[GeneratorSpec, JudgeSpec]],
-    thresholds: Dict[str, float],
-) -> Dict[str, Any]:
-    all_attempts: List[Dict[str, Any]] = []
-    all_routes: List[Dict[str, Any]] = []
+    arms: Sequence[tuple[GeneratorSpec, JudgeSpec]],
+    thresholds: dict[str, float],
+) -> dict[str, Any]:
+    all_attempts: list[dict[str, Any]] = []
+    all_routes: list[dict[str, Any]] = []
 
     for generator, judge in arms:
         arm_key = _arm_key(generator, judge)
         arm_dir = out_root / "arms" / arm_key
         # source_manifest.json is a list; read it without the object-only helper.
         source_manifest_path = arm_dir / "source_manifest.json"
-        source_rows: List[Dict[str, Any]] = []
+        source_rows: list[dict[str, Any]] = []
         if source_manifest_path.exists():
             with source_manifest_path.open("r", encoding="utf-8") as handle:
                 loaded = json.load(handle)
@@ -665,11 +666,11 @@ def collect_combined_results(
 
 
 def build_route_effect_rows(
-    routes: Sequence[Dict[str, Any]], thresholds: Dict[str, float]
-) -> List[Dict[str, Any]]:
-    rows: List[Dict[str, Any]] = []
+    routes: Sequence[dict[str, Any]], thresholds: dict[str, float]
+) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
     for route in routes:
-        row: Dict[str, Any] = {
+        row: dict[str, Any] = {
             key: route.get(key)
             for key in (
                 "arm_key",
@@ -689,7 +690,9 @@ def build_route_effect_rows(
         }
         row["initial_pass_all"] = _all_metrics_pass(route, "initial_scores", thresholds)
         row["final_pass_all"] = _all_metrics_pass(route, "final_scores", thresholds)
-        row["resolved_by_regeneration"] = bool(row["final_pass_all"] and not row["initial_pass_all"])
+        row["resolved_by_regeneration"] = bool(
+            row["final_pass_all"] and not row["initial_pass_all"]
+        )
         for metric in METRICS:
             initial = _score(route, "initial_scores", metric)
             final = _score(route, "final_scores", metric)
@@ -703,7 +706,7 @@ def build_route_effect_rows(
     return rows
 
 
-def route_effect_fieldnames() -> List[str]:
+def route_effect_fieldnames() -> list[str]:
     fields = [
         "arm_key",
         "generator_key",
@@ -736,9 +739,9 @@ def route_effect_fieldnames() -> List[str]:
 
 
 def build_metric_effect_rows(
-    routes: Sequence[Dict[str, Any]], thresholds: Dict[str, float]
-) -> List[Dict[str, Any]]:
-    rows: List[Dict[str, Any]] = []
+    routes: Sequence[dict[str, Any]], thresholds: dict[str, float]
+) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
     for route in routes:
         for metric in METRICS:
             initial = _score(route, "initial_scores", metric)
@@ -772,7 +775,7 @@ def build_metric_effect_rows(
     return rows
 
 
-def metric_effect_fieldnames() -> List[str]:
+def metric_effect_fieldnames() -> list[str]:
     return [
         "arm_key",
         "generator_key",
@@ -798,8 +801,8 @@ def metric_effect_fieldnames() -> List[str]:
     ]
 
 
-def build_attempt_long_rows(attempts: Sequence[Dict[str, Any]]) -> List[Dict[str, Any]]:
-    rows: List[Dict[str, Any]] = []
+def build_attempt_long_rows(attempts: Sequence[dict[str, Any]]) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
     for attempt in attempts:
         for metric in METRICS:
             metric_obj = attempt.get(metric) or {}
@@ -829,7 +832,7 @@ def build_attempt_long_rows(attempts: Sequence[Dict[str, Any]]) -> List[Dict[str
     return rows
 
 
-def attempt_long_fieldnames() -> List[str]:
+def attempt_long_fieldnames() -> list[str]:
     return [
         "arm_key",
         "generator_key",
@@ -854,15 +857,15 @@ def attempt_long_fieldnames() -> List[str]:
 
 
 def build_pair_summary_rows(
-    routes: Sequence[Dict[str, Any]],
-    arms: Sequence[Tuple[GeneratorSpec, JudgeSpec]],
-    thresholds: Dict[str, float],
-) -> List[Dict[str, Any]]:
-    rows: List[Dict[str, Any]] = []
+    routes: Sequence[dict[str, Any]],
+    arms: Sequence[tuple[GeneratorSpec, JudgeSpec]],
+    thresholds: dict[str, float],
+) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
     for generator, judge in arms:
         arm_key = _arm_key(generator, judge)
         arm_routes = [route for route in routes if route.get("arm_key") == arm_key]
-        row: Dict[str, Any] = {
+        row: dict[str, Any] = {
             "arm_key": arm_key,
             "generator_key": generator.key,
             "generator_label": generator.label,
@@ -915,7 +918,7 @@ def build_pair_summary_rows(
     return rows
 
 
-def pair_summary_fieldnames() -> List[str]:
+def pair_summary_fieldnames() -> list[str]:
     fields = [
         "arm_key",
         "generator_key",
@@ -945,12 +948,14 @@ def pair_summary_fieldnames() -> List[str]:
     return fields
 
 
-def build_role_effect_rows(metric_rows: Sequence[Dict[str, Any]], role: str) -> List[Dict[str, Any]]:
+def build_role_effect_rows(
+    metric_rows: Sequence[dict[str, Any]], role: str
+) -> list[dict[str, Any]]:
     key_field = f"{role}_key"
     label_field = f"{role}_label"
     model_field = f"{role}_model_id"
     keys = sorted({str(row[key_field]) for row in metric_rows if row.get(key_field) is not None})
-    result: List[Dict[str, Any]] = []
+    result: list[dict[str, Any]] = []
     for role_key in keys:
         for metric in METRICS:
             group = [
@@ -967,8 +972,12 @@ def build_role_effect_rows(metric_rows: Sequence[Dict[str, Any]], role: str) -> 
                     model_field: group[0].get(model_field),
                     "metric": metric,
                     "n_observations": len(group),
-                    "avg_initial_score": _mean(_optional_float(row.get("initial_score")) for row in group),
-                    "avg_final_score": _mean(_optional_float(row.get("final_score")) for row in group),
+                    "avg_initial_score": _mean(
+                        _optional_float(row.get("initial_score")) for row in group
+                    ),
+                    "avg_final_score": _mean(
+                        _optional_float(row.get("final_score")) for row in group
+                    ),
                     "avg_delta": _mean(_optional_float(row.get("delta")) for row in group),
                     "initial_pass_rate": _rate(bool(row.get("initial_pass")) for row in group),
                     "final_pass_rate": _rate(bool(row.get("final_pass")) for row in group),
@@ -979,7 +988,7 @@ def build_role_effect_rows(metric_rows: Sequence[Dict[str, Any]], role: str) -> 
     return result
 
 
-def role_effect_fieldnames(role: str) -> List[str]:
+def role_effect_fieldnames(role: str) -> list[str]:
     return [
         f"{role}_key",
         f"{role}_label",
@@ -996,12 +1005,12 @@ def role_effect_fieldnames(role: str) -> List[str]:
     ]
 
 
-def _optional_float(value: Any) -> Optional[float]:
+def _optional_float(value: Any) -> float | None:
     return float(value) if isinstance(value, (int, float)) else None
 
 
-def build_judge_disagreement_rows(metric_rows: Sequence[Dict[str, Any]]) -> List[Dict[str, Any]]:
-    grouped: Dict[Tuple[str, str, str, str], List[Dict[str, Any]]] = {}
+def build_judge_disagreement_rows(metric_rows: Sequence[dict[str, Any]]) -> list[dict[str, Any]]:
+    grouped: dict[tuple[str, str, str, str], list[dict[str, Any]]] = {}
     for row in metric_rows:
         key = (
             str(row.get("generator_key")),
@@ -1011,7 +1020,7 @@ def build_judge_disagreement_rows(metric_rows: Sequence[Dict[str, Any]]) -> List
         )
         grouped.setdefault(key, []).append(row)
 
-    result: List[Dict[str, Any]] = []
+    result: list[dict[str, Any]] = []
     for (generator_key, case_id, route_name, metric), group in sorted(grouped.items()):
         initial = [
             float(row["initial_score"])
@@ -1036,18 +1045,26 @@ def build_judge_disagreement_rows(metric_rows: Sequence[Dict[str, Any]]) -> List
                 "initial_min": min(initial) if initial else None,
                 "initial_max": max(initial) if initial else None,
                 "initial_range": max(initial) - min(initial) if initial else None,
-                "initial_population_sd": statistics.pstdev(initial) if len(initial) > 1 else 0.0 if initial else None,
+                "initial_population_sd": statistics.pstdev(initial)
+                if len(initial) > 1
+                else 0.0
+                if initial
+                else None,
                 "final_mean": _mean(final),
                 "final_min": min(final) if final else None,
                 "final_max": max(final) if final else None,
                 "final_range": max(final) - min(final) if final else None,
-                "final_population_sd": statistics.pstdev(final) if len(final) > 1 else 0.0 if final else None,
+                "final_population_sd": statistics.pstdev(final)
+                if len(final) > 1
+                else 0.0
+                if final
+                else None,
             }
         )
     return result
 
 
-def disagreement_fieldnames() -> List[str]:
+def disagreement_fieldnames() -> list[str]:
     return [
         "generator_key",
         "generator_label",
@@ -1073,13 +1090,13 @@ def validate_design(
     *,
     selected_root: Path,
     out_root: Path,
-    arms: Sequence[Tuple[GeneratorSpec, JudgeSpec]],
-    max_routes: Optional[int],
-    manifest: Dict[str, Any],
-) -> Dict[str, Any]:
-    arm_plans: List[Dict[str, Any]] = []
-    arm_table_rows: List[Dict[str, Any]] = []
-    input_rows: List[Dict[str, Any]] = []
+    arms: Sequence[tuple[GeneratorSpec, JudgeSpec]],
+    max_routes: int | None,
+    manifest: dict[str, Any],
+) -> dict[str, Any]:
+    arm_plans: list[dict[str, Any]] = []
+    arm_table_rows: list[dict[str, Any]] = []
+    input_rows: list[dict[str, Any]] = []
     total = 0
     for generator, judge in arms:
         arm_dir = out_root / "arms" / _arm_key(generator, judge)
@@ -1185,12 +1202,12 @@ def reuse_compatible_results(
     *,
     source_root: Path,
     destination_root: Path,
-    arms: Sequence[Tuple[GeneratorSpec, JudgeSpec]],
+    arms: Sequence[tuple[GeneratorSpec, JudgeSpec]],
     experiment_run_id: str,
-) -> Dict[str, Any]:
+) -> dict[str, Any]:
     """Reuse only completed, error-free trajectories from model-compatible arms.
 
-    This is intentionally conservative:
+    Reuse requirements:
     - generator and judge model IDs must match the new design exactly;
     - a route must have a completed per-route summary;
     - its latest completed attempt sequence must be 1..attempts_used;
@@ -1217,7 +1234,7 @@ def reuse_compatible_results(
             )
         return previous
 
-    report: Dict[str, Any] = {
+    report: dict[str, Any] = {
         "source_root": str(source_root),
         "destination_root": str(destination_root),
         "created_utc": utc_now_iso(),
@@ -1234,7 +1251,7 @@ def reuse_compatible_results(
         arm_key = _arm_key(generator, judge)
         source_arm = source_root / "arms" / arm_key
         destination_arm = destination_root / "arms" / arm_key
-        arm_report: Dict[str, Any] = {
+        arm_report: dict[str, Any] = {
             "arm_key": arm_key,
             "generator_model_id": generator.model_id,
             "judge_model_id": judge.model_id,
@@ -1266,13 +1283,13 @@ def reuse_compatible_results(
 
         source_attempts = read_jsonl(source_attempts_path)
         source_summaries = read_jsonl(source_summaries_path)
-        attempts_by_route: Dict[Tuple[str, str], List[Dict[str, Any]]] = {}
+        attempts_by_route: dict[tuple[str, str], list[dict[str, Any]]] = {}
         for attempt in source_attempts:
             key = (str(attempt.get("case_id")), str(attempt.get("route_name")))
             attempts_by_route.setdefault(key, []).append(attempt)
 
-        selected_attempts: List[Dict[str, Any]] = []
-        selected_summaries: List[Dict[str, Any]] = []
+        selected_attempts: list[dict[str, Any]] = []
+        selected_summaries: list[dict[str, Any]] = []
         selected_case_ids: set[str] = set()
         new_arm_run_id = f"{experiment_run_id}:{arm_key}"
 
@@ -1289,7 +1306,7 @@ def reuse_compatible_results(
             expected_numbers = list(range(1, attempts_used + 1))
             actual_numbers = [int(row.get("attempt_no", -1)) for row in candidate_attempts]
 
-            exclusion_reason: Optional[str] = None
+            exclusion_reason: str | None = None
             if not candidate_attempts or actual_numbers != expected_numbers:
                 exclusion_reason = (
                     f"no complete latest attempt sequence: expected={expected_numbers}, "
@@ -1318,7 +1335,7 @@ def reuse_compatible_results(
                 )
                 continue
 
-            rewritten_attempts: List[Dict[str, Any]] = []
+            rewritten_attempts: list[dict[str, Any]] = []
             source_prefix = str(source_arm.resolve())
             destination_prefix = str(destination_arm.resolve())
             for source_attempt in candidate_attempts:
@@ -1327,7 +1344,9 @@ def reuse_compatible_results(
                 attempt["run_id"] = new_arm_run_id
                 route_json_path = str(attempt.get("route_json_path") or "")
                 if route_json_path.startswith(source_prefix):
-                    attempt["route_json_path"] = destination_prefix + route_json_path[len(source_prefix):]
+                    attempt["route_json_path"] = (
+                        destination_prefix + route_json_path[len(source_prefix) :]
+                    )
                 rewritten_attempts.append(attempt)
             selected_attempts.extend(rewritten_attempts)
 
@@ -1446,7 +1465,9 @@ def main() -> None:
             else config_thresholds.get("faithfulness", 0.8)
         ),
     }
-    max_regens = int(args.max_regens if args.max_regens is not None else config.get("max_regens", 3))
+    max_regens = int(
+        args.max_regens if args.max_regens is not None else config.get("max_regens", 3)
+    )
     if max_regens < 0:
         raise ValueError("max_regens must be >= 0")
 
@@ -1465,11 +1486,11 @@ def main() -> None:
         )
 
     existing_manifest_path = out_root / "experiment_manifest.json"
-    existing_manifest: Dict[str, Any] = {}
+    existing_manifest: dict[str, Any] = {}
     if args.resume and existing_manifest_path.exists():
         existing_manifest = read_json(existing_manifest_path)
     experiment_run_id = str(existing_manifest.get("experiment_run_id") or uuid.uuid4().hex[:12])
-    manifest: Dict[str, Any] = {
+    manifest: dict[str, Any] = {
         "experiment_run_id": experiment_run_id,
         "created_utc": utc_now_iso(),
         "status": "validated_not_run" if args.validate_only else "running",
@@ -1548,12 +1569,10 @@ def main() -> None:
         print(f"Manifest: {out_root / 'experiment_manifest.json'}")
         return
 
-    arm_summaries: List[Dict[str, Any]] = []
+    arm_summaries: list[dict[str, Any]] = []
     try:
         for index, (generator, judge) in enumerate(arms, start=1):
-            print(
-                f"[{index}/{len(arms)}] generator={generator.label} | judge={judge.label}"
-            )
+            print(f"[{index}/{len(arms)}] generator={generator.label} | judge={judge.label}")
             arm_summaries.append(
                 run_arm(
                     experiment_run_id=experiment_run_id,

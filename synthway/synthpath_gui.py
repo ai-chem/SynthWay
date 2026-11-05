@@ -1,46 +1,49 @@
 from pathlib import Path as _Path
+
 _REPO_ROOT = _Path(__file__).resolve().parents[1]
+import io
 import json
 import os
 import re
-import sys
-import time
 import shutil
 import subprocess
-import io
-from typing import List, Dict, Any, Optional, Tuple
+import sys
+import time
 from dataclasses import dataclass
+from typing import Any
 
 import FreeSimpleGUI as sg
-
-from deepeval.metrics import AnswerRelevancyMetric
-from ss_faithfulness import SSFaithfulnessMetric, build_ss_judge_model
-from deepeval.test_case import LLMTestCase
-
-from gui_models import GUI_MODELS, DEFAULT_GENERATOR, DEFAULT_JUDGE, resolve_model_pair
-from gui_settings import parse_run_settings, new_run_directory
 from credentials import credential_guidance
-from gui_results import (
-    build_run_summary as _build_run_summary,
-    route_overall_status as _route_overall_status,
-    metric_line, score_text, validate_metric_result,
-)
-
-from predictions import (
-    generate_synthesis_routes,
-    AVAILABLE_MODELS,
-    DEFAULT_RAG_INDEX_DIR,
-    DEFAULT_LLM_OUTPUT_DIR,
-    regenerate_single_route_with_feedback,
-)
-
+from deepeval.metrics import AnswerRelevancyMetric
+from deepeval.test_case import LLMTestCase
 from evaluate_generation_deepeval import (
     build_test_case,
     make_chemical_geval_metric,
 )
+from gui_models import DEFAULT_GENERATOR, DEFAULT_JUDGE, GUI_MODELS, resolve_model_pair
+from gui_results import (
+    build_run_summary as _build_run_summary,
+)
+from gui_results import (
+    metric_line,
+    score_text,
+    validate_metric_result,
+)
+from gui_results import (
+    route_overall_status as _route_overall_status,
+)
+from gui_settings import new_run_directory, parse_run_settings
+from predictions import (
+    AVAILABLE_MODELS,
+    DEFAULT_LLM_OUTPUT_DIR,
+    DEFAULT_RAG_INDEX_DIR,
+    generate_synthesis_routes,
+    regenerate_single_route_with_feedback,
+)
+from ss_faithfulness import SSFaithfulnessMetric, build_ss_judge_model
 
 
-def _load_retrieval_context_json(case_dir: str) -> Tuple[List[str], Optional[str]]:
+def _load_retrieval_context_json(case_dir: str) -> tuple[list[str], str | None]:
     """Load retrieval_context.json from a case directory.
 
     Returns: (retrieval_context_list, composition_from_meta)
@@ -67,21 +70,17 @@ def _load_retrieval_context_json(case_dir: str) -> Tuple[List[str], Optional[str
     return retrieval_context, composition
 
 
-# --- Robust route file loading helpers ---
+# Route file loading
 _ROUTE_FILE_RE = re.compile(r"^route_(\d+)\.json$", re.IGNORECASE)
 
 
-def _split_combined_routes(raw_text: str) -> List[str]:
-    """Some generators sometimes dump multiple routes into a single JSON.
-
-    If we detect that format, we split it into per-route chunks so each chunk
-    gets its own metric line + separator in the GUI.
-    """
+def _split_combined_routes(raw_text: str) -> list[str]:
+    """Split combined route text at Route N headings for separate GUI evaluation."""
     txt = (raw_text or "").strip()
     if not txt:
         return []
 
-    # Common formats we have seen:
+    # Supported route headings:
     #   **Route 1: ...**
     #   Route 1: ...
     markers = [m.start() for m in re.finditer(r"(?m)^\*\*Route\s+\d+\s*:", txt)]
@@ -91,7 +90,7 @@ def _split_combined_routes(raw_text: str) -> List[str]:
     if len(markers) <= 1:
         return [txt]
 
-    parts: List[str] = []
+    parts: list[str] = []
     for idx, start in enumerate(markers):
         end = markers[idx + 1] if idx + 1 < len(markers) else len(txt)
         chunk = txt[start:end].strip()
@@ -100,13 +99,9 @@ def _split_combined_routes(raw_text: str) -> List[str]:
     return parts
 
 
-def _load_routes_recursive(output_dir: str) -> List[Dict[str, Any]]:
-    """Recursively find route_*.json under output_dir and load them.
-
-    This is intentionally more robust than the non-recursive loader, because
-    generation code may place routes inside nested case folders.
-    """
-    found: List[Dict[str, Any]] = []
+def _load_routes_recursive(output_dir: str) -> list[dict[str, Any]]:
+    """Recursively load route_*.json from output_dir, including nested case directories."""
+    found: list[dict[str, Any]] = []
 
     for root, _, files in os.walk(output_dir):
         for fn in files:
@@ -119,15 +114,10 @@ def _load_routes_recursive(output_dir: str) -> List[Dict[str, Any]]:
                 with open(path, "r", encoding="utf-8") as f:
                     data = json.load(f)
             except Exception:
-                # Skip unreadable route files (don’t kill the whole run)
+                # Skip unreadable route files.
                 continue
 
-            raw_text = (
-                data.get("raw_text")
-                or data.get("route_text")
-                or data.get("text")
-                or ""
-            )
+            raw_text = data.get("raw_text") or data.get("route_text") or data.get("text") or ""
             retrieval_text = data.get("retrieval_text") or ""
 
             found.append(
@@ -152,7 +142,7 @@ def _build_rag_test_case(
     composition: str,
     raw_text: str,
     retrieval_text: str,
-    retrieval_context: List[str],
+    retrieval_context: list[str],
 ) -> LLMTestCase:
     """Builds an LLMTestCase for AnswerRelevancy/Faithfulness metrics."""
     comp = (composition or "UNKNOWN").strip() or "UNKNOWN"
@@ -175,8 +165,7 @@ def _fmt_bool(flag: bool) -> str:
     return "PASS" if flag else "FAIL"
 
 
-
-def _open_folder(path: Optional[str]) -> None:
+def _open_folder(path: str | None) -> None:
     """Open a folder in the OS file manager."""
     if not path:
         return
@@ -192,24 +181,22 @@ def _open_folder(path: Optional[str]) -> None:
         return
 
 
-# --------------------------
 # Regeneration feedback and route-selection helpers
-# --------------------------
+
 
 @dataclass
 class _MetricResult:
-    score: Optional[float]
+    score: float | None
     threshold: float
     passed: bool
     reason: str
 
 
 def _is_bad_parent_text(raw_text: str) -> bool:
-    """Heuristic: reject empty/obviously broken parent inputs for regeneration."""
+    """Reject empty, placeholder, or short (<120 characters) parent text."""
     t = (raw_text or "").strip()
     if not t:
         return True
-    # Very short outputs are often truncated / formatting failures.
     if len(t) < 120:
         return True
     low = t.lower().strip()
@@ -224,8 +211,8 @@ def _build_reviewer_feedback(
     ans: _MetricResult,
     faith: _MetricResult,
     composition: str,
-    method: Optional[str],
-    history: Optional[Dict[str, Any]] = None,
+    method: str | None,
+    history: dict[str, Any] | None = None,
 ) -> str:
     """Turn metric failures into an actionable reviewer-style feedback string."""
 
@@ -234,12 +221,9 @@ def _build_reviewer_feedback(
         score_txt = "None" if m.score is None else f"{m.score:.4f}"
         thr_txt = f"{m.threshold:.4f}"
         reason_txt = (m.reason or "").strip() or "(no reason provided)"
-        return (
-            f"[{name} {status}] score={score_txt} | thr={thr_txt}\n"
-            f"Reason:\n{reason_txt}"
-        )
+        return f"[{name} {status}] score={score_txt} | thr={thr_txt}\nReason:\n{reason_txt}"
 
-    scorecard_parts: List[str] = [
+    scorecard_parts: list[str] = [
         _fmt_metric("Chemical GEval", chem),
         _fmt_metric("AnswerRelevancy", ans),
         _fmt_metric("SS-Faithfulness", faith),
@@ -247,7 +231,8 @@ def _build_reviewer_feedback(
 
     history_txt = ""
     if history:
-        def _fmt_best(label: str, d: Dict[str, Any]) -> str:
+
+        def _fmt_best(label: str, d: dict[str, Any]) -> str:
             a_no = d.get("attempt_no")
             sc = d.get("score")
             sc_txt = "None" if sc is None else f"{float(sc):.4f}"
@@ -257,13 +242,20 @@ def _build_reviewer_feedback(
         best_chem = history.get("best_chem", {})
         best_combo = history.get("best_combo", {})
         last_pass = history.get("last_pass", {})
-        last_pass_txt = ", ".join([f"{k}={'PASS' if v else 'FAIL'}" for k, v in last_pass.items()]) if last_pass else ""
+        last_pass_txt = (
+            ", ".join([f"{k}={'PASS' if v else 'FAIL'}" for k, v in last_pass.items()])
+            if last_pass
+            else ""
+        )
 
         history_txt = (
             "[Best-so-far across attempts]\n"
-            + _fmt_best("SS-Faithfulness", best_faith) + "\n"
-            + _fmt_best("Chemical GEval", best_chem) + "\n"
-            + _fmt_best("Min(Chem,Faith)", best_combo) + "\n"
+            + _fmt_best("SS-Faithfulness", best_faith)
+            + "\n"
+            + _fmt_best("Chemical GEval", best_chem)
+            + "\n"
+            + _fmt_best("Min(Chem,Faith)", best_combo)
+            + "\n"
         )
         if last_pass_txt:
             history_txt += f"\n[Last attempt PASS/FAIL] {last_pass_txt}\n"
@@ -288,7 +280,7 @@ def _build_reviewer_feedback(
     )
 
 
-def _save_report_text(*, out_dir: str, text: str) -> Optional[str]:
+def _save_report_text(*, out_dir: str, text: str) -> str | None:
     """Save a text report into the output directory and return the file path."""
     try:
         os.makedirs(out_dir, exist_ok=True)
@@ -300,7 +292,7 @@ def _save_report_text(*, out_dir: str, text: str) -> Optional[str]:
         return None
 
 
-def _load_logo_data(path: Optional[str], max_size: Tuple[int, int] = (96, 96)) -> Optional[bytes]:
+def _load_logo_data(path: str | None, max_size: tuple[int, int] = (96, 96)) -> bytes | None:
     """Load and downscale a logo image to fit the header without cropping.
 
     Uses Pillow if available; falls back to None if not.
@@ -323,7 +315,7 @@ def _load_logo_data(path: Optional[str], max_size: Tuple[int, int] = (96, 96)) -
         return None
 
 
-def _print_route_result(window: sg.Window, i: int, r: Dict[str, Any], verbose: bool) -> None:
+def _print_route_result(window: sg.Window, i: int, r: dict[str, Any], verbose: bool) -> None:
     overall_ok, overall_label = _route_overall_status(r)
 
     overall_symbol = "✅" if overall_ok else "⚠️"
@@ -346,7 +338,9 @@ def _print_route_result(window: sg.Window, i: int, r: Dict[str, Any], verbose: b
     window["-LOG-"].print(metric_line(r))
 
     if not r.get("retrieval_context_found", True):
-        window["-LOG-"].print("⚠️  retrieval_context.json not found beside route_*.json → SS-Faithfulness requires retrieved literature evidence")
+        window["-LOG-"].print(
+            "⚠️  retrieval_context.json not found beside route_*.json -> SS-Faithfulness requires retrieved literature evidence"
+        )
 
     # Always show the route text, but keep it visually separated
     window["-LOG-"].print("\nSYNTHESIS ROUTE:")
@@ -356,7 +350,7 @@ def _print_route_result(window: sg.Window, i: int, r: Dict[str, Any], verbose: b
     if verbose:
         window["-LOG-"].print("\nDETAILS:")
         window["-LOG-"].print(
-            "CHEMICAL G-EVAL  →  {} (thr={}) | {}".format(
+            "CHEMICAL G-EVAL  ->  {} (thr={}) | {}".format(
                 score_text(r.get("score")),
                 score_text(r.get("threshold"), 2),
                 _fmt_bool(bool(r.get("passed"))),
@@ -365,8 +359,8 @@ def _print_route_result(window: sg.Window, i: int, r: Dict[str, Any], verbose: b
         window["-LOG-"].print("G-Eval reason:")
         window["-LOG-"].print(_shorten(r.get("reason", ""), 900))
         window["-LOG-"].print(
-            "RAG METRICS:" +
-            "\nAnswerRelevancy → {} (thr={}) | {}".format(
+            "RAG METRICS:"
+            + "\nAnswerRelevancy -> {} (thr={}) | {}".format(
                 score_text(r.get("answer_score")),
                 score_text(r.get("answer_threshold"), 2),
                 _fmt_bool(bool(r.get("answer_passed"))),
@@ -376,7 +370,7 @@ def _print_route_result(window: sg.Window, i: int, r: Dict[str, Any], verbose: b
         window["-LOG-"].print(_shorten(r.get("answer_reason", ""), 650))
 
         window["-LOG-"].print(
-            "\nSS-Faithfulness: → {} (thr={}) | {}".format(
+            "\nSS-Faithfulness: -> {} (thr={}) | {}".format(
                 score_text(r.get("faithfulness_score")),
                 score_text(r.get("faithfulness_threshold"), 2),
                 _fmt_bool(bool(r.get("faithfulness_passed"))),
@@ -386,13 +380,11 @@ def _print_route_result(window: sg.Window, i: int, r: Dict[str, Any], verbose: b
         window["-LOG-"].print(_shorten(r.get("faithfulness_reason", ""), 900))
 
 
-
-# --- Helper: render results with explanations toggle ---
 def _render_results(
     window: sg.Window,
     *,
     out_dir: str,
-    results: List[Dict[str, Any]],
+    results: list[dict[str, Any]],
     requested_num_routes: int,
     verbose: bool,
 ) -> None:
@@ -425,15 +417,15 @@ def _render_results(
 
 def run_generation_and_eval(
     composition: str,
-    method: Optional[str],
-    gen_model: Optional[str],
-    eval_model: Optional[str],
+    method: str | None,
+    gen_model: str | None,
+    eval_model: str | None,
     num_routes: int,
     threshold: float,
     rpm_limit: int,
     improve_failed: bool = False,
     max_attempts: int = 3,
-) -> tuple[str, List[Dict[str, Any]]]:
+) -> tuple[str, list[dict[str, Any]]]:
     """
     High-level wrapper:
     1) generate N routes for composition;
@@ -483,7 +475,7 @@ def run_generation_and_eval(
     # Split the text and calculate metrics for each part separately.
     if routes and len(routes) < num_routes:
         # Try to expand the single/partial route dump into per-route chunks.
-        expanded: List[Dict[str, Any]] = []
+        expanded: list[dict[str, Any]] = []
         for r in routes:
             parts = _split_combined_routes(r.get("raw_text", ""))
             if len(parts) <= 1:
@@ -515,7 +507,7 @@ def run_generation_and_eval(
             pass
 
         # Rewrite normalized per-route files.
-        normalized: List[Dict[str, Any]] = []
+        normalized: list[dict[str, Any]] = []
         for idx, r in enumerate(routes, start=1):
             new_path = os.path.join(output_dir, f"route_{idx}.json")
             payload = {
@@ -552,8 +544,8 @@ def run_generation_and_eval(
         before_call=lambda: _before_ss_call(),
     )
 
-    results: List[Dict[str, Any]] = []
-    request_timestamps: List[float] = []
+    results: list[dict[str, Any]] = []
+    request_timestamps: list[float] = []
 
     def _wait_if_needed() -> None:
         """RPM limiter: at most rpm_limit requests per minute."""
@@ -580,7 +572,7 @@ def run_generation_and_eval(
         # Load retrieval_context.json once per route dir (same for all attempts).
         case_dir = os.path.dirname(route["path"])
         retrieval_context, comp_from_meta = _load_retrieval_context_json(case_dir)
-        comp = (route.get("composition") or comp_from_meta or "UNKNOWN")
+        comp = route.get("composition") or comp_from_meta or "UNKNOWN"
 
         # Start from the current on-disk payload (so regen overwrites remain consistent).
         current_raw_text = route.get("raw_text", "")
@@ -595,27 +587,54 @@ def run_generation_and_eval(
 
         # Track which parent input produced the NEXT regen attempt.
         parent_source_for_next = "current"
-        parent_attempt_no_for_next: Optional[int] = 1
+        parent_attempt_no_for_next: int | None = 1
 
-        # Track best candidates across attempts so we can choose a better parent than "last attempt".
-        best_faith = {"score": None, "attempt_no": 1, "raw_text": current_raw_text, "retrieval_text": current_retrieval_text}
-        best_chem = {"score": None, "attempt_no": 1, "raw_text": current_raw_text, "retrieval_text": current_retrieval_text}
-        best_combo = {"score": None, "attempt_no": 1, "raw_text": current_raw_text, "retrieval_text": current_retrieval_text}
+        # Track the best attempts for regeneration parent selection.
+        best_faith = {
+            "score": None,
+            "attempt_no": 1,
+            "raw_text": current_raw_text,
+            "retrieval_text": current_retrieval_text,
+        }
+        best_chem = {
+            "score": None,
+            "attempt_no": 1,
+            "raw_text": current_raw_text,
+            "retrieval_text": current_retrieval_text,
+        }
+        best_combo = {
+            "score": None,
+            "attempt_no": 1,
+            "raw_text": current_raw_text,
+            "retrieval_text": current_retrieval_text,
+        }
 
         # Conditional bests to avoid selecting a parent that breaks a metric that is already PASS.
-        best_faith_with_chem_pass = {"score": None, "attempt_no": None, "raw_text": "", "retrieval_text": ""}
-        best_chem_with_faith_pass = {"score": None, "attempt_no": None, "raw_text": "", "retrieval_text": ""}
+        best_faith_with_chem_pass = {
+            "score": None,
+            "attempt_no": None,
+            "raw_text": "",
+            "retrieval_text": "",
+        }
+        best_chem_with_faith_pass = {
+            "score": None,
+            "attempt_no": None,
+            "raw_text": "",
+            "retrieval_text": "",
+        }
 
-        last_metric_payload: Dict[str, Any] = {}
+        last_metric_payload: dict[str, Any] = {}
 
         while True:
-            # --- (A) Chemical G-Eval ---
-            tc_geval = build_test_case({"raw_text": current_raw_text, "retrieval_text": current_retrieval_text})
+            # (A) Chemical G-Eval
+            tc_geval = build_test_case(
+                {"raw_text": current_raw_text, "retrieval_text": current_retrieval_text}
+            )
             _wait_if_needed()
             chemical_metric.measure(tc_geval)
             request_timestamps.append(time.time())
 
-            # --- (B) RAG AnswerRelevancy + SS-Faithfulness ---
+            # (B) RAG AnswerRelevancy + SS-Faithfulness
             tc_rag = _build_rag_test_case(
                 composition=comp,
                 raw_text=current_raw_text,
@@ -642,13 +661,11 @@ def run_generation_and_eval(
                 "parent_source": ("original" if attempt == 1 else parent_source_for_next),
                 "parent_attempt_no": (None if attempt == 1 else parent_attempt_no_for_next),
                 "feedback_used": ("" if attempt == 1 else feedback_for_next),
-
                 # Chemical G-Eval
                 "score": chemical_metric.score,
                 "threshold": chemical_metric.threshold,
                 "passed": chemical_metric.is_successful(),
                 "reason": chemical_metric.reason,
-
                 # RAG metrics
                 "answer_score": answer_metric.score,
                 "answer_threshold": answer_metric.threshold,
@@ -664,8 +681,12 @@ def run_generation_and_eval(
 
             validate_metric_result(metric_payload)
             last_metric_payload = metric_payload
-            evaluation_path = _Path(output_dir) / f"evaluation_{_Path(route['path']).stem}_attempt{attempt}.json"
-            evaluation_path.write_text(json.dumps(metric_payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+            evaluation_path = (
+                _Path(output_dir) / f"evaluation_{_Path(route['path']).stem}_attempt{attempt}.json"
+            )
+            evaluation_path.write_text(
+                json.dumps(metric_payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+            )
 
             # Regen trigger: ANY metric fails.
             needs_regen = (
@@ -699,19 +720,38 @@ def run_generation_and_eval(
 
             # Update best candidates (by metric and by min(Chem,Faith)).
             if faith_res.score is not None:
-                if best_faith["score"] is None or float(faith_res.score) > float(best_faith["score"]):
-                    best_faith = {"score": float(faith_res.score), "attempt_no": attempt, "raw_text": current_raw_text, "retrieval_text": current_retrieval_text}
+                if best_faith["score"] is None or float(faith_res.score) > float(
+                    best_faith["score"]
+                ):
+                    best_faith = {
+                        "score": float(faith_res.score),
+                        "attempt_no": attempt,
+                        "raw_text": current_raw_text,
+                        "retrieval_text": current_retrieval_text,
+                    }
             if chem_res.score is not None:
                 if best_chem["score"] is None or float(chem_res.score) > float(best_chem["score"]):
-                    best_chem = {"score": float(chem_res.score), "attempt_no": attempt, "raw_text": current_raw_text, "retrieval_text": current_retrieval_text}
+                    best_chem = {
+                        "score": float(chem_res.score),
+                        "attempt_no": attempt,
+                        "raw_text": current_raw_text,
+                        "retrieval_text": current_retrieval_text,
+                    }
             if chem_res.score is not None and faith_res.score is not None:
                 combo_val = float(min(float(chem_res.score), float(faith_res.score)))
                 if best_combo["score"] is None or combo_val > float(best_combo["score"]):
-                    best_combo = {"score": combo_val, "attempt_no": attempt, "raw_text": current_raw_text, "retrieval_text": current_retrieval_text}
+                    best_combo = {
+                        "score": combo_val,
+                        "attempt_no": attempt,
+                        "raw_text": current_raw_text,
+                        "retrieval_text": current_retrieval_text,
+                    }
 
             # Update conditional bests (only consider attempts that keep the other metric PASS).
             if chem_res.passed and (faith_res.score is not None):
-                if best_faith_with_chem_pass["score"] is None or float(faith_res.score) > float(best_faith_with_chem_pass["score"]):
+                if best_faith_with_chem_pass["score"] is None or float(faith_res.score) > float(
+                    best_faith_with_chem_pass["score"]
+                ):
                     best_faith_with_chem_pass = {
                         "score": float(faith_res.score),
                         "attempt_no": attempt,
@@ -719,7 +759,9 @@ def run_generation_and_eval(
                         "retrieval_text": current_retrieval_text,
                     }
             if faith_res.passed and (chem_res.score is not None):
-                if best_chem_with_faith_pass["score"] is None or float(chem_res.score) > float(best_chem_with_faith_pass["score"]):
+                if best_chem_with_faith_pass["score"] is None or float(chem_res.score) > float(
+                    best_chem_with_faith_pass["score"]
+                ):
                     best_chem_with_faith_pass = {
                         "score": float(chem_res.score),
                         "attempt_no": attempt,
@@ -735,25 +777,49 @@ def run_generation_and_eval(
                 composition=str(comp),
                 method=route.get("method"),
                 history={
-                    "best_faith": {"attempt_no": best_faith.get("attempt_no"), "score": best_faith.get("score")},
-                    "best_chem": {"attempt_no": best_chem.get("attempt_no"), "score": best_chem.get("score")},
-                    "best_combo": {"attempt_no": best_combo.get("attempt_no"), "score": best_combo.get("score")},
-                    "best_faith_with_chem_pass": {"attempt_no": best_faith_with_chem_pass.get("attempt_no"), "score": best_faith_with_chem_pass.get("score")},
-                    "best_chem_with_faith_pass": {"attempt_no": best_chem_with_faith_pass.get("attempt_no"), "score": best_chem_with_faith_pass.get("score")},
-                    "last_pass": {"chemical": chem_res.passed, "answer": ans_res.passed, "faithfulness": faith_res.passed},
+                    "best_faith": {
+                        "attempt_no": best_faith.get("attempt_no"),
+                        "score": best_faith.get("score"),
+                    },
+                    "best_chem": {
+                        "attempt_no": best_chem.get("attempt_no"),
+                        "score": best_chem.get("score"),
+                    },
+                    "best_combo": {
+                        "attempt_no": best_combo.get("attempt_no"),
+                        "score": best_combo.get("score"),
+                    },
+                    "best_faith_with_chem_pass": {
+                        "attempt_no": best_faith_with_chem_pass.get("attempt_no"),
+                        "score": best_faith_with_chem_pass.get("score"),
+                    },
+                    "best_chem_with_faith_pass": {
+                        "attempt_no": best_chem_with_faith_pass.get("attempt_no"),
+                        "score": best_chem_with_faith_pass.get("score"),
+                    },
+                    "last_pass": {
+                        "chemical": chem_res.passed,
+                        "answer": ans_res.passed,
+                        "faithfulness": faith_res.passed,
+                    },
                 },
             )
 
             # Choose parent for the NEXT regeneration attempt.
-            # Strengthened: NEVER choose a parent that fails a metric that is already PASS in the current attempt.
+            # Select a parent that preserves metrics passed by the current attempt.
             if (not faith_res.passed) and chem_res.passed:
                 # Improve faithfulness while keeping chemical PASS.
                 if best_faith_with_chem_pass.get("score") is not None:
                     parent = best_faith_with_chem_pass
                     parent_source_for_next = "best_faith_with_chem_pass"
-                    parent_attempt_no_for_next = int(best_faith_with_chem_pass.get("attempt_no") or attempt)
+                    parent_attempt_no_for_next = int(
+                        best_faith_with_chem_pass.get("attempt_no") or attempt
+                    )
                 else:
-                    parent = {"raw_text": current_raw_text, "retrieval_text": current_retrieval_text}
+                    parent = {
+                        "raw_text": current_raw_text,
+                        "retrieval_text": current_retrieval_text,
+                    }
                     parent_source_for_next = "current"
                     parent_attempt_no_for_next = attempt
             elif (not chem_res.passed) and faith_res.passed:
@@ -761,9 +827,14 @@ def run_generation_and_eval(
                 if best_chem_with_faith_pass.get("score") is not None:
                     parent = best_chem_with_faith_pass
                     parent_source_for_next = "best_chem_with_faith_pass"
-                    parent_attempt_no_for_next = int(best_chem_with_faith_pass.get("attempt_no") or attempt)
+                    parent_attempt_no_for_next = int(
+                        best_chem_with_faith_pass.get("attempt_no") or attempt
+                    )
                 else:
-                    parent = {"raw_text": current_raw_text, "retrieval_text": current_retrieval_text}
+                    parent = {
+                        "raw_text": current_raw_text,
+                        "retrieval_text": current_retrieval_text,
+                    }
                     parent_source_for_next = "current"
                     parent_attempt_no_for_next = attempt
             elif (not chem_res.passed) and (not faith_res.passed):
@@ -787,11 +858,17 @@ def run_generation_and_eval(
             # in that case, fall back to attempt #1.
             if isinstance(parent, dict) and ("score" in parent) and (parent.get("score") is None):
                 if _is_bad_parent_text(current_raw_text):
-                    parent = {"raw_text": attempt1_raw_text, "retrieval_text": attempt1_retrieval_text}
+                    parent = {
+                        "raw_text": attempt1_raw_text,
+                        "retrieval_text": attempt1_retrieval_text,
+                    }
                     parent_source_for_next = "attempt1_fallback"
                     parent_attempt_no_for_next = 1
                 else:
-                    parent = {"raw_text": current_raw_text, "retrieval_text": current_retrieval_text}
+                    parent = {
+                        "raw_text": current_raw_text,
+                        "retrieval_text": current_retrieval_text,
+                    }
                     parent_source_for_next = "current"
                     parent_attempt_no_for_next = attempt
 
@@ -812,14 +889,16 @@ def run_generation_and_eval(
             )
             request_timestamps.append(time.time())
 
-            # Save some provenance into the payload for UX/debugging.
+            # Record the parent attempt and regeneration feedback.
             last_metric_payload["parent_source"] = parent_source_for_next
             last_metric_payload["parent_attempt_no"] = parent_attempt_no_for_next
             last_metric_payload["feedback_used"] = feedback_for_next
 
             if not new_route:
-                # If we couldn't parse a new route, stop retrying to avoid infinite loops.
-                last_metric_payload["regen_error"] = "Regeneration output was not parseable as a route."
+                # Stop regeneration when no route can be parsed.
+                last_metric_payload["regen_error"] = (
+                    "Regeneration output was not parseable as a route."
+                )
                 last_metric_payload["regen_raw_output"] = _shorten(raw_model_out or "", 1200)
                 last_metric_payload["parent_source"] = parent_source_for_next
                 last_metric_payload["parent_attempt_no"] = parent_attempt_no_for_next
@@ -839,7 +918,7 @@ def run_generation_and_eval(
 
             current_raw_text = new_route.get("raw_text", "")
             current_retrieval_text = new_route.get("retrieval_text", "")
-            # Safety: if the model forgot to fill raw_text, keep the previous retrieval_text as fallback.
+            # Leave raw_text empty so evaluation can fall back to retrieval_text.
             if not (current_raw_text or "").strip() and (current_retrieval_text or "").strip():
                 current_raw_text = ""
             attempt += 1
@@ -847,12 +926,13 @@ def run_generation_and_eval(
         results.append(last_metric_payload)
 
     (_Path(output_dir) / "evaluations.json").write_text(
-        json.dumps(results, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        json.dumps(results, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
     return output_dir, results
 
 
 def main():
-    # --- UI / Layout ---
+    # UI / Layout
     # Try to resolve a logo path (prefer the user-provided absolute path, fallback to local file).
     logo_candidates = [
         f"{_REPO_ROOT}/synthway/IMG_5265.PNG",
@@ -866,7 +946,7 @@ def main():
         logo_el = sg.Image(data=logo_data, key="-LOGO-")
     elif logo_path:
         # Fallback (no Pillow): avoid cropping by not forcing a fixed size.
-        # subsample reduces the displayed size on Tk; tweak if needed.
+        # Tk subsampling scales the displayed image.
         logo_el = sg.Image(filename=logo_path, key="-LOGO-", subsample=2)
     else:
         logo_el = sg.Text("")
@@ -1020,8 +1100,8 @@ def main():
         finalize=True,
     )
 
-    last_out_dir: Optional[str] = None
-    last_results: Optional[List[Dict[str, Any]]] = None
+    last_out_dir: str | None = None
+    last_results: list[dict[str, Any]] | None = None
     last_requested_num_routes: int = 0
 
     while True:
@@ -1048,8 +1128,7 @@ def main():
         if event == "-PATHS-":
             sg.popup(
                 f"Search index:\n{DEFAULT_RAG_INDEX_DIR}\n\n"
-                f"New runs:\n{DEFAULT_LLM_OUTPUT_DIR}\n\n"
-                + credential_guidance(),
+                f"New runs:\n{DEFAULT_LLM_OUTPUT_DIR}\n\n" + credential_guidance(),
                 title="Paths",
             )
             continue

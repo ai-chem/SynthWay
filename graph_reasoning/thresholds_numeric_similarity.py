@@ -1,61 +1,82 @@
 """
 Analyze numeric-node similarity and suggest merge thresholds.
-Save histograms and a threshold table in '.../graph_output_without_id/merge'.
+Save histograms and threshold recommendations to --out_dir (default: graph_output/merge).
 Also plot a combined chart for other labels (outside the numeric list).
 """
 
 from pathlib import Path as _Path
+
 _REPO_ROOT = _Path(__file__).resolve().parents[1]
-import os
-import math
 import argparse
 import json
-from typing import Dict, List, Optional, Tuple
-import matplotlib.ticker as mtick
+import math
+import os
 
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 
-# --- Default configuration ---
+# Default configuration
 DEFAULT_PAIRS_CSV = f"{_REPO_ROOT}/graph_output/merge_pairs_for_renaming.csv"
-DEFAULT_OUT_DIR   = f"{_REPO_ROOT}/graph_output/merge"
+DEFAULT_OUT_DIR = f"{_REPO_ROOT}/graph_output/merge"
 
-# --- Numeric labels ---
+# Numeric labels
 DEFAULT_NUMERIC_LABELS = [
-    "precursor_mass","precursor_conc",
-    "additive_mass","additive_conc",
-    "ph_minmax","seed_mass_minmax","seed_conc_minmax",
-    "size_length_minmax","size_width_minmax","size_depth_minmax",
+    "precursor_mass",
+    "precursor_conc",
+    "additive_mass",
+    "additive_conc",
+    "ph_minmax",
+    "seed_mass_minmax",
+    "seed_conc_minmax",
+    "size_length_minmax",
+    "size_width_minmax",
+    "size_depth_minmax",
     "temperature_minmax",
 ]
 
-# --- Synonyms for column autodetection ---
+# Synonyms for column autodetection
 LABEL_SYNONYMS = [
-    "label", "label_source", "label_target",
-    "attr", "attribute", "attr_name", "feature", "key", "type",
-    "name", "column", "kind", "node_label", "edge_label"
+    "label",
+    "label_source",
+    "label_target",
+    "attr",
+    "attribute",
+    "attr_name",
+    "feature",
+    "key",
+    "type",
+    "name",
+    "column",
+    "kind",
+    "node_label",
+    "edge_label",
 ]
 SIMILARITY_SYNONYMS = [
-    "similarity","sim","score","cos_sim","cosine_similarity",
-    "match_score","prob","probability"
+    "similarity",
+    "sim",
+    "score",
+    "cos_sim",
+    "cosine_similarity",
+    "match_score",
+    "prob",
+    "probability",
 ]
-DISTANCE_SYNONYMS = [
-    "distance","dist","cosine_distance","1-cosine_similarity","d"
-]
+DISTANCE_SYNONYMS = ["distance", "dist", "cosine_distance", "1-cosine_similarity", "d"]
 
-# --- Utilities ---
+# Utilities
+
 
 def ensure_dir(path: str):
     os.makedirs(path, exist_ok=True)
 
+
 def _norm(s: str) -> str:
     """Normalize a column name: lowercase, retaining only letters/digits."""
-    return ''.join(ch for ch in s.lower() if ch.isalnum())
+    return "".join(ch for ch in s.lower() if ch.isalnum())
 
-def find_column(df: pd.DataFrame,
-                preferred: Optional[str],
-                synonyms: List[str]) -> Optional[str]:
+
+def find_column(df: pd.DataFrame, preferred: str | None, synonyms: list[str]) -> str | None:
     """Return the actual column name using the preferred name or synonyms, ignoring case/underscores."""
     if df.columns.size == 0:
         return None
@@ -70,7 +91,9 @@ def find_column(df: pd.DataFrame,
             return colmap[key]
     return None
 
-# --- Threshold heuristics ---
+
+# Threshold heuristics
+
 
 def otsu_threshold(x: np.ndarray, bins: int = 256) -> float:
     """Otsu threshold on [0..1]. Useful for bimodal distributions."""
@@ -85,10 +108,11 @@ def otsu_threshold(x: np.ndarray, bins: int = 256) -> float:
     omega = np.cumsum(prob)
     mu = np.cumsum(prob * np.arange(bins))
     mu_t = mu[-1]
-    sigma_b2 = (mu_t * omega - mu)**2 / (omega * (1.0 - omega) + 1e-12)
+    sigma_b2 = (mu_t * omega - mu) ** 2 / (omega * (1.0 - omega) + 1e-12)
     idx = int(np.nanargmax(sigma_b2))
-    thr = 0.5 * (edges[idx] + edges[idx+1])
+    thr = 0.5 * (edges[idx] + edges[idx + 1])
     return float(thr)
+
 
 def knee_threshold(x: np.ndarray) -> float:
     """
@@ -109,8 +133,9 @@ def knee_threshold(x: np.ndarray) -> float:
     k_idx = int(np.argmax(dist[mid:]) + mid) if mid < len(dist) else int(np.argmax(dist))
     return float(uniq[k_idx])
 
+
 def adjust_threshold(base_thr: float, strict: bool, relaxed: bool) -> float:
-    """Adjust the threshold: strict → +0.02; relaxed → -0.02; strict takes precedence if both flags are set."""
+    """Adjust the threshold: strict -> +0.02; relaxed -> -0.02; strict takes precedence if both flags are set."""
     if math.isnan(base_thr):
         return base_thr
     if strict:
@@ -119,7 +144,8 @@ def adjust_threshold(base_thr: float, strict: bool, relaxed: bool) -> float:
         return float(max(0.0, base_thr - 0.02))
     return base_thr
 
-def recommend_threshold(otsu: float, knee: float, stats: Dict[str, float]) -> float:
+
+def recommend_threshold(otsu: float, knee: float, stats: dict[str, float]) -> float:
     """Recommend a conservative threshold: max(otsu, knee); fall back to p90 if both are NaN."""
     if not math.isnan(otsu) and not math.isnan(knee):
         return float(max(otsu, knee))
@@ -129,9 +155,18 @@ def recommend_threshold(otsu: float, knee: float, stats: Dict[str, float]) -> fl
         return float(knee)
     return float(stats.get("p90", 0.9))
 
-def plot_hist(values: np.ndarray, label: str, otsu: float, knee: float, rec: float, out_path: str, bins: int = 50):
+
+def plot_hist(
+    values: np.ndarray,
+    label: str,
+    otsu: float,
+    knee: float,
+    rec: float,
+    out_path: str,
+    bins: int = 50,
+):
     plt.figure(figsize=(7, 4.2))
-    plt.hist(values, bins=bins, range=(0.0,1.0), alpha=0.85, color="#69b3a2", edgecolor="#2f4f4f")
+    plt.hist(values, bins=bins, range=(0.0, 1.0), alpha=0.85, color="#69b3a2", edgecolor="#2f4f4f")
     if not math.isnan(otsu):
         plt.axvline(otsu, linestyle="--", linewidth=2, color="#ff7f0e", label=f"Otsu={otsu:.3f}")
     if not math.isnan(knee):
@@ -145,22 +180,31 @@ def plot_hist(values: np.ndarray, label: str, otsu: float, knee: float, rec: flo
     plt.savefig(out_path, dpi=150)
     plt.close()
 
-def plot_global_hist_and_cdf(all_values: np.ndarray,
-                             lines: List[Tuple[str, float]],
-                             out_dir: str,
-                             basename: str,
-                             bins: int = 100):
+
+def plot_global_hist_and_cdf(
+    all_values: np.ndarray,
+    lines: list[tuple[str, float]],
+    out_dir: str,
+    basename: str,
+    bins: int = 100,
+):
     """Combined histogram and CDF with customizable line labels."""
     # Histogram
     hist_path = os.path.join(out_dir, f"hist_{basename}.png")
     plt.figure(figsize=(8, 4.6))
-    plt.hist(all_values, bins=bins, range=(0.0, 1.0), alpha=0.85, color="#8fb9e8", edgecolor="#2f4f4f")
+    plt.hist(
+        all_values, bins=bins, range=(0.0, 1.0), alpha=0.85, color="#8fb9e8", edgecolor="#2f4f4f"
+    )
     for name, thr in lines:
         if thr == thr:  # not NaN
             plt.axvline(thr, linestyle="--", linewidth=2, label=f"{name}={thr:.3f}")
     plt.title(f"Similarity histogram: {basename}")
-    plt.xlabel("similarity"); plt.ylabel("count"); plt.legend()
-    plt.tight_layout(); plt.savefig(hist_path, dpi=150); plt.close()
+    plt.xlabel("similarity")
+    plt.ylabel("count")
+    plt.legend()
+    plt.tight_layout()
+    plt.savefig(hist_path, dpi=150)
+    plt.close()
 
     # CDF
     cdf_path = os.path.join(out_dir, f"cdf_{basename}.png")
@@ -173,16 +217,21 @@ def plot_global_hist_and_cdf(all_values: np.ndarray,
             if thr == thr:
                 plt.axvline(thr, linestyle="--", linewidth=2, label=f"{name}={thr:.3f}")
         plt.title(f"Similarity CDF: {basename}")
-        plt.xlabel("similarity"); plt.ylabel("CDF"); plt.legend()
-        plt.tight_layout(); plt.savefig(cdf_path, dpi=150); plt.close()
+        plt.xlabel("similarity")
+        plt.ylabel("CDF")
+        plt.legend()
+        plt.tight_layout()
+        plt.savefig(cdf_path, dpi=150)
+        plt.close()
     return hist_path, cdf_path
 
-# --- Publication-quality histogram: zoomed, stylized, with legend ---
+
+# Publication-quality histogram: zoomed, stylized, with legend
 def plot_global_hist_publication(
     all_values: np.ndarray,
-    lines: List[Tuple[str, float]],
+    lines: list[tuple[str, float]],
     out_path: str,
-    x_left: float = 0.98,   # Left cutoff (show [0.98, 1.0] by default)
+    x_left: float = 0.98,  # Left cutoff (show [0.98, 1.0] by default)
     x_right: float = 1.0,
     bins: int = 60,
     dpi: int = 300,
@@ -199,33 +248,46 @@ def plot_global_hist_publication(
     left = float(max(0.0, min(1.0, x_left)))
     right = float(min(1.0, max(left + 1e-4, x_right)))
 
-    plt.rcParams.update({
-        "figure.dpi": dpi,
-        "axes.titlesize": 14,
-        "axes.labelsize": 12,
-        "legend.fontsize": 11,
-        "xtick.labelsize": 11,
-        "ytick.labelsize": 11,
-    })
+    plt.rcParams.update(
+        {
+            "figure.dpi": dpi,
+            "axes.titlesize": 14,
+            "axes.labelsize": 12,
+            "legend.fontsize": 11,
+            "xtick.labelsize": 11,
+            "ytick.labelsize": 11,
+        }
+    )
 
     fig, ax = plt.subplots(figsize=(6.8, 4.0))
 
     # Standard count histogram
-    ax.hist(vals, bins=bins, range=(left, right), alpha=0.85,
-            color="#9ecae1", edgecolor="#2f4f4f", linewidth=0.5)
+    ax.hist(
+        vals,
+        bins=bins,
+        range=(left, right),
+        alpha=0.85,
+        color="#9ecae1",
+        edgecolor="#2f4f4f",
+        linewidth=0.5,
+    )
 
     # Line palette
     color_map = {
-        "Global Otsu": "#ff7f0e",            # Orange
-        "Global Knee": "#1f77b4",            # Blue
-        "Global Weighted Median": "#2ca02c", # Green
+        "Global Otsu": "#ff7f0e",  # Orange
+        "Global Knee": "#1f77b4",  # Blue
+        "Global Weighted Median": "#2ca02c",  # Green
     }
 
     for name, thr in lines:
         if thr == thr:  # not NaN
-            ax.axvline(thr, linestyle="--", linewidth=2.2,
-                       color=color_map.get(name, None),
-                       label=f"{name} = {thr:.3f}")
+            ax.axvline(
+                thr,
+                linestyle="--",
+                linewidth=2.2,
+                color=color_map.get(name, None),
+                label=f"{name} = {thr:.3f}",
+            )
 
     ax.set_title("Similarity histogram: ALL numeric")
     ax.set_xlabel("similarity")
@@ -241,24 +303,49 @@ def plot_global_hist_publication(
     plt.close(fig)
 
 
-# --- Main workflow ---
-
 def main():
     ap = argparse.ArgumentParser(description="Select similarity thresholds for numeric nodes.")
     ap.add_argument("--pairs_csv", default=DEFAULT_PAIRS_CSV, help="merge_pairs_for_renaming.csv")
     ap.add_argument("--out_dir", default=DEFAULT_OUT_DIR, help="Artifact directory (merge outputs)")
     ap.add_argument("--bins", type=int, default=50, help="Number of histogram bins")
-    ap.add_argument("--min_samples", type=int, default=20, help="Minimum pairs per label for a supported threshold (otherwise mark as low_support)")
+    ap.add_argument(
+        "--min_samples",
+        type=int,
+        default=20,
+        help="Minimum pairs per label for a supported threshold (otherwise mark as low_support)",
+    )
     # Explicit column names, if needed
-    ap.add_argument("--col-label", dest="col_label", default=None, help="Name of the label/label_source/label_target column")
-    ap.add_argument("--col-similarity", dest="col_similarity", default=None, help="Name of the similarity column [0..1]")
-    ap.add_argument("--col-distance", dest="col_distance", default=None, help="Name of the distance column [0..1], if similarity is unavailable")
+    ap.add_argument(
+        "--col-label",
+        dest="col_label",
+        default=None,
+        help="Name of the label/label_source/label_target column",
+    )
+    ap.add_argument(
+        "--col-similarity",
+        dest="col_similarity",
+        default=None,
+        help="Name of the similarity column [0..1]",
+    )
+    ap.add_argument(
+        "--col-distance",
+        dest="col_distance",
+        default=None,
+        help="Name of the distance column [0..1], if similarity is unavailable",
+    )
     # Manual adjustments
-    ap.add_argument("--strict", action="store_true", help="More conservative: increase recommended by 0.02")
-    ap.add_argument("--relaxed", action="store_true", help="More permissive: decrease recommended by 0.02")
+    ap.add_argument(
+        "--strict", action="store_true", help="More conservative: increase recommended by 0.02"
+    )
+    ap.add_argument(
+        "--relaxed", action="store_true", help="More permissive: decrease recommended by 0.02"
+    )
     # Override the label set (comma-separated)
-    ap.add_argument("--labels", default=",".join(DEFAULT_NUMERIC_LABELS),
-                    help="Comma-separated labels; defaults to the predefined numeric label set")
+    ap.add_argument(
+        "--labels",
+        default=",".join(DEFAULT_NUMERIC_LABELS),
+        help="Comma-separated labels; defaults to the predefined numeric label set",
+    )
     args = ap.parse_args()
 
     ensure_dir(args.out_dir)
@@ -266,8 +353,8 @@ def main():
 
     # Autodetect columns
     label_col = find_column(df, args.col_label, LABEL_SYNONYMS)
-    sim_col   = find_column(df, args.col_similarity, SIMILARITY_SYNONYMS)
-    dist_col  = None if sim_col else find_column(df, args.col_distance, DISTANCE_SYNONYMS)
+    sim_col = find_column(df, args.col_similarity, SIMILARITY_SYNONYMS)
+    dist_col = None if sim_col else find_column(df, args.col_distance, DISTANCE_SYNONYMS)
 
     print("[AUTO-DETECT]")
     print("  columns in CSV:", list(df.columns))
@@ -296,7 +383,9 @@ def main():
     else:
         dist = pd.to_numeric(df[dist_col], errors="coerce")
         if dist.min() < -1e-9 or dist.max() > 1.0 + 1e-9:
-            raise ValueError(f"Distance column {dist_col!r} is outside [0,1]; automatic normalization is disabled.")
+            raise ValueError(
+                f"Distance column {dist_col!r} is outside [0,1]; automatic normalization is disabled."
+            )
         sim = 1.0 - dist
         sim_name = f"1-({dist_col})"
         transform_note = "from_distance"
@@ -309,14 +398,18 @@ def main():
     sub_labels = labels[mask_numeric]
 
     if sub_sim.dropna().empty:
-        raise ValueError("No data found for the specified numeric labels. Check the label/label_source/label_target column values.")
+        raise ValueError(
+            "No data found for the specified numeric labels. Check the label/label_source/label_target column values."
+        )
 
-    print(f"[INFO] Using similarity='{sim_name}' ({transform_note}), label='{label_col}'. "
-          f"Filtering by {len(numeric_labels)} numeric labels.")
+    print(
+        f"[INFO] Using similarity='{sim_name}' ({transform_note}), label='{label_col}'. "
+        f"Filtering by {len(numeric_labels)} numeric labels."
+    )
 
     rows = []
-    per_label_thresholds: Dict[str, float] = {}
-    pooled_numeric: List[np.ndarray] = []
+    per_label_thresholds: dict[str, float] = {}
+    pooled_numeric: list[np.ndarray] = []
 
     for lb in numeric_labels:
         d = sub_sim[sub_labels == lb].dropna().values
@@ -342,19 +435,23 @@ def main():
         rec_base = recommend_threshold(ot, kn, stats)
         rec_adj = adjust_threshold(rec_base, strict=args.strict, relaxed=args.relaxed)
 
-        low_support = (d.size < args.min_samples)
+        low_support = d.size < args.min_samples
 
         img_path = os.path.join(args.out_dir, f"hist_{lb}.png")
         plot_hist(d, lb, ot, kn, rec_adj, img_path, bins=args.bins)
 
-        rows.append({
-            "label": lb, **stats,
-            "otsu": ot, "knee": kn,
-            "recommended_threshold_base": rec_base,
-            "recommended_threshold_final": rec_adj,
-            "low_support": bool(low_support),
-            "hist_png": img_path
-        })
+        rows.append(
+            {
+                "label": lb,
+                **stats,
+                "otsu": ot,
+                "knee": kn,
+                "recommended_threshold_base": rec_base,
+                "recommended_threshold_final": rec_adj,
+                "low_support": bool(low_support),
+                "hist_png": img_path,
+            }
+        )
         per_label_thresholds[lb] = rec_adj
 
     if not rows:
@@ -373,9 +470,9 @@ def main():
     w_sorted = weights[order].astype(float)
     w_cum = np.cumsum(w_sorted) / max(1.0, w_sorted.sum())
     idx = np.searchsorted(w_cum, 0.5)
-    global_weighted_median_numeric = float(recs_sorted[min(idx, len(recs_sorted)-1)])
+    global_weighted_median_numeric = float(recs_sorted[min(idx, len(recs_sorted) - 1)])
 
-    # === Combined plot for numeric labels ===
+    # Combined plot for numeric labels
     if pooled_numeric:
         all_num = np.concatenate(pooled_numeric, axis=0)
         all_num = all_num[(all_num >= 0.0) & (all_num <= 1.0)]
@@ -383,12 +480,14 @@ def main():
         glob_knee_num = knee_threshold(all_num)
         hist_num_path, cdf_num_path = plot_global_hist_and_cdf(
             all_num,
-            lines=[("Global Otsu", glob_otsu_num),
-                   ("Global Knee", glob_knee_num),
-                   ("Global Weighted Median", global_weighted_median_numeric)],
+            lines=[
+                ("Global Otsu", glob_otsu_num),
+                ("Global Knee", glob_knee_num),
+                ("Global Weighted Median", global_weighted_median_numeric),
+            ],
             out_dir=args.out_dir,
             basename="ALL_numeric",
-            bins=max(args.bins, 100)
+            bins=max(args.bins, 100),
         )
         # Redraw the publication version to the same file
         plot_global_hist_publication(
@@ -399,11 +498,11 @@ def main():
                 ("Global Weighted Median", global_weighted_median_numeric),
             ],
             out_path=hist_num_path,
-            x_left=0.98,  # Can be tightened, e.g., to 0.985 or 0.99
-            bins=max(args.bins, 100),  # More bins for a smoother view
+            x_left=0.98,
+            bins=max(args.bins, 100),
         )
 
-    # === New block: combined plot for other labels ===
+    # Combined plot for nonnumeric labels.
     mask_other = ~labels.isin(numeric_labels)
     other_sim = pd.to_numeric(sim[mask_other], errors="coerce").dropna().values
     other_sim = other_sim[(other_sim >= 0.0) & (other_sim <= 1.0)]
@@ -414,17 +513,22 @@ def main():
         other_median = float(np.median(other_sim))
         hist_other_path, cdf_other_path = plot_global_hist_and_cdf(
             other_sim,
-            lines=[("Other Otsu", glob_otsu_other),
-                   ("Other Knee", glob_knee_other),
-                   ("Other Median", other_median)],
+            lines=[
+                ("Other Otsu", glob_otsu_other),
+                ("Other Knee", glob_knee_other),
+                ("Other Median", other_median),
+            ],
             out_dir=args.out_dir,
             basename="ALL_other",
-            bins=max(args.bins, 100)
+            bins=max(args.bins, 100),
         )
         other_labels_used = sorted(set(labels[mask_other].astype(str)))
     else:
-        glob_otsu_other = float("nan"); glob_knee_other = float("nan"); other_median = float("nan")
-        hist_other_path = ""; cdf_other_path = ""
+        glob_otsu_other = float("nan")
+        glob_knee_other = float("nan")
+        other_median = float("nan")
+        hist_other_path = ""
+        cdf_other_path = ""
         other_labels_used = []
 
     meta = {
@@ -434,7 +538,6 @@ def main():
         "strict": args.strict,
         "relaxed": args.relaxed,
         "min_samples_flag": args.min_samples,
-
         # numeric
         "global_weighted_median_numeric": global_weighted_median_numeric,
         "global_otsu_on_numeric_pool": glob_otsu_num,
@@ -443,7 +546,6 @@ def main():
         "global_cdf_numeric_png": cdf_num_path,
         "per_label_thresholds": per_label_thresholds,
         "numeric_labels_used": numeric_labels,
-
         # others
         "other_labels_used": other_labels_used,
         "global_median_other_pool": other_median,
@@ -452,7 +554,9 @@ def main():
         "global_hist_other_png": hist_other_path,
         "global_cdf_other_png": cdf_other_path,
     }
-    with open(os.path.join(args.out_dir, "thresholds_numeric_similarity.json"), "w", encoding="utf-8") as f:
+    with open(
+        os.path.join(args.out_dir, "thresholds_numeric_similarity.json"), "w", encoding="utf-8"
+    ) as f:
         json.dump(meta, f, ensure_ascii=False, indent=2)
 
     print(f"[OK] Saved table: {csv_path}")
@@ -464,6 +568,7 @@ def main():
         print(f"[OK] Saved global OTHER histogram:  {hist_other_path}")
         print(f"[OK] Saved global OTHER CDF:        {cdf_other_path}")
     print(f"[OK] Global weighted median (numeric): {global_weighted_median_numeric:.3f}")
+
 
 if __name__ == "__main__":
     main()
